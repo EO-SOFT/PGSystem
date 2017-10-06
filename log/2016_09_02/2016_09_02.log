@@ -1,0 +1,1132 @@
+févr. 09, 2016 10:21:17 AM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_09_02] is created!
+Print sub directory [.\print\2016_09_02.\pallet] is created!
+Print sub directory [.\print\2016_09_02.\galia] is created!
+
+févr. 09, 2016 10:21:21 AM state.S01_UserCodeScan doAction
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 09, 2016 10:21:21 AM state.S01_UserCodeScan doAction
+INFOS: User Oussama EZZIOURI / 1001 connected to host null at 2016-09-02 10:21:17.
+févr. 09, 2016 10:21:21 AM entity.BaseContainer select
+INFOS: FROM BaseContainer bc
+févr. 09, 2016 10:21:29 AM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22205127] in ConfigUCS: 22205127
+févr. 09, 2016 10:21:29 AM entity.ConfigUcs select
+INFOS: FROM ConfigUcs cu WHERE cu.harnessPart = :hp
+févr. 09, 2016 10:21:29 AM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22205127] found.
+févr. 09, 2016 10:21:29 AM state.S02_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22205127] OK.
+févr. 09, 2016 10:21:36 AM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2220512705.02.2016;11:44:56] in BaseHarness.
+févr. 09, 2016 10:21:36 AM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+févr. 09, 2016 10:21:36 AM entity.BaseHarness isCounterExist
+INFOS: New Harness counter [P2220512705.02.2016;11:44:56].
+févr. 09, 2016 10:21:36 AM state.S03_QRCodeScan doAction
+INFOS: Valid Harness Counter scanned [P2220512705.02.2016;11:44:56] OK.
+févr. 09, 2016 10:21:42 AM gui.UI0002_Choose_Harness <init>
+DÉSACTIVÉ: FROM ConfigUcs cu WHERE cu.harnessPart = :hp
+févr. 09, 2016 10:21:42 AM gui.UI0002_Choose_Harness <init>
+INFOS: Item found 26C42291A__P01__kltv-781__3
+févr. 09, 2016 10:21:42 AM gui.UI0002_Choose_Harness <init>
+INFOS: Item found 26C42291A__P02__3RV__3
+févr. 09, 2016 10:21:42 AM gui.UI0002_Choose_Harness <init>
+INFOS: 2 item(s) found for Harness Part[22205127].
+févr. 09, 2016 10:22:00 AM gui.UI0002_Choose_Harness items_listKeyPressed
+INFOS: Selected pack type : {harness_index=P02, harness_part=P22205127, uid=3, choosen_pack_type=26C42291A__P02__3RV__3, supplier_part_number=26C42291A, pallet_number=null, qty_expected=3, pack_type=3RV} 
+févr. 09, 2016 10:22:00 AM gui.UI0002_Choose_Harness items_listKeyPressed
+DÉSACTIVÉ: FROM ConfigUcs cu WHERE cu.supplierPartNumber = :supplierPartNumber AND cu.harnessIndex = :harnessIndex
+févr. 09, 2016 10:22:00 AM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2016_09_02\pallet\PrintOpenPallet_A5_2016_09_02_10_22_00.pdf] to the default printer...
+févr. 09, 2016 10:22:00 AM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [%s] has been printed.
+févr. 09, 2016 10:22:00 AM state.S040_PaletChoice doAction
+INFOS: Openning new container.
+févr. 09, 2016 10:44:47 AM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_09_02] already exist!
+Print sub directory [.\print\2016_09_02.\pallet] already exist!
+Print sub directory [.\print\2016_09_02.\galia] already exist!
+
+févr. 09, 2016 10:44:51 AM state.S01_UserCodeScan doAction
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 09, 2016 10:44:51 AM state.S01_UserCodeScan doAction
+INFOS: User Oussama EZZIOURI / 1001 connected to host null at 2016-09-02 10:44:47.
+févr. 09, 2016 10:44:51 AM entity.BaseContainer select
+INFOS: FROM BaseContainer bc
+févr. 09, 2016 10:44:56 AM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22205127] in ConfigUCS: 22205127
+févr. 09, 2016 10:44:56 AM entity.ConfigUcs select
+INFOS: FROM ConfigUcs cu WHERE cu.harnessPart = :hp
+févr. 09, 2016 10:44:56 AM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22205127] found.
+févr. 09, 2016 10:44:56 AM state.S02_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22205127] OK.
+févr. 09, 2016 10:45:00 AM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2220512705.02.2016;11:44:56] in BaseHarness.
+févr. 09, 2016 10:45:00 AM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+févr. 09, 2016 10:45:00 AM entity.BaseHarness isCounterExist
+INFOS: New Harness counter [P2220512705.02.2016;11:44:56].
+févr. 09, 2016 10:45:00 AM state.S03_QRCodeScan doAction
+INFOS: Valid Harness Counter scanned [P2220512705.02.2016;11:44:56] OK.
+févr. 09, 2016 10:45:03 AM gui.UI0002_Choose_Harness <init>
+DÉSACTIVÉ: FROM ConfigUcs cu WHERE cu.harnessPart = :hp
+févr. 09, 2016 10:45:03 AM gui.UI0002_Choose_Harness <init>
+INFOS: Item found 26C42291A__P01__kltv-781__3
+févr. 09, 2016 10:45:03 AM gui.UI0002_Choose_Harness <init>
+INFOS: Item found 26C42291A__P02__3RV__3
+févr. 09, 2016 10:45:03 AM gui.UI0002_Choose_Harness <init>
+INFOS: 2 item(s) found for Harness Part[22205127].
+févr. 09, 2016 10:45:07 AM gui.UI0002_Choose_Harness mappingContextVals
+INFOS: Selected pack type : {harness_index=P01, harness_part=P22205127, uid=3, choosen_pack_type=26C42291A__P01__kltv-781__3, supplier_part_number=26C42291A, pallet_number=null, qty_expected=3, pack_type=kltv-781} 
+févr. 09, 2016 10:45:07 AM gui.UI0002_Choose_Harness items_listKeyPressed
+DÉSACTIVÉ: FROM ConfigUcs cu WHERE cu.supplierPartNumber = :supplierPartNumber AND cu.harnessIndex = :harnessIndex
+févr. 09, 2016 10:55:17 AM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_09_02] already exist!
+Print sub directory [.\print\2016_09_02.\pallet] already exist!
+Print sub directory [.\print\2016_09_02.\galia] already exist!
+
+févr. 09, 2016 10:55:23 AM state.S01_UserCodeScan doAction
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 09, 2016 10:55:23 AM state.S01_UserCodeScan doAction
+INFOS: User Yassine HADDANI / 1002 connected to host null at 2016-09-02 10:55:17.
+févr. 09, 2016 10:55:23 AM entity.BaseContainer select
+INFOS: FROM BaseContainer bc
+févr. 09, 2016 10:55:28 AM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22205127] in ConfigUCS: 22205127
+févr. 09, 2016 10:55:28 AM entity.ConfigUcs select
+INFOS: FROM ConfigUcs cu WHERE cu.harnessPart = :hp
+févr. 09, 2016 10:55:28 AM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22205127] found.
+févr. 09, 2016 10:55:28 AM state.S02_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22205127] OK.
+févr. 09, 2016 10:55:36 AM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2220512705.02.2016;11:44:56] in BaseHarness.
+févr. 09, 2016 10:55:36 AM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+févr. 09, 2016 10:55:36 AM entity.BaseHarness isCounterExist
+INFOS: New Harness counter [P2220512705.02.2016;11:44:56].
+févr. 09, 2016 10:55:36 AM state.S03_QRCodeScan doAction
+INFOS: Valid Harness Counter scanned [P2220512705.02.2016;11:44:56] OK.
+févr. 09, 2016 10:55:38 AM gui.UI0002_Choose_Harness <init>
+DÉSACTIVÉ: FROM ConfigUcs cu WHERE cu.harnessPart = :hp
+févr. 09, 2016 10:55:38 AM gui.UI0002_Choose_Harness <init>
+INFOS: Item found 26C42291A__P01__kltv-781__3
+févr. 09, 2016 10:55:38 AM gui.UI0002_Choose_Harness <init>
+INFOS: Item found 26C42291A__P02__3RV__3
+févr. 09, 2016 10:55:38 AM gui.UI0002_Choose_Harness <init>
+INFOS: 2 item(s) found for Harness Part[22205127].
+févr. 09, 2016 10:55:41 AM gui.UI0002_Choose_Harness mappingContextVals
+INFOS: Selected pack type : {harness_index=P02, harness_part=P22205127, uid=4, choosen_pack_type=26C42291A__P02__3RV__3, supplier_part_number=26C42291A, pallet_number=null, qty_expected=3, pack_type=3RV} 
+févr. 09, 2016 10:55:41 AM gui.UI0002_Choose_Harness items_listKeyPressed
+DÉSACTIVÉ: FROM ConfigUcs cu WHERE cu.supplierPartNumber = :supplierPartNumber AND cu.harnessIndex = :harnessIndex
+févr. 09, 2016 10:55:42 AM gui.UI0002_Choose_Harness items_listKeyPressed
+INFOS: Set Pallet [100000009] state to [in_process]
+févr. 09, 2016 10:55:42 AM print.PrintOpenPallet_A5 sentToDefaultJobPrinter
+INFOS: Target printer found: Win32 Printer : Fax 
+févr. 09, 2016 10:55:42 AM gui.UI0002_Choose_Harness items_listKeyPressed
+INFOS: Set Pallet [100000009] state to [printed]
+févr. 09, 2016 10:55:42 AM state.S040_PaletChoice doAction
+INFOS: Openning new container.
+févr. 09, 2016 11:07:21 AM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_09_02] already exist!
+Print sub directory [.\print\2016_09_02.\pallet] already exist!
+Print sub directory [.\print\2016_09_02.\galia] already exist!
+
+févr. 09, 2016 11:07:23 AM state.S01_UserCodeScan doAction
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 09, 2016 11:07:23 AM state.S01_UserCodeScan doAction
+INFOS: User Yassine HADDANI / 1002 connected to host null at 2016-09-02 11:07:20.
+févr. 09, 2016 11:07:23 AM entity.BaseContainer select
+INFOS: FROM BaseContainer bc
+févr. 09, 2016 11:07:29 AM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22205127] in ConfigUCS: 22205127
+févr. 09, 2016 11:07:29 AM entity.ConfigUcs select
+INFOS: FROM ConfigUcs cu WHERE cu.harnessPart = :hp
+févr. 09, 2016 11:07:29 AM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22205127] found.
+févr. 09, 2016 11:07:29 AM state.S02_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22205127] OK.
+févr. 09, 2016 11:07:34 AM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2220512705.02.2016;11:44:56] in BaseHarness.
+févr. 09, 2016 11:07:34 AM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+févr. 09, 2016 11:07:34 AM entity.BaseHarness isCounterExist
+INFOS: New Harness counter [P2220512705.02.2016;11:44:56].
+févr. 09, 2016 11:07:34 AM state.S03_QRCodeScan doAction
+INFOS: Valid Harness Counter scanned [P2220512705.02.2016;11:44:56] OK.
+févr. 09, 2016 11:07:45 AM gui.UI0002_Choose_Harness <init>
+DÉSACTIVÉ: FROM ConfigUcs cu WHERE cu.harnessPart = :hp
+févr. 09, 2016 11:07:45 AM gui.UI0002_Choose_Harness <init>
+INFOS: Item found 26C42291A__P01__kltv-781__3
+févr. 09, 2016 11:07:45 AM gui.UI0002_Choose_Harness <init>
+INFOS: Item found 26C42291A__P02__3RV__3
+févr. 09, 2016 11:07:45 AM gui.UI0002_Choose_Harness <init>
+INFOS: 2 item(s) found for Harness Part[22205127].
+févr. 09, 2016 11:07:53 AM gui.UI0002_Choose_Harness mappingContextVals
+INFOS: Selected pack type : {harness_index=P02, harness_part=P22205127, uid=4, choosen_pack_type=26C42291A__P02__3RV__3, supplier_part_number=26C42291A, pallet_number=null, qty_expected=3, pack_type=3RV} 
+févr. 09, 2016 11:07:53 AM gui.UI0002_Choose_Harness items_listKeyPressed
+DÉSACTIVÉ: FROM ConfigUcs cu WHERE cu.supplierPartNumber = :supplierPartNumber AND cu.harnessIndex = :harnessIndex
+févr. 09, 2016 11:07:53 AM gui.UI0002_Choose_Harness items_listKeyPressed
+INFOS: Set Pallet [100000010] state to [in_process]
+févr. 09, 2016 11:07:53 AM print.PrintOpenPallet_A5 sentToDefaultJobPrinter
+INFOS: Target printer found: Win32 Printer : Fax 
+févr. 09, 2016 11:07:53 AM gui.UI0002_Choose_Harness items_listKeyPressed
+INFOS: Set Pallet [100000010] state to [printed]
+févr. 09, 2016 11:07:53 AM state.S040_PaletChoice doAction
+INFOS: Openning new container.
+févr. 09, 2016 11:11:10 AM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_09_02] already exist!
+Print sub directory [.\print\2016_09_02.\pallet] already exist!
+Print sub directory [.\print\2016_09_02.\galia] already exist!
+
+févr. 09, 2016 11:11:12 AM state.S01_UserCodeScan doAction
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 09, 2016 11:11:12 AM state.S01_UserCodeScan doAction
+INFOS: User Yassine HADDANI / 1002 connected to host null at 2016-09-02 11:11:10.
+févr. 09, 2016 11:11:12 AM entity.BaseContainer select
+INFOS: FROM BaseContainer bc
+févr. 09, 2016 11:11:18 AM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22205127] in ConfigUCS: 22205127
+févr. 09, 2016 11:11:18 AM entity.ConfigUcs select
+INFOS: FROM ConfigUcs cu WHERE cu.harnessPart = :hp
+févr. 09, 2016 11:11:18 AM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22205127] found.
+févr. 09, 2016 11:11:18 AM state.S02_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22205127] OK.
+févr. 09, 2016 11:11:23 AM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2220512705.02.2016;11:44:56] in BaseHarness.
+févr. 09, 2016 11:11:23 AM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+févr. 09, 2016 11:11:23 AM entity.BaseHarness isCounterExist
+INFOS: New Harness counter [P2220512705.02.2016;11:44:56].
+févr. 09, 2016 11:11:23 AM state.S03_QRCodeScan doAction
+INFOS: Valid Harness Counter scanned [P2220512705.02.2016;11:44:56] OK.
+févr. 09, 2016 11:11:27 AM gui.UI0002_Choose_Harness <init>
+DÉSACTIVÉ: FROM ConfigUcs cu WHERE cu.harnessPart = :hp
+févr. 09, 2016 11:11:27 AM gui.UI0002_Choose_Harness <init>
+INFOS: Item found 26C42291A__P01__kltv-781__3
+févr. 09, 2016 11:11:27 AM gui.UI0002_Choose_Harness <init>
+INFOS: Item found 26C42291A__P02__3RV__3
+févr. 09, 2016 11:11:27 AM gui.UI0002_Choose_Harness <init>
+INFOS: 2 item(s) found for Harness Part[22205127].
+févr. 09, 2016 11:11:37 AM gui.UI0002_Choose_Harness mappingContextVals
+INFOS: Selected pack type : {harness_index=P02, harness_part=P22205127, uid=4, choosen_pack_type=26C42291A__P02__3RV__3, supplier_part_number=26C42291A, pallet_number=null, qty_expected=3, pack_type=3RV} 
+févr. 09, 2016 11:11:37 AM gui.UI0002_Choose_Harness items_listKeyPressed
+DÉSACTIVÉ: FROM ConfigUcs cu WHERE cu.supplierPartNumber = :supplierPartNumber AND cu.harnessIndex = :harnessIndex
+févr. 09, 2016 11:11:37 AM gui.UI0002_Choose_Harness items_listKeyPressed
+INFOS: Set Pallet [100000011] state to [in_process]
+févr. 09, 2016 11:11:37 AM print.PrintOpenPallet_A5 sentToDefaultJobPrinter
+INFOS: Target printer found: Win32 Printer : Fax 
+févr. 09, 2016 11:11:37 AM gui.UI0002_Choose_Harness items_listKeyPressed
+INFOS: Set Pallet [100000011] state to [printed]
+févr. 09, 2016 11:11:37 AM state.S040_PaletChoice doAction
+INFOS: Openning new container.
+févr. 09, 2016 11:12:18 AM entity.BaseContainer select
+INFOS: FROM BaseContainer bc
+févr. 09, 2016 12:15:05 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_09_02] already exist!
+Print sub directory [.\print\2016_09_02.\pallet] already exist!
+Print sub directory [.\print\2016_09_02.\galia] already exist!
+
+févr. 09, 2016 12:15:08 PM state.S01_UserCodeScan doAction
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 09, 2016 12:15:08 PM state.S01_UserCodeScan doAction
+INFOS: User Yassine HADDANI / 1002 connected to host null at 2016-09-02 12:15:05.
+févr. 09, 2016 12:15:08 PM entity.BaseContainer select
+INFOS: FROM BaseContainer bc ORDER BY createTime DESC
+févr. 09, 2016 12:15:18 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22205127] in ConfigUCS: 22205127
+févr. 09, 2016 12:15:18 PM entity.ConfigUcs select
+INFOS: FROM ConfigUcs cu WHERE cu.harnessPart = :hp
+févr. 09, 2016 12:15:18 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22205127] found.
+févr. 09, 2016 12:15:18 PM state.S02_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22205127] OK.
+févr. 09, 2016 12:15:24 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2220512705.02.2016;11:44:56] in BaseHarness.
+févr. 09, 2016 12:15:24 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+févr. 09, 2016 12:15:24 PM entity.BaseHarness isCounterExist
+INFOS: New Harness counter [P2220512705.02.2016;11:44:56].
+févr. 09, 2016 12:15:24 PM state.S03_QRCodeScan doAction
+INFOS: Valid Harness Counter scanned [P2220512705.02.2016;11:44:56] OK.
+févr. 09, 2016 12:15:28 PM gui.UI0002_Choose_Harness <init>
+DÉSACTIVÉ: FROM ConfigUcs cu WHERE cu.harnessPart = :hp
+févr. 09, 2016 12:15:28 PM gui.UI0002_Choose_Harness <init>
+INFOS: Item found 26C42291A__P01__kltv-781__3
+févr. 09, 2016 12:15:28 PM gui.UI0002_Choose_Harness <init>
+INFOS: Item found 26C42291A__P02__3RV__3
+févr. 09, 2016 12:15:28 PM gui.UI0002_Choose_Harness <init>
+INFOS: 2 item(s) found for Harness Part[22205127].
+févr. 09, 2016 12:15:37 PM gui.UI0002_Choose_Harness mappingContextVals
+INFOS: Selected pack type : {harness_index=P02, harness_part=P22205127, uid=4, choosen_pack_type=26C42291A__P02__3RV__3, supplier_part_number=26C42291A, pallet_number=null, qty_expected=3, pack_type=3RV} 
+févr. 09, 2016 12:15:37 PM gui.UI0002_Choose_Harness items_listKeyPressed
+DÉSACTIVÉ: FROM ConfigUcs cu WHERE cu.supplierPartNumber = :supplierPartNumber AND cu.harnessIndex = :harnessIndex
+févr. 09, 2016 12:15:37 PM gui.UI0002_Choose_Harness items_listKeyPressed
+INFOS: Set Pallet [100000013] state to [in_process]
+févr. 09, 2016 12:15:37 PM print.PrintOpenPallet_A5 sentToDefaultJobPrinter
+INFOS: Target printer found: Win32 Printer : Fax 
+févr. 09, 2016 12:15:37 PM gui.UI0002_Choose_Harness items_listKeyPressed
+INFOS: Set Pallet [100000013] state to [printed]
+févr. 09, 2016 12:15:37 PM state.S040_PalletChoice doAction
+INFOS: Openning new container.
+févr. 09, 2016 12:15:55 PM state.S041_NewPalletScan doAction
+AVERTISSEMENT: Incorrect pallet number [100000011]
+févr. 09, 2016 12:16:44 PM state.S041_NewPalletScan doAction
+INFOS: Scanned Pallet number [100000013] OK.
+févr. 09, 2016 12:17:17 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_09_02] already exist!
+Print sub directory [.\print\2016_09_02.\pallet] already exist!
+Print sub directory [.\print\2016_09_02.\galia] already exist!
+
+févr. 09, 2016 12:17:19 PM state.S01_UserCodeScan doAction
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 09, 2016 12:17:19 PM state.S01_UserCodeScan doAction
+INFOS: User Yassine HADDANI / 1002 connected to host null at 2016-09-02 12:17:17.
+févr. 09, 2016 12:17:19 PM entity.BaseContainer select
+INFOS: FROM BaseContainer bc ORDER BY createTime DESC
+févr. 09, 2016 12:17:24 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22205127] in ConfigUCS: 22205127
+févr. 09, 2016 12:17:24 PM entity.ConfigUcs select
+INFOS: FROM ConfigUcs cu WHERE cu.harnessPart = :hp
+févr. 09, 2016 12:17:24 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22205127] found.
+févr. 09, 2016 12:17:24 PM state.S02_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22205127] OK.
+févr. 09, 2016 12:17:29 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2220512705.02.2016;11:44:56] in BaseHarness.
+févr. 09, 2016 12:17:29 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+févr. 09, 2016 12:17:29 PM entity.BaseHarness isCounterExist
+INFOS: New Harness counter [P2220512705.02.2016;11:44:56].
+févr. 09, 2016 12:17:29 PM state.S03_QRCodeScan doAction
+INFOS: Valid Harness Counter scanned [P2220512705.02.2016;11:44:56] OK.
+févr. 09, 2016 12:17:31 PM gui.UI0002_Choose_Harness <init>
+DÉSACTIVÉ: FROM ConfigUcs cu WHERE cu.harnessPart = :hp
+févr. 09, 2016 12:17:31 PM gui.UI0002_Choose_Harness <init>
+INFOS: Item found 26C42291A__P01__kltv-781__3
+févr. 09, 2016 12:17:31 PM gui.UI0002_Choose_Harness <init>
+INFOS: Item found 26C42291A__P02__3RV__3
+févr. 09, 2016 12:17:31 PM gui.UI0002_Choose_Harness <init>
+INFOS: 2 item(s) found for Harness Part[22205127].
+févr. 09, 2016 12:17:33 PM gui.UI0002_Choose_Harness mappingContextVals
+INFOS: Selected pack type : {harness_index=P01, harness_part=P22205127, uid=4, choosen_pack_type=26C42291A__P01__kltv-781__3, supplier_part_number=26C42291A, pallet_number=null, qty_expected=3, pack_type=kltv-781} 
+févr. 09, 2016 12:17:33 PM gui.UI0002_Choose_Harness items_listKeyPressed
+DÉSACTIVÉ: FROM ConfigUcs cu WHERE cu.supplierPartNumber = :supplierPartNumber AND cu.harnessIndex = :harnessIndex
+févr. 09, 2016 12:17:33 PM gui.UI0002_Choose_Harness items_listKeyPressed
+INFOS: Set Pallet [100000014] state to [in_process]
+févr. 09, 2016 12:17:33 PM print.PrintOpenPallet_A5 sentToDefaultJobPrinter
+INFOS: Target printer found: Win32 Printer : Fax 
+févr. 09, 2016 12:17:33 PM gui.UI0002_Choose_Harness items_listKeyPressed
+INFOS: Set Pallet [100000014] state to [printed]
+févr. 09, 2016 12:17:33 PM state.S040_PalletChoice doAction
+INFOS: Openning new container.
+févr. 09, 2016 12:18:01 PM state.S041_NewPalletScan doAction
+INFOS: Scanned Pallet number [100000014] OK.
+févr. 09, 2016 12:18:01 PM state.S041_NewPalletScan doAction
+INFOS: BaseContainer created BaseContainer{id=3, createTime=Tue Feb 09 12:18:01 WET 2016, writeTime=Tue Feb 09 12:18:01 WET 2016, createId=4, writeId=4, user=Yassine HADDANI / 1002, startTime=Tue Feb 09 12:18:01 WET 2016, completeTime=null, workTime=null, palletNumber=100000014, harnessPart=P22205127, harnessIndex=P01, supplierPartNumber=26C42291A, qtyExpected=3, qtyRead=1, state=null, packType=kltv-781} 
+févr. 09, 2016 12:18:01 PM entity.BaseContainer select
+INFOS: FROM BaseContainer bc ORDER BY createTime DESC
+févr. 09, 2016 2:02:19 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_09_02] already exist!
+Print sub directory [.\print\2016_09_02.\pallet] already exist!
+Print sub directory [.\print\2016_09_02.\galia] already exist!
+
+févr. 09, 2016 2:02:34 PM state.S01_UserCodeScan doAction
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 09, 2016 2:02:34 PM state.S01_UserCodeScan doAction
+INFOS: User Yassine HADDANI / 1002 connected to host null at 2016-09-02 14:02:19.
+févr. 09, 2016 2:02:34 PM entity.BaseContainer select
+INFOS: FROM BaseContainer bc ORDER BY createTime DESC
+févr. 09, 2016 2:05:19 PM entity.BaseHarness checkHarnessPartFormat
+INFOS: Invalid Harness Part scanned !
+févr. 09, 2016 2:05:19 PM state.S02_HarnessPartScan doAction
+INFOS: Invalid Harness Part scanned ! [P222051299]
+févr. 09, 2016 2:05:22 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22205127] in ConfigUCS: 22205127
+févr. 09, 2016 2:05:22 PM entity.ConfigUcs select
+INFOS: FROM ConfigUcs cu WHERE cu.harnessPart = :hp
+févr. 09, 2016 2:05:22 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22205127] found.
+févr. 09, 2016 2:05:22 PM state.S02_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22205127] OK.
+févr. 09, 2016 2:05:50 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2220512705.02.2016;11:44:57] in BaseHarness.
+févr. 09, 2016 2:05:50 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+févr. 09, 2016 2:05:54 PM entity.BaseHarness isCounterExist
+AVERTISSEMENT: Harness counter [P2220512705.02.2016;11:44:57] already scanned !
+févr. 09, 2016 2:05:57 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2220512705.02.2016;11:44:56] in BaseHarness.
+févr. 09, 2016 2:05:57 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+févr. 09, 2016 2:05:57 PM entity.BaseHarness isCounterExist
+INFOS: New Harness counter [P2220512705.02.2016;11:44:56].
+févr. 09, 2016 2:05:57 PM state.S03_QRCodeScan doAction
+INFOS: Valid Harness Counter scanned [P2220512705.02.2016;11:44:56] OK.
+févr. 09, 2016 2:06:17 PM gui.UI0002_Choose_Harness <init>
+DÉSACTIVÉ: FROM ConfigUcs cu WHERE cu.harnessPart = :hp
+févr. 09, 2016 2:06:17 PM gui.UI0002_Choose_Harness <init>
+INFOS: Item found 26C42291A__P01__kltv-781__3
+févr. 09, 2016 2:06:17 PM gui.UI0002_Choose_Harness <init>
+INFOS: Item found 26C42291A__P02__3RV__3
+févr. 09, 2016 2:06:17 PM gui.UI0002_Choose_Harness <init>
+INFOS: 2 item(s) found for Harness Part[22205127].
+févr. 09, 2016 2:06:29 PM gui.UI0002_Choose_Harness mappingContextVals
+INFOS: Selected pack type : {harness_index=P02, harness_part=P22205127, uid=4, choosen_pack_type=26C42291A__P02__3RV__3, supplier_part_number=26C42291A, pallet_number=null, qty_expected=3, pack_type=3RV} 
+févr. 09, 2016 2:06:29 PM gui.UI0002_Choose_Harness items_listKeyPressed
+DÉSACTIVÉ: FROM ConfigUcs cu WHERE cu.supplierPartNumber = :supplierPartNumber AND cu.harnessIndex = :harnessIndex
+févr. 09, 2016 2:06:29 PM gui.UI0002_Choose_Harness items_listKeyPressed
+INFOS: Set Pallet [100000015] state to [in_process]
+févr. 09, 2016 2:06:29 PM print.PrintOpenPallet_A5 sentToDefaultJobPrinter
+INFOS: Target printer found: Win32 Printer : Fax 
+févr. 09, 2016 2:06:29 PM gui.UI0002_Choose_Harness items_listKeyPressed
+INFOS: Set Pallet [100000015] state to [printed]
+févr. 09, 2016 2:06:29 PM state.S040_PalletChoice doAction
+INFOS: Openning new container.
+févr. 09, 2016 2:07:26 PM state.S041_NewPalletScan doAction
+AVERTISSEMENT: Incorrect pallet number [100000014]
+févr. 09, 2016 2:07:30 PM state.S041_NewPalletScan doAction
+INFOS: Scanned Pallet number [100000015] OK.
+févr. 09, 2016 2:07:30 PM state.S041_NewPalletScan doAction
+INFOS: BaseContainer created BaseContainer{id=4, createTime=Tue Feb 09 14:07:30 WET 2016, writeTime=Tue Feb 09 14:07:30 WET 2016, createId=4, writeId=4, user=Yassine HADDANI / 1002, startTime=Tue Feb 09 14:07:30 WET 2016, completeTime=null, workTime=null, palletNumber=100000015, harnessPart=P22205127, harnessIndex=P02, supplierPartNumber=26C42291A, qtyExpected=3, qtyRead=1, state=open, packType=3RV} 
+févr. 09, 2016 2:07:30 PM entity.BaseContainer select
+INFOS: FROM BaseContainer bc ORDER BY createTime DESC
+févr. 09, 2016 2:25:45 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_09_02] already exist!
+Print sub directory [.\print\2016_09_02.\pallet] already exist!
+Print sub directory [.\print\2016_09_02.\galia] already exist!
+
+févr. 09, 2016 2:25:50 PM state.S01_UserCodeScan doAction
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 09, 2016 2:25:58 PM state.S01_UserCodeScan doAction
+INFOS: Invalid matricule number !
+févr. 09, 2016 2:34:56 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_09_02] already exist!
+Print sub directory [.\print\2016_09_02.\pallet] already exist!
+Print sub directory [.\print\2016_09_02.\galia] already exist!
+
+févr. 09, 2016 2:35:01 PM state.S01_UserCodeScan doAction
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 09, 2016 2:35:01 PM state.S01_UserCodeScan doAction
+INFOS: User Oussama EZZIOURI / 1001 connected to host null at 2016-09-02 14:34:56.
+févr. 09, 2016 2:35:01 PM entity.BaseContainer select
+INFOS: FROM BaseContainer bc ORDER BY createTime DESC
+févr. 09, 2016 2:48:13 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_09_02] already exist!
+Print sub directory [.\print\2016_09_02.\pallet] already exist!
+Print sub directory [.\print\2016_09_02.\galia] already exist!
+
+févr. 09, 2016 2:48:16 PM state.S01_UserCodeScan doAction
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 09, 2016 2:48:17 PM state.S01_UserCodeScan doAction
+INFOS: User Yassine HADDANI / 1002 connected to host null at 2016-09-02 14:48:13.
+févr. 09, 2016 2:48:17 PM entity.BaseContainer select
+INFOS: FROM BaseContainer bc ORDER BY createTime DESC
+févr. 09, 2016 2:48:24 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22205127] in ConfigUCS: 22205127
+févr. 09, 2016 2:48:24 PM entity.ConfigUcs select
+INFOS: FROM ConfigUcs cu WHERE cu.harnessPart = :hp
+févr. 09, 2016 2:48:24 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22205127] found.
+févr. 09, 2016 2:48:24 PM state.S02_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22205127] OK.
+févr. 09, 2016 2:52:24 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_09_02] already exist!
+Print sub directory [.\print\2016_09_02.\pallet] already exist!
+Print sub directory [.\print\2016_09_02.\galia] already exist!
+
+févr. 09, 2016 2:52:30 PM state.S01_UserCodeScan doAction
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 09, 2016 2:52:30 PM state.S01_UserCodeScan doAction
+INFOS: User Yassine HADDANI / 1002 connected to host null at 2016-09-02 14:52:24.
+févr. 09, 2016 2:52:30 PM entity.BaseContainer select
+INFOS: FROM BaseContainer bc ORDER BY createTime DESC
+févr. 09, 2016 2:53:47 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_09_02] already exist!
+Print sub directory [.\print\2016_09_02.\pallet] already exist!
+Print sub directory [.\print\2016_09_02.\galia] already exist!
+
+févr. 09, 2016 2:53:49 PM state.S01_UserCodeScan doAction
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 09, 2016 2:53:50 PM state.S01_UserCodeScan doAction
+INFOS: User Yassine HADDANI / 1002 connected to host null at 2016-09-02 14:53:47.
+févr. 09, 2016 2:53:50 PM entity.BaseContainer select
+INFOS: FROM BaseContainer bc ORDER BY createTime DESC
+févr. 09, 2016 2:54:00 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22205127] in ConfigUCS: 22205127
+févr. 09, 2016 2:54:00 PM entity.ConfigUcs select
+INFOS: FROM ConfigUcs cu WHERE cu.harnessPart = :hp
+févr. 09, 2016 2:54:00 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22205127] found.
+févr. 09, 2016 2:54:00 PM state.S02_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22205127] OK.
+févr. 09, 2016 2:54:15 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2220512705.02.2016;11:44:56] in BaseHarness.
+févr. 09, 2016 2:54:15 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+févr. 09, 2016 2:54:15 PM entity.BaseHarness isCounterExist
+INFOS: New Harness counter [P2220512705.02.2016;11:44:56].
+févr. 09, 2016 2:54:15 PM state.S03_QRCodeScan doAction
+INFOS: Valid Harness Counter scanned [P2220512705.02.2016;11:44:56] OK.
+févr. 09, 2016 2:54:17 PM gui.UI0002_Choose_Harness <init>
+DÉSACTIVÉ: FROM ConfigUcs cu WHERE cu.harnessPart = :hp
+févr. 09, 2016 2:54:17 PM gui.UI0002_Choose_Harness <init>
+INFOS: Item found 26C42291A__P01__kltv-781__3
+févr. 09, 2016 2:54:17 PM gui.UI0002_Choose_Harness <init>
+INFOS: Item found 26C42291A__P02__3RV__3
+févr. 09, 2016 2:54:17 PM gui.UI0002_Choose_Harness <init>
+INFOS: 2 item(s) found for Harness Part[22205127].
+févr. 09, 2016 2:54:19 PM gui.UI0002_Choose_Harness mappingContextVals
+INFOS: Selected pack type : {harness_index=P02, harness_part=P22205127, uid=4, choosen_pack_type=26C42291A__P02__3RV__3, supplier_part_number=26C42291A, pallet_number=null, qty_expected=3, pack_type=3RV} 
+févr. 09, 2016 2:54:19 PM gui.UI0002_Choose_Harness items_listKeyPressed
+DÉSACTIVÉ: FROM ConfigUcs cu WHERE cu.supplierPartNumber = :supplierPartNumber AND cu.harnessIndex = :harnessIndex
+févr. 09, 2016 2:54:19 PM gui.UI0002_Choose_Harness items_listKeyPressed
+INFOS: Set Pallet [100000016] state to [in_process]
+févr. 09, 2016 2:54:19 PM print.PrintOpenPallet_A5 sentToDefaultJobPrinter
+INFOS: Target printer found: Win32 Printer : Fax 
+févr. 09, 2016 2:54:19 PM gui.UI0002_Choose_Harness items_listKeyPressed
+INFOS: Set Pallet [100000016] state to [printed]
+févr. 09, 2016 2:54:19 PM state.S040_PalletChoice doAction
+INFOS: Openning new container.
+févr. 09, 2016 2:54:39 PM state.S041_NewPalletScan doAction
+INFOS: Scanned Pallet number [100000016] OK.
+févr. 09, 2016 2:54:39 PM state.S041_NewPalletScan doAction
+INFOS: BaseContainer created BaseContainer{id=5, createTime=Tue Feb 09 14:54:39 WET 2016, writeTime=Tue Feb 09 14:54:39 WET 2016, createId=4, writeId=4, user=Yassine HADDANI / 1002, startTime=Tue Feb 09 14:54:39 WET 2016, completeTime=null, workTime=null, palletNumber=100000016, harnessPart=22205127, harnessIndex=P02, supplierPartNumber=26C42291A, qtyExpected=3, qtyRead=1, state=open, packType=3RV} 
+févr. 09, 2016 2:54:39 PM entity.BaseContainer select
+INFOS: FROM BaseContainer bc ORDER BY createTime DESC
+févr. 09, 2016 2:57:31 PM entity.BaseHarness checkHarnessPartFormat
+INFOS: Invalid Harness Part scanned !
+févr. 09, 2016 2:57:31 PM state.S02_HarnessPartScan doAction
+INFOS: Invalid Harness Part scanned ! []
+févr. 09, 2016 2:57:32 PM entity.BaseHarness checkHarnessPartFormat
+INFOS: Invalid Harness Part scanned !
+févr. 09, 2016 2:57:32 PM state.S02_HarnessPartScan doAction
+INFOS: Invalid Harness Part scanned ! []
+févr. 09, 2016 3:04:17 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22205127] in ConfigUCS: 22205127
+févr. 09, 2016 3:04:17 PM entity.ConfigUcs select
+INFOS: FROM ConfigUcs cu WHERE cu.harnessPart = :hp
+févr. 09, 2016 3:04:17 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22205127] found.
+févr. 09, 2016 3:04:17 PM state.S02_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22205127] OK.
+févr. 09, 2016 3:05:14 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2220512705.02.2016;11:44:56] in BaseHarness.
+févr. 09, 2016 3:05:14 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+févr. 09, 2016 3:05:14 PM entity.BaseHarness isCounterExist
+INFOS: New Harness counter [P2220512705.02.2016;11:44:56].
+févr. 09, 2016 3:05:14 PM state.S03_QRCodeScan doAction
+INFOS: Valid Harness Counter scanned [P2220512705.02.2016;11:44:56] OK.
+févr. 09, 2016 3:05:20 PM gui.UI0002_Choose_Harness <init>
+DÉSACTIVÉ: FROM ConfigUcs cu WHERE cu.harnessPart = :hp
+févr. 09, 2016 3:05:20 PM gui.UI0002_Choose_Harness <init>
+INFOS: Item found 26C42291A__P01__kltv-781__3
+févr. 09, 2016 3:05:20 PM gui.UI0002_Choose_Harness <init>
+INFOS: Item found 26C42291A__P02__3RV__3
+févr. 09, 2016 3:05:20 PM gui.UI0002_Choose_Harness <init>
+INFOS: 2 item(s) found for Harness Part[22205127].
+févr. 09, 2016 3:05:22 PM gui.UI0002_Choose_Harness mappingContextVals
+INFOS: Selected pack type : {harness_index=P02, harness_part=P22205127, uid=4, choosen_pack_type=26C42291A__P02__3RV__3, supplier_part_number=26C42291A, pallet_number=100000016, qty_expected=3, pack_type=3RV} 
+févr. 09, 2016 3:05:22 PM gui.UI0002_Choose_Harness items_listKeyPressed
+DÉSACTIVÉ: FROM ConfigUcs cu WHERE cu.supplierPartNumber = :supplierPartNumber AND cu.harnessIndex = :harnessIndex
+févr. 09, 2016 3:05:22 PM gui.UI0002_Choose_Harness items_listKeyPressed
+INFOS: Set Pallet [100000017] state to [in_process]
+févr. 09, 2016 3:05:22 PM print.PrintOpenPallet_A5 sentToDefaultJobPrinter
+INFOS: Target printer found: Win32 Printer : Fax 
+févr. 09, 2016 3:05:22 PM gui.UI0002_Choose_Harness items_listKeyPressed
+INFOS: Set Pallet [100000017] state to [printed]
+févr. 09, 2016 3:05:22 PM state.S040_PalletChoice doAction
+INFOS: Openning new container.
+févr. 09, 2016 3:05:30 PM state.S041_NewPalletScan doAction
+INFOS: Scanned Pallet number [100000017] OK.
+févr. 09, 2016 3:05:30 PM state.S041_NewPalletScan doAction
+INFOS: BaseContainer created BaseContainer{id=6, createTime=Tue Feb 09 15:05:30 WET 2016, writeTime=Tue Feb 09 15:05:30 WET 2016, createId=4, writeId=4, user=Yassine HADDANI / 1002, startTime=Tue Feb 09 15:05:30 WET 2016, completeTime=null, workTime=null, palletNumber=100000017, harnessPart=22205127, harnessIndex=P02, supplierPartNumber=26C42291A, qtyExpected=3, qtyRead=1, state=open, packType=3RV} 
+févr. 09, 2016 3:05:30 PM entity.BaseContainer select
+INFOS: FROM BaseContainer bc ORDER BY createTime DESC
+févr. 09, 2016 3:05:53 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22205127] in ConfigUCS: 22205127
+févr. 09, 2016 3:05:53 PM entity.ConfigUcs select
+INFOS: FROM ConfigUcs cu WHERE cu.harnessPart = :hp
+févr. 09, 2016 3:05:53 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22205127] found.
+févr. 09, 2016 3:05:53 PM state.S02_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22205127] OK.
+févr. 09, 2016 3:05:54 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2220512705.02.2016;11:44:56] in BaseHarness.
+févr. 09, 2016 3:05:54 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+févr. 09, 2016 3:05:54 PM entity.BaseHarness isCounterExist
+INFOS: New Harness counter [P2220512705.02.2016;11:44:56].
+févr. 09, 2016 3:05:54 PM state.S03_QRCodeScan doAction
+INFOS: Valid Harness Counter scanned [P2220512705.02.2016;11:44:56] OK.
+févr. 09, 2016 3:06:01 PM gui.UI0002_Choose_Harness <init>
+DÉSACTIVÉ: FROM ConfigUcs cu WHERE cu.harnessPart = :hp
+févr. 09, 2016 3:06:01 PM gui.UI0002_Choose_Harness <init>
+INFOS: Item found 26C42291A__P01__kltv-781__3
+févr. 09, 2016 3:06:02 PM gui.UI0002_Choose_Harness <init>
+INFOS: Item found 26C42291A__P02__3RV__3
+févr. 09, 2016 3:06:02 PM gui.UI0002_Choose_Harness <init>
+INFOS: 2 item(s) found for Harness Part[22205127].
+févr. 09, 2016 3:06:06 PM gui.UI0002_Choose_Harness mappingContextVals
+INFOS: Selected pack type : {harness_index=P01, harness_part=P22205127, uid=4, choosen_pack_type=26C42291A__P01__kltv-781__3, supplier_part_number=26C42291A, pallet_number=100000017, qty_expected=3, pack_type=kltv-781} 
+févr. 09, 2016 3:06:06 PM gui.UI0002_Choose_Harness items_listKeyPressed
+DÉSACTIVÉ: FROM ConfigUcs cu WHERE cu.supplierPartNumber = :supplierPartNumber AND cu.harnessIndex = :harnessIndex
+févr. 09, 2016 3:06:06 PM gui.UI0002_Choose_Harness items_listKeyPressed
+INFOS: Set Pallet [100000018] state to [in_process]
+févr. 09, 2016 3:06:06 PM print.PrintOpenPallet_A5 sentToDefaultJobPrinter
+INFOS: Target printer found: Win32 Printer : Fax 
+févr. 09, 2016 3:06:06 PM gui.UI0002_Choose_Harness items_listKeyPressed
+INFOS: Set Pallet [100000018] state to [printed]
+févr. 09, 2016 3:06:06 PM state.S040_PalletChoice doAction
+INFOS: Openning new container.
+févr. 09, 2016 3:06:09 PM state.S041_NewPalletScan doAction
+AVERTISSEMENT: Incorrect pallet number [NEWP]
+févr. 09, 2016 3:06:22 PM state.S041_NewPalletScan doAction
+INFOS: Scanned Pallet number [100000018] OK.
+févr. 09, 2016 3:06:22 PM state.S041_NewPalletScan doAction
+INFOS: BaseContainer created BaseContainer{id=7, createTime=Tue Feb 09 15:06:22 WET 2016, writeTime=Tue Feb 09 15:06:22 WET 2016, createId=4, writeId=4, user=Yassine HADDANI / 1002, startTime=Tue Feb 09 15:06:22 WET 2016, completeTime=null, workTime=null, palletNumber=100000018, harnessPart=22205127, harnessIndex=P01, supplierPartNumber=26C42291A, qtyExpected=3, qtyRead=1, state=open, packType=kltv-781} 
+févr. 09, 2016 3:06:22 PM entity.BaseContainer select
+INFOS: FROM BaseContainer bc ORDER BY createTime DESC
+févr. 09, 2016 3:07:28 PM entity.BaseHarness checkHarnessPartFormat
+INFOS: Invalid Harness Part scanned !
+févr. 09, 2016 3:07:28 PM state.S02_HarnessPartScan doAction
+INFOS: Invalid Harness Part scanned ! [P100000019]
+févr. 09, 2016 3:07:34 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22205127] in ConfigUCS: 22205127
+févr. 09, 2016 3:07:34 PM entity.ConfigUcs select
+INFOS: FROM ConfigUcs cu WHERE cu.harnessPart = :hp
+févr. 09, 2016 3:07:34 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22205127] found.
+févr. 09, 2016 3:07:34 PM state.S02_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22205127] OK.
+févr. 09, 2016 3:07:40 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2220512705.02.2016;11:44:53] in BaseHarness.
+févr. 09, 2016 3:07:40 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+févr. 09, 2016 3:07:40 PM entity.BaseHarness isCounterExist
+INFOS: New Harness counter [P2220512705.02.2016;11:44:53].
+févr. 09, 2016 3:07:40 PM state.S03_QRCodeScan doAction
+INFOS: Valid Harness Counter scanned [P2220512705.02.2016;11:44:53] OK.
+févr. 09, 2016 3:07:46 PM gui.UI0002_Choose_Harness <init>
+DÉSACTIVÉ: FROM ConfigUcs cu WHERE cu.harnessPart = :hp
+févr. 09, 2016 3:07:46 PM gui.UI0002_Choose_Harness <init>
+INFOS: Item found 26C42291A__P01__kltv-781__3
+févr. 09, 2016 3:07:46 PM gui.UI0002_Choose_Harness <init>
+INFOS: Item found 26C42291A__P02__3RV__3
+févr. 09, 2016 3:07:46 PM gui.UI0002_Choose_Harness <init>
+INFOS: 2 item(s) found for Harness Part[22205127].
+févr. 09, 2016 3:07:47 PM gui.UI0002_Choose_Harness mappingContextVals
+INFOS: Selected pack type : {harness_index=P01, harness_part=P22205127, uid=4, choosen_pack_type=26C42291A__P01__kltv-781__3, supplier_part_number=26C42291A, pallet_number=100000018, qty_expected=3, pack_type=kltv-781} 
+févr. 09, 2016 3:07:47 PM gui.UI0002_Choose_Harness items_listKeyPressed
+DÉSACTIVÉ: FROM ConfigUcs cu WHERE cu.supplierPartNumber = :supplierPartNumber AND cu.harnessIndex = :harnessIndex
+févr. 09, 2016 3:07:47 PM gui.UI0002_Choose_Harness items_listKeyPressed
+INFOS: Set Pallet [100000019] state to [in_process]
+févr. 09, 2016 3:07:47 PM print.PrintOpenPallet_A5 sentToDefaultJobPrinter
+INFOS: Target printer found: Win32 Printer : Fax 
+févr. 09, 2016 3:07:47 PM gui.UI0002_Choose_Harness items_listKeyPressed
+INFOS: Set Pallet [100000019] state to [printed]
+févr. 09, 2016 3:07:47 PM state.S040_PalletChoice doAction
+INFOS: Openning new container.
+févr. 09, 2016 3:08:04 PM state.S041_NewPalletScan doAction
+INFOS: Scanned Pallet number [100000019] OK.
+févr. 09, 2016 3:08:04 PM state.S041_NewPalletScan doAction
+INFOS: BaseContainer created BaseContainer{id=8, createTime=Tue Feb 09 15:08:04 WET 2016, writeTime=Tue Feb 09 15:08:04 WET 2016, createId=4, writeId=4, user=Yassine HADDANI / 1002, startTime=Tue Feb 09 15:08:04 WET 2016, completeTime=null, workTime=null, palletNumber=100000019, harnessPart=22205127, harnessIndex=P01, supplierPartNumber=26C42291A, qtyExpected=3, qtyRead=1, state=open, packType=kltv-781} 
+févr. 09, 2016 3:08:04 PM entity.BaseContainer select
+INFOS: FROM BaseContainer bc ORDER BY createTime DESC
+févr. 09, 2016 3:08:51 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_09_02] already exist!
+Print sub directory [.\print\2016_09_02.\pallet] already exist!
+Print sub directory [.\print\2016_09_02.\galia] already exist!
+
+févr. 09, 2016 3:08:53 PM state.S01_UserCodeScan doAction
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 09, 2016 3:08:53 PM state.S01_UserCodeScan doAction
+INFOS: User Yassine HADDANI / 1002 connected to host null at 2016-09-02 15:08:51.
+févr. 09, 2016 3:08:53 PM entity.BaseContainer select
+INFOS: FROM BaseContainer bc ORDER BY createTime DESC
+févr. 09, 2016 3:09:08 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_09_02] already exist!
+Print sub directory [.\print\2016_09_02.\pallet] already exist!
+Print sub directory [.\print\2016_09_02.\galia] already exist!
+
+févr. 09, 2016 3:09:10 PM state.S01_UserCodeScan doAction
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 09, 2016 3:09:10 PM state.S01_UserCodeScan doAction
+INFOS: User Yassine HADDANI / 1002 connected to host null at 2016-09-02 15:09:08.
+févr. 09, 2016 3:09:10 PM entity.BaseContainer select
+INFOS: FROM BaseContainer bc ORDER BY createTime DESC
+févr. 09, 2016 3:09:21 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_09_02] already exist!
+Print sub directory [.\print\2016_09_02.\pallet] already exist!
+Print sub directory [.\print\2016_09_02.\galia] already exist!
+
+févr. 09, 2016 3:09:25 PM state.S01_UserCodeScan doAction
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 09, 2016 3:09:25 PM state.S01_UserCodeScan doAction
+INFOS: User Yassine HADDANI / 1002 connected to host null at 2016-09-02 15:09:21.
+févr. 09, 2016 3:09:25 PM entity.BaseContainer select
+INFOS: FROM BaseContainer bc ORDER BY createTime DESC
+févr. 09, 2016 3:13:22 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_09_02] already exist!
+Print sub directory [.\print\2016_09_02.\pallet] already exist!
+Print sub directory [.\print\2016_09_02.\closing_pallet] is created!
+
+févr. 09, 2016 3:13:25 PM state.S01_UserCodeScan doAction
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 09, 2016 3:13:25 PM state.S01_UserCodeScan doAction
+INFOS: User Yassine HADDANI / 1002 connected to host null at 2016-09-02 15:13:22.
+févr. 09, 2016 3:13:25 PM entity.BaseContainer select
+INFOS: FROM BaseContainer bc ORDER BY createTime DESC
+févr. 09, 2016 7:01:31 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_09_02] already exist!
+Print sub directory [.\print\2016_09_02.\pallet] already exist!
+Print sub directory [.\print\2016_09_02.\closing_pallet] already exist!
+
+févr. 09, 2016 7:01:46 PM state.S01_UserCodeScan doAction
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 09, 2016 7:01:46 PM state.S01_UserCodeScan doAction
+INFOS: User Yassine HADDANI / 1002 connected to host null at 2016-09-02 19:01:31.
+févr. 09, 2016 7:01:46 PM entity.BaseContainer select
+INFOS: FROM BaseContainer bc ORDER BY createTime DESC
+févr. 09, 2016 7:03:42 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22205127] in ConfigUCS: 22205127
+févr. 09, 2016 7:03:42 PM entity.ConfigUcs select
+INFOS: FROM ConfigUcs cu WHERE cu.harnessPart = :hp
+févr. 09, 2016 7:03:42 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22205127] found.
+févr. 09, 2016 7:03:42 PM state.S02_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22205127] OK.
+févr. 09, 2016 7:03:57 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2220512705.02.2016;11:44:56] in BaseHarness.
+févr. 09, 2016 7:03:57 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+févr. 09, 2016 7:03:57 PM entity.BaseHarness isCounterExist
+INFOS: New Harness counter [P2220512705.02.2016;11:44:56].
+févr. 09, 2016 7:03:57 PM state.S03_QRCodeScan doAction
+INFOS: Valid Harness Counter scanned [P2220512705.02.2016;11:44:56] OK.
+févr. 09, 2016 7:04:03 PM gui.UI0002_Choose_Harness <init>
+DÉSACTIVÉ: FROM ConfigUcs cu WHERE cu.harnessPart = :hp
+févr. 09, 2016 7:04:03 PM gui.UI0002_Choose_Harness <init>
+INFOS: Item found 22205127--26C42291A--P01--kltv-781--3
+févr. 09, 2016 7:04:03 PM gui.UI0002_Choose_Harness <init>
+INFOS: Item found 22205127--26C42291A--P02--3RV--3
+févr. 09, 2016 7:04:03 PM gui.UI0002_Choose_Harness <init>
+INFOS: 2 item(s) found for Harness Part[22205127].
+févr. 09, 2016 7:05:32 PM gui.UI0002_Choose_Harness mappingContextVals
+INFOS: Selected pack type : {harness_index=26C42291A, harness_part=P22205127, uid=4, choosen_pack_type=22205127--26C42291A--P02--3RV--3, supplier_part_number=22205127, pallet_number=null, qty_expected=3RV, pack_type=P02} 
+févr. 09, 2016 7:05:32 PM gui.UI0002_Choose_Harness items_listKeyPressed
+DÉSACTIVÉ: FROM ConfigUcs cu WHERE cu.supplierPartNumber = :supplierPartNumber AND cu.harnessIndex = :harnessIndex
+févr. 09, 2016 7:13:09 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_09_02] already exist!
+Print sub directory [.\print\2016_09_02.\pallet] already exist!
+Print sub directory [.\print\2016_09_02.\closing_pallet] already exist!
+
+févr. 09, 2016 7:13:11 PM state.S01_UserCodeScan doAction
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 09, 2016 7:13:11 PM state.S01_UserCodeScan doAction
+INFOS: User Yassine HADDANI / 1002 connected to host null at 2016-09-02 19:13:09.
+févr. 09, 2016 7:13:11 PM entity.BaseContainer select
+INFOS: FROM BaseContainer bc ORDER BY createTime DESC
+févr. 09, 2016 7:13:16 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22205127] in ConfigUCS: 22205127
+févr. 09, 2016 7:13:16 PM entity.ConfigUcs select
+INFOS: FROM ConfigUcs cu WHERE cu.harnessPart = :hp
+févr. 09, 2016 7:13:16 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22205127] found.
+févr. 09, 2016 7:13:16 PM state.S02_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22205127] OK.
+févr. 09, 2016 7:13:20 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2220512705.02.2016;11:44:56] in BaseHarness.
+févr. 09, 2016 7:13:20 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+févr. 09, 2016 7:13:20 PM entity.BaseHarness isCounterExist
+INFOS: New Harness counter [P2220512705.02.2016;11:44:56].
+févr. 09, 2016 7:13:20 PM state.S03_QRCodeScan doAction
+INFOS: Valid Harness Counter scanned [P2220512705.02.2016;11:44:56] OK.
+févr. 09, 2016 7:13:23 PM gui.UI0002_Choose_Harness <init>
+DÉSACTIVÉ: FROM ConfigUcs cu WHERE cu.harnessPart = :hp
+févr. 09, 2016 7:13:23 PM gui.UI0002_Choose_Harness <init>
+INFOS: Item found 22205127--26C42291A--P01--kltv-781--3
+févr. 09, 2016 7:13:23 PM gui.UI0002_Choose_Harness <init>
+INFOS: Item found 22205127--26C42291A--P02--3RV--3
+févr. 09, 2016 7:13:23 PM gui.UI0002_Choose_Harness <init>
+INFOS: 2 item(s) found for Harness Part[22205127].
+févr. 09, 2016 7:14:06 PM gui.UI0002_Choose_Harness mappingContextVals
+INFOS: Selected pack type : {harness_index=P02, harness_part=22205127, uid=4, choosen_pack_type=22205127--26C42291A--P02--3RV--3, supplier_part_number=26C42291A, pallet_number=null, qty_expected=3, pack_type=3RV} 
+févr. 09, 2016 7:14:06 PM gui.UI0002_Choose_Harness items_listKeyPressed
+DÉSACTIVÉ: FROM ConfigUcs cu WHERE cu.supplierPartNumber = :supplierPartNumber AND cu.harnessIndex = :harnessIndex
+févr. 09, 2016 7:14:07 PM gui.UI0002_Choose_Harness items_listKeyPressed
+INFOS: Set Pallet [100000020] state to [in_process]
+févr. 09, 2016 7:14:07 PM print.PrintOpenPallet_A5 sentToDefaultJobPrinter
+INFOS: Target printer found: Win32 Printer : Fax 
+févr. 09, 2016 7:14:07 PM gui.UI0002_Choose_Harness items_listKeyPressed
+INFOS: Set Pallet [100000020] state to [printed]
+févr. 09, 2016 7:14:07 PM state.S040_PalletChoice doAction
+INFOS: Openning new container.
+févr. 09, 2016 7:14:38 PM state.S041_NewPalletScan doAction
+AVERTISSEMENT: Incorrect pallet number [10000010]
+févr. 09, 2016 7:14:49 PM state.S041_NewPalletScan doAction
+INFOS: Scanned Pallet number [100000020] OK.
+févr. 09, 2016 7:14:49 PM state.S041_NewPalletScan doAction
+INFOS: BaseContainer created BaseContainer{id=9, createTime=Tue Feb 09 19:14:49 WET 2016, writeTime=Tue Feb 09 19:14:49 WET 2016, createId=4, writeId=4, user=1002, startTime=Tue Feb 09 19:14:49 WET 2016, completeTime=null, workTime=null, palletNumber=100000020, harnessPart=2205127, harnessIndex=P02, supplierPartNumber=26C42291A, qtyExpected=3, qtyRead=1, state=open, packType=3RV} 
+févr. 09, 2016 7:14:49 PM entity.BaseContainer select
+INFOS: FROM BaseContainer bc ORDER BY createTime DESC
+févr. 09, 2016 7:18:25 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22205127] in ConfigUCS: 22205127
+févr. 09, 2016 7:18:25 PM entity.ConfigUcs select
+INFOS: FROM ConfigUcs cu WHERE cu.harnessPart = :hp
+févr. 09, 2016 7:18:25 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22205127] found.
+févr. 09, 2016 7:18:25 PM state.S02_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22205127] OK.
+févr. 09, 2016 7:18:28 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2220512705.02.2016;11:44:56] in BaseHarness.
+févr. 09, 2016 7:18:28 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+févr. 09, 2016 7:18:28 PM entity.BaseHarness isCounterExist
+INFOS: New Harness counter [P2220512705.02.2016;11:44:56].
+févr. 09, 2016 7:18:28 PM state.S03_QRCodeScan doAction
+INFOS: Valid Harness Counter scanned [P2220512705.02.2016;11:44:56] OK.
+févr. 09, 2016 7:18:48 PM gui.UI0002_Choose_Harness <init>
+DÉSACTIVÉ: FROM ConfigUcs cu WHERE cu.harnessPart = :hp
+févr. 09, 2016 7:18:48 PM gui.UI0002_Choose_Harness <init>
+INFOS: Item found 22205127--26C42291A--P01--kltv-781--3
+févr. 09, 2016 7:18:48 PM gui.UI0002_Choose_Harness <init>
+INFOS: Item found 22205127--26C42291A--P02--3RV--3
+févr. 09, 2016 7:18:48 PM gui.UI0002_Choose_Harness <init>
+INFOS: 2 item(s) found for Harness Part[22205127].
+févr. 09, 2016 7:18:51 PM gui.UI0002_Choose_Harness mappingContextVals
+INFOS: Selected pack type : {harness_index=P01, harness_part=22205127, uid=4, choosen_pack_type=22205127--26C42291A--P01--kltv-781--3, supplier_part_number=26C42291A, pallet_number=100000020, qty_expected=3, pack_type=kltv-781} 
+févr. 09, 2016 7:18:51 PM gui.UI0002_Choose_Harness items_listKeyPressed
+DÉSACTIVÉ: FROM ConfigUcs cu WHERE cu.supplierPartNumber = :supplierPartNumber AND cu.harnessIndex = :harnessIndex
+févr. 09, 2016 7:18:51 PM gui.UI0002_Choose_Harness items_listKeyPressed
+INFOS: Set Pallet [100000021] state to [in_process]
+févr. 09, 2016 7:18:51 PM print.PrintOpenPallet_A5 sentToDefaultJobPrinter
+INFOS: Target printer found: Win32 Printer : Fax 
+févr. 09, 2016 7:18:52 PM gui.UI0002_Choose_Harness items_listKeyPressed
+INFOS: Set Pallet [100000021] state to [printed]
+févr. 09, 2016 7:18:52 PM state.S040_PalletChoice doAction
+INFOS: Openning new container.
+févr. 09, 2016 7:18:57 PM state.S041_NewPalletScan doAction
+INFOS: Scanned Pallet number [100000021] OK.
+févr. 09, 2016 7:18:57 PM state.S041_NewPalletScan doAction
+INFOS: BaseContainer created BaseContainer{id=10, createTime=Tue Feb 09 19:18:57 WET 2016, writeTime=Tue Feb 09 19:18:57 WET 2016, createId=4, writeId=4, user=1002, startTime=Tue Feb 09 19:18:57 WET 2016, completeTime=null, workTime=null, palletNumber=100000021, harnessPart=2205127, harnessIndex=P01, supplierPartNumber=26C42291A, qtyExpected=3, qtyRead=1, state=open, packType=kltv-781} 
+févr. 09, 2016 7:18:57 PM entity.BaseContainer select
+INFOS: FROM BaseContainer bc ORDER BY createTime DESC
+févr. 09, 2016 7:21:57 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_09_02] already exist!
+Print sub directory [.\print\2016_09_02.\pallet] already exist!
+Print sub directory [.\print\2016_09_02.\closing_pallet] already exist!
+
+févr. 09, 2016 8:25:36 PM state.S01_UserCodeScan doAction
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 09, 2016 8:25:36 PM state.S01_UserCodeScan doAction
+INFOS: User Yassine HADDANI / 1002 connected to host null at 2016-09-02 19:21:57.
+févr. 09, 2016 8:25:36 PM entity.BaseContainer select
+INFOS: FROM BaseContainer bc ORDER BY createTime DESC
+févr. 09, 2016 8:26:21 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22205126] in ConfigUCS: 22205126
+févr. 09, 2016 8:26:21 PM entity.ConfigUcs select
+INFOS: FROM ConfigUcs cu WHERE cu.harnessPart = :hp
+févr. 09, 2016 8:26:22 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22205126] NOT found.
+févr. 09, 2016 8:26:22 PM state.S02_HarnessPartScan doAction
+INFOS: Invalid Harness Part scanned ! [P22205126]
+févr. 09, 2016 8:26:27 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22205127] in ConfigUCS: 22205127
+févr. 09, 2016 8:26:27 PM entity.ConfigUcs select
+INFOS: FROM ConfigUcs cu WHERE cu.harnessPart = :hp
+févr. 09, 2016 8:26:27 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22205127] found.
+févr. 09, 2016 8:26:27 PM state.S02_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22205127] OK.
+févr. 09, 2016 8:34:05 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2220512705.02.2016;11:44:56] in BaseHarness.
+févr. 09, 2016 8:34:05 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+févr. 09, 2016 8:34:05 PM entity.BaseHarness isCounterExist
+INFOS: New Harness counter [P2220512705.02.2016;11:44:56].
+févr. 09, 2016 8:34:05 PM state.S03_QRCodeScan doAction
+INFOS: Valid Harness Counter scanned [P2220512705.02.2016;11:44:56] OK.
+févr. 09, 2016 8:34:08 PM gui.UI0002_Choose_Harness <init>
+DÉSACTIVÉ: FROM ConfigUcs cu WHERE cu.harnessPart = :hp
+févr. 09, 2016 8:34:08 PM gui.UI0002_Choose_Harness <init>
+INFOS: Item found 22205127--26C42291A--P01--kltv-781--3
+févr. 09, 2016 8:34:08 PM gui.UI0002_Choose_Harness <init>
+INFOS: Item found 22205127--26C42291A--P02--3RV--3
+févr. 09, 2016 8:34:08 PM gui.UI0002_Choose_Harness <init>
+INFOS: 2 item(s) found for Harness Part[22205127].
+févr. 09, 2016 8:34:13 PM gui.UI0002_Choose_Harness mappingContextVals
+INFOS: Selected pack type : {harness_index=P02, harness_part=22205127, uid=4, choosen_pack_type=22205127--26C42291A--P02--3RV--3, supplier_part_number=26C42291A, pallet_number=null, qty_expected=3, pack_type=3RV} 
+févr. 09, 2016 8:34:13 PM gui.UI0002_Choose_Harness items_listKeyPressed
+DÉSACTIVÉ: FROM ConfigUcs cu WHERE cu.supplierPartNumber = :supplierPartNumber AND cu.harnessIndex = :harnessIndex
+févr. 09, 2016 8:34:14 PM gui.UI0002_Choose_Harness items_listKeyPressed
+INFOS: Set Pallet [100000022] state to [in_process]
+févr. 09, 2016 8:34:14 PM print.PrintOpenPallet_A5 sentToDefaultJobPrinter
+INFOS: Target printer found: Win32 Printer : Fax 
+févr. 09, 2016 8:34:14 PM gui.UI0002_Choose_Harness items_listKeyPressed
+INFOS: Set Pallet [100000022] state to [printed]
+févr. 09, 2016 8:34:14 PM state.S040_PalletChoice doAction
+INFOS: Openning new container.
+févr. 09, 2016 8:34:24 PM state.S041_NewPalletScan doAction
+INFOS: Scanned Pallet number [100000022] OK.
+févr. 09, 2016 8:34:24 PM state.S041_NewPalletScan doAction
+INFOS: BaseContainer created BaseContainer{id=11, createTime=Tue Feb 09 20:34:24 WET 2016, writeTime=Tue Feb 09 20:34:24 WET 2016, createId=4, writeId=4, user=1002, startTime=Tue Feb 09 20:34:24 WET 2016, completeTime=null, workTime=null, palletNumber=100000022, harnessPart=22205127, harnessIndex=P02, supplierPartNumber=26C42291A, qtyExpected=3, qtyRead=1, state=open, packType=3RV} 
+févr. 09, 2016 8:34:24 PM entity.BaseContainer select
+INFOS: FROM BaseContainer bc ORDER BY createTime DESC
+févr. 09, 2016 8:34:53 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_09_02] already exist!
+Print sub directory [.\print\2016_09_02.\pallet] already exist!
+Print sub directory [.\print\2016_09_02.\closing_pallet] already exist!
+
+févr. 09, 2016 8:34:56 PM state.S01_UserCodeScan doAction
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 09, 2016 8:34:56 PM state.S01_UserCodeScan doAction
+INFOS: User Yassine HADDANI / 1002 connected to host null at 2016-09-02 20:34:53.
+févr. 09, 2016 8:34:56 PM entity.BaseContainer select
+INFOS: FROM BaseContainer bc ORDER BY createTime DESC
+févr. 09, 2016 8:35:07 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22205127] in ConfigUCS: 22205127
+févr. 09, 2016 8:35:07 PM entity.ConfigUcs select
+INFOS: FROM ConfigUcs cu WHERE cu.harnessPart = :hp
+févr. 09, 2016 8:35:07 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22205127] found.
+févr. 09, 2016 8:35:07 PM state.S02_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22205127] OK.
+févr. 09, 2016 8:35:22 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2220512705.02.2016;11:44:56] in BaseHarness.
+févr. 09, 2016 8:35:22 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+févr. 09, 2016 8:35:22 PM entity.BaseHarness isCounterExist
+INFOS: New Harness counter [P2220512705.02.2016;11:44:56].
+févr. 09, 2016 8:35:22 PM state.S03_QRCodeScan doAction
+INFOS: Valid Harness Counter scanned [P2220512705.02.2016;11:44:56] OK.
+févr. 09, 2016 8:35:26 PM gui.UI0002_Choose_Harness <init>
+DÉSACTIVÉ: FROM ConfigUcs cu WHERE cu.harnessPart = :hp
+févr. 09, 2016 8:35:26 PM gui.UI0002_Choose_Harness <init>
+INFOS: Item found 22205127--26C42291A--P01--kltv-781--3
+févr. 09, 2016 8:35:26 PM gui.UI0002_Choose_Harness <init>
+INFOS: Item found 22205127--26C42291A--P02--3RV--3
+févr. 09, 2016 8:35:26 PM gui.UI0002_Choose_Harness <init>
+INFOS: 2 item(s) found for Harness Part[22205127].
+févr. 09, 2016 8:38:23 PM gui.UI0002_Choose_Harness mappingContextVals
+INFOS: Selected pack type : {harness_index=P02, harness_part=22205127, uid=4, choosen_pack_type=22205127--26C42291A--P02--3RV--3, supplier_part_number=26C42291A, pallet_number=null, qty_expected=3, pack_type=3RV} 
+févr. 09, 2016 8:38:23 PM gui.UI0002_Choose_Harness items_listKeyPressed
+DÉSACTIVÉ: FROM ConfigUcs cu WHERE cu.supplierPartNumber = :supplierPartNumber AND cu.harnessIndex = :harnessIndex
+févr. 09, 2016 8:38:24 PM gui.UI0002_Choose_Harness items_listKeyPressed
+INFOS: Set Pallet [100000023] state to [in_process]
+févr. 09, 2016 8:38:24 PM print.PrintOpenPallet_A5 sentToDefaultJobPrinter
+INFOS: Target printer found: Win32 Printer : Fax 
+févr. 09, 2016 8:38:24 PM gui.UI0002_Choose_Harness items_listKeyPressed
+INFOS: Set Pallet [100000023] state to [printed]
+févr. 09, 2016 8:38:24 PM state.S040_PalletChoice doAction
+INFOS: Openning new container.
+févr. 09, 2016 8:38:31 PM state.S041_NewPalletScan doAction
+INFOS: Scanned Pallet number [100000023] OK.
+févr. 09, 2016 8:38:31 PM state.S041_NewPalletScan doAction
+INFOS: BaseContainer created BaseContainer{id=12, createTime=Tue Feb 09 20:38:31 WET 2016, writeTime=Tue Feb 09 20:38:31 WET 2016, createId=4, writeId=4, user=1002, startTime=Tue Feb 09 20:38:31 WET 2016, completeTime=null, workTime=null, palletNumber=100000023, harnessPart=22205127, harnessIndex=P02, supplierPartNumber=26C42291A, qtyExpected=3, qtyRead=1, state=open, packType=3RV} 
+févr. 09, 2016 8:38:31 PM entity.BaseContainer select
+INFOS: FROM BaseContainer bc ORDER BY createTime DESC
+févr. 09, 2016 9:28:10 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_09_02] already exist!
+Print sub directory [.\print\2016_09_02.\pallet] already exist!
+Print sub directory [.\print\2016_09_02.\closing_pallet] already exist!
+
+févr. 09, 2016 9:28:14 PM state.S01_UserCodeScan doAction
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 09, 2016 9:28:14 PM state.S01_UserCodeScan doAction
+INFOS: User Yassine HADDANI / 1002 connected to host null at 2016-09-02 21:28:10.
+févr. 09, 2016 9:28:14 PM entity.BaseContainer select
+INFOS: FROM BaseContainer bc ORDER BY createTime DESC
+févr. 09, 2016 9:57:33 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_09_02] already exist!
+Print sub directory [.\print\2016_09_02.\pallet] already exist!
+Print sub directory [.\print\2016_09_02.\closing_pallet] already exist!
+
+févr. 09, 2016 9:57:39 PM state.S01_UserCodeScan doAction
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 09, 2016 9:57:39 PM state.S01_UserCodeScan doAction
+INFOS: User Yassine HADDANI / 1002 connected to host null at 2016-09-02 21:57:33.
+févr. 09, 2016 9:57:39 PM entity.BaseContainer select
+INFOS: FROM BaseContainer bc ORDER BY createTime DESC
+févr. 09, 2016 9:57:45 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22205127] in ConfigUCS: 22205127
+févr. 09, 2016 9:57:45 PM entity.ConfigUcs select
+INFOS: FROM ConfigUcs cu WHERE cu.harnessPart = :hp
+févr. 09, 2016 9:57:45 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22205127] found.
+févr. 09, 2016 9:57:45 PM state.S02_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22205127] OK.
+févr. 09, 2016 9:57:52 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2220512705.02.2016;11:44:56] in BaseHarness.
+févr. 09, 2016 9:57:52 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+févr. 09, 2016 9:57:52 PM entity.BaseHarness isCounterExist
+INFOS: New Harness counter [P2220512705.02.2016;11:44:56].
+févr. 09, 2016 9:57:52 PM state.S03_QRCodeScan doAction
+INFOS: Valid Harness Counter scanned [P2220512705.02.2016;11:44:56] OK.
+févr. 09, 2016 9:57:54 PM gui.UI0002_Choose_Harness <init>
+DÉSACTIVÉ: FROM ConfigUcs cu WHERE cu.harnessPart = :hp
+févr. 09, 2016 9:57:54 PM gui.UI0002_Choose_Harness <init>
+INFOS: Item found 22205127--26C42291A--P01--kltv-781--3
+févr. 09, 2016 9:57:54 PM gui.UI0002_Choose_Harness <init>
+INFOS: Item found 22205127--26C42291A--P02--3RV--3
+févr. 09, 2016 9:57:54 PM gui.UI0002_Choose_Harness <init>
+INFOS: 2 item(s) found for Harness Part[22205127].
+févr. 09, 2016 9:58:08 PM gui.UI0002_Choose_Harness mappingContextVals
+INFOS: Selected pack type : {harness_index=P02, harness_part=22205127, uid=4, choosen_pack_type=22205127--26C42291A--P02--3RV--3, supplier_part_number=26C42291A, harness_counter=P2220512705.02.2016;11:44:56, pallet_number=null, qty_expected=3, pack_type=3RV} 
+févr. 09, 2016 9:58:08 PM gui.UI0002_Choose_Harness items_listKeyPressed
+DÉSACTIVÉ: FROM ConfigUcs cu WHERE cu.supplierPartNumber = :supplierPartNumber AND cu.harnessIndex = :harnessIndex
+févr. 09, 2016 9:58:08 PM gui.UI0002_Choose_Harness items_listKeyPressed
+INFOS: Set Pallet [100000024] state to [in_process]
+févr. 09, 2016 9:58:08 PM print.PrintOpenPallet_A5 sentToDefaultJobPrinter
+INFOS: Target printer found: Win32 Printer : Fax 
+févr. 09, 2016 9:58:08 PM gui.UI0002_Choose_Harness items_listKeyPressed
+INFOS: Set Pallet [100000024] state to [printed]
+févr. 09, 2016 9:58:08 PM state.S040_PalletChoice doAction
+INFOS: Openning new container.
+févr. 09, 2016 9:58:18 PM state.S041_NewPalletScan doAction
+AVERTISSEMENT: Incorrect pallet number [100000022]
+févr. 09, 2016 9:58:23 PM state.S041_NewPalletScan doAction
+INFOS: Scanned Pallet number [100000024] OK.
+févr. 09, 2016 9:58:23 PM state.S041_NewPalletScan doAction
+INFOS: BaseContainer created BaseContainer{id=13, createTime=Tue Feb 09 21:58:23 WET 2016, writeTime=Tue Feb 09 21:58:23 WET 2016, createId=4, writeId=4, user=1002, startTime=Tue Feb 09 21:58:23 WET 2016, completeTime=null, workTime=null, palletNumber=100000024, harnessPart=22205127, harnessIndex=P02, supplierPartNumber=26C42291A, qtyExpected=3, qtyRead=1, state=open, packType=3RV} 
+févr. 09, 2016 9:58:23 PM entity.BaseContainer select
+INFOS: FROM BaseContainer bc ORDER BY createTime DESC
+févr. 09, 2016 10:05:28 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_09_02] already exist!
+Print sub directory [.\print\2016_09_02.\pallet] already exist!
+Print sub directory [.\print\2016_09_02.\closing_pallet] already exist!
+
+févr. 09, 2016 10:05:32 PM state.S01_UserCodeScan doAction
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 09, 2016 10:05:32 PM state.S01_UserCodeScan doAction
+INFOS: User Yassine HADDANI / 1002 connected to host null at 2016-09-02 22:05:28.
+févr. 09, 2016 10:05:32 PM entity.BaseContainer select
+INFOS: FROM BaseContainer bc ORDER BY createTime DESC
+févr. 09, 2016 10:06:00 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22205127] in ConfigUCS: 22205127
+févr. 09, 2016 10:06:00 PM entity.ConfigUcs select
+INFOS: FROM ConfigUcs cu WHERE cu.harnessPart = :hp
+févr. 09, 2016 10:06:00 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22205127] found.
+févr. 09, 2016 10:06:00 PM state.S02_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22205127] OK.
+févr. 09, 2016 10:16:50 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_09_02] already exist!
+Print sub directory [.\print\2016_09_02.\pallet] already exist!
+Print sub directory [.\print\2016_09_02.\closing_pallet] already exist!
+
+févr. 09, 2016 10:16:54 PM state.S01_UserCodeScan doAction
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 09, 2016 10:16:54 PM state.S01_UserCodeScan doAction
+INFOS: User Yassine HADDANI / 1002 connected to host null at 2016-09-02 22:16:50.
+févr. 09, 2016 10:16:54 PM entity.BaseContainer select
+INFOS: FROM BaseContainer bc ORDER BY createTime DESC
+févr. 09, 2016 10:17:04 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22205127] in ConfigUCS: 22205127
+févr. 09, 2016 10:17:04 PM entity.ConfigUcs select
+INFOS: FROM ConfigUcs cu WHERE cu.harnessPart = :hp
+févr. 09, 2016 10:17:04 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22205127] found.
+févr. 09, 2016 10:17:04 PM state.S02_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22205127] OK.
+févr. 09, 2016 10:19:35 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_09_02] already exist!
+Print sub directory [.\print\2016_09_02.\pallet] already exist!
+Print sub directory [.\print\2016_09_02.\closing_pallet] already exist!
+
+févr. 09, 2016 10:19:37 PM state.S01_UserCodeScan doAction
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 09, 2016 10:19:38 PM state.S01_UserCodeScan doAction
+INFOS: User Yassine HADDANI / 1002 connected to host null at 2016-09-02 22:19:35.
+févr. 09, 2016 10:19:38 PM entity.BaseContainer select
+INFOS: FROM BaseContainer bc ORDER BY createTime DESC
+févr. 09, 2016 10:19:41 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22205127] in ConfigUCS: 22205127
+févr. 09, 2016 10:19:41 PM entity.ConfigUcs select
+INFOS: FROM ConfigUcs cu WHERE cu.harnessPart = :hp
+févr. 09, 2016 10:19:41 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22205127] found.
+févr. 09, 2016 10:19:41 PM state.S02_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22205127] OK.
+févr. 09, 2016 10:19:44 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2220512705.02.2016;11:44:56] in BaseHarness.
+févr. 09, 2016 10:19:44 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+févr. 09, 2016 10:19:44 PM entity.BaseHarness isCounterExist
+AVERTISSEMENT: Harness counter [P2220512705.02.2016;11:44:56] already scanned !
+févr. 09, 2016 10:20:42 PM entity.BaseHarness checkCounterFormat
+INFOS: Invalid Harness Part scanned [J2220512709.02.2016;22:01:00]!
+févr. 09, 2016 10:21:13 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2210512709.02.2016;22:01:00] in BaseHarness.
+févr. 09, 2016 10:21:13 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+févr. 09, 2016 10:21:13 PM entity.BaseHarness isCounterExist
+INFOS: New Harness counter [P2210512709.02.2016;22:01:00].
+févr. 09, 2016 10:21:13 PM state.S03_QRCodeScan doAction
+INFOS: Valid Harness Counter scanned [P2210512709.02.2016;22:01:00] OK.
+févr. 09, 2016 10:21:53 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_09_02] already exist!
+Print sub directory [.\print\2016_09_02.\pallet] already exist!
+Print sub directory [.\print\2016_09_02.\closing_pallet] already exist!
+
+févr. 09, 2016 10:21:59 PM state.S01_UserCodeScan doAction
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 09, 2016 10:21:59 PM state.S01_UserCodeScan doAction
+INFOS: User Oussama EZZIOURI / 1001 connected to host null at 2016-09-02 22:21:53.
+févr. 09, 2016 10:21:59 PM entity.BaseContainer select
+INFOS: FROM BaseContainer bc ORDER BY createTime DESC
+févr. 09, 2016 10:22:02 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22205127] in ConfigUCS: 22205127
+févr. 09, 2016 10:22:02 PM entity.ConfigUcs select
+INFOS: FROM ConfigUcs cu WHERE cu.harnessPart = :hp
+févr. 09, 2016 10:22:02 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22205127] found.
+févr. 09, 2016 10:22:02 PM state.S02_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22205127] OK.
+févr. 09, 2016 10:22:06 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2220512709.02.2016;22:01:00] in BaseHarness.
+févr. 09, 2016 10:22:06 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+févr. 09, 2016 10:22:06 PM entity.BaseHarness isCounterExist
+INFOS: New Harness counter [P2220512709.02.2016;22:01:00].
+févr. 09, 2016 10:22:06 PM state.S03_QRCodeScan doAction
+INFOS: Valid Harness Counter scanned [P2220512709.02.2016;22:01:00] OK.
+févr. 09, 2016 10:22:13 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_09_02] already exist!
+Print sub directory [.\print\2016_09_02.\pallet] already exist!
+Print sub directory [.\print\2016_09_02.\closing_pallet] already exist!
+
+févr. 09, 2016 10:22:16 PM state.S01_UserCodeScan doAction
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 09, 2016 10:22:16 PM state.S01_UserCodeScan doAction
+INFOS: User Oussama EZZIOURI / 1001 connected to host null at 2016-09-02 22:22:13.
+févr. 09, 2016 10:22:16 PM entity.BaseContainer select
+INFOS: FROM BaseContainer bc ORDER BY createTime DESC
+févr. 09, 2016 10:22:22 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22205127] in ConfigUCS: 22205127
+févr. 09, 2016 10:22:22 PM entity.ConfigUcs select
+INFOS: FROM ConfigUcs cu WHERE cu.harnessPart = :hp
+févr. 09, 2016 10:22:22 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22205127] found.
+févr. 09, 2016 10:22:22 PM state.S02_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22205127] OK.
+févr. 09, 2016 10:22:27 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2020512709.02.2016;22:01:00] in BaseHarness.
+févr. 09, 2016 10:22:27 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+févr. 09, 2016 10:22:27 PM entity.BaseHarness isCounterExist
+INFOS: New Harness counter [P2020512709.02.2016;22:01:00].
+févr. 09, 2016 10:22:43 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2220512709.02.2016;22:01:00] in BaseHarness.
+févr. 09, 2016 10:22:43 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+févr. 09, 2016 10:22:43 PM entity.BaseHarness isCounterExist
+INFOS: New Harness counter [P2220512709.02.2016;22:01:00].
+févr. 09, 2016 10:22:43 PM state.S03_QRCodeScan doAction
+INFOS: Valid Harness Counter scanned [P2220512709.02.2016;22:01:00] OK.

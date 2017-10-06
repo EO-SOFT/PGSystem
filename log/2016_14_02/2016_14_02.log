@@ -1,0 +1,45 @@
+févr. 14, 2016 7:12:19 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_14_02] is created!
+Print sub directory [.\print\2016_14_02.\pallet] is created!
+Print sub directory [.\print\2016_14_02.\closing_pallet] is created!
+
+févr. 14, 2016 7:17:37 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_14_02] already exist!
+Print sub directory [.\print\2016_14_02.\pallet] already exist!
+Print sub directory [.\print\2016_14_02.\closing_pallet] already exist!
+
+févr. 14, 2016 7:34:23 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_14_02] already exist!
+Print sub directory [.\print\2016_14_02.\pallet] already exist!
+Print sub directory [.\print\2016_14_02.\closing_pallet] already exist!
+
+févr. 14, 2016 7:34:23 PM entity.BaseContainer select
+INFOS: FROM BaseContainer bc ORDER BY createTime DESC
+févr. 14, 2016 7:35:40 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_14_02] already exist!
+Print sub directory [.\print\2016_14_02.\pallet] already exist!
+Print sub directory [.\print\2016_14_02.\closing_pallet] already exist!
+
+févr. 14, 2016 7:35:41 PM entity.BaseContainer select
+INFOS: FROM BaseContainer bc ORDER BY createTime DESC
+févr. 14, 2016 7:41:14 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_14_02] already exist!
+Print sub directory [.\print\2016_14_02.\pallet] already exist!
+Print sub directory [.\print\2016_14_02.\closing_pallet] already exist!
+
+févr. 14, 2016 7:41:14 PM entity.BaseContainer select
+INFOS: FROM BaseContainer bc ORDER BY createTime DESC
+févr. 14, 2016 7:42:00 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_14_02] already exist!
+Print sub directory [.\print\2016_14_02.\pallet] already exist!
+Print sub directory [.\print\2016_14_02.\closing_pallet] already exist!
+
+févr. 14, 2016 7:42:01 PM entity.BaseContainer select
+INFOS: FROM BaseContainer bc ORDER BY createTime DESC
+févr. 14, 2016 7:42:41 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_14_02] already exist!
+Print sub directory [.\print\2016_14_02.\pallet] already exist!
+Print sub directory [.\print\2016_14_02.\closing_pallet] already exist!
+
+févr. 14, 2016 7:42:42 PM entity.BaseContainer select
+INFOS: FROM BaseContainer bc ORDER BY createTime DESC

@@ -1,0 +1,112 @@
+juin 01, 2017 11:19:14 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_06_01] is created!
+Print sub directory [.\print\2017_06_01.\open_sheet] is created!
+Print sub directory [.\print\2017_06_01.\closing_sheet] is created!
+Print sub directory [.\print\2017_06_01.\picking_label] is created!
+Print sub directory [.\print\2017_06_01.\dispatch_label] is created!
+
+juin 01, 2017 11:19:48 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_06_01] already exist!
+Print sub directory [.\print\2017_06_01.\open_sheet] already exist!
+Print sub directory [.\print\2017_06_01.\closing_sheet] already exist!
+Print sub directory [.\print\2017_06_01.\picking_label] already exist!
+Print sub directory [.\print\2017_06_01.\dispatch_label] already exist!
+
+juin 01, 2017 11:19:53 AM gui.warehouse_dispatch.WAREHOUSE_DISPATCH_UI0003_PasswordRequest connect
+INFOS: User OUSSAMA EZZIOURI / 9999 connected to host WSMA7040 at 2017-06-01 11:19:53 Dispatch interface : .
+juin 01, 2017 11:21:42 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+juin 01, 2017 11:21:54 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+juin 01, 2017 11:21:54 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+juin 01, 2017 11:21:55 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+juin 01, 2017 11:21:55 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+juin 01, 2017 11:21:55 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+juin 01, 2017 11:21:55 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+juin 01, 2017 2:52:25 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_06_01] already exist!
+Print sub directory [.\print\2017_06_01.\open_sheet] already exist!
+Print sub directory [.\print\2017_06_01.\closing_sheet] already exist!
+Print sub directory [.\print\2017_06_01.\picking_label] already exist!
+Print sub directory [.\print\2017_06_01.\dispatch_label] already exist!
+
+juin 01, 2017 2:52:39 PM gui.warehouse_dispatch.WAREHOUSE_DISPATCH_UI0003_PasswordRequest connect
+INFOS: User OUSSAMA EZZIOURI / 9999 connected to host WSMA7040 at 2017-06-01 14:52:39 Dispatch interface : .
+juin 01, 2017 3:03:38 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_06_01] already exist!
+Print sub directory [.\print\2017_06_01.\open_sheet] already exist!
+Print sub directory [.\print\2017_06_01.\closing_sheet] already exist!
+Print sub directory [.\print\2017_06_01.\picking_label] already exist!
+Print sub directory [.\print\2017_06_01.\dispatch_label] already exist!
+
+juin 01, 2017 3:03:56 PM gui.warehouse_dispatch.WAREHOUSE_DISPATCH_UI0003_PasswordRequest connect
+INFOS: User OUSSAMA EZZIOURI / 9999 connected to host WSMA7040 at 2017-06-01 15:03:56 Dispatch interface : .
+juin 01, 2017 3:05:17 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_06_01] already exist!
+Print sub directory [.\print\2017_06_01.\open_sheet] already exist!
+Print sub directory [.\print\2017_06_01.\closing_sheet] already exist!
+Print sub directory [.\print\2017_06_01.\picking_label] already exist!
+Print sub directory [.\print\2017_06_01.\dispatch_label] already exist!
+
+juin 01, 2017 3:05:21 PM gui.warehouse_dispatch.WAREHOUSE_DISPATCH_UI0003_PasswordRequest connect
+INFOS: User OUSSAMA EZZIOURI / 9999 connected to host WSMA7040 at 2017-06-01 15:05:21 Dispatch interface : .
+juin 01, 2017 3:06:03 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_06_01] already exist!
+Print sub directory [.\print\2017_06_01.\open_sheet] already exist!
+Print sub directory [.\print\2017_06_01.\closing_sheet] already exist!
+Print sub directory [.\print\2017_06_01.\picking_label] already exist!
+Print sub directory [.\print\2017_06_01.\dispatch_label] already exist!
+
+juin 01, 2017 3:06:14 PM gui.warehouse_dispatch.WAREHOUSE_DISPATCH_UI0003_PasswordRequest connect
+INFOS: User OUSSAMA EZZIOURI / 9999 connected to host WSMA7040 at 2017-06-01 15:06:14 Dispatch interface : .
+juin 01, 2017 3:08:57 PM gui.packaging.PACKAGING_UI0001_Main loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord ORDER BY id ASC
+juin 01, 2017 3:08:58 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+juin 01, 2017 3:08:58 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+juin 01, 2017 3:08:59 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+juin 01, 2017 3:23:35 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_06_01] already exist!
+Print sub directory [.\print\2017_06_01.\open_sheet] already exist!
+Print sub directory [.\print\2017_06_01.\closing_sheet] already exist!
+Print sub directory [.\print\2017_06_01.\picking_label] already exist!
+Print sub directory [.\print\2017_06_01.\dispatch_label] already exist!
+
+juin 01, 2017 3:23:47 PM gui.warehouse_dispatch.WAREHOUSE_DISPATCH_UI0003_PasswordRequest connect
+INFOS: User OUSSAMA EZZIOURI / 9999 connected to host WSMA7040 at 2017-06-01 15:23:47 Dispatch interface : .
+juin 01, 2017 3:35:34 PM gui.warehouse_dispatch.WAREHOUSE_DISPATCH_UI0003_PasswordRequest connect
+INFOS: User OUSSAMA EZZIOURI / 9999 connected to host WSMA7040 at 2017-06-01 15:35:34 Dispatch interface : .
+juin 01, 2017 3:37:00 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_06_01] already exist!
+Print sub directory [.\print\2017_06_01.\open_sheet] already exist!
+Print sub directory [.\print\2017_06_01.\closing_sheet] already exist!
+Print sub directory [.\print\2017_06_01.\picking_label] already exist!
+Print sub directory [.\print\2017_06_01.\dispatch_label] already exist!
+
+juin 01, 2017 3:37:04 PM gui.warehouse_dispatch.WAREHOUSE_DISPATCH_UI0003_PasswordRequest connect
+INFOS: User OUSSAMA EZZIOURI / 9999 connected to host WSMA7040 at 2017-06-01 15:37:04 Dispatch interface : .
+juin 01, 2017 3:42:23 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_06_01] already exist!
+Print sub directory [.\print\2017_06_01.\open_sheet] already exist!
+Print sub directory [.\print\2017_06_01.\closing_sheet] already exist!
+Print sub directory [.\print\2017_06_01.\picking_label] already exist!
+Print sub directory [.\print\2017_06_01.\dispatch_label] already exist!
+
+juin 01, 2017 3:42:28 PM gui.warehouse_dispatch.WAREHOUSE_DISPATCH_UI0003_PasswordRequest connect
+INFOS: User OUSSAMA EZZIOURI / 9999 connected to host WSMA7040 at 2017-06-01 15:42:28 Dispatch interface : .
+juin 01, 2017 3:54:22 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_06_01] already exist!
+Print sub directory [.\print\2017_06_01.\open_sheet] already exist!
+Print sub directory [.\print\2017_06_01.\closing_sheet] already exist!
+Print sub directory [.\print\2017_06_01.\picking_label] already exist!
+Print sub directory [.\print\2017_06_01.\dispatch_label] already exist!
+
+juin 01, 2017 3:54:31 PM gui.warehouse_dispatch.WAREHOUSE_DISPATCH_UI0003_PasswordRequest connect
+INFOS: User OUSSAMA EZZIOURI / 9999 connected to host WSMA7040 at 2017-06-01 15:54:31 Dispatch interface : .

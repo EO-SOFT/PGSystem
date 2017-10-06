@@ -1,0 +1,171 @@
+mars 16, 2017 9:13:08 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_03_16] is created!
+Print sub directory [.\print\2017_03_16.\open_sheet] is created!
+Print sub directory [.\print\2017_03_16.\closing_sheet] is created!
+Print sub directory [.\print\2017_03_16.\picking_label] is created!
+Print sub directory [.\print\2017_03_16.\dispatch_label] is created!
+
+mars 16, 2017 9:19:34 AM gui.packaging.PACKAGING_UI0001_Main loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord ORDER BY id ASC
+mars 16, 2017 9:19:34 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 16, 2017 9:19:34 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 16, 2017 9:19:37 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mars 16, 2017 9:19:43 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mars 16, 2017 9:19:43 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+mars 16, 2017 9:19:44 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mars 16, 2017 9:19:44 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+mars 16, 2017 9:19:44 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mars 16, 2017 9:19:44 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+mars 16, 2017 9:19:47 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mars 16, 2017 9:19:47 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+mars 16, 2017 9:19:48 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mars 16, 2017 9:19:48 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+mars 16, 2017 9:29:26 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mars 16, 2017 9:33:06 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mars 16, 2017 9:33:15 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mars 16, 2017 9:33:17 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mars 16, 2017 9:33:17 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+mars 16, 2017 9:33:17 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mars 16, 2017 9:33:17 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+mars 16, 2017 9:33:17 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mars 16, 2017 9:33:17 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+mars 16, 2017 9:33:17 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mars 16, 2017 9:33:17 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+mars 16, 2017 9:33:20 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mars 16, 2017 9:33:20 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+mars 16, 2017 9:33:20 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mars 16, 2017 9:33:20 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+mars 16, 2017 9:33:20 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mars 16, 2017 9:33:20 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+mars 16, 2017 9:33:20 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mars 16, 2017 9:33:20 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+mars 16, 2017 9:35:40 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mars 16, 2017 9:36:00 AM gui.config.CONFIG_UI0000_AdminPassword checkLoginAndPass
+INFOS: User Admin   / 9999 connected to host WSMA7040 at 2017-03-16 09:36:00 Module : Planner.
+mars 16, 2017 9:47:51 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mars 16, 2017 9:47:57 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mars 16, 2017 9:47:57 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+mars 16, 2017 9:52:06 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mars 16, 2017 9:52:18 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mars 16, 2017 3:01:42 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mars 16, 2017 3:02:03 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 16, 2017 3:17:28 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mars 16, 2017 3:17:30 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mars 16, 2017 3:17:30 PM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+mars 16, 2017 3:19:54 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mars 16, 2017 3:20:11 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mars 16, 2017 3:20:13 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mars 16, 2017 3:20:13 PM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+mars 16, 2017 3:20:14 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mars 16, 2017 3:20:14 PM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+mars 16, 2017 3:20:14 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mars 16, 2017 3:20:14 PM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+mars 16, 2017 3:20:15 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mars 16, 2017 3:20:15 PM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+mars 16, 2017 3:20:25 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mars 16, 2017 3:20:25 PM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+mars 16, 2017 3:20:33 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mars 16, 2017 3:20:33 PM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+mars 16, 2017 3:26:32 PM gui.config.CONFIG_UI0000_AdminPassword checkLoginAndPass
+INFOS: User Admin   / 9999 connected to host WSMA7040 at 2017-03-16 15:26:32 Module : Planner.
+mars 16, 2017 3:59:42 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mars 16, 2017 3:59:45 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mars 16, 2017 3:59:45 PM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+mars 16, 2017 3:59:58 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mars 16, 2017 3:59:58 PM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+mars 16, 2017 4:00:06 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mars 16, 2017 4:00:06 PM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+mars 16, 2017 4:00:14 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mars 16, 2017 4:00:14 PM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+mars 16, 2017 4:00:27 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+mars 16, 2017 4:00:27 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+mars 16, 2017 4:00:27 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+mars 16, 2017 4:00:27 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+mars 16, 2017 4:00:27 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+mars 16, 2017 4:00:27 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+mars 16, 2017 4:00:34 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mars 16, 2017 4:00:34 PM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+mars 16, 2017 4:00:34 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mars 16, 2017 4:00:34 PM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+mars 16, 2017 4:00:37 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mars 16, 2017 4:00:37 PM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+mars 16, 2017 4:00:57 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC

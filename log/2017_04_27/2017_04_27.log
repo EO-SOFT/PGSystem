@@ -1,0 +1,63 @@
+avr. 27, 2017 9:48:26 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_04_27] is created!
+Print sub directory [.\print\2017_04_27.\open_sheet] is created!
+Print sub directory [.\print\2017_04_27.\closing_sheet] is created!
+Print sub directory [.\print\2017_04_27.\picking_label] is created!
+Print sub directory [.\print\2017_04_27.\dispatch_label] is created!
+
+avr. 27, 2017 9:50:10 PM gui.warehouse_dispatch.WAREHOUSE_DISPATCH_UI0003_PasswordRequest connect
+INFOS: User Admin   / 9999 connected to host O-EZZIOURI at 2017-04-27 21:50:10 Dispatch interface : .
+avr. 27, 2017 10:18:30 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_04_27] already exist!
+Print sub directory [.\print\2017_04_27.\open_sheet] already exist!
+Print sub directory [.\print\2017_04_27.\closing_sheet] already exist!
+Print sub directory [.\print\2017_04_27.\picking_label] already exist!
+Print sub directory [.\print\2017_04_27.\dispatch_label] already exist!
+
+avr. 27, 2017 10:26:04 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_04_27] already exist!
+Print sub directory [.\print\2017_04_27.\open_sheet] already exist!
+Print sub directory [.\print\2017_04_27.\closing_sheet] already exist!
+Print sub directory [.\print\2017_04_27.\picking_label] already exist!
+Print sub directory [.\print\2017_04_27.\dispatch_label] already exist!
+
+avr. 27, 2017 10:26:11 PM gui.warehouse_dispatch.WAREHOUSE_DISPATCH_UI0003_PasswordRequest connect
+INFOS: User Admin   / 9999 connected to host O-EZZIOURI at 2017-04-27 22:26:11 Dispatch interface : .
+avr. 27, 2017 10:26:39 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_04_27] already exist!
+Print sub directory [.\print\2017_04_27.\open_sheet] already exist!
+Print sub directory [.\print\2017_04_27.\closing_sheet] already exist!
+Print sub directory [.\print\2017_04_27.\picking_label] already exist!
+Print sub directory [.\print\2017_04_27.\dispatch_label] already exist!
+
+avr. 27, 2017 10:28:07 PM gui.warehouse_dispatch.WAREHOUSE_DISPATCH_UI0003_PasswordRequest connect
+INFOS: User Admin   / 9999 connected to host O-EZZIOURI at 2017-04-27 22:28:07 Dispatch interface : .
+avr. 27, 2017 10:28:39 PM gui.warehouse_dispatch.WAREHOUSE_DISPATCH_UI0003_PasswordRequest connect
+INFOS: User Admin   / 9999 connected to host O-EZZIOURI at 2017-04-27 22:28:39 Dispatch interface : .
+avr. 27, 2017 10:36:02 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_04_27] already exist!
+Print sub directory [.\print\2017_04_27.\open_sheet] already exist!
+Print sub directory [.\print\2017_04_27.\closing_sheet] already exist!
+Print sub directory [.\print\2017_04_27.\picking_label] already exist!
+Print sub directory [.\print\2017_04_27.\dispatch_label] already exist!
+
+avr. 27, 2017 10:36:28 PM gui.warehouse_dispatch.WAREHOUSE_DISPATCH_UI0003_PasswordRequest connect
+INFOS: User Admin   / 9999 connected to host O-EZZIOURI at 2017-04-27 22:36:28 Dispatch interface : .
+avr. 27, 2017 10:38:59 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_04_27] already exist!
+Print sub directory [.\print\2017_04_27.\open_sheet] already exist!
+Print sub directory [.\print\2017_04_27.\closing_sheet] already exist!
+Print sub directory [.\print\2017_04_27.\picking_label] already exist!
+Print sub directory [.\print\2017_04_27.\dispatch_label] already exist!
+
+avr. 27, 2017 10:39:03 PM gui.warehouse_dispatch.WAREHOUSE_DISPATCH_UI0003_PasswordRequest connect
+INFOS: User Admin   / 9999 connected to host O-EZZIOURI at 2017-04-27 22:39:03 Dispatch interface : .
+avr. 27, 2017 10:42:20 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_04_27] already exist!
+Print sub directory [.\print\2017_04_27.\open_sheet] already exist!
+Print sub directory [.\print\2017_04_27.\closing_sheet] already exist!
+Print sub directory [.\print\2017_04_27.\picking_label] already exist!
+Print sub directory [.\print\2017_04_27.\dispatch_label] already exist!
+
+avr. 27, 2017 10:42:24 PM gui.warehouse_dispatch.WAREHOUSE_DISPATCH_UI0003_PasswordRequest connect
+INFOS: User Admin   / 9999 connected to host O-EZZIOURI at 2017-04-27 22:42:24 Dispatch interface : .

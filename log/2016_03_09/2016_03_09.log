@@ -1,0 +1,1157 @@
+mars 09, 2016 8:02:37 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_09] is created!
+Print sub directory [.\print\2016_03_09.\pallet] is created!
+Print sub directory [.\print\2016_03_09.\closing_pallet] is created!
+
+mars 09, 2016 8:02:38 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 8:02:48 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 8:03:04 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_09] already exist!
+Print sub directory [.\print\2016_03_09.\pallet] already exist!
+Print sub directory [.\print\2016_03_09.\closing_pallet] already exist!
+
+mars 09, 2016 8:03:05 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 8:03:14 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 8:04:52 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_09] already exist!
+Print sub directory [.\print\2016_03_09.\pallet] already exist!
+Print sub directory [.\print\2016_03_09.\closing_pallet] already exist!
+
+mars 09, 2016 8:04:52 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 8:04:52 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 8:09:58 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_09] already exist!
+Print sub directory [.\print\2016_03_09.\pallet] already exist!
+Print sub directory [.\print\2016_03_09.\closing_pallet] already exist!
+
+mars 09, 2016 8:09:58 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 8:09:58 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 8:21:03 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_09] already exist!
+Print sub directory [.\print\2016_03_09.\pallet] already exist!
+Print sub directory [.\print\2016_03_09.\closing_pallet] already exist!
+
+mars 09, 2016 8:21:03 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 8:21:03 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 8:21:10 AM state.S010_UserCodeScan doAction
+INFOS: User Mohammed RIMALI / 1002 connected to host WSMA7040 at 2016-03-09 08:21:10 Project : SMALL.
+mars 09, 2016 8:23:23 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_09] already exist!
+Print sub directory [.\print\2016_03_09.\pallet] already exist!
+Print sub directory [.\print\2016_03_09.\closing_pallet] already exist!
+
+mars 09, 2016 8:23:24 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 8:23:24 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 8:23:29 AM state.S010_UserCodeScan doAction
+INFOS: User Oussama EZZIOURI / 1009 connected to host WSMA7040 at 2016-03-09 08:23:29 Project : SMALL.
+mars 09, 2016 8:26:04 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_09] already exist!
+Print sub directory [.\print\2016_03_09.\pallet] already exist!
+Print sub directory [.\print\2016_03_09.\closing_pallet] already exist!
+
+mars 09, 2016 8:26:04 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 8:26:04 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 8:26:09 AM state.S010_UserCodeScan doAction
+INFOS: User Oussama EZZIOURI / 1009 connected to host WSMA7040 at 2016-03-09 08:26:09 Project : SMALL.
+mars 09, 2016 8:28:50 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_09] already exist!
+Print sub directory [.\print\2016_03_09.\pallet] already exist!
+Print sub directory [.\print\2016_03_09.\closing_pallet] already exist!
+
+mars 09, 2016 8:28:50 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 8:28:50 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 8:28:54 AM state.S010_UserCodeScan doAction
+INFOS: User Oussama EZZIOURI / 1009 connected to host WSMA7040 at 2016-03-09 08:28:54 Project : SMALL.
+mars 09, 2016 8:32:38 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_09] already exist!
+Print sub directory [.\print\2016_03_09.\pallet] already exist!
+Print sub directory [.\print\2016_03_09.\closing_pallet] already exist!
+
+mars 09, 2016 8:32:38 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 8:32:38 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 8:32:45 AM state.S010_UserCodeScan doAction
+INFOS: User Oussama EZZIOURI / 1009 connected to host WSMA7040 at 2016-03-09 08:32:45 Project : SMALL.
+mars 09, 2016 8:33:18 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_09] already exist!
+Print sub directory [.\print\2016_03_09.\pallet] already exist!
+Print sub directory [.\print\2016_03_09.\closing_pallet] already exist!
+
+mars 09, 2016 8:33:18 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 8:33:18 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 8:33:23 AM state.S010_UserCodeScan doAction
+INFOS: User Oussama EZZIOURI / 1009 connected to host WSMA7040 at 2016-03-09 08:33:23 Project : SMALL.
+mars 09, 2016 8:33:38 AM state.S010_UserCodeScan doAction
+INFOS: Invalid matricule number or account locked !
+mars 09, 2016 8:33:39 AM state.S010_UserCodeScan doAction
+INFOS: Invalid matricule number or account locked !
+mars 09, 2016 8:33:41 AM state.S010_UserCodeScan doAction
+INFOS: Invalid matricule number or account locked !
+mars 09, 2016 8:35:19 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_09] already exist!
+Print sub directory [.\print\2016_03_09.\pallet] already exist!
+Print sub directory [.\print\2016_03_09.\closing_pallet] already exist!
+
+mars 09, 2016 8:35:20 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 8:35:20 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 8:35:24 AM state.S010_UserCodeScan doAction
+INFOS: User Oussama EZZIOURI / 1009 connected to host WSMA7040 at 2016-03-09 08:35:24 Project : SMALL.
+mars 09, 2016 8:37:22 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_09] already exist!
+Print sub directory [.\print\2016_03_09.\pallet] already exist!
+Print sub directory [.\print\2016_03_09.\closing_pallet] already exist!
+
+mars 09, 2016 8:37:22 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 8:37:22 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 8:37:25 AM state.S010_UserCodeScan doAction
+INFOS: User Mohammed RIMALI / 1002 connected to host WSMA7040 at 2016-03-09 08:37:25 Project : SMALL.
+mars 09, 2016 8:37:31 AM state.S010_UserCodeScan doAction
+INFOS: User Jawad HAMID / 1003 connected to host WSMA7040 at 2016-03-09 08:37:31 Project : ENGINE.
+mars 09, 2016 8:38:39 AM state.S010_UserCodeScan doAction
+INFOS: User Jawad HAMID / 1003 connected to host WSMA7040 at 2016-03-09 08:38:39 Project : ENGINE.
+mars 09, 2016 8:54:54 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_09] already exist!
+Print sub directory [.\print\2016_03_09.\pallet] already exist!
+Print sub directory [.\print\2016_03_09.\closing_pallet] already exist!
+
+mars 09, 2016 8:54:55 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 8:54:55 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 8:54:58 AM state.S010_UserCodeScan doAction
+INFOS: User Mohammed RIMALI / 1002 connected to host WSMA7040 at 2016-03-09 08:54:58 Project : SMALL.
+mars 09, 2016 8:55:43 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_09] already exist!
+Print sub directory [.\print\2016_03_09.\pallet] already exist!
+Print sub directory [.\print\2016_03_09.\closing_pallet] already exist!
+
+mars 09, 2016 8:55:44 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 8:55:44 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 8:55:47 AM state.S010_UserCodeScan doAction
+INFOS: User Mohammed RIMALI / 1002 connected to host WSMA7040 at 2016-03-09 08:55:47 Project : SMALL.
+mars 09, 2016 9:36:25 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_09] already exist!
+Print sub directory [.\print\2016_03_09.\pallet] already exist!
+Print sub directory [.\print\2016_03_09.\closing_pallet] already exist!
+
+mars 09, 2016 9:36:26 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 9:36:26 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 9:36:31 AM state.S010_UserCodeScan doAction
+INFOS: User Mohammed RIMALI / 1002 connected to host WSMA7040 at 2016-03-09 09:36:31 Project : SMALL.
+mars 09, 2016 9:36:37 AM state.S010_UserCodeScan doAction
+INFOS: User Mohammed RIMALI / 1002 connected to host WSMA7040 at 2016-03-09 09:36:37 Project : SMALL.
+mars 09, 2016 9:37:52 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_09] already exist!
+Print sub directory [.\print\2016_03_09.\pallet] already exist!
+Print sub directory [.\print\2016_03_09.\closing_pallet] already exist!
+
+mars 09, 2016 9:37:52 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 9:37:52 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 9:37:57 AM state.S010_UserCodeScan doAction
+INFOS: User Mohammed RIMALI / 1002 connected to host WSMA7040 at 2016-03-09 09:37:57 Project : SMALL.
+mars 09, 2016 9:38:03 AM state.S010_UserCodeScan doAction
+INFOS: User Mohammed RIMALI / 1002 connected to host WSMA7040 at 2016-03-09 09:38:03 Project : SMALL.
+mars 09, 2016 9:39:04 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_09] already exist!
+Print sub directory [.\print\2016_03_09.\pallet] already exist!
+Print sub directory [.\print\2016_03_09.\closing_pallet] already exist!
+
+mars 09, 2016 9:39:05 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 9:39:05 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 9:39:11 AM state.S010_UserCodeScan doAction
+INFOS: User Oussama EZZIOURI / 1009 connected to host WSMA7040 at 2016-03-09 09:39:11 Project : SMALL.
+mars 09, 2016 9:40:31 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_09] already exist!
+Print sub directory [.\print\2016_03_09.\pallet] already exist!
+Print sub directory [.\print\2016_03_09.\closing_pallet] already exist!
+
+mars 09, 2016 9:40:31 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 9:40:31 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 9:40:34 AM state.S010_UserCodeScan doAction
+INFOS: User Oussama EZZIOURI / 1009 connected to host WSMA7040 at 2016-03-09 09:40:34 Project : SMALL.
+mars 09, 2016 9:41:11 AM state.S010_UserCodeScan doAction
+INFOS: User Oussama EZZIOURI / 1009 connected to host WSMA7040 at 2016-03-09 09:41:11 Project : ENGINE.
+mars 09, 2016 9:42:31 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_09] already exist!
+Print sub directory [.\print\2016_03_09.\pallet] already exist!
+Print sub directory [.\print\2016_03_09.\closing_pallet] already exist!
+
+mars 09, 2016 9:42:31 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 9:42:31 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 9:42:36 AM state.S010_UserCodeScan doAction
+INFOS: User Mohammed RIMALI / 1002 connected to host WSMA7040 at 2016-03-09 09:42:36 Project : SMALL.
+mars 09, 2016 9:42:44 AM state.S010_UserCodeScan doAction
+INFOS: User Mohammed RIMALI / 1002 connected to host WSMA7040 at 2016-03-09 09:42:44 Project : SMALL.
+mars 09, 2016 9:42:52 AM state.S010_UserCodeScan doAction
+INFOS: User Oussama EZZIOURI / 1009 connected to host WSMA7040 at 2016-03-09 09:42:52 Project : SMALL.
+mars 09, 2016 9:43:01 AM state.S010_UserCodeScan doAction
+INFOS: User Mohammed RIMALI / 1002 connected to host WSMA7040 at 2016-03-09 09:43:01 Project : SMALL.
+mars 09, 2016 9:43:34 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_09] already exist!
+Print sub directory [.\print\2016_03_09.\pallet] already exist!
+Print sub directory [.\print\2016_03_09.\closing_pallet] already exist!
+
+mars 09, 2016 9:43:34 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 9:43:34 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 9:43:37 AM state.S010_UserCodeScan doAction
+INFOS: User Oussama EZZIOURI / 1009 connected to host WSMA7040 at 2016-03-09 09:43:37 Project : SMALL.
+mars 09, 2016 9:44:47 AM state.S010_UserCodeScan doAction
+INFOS: User Oussama EZZIOURI / 1009 connected to host WSMA7040 at 2016-03-09 09:44:47 Project : ENGINE.
+mars 09, 2016 9:46:51 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_09] already exist!
+Print sub directory [.\print\2016_03_09.\pallet] already exist!
+Print sub directory [.\print\2016_03_09.\closing_pallet] already exist!
+
+mars 09, 2016 9:46:52 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 9:46:52 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 9:46:56 AM state.S010_UserCodeScan doAction
+INFOS: User Mohammed RIMALI / 1002 connected to host WSMA7040 at 2016-03-09 09:46:56 Project : SMALL.
+mars 09, 2016 9:49:19 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_09] already exist!
+Print sub directory [.\print\2016_03_09.\pallet] already exist!
+Print sub directory [.\print\2016_03_09.\closing_pallet] already exist!
+
+mars 09, 2016 9:49:19 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 9:49:19 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 9:49:26 AM state.S010_UserCodeScan doAction
+INFOS: User Mohammed RIMALI / 1002 connected to host WSMA7040 at 2016-03-09 09:49:26 Project : SMALL.
+mars 09, 2016 9:50:28 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_09] already exist!
+Print sub directory [.\print\2016_03_09.\pallet] already exist!
+Print sub directory [.\print\2016_03_09.\closing_pallet] already exist!
+
+mars 09, 2016 9:50:29 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 9:50:29 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 9:50:33 AM state.S010_UserCodeScan doAction
+INFOS: User Oussama EZZIOURI / 1009 connected to host WSMA7040 at 2016-03-09 09:50:33 Project : SMALL.
+mars 09, 2016 9:56:53 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_09] already exist!
+Print sub directory [.\print\2016_03_09.\pallet] already exist!
+Print sub directory [.\print\2016_03_09.\closing_pallet] already exist!
+
+mars 09, 2016 9:56:53 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 9:56:53 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 9:56:58 AM state.S010_UserCodeScan doAction
+INFOS: User Mohammed RIMALI / 1002 connected to host WSMA7040 at 2016-03-09 09:56:58 Project : SMALL.
+mars 09, 2016 9:57:07 AM state.S010_UserCodeScan doAction
+INFOS: User Oussama EZZIOURI / 1009 connected to host WSMA7040 at 2016-03-09 09:57:07 Project : ENGINE.
+mars 09, 2016 10:04:38 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_09] already exist!
+Print sub directory [.\print\2016_03_09.\pallet] already exist!
+Print sub directory [.\print\2016_03_09.\closing_pallet] already exist!
+
+mars 09, 2016 10:04:39 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 10:04:39 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 10:04:43 AM state.S010_UserCodeScan doAction
+INFOS: User Oussama EZZIOURI / 1009 connected to host WSMA7040 at 2016-03-09 10:04:43 Project : SMALL.
+mars 09, 2016 10:05:09 AM state.S010_UserCodeScan doAction
+INFOS: User Mohammed RIMALI / 1002 connected to host WSMA7040 at 2016-03-09 10:05:09 Project : SMALL.
+mars 09, 2016 10:05:13 AM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22205127] in ConfigUCS: SMALL
+mars 09, 2016 10:05:13 AM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22205127] found for project [SMALL].
+mars 09, 2016 10:05:13 AM state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22205127] OK.
+mars 09, 2016 10:05:23 AM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2220512705.02.2016;00:00:00] in BaseHarness.
+mars 09, 2016 10:05:23 AM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+mars 09, 2016 10:05:23 AM state.S030_QRCodeScan doAction
+INFOS: Valid Harness Counter scanned [P2220512705.02.2016;00:00:00] OK.
+mars 09, 2016 10:05:26 AM gui.UI9000_ChooseContainerType <init>
+INFOS: Item found 22205127--26C03051A--P03--kltv-780--150
+mars 09, 2016 10:05:26 AM gui.UI9000_ChooseContainerType <init>
+INFOS: 1 item(s) found for Harness Part[22205127].
+mars 09, 2016 10:05:27 AM gui.UI9000_ChooseContainerType mappingContextVals
+INFOS: Selected pack type : 22205127--26C03051A--P03--kltv-780--150 
+mars 09, 2016 10:05:27 AM gui.UI9000_ChooseContainerType items_listKeyPressed
+DÉSACTIVÉ: FROM ConfigUcs cu WHERE cu.supplierPartNumber = :supplierPartNumber AND cu.harnessIndex = :harnessIndex
+mars 09, 2016 10:05:28 AM gui.UI9000_ChooseContainerType items_listKeyPressed
+INFOS: Set Pallet [1] state to [in_process]
+mars 09, 2016 10:05:28 AM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2016_03_09\pallet\PrintOpenPallet_A5_2016_03_09_10_05_27.pdf] to the default printer...
+mars 09, 2016 10:05:28 AM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [%s] has been printed.
+mars 09, 2016 10:05:28 AM gui.UI9000_ChooseContainerType items_listKeyPressed
+INFOS: Set Pallet [1] state to [printed]
+mars 09, 2016 10:05:28 AM gui.UI9000_ChooseContainerType items_listKeyPressed
+INFOS: Openning new container for first harness part [22205127].
+mars 09, 2016 10:06:26 AM state.S041_NewPalletScan doAction
+INFOS: Scanned Pallet number [1] OK.
+mars 09, 2016 10:06:26 AM state.S041_NewPalletScan doAction
+INFOS: BaseContainer created BaseContainer{id=100000001, createTime=Wed Mar 09 10:06:26 WET 2016, writeTime=Wed Mar 09 10:06:26 WET 2016, createId=2, writeId=2, user=1002, startTime=Wed Mar 09 10:06:26 WET 2016, completeTime=null, workTime=null, palletNumber=1, harnessPart=22205127, harnessIndex=P03, supplierPartNumber=26C03051A, qtyExpected=150, qtyRead=1, state=open, packType=kltv-780} 
+mars 09, 2016 10:06:44 AM state.S010_UserCodeScan doAction
+INFOS: User Mohammed RIMALI / 1002 connected to host WSMA7040 at 2016-03-09 10:06:44 Project : SMALL.
+mars 09, 2016 10:06:47 AM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22205127] in ConfigUCS: SMALL
+mars 09, 2016 10:06:47 AM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22205127] found for project [SMALL].
+mars 09, 2016 10:06:47 AM state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22205127] OK.
+mars 09, 2016 10:06:57 AM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2220512705.02.2016;00:00:00] in BaseHarness.
+mars 09, 2016 10:06:57 AM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+mars 09, 2016 10:06:57 AM state.S030_QRCodeScan doAction
+INFOS: Valid Harness Counter scanned [P2220512705.02.2016;00:00:00] OK.
+mars 09, 2016 10:06:59 AM gui.UI9000_ChooseContainerType <init>
+INFOS: Item found 22205127--26C03051A--P03--kltv-780--150
+mars 09, 2016 10:06:59 AM gui.UI9000_ChooseContainerType <init>
+INFOS: 1 item(s) found for Harness Part[22205127].
+mars 09, 2016 10:07:00 AM gui.UI9000_ChooseContainerType mappingContextVals
+INFOS: Selected pack type : 22205127--26C03051A--P03--kltv-780--150 
+mars 09, 2016 10:07:00 AM gui.UI9000_ChooseContainerType items_listKeyPressed
+DÉSACTIVÉ: FROM ConfigUcs cu WHERE cu.supplierPartNumber = :supplierPartNumber AND cu.harnessIndex = :harnessIndex
+mars 09, 2016 10:07:00 AM gui.UI9000_ChooseContainerType items_listKeyPressed
+INFOS: Set Pallet [2] state to [in_process]
+mars 09, 2016 10:07:00 AM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2016_03_09\pallet\PrintOpenPallet_A5_2016_03_09_10_07_00.pdf] to the default printer...
+mars 09, 2016 10:07:00 AM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [%s] has been printed.
+mars 09, 2016 10:07:00 AM gui.UI9000_ChooseContainerType items_listKeyPressed
+INFOS: Set Pallet [2] state to [printed]
+mars 09, 2016 10:07:00 AM gui.UI9000_ChooseContainerType items_listKeyPressed
+INFOS: Openning new container for first harness part [22205127].
+mars 09, 2016 10:07:55 AM state.S010_UserCodeScan doAction
+INFOS: User Mohammed RIMALI / 1002 connected to host WSMA7040 at 2016-03-09 10:07:55 Project : SMALL.
+mars 09, 2016 10:07:58 AM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22205127] in ConfigUCS: SMALL
+mars 09, 2016 10:07:58 AM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22205127] found for project [SMALL].
+mars 09, 2016 10:07:58 AM state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22205127] OK.
+mars 09, 2016 10:08:00 AM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2220512705.02.2016;00:00:00] in BaseHarness.
+mars 09, 2016 10:08:00 AM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+mars 09, 2016 10:08:00 AM state.S030_QRCodeScan doAction
+INFOS: Valid Harness Counter scanned [P2220512705.02.2016;00:00:00] OK.
+mars 09, 2016 10:08:03 AM gui.UI9000_ChooseContainerType <init>
+INFOS: Item found 22205127--26C03051A--P03--kltv-780--150
+mars 09, 2016 10:08:03 AM gui.UI9000_ChooseContainerType <init>
+INFOS: 1 item(s) found for Harness Part[22205127].
+mars 09, 2016 10:08:03 AM gui.UI9000_ChooseContainerType mappingContextVals
+INFOS: Selected pack type : 22205127--26C03051A--P03--kltv-780--150 
+mars 09, 2016 10:08:03 AM gui.UI9000_ChooseContainerType items_listKeyPressed
+DÉSACTIVÉ: FROM ConfigUcs cu WHERE cu.supplierPartNumber = :supplierPartNumber AND cu.harnessIndex = :harnessIndex
+mars 09, 2016 10:08:03 AM gui.UI9000_ChooseContainerType items_listKeyPressed
+INFOS: Set Pallet [100000003] state to [in_process]
+mars 09, 2016 10:08:03 AM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2016_03_09\pallet\PrintOpenPallet_A5_2016_03_09_10_08_03.pdf] to the default printer...
+mars 09, 2016 10:08:03 AM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [%s] has been printed.
+mars 09, 2016 10:08:03 AM gui.UI9000_ChooseContainerType items_listKeyPressed
+INFOS: Set Pallet [100000003] state to [printed]
+mars 09, 2016 10:08:03 AM gui.UI9000_ChooseContainerType items_listKeyPressed
+INFOS: Openning new container for first harness part [22205127].
+mars 09, 2016 10:09:10 AM state.S041_NewPalletScan doAction
+INFOS: Scanned Pallet number [100000003] OK.
+mars 09, 2016 10:09:10 AM state.S041_NewPalletScan doAction
+INFOS: BaseContainer created BaseContainer{id=2, createTime=Wed Mar 09 10:09:10 WET 2016, writeTime=Wed Mar 09 10:09:10 WET 2016, createId=2, writeId=2, user=1002, startTime=Wed Mar 09 10:09:10 WET 2016, completeTime=null, workTime=null, palletNumber=100000003, harnessPart=22205127, harnessIndex=P03, supplierPartNumber=26C03051A, qtyExpected=150, qtyRead=1, state=open, packType=kltv-780} 
+mars 09, 2016 10:10:57 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_09] already exist!
+Print sub directory [.\print\2016_03_09.\pallet] already exist!
+Print sub directory [.\print\2016_03_09.\closing_pallet] already exist!
+
+mars 09, 2016 10:10:58 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 10:10:58 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 10:11:20 AM state.S010_UserCodeScan doAction
+INFOS: User Oussama EZZIOURI / 1009 connected to host WSMA7040 at 2016-03-09 10:11:20 Project : SMALL.
+mars 09, 2016 10:11:28 AM state.S010_UserCodeScan doAction
+INFOS: User Mohammed RIMALI / 1002 connected to host WSMA7040 at 2016-03-09 10:11:28 Project : SMALL.
+mars 09, 2016 10:11:32 AM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22205127] in ConfigUCS: SMALL
+mars 09, 2016 10:11:32 AM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22205127] found for project [SMALL].
+mars 09, 2016 10:11:32 AM state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22205127] OK.
+mars 09, 2016 10:11:35 AM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2220512705.02.2016;00:00:00] in BaseHarness.
+mars 09, 2016 10:11:35 AM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+mars 09, 2016 10:11:35 AM state.S030_QRCodeScan doAction
+INFOS: Valid Harness Counter scanned [P2220512705.02.2016;00:00:00] OK.
+mars 09, 2016 10:11:36 AM gui.UI9000_ChooseContainerType <init>
+INFOS: Item found 22205127--26C03051A--P03--kltv-780--150
+mars 09, 2016 10:11:36 AM gui.UI9000_ChooseContainerType <init>
+INFOS: 1 item(s) found for Harness Part[22205127].
+mars 09, 2016 10:11:37 AM gui.UI9000_ChooseContainerType mappingContextVals
+INFOS: Selected pack type : 22205127--26C03051A--P03--kltv-780--150 
+mars 09, 2016 10:11:37 AM gui.UI9000_ChooseContainerType items_listKeyPressed
+DÉSACTIVÉ: FROM ConfigUcs cu WHERE cu.supplierPartNumber = :supplierPartNumber AND cu.harnessIndex = :harnessIndex
+mars 09, 2016 10:11:37 AM gui.UI9000_ChooseContainerType items_listKeyPressed
+INFOS: Set Pallet [100000004] state to [in_process]
+mars 09, 2016 10:11:37 AM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2016_03_09\pallet\PrintOpenPallet_A5_2016_03_09_10_11_37.pdf] to the default printer...
+mars 09, 2016 10:11:37 AM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [%s] has been printed.
+mars 09, 2016 10:11:37 AM gui.UI9000_ChooseContainerType items_listKeyPressed
+INFOS: Set Pallet [100000004] state to [printed]
+mars 09, 2016 10:11:37 AM gui.UI9000_ChooseContainerType items_listKeyPressed
+INFOS: Openning new container for first harness part [22205127].
+mars 09, 2016 10:11:48 AM state.S041_NewPalletScan doAction
+INFOS: Scanned Pallet number [100000004] OK.
+mars 09, 2016 10:11:48 AM state.S041_NewPalletScan doAction
+INFOS: BaseContainer created BaseContainer{id=3, createTime=Wed Mar 09 10:11:48 WET 2016, writeTime=Wed Mar 09 10:11:48 WET 2016, createId=2, writeId=2, user=1002, startTime=Wed Mar 09 10:11:48 WET 2016, completeTime=null, workTime=null, palletNumber=100000004, harnessPart=22205127, harnessIndex=P03, supplierPartNumber=26C03051A, qtyExpected=150, qtyRead=1, state=open, packType=kltv-780} 
+mars 09, 2016 10:17:38 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_09] already exist!
+Print sub directory [.\print\2016_03_09.\pallet] already exist!
+Print sub directory [.\print\2016_03_09.\closing_pallet] already exist!
+
+mars 09, 2016 10:17:38 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 10:17:38 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 10:17:42 AM state.S010_UserCodeScan doAction
+INFOS: User Mohammed RIMALI / 1002 connected to host WSMA7040 at 2016-03-09 10:17:42 Project : SMALL.
+mars 09, 2016 10:17:46 AM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22205127] in ConfigUCS: SMALL
+mars 09, 2016 10:17:46 AM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22205127] found for project [SMALL].
+mars 09, 2016 10:17:46 AM state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22205127] OK.
+mars 09, 2016 10:17:57 AM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2220512705.02.2016;00:00:00] in BaseHarness.
+mars 09, 2016 10:17:57 AM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+mars 09, 2016 10:17:57 AM state.S030_QRCodeScan doAction
+INFOS: Valid Harness Counter scanned [P2220512705.02.2016;00:00:00] OK.
+mars 09, 2016 10:17:59 AM gui.UI9000_ChooseContainerType <init>
+INFOS: Item found 22205127--26C03051A--P03--kltv-780--150
+mars 09, 2016 10:17:59 AM gui.UI9000_ChooseContainerType <init>
+INFOS: 1 item(s) found for Harness Part[22205127].
+mars 09, 2016 10:18:00 AM gui.UI9000_ChooseContainerType mappingContextVals
+INFOS: Selected pack type : 22205127--26C03051A--P03--kltv-780--150 
+mars 09, 2016 10:18:00 AM gui.UI9000_ChooseContainerType items_listKeyPressed
+DÉSACTIVÉ: FROM ConfigUcs cu WHERE cu.supplierPartNumber = :supplierPartNumber AND cu.harnessIndex = :harnessIndex
+mars 09, 2016 10:18:00 AM gui.UI9000_ChooseContainerType items_listKeyPressed
+INFOS: Set Pallet [100000005] state to [in_process]
+mars 09, 2016 10:18:00 AM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2016_03_09\pallet\PrintOpenPallet_A5_2016_03_09_10_18_00.pdf] to the default printer...
+mars 09, 2016 10:18:00 AM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [%s] has been printed.
+mars 09, 2016 10:18:00 AM gui.UI9000_ChooseContainerType items_listKeyPressed
+INFOS: Set Pallet [100000005] state to [printed]
+mars 09, 2016 10:18:00 AM gui.UI9000_ChooseContainerType items_listKeyPressed
+INFOS: Openning new container for first harness part [22205127].
+mars 09, 2016 10:18:35 AM state.S041_NewPalletScan doAction
+INFOS: Scanned Pallet number [100000005] OK.
+mars 09, 2016 10:18:35 AM state.S041_NewPalletScan doAction
+INFOS: BaseContainer created BaseContainer{id=4, createTime=Wed Mar 09 10:18:35 WET 2016, writeTime=Wed Mar 09 10:18:35 WET 2016, createId=2, writeId=2, user=1002, startTime=Wed Mar 09 10:18:35 WET 2016, completeTime=null, workTime=null, palletNumber=100000005, harnessPart=22205127, harnessIndex=P03, supplierPartNumber=26C03051A, qtyExpected=150, qtyRead=1, state=open, packType=kltv-780} 
+mars 09, 2016 10:26:31 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_09] already exist!
+Print sub directory [.\print\2016_03_09.\pallet] already exist!
+Print sub directory [.\print\2016_03_09.\closing_pallet] already exist!
+
+mars 09, 2016 10:28:02 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_09] already exist!
+Print sub directory [.\print\2016_03_09.\pallet] already exist!
+Print sub directory [.\print\2016_03_09.\closing_pallet] already exist!
+
+mars 09, 2016 10:28:03 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 10:28:03 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 10:28:50 AM state.S010_UserCodeScan doAction
+INFOS: User Mohammed RIMALI / 1002 connected to host WSMA7040 at 2016-03-09 10:28:50 Project : SMALL.
+mars 09, 2016 10:28:53 AM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22250127] in ConfigUCS: SMALL
+mars 09, 2016 10:28:53 AM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22250127] NOT found.
+mars 09, 2016 10:28:53 AM state.S020_HarnessPartScan doAction
+AVERTISSEMENT: Harness part [P22250127] NOT found in UCS [SMALL].
+mars 09, 2016 10:28:59 AM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22205127] in ConfigUCS: SMALL
+mars 09, 2016 10:28:59 AM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22205127] found for project [SMALL].
+mars 09, 2016 10:28:59 AM state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22205127] OK.
+mars 09, 2016 10:29:05 AM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2220512705.02.2016;00:00:00] in BaseHarness.
+mars 09, 2016 10:29:05 AM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+mars 09, 2016 10:29:05 AM state.S030_QRCodeScan doAction
+INFOS: Valid Harness Counter scanned [P2220512705.02.2016;00:00:00] OK.
+mars 09, 2016 10:29:10 AM gui.UI9000_ChooseContainerType <init>
+INFOS: Item found 22205127--26C03051A--P03--kltv-780--150
+mars 09, 2016 10:29:10 AM gui.UI9000_ChooseContainerType <init>
+INFOS: 1 item(s) found for Harness Part[22205127].
+mars 09, 2016 10:29:11 AM gui.UI9000_ChooseContainerType mappingContextVals
+INFOS: Selected pack type : 22205127--26C03051A--P03--kltv-780--150 
+mars 09, 2016 10:29:11 AM gui.UI9000_ChooseContainerType items_listKeyPressed
+DÉSACTIVÉ: FROM ConfigUcs cu WHERE cu.supplierPartNumber = :supplierPartNumber AND cu.harnessIndex = :harnessIndex
+mars 09, 2016 10:29:11 AM gui.UI9000_ChooseContainerType items_listKeyPressed
+INFOS: Set Pallet [100000006] state to [in_process]
+mars 09, 2016 10:29:11 AM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2016_03_09\pallet\PrintOpenPallet_A5_2016_03_09_10_29_11.pdf] to the default printer...
+mars 09, 2016 10:29:11 AM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [%s] has been printed.
+mars 09, 2016 10:29:11 AM gui.UI9000_ChooseContainerType items_listKeyPressed
+INFOS: Set Pallet [100000006] state to [printed]
+mars 09, 2016 10:29:11 AM gui.UI9000_ChooseContainerType items_listKeyPressed
+INFOS: Openning new container for first harness part [22205127].
+mars 09, 2016 10:29:29 AM state.S041_NewPalletScan doAction
+INFOS: Scanned Pallet number [100000006] OK.
+mars 09, 2016 10:29:29 AM state.S041_NewPalletScan doAction
+INFOS: BaseContainer created BaseContainer{id=5, createTime=Wed Mar 09 10:29:29 WET 2016, writeTime=Wed Mar 09 10:29:29 WET 2016, createId=2, writeId=2, user=1002, startTime=Wed Mar 09 10:29:29 WET 2016, completeTime=null, workTime=null, palletNumber=100000006, harnessPart=22205127, harnessIndex=P03, supplierPartNumber=26C03051A, qtyExpected=150, qtyRead=1, state=open, packType=kltv-780} 
+mars 09, 2016 10:29:46 AM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22250127] in ConfigUCS: SMALL
+mars 09, 2016 10:29:46 AM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22250127] NOT found.
+mars 09, 2016 10:29:46 AM state.S020_HarnessPartScan doAction
+AVERTISSEMENT: Harness part [P22250127] NOT found in UCS [SMALL].
+mars 09, 2016 10:29:51 AM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22205127] in ConfigUCS: SMALL
+mars 09, 2016 10:29:51 AM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22205127] found for project [SMALL].
+mars 09, 2016 10:29:51 AM state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22205127] OK.
+mars 09, 2016 10:29:53 AM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2220512705.02.2016;00:00:01] in BaseHarness.
+mars 09, 2016 10:29:53 AM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+mars 09, 2016 10:29:53 AM state.S030_QRCodeScan doAction
+INFOS: Valid Harness Counter scanned [P2220512705.02.2016;00:00:01] OK.
+mars 09, 2016 10:30:03 AM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22205127] in ConfigUCS: SMALL
+mars 09, 2016 10:30:03 AM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22205127] found for project [SMALL].
+mars 09, 2016 10:30:03 AM state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22205127] OK.
+mars 09, 2016 10:30:09 AM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2220512705.02.2016;00:00:02] in BaseHarness.
+mars 09, 2016 10:30:09 AM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+mars 09, 2016 10:30:09 AM state.S030_QRCodeScan doAction
+INFOS: Valid Harness Counter scanned [P2220512705.02.2016;00:00:02] OK.
+mars 09, 2016 10:30:20 AM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22205127] in ConfigUCS: SMALL
+mars 09, 2016 10:30:20 AM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22205127] found for project [SMALL].
+mars 09, 2016 10:30:20 AM state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22205127] OK.
+mars 09, 2016 10:30:23 AM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2220512705.02.2016;00:00:03] in BaseHarness.
+mars 09, 2016 10:30:23 AM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+mars 09, 2016 10:30:23 AM state.S030_QRCodeScan doAction
+INFOS: Valid Harness Counter scanned [P2220512705.02.2016;00:00:03] OK.
+mars 09, 2016 10:36:42 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_09] already exist!
+Print sub directory [.\print\2016_03_09.\pallet] already exist!
+Print sub directory [.\print\2016_03_09.\closing_pallet] already exist!
+
+mars 09, 2016 10:36:42 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 10:36:42 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 10:39:00 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_09] already exist!
+Print sub directory [.\print\2016_03_09.\pallet] already exist!
+Print sub directory [.\print\2016_03_09.\closing_pallet] already exist!
+
+mars 09, 2016 10:39:01 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 10:39:01 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 10:40:38 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_09] already exist!
+Print sub directory [.\print\2016_03_09.\pallet] already exist!
+Print sub directory [.\print\2016_03_09.\closing_pallet] already exist!
+
+mars 09, 2016 10:40:39 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 10:40:39 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 10:43:15 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_09] already exist!
+Print sub directory [.\print\2016_03_09.\pallet] already exist!
+Print sub directory [.\print\2016_03_09.\closing_pallet] already exist!
+
+mars 09, 2016 10:43:15 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 10:43:15 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 10:47:10 AM state.S010_UserCodeScan doAction
+INFOS: User Oussama EZZIOURI / 1009 connected to host WSMA7040 at 2016-03-09 10:47:10 Project : SMALL.
+mars 09, 2016 10:49:35 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_09] already exist!
+Print sub directory [.\print\2016_03_09.\pallet] already exist!
+Print sub directory [.\print\2016_03_09.\closing_pallet] already exist!
+
+mars 09, 2016 10:49:35 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 10:49:35 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 10:49:57 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_09] already exist!
+Print sub directory [.\print\2016_03_09.\pallet] already exist!
+Print sub directory [.\print\2016_03_09.\closing_pallet] already exist!
+
+mars 09, 2016 10:49:58 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 10:49:58 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 10:50:05 AM state.S010_UserCodeScan doAction
+INFOS: User Oussama EZZIOURI / 1009 connected to host WSMA7040 at 2016-03-09 10:50:05 Project : SMALL.
+mars 09, 2016 11:02:22 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_09] already exist!
+Print sub directory [.\print\2016_03_09.\pallet] already exist!
+Print sub directory [.\print\2016_03_09.\closing_pallet] already exist!
+
+mars 09, 2016 11:02:22 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 11:02:22 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 11:02:28 AM state.S010_UserCodeScan doAction
+INFOS: User Oussama EZZIOURI / 1009 connected to host WSMA7040 at 2016-03-09 11:02:28 Project : SMALL.
+mars 09, 2016 11:05:18 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_09] already exist!
+Print sub directory [.\print\2016_03_09.\pallet] already exist!
+Print sub directory [.\print\2016_03_09.\closing_pallet] already exist!
+
+mars 09, 2016 11:05:19 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 11:05:19 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 11:05:24 AM state.S010_UserCodeScan doAction
+INFOS: User Oussama EZZIOURI / 1009 connected to host WSMA7040 at 2016-03-09 11:05:24 Project : ENGINE.
+mars 09, 2016 11:42:14 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_09] already exist!
+Print sub directory [.\print\2016_03_09.\pallet] already exist!
+Print sub directory [.\print\2016_03_09.\closing_pallet] already exist!
+
+mars 09, 2016 11:42:15 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 11:42:15 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 11:42:35 AM state.S010_UserCodeScan doAction
+INFOS: User Oussama EZZIOURI / 1009 connected to host WSMA7040 at 2016-03-09 11:42:35 Project : SMALL.
+mars 09, 2016 11:51:48 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_09] already exist!
+Print sub directory [.\print\2016_03_09.\pallet] already exist!
+Print sub directory [.\print\2016_03_09.\closing_pallet] already exist!
+
+mars 09, 2016 11:51:49 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 11:51:49 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 11:51:53 AM state.S010_UserCodeScan doAction
+INFOS: User Oussama EZZIOURI / 1009 connected to host WSMA7040 at 2016-03-09 11:51:53 Project : SMALL.
+mars 09, 2016 11:53:12 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_09] already exist!
+Print sub directory [.\print\2016_03_09.\pallet] already exist!
+Print sub directory [.\print\2016_03_09.\closing_pallet] already exist!
+
+mars 09, 2016 11:53:13 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 11:53:13 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 11:53:16 AM state.S010_UserCodeScan doAction
+INFOS: User Oussama EZZIOURI / 1009 connected to host WSMA7040 at 2016-03-09 11:53:16 Project : SMALL.
+mars 09, 2016 11:54:52 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_09] already exist!
+Print sub directory [.\print\2016_03_09.\pallet] already exist!
+Print sub directory [.\print\2016_03_09.\closing_pallet] already exist!
+
+mars 09, 2016 11:54:53 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 11:54:53 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 11:54:56 AM state.S010_UserCodeScan doAction
+INFOS: User Oussama EZZIOURI / 1009 connected to host WSMA7040 at 2016-03-09 11:54:56 Project : SMALL.
+mars 09, 2016 11:58:36 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_09] already exist!
+Print sub directory [.\print\2016_03_09.\pallet] already exist!
+Print sub directory [.\print\2016_03_09.\closing_pallet] already exist!
+
+mars 09, 2016 11:58:37 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 11:58:37 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 11:58:42 AM state.S010_UserCodeScan doAction
+INFOS: User Oussama EZZIOURI / 1009 connected to host WSMA7040 at 2016-03-09 11:58:42 Project : SMALL.
+mars 09, 2016 12:04:47 PM state.S010_UserCodeScan doAction
+INFOS: User Mohammed RIMALI / 1002 connected to host WSMA7040 at 2016-03-09 12:04:47 Project : SMALL.
+mars 09, 2016 12:04:49 PM entity.BaseHarness checkHarnessPartFormat
+INFOS: Invalid Harness Part scanned [P2220512705.02.2016;00:00:00] !
+mars 09, 2016 12:04:49 PM state.S020_HarnessPartScan doAction
+AVERTISSEMENT: Invalid Harness Part scanned [P2220512705.02.2016;00:00:00] !
+mars 09, 2016 12:04:54 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22205127] in ConfigUCS: SMALL
+mars 09, 2016 12:04:54 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22205127] found for project [SMALL].
+mars 09, 2016 12:04:54 PM state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22205127] OK.
+mars 09, 2016 12:04:55 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2220512705.02.2016;00:00:00] in BaseHarness.
+mars 09, 2016 12:04:55 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+mars 09, 2016 12:04:55 PM state.S030_QRCodeScan doAction
+INFOS: Valid Harness Counter scanned [P2220512705.02.2016;00:00:00] OK.
+mars 09, 2016 12:05:32 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_09] already exist!
+Print sub directory [.\print\2016_03_09.\pallet] already exist!
+Print sub directory [.\print\2016_03_09.\closing_pallet] already exist!
+
+mars 09, 2016 12:05:33 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 12:05:33 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 12:05:37 PM state.S010_UserCodeScan doAction
+INFOS: User Oussama EZZIOURI / 1009 connected to host WSMA7040 at 2016-03-09 12:05:37 Project : SMALL.
+mars 09, 2016 12:19:42 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_09] already exist!
+Print sub directory [.\print\2016_03_09.\pallet] already exist!
+Print sub directory [.\print\2016_03_09.\closing_pallet] already exist!
+
+mars 09, 2016 12:19:43 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 12:19:43 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 12:19:47 PM state.S010_UserCodeScan doAction
+INFOS: User Oussama EZZIOURI / 1009 connected to host WSMA7040 at 2016-03-09 12:19:47 Project : SMALL.
+mars 09, 2016 12:26:03 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_09] already exist!
+Print sub directory [.\print\2016_03_09.\pallet] already exist!
+Print sub directory [.\print\2016_03_09.\closing_pallet] already exist!
+
+mars 09, 2016 12:26:03 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 12:26:03 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 12:26:42 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_09] already exist!
+Print sub directory [.\print\2016_03_09.\pallet] already exist!
+Print sub directory [.\print\2016_03_09.\closing_pallet] already exist!
+
+mars 09, 2016 12:26:42 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 12:26:43 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 12:28:08 PM state.S010_UserCodeScan doAction
+INFOS: User Mohammed RIMALI / 1002 connected to host WSMA7040 at 2016-03-09 12:28:08 Project : SMALL.
+mars 09, 2016 12:28:11 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22205127] in ConfigUCS: SMALL
+mars 09, 2016 12:28:11 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22205127] found for project [SMALL].
+mars 09, 2016 12:28:11 PM state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22205127] OK.
+mars 09, 2016 12:28:15 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2220512705.02.2016;00:00:00] in BaseHarness.
+mars 09, 2016 12:28:15 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+mars 09, 2016 12:28:15 PM state.S030_QRCodeScan doAction
+INFOS: Valid Harness Counter scanned [P2220512705.02.2016;00:00:00] OK.
+mars 09, 2016 12:28:25 PM gui.UI9000_ChooseContainerType <init>
+INFOS: Item found 22205127--26C03051A--P03--kltv-780--150
+mars 09, 2016 12:28:25 PM gui.UI9000_ChooseContainerType <init>
+INFOS: 1 item(s) found for Harness Part[22205127].
+mars 09, 2016 12:28:26 PM gui.UI9000_ChooseContainerType mappingContextVals
+INFOS: Selected pack type : 22205127--26C03051A--P03--kltv-780--150 
+mars 09, 2016 12:28:26 PM gui.UI9000_ChooseContainerType items_listKeyPressed
+DÉSACTIVÉ: FROM ConfigUcs cu WHERE cu.supplierPartNumber = :supplierPartNumber AND cu.harnessIndex = :harnessIndex
+mars 09, 2016 12:28:27 PM gui.UI9000_ChooseContainerType items_listKeyPressed
+INFOS: Set Pallet [100000007] state to [in_process]
+mars 09, 2016 12:28:27 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2016_03_09\pallet\PrintOpenPallet_A5_2016_03_09_12_28_26.pdf] to the default printer...
+mars 09, 2016 12:28:27 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [%s] has been printed.
+mars 09, 2016 12:28:27 PM gui.UI9000_ChooseContainerType items_listKeyPressed
+INFOS: Set Pallet [100000007] state to [printed]
+mars 09, 2016 12:28:27 PM gui.UI9000_ChooseContainerType items_listKeyPressed
+INFOS: Openning new container for first harness part [22205127].
+mars 09, 2016 12:28:47 PM state.S041_NewPalletScan doAction
+INFOS: Scanned Pallet number [100000007] OK.
+mars 09, 2016 12:28:47 PM state.S041_NewPalletScan doAction
+INFOS: BaseContainer created BaseContainer{id=6, createTime=Wed Mar 09 12:28:47 WET 2016, writeTime=Wed Mar 09 12:28:47 WET 2016, createId=2, writeId=2, user=1002, startTime=Wed Mar 09 12:28:47 WET 2016, completeTime=null, workTime=null, palletNumber=100000007, harnessPart=22205127, harnessIndex=P03, supplierPartNumber=26C03051A, qtyExpected=150, qtyRead=1, state=open, packType=kltv-780} 
+mars 09, 2016 12:28:57 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22205127] in ConfigUCS: SMALL
+mars 09, 2016 12:28:57 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22205127] found for project [SMALL].
+mars 09, 2016 12:28:57 PM state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22205127] OK.
+mars 09, 2016 12:29:01 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2220512705.02.2016;00:00:01] in BaseHarness.
+mars 09, 2016 12:29:01 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+mars 09, 2016 12:29:01 PM state.S030_QRCodeScan doAction
+INFOS: Valid Harness Counter scanned [P2220512705.02.2016;00:00:01] OK.
+mars 09, 2016 12:29:07 PM entity.BaseHarness checkHarnessPartFormat
+INFOS: Invalid Harness Part scanned [P2220512705.02.2016;00:00:03] !
+mars 09, 2016 12:29:07 PM state.S020_HarnessPartScan doAction
+AVERTISSEMENT: Invalid Harness Part scanned [P2220512705.02.2016;00:00:03] !
+mars 09, 2016 12:29:13 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22205127] in ConfigUCS: SMALL
+mars 09, 2016 12:29:13 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22205127] found for project [SMALL].
+mars 09, 2016 12:29:13 PM state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22205127] OK.
+mars 09, 2016 12:29:17 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2220512705.02.2016;00:00:02] in BaseHarness.
+mars 09, 2016 12:29:17 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+mars 09, 2016 12:29:17 PM state.S030_QRCodeScan doAction
+INFOS: Valid Harness Counter scanned [P2220512705.02.2016;00:00:02] OK.
+mars 09, 2016 12:30:10 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_09] already exist!
+Print sub directory [.\print\2016_03_09.\pallet] already exist!
+Print sub directory [.\print\2016_03_09.\closing_pallet] already exist!
+
+mars 09, 2016 12:30:11 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 12:30:11 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 12:31:01 PM state.S010_UserCodeScan doAction
+INFOS: Invalid matricule number or account locked !
+mars 09, 2016 12:31:04 PM state.S010_UserCodeScan doAction
+INFOS: User Jawad HAMID / 1003 connected to host WSMA7040 at 2016-03-09 12:31:04 Project : ENGINE.
+mars 09, 2016 12:31:59 PM state.S010_UserCodeScan doAction
+INFOS: Invalid matricule number or account locked !
+mars 09, 2016 12:32:08 PM state.S010_UserCodeScan doAction
+INFOS: Invalid matricule number or account locked !
+mars 09, 2016 12:32:11 PM state.S010_UserCodeScan doAction
+INFOS: User Mohammed RIMALI / 1002 connected to host WSMA7040 at 2016-03-09 12:32:11 Project : SMALL.
+mars 09, 2016 12:32:15 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22205127] in ConfigUCS: SMALL
+mars 09, 2016 12:32:15 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22205127] found for project [SMALL].
+mars 09, 2016 12:32:15 PM state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22205127] OK.
+mars 09, 2016 12:32:16 PM entity.BaseHarness checkCounterFormat
+INFOS: Invalid Counter scanned format [P2220512705.02.2016;00:00]!
+mars 09, 2016 12:32:23 PM entity.BaseHarness checkCounterFormat
+INFOS: Invalid Counter scanned format [P2220512705.02.2016;00:00]!
+mars 09, 2016 12:32:52 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2220512705.02.2016;00:00:00] in BaseHarness.
+mars 09, 2016 12:32:52 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+mars 09, 2016 12:32:52 PM entity.BaseHarness getHarnessByCounter
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+mars 09, 2016 1:49:45 PM state.S010_UserCodeScan doAction
+INFOS: User Mohammed RIMALI / 1002 connected to host WSMA7040 at 2016-03-09 13:49:45 Project : SMALL.
+mars 09, 2016 1:49:48 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22205127] in ConfigUCS: SMALL
+mars 09, 2016 1:49:48 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22205127] found for project [SMALL].
+mars 09, 2016 1:49:48 PM state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22205127] OK.
+mars 09, 2016 1:49:51 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2220512705.02.2016;00:00:03] in BaseHarness.
+mars 09, 2016 1:49:51 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+mars 09, 2016 1:49:51 PM state.S030_QRCodeScan doAction
+INFOS: Valid Harness Counter scanned [P2220512705.02.2016;00:00:03] OK.
+mars 09, 2016 1:59:19 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_09] already exist!
+Print sub directory [.\print\2016_03_09.\pallet] already exist!
+Print sub directory [.\print\2016_03_09.\closing_pallet] already exist!
+
+mars 09, 2016 1:59:19 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 1:59:19 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 1:59:23 PM state.S010_UserCodeScan doAction
+INFOS: User Mohammed RIMALI / 1002 connected to host WSMA7040 at 2016-03-09 13:59:23 Project : SMALL.
+mars 09, 2016 1:59:31 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22205127] in ConfigUCS: SMALL
+mars 09, 2016 1:59:31 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22205127] found for project [SMALL].
+mars 09, 2016 1:59:31 PM state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22205127] OK.
+mars 09, 2016 1:59:50 PM state.S010_UserCodeScan doAction
+INFOS: User Mohammed RIMALI / 1002 connected to host WSMA7040 at 2016-03-09 13:59:50 Project : SMALL.
+mars 09, 2016 2:00:12 PM state.S010_UserCodeScan doAction
+INFOS: User Oussama EZZIOURI / 1009 connected to host WSMA7040 at 2016-03-09 14:00:12 Project : SMALL.
+mars 09, 2016 2:05:11 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_09] already exist!
+Print sub directory [.\print\2016_03_09.\pallet] already exist!
+Print sub directory [.\print\2016_03_09.\closing_pallet] already exist!
+
+mars 09, 2016 2:05:12 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 2:05:12 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 2:05:17 PM state.S010_UserCodeScan doAction
+INFOS: User Mohammed RIMALI / 1002 connected to host WSMA7040 at 2016-03-09 14:05:17 Project : SMALL.
+mars 09, 2016 2:05:28 PM state.S010_UserCodeScan doAction
+INFOS: User Oussama EZZIOURI / 1009 connected to host WSMA7040 at 2016-03-09 14:05:28 Project : SMALL.
+mars 09, 2016 2:07:14 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_09] already exist!
+Print sub directory [.\print\2016_03_09.\pallet] already exist!
+Print sub directory [.\print\2016_03_09.\closing_pallet] already exist!
+
+mars 09, 2016 2:07:15 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 2:07:15 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 2:07:21 PM state.S010_UserCodeScan doAction
+INFOS: Invalid matricule number or account locked !
+mars 09, 2016 2:07:25 PM state.S010_UserCodeScan doAction
+INFOS: User Oussama EZZIOURI / 1009 connected to host WSMA7040 at 2016-03-09 14:07:25 Project : SMALL.
+mars 09, 2016 2:08:04 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_09] already exist!
+Print sub directory [.\print\2016_03_09.\pallet] already exist!
+Print sub directory [.\print\2016_03_09.\closing_pallet] already exist!
+
+mars 09, 2016 2:08:04 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 2:08:04 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 2:08:09 PM state.S010_UserCodeScan doAction
+INFOS: User Oussama EZZIOURI / 1009 connected to host WSMA7040 at 2016-03-09 14:08:09 Project : SMALL.
+mars 09, 2016 2:09:15 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_09] already exist!
+Print sub directory [.\print\2016_03_09.\pallet] already exist!
+Print sub directory [.\print\2016_03_09.\closing_pallet] already exist!
+
+mars 09, 2016 2:09:16 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 2:09:16 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 2:09:24 PM state.S010_UserCodeScan doAction
+INFOS: User Oussama EZZIOURI / 1009 connected to host WSMA7040 at 2016-03-09 14:09:24 Project : SMALL.
+mars 09, 2016 2:10:42 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_09] already exist!
+Print sub directory [.\print\2016_03_09.\pallet] already exist!
+Print sub directory [.\print\2016_03_09.\closing_pallet] already exist!
+
+mars 09, 2016 2:10:43 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 2:10:43 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 2:10:48 PM state.S010_UserCodeScan doAction
+INFOS: User Oussama EZZIOURI / 1009 connected to host WSMA7040 at 2016-03-09 14:10:48 Project : SMALL.
+mars 09, 2016 2:17:11 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_09] already exist!
+Print sub directory [.\print\2016_03_09.\pallet] already exist!
+Print sub directory [.\print\2016_03_09.\closing_pallet] already exist!
+
+mars 09, 2016 2:17:11 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 2:17:11 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 2:17:24 PM state.S010_UserCodeScan doAction
+INFOS: User Oussama EZZIOURI / 1009 connected to host WSMA7040 at 2016-03-09 14:17:24 Project : SMALL.
+mars 09, 2016 2:20:26 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_09] already exist!
+Print sub directory [.\print\2016_03_09.\pallet] already exist!
+Print sub directory [.\print\2016_03_09.\closing_pallet] already exist!
+
+mars 09, 2016 2:20:26 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 2:20:26 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 2:20:30 PM state.S010_UserCodeScan doAction
+INFOS: User Oussama EZZIOURI / 1009 connected to host WSMA7040 at 2016-03-09 14:20:30 Project : SMALL.
+mars 09, 2016 2:21:19 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_09] already exist!
+Print sub directory [.\print\2016_03_09.\pallet] already exist!
+Print sub directory [.\print\2016_03_09.\closing_pallet] already exist!
+
+mars 09, 2016 2:21:20 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 2:21:20 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 2:46:41 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_09] already exist!
+Print sub directory [.\print\2016_03_09.\pallet] already exist!
+Print sub directory [.\print\2016_03_09.\closing_pallet] already exist!
+
+mars 09, 2016 2:46:42 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 2:46:42 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 2:52:08 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_09] already exist!
+Print sub directory [.\print\2016_03_09.\pallet] already exist!
+Print sub directory [.\print\2016_03_09.\closing_pallet] already exist!
+
+mars 09, 2016 2:52:08 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 2:52:08 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 2:52:15 PM state.S010_UserCodeScan doAction
+INFOS: User Oussama EZZIOURI / 1009 connected to host WSMA7040 at 2016-03-09 14:52:15 Project : SMALL.
+mars 09, 2016 2:59:51 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_09] already exist!
+Print sub directory [.\print\2016_03_09.\pallet] already exist!
+Print sub directory [.\print\2016_03_09.\closing_pallet] already exist!
+
+mars 09, 2016 2:59:51 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 2:59:51 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 2:59:58 PM state.S010_UserCodeScan doAction
+INFOS: User Mohammed RIMALI / 1002 connected to host WSMA7040 at 2016-03-09 14:59:58 Project : SMALL.
+mars 09, 2016 3:00:11 PM state.S010_UserCodeScan doAction
+INFOS: User Mohammed RIMALI / 1002 connected to host WSMA7040 at 2016-03-09 15:00:11 Project : SMALL.
+mars 09, 2016 3:00:14 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22205127] in ConfigUCS: SMALL
+mars 09, 2016 3:00:14 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22205127] found for project [SMALL].
+mars 09, 2016 3:00:14 PM state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22205127] OK.
+mars 09, 2016 3:00:15 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2220512705.02.2016;00:00:00] in BaseHarness.
+mars 09, 2016 3:00:15 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+mars 09, 2016 3:00:15 PM state.S030_QRCodeScan doAction
+INFOS: Valid Harness Counter scanned [P2220512705.02.2016;00:00:00] OK.
+mars 09, 2016 3:00:40 PM state.S010_UserCodeScan doAction
+INFOS: User Oussama EZZIOURI / 1009 connected to host WSMA7040 at 2016-03-09 15:00:40 Project : SMALL.
+mars 09, 2016 3:01:09 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_09] already exist!
+Print sub directory [.\print\2016_03_09.\pallet] already exist!
+Print sub directory [.\print\2016_03_09.\closing_pallet] already exist!
+
+mars 09, 2016 3:01:09 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 3:01:09 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 3:01:15 PM state.S010_UserCodeScan doAction
+INFOS: User Mohammed RIMALI / 1002 connected to host WSMA7040 at 2016-03-09 15:01:15 Project : SMALL.
+mars 09, 2016 3:01:22 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22205127] in ConfigUCS: SMALL
+mars 09, 2016 3:01:22 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22205127] found for project [SMALL].
+mars 09, 2016 3:01:22 PM state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22205127] OK.
+mars 09, 2016 3:01:24 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2220512705.02.2016;00:00:01] in BaseHarness.
+mars 09, 2016 3:01:24 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+mars 09, 2016 3:01:24 PM entity.BaseHarness getHarnessByCounter
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+mars 09, 2016 3:01:28 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2220512705.02.2016;00:00:04] in BaseHarness.
+mars 09, 2016 3:01:28 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+mars 09, 2016 3:01:28 PM state.S030_QRCodeScan doAction
+INFOS: Valid Harness Counter scanned [P2220512705.02.2016;00:00:04] OK.
+mars 09, 2016 3:01:49 PM state.S010_UserCodeScan doAction
+INFOS: User Oussama EZZIOURI / 1009 connected to host WSMA7040 at 2016-03-09 15:01:49 Project : SMALL.
+mars 09, 2016 3:12:53 PM state.S010_UserCodeScan doAction
+INFOS: User Jawad HAMID / 1003 connected to host WSMA7040 at 2016-03-09 15:12:53 Project : ENGINE.
+mars 09, 2016 3:12:57 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22225311] in ConfigUCS: ENGINE
+mars 09, 2016 3:12:57 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22225311] found for project [ENGINE].
+mars 09, 2016 3:12:57 PM state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22225311] OK.
+mars 09, 2016 3:13:17 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2222531105.02.2016;00:00:00] in BaseHarness.
+mars 09, 2016 3:13:17 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+mars 09, 2016 3:13:17 PM state.S030_QRCodeScan doAction
+INFOS: Valid Harness Counter scanned [P2222531105.02.2016;00:00:00] OK.
+mars 09, 2016 3:13:26 PM entity.BaseEngineLabel isLabelCodeExist
+INFOS: Searching Engine Label code [15083100100] in BaseEngineLabel.
+mars 09, 2016 3:13:26 PM entity.BaseEngineLabel isLabelCodeExist
+INFOS: FROM BaseEngineLabel bel WHERE bel.labelCode = :labelCode
+mars 09, 2016 3:13:26 PM entity.BaseEngineLabel isLabelCodeExist
+INFOS: New label engine [15083100100]
+mars 09, 2016 3:13:26 PM state.S031_EngineLabel1Scan doAction
+INFOS: First Valid Engine Label scanned [15083100100] OK.
+mars 09, 2016 3:13:28 PM entity.BaseEngineLabel isLabelCodeExist
+INFOS: Searching Engine Label code [15083100101] in BaseEngineLabel.
+mars 09, 2016 3:13:28 PM entity.BaseEngineLabel isLabelCodeExist
+INFOS: FROM BaseEngineLabel bel WHERE bel.labelCode = :labelCode
+mars 09, 2016 3:13:28 PM entity.BaseEngineLabel isLabelCodeExist
+INFOS: New label engine [15083100101]
+mars 09, 2016 3:13:28 PM state.S032_EngineLabel2Scan doAction
+INFOS: Second Valid Engine Label scanned [15083100101] OK.
+mars 09, 2016 3:13:31 PM gui.UI9000_ChooseContainerType <init>
+INFOS: Item found 22225311--26C14121A--P02--kltv-780--1
+mars 09, 2016 3:13:31 PM gui.UI9000_ChooseContainerType <init>
+INFOS: Item found 22225311--26C14122A--P03--kltv-780--1
+mars 09, 2016 3:13:31 PM gui.UI9000_ChooseContainerType <init>
+INFOS: 2 item(s) found for Harness Part[22225311].
+mars 09, 2016 3:13:41 PM gui.UI9000_ChooseContainerType mappingContextVals
+INFOS: Selected pack type : 22225311--26C14122A--P03--kltv-780--1 
+mars 09, 2016 3:13:41 PM gui.UI9000_ChooseContainerType items_listKeyPressed
+DÉSACTIVÉ: FROM ConfigUcs cu WHERE cu.supplierPartNumber = :supplierPartNumber AND cu.harnessIndex = :harnessIndex
+mars 09, 2016 3:13:41 PM gui.UI9000_ChooseContainerType items_listKeyPressed
+INFOS: Set Pallet [100000008] state to [IN_PROCESS]
+mars 09, 2016 3:13:41 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2016_03_09\pallet\PrintOpenPallet_A5_2016_03_09_15_13_41.pdf] to the default printer...
+mars 09, 2016 3:13:41 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [%s] has been printed.
+mars 09, 2016 3:13:41 PM gui.UI9000_ChooseContainerType items_listKeyPressed
+INFOS: Set Pallet [100000008] state to [PRINTED]
+mars 09, 2016 3:13:41 PM gui.UI9000_ChooseContainerType items_listKeyPressed
+INFOS: Openning new container for first harness part [22225311].
+mars 09, 2016 3:28:08 PM state.S041_NewPalletScan doAction
+INFOS: Scanned Pallet number [100000008] OK.
+mars 09, 2016 3:28:08 PM state.S041_NewPalletScan doAction
+INFOS: BaseContainer created BaseContainer{id=7, createTime=Wed Mar 09 15:28:08 WET 2016, writeTime=Wed Mar 09 15:28:08 WET 2016, createId=1, writeId=1, user=1003, startTime=Wed Mar 09 15:28:08 WET 2016, completeTime=null, workTime=null, palletNumber=100000008, harnessPart=22225311, harnessIndex=P03, supplierPartNumber=26C14122A, qtyExpected=1, qtyRead=1, state=OPEN, packType=kltv-780} 
+mars 09, 2016 3:28:08 PM helper.PrinterHelper saveAndPrintGalia
+INFOS: Set Closing Pallet item [1] state to [IN_PROCESS]
+mars 09, 2016 3:28:08 PM print.PrintClosingPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2016_03_09\closing_pallet\PrintClosingPallet_A5_2016_03_09_15_28_08.pdf] to the default printer...
+mars 09, 2016 3:28:08 PM print.PrintClosingPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [%s] has been printed.
+mars 09, 2016 3:28:08 PM helper.PrinterHelper saveAndPrintGalia
+INFOS: Set Closing Pallet [1] state to [PRINTED]
+mars 09, 2016 3:28:11 PM state.S050_ClosingPallet doAction
+AVERTISSEMENT: Invalid CLOSE PALLET barcode []!
+mars 09, 2016 3:29:06 PM state.S010_UserCodeScan doAction
+INFOS: User Jawad HAMID / 1003 connected to host WSMA7040 at 2016-03-09 15:29:06 Project : ENGINE.
+mars 09, 2016 5:46:28 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_09] already exist!
+Print sub directory [.\print\2016_03_09.\pallet] already exist!
+Print sub directory [.\print\2016_03_09.\closing_pallet] already exist!
+
+mars 09, 2016 5:46:28 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2016 5:46:28 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC

@@ -1,0 +1,133 @@
+juin 19, 2017 10:58:42 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_06_19] is created!
+Print sub directory [.\print\2017_06_19.\open_sheet] is created!
+Print sub directory [.\print\2017_06_19.\closing_sheet] is created!
+Print sub directory [.\print\2017_06_19.\picking_label] is created!
+Print sub directory [.\print\2017_06_19.\dispatch_label] is created!
+
+juin 19, 2017 10:58:53 AM gui.packaging_warehouse.PACKAGING_WAREHOUSE_UI0001_PasswordRequest connect
+INFOS: User OUSSAMA EZZIOURI / ezou1001 connected to host WSMA7040 at 2017-06-19 10:58:53 Packaging warehouse interface : .
+juin 19, 2017 11:02:35 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_06_19] already exist!
+Print sub directory [.\print\2017_06_19.\open_sheet] already exist!
+Print sub directory [.\print\2017_06_19.\closing_sheet] already exist!
+Print sub directory [.\print\2017_06_19.\picking_label] already exist!
+Print sub directory [.\print\2017_06_19.\dispatch_label] already exist!
+
+juin 19, 2017 11:02:48 AM gui.packaging_warehouse.PACKAGING_WAREHOUSE_UI0001_PasswordRequest connect
+INFOS: User OUSSAMA EZZIOURI / ezou1001 connected to host WSMA7040 at 2017-06-19 11:02:48 Packaging warehouse interface : .
+juin 19, 2017 11:03:34 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_06_19] already exist!
+Print sub directory [.\print\2017_06_19.\open_sheet] already exist!
+Print sub directory [.\print\2017_06_19.\closing_sheet] already exist!
+Print sub directory [.\print\2017_06_19.\picking_label] already exist!
+Print sub directory [.\print\2017_06_19.\dispatch_label] already exist!
+
+juin 19, 2017 11:03:42 AM gui.packaging_warehouse.PACKAGING_WAREHOUSE_UI0001_PasswordRequest connect
+INFOS: User OUSSAMA EZZIOURI / ezou1001 connected to host WSMA7040 at 2017-06-19 11:03:42 Packaging warehouse interface : .
+juin 19, 2017 11:04:39 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_06_19] already exist!
+Print sub directory [.\print\2017_06_19.\open_sheet] already exist!
+Print sub directory [.\print\2017_06_19.\closing_sheet] already exist!
+Print sub directory [.\print\2017_06_19.\picking_label] already exist!
+Print sub directory [.\print\2017_06_19.\dispatch_label] already exist!
+
+juin 19, 2017 11:04:45 AM gui.packaging_warehouse.PACKAGING_WAREHOUSE_UI0001_PasswordRequest connect
+INFOS: User OUSSAMA EZZIOURI / ezou1001 connected to host WSMA7040 at 2017-06-19 11:04:45 Packaging warehouse interface : .
+juin 19, 2017 11:06:27 AM gui.packaging.PACKAGING_UI0001_Main loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord ORDER BY id ASC
+juin 19, 2017 11:06:27 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+juin 19, 2017 11:06:27 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+juin 19, 2017 11:06:29 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+juin 19, 2017 11:10:36 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_06_19] already exist!
+Print sub directory [.\print\2017_06_19.\open_sheet] already exist!
+Print sub directory [.\print\2017_06_19.\closing_sheet] already exist!
+Print sub directory [.\print\2017_06_19.\picking_label] already exist!
+Print sub directory [.\print\2017_06_19.\dispatch_label] already exist!
+
+juin 19, 2017 11:10:38 AM gui.packaging.PACKAGING_UI0001_Main loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord ORDER BY id ASC
+juin 19, 2017 11:10:39 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+juin 19, 2017 11:10:39 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+juin 19, 2017 11:10:40 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+juin 20, 2017 8:17:38 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+juin 20, 2017 8:17:39 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+juin 20, 2017 8:17:39 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+juin 20, 2017 8:17:47 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+juin 20, 2017 8:17:47 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+juin 20, 2017 8:17:47 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+juin 20, 2017 8:17:47 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+juin 20, 2017 8:23:24 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+juin 20, 2017 8:23:24 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+juin 20, 2017 8:23:39 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+juin 20, 2017 8:23:39 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+juin 20, 2017 8:34:50 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+juin 20, 2017 8:34:54 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+juin 20, 2017 8:34:54 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+juin 20, 2017 8:34:55 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+juin 20, 2017 8:34:55 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+juin 20, 2017 8:34:56 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+juin 20, 2017 8:34:56 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+juin 20, 2017 8:34:56 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+juin 20, 2017 8:34:56 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+juin 20, 2017 8:34:57 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+juin 20, 2017 8:34:57 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+juin 20, 2017 8:34:57 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+juin 20, 2017 8:34:57 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+juin 20, 2017 8:55:34 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+juin 20, 2017 8:57:57 AM gui.config.CONFIG_UI0000_AdminPassword checkLoginAndPass
+INFOS: User OUSSAMA EZZIOURI / ezou1001 connected to host WSMA7040 at 2017-06-20 08:57:57 Module : Planner.
+juin 20, 2017 8:57:58 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+juin 20, 2017 8:57:58 AM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+juin 20, 2017 8:57:58 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+juin 20, 2017 8:58:02 AM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+juin 20, 2017 8:58:02 AM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+juin 20, 2017 9:27:53 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+juin 20, 2017 9:27:53 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+juin 20, 2017 9:47:28 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+juin 20, 2017 10:48:05 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+juin 20, 2017 10:57:37 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+juin 20, 2017 11:01:23 AM gui.warehouse_dispatch.WAREHOUSE_DISPATCH_UI0003_PasswordRequest connect
+INFOS: User OUSSAMA EZZIOURI / ezou1001 connected to host WSMA7040 at 2017-06-20 11:01:23 Dispatch interface : .

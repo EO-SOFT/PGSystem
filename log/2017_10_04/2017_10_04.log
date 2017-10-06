@@ -1,0 +1,477 @@
+oct. 04, 2017 10:59:17 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_10_04] is created!
+Print sub directory [.\print\2017_10_04.\open_sheet] is created!
+Print sub directory [.\print\2017_10_04.\closing_sheet] is created!
+Print sub directory [.\print\2017_10_04.\picking_label] is created!
+Print sub directory [.\print\2017_10_04.\dispatch_label] is created!
+
+oct. 04, 2017 11:01:34 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 04, 2017 11:01:34 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 04, 2017 11:01:37 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+oct. 04, 2017 11:01:37 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+oct. 04, 2017 11:01:37 PM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+oct. 04, 2017 11:01:44 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+oct. 04, 2017 11:01:44 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+oct. 04, 2017 11:01:44 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+oct. 04, 2017 11:01:45 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+oct. 04, 2017 11:01:45 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+oct. 04, 2017 11:01:45 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+oct. 04, 2017 11:01:51 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+oct. 04, 2017 11:01:53 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+oct. 04, 2017 11:01:53 PM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+oct. 04, 2017 11:01:54 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+oct. 04, 2017 11:01:54 PM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+oct. 04, 2017 11:01:56 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+oct. 04, 2017 11:01:56 PM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+oct. 04, 2017 11:01:57 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+oct. 04, 2017 11:01:57 PM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+oct. 04, 2017 11:01:59 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+oct. 04, 2017 11:01:59 PM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+oct. 04, 2017 11:02:00 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+oct. 04, 2017 11:02:00 PM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+oct. 04, 2017 11:02:01 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+oct. 04, 2017 11:02:01 PM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+oct. 04, 2017 11:02:14 PM gui.warehouse_dispatch.WAREHOUSE_DISPATCH_UI0003_PasswordRequest connect
+INFOS: User EZZIOURI OUSSAMA / ezou1001 connected to host Oussama-PC at 2017-10-04 23:02:14 Dispatch interface : .
+oct. 04, 2017 11:29:58 PM helper.Helper InitDailyDestPrintDir
+INFOS: File 2017_10_04.log already exists.Print directory [.\print\2017_10_04] already exist!
+Print sub directory [.\print\2017_10_04.\open_sheet] already exist!
+Print sub directory [.\print\2017_10_04.\closing_sheet] already exist!
+Print sub directory [.\print\2017_10_04.\picking_label] already exist!
+Print sub directory [.\print\2017_10_04.\dispatch_label] already exist!
+
+oct. 04, 2017 11:30:16 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 04, 2017 11:30:16 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 04, 2017 11:31:03 PM gui.packaging.state.S010_UserCodeScan doAction
+INFOS: Invalid matricule number or account locked !
+oct. 04, 2017 11:31:06 PM gui.packaging.PACKAGING_UI0002_PasswordRequest connect
+INFOS: User EZZIOURI OUSSAMA / ducati connected to host Oussama-PC at 2017-10-04 23:31:06 Project : DUCATI.
+oct. 04, 2017 11:31:06 PM gui.packaging.PACKAGING_UI0002_PasswordRequest loadDotMatrixCodePatterns
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord AND cb.customer = :customer ORDER BY id ASC
+oct. 04, 2017 11:31:06 PM gui.packaging.PACKAGING_UI0002_PasswordRequest loadPartNumberCodePatterns
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord AND cb.customer = :customer ORDER BY id ASC
+oct. 04, 2017 11:38:23 PM helper.Helper InitDailyDestPrintDir
+INFOS: File 2017_10_04.log already exists.Print directory [.\print\2017_10_04] created !
+Print sub directory [.\print\2017_10_04.\open_sheet] created !
+Print sub directory [.\print\2017_10_04.\closing_sheet] created !
+Print sub directory [.\print\2017_10_04.\picking_label] created !
+Print sub directory [.\print\2017_10_04.\dispatch_label] created !
+
+oct. 04, 2017 11:38:25 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 04, 2017 11:38:25 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 04, 2017 11:38:29 PM gui.packaging.state.S010_UserCodeScan doAction
+INFOS: Invalid matricule number or account locked !
+oct. 04, 2017 11:38:32 PM gui.packaging.PACKAGING_UI0002_PasswordRequest connect
+INFOS: User EZZIOURI OUSSAMA / ducati connected to host Oussama-PC at 2017-10-04 23:38:32 Project : DUCATI.
+oct. 04, 2017 11:38:32 PM gui.packaging.PACKAGING_UI0002_PasswordRequest loadDotMatrixCodePatterns
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord AND cb.customer = :customer ORDER BY id ASC
+oct. 04, 2017 11:38:32 PM gui.packaging.PACKAGING_UI0002_PasswordRequest loadPartNumberCodePatterns
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord AND cb.customer = :customer ORDER BY id ASC
+oct. 04, 2017 11:38:43 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [5101C861C] in ConfigUCS: DUCATI
+oct. 04, 2017 11:38:43 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [5101C861C] found for project [DUCATI].
+oct. 04, 2017 11:38:43 PM gui.packaging.state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [5101C861C] OK.
+oct. 04, 2017 11:40:57 PM entity.BaseHarness checkDataMatrixFormat
+INFOS: Invalid Counter scanned format [5101C861C;05.10.2017;10:05:01]!
+oct. 04, 2017 11:43:03 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P5101C861C;05.10.2017;10:05:01] in BaseHarness.
+oct. 04, 2017 11:43:03 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+oct. 04, 2017 11:52:57 PM helper.Helper InitDailyDestPrintDir
+INFOS: File 2017_10_04.log already exists.Print directory [.\print\2017_10_04] already exist!
+Print sub directory [.\print\2017_10_04.\open_sheet] already exist!
+Print sub directory [.\print\2017_10_04.\closing_sheet] already exist!
+Print sub directory [.\print\2017_10_04.\picking_label] already exist!
+Print sub directory [.\print\2017_10_04.\dispatch_label] already exist!
+
+oct. 04, 2017 11:52:59 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 04, 2017 11:52:59 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 04, 2017 11:53:02 PM gui.packaging.state.S010_UserCodeScan doAction
+INFOS: Invalid matricule number or account locked !
+oct. 04, 2017 11:53:05 PM gui.packaging.PACKAGING_UI0002_PasswordRequest connect
+INFOS: User EZZIOURI OUSSAMA / ducati connected to host Oussama-PC at 2017-10-04 23:53:05 Project : DUCATI.
+oct. 04, 2017 11:53:05 PM gui.packaging.PACKAGING_UI0002_PasswordRequest loadDotMatrixCodePatterns
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord AND cb.customer = :customer ORDER BY id ASC
+oct. 04, 2017 11:53:05 PM gui.packaging.PACKAGING_UI0002_PasswordRequest loadPartNumberCodePatterns
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord AND cb.customer = :customer ORDER BY id ASC
+oct. 04, 2017 11:53:16 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [5101C861C] in ConfigUCS: DUCATI
+oct. 04, 2017 11:53:16 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [5101C861C] found for project [DUCATI].
+oct. 04, 2017 11:53:16 PM gui.packaging.state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P5101C861C] OK.
+oct. 04, 2017 11:53:19 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P5101C861C;05.10.2017;10:05:01] in BaseHarness.
+oct. 04, 2017 11:53:19 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+oct. 04, 2017 11:53:20 PM gui.packaging.state.S030_MatrixIdScan doAction
+INFOS: Valid Harness Counter scanned [P5101C861C;05.10.2017;10:05:01] OK.
+oct. 04, 2017 11:53:23 PM gui.packaging.state.S040_PalletChoice doAction
+INFOS: Is it a new pallet ?
+oct. 04, 2017 11:53:23 PM gui.packaging.state.S040_PalletChoice doAction
+INFOS:  [Yes]
+oct. 04, 2017 11:53:38 PM helper.Helper InitDailyDestPrintDir
+INFOS: File 2017_10_04.log already exists.Print directory [.\print\2017_10_04] already exist!
+Print sub directory [.\print\2017_10_04.\open_sheet] already exist!
+Print sub directory [.\print\2017_10_04.\closing_sheet] already exist!
+Print sub directory [.\print\2017_10_04.\picking_label] already exist!
+Print sub directory [.\print\2017_10_04.\dispatch_label] already exist!
+Print directory [.\print\2017_10_04] already exist!
+Print sub directory [.\print\2017_10_04.\open_sheet] already exist!
+Print sub directory [.\print\2017_10_04.\closing_sheet] already exist!
+Print sub directory [.\print\2017_10_04.\picking_label] already exist!
+Print sub directory [.\print\2017_10_04.\dispatch_label] already exist!
+
+oct. 04, 2017 11:53:39 PM helper.PrinterHelper saveAndPrintOpenSheet
+INFOS: Set Pallet [200034895] state to [IN_PROCESS]
+oct. 04, 2017 11:53:39 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2017_10_04\open_sheet\PrintOpenPallet_A5_2017_10_04_23_53_38_5101C861C_200034895.pdf] to the default printer...
+oct. 04, 2017 11:53:39 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [.\print\2017_10_04\open_sheet\PrintOpenPallet_A5_2017_10_04_23_53_38_5101C861C_200034895.pdf] has been printed.
+oct. 04, 2017 11:53:39 PM helper.PrinterHelper saveAndPrintOpenSheet
+INFOS: Set Pallet [200034895] state to [PRINTED]
+oct. 04, 2017 11:53:39 PM gui.packaging.PACKAGING_UI9000_ChoosePackType loadConfigUcs
+INFOS: Openning new container for first harness part [5101C861C].
+oct. 04, 2017 11:53:49 PM gui.packaging.state.S041_NewPalletScan doAction
+INFOS: Scanned Pallet number [200034895] OK.
+oct. 04, 2017 11:53:49 PM gui.packaging.state.S041_NewPalletScan doAction
+INFOS: BaseContainer created BaseContainer{id=34539, createTime=Wed Oct 04 23:53:49 WAT 2017, writeTime=Wed Oct 04 23:53:49 WAT 2017, createId=59, writeId=59, user=ducati, createUser=EZZIOURI OUSSAMA, startTime=Wed Oct 04 23:53:49 WAT 2017, closedTime=null, workTime=null, palletNumber=200034895, harnessPart=5101C861C, harnessIndex=1C, supplierPartNumber=26F139203, qtyExpected=3, qtyRead=1, containerState=OPEN, containerStateCode=1000, packType=C11, harnessType=DUCATI, stdTime=0.0, workstation=Oussama-PC, harnessList=[]} 
+oct. 04, 2017 11:53:56 PM entity.BaseHarness checkPartNumberFormat
+INFOS: Invalid part number format [P5101C861C;05.10.2017;10:05:01]!
+oct. 04, 2017 11:53:56 PM gui.packaging.state.S020_HarnessPartScan doAction
+AVERTISSEMENT: Invalid Harness Part scanned [P5101C861C;05.10.2017;10:05:01] !
+oct. 04, 2017 11:54:13 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [5101C861C] in ConfigUCS: DUCATI
+oct. 04, 2017 11:54:13 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [5101C861C] found for project [DUCATI].
+oct. 04, 2017 11:54:13 PM gui.packaging.state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P5101C861C] OK.
+oct. 04, 2017 11:54:18 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P5101C861C;05.10.2017;10:05:02] in BaseHarness.
+oct. 04, 2017 11:54:18 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+oct. 04, 2017 11:54:18 PM gui.packaging.state.S030_MatrixIdScan doAction
+INFOS: Valid Harness Counter scanned [P5101C861C;05.10.2017;10:05:02] OK.
+oct. 04, 2017 11:54:26 PM gui.packaging.state.S040_PalletChoice doAction
+INFOS: Is it a new pallet ?
+oct. 04, 2017 11:54:26 PM gui.packaging.state.S040_PalletChoice doAction
+INFOS:  [No]
+oct. 04, 2017 11:54:26 PM gui.packaging.state.S040_PalletChoice doAction
+INFOS: Pallet values 
+oct. 04, 2017 11:54:26 PM gui.packaging.state.S040_PalletChoice doAction
+INFOS: State           :   [true]
+oct. 04, 2017 11:54:26 PM gui.packaging.state.S040_PalletChoice doAction
+INFOS: Qty Expected    :   [3]
+oct. 04, 2017 11:54:26 PM gui.packaging.state.S040_PalletChoice doAction
+INFOS: Qty Read        :   [1]
+oct. 04, 2017 11:54:26 PM gui.packaging.state.S040_PalletChoice doAction
+INFOS: Std Time        :   [0.0]
+oct. 04, 2017 11:54:26 PM gui.packaging.state.S040_PalletChoice doAction
+INFOS: Harness Part [5101C861C] = Context Harness Part [5101C861C]
+oct. 04, 2017 11:54:26 PM gui.packaging.state.S040_PalletChoice doAction
+INFOS: Harness Type [DUCATI] = Context Harness Type [DUCATI]
+oct. 04, 2017 11:54:36 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [5101C861C] in ConfigUCS: DUCATI
+oct. 04, 2017 11:54:36 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [5101C861C] found for project [DUCATI].
+oct. 04, 2017 11:54:36 PM gui.packaging.state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P5101C861C] OK.
+oct. 04, 2017 11:54:39 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P5101C861C;05.10.2017;10:05:03] in BaseHarness.
+oct. 04, 2017 11:54:39 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+oct. 04, 2017 11:54:39 PM gui.packaging.state.S030_MatrixIdScan doAction
+INFOS: Valid Harness Counter scanned [P5101C861C;05.10.2017;10:05:03] OK.
+oct. 04, 2017 11:54:47 PM gui.packaging.state.S040_PalletChoice doAction
+INFOS: Is it a new pallet ?
+oct. 04, 2017 11:54:47 PM gui.packaging.state.S040_PalletChoice doAction
+INFOS:  [No]
+oct. 04, 2017 11:54:47 PM gui.packaging.state.S040_PalletChoice doAction
+INFOS: Pallet values 
+oct. 04, 2017 11:54:47 PM gui.packaging.state.S040_PalletChoice doAction
+INFOS: State           :   [true]
+oct. 04, 2017 11:54:47 PM gui.packaging.state.S040_PalletChoice doAction
+INFOS: Qty Expected    :   [3]
+oct. 04, 2017 11:54:47 PM gui.packaging.state.S040_PalletChoice doAction
+INFOS: Qty Read        :   [2]
+oct. 04, 2017 11:54:47 PM gui.packaging.state.S040_PalletChoice doAction
+INFOS: Std Time        :   [0.0]
+oct. 04, 2017 11:54:47 PM gui.packaging.state.S040_PalletChoice doAction
+INFOS: Harness Part [5101C861C] = Context Harness Part [5101C861C]
+oct. 04, 2017 11:54:47 PM gui.packaging.state.S040_PalletChoice doAction
+INFOS: Harness Type [DUCATI] = Context Harness Type [DUCATI]
+oct. 04, 2017 11:54:47 PM gui.packaging.state.S040_PalletChoice doAction
+INFOS: Quantité terminée BaseContainer{id=34539, createTime=2017-10-04 23:53:49.0, writeTime=Wed Oct 04 23:54:47 WAT 2017, createId=59, writeId=59, user=ducati, createUser=EZZIOURI OUSSAMA, startTime=2017-10-04 23:53:49.0, closedTime=null, workTime=null, palletNumber=200034895, harnessPart=5101C861C, harnessIndex=1C, supplierPartNumber=26F139203, qtyExpected=3, qtyRead=2, containerState=OPEN, containerStateCode=1000, packType=C11, harnessType=DUCATI, stdTime=0.0, workstation=Oussama-PC, harnessList=[entity.BaseHarness@16c8a3a, entity.BaseHarness@1d31a5b, entity.BaseHarness@201dbe]}
+oct. 04, 2017 11:54:47 PM helper.Helper InitDailyDestPrintDir
+INFOS: File 2017_10_04.log already exists.Print directory [.\print\2017_10_04] already exist!
+Print sub directory [.\print\2017_10_04.\open_sheet] already exist!
+Print sub directory [.\print\2017_10_04.\closing_sheet] already exist!
+Print sub directory [.\print\2017_10_04.\picking_label] already exist!
+Print sub directory [.\print\2017_10_04.\dispatch_label] already exist!
+Print directory [.\print\2017_10_04] already exist!
+Print sub directory [.\print\2017_10_04.\open_sheet] already exist!
+Print sub directory [.\print\2017_10_04.\closing_sheet] already exist!
+Print sub directory [.\print\2017_10_04.\picking_label] already exist!
+Print sub directory [.\print\2017_10_04.\dispatch_label] already exist!
+Print directory [.\print\2017_10_04] already exist!
+Print sub directory [.\print\2017_10_04.\open_sheet] already exist!
+Print sub directory [.\print\2017_10_04.\closing_sheet] already exist!
+Print sub directory [.\print\2017_10_04.\picking_label] already exist!
+Print sub directory [.\print\2017_10_04.\dispatch_label] already exist!
+
+oct. 04, 2017 11:54:48 PM helper.PrinterHelper saveAndPrintClosingSheet
+INFOS: Set Closing Pallet item [34173] state to [IN_PROCESS]
+oct. 04, 2017 11:54:48 PM print.PrintClosingPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2017_10_04\closing_sheet\PrintClosingPallet_A5_5101C861C_2017_10_04_23_54_47.pdf] to the default printer...
+oct. 04, 2017 11:54:48 PM print.PrintClosingPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [%s] has been printed.
+oct. 04, 2017 11:54:48 PM helper.PrinterHelper saveAndPrintClosingSheet
+INFOS: Set Closing Pallet [34173] state to [PRINTED]
+oct. 04, 2017 11:56:45 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+oct. 04, 2017 11:56:45 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+oct. 04, 2017 11:56:45 PM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+oct. 04, 2017 11:56:48 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+oct. 04, 2017 11:56:48 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+oct. 04, 2017 11:56:48 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+oct. 04, 2017 11:56:48 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+oct. 04, 2017 11:56:48 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+oct. 04, 2017 11:56:48 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+oct. 04, 2017 11:57:27 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+oct. 04, 2017 11:57:28 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+oct. 04, 2017 11:57:28 PM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+oct. 04, 2017 11:57:35 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+oct. 04, 2017 11:57:35 PM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+oct. 04, 2017 11:57:40 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+oct. 04, 2017 11:57:40 PM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+oct. 04, 2017 11:58:15 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+oct. 04, 2017 11:58:15 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+oct. 04, 2017 11:58:15 PM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+oct. 04, 2017 11:58:21 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+oct. 04, 2017 11:58:22 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+oct. 04, 2017 11:58:22 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+oct. 04, 2017 11:58:22 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+oct. 04, 2017 11:58:22 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+oct. 04, 2017 11:58:22 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+oct. 04, 2017 11:59:49 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+oct. 04, 2017 11:59:49 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+oct. 04, 2017 11:59:49 PM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+oct. 04, 2017 11:59:51 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+oct. 04, 2017 11:59:51 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+oct. 04, 2017 11:59:51 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+oct. 04, 2017 11:59:51 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+oct. 04, 2017 11:59:52 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+oct. 04, 2017 11:59:52 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+oct. 05, 2017 12:00:00 AM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+oct. 05, 2017 12:00:04 AM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+oct. 05, 2017 12:00:04 AM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+oct. 05, 2017 12:06:21 AM entity.BaseContainer checkContainerByState
+INFOS: Searching Container [200034895] in BaseContainer.
+oct. 05, 2017 12:06:21 AM entity.BaseContainer checkContainerByState
+INFOS: FROM BaseContainer bc WHERE bc.palletNumber = :palletNumber AND bc.containerState = :state
+oct. 05, 2017 12:06:51 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+oct. 05, 2017 12:06:51 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+oct. 05, 2017 12:06:51 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+oct. 05, 2017 12:06:53 AM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+oct. 05, 2017 12:06:54 AM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+oct. 05, 2017 12:06:54 AM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+oct. 05, 2017 12:06:54 AM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+oct. 05, 2017 12:06:54 AM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+oct. 05, 2017 12:06:54 AM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+oct. 05, 2017 12:07:07 AM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+oct. 05, 2017 12:07:08 AM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+oct. 05, 2017 12:07:08 AM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+oct. 05, 2017 12:07:09 AM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+oct. 05, 2017 12:07:20 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+oct. 05, 2017 12:07:21 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+oct. 05, 2017 12:07:21 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+oct. 05, 2017 12:07:24 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+oct. 05, 2017 12:07:24 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+oct. 05, 2017 12:07:33 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+oct. 05, 2017 12:07:33 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+oct. 05, 2017 12:07:35 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+oct. 05, 2017 12:07:35 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+oct. 05, 2017 12:07:41 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+oct. 05, 2017 12:07:41 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+oct. 05, 2017 12:07:41 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+oct. 05, 2017 12:07:43 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+oct. 05, 2017 12:07:43 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+oct. 05, 2017 12:07:43 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+oct. 05, 2017 12:07:43 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+oct. 05, 2017 12:07:45 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+oct. 05, 2017 12:07:45 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+oct. 05, 2017 12:07:53 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+oct. 05, 2017 12:07:53 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+oct. 05, 2017 12:07:53 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+oct. 05, 2017 12:07:53 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+oct. 05, 2017 12:07:56 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+oct. 05, 2017 12:07:56 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+oct. 05, 2017 12:07:56 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+oct. 05, 2017 12:07:56 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+oct. 05, 2017 12:07:59 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+oct. 05, 2017 12:07:59 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+oct. 05, 2017 12:07:59 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+oct. 05, 2017 12:08:05 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+oct. 05, 2017 12:08:05 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+oct. 05, 2017 12:08:06 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+oct. 05, 2017 12:08:06 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+oct. 05, 2017 12:08:13 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+oct. 05, 2017 12:08:13 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+oct. 05, 2017 12:08:13 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+oct. 05, 2017 12:08:15 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+oct. 05, 2017 12:08:15 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+oct. 05, 2017 12:08:15 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+oct. 05, 2017 12:08:15 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+oct. 05, 2017 12:08:16 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+oct. 05, 2017 12:08:16 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+oct. 05, 2017 12:15:21 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+oct. 05, 2017 12:15:21 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+oct. 05, 2017 12:15:21 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+oct. 05, 2017 12:15:33 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+oct. 05, 2017 12:15:33 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+oct. 05, 2017 12:15:36 AM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+oct. 05, 2017 12:15:36 AM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+oct. 05, 2017 12:15:36 AM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+oct. 05, 2017 12:15:37 AM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+oct. 05, 2017 12:15:37 AM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+oct. 05, 2017 12:15:37 AM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+oct. 05, 2017 12:15:39 AM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+oct. 05, 2017 12:15:39 AM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC

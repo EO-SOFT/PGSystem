@@ -1,0 +1,206 @@
+﻿begindelays
+DataDelay=0
+CellDelay=0,2
+FormDelay=0,25
+KeyHold=50
+SystemHold=50
+HourGlass=250
+TAB=0,5
+ENT=0
+*UP=0
+*DN=0
+*LT=0
+*RT=0
+*SP=0
+*SAVE=0
+*NB=0
+*PB=0
+*NF=0
+*PF=0
+*NR=0
+*PR=0
+*FR=0
+*LR=0
+*ER=0
+*DR=0
+*SB=0
+*ST=0
+*BM=0
+*QE=0
+*QR=0
+*FI=0
+*FA=0
+*IR=0
+*CL=0
+*FE=0
+*AA=0
+*AB=0
+*AC=0
+*AD=0
+*AE=0
+*AF=0
+*AG=0
+*AH=0
+*AI=0
+*AJ=0
+*AK=0
+*AL=0
+*AM=0
+*AN=0
+*AO=0
+*AP=0
+*AQ=0
+*AR=0
+*AS=0
+*AT=0
+*AU=0
+*AV=0
+*AW=0
+*AX=0
+*AY=0
+*AZ=0
+*RECORD=2
+*CLEAR SCREEN=2
+enddelays
+beginheader
+Data	Key Strokes	WAREHOUSE	Key Strokes	ITEM	ENT	Key Strokes	PLANT	ORDER NUMBER	LPN	Key Strokes	TOTAL QTY	Key Strokes	LPN	Key Strokes	Data	PACK TYPE	ENT	STD PACK	Key Strokes	PILE NUMBER	Key Strokes																																																																																																				
+
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+endheader
+beginother
+Window=ezou1001@lxhv1fors06[mbo/64] || {}
+Description=
+CommandGroup=FORS
+PasteCtrlV=0
+endother
+begindata
+	\{TAB 2}	4CV	\{TAB 8}	2	ENT	\{TAB 2}	64	300182387	26C06970A	\{TAB 2}	120	\{TAB}	26C06970A	\{TAB 3}	1	2RV	ENT	120	\{TAB 6}	1	\{F9}
+	\{TAB 2}	4CV	\{TAB 8}	3	ENT	\{TAB 2}	64	300182732	26C40670A	\{TAB 2}	30	\{TAB}	26C40670A	\{TAB 3}	1	1HV	ENT	3	\{TAB 6}	1	\{F9}
+\{DELETE 9}	\{TAB 2}	4CV	\{TAB 8}	1	ENT	\{TAB 2}	64	300208672	26C24172C	\{TAB 2}	12	\{TAB}	26C24172C	\{TAB 3}	1	2HV	ENT	6	\{TAB 6}	2	\{F9}
+	\{TAB 2}	4CV	\{TAB 8}	2	ENT	\{TAB 2}	64	300182758	26C22090A	\{TAB 2}	100	\{TAB}	26C22090A	\{TAB 3}	1	3HV	ENT	25	\{TAB 6}	2	\{F9}
+	\{TAB 2}	4CV	\{TAB 8}	3	ENT	\{TAB 2}	64	300200739	26C39532A	\{TAB 2}	24	\{TAB}	26C39532A	\{TAB 3}	1	3RV	ENT	24	\{TAB 6}	2	\{F9}
+\{DELETE 9}	\{TAB 2}	4CV	\{TAB 8}	1	ENT	\{TAB 2}	64	300182387	26C06970A	\{TAB 2}	600	\{TAB}	26C06970A	\{TAB 3}	1	2RV	ENT	120	\{TAB 6}	3	\{F9}
+\{DELETE 9}	\{TAB 2}	4CV	\{TAB 8}	1	ENT	\{TAB 2}	64	300210618	26C32622B	\{TAB 2}	6	\{TAB}	26C32622B	\{TAB 3}	1	1HV	ENT	3	\{TAB 6}	4	\{F9}
+	\{TAB 2}	4CV	\{TAB 8}	2	ENT	\{TAB 2}	64	300182721	26C31862A	\{TAB 2}	60	\{TAB}	26C31862A	\{TAB 3}	1	3RV	ENT	20	\{TAB 6}	4	\{F9}
+\{DELETE 9}	\{TAB 2}	4CV	\{TAB 8}	1	ENT	\{TAB 2}	64	300182339	26C41943A	\{TAB 2}	320	\{TAB}	26C41943A	\{TAB 3}	1	KLTV750	ENT	10	\{TAB 6}	5	\{F9}
+	\{TAB 2}	4CV	\{TAB 8}	2	ENT	\{TAB 2}	64	300182264	26C51780A	\{TAB 2}	120	\{TAB}	26C51780A	\{TAB 3}	1	KLTV780	ENT	15	\{TAB 6}	5	\{F9}
+	\{TAB 2}	4CV	\{TAB 8}	3	ENT	\{TAB 2}	64	300182387	26C06970A	\{TAB 2}	120	\{TAB}	26C06970A	\{TAB 3}	1	2RV	ENT	120	\{TAB 6}	5	\{F9}
+	\{TAB 2}	4CV	\{TAB 8}	4	ENT	\{TAB 2}	64	300182496	26C15580A	\{TAB 2}	80	\{TAB}	26C15580A	\{TAB 3}	1	KLTV780	ENT	10	\{TAB 6}	5	\{F9}
+\{DELETE 9}	\{TAB 2}	4CV	\{TAB 8}	1	ENT	\{TAB 2}	64	300182387	26C06970A	\{TAB 2}	600	\{TAB}	26C06970A	\{TAB 3}	1	2RV	ENT	120	\{TAB 6}	6	\{F9}
+\{DELETE 9}	\{TAB 2}	4CV	\{TAB 8}	1	ENT	\{TAB 2}	64	300182747	26C94310A	\{TAB 2}	60	\{TAB}	26C94310A	\{TAB 3}	1	1HV	ENT	60	\{TAB 6}	7	\{F9}
+	\{TAB 2}	4CV	\{TAB 8}	2	ENT	\{TAB 2}	64	300182785	26C41300A	\{TAB 2}	6	\{TAB}	26C41300A	\{TAB 3}	1	1HV	ENT	3	\{TAB 6}	7	\{F9}
+	\{TAB 2}	4CV	\{TAB 8}	3	ENT	\{TAB 2}	64	300182387	26C06970A	\{TAB 2}	120	\{TAB}	26C06970A	\{TAB 3}	1	2RV	ENT	120	\{TAB 6}	7	\{F9}
+	\{TAB 2}	4CV	\{TAB 8}	4	ENT	\{TAB 2}	64	300210618	26C32622B	\{TAB 2}	9	\{TAB}	26C32622B	\{TAB 3}	1	1HV	ENT	3	\{TAB 6}	7	\{F9}
+	\{TAB 2}	4CV	\{TAB 8}	5	ENT	\{TAB 2}	64	300182721	26C31862A	\{TAB 2}	20	\{TAB}	26C31862A	\{TAB 3}	1	3RV	ENT	20	\{TAB 6}	7	\{F9}
+	\{TAB 2}	4CV	\{TAB 8}	6	ENT	\{TAB 2}	64	300216582	26C97680A	\{TAB 2}	3	\{TAB}	26C97680A	\{TAB 3}	1	1HV	ENT	3	\{TAB 6}	7	\{F9}
+	\{TAB 2}	4CV	\{TAB 8}	7	ENT	\{TAB 2}	64	300216890	26C97720A	\{TAB 2}	3	\{TAB}	26C97720A	\{TAB 3}	1	1HV	ENT	3	\{TAB 6}	7	\{F9}
+enddata
+beginoptions
+AutoTab=false
+HourGlass=false
+AutoInsert=true
+ProgressBar=true
+TitleSize=false
+DataColour=16777215
+CommandColour=16777215
+KeystrokeColour=16777215
+DataSource=0
+ImportLoad=0
+EnableMacro=1
+DatePicker=1
+LegacyKeyMode=0
+IEOnly=0
+StopIfNotIE=0
+LoadControl=0
+UseBC=0
+SkipBlank=1
+Protection=￶�￶�￮￥￮￥￦￭￦￭￮￥￮￥￶�￶�ￎￅￎￅￆￍￆￍￎￅￎￅ￶�￶�￮￥￮￥￦￭￦￭￮￥￮￥￶�￶�%CR%%CR%v}v}nenefmfmnenev}v}NE
+endoptions
+beginformat
+FontName=Default
+FontSize=8
+ColumnWidth2=78
+ColumnWidth4=80
+ColumnWidth7=78
+ColumnWidth9=97
+ColumnWidth10=65
+ColumnWidth11=78
+ColumnWidth13=78
+ColumnWidth14=89
+ColumnWidth15=78
+ColumnWidth19=75
+ColumnWidth21=83
+endformat
+begincommands
+Command	FORS	EBS - R12	EBS - 11i	EBS - 10.7/11.0 NCA	EBS - 10.7SC	Siebel	SAP	Peoplesoft	JDE	Dynamics	Other	Description
+TAB	\{TAB}	\{TAB}	\{TAB}	\{TAB}	\{TAB}	\{TAB}	\{TAB}	\{TAB}	\{TAB}	\{TAB}	\{TAB}	TAB key
+ENT	\{ENTER}	\{ENTER}	\{ENTER}	\{ENTER}	\{ENTER}	\{ENTER}	\{ENTER}	\{ENTER}	\{ENTER}	\{ENTER}	\{ENTER}	Enter key
+*UP	\{UP}	\{UP}	\{UP}	\{UP}	\{UP}	\{UP}	\{UP}	\{UP}	\{UP}	\{UP}	\{UP}	Up arrow key
+*DN	\{DOWN}	\{DOWN}	\{DOWN}	\{DOWN}	\{DOWN}	\{DOWN}	\{DOWN}	\{DOWN}	\{DOWN}	\{DOWN}	\{DOWN}	Down arrow key
+*LT	\{LEFT}	\{LEFT}	\{LEFT}	\{LEFT}	\{LEFT}	\{LEFT}	\{LEFT}	\{LEFT}	\{LEFT}	\{LEFT}	\{LEFT}	Left arrow key
+*RT	\{RIGHT}	\{RIGHT}	\{RIGHT}	\{RIGHT}	\{RIGHT}	\{RIGHT}	\{RIGHT}	\{RIGHT}	\{RIGHT}	\{RIGHT}	\{RIGHT}	Right arrow key
+*SP	\{F9}	\%F%V	\%F%V	\%A%{DOWN 4}{ENTER}	\%A%A							Save & proceed
+*SAVE	\{F10}	\^S	\^S	\^S	\{F10}							Save
+*NB	\+{PGDN}	\+{PGDN}	\+{PGDN}	\+{PGDN}	\^{PGDN}							Next Block
+*PB	\+{PGUP}	\+{PGUP}	\+{PGUP}	\+{PGUP}	\^{PGUP}							Previous Block
+*NF		\{TAB}	\{TAB}	\%G%{DOWN}{ENTER}	\{TAB}							Next Field
+*PF		\+{TAB}	\+{TAB}	\%G%{DOWN 2}{ENTER}	\+{TAB}							Previous Field
+*NR		\{DOWN}	\{DOWN}	\%G%{DOWN 3}{ENTER}	\+{DOWN}							Next record
+*PR		\{UP}	\{UP}	\%G%{DOWN 4}{ENTER}	\+{UP}							Previous record
+*FR		\%V%DF	\%V%DF	\%G%{DOWN 5}{ENTER}	\%G%F							First record
+*LR		\%V%DL	\%V%DL	\%G%{DOWN 6}{ENTER}	\%G%L							Last record
+*ER		\{F6}	\{F6}	\{F6}	\+{F4}							Erase record
+*DR		\^{UP}	\^{UP}	\^{UP}	\+{F6}							Delete record
+*SB	\ 	\ 	\ 	\ 	\ 	\ 	\ 	\ 	\ 	\ 	\ 	Space bar
+*ST	\{HOME}+{END}	\{HOME}+{END}	\{HOME}+{END}	\{HOME}+{END}	\{HOME}+{END}	\{HOME}+{END}	\{HOME}+{END}	\{HOME}+{END}	\{HOME}+{END}	\{HOME}+{END}	\{HOME}+{END}	Select field text
+*BM		\^B	\^B	\^B	\{F5}							Block menu
+*QE		\{F11}	\{F11}	\{F11}	\{F7}							Query enter
+*QR		\^{F11}	\^{F11}	\^{F11}	\{F8}							Query run
+*FI		\%V%F	\%V%F	\%Q%{DOWN}{ENTER}								Find
+*FA		\%V%I	\%V%I	\%Q%{DOWN 2}{ENTER}								Find all
+*IR		\^{DOWN}	\^{DOWN}	\^{DOWN}	\{F6}							Insert record
+*CL		\{F5}	\{F5}	\{F5}	\^U							Clear field
+*FE		\^E	\^E	\^E	\^E							Field edit
+*AA	\%A	\%A	\%A	\%A	\%A	\%A	\%A	\%A	\%A	\%A	\%A	Alt A
+*AB	\%B	\%B	\%B	\%B	\%B	\%B	\%B	\%B	\%B	\%B	\%B	Alt B
+*AC	\%C	\%C	\%C	\%C	\%C	\%C	\%C	\%C	\%C	\%C	\%C	Alt C
+*AD	\%D	\%D	\%D	\%D	\%D	\%D	\%D	\%D	\%D	\%D	\%D	Alt D
+*AE	\%E	\%E	\%E	\%E	\%E	\%E	\%E	\%E	\%E	\%E	\%E	Alt E
+*AF	\%F	\%F	\%F	\%F	\%F	\%F	\%F	\%F	\%F	\%F	\%F	Alt F
+*AG	\%G	\%G	\%G	\%G	\%G	\%G	\%G	\%G	\%G	\%G	\%G	Alt G
+*AH	\%H	\%H	\%H	\%H	\%H	\%H	\%H	\%H	\%H	\%H	\%H	Alt H
+*AI	\%I	\%I	\%I	\%I	\%I	\%I	\%I	\%I	\%I	\%I	\%I	Alt I
+*AJ	\%J	\%J	\%J	\%J	\%J	\%J	\%J	\%J	\%J	\%J	\%J	Alt J
+*AK	\%K	\%K	\%K	\%K	\%K	\%K	\%K	\%K	\%K	\%K	\%K	Alt K
+*AL	\%L	\%L	\%L	\%L	\%L	\%L	\%L	\%L	\%L	\%L	\%L	Alt L
+*AM	\%M	\%M	\%M	\%M	\%M	\%M	\%M	\%M	\%M	\%M	\%M	Alt M
+*AN	\%N	\%N	\%N	\%N	\%N	\%N	\%N	\%N	\%N	\%N	\%N	Alt N
+*AO	\%O	\%O	\%O	\%O	\%O	\%O	\%O	\%O	\%O	\%O	\%O	Alt O
+*AP	\%P	\%P	\%P	\%P	\%P	\%P	\%P	\%P	\%P	\%P	\%P	Alt P
+*AQ	\%Q	\%Q	\%Q	\%Q	\%Q	\%Q	\%Q	\%Q	\%Q	\%Q	\%Q	Alt Q
+*AR	\%R	\%R	\%R	\%R	\%R	\%R	\%R	\%R	\%R	\%R	\%R	Alt R
+*AS	\%S	\%S	\%S	\%S	\%S	\%S	\%S	\%S	\%S	\%S	\%S	Alt S
+*AT	\%T	\%T	\%T	\%T	\%T	\%T	\%T	\%T	\%T	\%T	\%T	Alt T
+*AU	\%U	\%U	\%U	\%U	\%U	\%U	\%U	\%U	\%U	\%U	\%U	Alt U
+*AV	\%V	\%V	\%V	\%V	\%V	\%V	\%V	\%V	\%V	\%V	\%V	Alt V
+*AW	\%W	\%W	\%W	\%W	\%W	\%W	\%W	\%W	\%W	\%W	\%W	Alt W
+*AX	\%X	\%X	\%X	\%X	\%X	\%X	\%X	\%X	\%X	\%X	\%X	Alt X
+*AY	\%Y	\%Y	\%Y	\%Y	\%Y	\%Y	\%Y	\%Y	\%Y	\%Y	\%Y	Alt Y
+*AZ	\%Z	\%Z	\%Z	\%Z	\%Z	\%Z	\%Z	\%Z	\%Z	\%Z	\%Z	Alt Z
+*RECORD	\{F9}											Record New FORS entry
+*CLEAR SCREEN	\{F5}											Clear FORS Form
+endcommands
+beginhdrgrid
+																																																																																																			
+
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+begindata
+enddata
+endhdrgrid
+beginftrgrid
+																																																																																																		
+
+000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+begindata
+enddata
+endftrgrid

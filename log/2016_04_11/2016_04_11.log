@@ -1,0 +1,82 @@
+avr. 11, 2016 8:12:41 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_04_11] is created!
+Print sub directory [.\print\2016_04_11.\open_sheet] is created!
+Print sub directory [.\print\2016_04_11.\closing_sheet] is created!
+Print sub directory [.\print\2016_04_11.\picking_label] is created!
+
+avr. 11, 2016 8:12:51 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+avr. 11, 2016 8:13:50 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+avr. 11, 2016 8:14:46 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+avr. 11, 2016 8:14:46 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+avr. 11, 2016 8:53:25 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+avr. 11, 2016 8:53:25 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+avr. 11, 2016 5:39:14 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_04_11] already exist!
+Print sub directory [.\print\2016_04_11.\open_sheet] already exist!
+Print sub directory [.\print\2016_04_11.\closing_sheet] already exist!
+Print sub directory [.\print\2016_04_11.\picking_label] already exist!
+
+avr. 11, 2016 5:39:22 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+avr. 11, 2016 5:40:22 PM entity.BaseContainer checkContainerByState
+INFOS: Searching Container [100000154] in BaseContainer.
+avr. 11, 2016 5:40:22 PM entity.BaseContainer checkContainerByState
+INFOS: FROM BaseContainer bc WHERE bc.palletNumber = :palletNumber AND bc.containerState = :state
+avr. 11, 2016 5:44:51 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_04_11] already exist!
+Print sub directory [.\print\2016_04_11.\open_sheet] already exist!
+Print sub directory [.\print\2016_04_11.\closing_sheet] already exist!
+Print sub directory [.\print\2016_04_11.\picking_label] already exist!
+
+avr. 11, 2016 5:47:08 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_04_11] already exist!
+Print sub directory [.\print\2016_04_11.\open_sheet] already exist!
+Print sub directory [.\print\2016_04_11.\closing_sheet] already exist!
+Print sub directory [.\print\2016_04_11.\picking_label] already exist!
+
+avr. 11, 2016 5:50:50 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_04_11] already exist!
+Print sub directory [.\print\2016_04_11.\open_sheet] already exist!
+Print sub directory [.\print\2016_04_11.\closing_sheet] already exist!
+Print sub directory [.\print\2016_04_11.\picking_label] already exist!
+
+avr. 11, 2016 5:51:11 PM entity.BaseContainer checkContainerByState
+INFOS: Searching Container [100000159] in BaseContainer.
+avr. 11, 2016 5:51:11 PM entity.BaseContainer checkContainerByState
+INFOS: FROM BaseContainer bc WHERE bc.palletNumber = :palletNumber AND bc.containerState = :state
+avr. 11, 2016 5:51:26 PM entity.BaseContainer checkContainerByState
+INFOS: Searching Container [100000158] in BaseContainer.
+avr. 11, 2016 5:51:26 PM entity.BaseContainer checkContainerByState
+INFOS: FROM BaseContainer bc WHERE bc.palletNumber = :palletNumber AND bc.containerState = :state
+avr. 11, 2016 5:51:43 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+avr. 11, 2016 5:51:43 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+avr. 11, 2016 6:03:34 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_04_11] already exist!
+Print sub directory [.\print\2016_04_11.\open_sheet] already exist!
+Print sub directory [.\print\2016_04_11.\closing_sheet] already exist!
+Print sub directory [.\print\2016_04_11.\picking_label] already exist!
+
+avr. 11, 2016 6:03:38 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+avr. 11, 2016 6:04:19 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+avr. 11, 2016 6:04:19 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+avr. 11, 2016 6:05:46 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_04_11] already exist!
+Print sub directory [.\print\2016_04_11.\open_sheet] already exist!
+Print sub directory [.\print\2016_04_11.\closing_sheet] already exist!
+Print sub directory [.\print\2016_04_11.\picking_label] already exist!
+
+avr. 11, 2016 6:05:48 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+avr. 11, 2016 6:05:48 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC

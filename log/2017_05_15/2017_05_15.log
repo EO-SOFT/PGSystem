@@ -1,0 +1,95 @@
+mai 15, 2017 10:11:22 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_05_15] is created!
+Print sub directory [.\print\2017_05_15.\open_sheet] is created!
+Print sub directory [.\print\2017_05_15.\closing_sheet] is created!
+Print sub directory [.\print\2017_05_15.\picking_label] is created!
+Print sub directory [.\print\2017_05_15.\dispatch_label] is created!
+
+mai 15, 2017 10:11:23 PM gui.packaging.PACKAGING_UI9000_ChoosePackType <init>
+INFOS: 1 UCS founds for Harness Part[22216200].
+mai 15, 2017 10:11:58 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_05_15] already exist!
+Print sub directory [.\print\2017_05_15.\open_sheet] already exist!
+Print sub directory [.\print\2017_05_15.\closing_sheet] already exist!
+Print sub directory [.\print\2017_05_15.\picking_label] already exist!
+Print sub directory [.\print\2017_05_15.\dispatch_label] already exist!
+
+mai 15, 2017 10:11:59 PM gui.packaging.PACKAGING_UI9000_ChoosePackType <init>
+INFOS: 1 UCS founds for Harness Part[22216200].
+mai 15, 2017 10:13:31 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_05_15] already exist!
+Print sub directory [.\print\2017_05_15.\open_sheet] already exist!
+Print sub directory [.\print\2017_05_15.\closing_sheet] already exist!
+Print sub directory [.\print\2017_05_15.\picking_label] already exist!
+Print sub directory [.\print\2017_05_15.\dispatch_label] already exist!
+
+mai 15, 2017 10:13:32 PM gui.packaging.PACKAGING_UI9000_ChoosePackType <init>
+INFOS: 1 UCS founds for Harness Part[22216200].
+mai 15, 2017 10:14:10 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_05_15] already exist!
+Print sub directory [.\print\2017_05_15.\open_sheet] already exist!
+Print sub directory [.\print\2017_05_15.\closing_sheet] already exist!
+Print sub directory [.\print\2017_05_15.\picking_label] already exist!
+Print sub directory [.\print\2017_05_15.\dispatch_label] already exist!
+
+mai 15, 2017 10:14:11 PM gui.packaging.PACKAGING_UI9000_ChoosePackType <init>
+INFOS: 1 UCS founds for Harness Part[22216200].
+mai 15, 2017 10:14:52 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_05_15] already exist!
+Print sub directory [.\print\2017_05_15.\open_sheet] already exist!
+Print sub directory [.\print\2017_05_15.\closing_sheet] already exist!
+Print sub directory [.\print\2017_05_15.\picking_label] already exist!
+Print sub directory [.\print\2017_05_15.\dispatch_label] already exist!
+
+mai 15, 2017 10:14:53 PM gui.packaging.PACKAGING_UI9000_ChoosePackType <init>
+INFOS: 1 UCS founds for Harness Part[22216200].
+mai 15, 2017 10:26:46 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_05_15] already exist!
+Print sub directory [.\print\2017_05_15.\open_sheet] already exist!
+Print sub directory [.\print\2017_05_15.\closing_sheet] already exist!
+Print sub directory [.\print\2017_05_15.\picking_label] already exist!
+Print sub directory [.\print\2017_05_15.\dispatch_label] already exist!
+
+mai 15, 2017 10:32:23 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_05_15] already exist!
+Print sub directory [.\print\2017_05_15.\open_sheet] already exist!
+Print sub directory [.\print\2017_05_15.\closing_sheet] already exist!
+Print sub directory [.\print\2017_05_15.\picking_label] already exist!
+Print sub directory [.\print\2017_05_15.\dispatch_label] already exist!
+
+mai 15, 2017 10:32:24 PM gui.packaging.PACKAGING_UI9000_ChoosePackType <init>
+INFOS: 1 UCS founds for Harness Part[22216200].
+mai 15, 2017 10:32:46 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_05_15] already exist!
+Print sub directory [.\print\2017_05_15.\open_sheet] already exist!
+Print sub directory [.\print\2017_05_15.\closing_sheet] already exist!
+Print sub directory [.\print\2017_05_15.\picking_label] already exist!
+Print sub directory [.\print\2017_05_15.\dispatch_label] already exist!
+
+mai 15, 2017 10:32:47 PM gui.packaging.PACKAGING_UI9000_ChoosePackType <init>
+INFOS: 1 UCS founds for Harness Part[22216200].
+mai 15, 2017 10:38:25 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_05_15] already exist!
+Print sub directory [.\print\2017_05_15.\open_sheet] already exist!
+Print sub directory [.\print\2017_05_15.\closing_sheet] already exist!
+Print sub directory [.\print\2017_05_15.\picking_label] already exist!
+Print sub directory [.\print\2017_05_15.\dispatch_label] already exist!
+
+mai 15, 2017 10:39:30 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_05_15] already exist!
+Print sub directory [.\print\2017_05_15.\open_sheet] already exist!
+Print sub directory [.\print\2017_05_15.\closing_sheet] already exist!
+Print sub directory [.\print\2017_05_15.\picking_label] already exist!
+Print sub directory [.\print\2017_05_15.\dispatch_label] already exist!
+
+mai 15, 2017 10:39:30 PM gui.packaging.PACKAGING_UI9000_ChoosePackType <init>
+INFOS: 1 UCS founds for Harness Part[22216200].
+mai 15, 2017 10:40:39 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_05_15] already exist!
+Print sub directory [.\print\2017_05_15.\open_sheet] already exist!
+Print sub directory [.\print\2017_05_15.\closing_sheet] already exist!
+Print sub directory [.\print\2017_05_15.\picking_label] already exist!
+Print sub directory [.\print\2017_05_15.\dispatch_label] already exist!
+
+mai 15, 2017 10:40:39 PM gui.packaging.PACKAGING_UI9000_ChoosePackType <init>
+INFOS: 1 UCS founds for Harness Part[22216200].

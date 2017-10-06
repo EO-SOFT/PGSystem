@@ -1,0 +1,381 @@
+avr. 03, 2017 9:38:37 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_04_03] is created!
+Print sub directory [.\print\2017_04_03.\open_sheet] is created!
+Print sub directory [.\print\2017_04_03.\closing_sheet] is created!
+Print sub directory [.\print\2017_04_03.\picking_label] is created!
+Print sub directory [.\print\2017_04_03.\dispatch_label] is created!
+
+avr. 03, 2017 9:53:51 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_04_03] already exist!
+Print sub directory [.\print\2017_04_03.\open_sheet] already exist!
+Print sub directory [.\print\2017_04_03.\closing_sheet] already exist!
+Print sub directory [.\print\2017_04_03.\picking_label] already exist!
+Print sub directory [.\print\2017_04_03.\dispatch_label] already exist!
+
+avr. 03, 2017 9:53:54 PM gui.packaging.PACKAGING_UI0001_Main loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord ORDER BY id ASC
+avr. 03, 2017 9:53:55 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+avr. 03, 2017 9:53:55 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+avr. 03, 2017 9:56:59 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_04_03] already exist!
+Print sub directory [.\print\2017_04_03.\open_sheet] already exist!
+Print sub directory [.\print\2017_04_03.\closing_sheet] already exist!
+Print sub directory [.\print\2017_04_03.\picking_label] already exist!
+Print sub directory [.\print\2017_04_03.\dispatch_label] already exist!
+
+avr. 03, 2017 9:57:01 PM gui.packaging.PACKAGING_UI0001_Main loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord ORDER BY id ASC
+avr. 03, 2017 9:57:01 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+avr. 03, 2017 9:57:01 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+avr. 03, 2017 9:58:42 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_04_03] already exist!
+Print sub directory [.\print\2017_04_03.\open_sheet] already exist!
+Print sub directory [.\print\2017_04_03.\closing_sheet] already exist!
+Print sub directory [.\print\2017_04_03.\picking_label] already exist!
+Print sub directory [.\print\2017_04_03.\dispatch_label] already exist!
+
+avr. 03, 2017 9:58:44 PM gui.packaging.PACKAGING_UI0001_Main loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord ORDER BY id ASC
+avr. 03, 2017 9:58:44 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+avr. 03, 2017 9:58:44 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+avr. 03, 2017 10:00:34 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_04_03] already exist!
+Print sub directory [.\print\2017_04_03.\open_sheet] already exist!
+Print sub directory [.\print\2017_04_03.\closing_sheet] already exist!
+Print sub directory [.\print\2017_04_03.\picking_label] already exist!
+Print sub directory [.\print\2017_04_03.\dispatch_label] already exist!
+
+avr. 03, 2017 10:00:37 PM gui.packaging.PACKAGING_UI0001_Main loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord ORDER BY id ASC
+avr. 03, 2017 10:00:37 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+avr. 03, 2017 10:00:37 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+avr. 03, 2017 10:02:52 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_04_03] already exist!
+Print sub directory [.\print\2017_04_03.\open_sheet] already exist!
+Print sub directory [.\print\2017_04_03.\closing_sheet] already exist!
+Print sub directory [.\print\2017_04_03.\picking_label] already exist!
+Print sub directory [.\print\2017_04_03.\dispatch_label] already exist!
+
+avr. 03, 2017 10:02:55 PM gui.packaging.PACKAGING_UI0001_Main loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord ORDER BY id ASC
+avr. 03, 2017 10:02:55 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+avr. 03, 2017 10:02:55 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+avr. 03, 2017 10:11:25 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_04_03] already exist!
+Print sub directory [.\print\2017_04_03.\open_sheet] already exist!
+Print sub directory [.\print\2017_04_03.\closing_sheet] already exist!
+Print sub directory [.\print\2017_04_03.\picking_label] already exist!
+Print sub directory [.\print\2017_04_03.\dispatch_label] already exist!
+
+avr. 03, 2017 10:11:26 PM gui.packaging.PACKAGING_UI0001_Main loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord ORDER BY id ASC
+avr. 03, 2017 10:11:26 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+avr. 03, 2017 10:11:26 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+avr. 03, 2017 10:22:44 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_04_03] already exist!
+Print sub directory [.\print\2017_04_03.\open_sheet] already exist!
+Print sub directory [.\print\2017_04_03.\closing_sheet] already exist!
+Print sub directory [.\print\2017_04_03.\picking_label] already exist!
+Print sub directory [.\print\2017_04_03.\dispatch_label] already exist!
+
+avr. 03, 2017 10:23:41 PM gui.packaging.PACKAGING_UI0001_Main loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord ORDER BY id ASC
+avr. 03, 2017 10:23:41 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+avr. 03, 2017 10:23:41 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+avr. 03, 2017 10:29:49 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_04_03] already exist!
+Print sub directory [.\print\2017_04_03.\open_sheet] already exist!
+Print sub directory [.\print\2017_04_03.\closing_sheet] already exist!
+Print sub directory [.\print\2017_04_03.\picking_label] already exist!
+Print sub directory [.\print\2017_04_03.\dispatch_label] already exist!
+
+avr. 03, 2017 10:31:32 PM gui.packaging.PACKAGING_UI0001_Main loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord ORDER BY id ASC
+avr. 03, 2017 10:31:32 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+avr. 03, 2017 10:31:32 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+avr. 03, 2017 10:32:58 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_04_03] already exist!
+Print sub directory [.\print\2017_04_03.\open_sheet] already exist!
+Print sub directory [.\print\2017_04_03.\closing_sheet] already exist!
+Print sub directory [.\print\2017_04_03.\picking_label] already exist!
+Print sub directory [.\print\2017_04_03.\dispatch_label] already exist!
+
+avr. 03, 2017 10:33:01 PM gui.packaging.PACKAGING_UI0001_Main loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord ORDER BY id ASC
+avr. 03, 2017 10:33:01 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+avr. 03, 2017 10:33:01 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+avr. 03, 2017 10:38:20 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_04_03] already exist!
+Print sub directory [.\print\2017_04_03.\open_sheet] already exist!
+Print sub directory [.\print\2017_04_03.\closing_sheet] already exist!
+Print sub directory [.\print\2017_04_03.\picking_label] already exist!
+Print sub directory [.\print\2017_04_03.\dispatch_label] already exist!
+
+avr. 03, 2017 10:38:30 PM gui.packaging.PACKAGING_UI0001_Main loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord ORDER BY id ASC
+avr. 03, 2017 10:38:30 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+avr. 03, 2017 10:38:30 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+avr. 03, 2017 10:40:04 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_04_03] already exist!
+Print sub directory [.\print\2017_04_03.\open_sheet] already exist!
+Print sub directory [.\print\2017_04_03.\closing_sheet] already exist!
+Print sub directory [.\print\2017_04_03.\picking_label] already exist!
+Print sub directory [.\print\2017_04_03.\dispatch_label] already exist!
+
+avr. 03, 2017 10:40:05 PM gui.packaging.PACKAGING_UI0001_Main loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord ORDER BY id ASC
+avr. 03, 2017 10:40:05 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+avr. 03, 2017 10:40:05 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+avr. 03, 2017 10:41:51 PM gui.packaging.PACKAGING_UI0001_Main loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord ORDER BY id ASC
+avr. 03, 2017 10:41:51 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+avr. 03, 2017 10:41:51 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+avr. 03, 2017 10:41:58 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+avr. 03, 2017 10:42:10 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+avr. 03, 2017 10:43:25 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_04_03] already exist!
+Print sub directory [.\print\2017_04_03.\open_sheet] already exist!
+Print sub directory [.\print\2017_04_03.\closing_sheet] already exist!
+Print sub directory [.\print\2017_04_03.\picking_label] already exist!
+Print sub directory [.\print\2017_04_03.\dispatch_label] already exist!
+
+avr. 03, 2017 10:43:31 PM gui.packaging.PACKAGING_UI0001_Main loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord ORDER BY id ASC
+avr. 03, 2017 10:43:31 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+avr. 03, 2017 10:43:31 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+avr. 03, 2017 10:45:10 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+avr. 03, 2017 10:47:31 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_04_03] already exist!
+Print sub directory [.\print\2017_04_03.\open_sheet] already exist!
+Print sub directory [.\print\2017_04_03.\closing_sheet] already exist!
+Print sub directory [.\print\2017_04_03.\picking_label] already exist!
+Print sub directory [.\print\2017_04_03.\dispatch_label] already exist!
+
+avr. 03, 2017 10:48:50 PM gui.warehouse_output.WAREHOUSE_OUT_UI0003_PasswordRequest connect
+INFOS: User Admin   / 9999 connected to host O-EZZIOURI at 2017-04-03 22:48:50 Dispatch interface : .
+avr. 03, 2017 11:00:25 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_04_03] already exist!
+Print sub directory [.\print\2017_04_03.\open_sheet] already exist!
+Print sub directory [.\print\2017_04_03.\closing_sheet] already exist!
+Print sub directory [.\print\2017_04_03.\picking_label] already exist!
+Print sub directory [.\print\2017_04_03.\dispatch_label] already exist!
+
+avr. 03, 2017 11:00:41 PM gui.warehouse_dispatch.WAREHOUSE_DISPATCH_UI0003_PasswordRequest connect
+INFOS: User Admin   / 9999 connected to host O-EZZIOURI at 2017-04-03 23:00:41 Dispatch interface : .
+avr. 03, 2017 11:02:08 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_04_03] already exist!
+Print sub directory [.\print\2017_04_03.\open_sheet] already exist!
+Print sub directory [.\print\2017_04_03.\closing_sheet] already exist!
+Print sub directory [.\print\2017_04_03.\picking_label] already exist!
+Print sub directory [.\print\2017_04_03.\dispatch_label] already exist!
+
+avr. 03, 2017 11:03:32 PM gui.warehouse_dispatch.WAREHOUSE_DISPATCH_UI0003_PasswordRequest connect
+INFOS: User Admin   / 9999 connected to host O-EZZIOURI at 2017-04-03 23:03:32 Dispatch interface : .
+avr. 03, 2017 11:06:06 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_04_03] already exist!
+Print sub directory [.\print\2017_04_03.\open_sheet] already exist!
+Print sub directory [.\print\2017_04_03.\closing_sheet] already exist!
+Print sub directory [.\print\2017_04_03.\picking_label] already exist!
+Print sub directory [.\print\2017_04_03.\dispatch_label] already exist!
+
+avr. 03, 2017 11:06:11 PM gui.warehouse_dispatch.WAREHOUSE_DISPATCH_UI0003_PasswordRequest connect
+INFOS: User Admin   / 9999 connected to host O-EZZIOURI at 2017-04-03 23:06:11 Dispatch interface : .
+avr. 03, 2017 11:09:11 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_04_03] already exist!
+Print sub directory [.\print\2017_04_03.\open_sheet] already exist!
+Print sub directory [.\print\2017_04_03.\closing_sheet] already exist!
+Print sub directory [.\print\2017_04_03.\picking_label] already exist!
+Print sub directory [.\print\2017_04_03.\dispatch_label] already exist!
+
+avr. 03, 2017 11:09:16 PM gui.warehouse_dispatch.WAREHOUSE_DISPATCH_UI0003_PasswordRequest connect
+INFOS: User Admin   / 9999 connected to host O-EZZIOURI at 2017-04-03 23:09:16 Dispatch interface : .
+avr. 03, 2017 11:10:47 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_04_03] already exist!
+Print sub directory [.\print\2017_04_03.\open_sheet] already exist!
+Print sub directory [.\print\2017_04_03.\closing_sheet] already exist!
+Print sub directory [.\print\2017_04_03.\picking_label] already exist!
+Print sub directory [.\print\2017_04_03.\dispatch_label] already exist!
+
+avr. 03, 2017 11:10:52 PM gui.warehouse_dispatch.WAREHOUSE_DISPATCH_UI0003_PasswordRequest connect
+INFOS: User Admin   / 9999 connected to host O-EZZIOURI at 2017-04-03 23:10:52 Dispatch interface : .
+avr. 03, 2017 11:11:46 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_04_03] already exist!
+Print sub directory [.\print\2017_04_03.\open_sheet] already exist!
+Print sub directory [.\print\2017_04_03.\closing_sheet] already exist!
+Print sub directory [.\print\2017_04_03.\picking_label] already exist!
+Print sub directory [.\print\2017_04_03.\dispatch_label] already exist!
+
+avr. 03, 2017 11:11:55 PM gui.warehouse_dispatch.WAREHOUSE_DISPATCH_UI0003_PasswordRequest connect
+INFOS: User Admin   / 9999 connected to host O-EZZIOURI at 2017-04-03 23:11:55 Dispatch interface : .
+avr. 03, 2017 11:13:08 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_04_03] already exist!
+Print sub directory [.\print\2017_04_03.\open_sheet] already exist!
+Print sub directory [.\print\2017_04_03.\closing_sheet] already exist!
+Print sub directory [.\print\2017_04_03.\picking_label] already exist!
+Print sub directory [.\print\2017_04_03.\dispatch_label] already exist!
+
+avr. 03, 2017 11:13:17 PM gui.warehouse_dispatch.WAREHOUSE_DISPATCH_UI0003_PasswordRequest connect
+INFOS: User Admin   / 9999 connected to host O-EZZIOURI at 2017-04-03 23:13:17 Dispatch interface : .
+avr. 03, 2017 11:14:39 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_04_03] already exist!
+Print sub directory [.\print\2017_04_03.\open_sheet] already exist!
+Print sub directory [.\print\2017_04_03.\closing_sheet] already exist!
+Print sub directory [.\print\2017_04_03.\picking_label] already exist!
+Print sub directory [.\print\2017_04_03.\dispatch_label] already exist!
+
+avr. 03, 2017 11:14:51 PM gui.warehouse_dispatch.WAREHOUSE_DISPATCH_UI0003_PasswordRequest connect
+INFOS: User Admin   / 9999 connected to host O-EZZIOURI at 2017-04-03 23:14:51 Dispatch interface : .
+avr. 03, 2017 11:16:04 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_04_03] already exist!
+Print sub directory [.\print\2017_04_03.\open_sheet] already exist!
+Print sub directory [.\print\2017_04_03.\closing_sheet] already exist!
+Print sub directory [.\print\2017_04_03.\picking_label] already exist!
+Print sub directory [.\print\2017_04_03.\dispatch_label] already exist!
+
+avr. 03, 2017 11:16:09 PM gui.warehouse_dispatch.WAREHOUSE_DISPATCH_UI0003_PasswordRequest connect
+INFOS: User Admin   / 9999 connected to host O-EZZIOURI at 2017-04-03 23:16:09 Dispatch interface : .
+avr. 03, 2017 11:17:25 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_04_03] already exist!
+Print sub directory [.\print\2017_04_03.\open_sheet] already exist!
+Print sub directory [.\print\2017_04_03.\closing_sheet] already exist!
+Print sub directory [.\print\2017_04_03.\picking_label] already exist!
+Print sub directory [.\print\2017_04_03.\dispatch_label] already exist!
+
+avr. 03, 2017 11:17:30 PM gui.warehouse_dispatch.WAREHOUSE_DISPATCH_UI0003_PasswordRequest connect
+INFOS: User Admin   / 9999 connected to host O-EZZIOURI at 2017-04-03 23:17:30 Dispatch interface : .
+avr. 03, 2017 11:18:39 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_04_03] already exist!
+Print sub directory [.\print\2017_04_03.\open_sheet] already exist!
+Print sub directory [.\print\2017_04_03.\closing_sheet] already exist!
+Print sub directory [.\print\2017_04_03.\picking_label] already exist!
+Print sub directory [.\print\2017_04_03.\dispatch_label] already exist!
+
+avr. 03, 2017 11:18:43 PM gui.warehouse_dispatch.WAREHOUSE_DISPATCH_UI0003_PasswordRequest connect
+INFOS: User Admin   / 9999 connected to host O-EZZIOURI at 2017-04-03 23:18:43 Dispatch interface : .
+avr. 03, 2017 11:19:28 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_04_03] already exist!
+Print sub directory [.\print\2017_04_03.\open_sheet] already exist!
+Print sub directory [.\print\2017_04_03.\closing_sheet] already exist!
+Print sub directory [.\print\2017_04_03.\picking_label] already exist!
+Print sub directory [.\print\2017_04_03.\dispatch_label] already exist!
+
+avr. 03, 2017 11:19:36 PM gui.warehouse_dispatch.WAREHOUSE_DISPATCH_UI0003_PasswordRequest connect
+INFOS: User Admin   / 9999 connected to host O-EZZIOURI at 2017-04-03 23:19:36 Dispatch interface : .
+avr. 03, 2017 11:20:21 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_04_03] already exist!
+Print sub directory [.\print\2017_04_03.\open_sheet] already exist!
+Print sub directory [.\print\2017_04_03.\closing_sheet] already exist!
+Print sub directory [.\print\2017_04_03.\picking_label] already exist!
+Print sub directory [.\print\2017_04_03.\dispatch_label] already exist!
+
+avr. 03, 2017 11:20:24 PM gui.warehouse_dispatch.WAREHOUSE_DISPATCH_UI0003_PasswordRequest connect
+INFOS: User Admin   / 9999 connected to host O-EZZIOURI at 2017-04-03 23:20:24 Dispatch interface : .
+avr. 03, 2017 11:22:04 PM gui.packaging.PACKAGING_UI0001_Main loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord ORDER BY id ASC
+avr. 03, 2017 11:22:04 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+avr. 03, 2017 11:22:05 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+avr. 03, 2017 11:22:08 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+avr. 03, 2017 11:22:15 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+avr. 03, 2017 11:22:15 PM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+avr. 03, 2017 11:22:16 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+avr. 03, 2017 11:22:16 PM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+avr. 03, 2017 11:40:44 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_04_03] already exist!
+Print sub directory [.\print\2017_04_03.\open_sheet] already exist!
+Print sub directory [.\print\2017_04_03.\closing_sheet] already exist!
+Print sub directory [.\print\2017_04_03.\picking_label] already exist!
+Print sub directory [.\print\2017_04_03.\dispatch_label] already exist!
+
+avr. 03, 2017 11:40:49 PM gui.warehouse_dispatch.WAREHOUSE_DISPATCH_UI0003_PasswordRequest connect
+INFOS: User Admin   / 9999 connected to host O-EZZIOURI at 2017-04-03 23:40:49 Dispatch interface : .
+avr. 03, 2017 11:41:39 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_04_03] already exist!
+Print sub directory [.\print\2017_04_03.\open_sheet] already exist!
+Print sub directory [.\print\2017_04_03.\closing_sheet] already exist!
+Print sub directory [.\print\2017_04_03.\picking_label] already exist!
+Print sub directory [.\print\2017_04_03.\dispatch_label] already exist!
+
+avr. 03, 2017 11:41:42 PM gui.warehouse_dispatch.WAREHOUSE_DISPATCH_UI0003_PasswordRequest connect
+INFOS: User Admin   / 9999 connected to host O-EZZIOURI at 2017-04-03 23:41:42 Dispatch interface : .
+avr. 03, 2017 11:47:49 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_04_03] already exist!
+Print sub directory [.\print\2017_04_03.\open_sheet] already exist!
+Print sub directory [.\print\2017_04_03.\closing_sheet] already exist!
+Print sub directory [.\print\2017_04_03.\picking_label] already exist!
+Print sub directory [.\print\2017_04_03.\dispatch_label] already exist!
+
+avr. 03, 2017 11:47:54 PM gui.warehouse_dispatch.WAREHOUSE_DISPATCH_UI0003_PasswordRequest connect
+INFOS: User Admin   / 9999 connected to host O-EZZIOURI at 2017-04-03 23:47:54 Dispatch interface : .
+avr. 03, 2017 11:48:28 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_04_03] already exist!
+Print sub directory [.\print\2017_04_03.\open_sheet] already exist!
+Print sub directory [.\print\2017_04_03.\closing_sheet] already exist!
+Print sub directory [.\print\2017_04_03.\picking_label] already exist!
+Print sub directory [.\print\2017_04_03.\dispatch_label] already exist!
+
+avr. 03, 2017 11:48:31 PM gui.packaging.PACKAGING_UI0001_Main loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord ORDER BY id ASC
+avr. 03, 2017 11:48:31 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+avr. 03, 2017 11:48:31 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+avr. 03, 2017 11:48:57 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_04_03] already exist!
+Print sub directory [.\print\2017_04_03.\open_sheet] already exist!
+Print sub directory [.\print\2017_04_03.\closing_sheet] already exist!
+Print sub directory [.\print\2017_04_03.\picking_label] already exist!
+Print sub directory [.\print\2017_04_03.\dispatch_label] already exist!
+
+avr. 03, 2017 11:49:01 PM gui.packaging.PACKAGING_UI0001_Main loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord ORDER BY id ASC
+avr. 03, 2017 11:49:01 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+avr. 03, 2017 11:49:01 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+avr. 03, 2017 11:49:22 PM gui.warehouse_dispatch.WAREHOUSE_DISPATCH_UI0003_PasswordRequest connect
+INFOS: User Admin   / 9999 connected to host O-EZZIOURI at 2017-04-03 23:49:22 Dispatch interface : .
+avr. 03, 2017 11:50:26 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_04_03] already exist!
+Print sub directory [.\print\2017_04_03.\open_sheet] already exist!
+Print sub directory [.\print\2017_04_03.\closing_sheet] already exist!
+Print sub directory [.\print\2017_04_03.\picking_label] already exist!
+Print sub directory [.\print\2017_04_03.\dispatch_label] already exist!
+
+avr. 03, 2017 11:50:31 PM gui.warehouse_dispatch.WAREHOUSE_DISPATCH_UI0003_PasswordRequest connect
+INFOS: User Admin   / 9999 connected to host O-EZZIOURI at 2017-04-03 23:50:31 Dispatch interface : .

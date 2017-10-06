@@ -1,0 +1,230 @@
+juil. 21, 2017 12:22:59 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_07_21] is created!
+Print sub directory [.\print\2017_07_21.\open_sheet] is created!
+Print sub directory [.\print\2017_07_21.\closing_sheet] is created!
+Print sub directory [.\print\2017_07_21.\picking_label] is created!
+Print sub directory [.\print\2017_07_21.\dispatch_label] is created!
+
+juil. 21, 2017 2:25:46 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_07_21] already exist!
+Print sub directory [.\print\2017_07_21.\open_sheet] already exist!
+Print sub directory [.\print\2017_07_21.\closing_sheet] already exist!
+Print sub directory [.\print\2017_07_21.\picking_label] already exist!
+Print sub directory [.\print\2017_07_21.\dispatch_label] already exist!
+
+juil. 21, 2017 2:31:09 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+juil. 21, 2017 2:31:09 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+juil. 21, 2017 2:31:32 PM state.S010_UserCodeScan doAction
+INFOS: Invalid matricule number or account locked !
+juil. 21, 2017 2:31:43 PM gui.packaging.PACKAGING_UI0002_PasswordRequest connect
+INFOS: User OUSSAMA EZZIOURI / ezou1001 connected to host WSMA7040 at 2017-07-21 14:31:43 Project : DUCATI.
+juil. 21, 2017 2:31:43 PM gui.packaging.PACKAGING_UI0002_PasswordRequest loadDotMatrixCodePatterns
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord AND cb.customer = :customer ORDER BY id ASC
+juil. 21, 2017 2:32:26 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_07_21] already exist!
+Print sub directory [.\print\2017_07_21.\open_sheet] already exist!
+Print sub directory [.\print\2017_07_21.\closing_sheet] already exist!
+Print sub directory [.\print\2017_07_21.\picking_label] already exist!
+Print sub directory [.\print\2017_07_21.\dispatch_label] already exist!
+
+juil. 21, 2017 2:32:38 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+juil. 21, 2017 2:32:39 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+juil. 21, 2017 2:32:42 PM state.S010_UserCodeScan doAction
+INFOS: Invalid matricule number or account locked !
+juil. 21, 2017 2:32:45 PM gui.packaging.PACKAGING_UI0002_PasswordRequest connect
+INFOS: User OUSSAMA EZZIOURI / ezou1001 connected to host WSMA7040 at 2017-07-21 14:32:45 Project : DUCATI.
+juil. 21, 2017 2:32:45 PM gui.packaging.PACKAGING_UI0002_PasswordRequest loadDotMatrixCodePatterns
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord AND cb.customer = :customer ORDER BY id ASC
+juil. 21, 2017 2:32:45 PM gui.packaging.PACKAGING_UI0002_PasswordRequest loadPartNumberCodePatterns
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord AND cb.customer = :customer ORDER BY id ASC
+juil. 21, 2017 2:33:39 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [5101C371D] in ConfigUCS: DUCATI
+juil. 21, 2017 2:33:39 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [5101C371D] NOT found.
+juil. 21, 2017 2:33:39 PM state.S020_HarnessPartScan doAction
+AVERTISSEMENT: Harness part [P5101C371D] NOT found in UCS [MDEP].
+juil. 21, 2017 2:35:01 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_07_21] already exist!
+Print sub directory [.\print\2017_07_21.\open_sheet] already exist!
+Print sub directory [.\print\2017_07_21.\closing_sheet] already exist!
+Print sub directory [.\print\2017_07_21.\picking_label] already exist!
+Print sub directory [.\print\2017_07_21.\dispatch_label] already exist!
+
+juil. 21, 2017 2:35:02 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+juil. 21, 2017 2:35:02 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+juil. 21, 2017 2:35:07 PM gui.packaging.state.S010_UserCodeScan doAction
+INFOS: Invalid matricule number or account locked !
+juil. 21, 2017 2:35:10 PM gui.packaging.PACKAGING_UI0002_PasswordRequest connect
+INFOS: User OUSSAMA EZZIOURI / ezou1001 connected to host WSMA7040 at 2017-07-21 14:35:10 Project : DUCATI.
+juil. 21, 2017 2:35:10 PM gui.packaging.PACKAGING_UI0002_PasswordRequest loadDotMatrixCodePatterns
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord AND cb.customer = :customer ORDER BY id ASC
+juil. 21, 2017 2:35:10 PM gui.packaging.PACKAGING_UI0002_PasswordRequest loadPartNumberCodePatterns
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord AND cb.customer = :customer ORDER BY id ASC
+juil. 21, 2017 2:35:14 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [5101C371D] in ConfigUCS: DUCATI
+juil. 21, 2017 2:35:14 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [5101C371D] NOT found.
+juil. 21, 2017 2:35:14 PM gui.packaging.state.S020_HarnessPartScan doAction
+AVERTISSEMENT: Harness part [P5101C371D] NOT found in UCS [MDEP].
+juil. 21, 2017 2:36:18 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_07_21] already exist!
+Print sub directory [.\print\2017_07_21.\open_sheet] already exist!
+Print sub directory [.\print\2017_07_21.\closing_sheet] already exist!
+Print sub directory [.\print\2017_07_21.\picking_label] already exist!
+Print sub directory [.\print\2017_07_21.\dispatch_label] already exist!
+
+juil. 21, 2017 2:36:19 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+juil. 21, 2017 2:36:19 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+juil. 21, 2017 2:36:23 PM gui.packaging.state.S010_UserCodeScan doAction
+INFOS: Invalid matricule number or account locked !
+juil. 21, 2017 2:36:30 PM gui.packaging.PACKAGING_UI0002_PasswordRequest connect
+INFOS: User OUSSAMA EZZIOURI / ezou1001 connected to host WSMA7040 at 2017-07-21 14:36:30 Project : DUCATI.
+juil. 21, 2017 2:36:30 PM gui.packaging.PACKAGING_UI0002_PasswordRequest loadDotMatrixCodePatterns
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord AND cb.customer = :customer ORDER BY id ASC
+juil. 21, 2017 2:36:30 PM gui.packaging.PACKAGING_UI0002_PasswordRequest loadPartNumberCodePatterns
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord AND cb.customer = :customer ORDER BY id ASC
+juil. 21, 2017 2:36:35 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [5101C371D] in ConfigUCS: DUCATI
+juil. 21, 2017 2:36:35 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [5101C371D] NOT found.
+juil. 21, 2017 2:36:35 PM gui.packaging.state.S020_HarnessPartScan doAction
+AVERTISSEMENT: Harness part [P5101C371D] NOT found in UCS [DUCATI].
+juil. 21, 2017 2:37:06 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_07_21] already exist!
+Print sub directory [.\print\2017_07_21.\open_sheet] already exist!
+Print sub directory [.\print\2017_07_21.\closing_sheet] already exist!
+Print sub directory [.\print\2017_07_21.\picking_label] already exist!
+Print sub directory [.\print\2017_07_21.\dispatch_label] already exist!
+
+juil. 21, 2017 2:37:08 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+juil. 21, 2017 2:37:08 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+juil. 21, 2017 2:37:13 PM gui.packaging.state.S010_UserCodeScan doAction
+INFOS: Invalid matricule number or account locked !
+juil. 21, 2017 2:37:18 PM gui.packaging.PACKAGING_UI0002_PasswordRequest connect
+INFOS: User OUSSAMA EZZIOURI / ezou1001 connected to host WSMA7040 at 2017-07-21 14:37:18 Project : DUCATI.
+juil. 21, 2017 2:37:18 PM gui.packaging.PACKAGING_UI0002_PasswordRequest loadDotMatrixCodePatterns
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord AND cb.customer = :customer ORDER BY id ASC
+juil. 21, 2017 2:37:18 PM gui.packaging.PACKAGING_UI0002_PasswordRequest loadPartNumberCodePatterns
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord AND cb.customer = :customer ORDER BY id ASC
+juil. 21, 2017 2:37:22 PM entity.BaseHarness checkPartNumberFormat
+INFOS: Invalid part number format [5101C371D]!
+juil. 21, 2017 2:37:22 PM gui.packaging.state.S020_HarnessPartScan doAction
+AVERTISSEMENT: Invalid Harness Part scanned [5101C371D] !
+juil. 21, 2017 2:37:24 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [5101C371D] in ConfigUCS: DUCATI
+juil. 21, 2017 2:37:24 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [5101C371D] NOT found.
+juil. 21, 2017 2:37:24 PM gui.packaging.state.S020_HarnessPartScan doAction
+AVERTISSEMENT: Harness part [P5101C371D] NOT found in UCS [DUCATI].
+juil. 21, 2017 2:49:58 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [5101C371D] in ConfigUCS: DUCATI
+juil. 21, 2017 2:49:58 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [5101C371D] NOT found.
+juil. 21, 2017 2:49:58 PM gui.packaging.state.S020_HarnessPartScan doAction
+AVERTISSEMENT: Harness part [P5101C371D] NOT found in UCS [DUCATI].
+juil. 21, 2017 2:50:14 PM gui.config.CONFIG_UI0000_AUTH checkLoginAndPass
+INFOS: User OUSSAMA EZZIOURI / ezou1001 connected to host WSMA7040 at 2017-07-21 14:50:14 Module : Planner.
+juil. 21, 2017 2:50:15 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+juil. 21, 2017 2:50:15 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+juil. 21, 2017 2:50:15 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+juil. 21, 2017 2:54:46 PM gui.config.CONFIG_UI0000_AUTH checkLoginAndPass
+INFOS: User OUSSAMA EZZIOURI / ezou1001 connected to host WSMA7040 at 2017-07-21 14:54:46 Module : Planner.
+juil. 21, 2017 2:54:46 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+juil. 21, 2017 2:54:46 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+juil. 21, 2017 2:54:46 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+juil. 21, 2017 2:55:37 PM entity.BaseHarness checkPartNumberFormat
+INFOS: Invalid part number format [5101C371D]!
+juil. 21, 2017 2:55:37 PM gui.packaging.state.S020_HarnessPartScan doAction
+AVERTISSEMENT: Invalid Harness Part scanned [5101C371D] !
+juil. 21, 2017 2:55:38 PM entity.BaseHarness checkPartNumberFormat
+INFOS: Invalid part number format [5101C371D]!
+juil. 21, 2017 2:55:38 PM gui.packaging.state.S020_HarnessPartScan doAction
+AVERTISSEMENT: Invalid Harness Part scanned [5101C371D] !
+juil. 21, 2017 2:55:41 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [5101C371D] in ConfigUCS: DUCATI
+juil. 21, 2017 2:55:41 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [5101C371D] NOT found.
+juil. 21, 2017 2:55:41 PM gui.packaging.state.S020_HarnessPartScan doAction
+AVERTISSEMENT: Harness part [P5101C371D] NOT found in UCS [DUCATI].
+juil. 21, 2017 3:18:26 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_07_21] already exist!
+Print sub directory [.\print\2017_07_21.\open_sheet] already exist!
+Print sub directory [.\print\2017_07_21.\closing_sheet] already exist!
+Print sub directory [.\print\2017_07_21.\picking_label] already exist!
+Print sub directory [.\print\2017_07_21.\dispatch_label] already exist!
+
+juil. 21, 2017 3:18:27 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+juil. 21, 2017 3:18:27 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+juil. 21, 2017 3:18:33 PM gui.packaging.state.S010_UserCodeScan doAction
+INFOS: Invalid matricule number or account locked !
+juil. 21, 2017 3:18:37 PM gui.packaging.PACKAGING_UI0002_PasswordRequest connect
+INFOS: User OUSSAMA EZZIOURI / ezou1001 connected to host WSMA7040 at 2017-07-21 15:18:37 Project : DUCATI.
+juil. 21, 2017 3:18:37 PM gui.packaging.PACKAGING_UI0002_PasswordRequest loadDotMatrixCodePatterns
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord AND cb.customer = :customer ORDER BY id ASC
+juil. 21, 2017 3:18:37 PM gui.packaging.PACKAGING_UI0002_PasswordRequest loadPartNumberCodePatterns
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord AND cb.customer = :customer ORDER BY id ASC
+juil. 21, 2017 3:18:42 PM entity.BaseHarness checkPartNumberFormat
+INFOS: Invalid part number format [P5101C371D]!
+juil. 21, 2017 3:18:42 PM gui.packaging.state.S020_HarnessPartScan doAction
+AVERTISSEMENT: Invalid Harness Part scanned [P5101C371D] !
+juil. 21, 2017 3:18:59 PM entity.BaseHarness checkPartNumberFormat
+INFOS: Invalid part number format [101C371D]!
+juil. 21, 2017 3:18:59 PM gui.packaging.state.S020_HarnessPartScan doAction
+AVERTISSEMENT: Invalid Harness Part scanned [101C371D] !
+juil. 21, 2017 3:19:01 PM entity.BaseHarness checkPartNumberFormat
+INFOS: Invalid part number format [5101C371D]!
+juil. 21, 2017 3:19:01 PM gui.packaging.state.S020_HarnessPartScan doAction
+AVERTISSEMENT: Invalid Harness Part scanned [5101C371D] !
+juil. 21, 2017 3:19:03 PM entity.BaseHarness checkPartNumberFormat
+INFOS: Invalid part number format [P5101C371D]!
+juil. 21, 2017 3:19:03 PM gui.packaging.state.S020_HarnessPartScan doAction
+AVERTISSEMENT: Invalid Harness Part scanned [P5101C371D] !
+juil. 21, 2017 3:19:42 PM entity.BaseHarness checkPartNumberFormat
+INFOS: Invalid part number format [P5101C371D]!
+juil. 21, 2017 3:19:42 PM gui.packaging.state.S020_HarnessPartScan doAction
+AVERTISSEMENT: Invalid Harness Part scanned [P5101C371D] !
+juil. 21, 2017 3:23:42 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_07_21] already exist!
+Print sub directory [.\print\2017_07_21.\open_sheet] already exist!
+Print sub directory [.\print\2017_07_21.\closing_sheet] already exist!
+Print sub directory [.\print\2017_07_21.\picking_label] already exist!
+Print sub directory [.\print\2017_07_21.\dispatch_label] already exist!
+
+juil. 21, 2017 3:23:54 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+juil. 21, 2017 3:23:54 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+juil. 21, 2017 3:23:57 PM gui.packaging.state.S010_UserCodeScan doAction
+INFOS: Invalid matricule number or account locked !
+juil. 21, 2017 3:24:05 PM gui.packaging.PACKAGING_UI0002_PasswordRequest connect
+INFOS: User OUSSAMA EZZIOURI / ezou1001 connected to host WSMA7040 at 2017-07-21 15:24:05 Project : DUCATI.
+juil. 21, 2017 3:24:05 PM gui.packaging.PACKAGING_UI0002_PasswordRequest loadDotMatrixCodePatterns
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord AND cb.customer = :customer ORDER BY id ASC
+juil. 21, 2017 3:24:05 PM gui.packaging.PACKAGING_UI0002_PasswordRequest loadPartNumberCodePatterns
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord AND cb.customer = :customer ORDER BY id ASC
+juil. 21, 2017 3:24:11 PM entity.BaseHarness checkPartNumberFormat
+INFOS: Invalid part number format [5101C371D]!
+juil. 21, 2017 3:24:11 PM gui.packaging.state.S020_HarnessPartScan doAction
+AVERTISSEMENT: Invalid Harness Part scanned [5101C371D] !
+juil. 21, 2017 3:24:13 PM entity.BaseHarness checkPartNumberFormat
+INFOS: Invalid part number format [P5101C371D]!
+juil. 21, 2017 3:24:13 PM gui.packaging.state.S020_HarnessPartScan doAction
+AVERTISSEMENT: Invalid Harness Part scanned [P5101C371D] !

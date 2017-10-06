@@ -1,0 +1,86 @@
+août 24, 2017 12:06:42 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_08_24] is created!
+Print sub directory [.\print\2017_08_24.\open_sheet] is created!
+Print sub directory [.\print\2017_08_24.\closing_sheet] is created!
+Print sub directory [.\print\2017_08_24.\picking_label] is created!
+Print sub directory [.\print\2017_08_24.\dispatch_label] is created!
+
+août 24, 2017 12:06:54 PM gui.config.CONFIG_UI0000_AUTH checkLoginAndPass
+INFOS: User OUSSAMA EZZIOURI / ezou1001 connected to host WSMA7040 at 2017-08-24 12:06:54 Module : Planner.
+août 24, 2017 12:10:00 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+août 24, 2017 12:10:01 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+août 24, 2017 12:16:08 PM gui.config.CONFIG_UI0000_AUTH checkLoginAndPass
+INFOS: User OUSSAMA EZZIOURI / ezou1001 connected to host WSMA7040 at 2017-08-24 12:16:08 Module : Planner.
+août 24, 2017 12:16:37 PM gui.config.CONFIG_UI0000_AUTH checkLoginAndPass
+INFOS: User OUSSAMA EZZIOURI / ezou1001 connected to host WSMA7040 at 2017-08-24 12:16:37 Module : Planner.
+août 24, 2017 12:16:42 PM gui.config.CONFIG_UI0000_AUTH checkLoginAndPass
+INFOS: User OUSSAMA EZZIOURI / ezou1001 connected to host WSMA7040 at 2017-08-24 12:16:42 Module : Planner.
+août 24, 2017 1:58:22 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_08_24] already exist!
+Print sub directory [.\print\2017_08_24.\open_sheet] already exist!
+Print sub directory [.\print\2017_08_24.\closing_sheet] already exist!
+Print sub directory [.\print\2017_08_24.\picking_label] already exist!
+Print sub directory [.\print\2017_08_24.\dispatch_label] already exist!
+
+août 24, 2017 1:58:30 PM gui.config.CONFIG_UI0000_AUTH checkLoginAndPass
+INFOS: User OUSSAMA EZZIOURI / ezou1001 connected to host WSMA7040 at 2017-08-24 13:58:30 Module : Planner.
+août 24, 2017 1:58:31 PM entity.ConfigProject selectCustomers
+INFOS: SELECT DISTINCT customer FROM config_project
+août 24, 2017 1:59:26 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_08_24] already exist!
+Print sub directory [.\print\2017_08_24.\open_sheet] already exist!
+Print sub directory [.\print\2017_08_24.\closing_sheet] already exist!
+Print sub directory [.\print\2017_08_24.\picking_label] already exist!
+Print sub directory [.\print\2017_08_24.\dispatch_label] already exist!
+
+août 24, 2017 1:59:35 PM gui.config.CONFIG_UI0000_AUTH checkLoginAndPass
+INFOS: User OUSSAMA EZZIOURI / ezou1001 connected to host WSMA7040 at 2017-08-24 13:59:35 Module : Planner.
+août 24, 2017 1:59:35 PM entity.ConfigProject selectCustomers
+INFOS: SELECT DISTINCT customer FROM config_project
+août 24, 2017 2:00:18 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_08_24] already exist!
+Print sub directory [.\print\2017_08_24.\open_sheet] already exist!
+Print sub directory [.\print\2017_08_24.\closing_sheet] already exist!
+Print sub directory [.\print\2017_08_24.\picking_label] already exist!
+Print sub directory [.\print\2017_08_24.\dispatch_label] already exist!
+
+août 24, 2017 2:00:40 PM gui.config.CONFIG_UI0000_AUTH checkLoginAndPass
+INFOS: User OUSSAMA EZZIOURI / ezou1001 connected to host WSMA7040 at 2017-08-24 14:00:40 Module : Planner.
+août 24, 2017 2:00:41 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+août 24, 2017 2:00:41 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+août 24, 2017 2:00:41 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+août 24, 2017 2:00:53 PM gui.config.CONFIG_UI0000_AUTH checkLoginAndPass
+INFOS: User OUSSAMA EZZIOURI / ezou1001 connected to host WSMA7040 at 2017-08-24 14:00:53 Module : Planner.
+août 24, 2017 2:00:53 PM entity.ConfigProject selectCustomers
+INFOS: SELECT DISTINCT customer FROM config_project
+août 24, 2017 2:02:08 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_08_24] already exist!
+Print sub directory [.\print\2017_08_24.\open_sheet] already exist!
+Print sub directory [.\print\2017_08_24.\closing_sheet] already exist!
+Print sub directory [.\print\2017_08_24.\picking_label] already exist!
+Print sub directory [.\print\2017_08_24.\dispatch_label] already exist!
+
+août 24, 2017 2:02:16 PM gui.config.CONFIG_UI0000_AUTH checkLoginAndPass
+INFOS: User OUSSAMA EZZIOURI / ezou1001 connected to host WSMA7040 at 2017-08-24 14:02:16 Module : Planner.
+août 24, 2017 2:02:16 PM entity.ConfigProject selectCustomers
+INFOS: SELECT DISTINCT customer FROM config_project
+août 24, 2017 2:04:54 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_08_24] already exist!
+Print sub directory [.\print\2017_08_24.\open_sheet] already exist!
+Print sub directory [.\print\2017_08_24.\closing_sheet] already exist!
+Print sub directory [.\print\2017_08_24.\picking_label] already exist!
+Print sub directory [.\print\2017_08_24.\dispatch_label] already exist!
+
+août 24, 2017 2:05:09 PM gui.config.CONFIG_UI0000_AUTH checkLoginAndPass
+INFOS: User OUSSAMA EZZIOURI / ezou1001 connected to host WSMA7040 at 2017-08-24 14:05:09 Module : Planner.
+août 24, 2017 2:05:09 PM entity.ConfigProject selectCustomers
+INFOS: SELECT DISTINCT customer FROM config_project
+août 24, 2017 2:18:48 PM gui.config.CONFIG_UI0000_AUTH checkLoginAndPass
+INFOS: User OUSSAMA EZZIOURI / ezou1001 connected to host WSMA7040 at 2017-08-24 14:18:48 Module : Planner.
+août 24, 2017 2:18:48 PM entity.ConfigProject selectCustomers
+INFOS: SELECT DISTINCT customer FROM config_project

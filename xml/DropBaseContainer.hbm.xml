@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"/>
+<!-- Generated 6 f?vr. 2016 21:43:56 by Hibernate Tools 3.6.0 -->
+<hibernate-mapping package="entity"/>
+    <class name="DropBaseContainer" table="drop_base_container" >
+        <id name="id"/>
+            <!--  PostgreSQL generator for a sequence which is named base_container_id_seq
+            -->
+            <generator class="sequence"/>
+                <param name="sequence"/>drop_base_container_id_seq</param>
+            </generator>
+        </id>
+        <property column="create_time" name="createTime" type="java.sql.Timestamp"/>
+        <property column="create_id" name="createId" />
+        <property column="write_time" name="writeTime" type="java.sql.Timestamp"/>
+        <property column="write_id" name="writeId" />
+        <property column="m_user" name="user" />
+        <property column="start_time" name="startTime" type="java.sql.Timestamp"/>
+        <property column="complete_time" name="completeTime" type="java.sql.Timestamp"/>
+        <property column="work_time" name="workTime" />
+        <property column="pallet_number" name="palletNumber" />
+        <property column="harness_part" name="harnessPart" />
+        <property column="harness_index" name="harnessIndex" />
+        <property column="supplier_part_number" name="supplierPartNumber" />
+        <property column="qty_expected" name="qtyExpected" />
+        <property column="qty_read" name="qtyRead" />
+        <property column="container_state" name="containerState" />
+        <property column="container_state_code" name="containerStateCode" />
+        <property column="pack_type" name="packType" />
+        <property column="harness_type" name="harnessType" />
+        <property column="drop_feedback" name="dropFeedback" />
+        <set name="harnessList" table="drop_base_harness" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="container_id" not-null="true"  />
+            </key>
+            <one-to-many class="entity.DropBaseHarness" />
+        </set>               
+    </class>
+</hibernate-mapping>

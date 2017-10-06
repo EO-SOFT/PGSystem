@@ -1,0 +1,191 @@
+avr. 24, 2017 10:13:37 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_04_24] is created!
+Print sub directory [.\print\2017_04_24.\open_sheet] is created!
+Print sub directory [.\print\2017_04_24.\closing_sheet] is created!
+Print sub directory [.\print\2017_04_24.\picking_label] is created!
+Print sub directory [.\print\2017_04_24.\dispatch_label] is created!
+
+avr. 24, 2017 10:13:46 PM gui.config.CONFIG_UI0000_AdminPassword checkLoginAndPass
+INFOS: User Admin   / 9999 connected to host O-EZZIOURI at 2017-04-24 22:13:46 Module : Planner.
+avr. 24, 2017 10:14:20 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_04_24] already exist!
+Print sub directory [.\print\2017_04_24.\open_sheet] already exist!
+Print sub directory [.\print\2017_04_24.\closing_sheet] already exist!
+Print sub directory [.\print\2017_04_24.\picking_label] already exist!
+Print sub directory [.\print\2017_04_24.\dispatch_label] already exist!
+
+avr. 24, 2017 10:14:26 PM gui.config.CONFIG_UI0000_AdminPassword checkLoginAndPass
+INFOS: User Admin   / 9999 connected to host O-EZZIOURI at 2017-04-24 22:14:26 Module : Planner.
+avr. 24, 2017 10:16:09 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_04_24] already exist!
+Print sub directory [.\print\2017_04_24.\open_sheet] already exist!
+Print sub directory [.\print\2017_04_24.\closing_sheet] already exist!
+Print sub directory [.\print\2017_04_24.\picking_label] already exist!
+Print sub directory [.\print\2017_04_24.\dispatch_label] already exist!
+
+avr. 24, 2017 10:16:17 PM gui.config.CONFIG_UI0000_AdminPassword checkLoginAndPass
+INFOS: User Admin   / 9999 connected to host O-EZZIOURI at 2017-04-24 22:16:17 Module : Planner.
+avr. 24, 2017 10:18:27 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_04_24] already exist!
+Print sub directory [.\print\2017_04_24.\open_sheet] already exist!
+Print sub directory [.\print\2017_04_24.\closing_sheet] already exist!
+Print sub directory [.\print\2017_04_24.\picking_label] already exist!
+Print sub directory [.\print\2017_04_24.\dispatch_label] already exist!
+
+avr. 24, 2017 10:18:37 PM gui.config.CONFIG_UI0000_AdminPassword checkLoginAndPass
+INFOS: User Admin   / 9999 connected to host O-EZZIOURI at 2017-04-24 22:18:37 Module : Planner.
+avr. 24, 2017 10:19:51 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_04_24] already exist!
+Print sub directory [.\print\2017_04_24.\open_sheet] already exist!
+Print sub directory [.\print\2017_04_24.\closing_sheet] already exist!
+Print sub directory [.\print\2017_04_24.\picking_label] already exist!
+Print sub directory [.\print\2017_04_24.\dispatch_label] already exist!
+
+avr. 24, 2017 10:20:26 PM gui.config.CONFIG_UI0000_AdminPassword checkLoginAndPass
+INFOS: User Admin   / 9999 connected to host O-EZZIOURI at 2017-04-24 22:20:26 Module : Planner.
+avr. 24, 2017 10:21:35 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_04_24] already exist!
+Print sub directory [.\print\2017_04_24.\open_sheet] already exist!
+Print sub directory [.\print\2017_04_24.\closing_sheet] already exist!
+Print sub directory [.\print\2017_04_24.\picking_label] already exist!
+Print sub directory [.\print\2017_04_24.\dispatch_label] already exist!
+
+avr. 24, 2017 10:21:43 PM gui.config.CONFIG_UI0000_AdminPassword checkLoginAndPass
+INFOS: User Admin   / 9999 connected to host O-EZZIOURI at 2017-04-24 22:21:43 Module : Planner.
+avr. 24, 2017 10:28:46 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_04_24] already exist!
+Print sub directory [.\print\2017_04_24.\open_sheet] already exist!
+Print sub directory [.\print\2017_04_24.\closing_sheet] already exist!
+Print sub directory [.\print\2017_04_24.\picking_label] already exist!
+Print sub directory [.\print\2017_04_24.\dispatch_label] already exist!
+
+avr. 24, 2017 10:28:53 PM gui.config.CONFIG_UI0000_AdminPassword checkLoginAndPass
+INFOS: User Admin   / 9999 connected to host O-EZZIOURI at 2017-04-24 22:28:53 Module : Planner.
+avr. 24, 2017 10:35:55 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_04_24] already exist!
+Print sub directory [.\print\2017_04_24.\open_sheet] already exist!
+Print sub directory [.\print\2017_04_24.\closing_sheet] already exist!
+Print sub directory [.\print\2017_04_24.\picking_label] already exist!
+Print sub directory [.\print\2017_04_24.\dispatch_label] already exist!
+
+avr. 24, 2017 10:36:04 PM gui.packaging.PACKAGING_UI0001_Main loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord ORDER BY id ASC
+avr. 24, 2017 10:36:04 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+avr. 24, 2017 10:36:06 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+avr. 24, 2017 10:36:11 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+avr. 24, 2017 10:36:14 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+avr. 24, 2017 10:36:14 PM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+avr. 24, 2017 10:36:15 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+avr. 24, 2017 10:36:15 PM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+avr. 24, 2017 10:36:19 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+avr. 24, 2017 10:36:19 PM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+avr. 24, 2017 10:38:38 PM entity.BaseContainer checkContainerByState
+INFOS: Searching Container [200020876] in BaseContainer.
+avr. 24, 2017 10:38:38 PM entity.BaseContainer checkContainerByState
+INFOS: FROM BaseContainer bc WHERE bc.palletNumber = :palletNumber AND bc.containerState = :state
+avr. 24, 2017 10:41:44 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_04_24] already exist!
+Print sub directory [.\print\2017_04_24.\open_sheet] already exist!
+Print sub directory [.\print\2017_04_24.\closing_sheet] already exist!
+Print sub directory [.\print\2017_04_24.\picking_label] already exist!
+Print sub directory [.\print\2017_04_24.\dispatch_label] already exist!
+
+avr. 24, 2017 10:43:45 PM entity.BaseContainer checkContainerByState
+INFOS: Searching Container [200017357] in BaseContainer.
+avr. 24, 2017 10:43:46 PM entity.BaseContainer checkContainerByState
+INFOS: FROM BaseContainer bc WHERE bc.palletNumber = :palletNumber AND bc.containerState = :state
+avr. 24, 2017 10:45:04 PM entity.BaseContainer checkContainerByState
+INFOS: Searching Container [200008754] in BaseContainer.
+avr. 24, 2017 10:45:04 PM entity.BaseContainer checkContainerByState
+INFOS: FROM BaseContainer bc WHERE bc.palletNumber = :palletNumber AND bc.containerState = :state
+avr. 24, 2017 10:47:02 PM gui.warehouse_dispatch.WAREHOUSE_DISPATCH_UI0003_PasswordRequest connect
+INFOS: User Admin   / 9999 connected to host O-EZZIOURI at 2017-04-24 22:47:02 Dispatch interface : .
+avr. 24, 2017 10:53:54 PM entity.BaseContainer checkContainerByState
+INFOS: Searching Container [200009314] in BaseContainer.
+avr. 24, 2017 10:53:54 PM entity.BaseContainer checkContainerByState
+INFOS: FROM BaseContainer bc WHERE bc.palletNumber = :palletNumber AND bc.containerState = :state
+avr. 24, 2017 10:56:43 PM entity.BaseContainer checkContainerByState
+INFOS: Searching Container [200009033] in BaseContainer.
+avr. 24, 2017 10:56:43 PM entity.BaseContainer checkContainerByState
+INFOS: FROM BaseContainer bc WHERE bc.palletNumber = :palletNumber AND bc.containerState = :state
+avr. 24, 2017 10:56:56 PM entity.BaseContainer checkContainerByState
+INFOS: Searching Container [200008764] in BaseContainer.
+avr. 24, 2017 10:56:56 PM entity.BaseContainer checkContainerByState
+INFOS: FROM BaseContainer bc WHERE bc.palletNumber = :palletNumber AND bc.containerState = :state
+avr. 24, 2017 10:57:03 PM entity.BaseContainer checkContainerByState
+INFOS: Searching Container [200008754 ] in BaseContainer.
+avr. 24, 2017 10:57:03 PM entity.BaseContainer checkContainerByState
+INFOS: FROM BaseContainer bc WHERE bc.palletNumber = :palletNumber AND bc.containerState = :state
+avr. 24, 2017 10:57:05 PM entity.BaseContainer checkContainerByState
+INFOS: Searching Container [200008754] in BaseContainer.
+avr. 24, 2017 10:57:05 PM entity.BaseContainer checkContainerByState
+INFOS: FROM BaseContainer bc WHERE bc.palletNumber = :palletNumber AND bc.containerState = :state
+avr. 24, 2017 10:57:17 PM entity.BaseContainer checkContainerByState
+INFOS: Searching Container [200008715] in BaseContainer.
+avr. 24, 2017 10:57:17 PM entity.BaseContainer checkContainerByState
+INFOS: FROM BaseContainer bc WHERE bc.palletNumber = :palletNumber AND bc.containerState = :state
+avr. 24, 2017 10:57:25 PM entity.BaseContainer checkContainerByState
+INFOS: Searching Container [200008708] in BaseContainer.
+avr. 24, 2017 10:57:25 PM entity.BaseContainer checkContainerByState
+INFOS: FROM BaseContainer bc WHERE bc.palletNumber = :palletNumber AND bc.containerState = :state
+avr. 24, 2017 10:57:34 PM entity.BaseContainer checkContainerByState
+INFOS: Searching Container [200008451] in BaseContainer.
+avr. 24, 2017 10:57:34 PM entity.BaseContainer checkContainerByState
+INFOS: FROM BaseContainer bc WHERE bc.palletNumber = :palletNumber AND bc.containerState = :state
+avr. 24, 2017 10:57:40 PM entity.BaseContainer checkContainerByState
+INFOS: Searching Container [200008444] in BaseContainer.
+avr. 24, 2017 10:57:40 PM entity.BaseContainer checkContainerByState
+INFOS: FROM BaseContainer bc WHERE bc.palletNumber = :palletNumber AND bc.containerState = :state
+avr. 24, 2017 10:57:44 PM entity.BaseContainer checkContainerByState
+INFOS: Searching Container [200008434] in BaseContainer.
+avr. 24, 2017 10:57:44 PM entity.BaseContainer checkContainerByState
+INFOS: FROM BaseContainer bc WHERE bc.palletNumber = :palletNumber AND bc.containerState = :state
+avr. 24, 2017 10:57:49 PM entity.BaseContainer checkContainerByState
+INFOS: Searching Container [200008432] in BaseContainer.
+avr. 24, 2017 10:57:49 PM entity.BaseContainer checkContainerByState
+INFOS: FROM BaseContainer bc WHERE bc.palletNumber = :palletNumber AND bc.containerState = :state
+avr. 24, 2017 10:57:54 PM entity.BaseContainer checkContainerByState
+INFOS: Searching Container [200008423] in BaseContainer.
+avr. 24, 2017 10:57:54 PM entity.BaseContainer checkContainerByState
+INFOS: FROM BaseContainer bc WHERE bc.palletNumber = :palletNumber AND bc.containerState = :state
+avr. 24, 2017 10:58:00 PM entity.BaseContainer checkContainerByState
+INFOS: Searching Container [200008415] in BaseContainer.
+avr. 24, 2017 10:58:00 PM entity.BaseContainer checkContainerByState
+INFOS: FROM BaseContainer bc WHERE bc.palletNumber = :palletNumber AND bc.containerState = :state
+avr. 24, 2017 10:58:08 PM entity.BaseContainer checkContainerByState
+INFOS: Searching Container [200008386] in BaseContainer.
+avr. 24, 2017 10:58:08 PM entity.BaseContainer checkContainerByState
+INFOS: FROM BaseContainer bc WHERE bc.palletNumber = :palletNumber AND bc.containerState = :state
+avr. 24, 2017 10:58:19 PM entity.BaseContainer checkContainerByState
+INFOS: Searching Container [200008392] in BaseContainer.
+avr. 24, 2017 10:58:19 PM entity.BaseContainer checkContainerByState
+INFOS: FROM BaseContainer bc WHERE bc.palletNumber = :palletNumber AND bc.containerState = :state
+avr. 24, 2017 10:58:36 PM gui.warehouse_dispatch.WAREHOUSE_DISPATCH_UI0003_PasswordRequest connect
+INFOS: User Admin   / 9999 connected to host O-EZZIOURI at 2017-04-24 22:58:36 Dispatch interface : .
+avr. 24, 2017 11:00:19 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_04_24] already exist!
+Print sub directory [.\print\2017_04_24.\open_sheet] already exist!
+Print sub directory [.\print\2017_04_24.\closing_sheet] already exist!
+Print sub directory [.\print\2017_04_24.\picking_label] already exist!
+Print sub directory [.\print\2017_04_24.\dispatch_label] already exist!
+
+avr. 24, 2017 11:00:35 PM gui.warehouse_dispatch.WAREHOUSE_DISPATCH_UI0003_PasswordRequest connect
+INFOS: User Admin   / 9999 connected to host O-EZZIOURI at 2017-04-24 23:00:35 Dispatch interface : .
+avr. 24, 2017 11:06:13 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_04_24] already exist!
+Print sub directory [.\print\2017_04_24.\open_sheet] already exist!
+Print sub directory [.\print\2017_04_24.\closing_sheet] already exist!
+Print sub directory [.\print\2017_04_24.\picking_label] already exist!
+Print sub directory [.\print\2017_04_24.\dispatch_label] already exist!
+
+avr. 24, 2017 11:06:31 PM gui.warehouse_dispatch.WAREHOUSE_DISPATCH_UI0003_PasswordRequest connect
+INFOS: User Admin   / 9999 connected to host O-EZZIOURI at 2017-04-24 23:06:31 Dispatch interface : .

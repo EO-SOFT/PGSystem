@@ -1,0 +1,30 @@
+oct. 25, 2016 10:32:02 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_10_25] is created!
+Print sub directory [.\print\2016_10_25.\open_sheet] is created!
+Print sub directory [.\print\2016_10_25.\closing_sheet] is created!
+Print sub directory [.\print\2016_10_25.\picking_label] is created!
+Print sub directory [.\print\2016_10_25.\dispatch_label] is created!
+
+oct. 25, 2016 10:32:05 PM gui.packaging.PACKAGING_UI0001_Main loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord ORDER BY id ASC
+oct. 25, 2016 10:32:05 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 25, 2016 10:32:05 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 25, 2016 10:32:10 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 25, 2016 10:56:52 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_10_25] already exist!
+Print sub directory [.\print\2016_10_25.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_25.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_25.\picking_label] already exist!
+Print sub directory [.\print\2016_10_25.\dispatch_label] already exist!
+
+oct. 25, 2016 10:56:54 PM gui.packaging.PACKAGING_UI0001_Main loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord ORDER BY id ASC
+oct. 25, 2016 10:56:54 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 25, 2016 10:56:54 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 25, 2016 10:56:57 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC

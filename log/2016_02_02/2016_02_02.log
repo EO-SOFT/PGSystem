@@ -1,0 +1,8 @@
+févr. 02, 2016 12:30:40 AM classes.HibernateUtil checkConnection
+GRAVE: Cannot open connection
+févr. 02, 2016 12:32:22 AM gui.UI0000_Login ok_btnActionPerformed
+INFOS: Login ou mot de passe incorrect !
+févr. 02, 2016 12:32:29 AM gui.UI0000_Login ok_btnActionPerformed
+INFOS: Utilisateur Oussama EZZIOURI / 1001 connecté à la machine user-PC à 2016-02-02 00:32:14.
+févr. 02, 2016 11:55:36 PM gui.UI0000_Login ok_btnActionPerformed
+INFOS: Utilisateur Oussama EZZIOURI / 1001 connecté à la machine user-PC à 2016-02-02 23:55:26.

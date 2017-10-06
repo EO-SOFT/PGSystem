@@ -1,0 +1,174 @@
+août 27, 2016 10:59:55 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_08_27] is created!
+Print sub directory [.\print\2016_08_27.\open_sheet] is created!
+Print sub directory [.\print\2016_08_27.\closing_sheet] is created!
+Print sub directory [.\print\2016_08_27.\picking_label] is created!
+
+août 27, 2016 1:40:00 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_08_27] already exist!
+Print sub directory [.\print\2016_08_27.\open_sheet] already exist!
+Print sub directory [.\print\2016_08_27.\closing_sheet] already exist!
+Print sub directory [.\print\2016_08_27.\picking_label] already exist!
+
+août 27, 2016 1:40:04 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+août 27, 2016 1:40:04 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+août 27, 2016 1:41:38 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_08_27] already exist!
+Print sub directory [.\print\2016_08_27.\open_sheet] already exist!
+Print sub directory [.\print\2016_08_27.\closing_sheet] already exist!
+Print sub directory [.\print\2016_08_27.\picking_label] already exist!
+
+août 27, 2016 1:41:44 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+août 27, 2016 1:41:44 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+août 27, 2016 1:41:52 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+août 27, 2016 1:43:15 PM state.S010_UserCodeScan doAction
+INFOS: Invalid matricule number or account locked !
+août 27, 2016 1:43:23 PM gui.packaging.PACKAGING_UI0002_PasswordRequest admin_password_txtboxKeyPressed
+INFOS: User Admin   / 9999 connected to host WSMA7040 at 2016-08-27 13:43:23 Project : ENGINE.
+août 27, 2016 1:43:31 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22045793] in ConfigUCS: ENGINE
+août 27, 2016 1:43:31 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22045793] NOT found.
+août 27, 2016 1:43:31 PM state.S020_HarnessPartScan doAction
+AVERTISSEMENT: Harness part [P22045793] NOT found in UCS [ENGINE].
+août 27, 2016 1:44:36 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22701793] in ConfigUCS: ENGINE
+août 27, 2016 1:44:36 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22701793] found for project [ENGINE].
+août 27, 2016 1:44:36 PM state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22701793] OK.
+août 27, 2016 1:44:44 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2270179327082016134400] in BaseHarness.
+août 27, 2016 1:44:44 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+août 27, 2016 1:44:44 PM state.S030_MatrixIdScan doAction
+INFOS: Valid Harness Counter scanned [P2270179327082016134400] OK.
+août 27, 2016 1:44:47 PM state.S040_PalletChoice doAction
+INFOS: Is it a new pallet ?
+août 27, 2016 1:44:47 PM state.S040_PalletChoice doAction
+INFOS:  [Yes]
+août 27, 2016 1:44:47 PM gui.packaging.PACKAGING_UI9000_ChoosePackType <init>
+INFOS: Item found 0.390057633333333--22701793--26C37100A--P01--3RV--24
+août 27, 2016 1:44:47 PM gui.packaging.PACKAGING_UI9000_ChoosePackType <init>
+INFOS: 1 UCS founds for Harness Part[22701793].
+août 27, 2016 1:45:25 PM gui.packaging.PACKAGING_UI9000_ChoosePackType mappingContextVals
+INFOS: Selected pack type : 0.390057633333333--22701793--26C37100A--P01--3RV--24 
+août 27, 2016 1:45:25 PM helper.Helper InitDailyDestPrintDir
+INFOS: nullPrint directory [.\print\2016_08_27] already exist!
+Print sub directory [.\print\2016_08_27.\open_sheet] already exist!
+Print sub directory [.\print\2016_08_27.\closing_sheet] already exist!
+Print sub directory [.\print\2016_08_27.\picking_label] already exist!
+
+août 27, 2016 1:45:26 PM helper.PrinterHelper saveAndPrintOpenSheet
+INFOS: Set Pallet [200000489] state to [IN_PROCESS]
+août 27, 2016 1:45:26 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2016_08_27\open_sheet\PrintOpenPallet_A5_2016_08_27_13_45_25_200000489.pdf] to the default printer...
+août 27, 2016 1:45:26 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [%s] has been printed.
+août 27, 2016 1:45:26 PM helper.PrinterHelper saveAndPrintOpenSheet
+INFOS: Set Pallet [200000489] state to [PRINTED]
+août 27, 2016 1:45:26 PM gui.packaging.PACKAGING_UI9000_ChoosePackType items_listKeyPressed
+INFOS: Openning new container for first harness part [22701793].
+août 27, 2016 1:46:08 PM state.S041_NewPalletScan doAction
+INFOS: Scanned Pallet number [200000489] OK.
+août 27, 2016 1:46:08 PM state.S041_NewPalletScan doAction
+INFOS: BaseContainer created BaseContainer{id=761,
+ createTime=Sat Aug 27 13:46:08 WEST 2016,
+ writeTime=Sat Aug 27 13:46:08 WEST 2016,
+ createId=4,
+ writeId=4,
+ user=9999,
+ startTime=Sat Aug 27 13:46:08 WEST 2016,
+ completeTime=null,
+ workTime=null,
+ palletNumber=200000489,
+ harnessPart=22701793,
+ harnessIndex=P01,
+ supplierPartNumber=26C37100A,
+ qtyExpected=24,
+ qtyRead=1,
+ containerState=OPEN,
+ containerStateCode=1000,
+ packType=3RV,
+ harnessType=ENGINE,
+ harnessList=[],
+ stdTime=0.390057633333333} 
+août 27, 2016 1:49:58 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_08_27] already exist!
+Print sub directory [.\print\2016_08_27.\open_sheet] already exist!
+Print sub directory [.\print\2016_08_27.\closing_sheet] already exist!
+Print sub directory [.\print\2016_08_27.\picking_label] already exist!
+
+août 27, 2016 1:50:00 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+août 27, 2016 1:50:00 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+août 27, 2016 1:50:07 PM gui.packaging.PACKAGING_UI0002_PasswordRequest admin_password_txtboxKeyPressed
+INFOS: User Admin   / 9999 connected to host WSMA7040 at 2016-08-27 13:50:07 Project : ENGINE.
+août 27, 2016 1:50:12 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22701793] in ConfigUCS: ENGINE
+août 27, 2016 1:50:12 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22701793] found for project [ENGINE].
+août 27, 2016 1:50:12 PM state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22701793] OK.
+août 27, 2016 1:50:24 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2270179327082016135000] in BaseHarness.
+août 27, 2016 1:50:24 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+août 27, 2016 1:50:24 PM state.S030_MatrixIdScan doAction
+INFOS: Valid Harness Counter scanned [P2270179327082016135000] OK.
+août 27, 2016 1:50:27 PM state.S040_PalletChoice doAction
+INFOS: Is it a new pallet ?
+août 27, 2016 1:50:27 PM state.S040_PalletChoice doAction
+INFOS:  [Yes]
+août 27, 2016 1:50:27 PM gui.packaging.PACKAGING_UI9000_ChoosePackType <init>
+INFOS: Item found 22701793--26C37100A--P01--3RV--24--0.390057633333333
+août 27, 2016 1:50:27 PM gui.packaging.PACKAGING_UI9000_ChoosePackType <init>
+INFOS: 1 UCS founds for Harness Part[22701793].
+août 27, 2016 1:50:34 PM gui.packaging.PACKAGING_UI9000_ChoosePackType mappingContextVals
+INFOS: Selected pack type : 22701793--26C37100A--P01--3RV--24--0.390057633333333 
+août 27, 2016 1:50:34 PM helper.Helper InitDailyDestPrintDir
+INFOS: nullPrint directory [.\print\2016_08_27] already exist!
+Print sub directory [.\print\2016_08_27.\open_sheet] already exist!
+Print sub directory [.\print\2016_08_27.\closing_sheet] already exist!
+Print sub directory [.\print\2016_08_27.\picking_label] already exist!
+
+août 27, 2016 1:50:34 PM helper.PrinterHelper saveAndPrintOpenSheet
+INFOS: Set Pallet [200000490] state to [IN_PROCESS]
+août 27, 2016 1:50:34 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2016_08_27\open_sheet\PrintOpenPallet_A5_2016_08_27_13_50_34_200000490.pdf] to the default printer...
+août 27, 2016 1:50:34 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [%s] has been printed.
+août 27, 2016 1:50:34 PM helper.PrinterHelper saveAndPrintOpenSheet
+INFOS: Set Pallet [200000490] state to [PRINTED]
+août 27, 2016 1:50:34 PM gui.packaging.PACKAGING_UI9000_ChoosePackType items_listKeyPressed
+INFOS: Openning new container for first harness part [22701793].
+août 27, 2016 1:50:42 PM state.S041_NewPalletScan doAction
+INFOS: Scanned Pallet number [200000490] OK.
+août 27, 2016 1:50:42 PM state.S041_NewPalletScan doAction
+INFOS: BaseContainer created BaseContainer{id=762,
+ createTime=Sat Aug 27 13:50:42 WEST 2016,
+ writeTime=Sat Aug 27 13:50:42 WEST 2016,
+ createId=4,
+ writeId=4,
+ user=9999,
+ startTime=Sat Aug 27 13:50:42 WEST 2016,
+ completeTime=null,
+ workTime=null,
+ palletNumber=200000490,
+ harnessPart=22701793,
+ harnessIndex=P01,
+ supplierPartNumber=26C37100A,
+ qtyExpected=24,
+ qtyRead=1,
+ containerState=OPEN,
+ containerStateCode=1000,
+ packType=3RV,
+ harnessType=ENGINE,
+ harnessList=[],
+ stdTime=0.390057633333333} 

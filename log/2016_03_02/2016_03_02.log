@@ -1,0 +1,349 @@
+févr. 03, 2016 10:35:47 AM gui.UI0000_Login login_txtboxKeyPressed
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 03, 2016 10:35:48 AM gui.UI0000_Login login_txtboxKeyPressed
+INFOS: Utilisateur Oussama EZZIOURI / 1001 connecté à la machine user-PC à 2016-03-02 10:35:19.
+févr. 03, 2016 10:39:18 AM gui.UI0000_Login login_txtboxKeyPressed
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 03, 2016 10:39:20 AM gui.UI0000_Login login_txtboxKeyPressed
+INFOS: Login ou mot de passe incorrect !
+févr. 03, 2016 10:40:05 AM gui.UI0000_Login login_txtboxKeyPressed
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 03, 2016 10:40:12 AM gui.UI0000_Login login_txtboxKeyPressed
+INFOS: Matricule incorrect !
+févr. 03, 2016 10:58:39 AM classes.Helper InitDailyDestPrintDir
+INFOS: nullLog directory 2016_03_02 is created!
+Directory 2016_03_02null is created!
+Directory 2016_03_02null already exists.
+
+févr. 03, 2016 11:15:29 AM classes.Helper InitDailyDestPrintDir
+INFOS: nullPrint directory 2016_03_02 already exist!
+Print directory [.\print\2016_03_02.\palet] already exists.
+Print sub directory [galia] is created!
+-----------------------
+
+févr. 03, 2016 11:16:47 AM classes.Helper InitDailyDestPrintDir
+INFOS: nullPrint directory 2016_03_02 is created!
+Print directory [.\print\2016_03_02.\palet] is created!
+Print sub directory [galia] is created!
+
+févr. 03, 2016 11:18:57 AM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory .\print\2016_03_02 already exist!
+Print sub directory [.\print\2016_03_02.\palet] already exists.
+Print sub directory [.\print\2016_03_02.\galia] already exists.
+
+févr. 03, 2016 11:20:01 AM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_02] already exist!
+Print sub directory [.\print\2016_03_02.\palet] already exist!
+Print sub directory [.\print\2016_03_02.\galia] already exist!
+
+févr. 03, 2016 11:20:33 AM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_02] is created!
+Print sub directory [.\print\2016_03_02.\palet] is created!
+Print sub directory [.\print\2016_03_02.\galia] is created!
+
+févr. 03, 2016 11:21:38 AM gui.UI0000_Login login_txtboxKeyPressed
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 03, 2016 11:21:40 AM gui.UI0000_Login login_txtboxKeyPressed
+INFOS: invalid matricule number !
+févr. 03, 2016 11:21:45 AM gui.UI0000_Login login_txtboxKeyPressed
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 03, 2016 11:21:45 AM gui.UI0000_Login login_txtboxKeyPressed
+INFOS: User Yassine HADDANI / 1002 connected to host user-PC à 2016-03-02 11:20:33.
+févr. 03, 2016 11:32:24 AM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_02] already exist!
+Print sub directory [.\print\2016_03_02.\palet] already exist!
+Print sub directory [.\print\2016_03_02.\galia] already exist!
+
+févr. 03, 2016 11:32:41 AM gui.UI0000_Login login_txtboxKeyPressed
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 03, 2016 11:32:41 AM gui.UI0000_Login login_txtboxKeyPressed
+INFOS: User CV Technical Administrator null / wwroot connected to host user-PC à 2016-03-02 11:32:24.
+févr. 03, 2016 11:39:09 AM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_02] already exist!
+Print sub directory [.\print\2016_03_02.\palet] already exist!
+Print sub directory [.\print\2016_03_02.\galia] already exist!
+
+févr. 03, 2016 11:39:14 AM gui.UI0000_Login login_txtboxKeyPressed
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 03, 2016 11:39:16 AM gui.UI0000_Login login_txtboxKeyPressed
+INFOS: invalid matricule number !
+févr. 03, 2016 11:39:20 AM gui.UI0000_Login login_txtboxKeyPressed
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 03, 2016 11:39:21 AM gui.UI0000_Login login_txtboxKeyPressed
+INFOS: invalid matricule number !
+févr. 03, 2016 11:39:28 AM gui.UI0000_Login login_txtboxKeyPressed
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 03, 2016 11:39:28 AM gui.UI0000_Login login_txtboxKeyPressed
+INFOS: User Oussama EZZIOURI / 1001 connected to host user-PC à 2016-03-02 11:39:08.
+févr. 03, 2016 11:39:56 AM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_02] already exist!
+Print sub directory [.\print\2016_03_02.\palet] already exist!
+Print sub directory [.\print\2016_03_02.\galia] already exist!
+
+févr. 03, 2016 11:40:00 AM gui.UI0000_Login login_txtboxKeyPressed
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 03, 2016 11:40:00 AM gui.UI0000_Login login_txtboxKeyPressed
+INFOS: User Oussama EZZIOURI / 1001 connected to host user-PC à 2016-03-02 11:39:56.
+févr. 03, 2016 11:49:41 AM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_02] already exist!
+Print sub directory [.\print\2016_03_02.\palet] already exist!
+Print sub directory [.\print\2016_03_02.\galia] already exist!
+
+févr. 03, 2016 11:49:47 AM gui.JP0000_OPERATOR_LOGIN login_txtboxKeyPressed
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 03, 2016 11:49:48 AM gui.JP0000_OPERATOR_LOGIN login_txtboxKeyPressed
+INFOS: User Oussama EZZIOURI / 1001 connected to host user-PC à 2016-03-02 11:49:41.
+févr. 03, 2016 11:52:25 AM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_02] already exist!
+Print sub directory [.\print\2016_03_02.\palet] already exist!
+Print sub directory [.\print\2016_03_02.\galia] already exist!
+
+févr. 03, 2016 11:57:59 AM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_02] already exist!
+Print sub directory [.\print\2016_03_02.\palet] already exist!
+Print sub directory [.\print\2016_03_02.\galia] already exist!
+
+févr. 03, 2016 11:58:40 AM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_02] already exist!
+Print sub directory [.\print\2016_03_02.\palet] already exist!
+Print sub directory [.\print\2016_03_02.\galia] already exist!
+
+févr. 03, 2016 11:59:09 AM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_02] already exist!
+Print sub directory [.\print\2016_03_02.\palet] already exist!
+Print sub directory [.\print\2016_03_02.\galia] already exist!
+
+févr. 03, 2016 11:59:57 AM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_02] already exist!
+Print sub directory [.\print\2016_03_02.\palet] already exist!
+Print sub directory [.\print\2016_03_02.\galia] already exist!
+
+févr. 03, 2016 12:00:12 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_02] already exist!
+Print sub directory [.\print\2016_03_02.\palet] already exist!
+Print sub directory [.\print\2016_03_02.\galia] already exist!
+
+févr. 03, 2016 12:07:20 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_02] already exist!
+Print sub directory [.\print\2016_03_02.\palet] already exist!
+Print sub directory [.\print\2016_03_02.\galia] already exist!
+
+févr. 03, 2016 12:10:28 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_02] already exist!
+Print sub directory [.\print\2016_03_02.\palet] already exist!
+Print sub directory [.\print\2016_03_02.\galia] already exist!
+
+févr. 03, 2016 12:10:34 PM gui.UI0000_Main login_txtboxKeyPressed
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 03, 2016 12:10:34 PM gui.UI0000_Main login_txtboxKeyPressed
+INFOS: User Oussama EZZIOURI / 1001 connected to host user-PC à 2016-03-02 12:10:28.
+févr. 03, 2016 12:17:03 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_02] already exist!
+Print sub directory [.\print\2016_03_02.\palet] already exist!
+Print sub directory [.\print\2016_03_02.\galia] already exist!
+
+févr. 03, 2016 12:18:42 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_02] already exist!
+Print sub directory [.\print\2016_03_02.\palet] already exist!
+Print sub directory [.\print\2016_03_02.\galia] already exist!
+
+févr. 03, 2016 12:19:24 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_02] already exist!
+Print sub directory [.\print\2016_03_02.\palet] already exist!
+Print sub directory [.\print\2016_03_02.\galia] already exist!
+
+févr. 03, 2016 12:20:43 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_02] already exist!
+Print sub directory [.\print\2016_03_02.\palet] already exist!
+Print sub directory [.\print\2016_03_02.\galia] already exist!
+
+févr. 03, 2016 12:21:09 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_02] already exist!
+Print sub directory [.\print\2016_03_02.\palet] already exist!
+Print sub directory [.\print\2016_03_02.\galia] already exist!
+
+févr. 03, 2016 12:21:43 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_02] already exist!
+Print sub directory [.\print\2016_03_02.\palet] already exist!
+Print sub directory [.\print\2016_03_02.\galia] already exist!
+
+févr. 03, 2016 12:24:41 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_02] already exist!
+Print sub directory [.\print\2016_03_02.\palet] already exist!
+Print sub directory [.\print\2016_03_02.\galia] already exist!
+
+févr. 03, 2016 12:25:18 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_02] already exist!
+Print sub directory [.\print\2016_03_02.\palet] already exist!
+Print sub directory [.\print\2016_03_02.\galia] already exist!
+
+févr. 03, 2016 12:25:53 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_02] already exist!
+Print sub directory [.\print\2016_03_02.\palet] already exist!
+Print sub directory [.\print\2016_03_02.\galia] already exist!
+
+févr. 03, 2016 12:26:12 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_02] already exist!
+Print sub directory [.\print\2016_03_02.\palet] already exist!
+Print sub directory [.\print\2016_03_02.\galia] already exist!
+
+févr. 03, 2016 12:26:42 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_02] already exist!
+Print sub directory [.\print\2016_03_02.\palet] already exist!
+Print sub directory [.\print\2016_03_02.\galia] already exist!
+
+févr. 03, 2016 12:28:11 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_02] already exist!
+Print sub directory [.\print\2016_03_02.\palet] already exist!
+Print sub directory [.\print\2016_03_02.\galia] already exist!
+
+févr. 03, 2016 12:31:51 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_02] already exist!
+Print sub directory [.\print\2016_03_02.\palet] already exist!
+Print sub directory [.\print\2016_03_02.\galia] already exist!
+
+févr. 03, 2016 12:32:08 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_02] already exist!
+Print sub directory [.\print\2016_03_02.\palet] already exist!
+Print sub directory [.\print\2016_03_02.\galia] already exist!
+
+févr. 03, 2016 12:32:38 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_02] already exist!
+Print sub directory [.\print\2016_03_02.\palet] already exist!
+Print sub directory [.\print\2016_03_02.\galia] already exist!
+
+févr. 03, 2016 12:33:03 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_02] already exist!
+Print sub directory [.\print\2016_03_02.\palet] already exist!
+Print sub directory [.\print\2016_03_02.\galia] already exist!
+
+févr. 03, 2016 12:33:39 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_02] already exist!
+Print sub directory [.\print\2016_03_02.\palet] already exist!
+Print sub directory [.\print\2016_03_02.\galia] already exist!
+
+févr. 03, 2016 12:35:27 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_02] already exist!
+Print sub directory [.\print\2016_03_02.\palet] already exist!
+Print sub directory [.\print\2016_03_02.\galia] already exist!
+
+févr. 03, 2016 12:35:46 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_02] already exist!
+Print sub directory [.\print\2016_03_02.\palet] already exist!
+Print sub directory [.\print\2016_03_02.\galia] already exist!
+
+févr. 03, 2016 5:10:28 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_02] already exist!
+Print sub directory [.\print\2016_03_02.\palet] already exist!
+Print sub directory [.\print\2016_03_02.\galia] already exist!
+
+févr. 03, 2016 5:13:49 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_02] already exist!
+Print sub directory [.\print\2016_03_02.\palet] already exist!
+Print sub directory [.\print\2016_03_02.\galia] already exist!
+
+févr. 03, 2016 5:15:13 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_02] already exist!
+Print sub directory [.\print\2016_03_02.\palet] already exist!
+Print sub directory [.\print\2016_03_02.\galia] already exist!
+
+févr. 03, 2016 5:16:11 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_02] already exist!
+Print sub directory [.\print\2016_03_02.\palet] already exist!
+Print sub directory [.\print\2016_03_02.\galia] already exist!
+
+févr. 03, 2016 5:16:28 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_02] already exist!
+Print sub directory [.\print\2016_03_02.\palet] already exist!
+Print sub directory [.\print\2016_03_02.\galia] already exist!
+
+févr. 03, 2016 5:16:45 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_02] already exist!
+Print sub directory [.\print\2016_03_02.\palet] already exist!
+Print sub directory [.\print\2016_03_02.\galia] already exist!
+
+févr. 03, 2016 5:16:59 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_02] already exist!
+Print sub directory [.\print\2016_03_02.\palet] already exist!
+Print sub directory [.\print\2016_03_02.\galia] already exist!
+
+févr. 03, 2016 5:17:49 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_02] already exist!
+Print sub directory [.\print\2016_03_02.\palet] already exist!
+Print sub directory [.\print\2016_03_02.\galia] already exist!
+
+févr. 03, 2016 6:39:52 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_02] already exist!
+Print sub directory [.\print\2016_03_02.\palet] already exist!
+Print sub directory [.\print\2016_03_02.\galia] already exist!
+
+févr. 03, 2016 6:40:34 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_02] already exist!
+Print sub directory [.\print\2016_03_02.\palet] already exist!
+Print sub directory [.\print\2016_03_02.\galia] already exist!
+
+févr. 03, 2016 6:41:20 PM gui.UI0000_Login login_txtboxKeyPressed
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 03, 2016 6:41:24 PM gui.UI0000_Login login_txtboxKeyPressed
+INFOS: invalid matricule number !
+févr. 03, 2016 6:41:33 PM gui.UI0000_Login login_txtboxKeyPressed
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 03, 2016 6:41:33 PM gui.UI0000_Login login_txtboxKeyPressed
+INFOS: User Yassine HADDANI / 1002 connected to host WSMA7165 à 2016-03-02 18:40:34.
+févr. 03, 2016 8:15:29 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_02] already exist!
+Print sub directory [.\print\2016_03_02.\palet] already exist!
+Print sub directory [.\print\2016_03_02.\galia] already exist!
+
+févr. 03, 2016 8:16:29 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_02] already exist!
+Print sub directory [.\print\2016_03_02.\palet] already exist!
+Print sub directory [.\print\2016_03_02.\galia] already exist!
+
+févr. 03, 2016 8:17:28 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_02] already exist!
+Print sub directory [.\print\2016_03_02.\palet] already exist!
+Print sub directory [.\print\2016_03_02.\galia] already exist!
+
+févr. 03, 2016 8:25:08 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_02] already exist!
+Print sub directory [.\print\2016_03_02.\palet] already exist!
+Print sub directory [.\print\2016_03_02.\galia] already exist!
+
+févr. 03, 2016 9:37:34 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_02] already exist!
+Print sub directory [.\print\2016_03_02.\palet] already exist!
+Print sub directory [.\print\2016_03_02.\galia] already exist!
+
+févr. 03, 2016 9:37:39 PM gui.UI0000_Login login_txtboxKeyPressed
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 03, 2016 9:37:40 PM gui.UI0000_Login login_txtboxKeyPressed
+INFOS: Invalid matricule number !
+févr. 03, 2016 9:37:43 PM gui.UI0000_Login login_txtboxKeyPressed
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 03, 2016 9:37:43 PM gui.UI0000_Login login_txtboxKeyPressed
+INFOS: User Oussama EZZIOURI / 1001 connected to host WSMA7165 at 2016-03-02 21:37:34.
+févr. 03, 2016 9:39:28 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_02] already exist!
+Print sub directory [.\print\2016_03_02.\palet] already exist!
+Print sub directory [.\print\2016_03_02.\galia] already exist!
+
+févr. 03, 2016 9:39:33 PM gui.UI0000_Login scan_txtboxKeyPressed
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 03, 2016 9:39:33 PM gui.UI0000_Login scan_txtboxKeyPressed
+INFOS: User Oussama EZZIOURI / 1001 connected to host WSMA7165 at 2016-03-02 21:39:28.
+févr. 03, 2016 9:55:23 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_02] already exist!
+Print sub directory [.\print\2016_03_02.\palet] already exist!
+Print sub directory [.\print\2016_03_02.\galia] already exist!
+
+févr. 03, 2016 10:01:03 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_02] already exist!
+Print sub directory [.\print\2016_03_02.\palet] already exist!
+Print sub directory [.\print\2016_03_02.\galia] already exist!
+
+févr. 03, 2016 10:02:21 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_02] already exist!
+Print sub directory [.\print\2016_03_02.\palet] already exist!
+Print sub directory [.\print\2016_03_02.\galia] already exist!
+

@@ -1,0 +1,151 @@
+juin 12, 2017 11:02:35 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_06_12] is created!
+Print sub directory [.\print\2017_06_12.\open_sheet] is created!
+Print sub directory [.\print\2017_06_12.\closing_sheet] is created!
+Print sub directory [.\print\2017_06_12.\picking_label] is created!
+Print sub directory [.\print\2017_06_12.\dispatch_label] is created!
+
+juin 12, 2017 11:02:47 AM gui.packaging_warehouse.PACKAGING_WAREHOUSE_UI0001_PasswordRequest connect
+INFOS: User OUSSAMA EZZIOURI / ezou1001 connected to host WSMA7040 at 2017-06-12 11:02:47 Packaging warehouse interface : .
+juin 12, 2017 11:02:55 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+juin 12, 2017 11:02:58 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+juin 12, 2017 11:02:58 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+juin 12, 2017 11:02:58 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+juin 12, 2017 11:02:58 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+juin 12, 2017 11:04:45 AM entity.BaseContainer checkContainerByState
+INFOS: Searching Container [200027663] in BaseContainer.
+juin 12, 2017 11:04:45 AM entity.BaseContainer checkContainerByState
+INFOS: FROM BaseContainer bc WHERE bc.palletNumber = :palletNumber AND bc.containerState = :state
+juin 12, 2017 11:08:08 AM entity.BaseContainer checkContainerByState
+INFOS: Searching Container [200027662] in BaseContainer.
+juin 12, 2017 11:08:08 AM entity.BaseContainer checkContainerByState
+INFOS: FROM BaseContainer bc WHERE bc.palletNumber = :palletNumber AND bc.containerState = :state
+juin 12, 2017 11:08:19 AM entity.BaseContainer checkContainerByState
+INFOS: Searching Container [200027661] in BaseContainer.
+juin 12, 2017 11:08:19 AM entity.BaseContainer checkContainerByState
+INFOS: FROM BaseContainer bc WHERE bc.palletNumber = :palletNumber AND bc.containerState = :state
+juin 12, 2017 11:08:25 AM entity.BaseContainer checkContainerByState
+INFOS: Searching Container [200027660] in BaseContainer.
+juin 12, 2017 11:08:25 AM entity.BaseContainer checkContainerByState
+INFOS: FROM BaseContainer bc WHERE bc.palletNumber = :palletNumber AND bc.containerState = :state
+juin 12, 2017 11:08:35 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_06_12] already exist!
+Print sub directory [.\print\2017_06_12.\open_sheet] already exist!
+Print sub directory [.\print\2017_06_12.\closing_sheet] already exist!
+Print sub directory [.\print\2017_06_12.\picking_label] already exist!
+Print sub directory [.\print\2017_06_12.\dispatch_label] already exist!
+
+juin 12, 2017 11:08:47 AM gui.packaging_warehouse.PACKAGING_WAREHOUSE_UI0001_PasswordRequest connect
+INFOS: User OUSSAMA EZZIOURI / ezou1001 connected to host WSMA7040 at 2017-06-12 11:08:47 Packaging warehouse interface : .
+juin 12, 2017 11:12:41 AM gui.packaging.PACKAGING_UI0001_Main loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord ORDER BY id ASC
+juin 12, 2017 11:12:41 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+juin 12, 2017 11:12:41 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+juin 12, 2017 11:12:53 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+juin 12, 2017 11:12:57 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+juin 12, 2017 11:12:57 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+juin 12, 2017 11:14:28 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_06_12] already exist!
+Print sub directory [.\print\2017_06_12.\open_sheet] already exist!
+Print sub directory [.\print\2017_06_12.\closing_sheet] already exist!
+Print sub directory [.\print\2017_06_12.\picking_label] already exist!
+Print sub directory [.\print\2017_06_12.\dispatch_label] already exist!
+
+juin 12, 2017 11:14:31 AM gui.packaging.PACKAGING_UI0001_Main loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord ORDER BY id ASC
+juin 12, 2017 11:14:31 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+juin 12, 2017 11:14:31 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+juin 12, 2017 11:14:33 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+juin 12, 2017 11:16:36 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_06_12] already exist!
+Print sub directory [.\print\2017_06_12.\open_sheet] already exist!
+Print sub directory [.\print\2017_06_12.\closing_sheet] already exist!
+Print sub directory [.\print\2017_06_12.\picking_label] already exist!
+Print sub directory [.\print\2017_06_12.\dispatch_label] already exist!
+
+juin 12, 2017 11:16:38 AM gui.packaging.PACKAGING_UI0001_Main loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord ORDER BY id ASC
+juin 12, 2017 11:16:38 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+juin 12, 2017 11:16:38 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+juin 12, 2017 11:16:39 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+juin 12, 2017 11:16:55 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+juin 12, 2017 11:16:55 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+juin 12, 2017 11:18:46 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_06_12] already exist!
+Print sub directory [.\print\2017_06_12.\open_sheet] already exist!
+Print sub directory [.\print\2017_06_12.\closing_sheet] already exist!
+Print sub directory [.\print\2017_06_12.\picking_label] already exist!
+Print sub directory [.\print\2017_06_12.\dispatch_label] already exist!
+
+juin 12, 2017 11:18:53 AM gui.warehouse_dispatch.WAREHOUSE_DISPATCH_UI0003_PasswordRequest connect
+INFOS: User OUSSAMA EZZIOURI / ezou1001 connected to host WSMA7040 at 2017-06-12 11:18:53 Dispatch interface : .
+juin 12, 2017 11:28:06 AM gui.packaging_warehouse.PACKAGING_WAREHOUSE_UI0001_PasswordRequest connect
+INFOS: User OUSSAMA EZZIOURI / ezou1001 connected to host WSMA7040 at 2017-06-12 11:28:06 Packaging warehouse interface : .
+juin 12, 2017 11:32:12 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_06_12] already exist!
+Print sub directory [.\print\2017_06_12.\open_sheet] already exist!
+Print sub directory [.\print\2017_06_12.\closing_sheet] already exist!
+Print sub directory [.\print\2017_06_12.\picking_label] already exist!
+Print sub directory [.\print\2017_06_12.\dispatch_label] already exist!
+
+juin 12, 2017 11:32:19 AM gui.packaging_warehouse.PACKAGING_WAREHOUSE_UI0001_PasswordRequest connect
+INFOS: User OUSSAMA EZZIOURI / ezou1001 connected to host WSMA7040 at 2017-06-12 11:32:19 Packaging warehouse interface : .
+juin 12, 2017 11:32:31 AM gui.warehouse_dispatch.WAREHOUSE_DISPATCH_UI0003_PasswordRequest connect
+INFOS: User OUSSAMA EZZIOURI / ezou1001 connected to host WSMA7040 at 2017-06-12 11:32:31 Dispatch interface : .
+juin 12, 2017 11:50:14 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_06_12] already exist!
+Print sub directory [.\print\2017_06_12.\open_sheet] already exist!
+Print sub directory [.\print\2017_06_12.\closing_sheet] already exist!
+Print sub directory [.\print\2017_06_12.\picking_label] already exist!
+Print sub directory [.\print\2017_06_12.\dispatch_label] already exist!
+
+juin 12, 2017 11:50:25 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_06_12] already exist!
+Print sub directory [.\print\2017_06_12.\open_sheet] already exist!
+Print sub directory [.\print\2017_06_12.\closing_sheet] already exist!
+Print sub directory [.\print\2017_06_12.\picking_label] already exist!
+Print sub directory [.\print\2017_06_12.\dispatch_label] already exist!
+
+juin 12, 2017 11:50:31 AM gui.packaging_warehouse.PACKAGING_WAREHOUSE_UI0001_PasswordRequest connect
+INFOS: User OUSSAMA EZZIOURI / ezou1001 connected to host WSMA7040 at 2017-06-12 11:50:31 Packaging warehouse interface : .
+juin 12, 2017 11:50:40 AM gui.warehouse_dispatch.WAREHOUSE_DISPATCH_UI0003_PasswordRequest connect
+INFOS: User OUSSAMA EZZIOURI / ezou1001 connected to host WSMA7040 at 2017-06-12 11:50:40 Dispatch interface : .
+juin 12, 2017 11:51:20 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_06_12] already exist!
+Print sub directory [.\print\2017_06_12.\open_sheet] already exist!
+Print sub directory [.\print\2017_06_12.\closing_sheet] already exist!
+Print sub directory [.\print\2017_06_12.\picking_label] already exist!
+Print sub directory [.\print\2017_06_12.\dispatch_label] already exist!
+
+juin 12, 2017 11:51:26 AM gui.warehouse_dispatch.WAREHOUSE_DISPATCH_UI0003_PasswordRequest connect
+INFOS: User OUSSAMA EZZIOURI / ezou1001 connected to host WSMA7040 at 2017-06-12 11:51:26 Dispatch interface : .
+juin 12, 2017 11:53:03 AM gui.packaging.PACKAGING_UI0001_Main loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord ORDER BY id ASC
+juin 12, 2017 11:53:04 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+juin 12, 2017 11:53:04 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+juin 12, 2017 11:53:04 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+juin 12, 2017 11:53:09 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+juin 12, 2017 11:53:09 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC

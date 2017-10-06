@@ -1,0 +1,36 @@
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
+    <!--xmlns="ivy"-->
+    <info organisation="de.laliluna" module="tutorial"/>
+
+    <configurations>
+        <conf name="default"/>
+    </configurations>
+    <dependencies defaultconf="default">
+        <!-- Hibernate related including XML and Annotations and Logging over log4j -->
+        <dependency org="org.hibernate" name="hibernate-core" rev="3.3.1.GA" transitive="true" />
+        <dependency org="org.hibernate" name="hibernate-annotations"
+                    rev="3.4.0.GA" transitive="true" />
+        <dependency org="org.hibernate" name="ejb3-persistence"
+                    rev="1.0.2.GA" />
+        <dependency org="log4j" name="log4j" rev="1.2.9"
+                    transitive="true" />
+        <dependency org="org.slf4j" name="slf4j-api" rev="1.5.2" transitive="true" />
+        <dependency org="org.slf4j" name="slf4j-log4j12" rev="1.5.2" transitive="true" />
+        <dependency org="javassist" name="javassist" rev="3.4.GA"
+                    transitive="true" />
+
+        <dependency org="postgresql" name="postgresql" rev="8.3-603.jdbc3"/>
+
+        <!-- EHCache related-->
+        <dependency org="org.hibernate" name="hibernate-ehcache" rev="3.3.1.GA" transitive="false"/>
+        <dependency org="net.sf.ehcache" name="ehcache" rev="1.2.3" transitive="false"/>
+        <dependency org="backport-util-concurrent" name="backport-util-concurrent" rev="3.0" transitive="false"/>
+        <dependency org="commons-logging" name="commons-logging" rev="1.0.4"/>
+
+        <!-- Hibernate Search related -->
+        <dependency org="org.hibernate" name="hibernate-search" rev="3.1.0.GA"/>
+
+
+    </dependencies>
+
+</ivy-module>

@@ -1,0 +1,32 @@
+Database Patch update 21/07/2017
+--------------------------------------
+ALTER TABLE config_barcode ADD COLUMN customer character varying(255);
+ALTER TABLE config_project ADD COLUMN customer character varying(255);
+
+UPDATE config_barcode SET customer = 'VOLVO';
+UPDATE config_project SET customer = 'VOLVO' WHERE harness_type != 'DUCATI';
+UPDATE config_project SET customer = 'DUCATI' WHERE harness_type = 'DUCATI';
+
+INSERT INTO config_barcode(id, barcode_pattern, description, ucs_id, key_word, harness_part,reference, customer)
+VALUES 
+(81,'^[P]\d{8}','Part Number Pattern for VOLVO',null,'PARTNUMBER','','','VOLVO'),
+(82,'^[P]{1}\b{9}[;]{1}\d{2}[.]{1}\d{2}[.]{1}\d{4}[;]{1}\d{2}[:]{1}\d{2}[:]{1}\d{2}','Electrical test data Ducati',null,'DOTMATRIX','','','DUCATI'),
+(83,'^[P]{1}\w{9}[;]{1}\d{2}[.]{1}\d{2}[.]{1}\d{4}[;]{1}\d{2}[:]{1}\d{2}[:]{1}\d{2}','Electrical test data Ducati',null,'DOTMATRIX','','','DUCATI'),
+(84,'^[P]\w{9}','Part Number Pattern for DUCATI',null,'PARTNUMBER','','','DUCATI'),
+(85,'^\w{9}','Part Number Pattern for DUCATI',null,'PARTNUMBER','','','DUCATI'),
+(86,'^\b{9}','Part Number Pattern for DUCATI',null,'PARTNUMBER','','','DUCATI'),
+(87,'^\b{9}[;]{1}\d{2}[.]{1}\d{2}[.]{1}\d{4}[;]{1}\d{2}[:]{1}\d{2}[:]{1}\d{2}','Part Number Pattern for DUCATI',null,'PARTNUMBER','','','DUCATI'),
+(88, '^\w{9}[;]{1}\d{2}[.]{1}\d{2}[.]{1}\d{4}[;]{1}\d{2}[:]{1}\d{2}[:]{1}\d{2}', 'Part Number Pattern for DUCATI', null,'PARTNUMBER','','','DUCATI');
+
+//P5101C861C;05.10.2017;10:05:01
+
+INSERT INTO config_ucs 
+(id, create_id, create_time, harness_index, harness_part, harness_type, pack_size, pack_type, supplier_part_number, write_id, write_time, active, additional_barcode, std_time, addtional_barcode, assy_workstation, lifes, segment, workplace, comment, order_no, special_order, price, destination) 
+VALUES 
+(404,58,'2017-10-03 11:56:20.312','1D','5101C401D','DUCATI',50,'C13','26F139404',58,'2017-10-03 12:02:50.121',1,0,'0',0,'-',-1,'DUCATI_SEG1','LINE1','','0',0,'0',''),
+(405,58,'2017-10-03 12:00:34.007','1B','5101D451B','DUCATI',50,'C13','26F139604',58,'2017-10-03 12:02:59.622',1,0,'0',0,'-',-1,'DUCATI_SEG1','LINE1','','0',0,'0',''),
+(406,58,'2017-10-03 12:00:50.98','1C','5101C391C','DUCATI',50,'C13','26F139503',58,'2017-10-03 12:03:42.959',1,0,'0',0,'-',-1,'DUCATI_SEG1','LINE1','','0',0,'0',''),
+(407,58,'2017-10-03 12:02:28.546','1D','5101C381D','DUCATI',6,'C11','26F139304',58,'2017-10-03 12:04:26.219',1,0,'0',0,'-',-1,'DUCATI_SEG1','LINE1','','0',0,'0',''),
+(408,58,'2017-10-03 12:04:11.227','1E','5101C371E','DUCATI',3,'C11','26F139104',58,'2017-10-03 12:04:11.227',1,0,'0',0,'-',-1,'DUCATI_SEG1','LINE1','','0',0,'0',''),
+(409,58,'2017-10-03 12:04:54.331','1D','5101C861D','DUCATI',3,'C11','26F139204',58,'2017-10-03 12:04:54.331',1,0,'0',0,'-',-1,'DUCATI_SEG1','LINE1','','-',0,'0','');
+

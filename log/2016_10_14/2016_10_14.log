@@ -1,0 +1,1093 @@
+oct. 14, 2016 6:47:35 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_10_14] is created!
+Print sub directory [.\print\2016_10_14.\open_sheet] is created!
+Print sub directory [.\print\2016_10_14.\closing_sheet] is created!
+Print sub directory [.\print\2016_10_14.\picking_label] is created!
+Print sub directory [.\print\2016_10_14.\dispatch_label] is created!
+
+oct. 14, 2016 6:48:34 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_10_14] already exist!
+Print sub directory [.\print\2016_10_14.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\picking_label] already exist!
+Print sub directory [.\print\2016_10_14.\dispatch_label] already exist!
+
+oct. 14, 2016 6:52:30 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_10_14] already exist!
+Print sub directory [.\print\2016_10_14.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\picking_label] already exist!
+Print sub directory [.\print\2016_10_14.\dispatch_label] already exist!
+
+oct. 14, 2016 6:54:40 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_10_14] already exist!
+Print sub directory [.\print\2016_10_14.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\picking_label] already exist!
+Print sub directory [.\print\2016_10_14.\dispatch_label] already exist!
+
+oct. 14, 2016 6:55:58 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_10_14] already exist!
+Print sub directory [.\print\2016_10_14.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\picking_label] already exist!
+Print sub directory [.\print\2016_10_14.\dispatch_label] already exist!
+
+oct. 14, 2016 6:57:01 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_10_14] already exist!
+Print sub directory [.\print\2016_10_14.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\picking_label] already exist!
+Print sub directory [.\print\2016_10_14.\dispatch_label] already exist!
+
+oct. 14, 2016 6:57:04 AM gui.packaging.PACKAGING_UI0001_Main loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord ORDER BY id ASC
+oct. 14, 2016 6:57:04 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 14, 2016 6:57:04 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 14, 2016 6:57:08 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 14, 2016 9:44:48 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_10_14] already exist!
+Print sub directory [.\print\2016_10_14.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\picking_label] already exist!
+Print sub directory [.\print\2016_10_14.\dispatch_label] already exist!
+
+oct. 14, 2016 9:44:51 PM gui.packaging.PACKAGING_UI0001_Main loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord ORDER BY id ASC
+oct. 14, 2016 9:44:51 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 14, 2016 9:44:51 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 14, 2016 9:47:09 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_10_14] already exist!
+Print sub directory [.\print\2016_10_14.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\picking_label] already exist!
+Print sub directory [.\print\2016_10_14.\dispatch_label] already exist!
+
+oct. 14, 2016 9:47:12 PM gui.packaging.PACKAGING_UI0001_Main loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord ORDER BY id ASC
+oct. 14, 2016 9:47:12 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 14, 2016 9:47:12 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 14, 2016 9:49:47 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_10_14] already exist!
+Print sub directory [.\print\2016_10_14.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\picking_label] already exist!
+Print sub directory [.\print\2016_10_14.\dispatch_label] already exist!
+
+oct. 14, 2016 9:49:49 PM gui.warehouse_output.WAREHOUSE_OUT_UI0002_DISPATCH_SCAN loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord IN (:keyWord) ORDER BY id ASC
+oct. 14, 2016 9:50:05 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_10_14] already exist!
+Print sub directory [.\print\2016_10_14.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\picking_label] already exist!
+Print sub directory [.\print\2016_10_14.\dispatch_label] already exist!
+
+oct. 14, 2016 9:50:07 PM gui.packaging.PACKAGING_UI0001_Main loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord ORDER BY id ASC
+oct. 14, 2016 9:50:07 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 14, 2016 9:50:07 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 14, 2016 9:50:44 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_10_14] already exist!
+Print sub directory [.\print\2016_10_14.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\picking_label] already exist!
+Print sub directory [.\print\2016_10_14.\dispatch_label] already exist!
+
+oct. 14, 2016 9:51:02 PM gui.packaging.PACKAGING_UI0001_Main loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord ORDER BY id ASC
+oct. 14, 2016 9:51:02 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 14, 2016 9:51:02 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 14, 2016 9:51:56 PM gui.packaging.PACKAGING_UI0002_PasswordRequest connect
+INFOS: User Admin ENGINE / 9999 connected to host O-EZZIOURI at 2016-10-14 21:51:56 Project : ENGINE.
+oct. 14, 2016 9:54:12 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [21395078] in ConfigUCS: ENGINE
+oct. 14, 2016 9:55:11 PM gui.packaging.PACKAGING_UI0001_Main loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord ORDER BY id ASC
+oct. 14, 2016 9:55:30 PM gui.packaging.PACKAGING_UI0001_Main loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord ORDER BY id ASC
+oct. 14, 2016 9:55:30 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 14, 2016 9:55:30 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 14, 2016 9:55:41 PM gui.packaging.PACKAGING_UI0002_PasswordRequest connect
+INFOS: User Admin ENGINE / 9999 connected to host O-EZZIOURI at 2016-10-14 21:55:41 Project : ENGINE.
+oct. 14, 2016 9:55:44 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [21395078] in ConfigUCS: ENGINE
+oct. 14, 2016 9:55:44 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [21395078] found for project [ENGINE].
+oct. 14, 2016 9:55:44 PM state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P21395078] OK.
+oct. 14, 2016 9:58:00 PM entity.BaseHarness checkCounterFormat
+INFOS: Invalid Counter scanned format [P2139507800000000000000]!
+oct. 14, 2016 10:00:03 PM gui.packaging.PACKAGING_UI0001_Main loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord ORDER BY id ASC
+oct. 14, 2016 10:00:03 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 14, 2016 10:00:03 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 14, 2016 10:00:14 PM gui.packaging.PACKAGING_UI0002_PasswordRequest connect
+INFOS: User Admin ENGINE / 9999 connected to host O-EZZIOURI at 2016-10-14 22:00:14 Project : ENGINE.
+oct. 14, 2016 10:00:22 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [21395078] in ConfigUCS: ENGINE
+oct. 14, 2016 10:00:22 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [21395078] found for project [ENGINE].
+oct. 14, 2016 10:00:22 PM state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P21395078] OK.
+oct. 14, 2016 10:00:24 PM entity.BaseHarness checkCounterFormat
+INFOS: Invalid Counter scanned format [P2139507800000000000000]!
+oct. 14, 2016 10:01:16 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_10_14] already exist!
+Print sub directory [.\print\2016_10_14.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\picking_label] already exist!
+Print sub directory [.\print\2016_10_14.\dispatch_label] already exist!
+
+oct. 14, 2016 10:01:48 PM gui.packaging.PACKAGING_UI0001_Main loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord ORDER BY id ASC
+oct. 14, 2016 10:01:48 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 14, 2016 10:01:48 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 14, 2016 10:01:52 PM gui.packaging.PACKAGING_UI0002_PasswordRequest connect
+INFOS: User Admin ENGINE / 9999 connected to host O-EZZIOURI at 2016-10-14 22:01:52 Project : ENGINE.
+oct. 14, 2016 10:01:56 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [21395078] in ConfigUCS: ENGINE
+oct. 14, 2016 10:01:56 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [21395078] found for project [ENGINE].
+oct. 14, 2016 10:01:56 PM state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P21395078] OK.
+oct. 14, 2016 10:01:57 PM entity.BaseHarness checkCounterFormat
+INFOS: Invalid Counter scanned format [P2139507800000000000000]!
+oct. 14, 2016 10:03:46 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_10_14] already exist!
+Print sub directory [.\print\2016_10_14.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\picking_label] already exist!
+Print sub directory [.\print\2016_10_14.\dispatch_label] already exist!
+
+oct. 14, 2016 10:03:49 PM gui.packaging.PACKAGING_UI0001_Main loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord ORDER BY id ASC
+oct. 14, 2016 10:03:49 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 14, 2016 10:03:49 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 14, 2016 10:03:53 PM gui.packaging.PACKAGING_UI0002_PasswordRequest connect
+INFOS: User Admin ENGINE / 9999 connected to host O-EZZIOURI at 2016-10-14 22:03:53 Project : ENGINE.
+oct. 14, 2016 10:03:57 PM entity.BaseHarness checkHarnessPartFormat
+INFOS: Invalid Harness Part scanned [P2139507800000000000000] !
+oct. 14, 2016 10:03:58 PM state.S020_HarnessPartScan doAction
+AVERTISSEMENT: Invalid Harness Part scanned [P2139507800000000000000] !
+oct. 14, 2016 10:04:02 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [21395078] in ConfigUCS: ENGINE
+oct. 14, 2016 10:04:02 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [21395078] found for project [ENGINE].
+oct. 14, 2016 10:04:02 PM state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P21395078] OK.
+oct. 14, 2016 10:04:04 PM entity.BaseHarness checkCounterFormat
+INFOS: Invalid Counter scanned format [P2139507800000000000000]!
+oct. 14, 2016 10:06:02 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_10_14] already exist!
+Print sub directory [.\print\2016_10_14.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\picking_label] already exist!
+Print sub directory [.\print\2016_10_14.\dispatch_label] already exist!
+
+oct. 14, 2016 10:06:04 PM gui.packaging.PACKAGING_UI0001_Main loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord ORDER BY id ASC
+oct. 14, 2016 10:06:04 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 14, 2016 10:06:04 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 14, 2016 10:06:08 PM gui.packaging.PACKAGING_UI0002_PasswordRequest connect
+INFOS: User Admin ENGINE / 9999 connected to host O-EZZIOURI at 2016-10-14 22:06:08 Project : ENGINE.
+oct. 14, 2016 10:06:17 PM entity.BaseHarness checkHarnessPartFormat
+INFOS: Invalid Harness Part scanned [P2139507800000000000000] !
+oct. 14, 2016 10:06:17 PM state.S020_HarnessPartScan doAction
+AVERTISSEMENT: Invalid Harness Part scanned [P2139507800000000000000] !
+oct. 14, 2016 10:06:21 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [21395078] in ConfigUCS: ENGINE
+oct. 14, 2016 10:06:21 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [21395078] found for project [ENGINE].
+oct. 14, 2016 10:06:21 PM state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P21395078] OK.
+oct. 14, 2016 10:06:22 PM entity.BaseHarness checkCounterFormat
+INFOS: Invalid Counter scanned format [P2139507800000000000000]!
+oct. 14, 2016 10:07:02 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_10_14] already exist!
+Print sub directory [.\print\2016_10_14.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\picking_label] already exist!
+Print sub directory [.\print\2016_10_14.\dispatch_label] already exist!
+
+oct. 14, 2016 10:07:03 PM gui.packaging.PACKAGING_UI0001_Main loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord ORDER BY id ASC
+oct. 14, 2016 10:07:03 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 14, 2016 10:07:03 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 14, 2016 10:07:08 PM state.S010_UserCodeScan doAction
+INFOS: Invalid matricule number or account locked !
+oct. 14, 2016 10:07:14 PM gui.packaging.PACKAGING_UI0002_PasswordRequest connect
+INFOS: User Admin ENGINE / 9999 connected to host O-EZZIOURI at 2016-10-14 22:07:14 Project : ENGINE.
+oct. 14, 2016 10:07:21 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [21395078] in ConfigUCS: ENGINE
+oct. 14, 2016 10:07:21 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [21395078] found for project [ENGINE].
+oct. 14, 2016 10:07:21 PM state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P21395078] OK.
+oct. 14, 2016 10:07:33 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2139507800000000000000] in BaseHarness.
+oct. 14, 2016 10:07:33 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+oct. 14, 2016 10:07:33 PM state.S030_MatrixIdScan doAction
+INFOS: Valid Harness Counter scanned [P2139507800000000000000] OK.
+oct. 14, 2016 10:07:38 PM state.S040_PalletChoice doAction
+INFOS: Is it a new pallet ?
+oct. 14, 2016 10:07:38 PM state.S040_PalletChoice doAction
+INFOS:  [Yes]
+oct. 14, 2016 10:07:38 PM gui.packaging.PACKAGING_UI9000_ChoosePackType <init>
+INFOS: Item found 21395078--26C31251A--P02--1HV--3--0.0
+oct. 14, 2016 10:07:38 PM gui.packaging.PACKAGING_UI9000_ChoosePackType <init>
+INFOS: 1 UCS founds for Harness Part[21395078].
+oct. 14, 2016 10:07:40 PM gui.packaging.PACKAGING_UI9000_ChoosePackType mappingContextVals
+INFOS: Selected pack type : 21395078--26C31251A--P02--1HV--3--0.0 
+oct. 14, 2016 10:07:40 PM helper.Helper InitDailyDestPrintDir
+INFOS: nullPrint directory [.\print\2016_10_14] already exist!
+Print sub directory [.\print\2016_10_14.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\picking_label] already exist!
+Print sub directory [.\print\2016_10_14.\dispatch_label] already exist!
+
+oct. 14, 2016 10:07:40 PM helper.PrinterHelper saveAndPrintOpenSheet
+INFOS: Set Pallet [10000004] state to [IN_PROCESS]
+oct. 14, 2016 10:07:40 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2016_10_14\open_sheet\PrintOpenPallet_A5_2016_10_14_22_07_40_10000004.pdf] to the default printer...
+oct. 14, 2016 10:07:43 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [.\print\2016_10_14\open_sheet\PrintOpenPallet_A5_2016_10_14_22_07_40_10000004.pdf] has been printed.
+oct. 14, 2016 10:07:43 PM helper.PrinterHelper saveAndPrintOpenSheet
+INFOS: Set Pallet [10000004] state to [PRINTED]
+oct. 14, 2016 10:07:43 PM gui.packaging.PACKAGING_UI9000_ChoosePackType loadConfigUcs
+INFOS: Openning new container for first harness part [21395078].
+oct. 14, 2016 10:07:54 PM state.S041_NewPalletScan doAction
+INFOS: Scanned Pallet number [10000004] OK.
+oct. 14, 2016 10:07:55 PM state.S041_NewPalletScan doAction
+INFOS: BaseContainer created BaseContainer{id=200000002,
+ createTime=Fri Oct 14 22:07:54 WEST 2016,
+ writeTime=Fri Oct 14 22:07:54 WEST 2016,
+ createId=2,
+ writeId=2,
+ user=9999,
+ startTime=Fri Oct 14 22:07:54 WEST 2016,
+ completeTime=null,
+ workTime=null,
+ palletNumber=10000004,
+ harnessPart=21395078,
+ harnessIndex=P02,
+ supplierPartNumber=26C31251A,
+ qtyExpected=3,
+ qtyRead=1,
+ containerState=OPEN,
+ containerStateCode=1000,
+ packType=1HV,
+ harnessType=ENGINE,
+ harnessList=[],
+ stdTime=0.0} 
+oct. 14, 2016 10:09:36 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [21493685] in ConfigUCS: ENGINE
+oct. 14, 2016 10:09:36 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [21493685] NOT found.
+oct. 14, 2016 10:09:36 PM state.S020_HarnessPartScan doAction
+AVERTISSEMENT: Harness part [P21493685] NOT found in UCS [ENGINE].
+oct. 14, 2016 10:10:05 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [21953568] in ConfigUCS: ENGINE
+oct. 14, 2016 10:10:05 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [21953568] found for project [ENGINE].
+oct. 14, 2016 10:10:05 PM state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P21953568] OK.
+oct. 14, 2016 10:10:13 PM entity.BaseHarness checkCounterFormat
+INFOS: Invalid Counter scanned format [P219535680000000000000]!
+oct. 14, 2016 10:10:36 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2195356800000000000000] in BaseHarness.
+oct. 14, 2016 10:10:36 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+oct. 14, 2016 10:10:36 PM state.S030_MatrixIdScan doAction
+INFOS: Valid Harness Counter scanned [P2195356800000000000000] OK.
+oct. 14, 2016 10:10:38 PM state.S040_PalletChoice doAction
+INFOS: Is it a new pallet ?
+oct. 14, 2016 10:10:38 PM state.S040_PalletChoice doAction
+INFOS:  [Yes]
+oct. 14, 2016 10:10:38 PM gui.packaging.PACKAGING_UI9000_ChoosePackType <init>
+INFOS: Item found 21953568--26C93582A--P04--1HV--3--0.0
+oct. 14, 2016 10:10:38 PM gui.packaging.PACKAGING_UI9000_ChoosePackType <init>
+INFOS: 1 UCS founds for Harness Part[21953568].
+oct. 14, 2016 10:10:47 PM gui.packaging.PACKAGING_UI9000_ChoosePackType mappingContextVals
+INFOS: Selected pack type : 21953568--26C93582A--P04--1HV--3--0.0 
+oct. 14, 2016 10:11:08 PM gui.packaging.PACKAGING_UI9000_ChoosePackType items_listKeyPressed
+INFOS: Palette/Box déjà ouvert(e) du type 1HV dans ce poste O-EZZIOURI, pour la référence 21395078.
+Solution N° 1 : - Veuillez terminer le packaging de la palette 21953568 avant d'ouvrir une nouvelle palette de type 10000004.
+Solution N° 2 : - Emballer cette référence dans un autre poste packaging.
+oct. 14, 2016 10:12:02 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [21953568] in ConfigUCS: ENGINE
+oct. 14, 2016 10:12:02 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [21953568] found for project [ENGINE].
+oct. 14, 2016 10:12:02 PM state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P21953568] OK.
+oct. 14, 2016 10:12:03 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2195356800000000000000] in BaseHarness.
+oct. 14, 2016 10:12:03 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+oct. 14, 2016 10:12:03 PM state.S030_MatrixIdScan doAction
+INFOS: Valid Harness Counter scanned [P2195356800000000000000] OK.
+oct. 14, 2016 10:12:05 PM state.S040_PalletChoice doAction
+INFOS: Is it a new pallet ?
+oct. 14, 2016 10:12:05 PM state.S040_PalletChoice doAction
+INFOS:  [Yes]
+oct. 14, 2016 10:12:05 PM gui.packaging.PACKAGING_UI9000_ChoosePackType <init>
+INFOS: Item found 21953568--26C93582A--P04--1HV--3--0.0
+oct. 14, 2016 10:12:05 PM gui.packaging.PACKAGING_UI9000_ChoosePackType <init>
+INFOS: 1 UCS founds for Harness Part[21953568].
+oct. 14, 2016 10:12:09 PM gui.packaging.PACKAGING_UI9000_ChoosePackType mappingContextVals
+INFOS: Selected pack type : 21953568--26C93582A--P04--1HV--3--0.0 
+oct. 14, 2016 10:12:09 PM helper.Helper InitDailyDestPrintDir
+INFOS: nullPrint directory [.\print\2016_10_14] already exist!
+Print sub directory [.\print\2016_10_14.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\picking_label] already exist!
+Print sub directory [.\print\2016_10_14.\dispatch_label] already exist!
+
+oct. 14, 2016 10:12:09 PM helper.PrinterHelper saveAndPrintOpenSheet
+INFOS: Set Pallet [10000005] state to [IN_PROCESS]
+oct. 14, 2016 10:12:09 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2016_10_14\open_sheet\PrintOpenPallet_A5_2016_10_14_22_12_09_10000005.pdf] to the default printer...
+oct. 14, 2016 10:12:09 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [.\print\2016_10_14\open_sheet\PrintOpenPallet_A5_2016_10_14_22_12_09_10000005.pdf] has been printed.
+oct. 14, 2016 10:12:09 PM helper.PrinterHelper saveAndPrintOpenSheet
+INFOS: Set Pallet [10000005] state to [PRINTED]
+oct. 14, 2016 10:12:09 PM gui.packaging.PACKAGING_UI9000_ChoosePackType loadConfigUcs
+INFOS: Openning new container for first harness part [21953568].
+oct. 14, 2016 10:12:30 PM state.S041_NewPalletScan doAction
+INFOS: Scanned Pallet number [10000005] OK.
+oct. 14, 2016 10:12:30 PM state.S041_NewPalletScan doAction
+INFOS: BaseContainer created BaseContainer{id=200000003,
+ createTime=Fri Oct 14 22:12:30 WEST 2016,
+ writeTime=Fri Oct 14 22:12:30 WEST 2016,
+ createId=2,
+ writeId=2,
+ user=9999,
+ startTime=Fri Oct 14 22:12:30 WEST 2016,
+ completeTime=null,
+ workTime=null,
+ palletNumber=10000005,
+ harnessPart=21953568,
+ harnessIndex=P04,
+ supplierPartNumber=26C93582A,
+ qtyExpected=3,
+ qtyRead=1,
+ containerState=OPEN,
+ containerStateCode=1000,
+ packType=1HV,
+ harnessType=ENGINE,
+ harnessList=[],
+ stdTime=0.0} 
+oct. 14, 2016 10:37:38 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_10_14] already exist!
+Print sub directory [.\print\2016_10_14.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\picking_label] already exist!
+Print sub directory [.\print\2016_10_14.\dispatch_label] already exist!
+
+oct. 14, 2016 10:37:40 PM gui.packaging.PACKAGING_UI0001_Main loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord ORDER BY id ASC
+oct. 14, 2016 10:37:40 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 14, 2016 10:37:40 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 14, 2016 10:38:30 PM gui.packaging.PACKAGING_UI0001_Main loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord ORDER BY id ASC
+oct. 14, 2016 10:38:30 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 14, 2016 10:38:30 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 14, 2016 10:38:39 PM state.S010_UserCodeScan doAction
+INFOS: Invalid matricule number or account locked !
+oct. 14, 2016 10:38:41 PM state.S010_UserCodeScan doAction
+INFOS: Invalid matricule number or account locked !
+oct. 14, 2016 10:38:45 PM gui.packaging.PACKAGING_UI0001_Main loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord ORDER BY id ASC
+oct. 14, 2016 10:38:45 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 14, 2016 10:38:45 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 14, 2016 10:38:50 PM gui.packaging.PACKAGING_UI0002_PasswordRequest connect
+INFOS: User Admin ENGINE / 9999 connected to host O-EZZIOURI at 2016-10-14 22:38:50 Project : ENGINE.
+oct. 14, 2016 10:39:11 PM helper.Helper InitDailyDestPrintDir
+INFOS: nullPrint directory [.\print\2016_10_14] already exist!
+Print sub directory [.\print\2016_10_14.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\picking_label] already exist!
+Print sub directory [.\print\2016_10_14.\dispatch_label] already exist!
+
+oct. 14, 2016 10:39:12 PM helper.PrinterHelper saveAndReprintOpenSheet
+INFOS: Set Pallet [10000005] state to [IN_PROCESS]
+oct. 14, 2016 10:39:12 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2016_10_14\open_sheet\PrintOpenPallet_A5_2016_10_14_22_39_11_null_10000005.pdf] to the default printer...
+oct. 14, 2016 10:39:12 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [.\print\2016_10_14\open_sheet\PrintOpenPallet_A5_2016_10_14_22_39_11_null_10000005.pdf] has been printed.
+oct. 14, 2016 10:39:12 PM helper.PrinterHelper saveAndReprintOpenSheet
+INFOS: Set Pallet [10000005] state to [PRINTED]
+oct. 14, 2016 10:41:37 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_10_14] already exist!
+Print sub directory [.\print\2016_10_14.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\picking_label] already exist!
+Print sub directory [.\print\2016_10_14.\dispatch_label] already exist!
+
+oct. 14, 2016 10:41:40 PM gui.packaging.PACKAGING_UI0001_Main loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord ORDER BY id ASC
+oct. 14, 2016 10:41:40 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 14, 2016 10:41:40 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 14, 2016 10:41:44 PM gui.packaging.PACKAGING_UI0002_PasswordRequest connect
+INFOS: User Admin ENGINE / 9999 connected to host O-EZZIOURI at 2016-10-14 22:41:44 Project : ENGINE.
+oct. 14, 2016 10:41:52 PM gui.packaging.PACKAGING_UI9001_DropContainerConfirmation ok_btnActionPerformed
+INFOS: Droping harness list...1
+oct. 14, 2016 10:42:11 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [21953568] in ConfigUCS: ENGINE
+oct. 14, 2016 10:42:11 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [21953568] found for project [ENGINE].
+oct. 14, 2016 10:42:11 PM state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P21953568] OK.
+oct. 14, 2016 10:42:14 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2195356800000000000000] in BaseHarness.
+oct. 14, 2016 10:42:14 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+oct. 14, 2016 10:42:14 PM state.S030_MatrixIdScan doAction
+INFOS: Valid Harness Counter scanned [P2195356800000000000000] OK.
+oct. 14, 2016 10:42:18 PM state.S040_PalletChoice doAction
+INFOS: Is it a new pallet ?
+oct. 14, 2016 10:42:18 PM state.S040_PalletChoice doAction
+INFOS:  [Yes]
+oct. 14, 2016 10:42:18 PM gui.packaging.PACKAGING_UI9000_ChoosePackType <init>
+INFOS: Item found 21953568--26C93582A--P04--1HV--3--0.0
+oct. 14, 2016 10:42:18 PM gui.packaging.PACKAGING_UI9000_ChoosePackType <init>
+INFOS: 1 UCS founds for Harness Part[21953568].
+oct. 14, 2016 10:42:19 PM gui.packaging.PACKAGING_UI9000_ChoosePackType mappingContextVals
+INFOS: Selected pack type : 21953568--26C93582A--P04--1HV--3--0.0 
+oct. 14, 2016 10:42:19 PM helper.Helper InitDailyDestPrintDir
+INFOS: nullPrint directory [.\print\2016_10_14] already exist!
+Print sub directory [.\print\2016_10_14.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\picking_label] already exist!
+Print sub directory [.\print\2016_10_14.\dispatch_label] already exist!
+
+oct. 14, 2016 10:42:20 PM helper.PrinterHelper saveAndPrintOpenSheet
+INFOS: Set Pallet [10000006] state to [IN_PROCESS]
+oct. 14, 2016 10:42:20 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2016_10_14\open_sheet\PrintOpenPallet_A5_2016_10_14_22_42_19_P21953568_10000006.pdf] to the default printer...
+oct. 14, 2016 10:42:20 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [.\print\2016_10_14\open_sheet\PrintOpenPallet_A5_2016_10_14_22_42_19_P21953568_10000006.pdf] has been printed.
+oct. 14, 2016 10:42:20 PM helper.PrinterHelper saveAndPrintOpenSheet
+INFOS: Set Pallet [10000006] state to [PRINTED]
+oct. 14, 2016 10:42:20 PM gui.packaging.PACKAGING_UI9000_ChoosePackType loadConfigUcs
+INFOS: Openning new container for first harness part [21953568].
+oct. 14, 2016 10:43:07 PM state.S041_NewPalletScan doAction
+INFOS: Scanned Pallet number [10000006] OK.
+oct. 14, 2016 10:43:08 PM state.S041_NewPalletScan doAction
+INFOS: BaseContainer created BaseContainer{id=300000002,
+ createTime=Fri Oct 14 22:43:07 WEST 2016,
+ writeTime=Fri Oct 14 22:43:07 WEST 2016,
+ createId=2,
+ writeId=2,
+ user=9999,
+ startTime=Fri Oct 14 22:43:07 WEST 2016,
+ completeTime=null,
+ workTime=null,
+ palletNumber=10000006,
+ harnessPart=21953568,
+ harnessIndex=P04,
+ supplierPartNumber=26C93582A,
+ qtyExpected=3,
+ qtyRead=1,
+ containerState=OPEN,
+ containerStateCode=1000,
+ packType=1HV,
+ harnessType=ENGINE,
+ harnessList=[],
+ stdTime=0.0} 
+oct. 14, 2016 10:45:00 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_10_14] already exist!
+Print sub directory [.\print\2016_10_14.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\picking_label] already exist!
+Print sub directory [.\print\2016_10_14.\dispatch_label] already exist!
+
+oct. 14, 2016 10:45:03 PM gui.packaging.PACKAGING_UI0001_Main loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord ORDER BY id ASC
+oct. 14, 2016 10:45:03 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 14, 2016 10:45:03 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 14, 2016 10:45:07 PM gui.packaging.PACKAGING_UI0002_PasswordRequest connect
+INFOS: User Admin ENGINE / 9999 connected to host O-EZZIOURI at 2016-10-14 22:45:07 Project : ENGINE.
+oct. 14, 2016 10:45:23 PM helper.Helper InitDailyDestPrintDir
+INFOS: nullPrint directory [.\print\2016_10_14] already exist!
+Print sub directory [.\print\2016_10_14.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\picking_label] already exist!
+Print sub directory [.\print\2016_10_14.\dispatch_label] already exist!
+
+oct. 14, 2016 10:45:23 PM helper.PrinterHelper saveAndReprintOpenSheet
+INFOS: Set Pallet [10000006] state to [IN_PROCESS]
+oct. 14, 2016 10:45:23 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2016_10_14\open_sheet\PrintOpenPallet_A5_2016_10_14_22_45_23_null_10000006.pdf] to the default printer...
+oct. 14, 2016 10:45:24 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [.\print\2016_10_14\open_sheet\PrintOpenPallet_A5_2016_10_14_22_45_23_null_10000006.pdf] has been printed.
+oct. 14, 2016 10:45:24 PM helper.PrinterHelper saveAndReprintOpenSheet
+INFOS: Set Pallet [10000006] state to [PRINTED]
+oct. 14, 2016 10:53:08 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_10_14] already exist!
+Print sub directory [.\print\2016_10_14.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\picking_label] already exist!
+Print sub directory [.\print\2016_10_14.\dispatch_label] already exist!
+
+oct. 14, 2016 10:53:09 PM gui.packaging.PACKAGING_UI0001_Main loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord ORDER BY id ASC
+oct. 14, 2016 10:53:09 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 14, 2016 10:53:09 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 14, 2016 10:53:15 PM gui.packaging.PACKAGING_UI0002_PasswordRequest connect
+INFOS: User Admin ENGINE / 9999 connected to host O-EZZIOURI at 2016-10-14 22:53:15 Project : ENGINE.
+oct. 14, 2016 10:53:28 PM helper.Helper InitDailyDestPrintDir
+INFOS: nullPrint directory [.\print\2016_10_14] already exist!
+Print sub directory [.\print\2016_10_14.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\picking_label] already exist!
+Print sub directory [.\print\2016_10_14.\dispatch_label] already exist!
+
+oct. 14, 2016 10:53:28 PM helper.PrinterHelper saveAndReprintOpenSheet
+INFOS: Set Pallet [10000006] state to [IN_PROCESS]
+oct. 14, 2016 10:53:28 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2016_10_14\open_sheet\PrintOpenPallet_A5_2016_10_14_22_53_28_null_10000006.pdf] to the default printer...
+oct. 14, 2016 10:53:29 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [.\print\2016_10_14\open_sheet\PrintOpenPallet_A5_2016_10_14_22_53_28_null_10000006.pdf] has been printed.
+oct. 14, 2016 10:53:29 PM helper.PrinterHelper saveAndReprintOpenSheet
+INFOS: Set Pallet [10000006] state to [PRINTED]
+oct. 14, 2016 10:56:52 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_10_14] already exist!
+Print sub directory [.\print\2016_10_14.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\picking_label] already exist!
+Print sub directory [.\print\2016_10_14.\dispatch_label] already exist!
+
+oct. 14, 2016 10:56:54 PM gui.packaging.PACKAGING_UI0001_Main loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord ORDER BY id ASC
+oct. 14, 2016 10:56:54 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 14, 2016 10:56:54 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 14, 2016 10:57:06 PM gui.packaging.PACKAGING_UI0002_PasswordRequest connect
+INFOS: User Admin ENGINE / 9999 connected to host O-EZZIOURI at 2016-10-14 22:57:06 Project : ENGINE.
+oct. 14, 2016 10:57:14 PM helper.Helper InitDailyDestPrintDir
+INFOS: nullPrint directory [.\print\2016_10_14] already exist!
+Print sub directory [.\print\2016_10_14.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\picking_label] already exist!
+Print sub directory [.\print\2016_10_14.\dispatch_label] already exist!
+
+oct. 14, 2016 10:57:14 PM helper.PrinterHelper saveAndReprintOpenSheet
+INFOS: Set Pallet [10000006] state to [IN_PROCESS]
+oct. 14, 2016 10:57:14 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2016_10_14\open_sheet\PrintOpenPallet_A5_2016_10_14_22_57_14_21953568_10000006.pdf] to the default printer...
+oct. 14, 2016 10:57:14 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [.\print\2016_10_14\open_sheet\PrintOpenPallet_A5_2016_10_14_22_57_14_21953568_10000006.pdf] has been printed.
+oct. 14, 2016 10:57:14 PM helper.PrinterHelper saveAndReprintOpenSheet
+INFOS: Set Pallet [10000006] state to [PRINTED]
+oct. 14, 2016 10:58:04 PM gui.packaging.PACKAGING_UI9001_DropContainerConfirmation ok_btnActionPerformed
+INFOS: Droping harness list...1
+oct. 14, 2016 10:58:13 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [21953568] in ConfigUCS: ENGINE
+oct. 14, 2016 10:58:13 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [21953568] found for project [ENGINE].
+oct. 14, 2016 10:58:13 PM state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P21953568] OK.
+oct. 14, 2016 10:58:17 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2195356800000000000000] in BaseHarness.
+oct. 14, 2016 10:58:17 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+oct. 14, 2016 10:58:17 PM state.S030_MatrixIdScan doAction
+INFOS: Valid Harness Counter scanned [P2195356800000000000000] OK.
+oct. 14, 2016 10:58:19 PM state.S040_PalletChoice doAction
+INFOS: Is it a new pallet ?
+oct. 14, 2016 10:58:19 PM state.S040_PalletChoice doAction
+INFOS:  [Yes]
+oct. 14, 2016 10:58:19 PM gui.packaging.PACKAGING_UI9000_ChoosePackType <init>
+INFOS: Item found 21953568--26C93582A--P04--1HV--3--0.0
+oct. 14, 2016 10:58:19 PM gui.packaging.PACKAGING_UI9000_ChoosePackType <init>
+INFOS: 1 UCS founds for Harness Part[21953568].
+oct. 14, 2016 10:58:19 PM gui.packaging.PACKAGING_UI9000_ChoosePackType mappingContextVals
+INFOS: Selected pack type : 21953568--26C93582A--P04--1HV--3--0.0 
+oct. 14, 2016 10:58:19 PM helper.Helper InitDailyDestPrintDir
+INFOS: nullPrint directory [.\print\2016_10_14] already exist!
+Print sub directory [.\print\2016_10_14.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\picking_label] already exist!
+Print sub directory [.\print\2016_10_14.\dispatch_label] already exist!
+
+oct. 14, 2016 10:58:20 PM helper.PrinterHelper saveAndPrintOpenSheet
+INFOS: Set Pallet [10000007] state to [IN_PROCESS]
+oct. 14, 2016 10:58:20 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2016_10_14\open_sheet\PrintOpenPallet_A5_2016_10_14_22_58_20_21953568_10000007.pdf] to the default printer...
+oct. 14, 2016 10:58:20 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [.\print\2016_10_14\open_sheet\PrintOpenPallet_A5_2016_10_14_22_58_20_21953568_10000007.pdf] has been printed.
+oct. 14, 2016 10:58:20 PM helper.PrinterHelper saveAndPrintOpenSheet
+INFOS: Set Pallet [10000007] state to [PRINTED]
+oct. 14, 2016 10:58:20 PM gui.packaging.PACKAGING_UI9000_ChoosePackType loadConfigUcs
+INFOS: Openning new container for first harness part [21953568].
+oct. 14, 2016 10:58:24 PM state.S041_NewPalletScan doAction
+INFOS: Scanned Pallet number [10000007] OK.
+oct. 14, 2016 10:58:24 PM state.S041_NewPalletScan doAction
+INFOS: BaseContainer created BaseContainer{id=400000002,
+ createTime=Fri Oct 14 22:58:24 WEST 2016,
+ writeTime=Fri Oct 14 22:58:24 WEST 2016,
+ createId=2,
+ writeId=2,
+ user=9999,
+ startTime=Fri Oct 14 22:58:24 WEST 2016,
+ completeTime=null,
+ workTime=null,
+ palletNumber=10000007,
+ harnessPart=21953568,
+ harnessIndex=P04,
+ supplierPartNumber=26C93582A,
+ qtyExpected=3,
+ qtyRead=1,
+ containerState=OPEN,
+ containerStateCode=1000,
+ packType=1HV,
+ harnessType=ENGINE,
+ harnessList=[],
+ stdTime=0.0} 
+oct. 14, 2016 10:58:46 PM entity.BaseHarness checkHarnessPartFormat
+INFOS: Invalid Harness Part scanned [PP21953568] !
+oct. 14, 2016 10:58:46 PM state.S020_HarnessPartScan doAction
+AVERTISSEMENT: Invalid Harness Part scanned [PP21953568] !
+oct. 14, 2016 10:58:49 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [21953568] in ConfigUCS: ENGINE
+oct. 14, 2016 10:58:49 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [21953568] found for project [ENGINE].
+oct. 14, 2016 10:58:49 PM state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P21953568] OK.
+oct. 14, 2016 10:58:51 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2195356800000000000001] in BaseHarness.
+oct. 14, 2016 10:58:51 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+oct. 14, 2016 10:58:51 PM state.S030_MatrixIdScan doAction
+INFOS: Valid Harness Counter scanned [P2195356800000000000001] OK.
+oct. 14, 2016 10:58:55 PM state.S040_PalletChoice doAction
+INFOS: Is it a new pallet ?
+oct. 14, 2016 10:58:55 PM state.S040_PalletChoice doAction
+INFOS:  [No]
+oct. 14, 2016 10:58:55 PM state.S040_PalletChoice doAction
+INFOS: Pallet values 
+oct. 14, 2016 10:58:55 PM state.S040_PalletChoice doAction
+INFOS: State           :   [true]
+oct. 14, 2016 10:58:55 PM state.S040_PalletChoice doAction
+INFOS: Qty Expected    :   [3]
+oct. 14, 2016 10:58:55 PM state.S040_PalletChoice doAction
+INFOS: Qty Read        :   [1]
+oct. 14, 2016 10:58:55 PM state.S040_PalletChoice doAction
+INFOS: Std Time        :   [0.0]
+oct. 14, 2016 10:58:55 PM state.S040_PalletChoice doAction
+INFOS: Harness Part [21953568] = Context Harness Part [21953568]
+oct. 14, 2016 10:58:55 PM state.S040_PalletChoice doAction
+INFOS: Harness Type [ENGINE] = Context Harness Type [ENGINE]
+oct. 14, 2016 10:58:59 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [21953568] in ConfigUCS: ENGINE
+oct. 14, 2016 10:58:59 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [21953568] found for project [ENGINE].
+oct. 14, 2016 10:58:59 PM state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P21953568] OK.
+oct. 14, 2016 10:59:01 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2195356800000000000002] in BaseHarness.
+oct. 14, 2016 10:59:01 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+oct. 14, 2016 10:59:01 PM state.S030_MatrixIdScan doAction
+INFOS: Valid Harness Counter scanned [P2195356800000000000002] OK.
+oct. 14, 2016 10:59:05 PM state.S040_PalletChoice doAction
+INFOS: Is it a new pallet ?
+oct. 14, 2016 10:59:05 PM state.S040_PalletChoice doAction
+INFOS:  [No]
+oct. 14, 2016 10:59:05 PM state.S040_PalletChoice doAction
+INFOS: Pallet values 
+oct. 14, 2016 10:59:05 PM state.S040_PalletChoice doAction
+INFOS: State           :   [true]
+oct. 14, 2016 10:59:05 PM state.S040_PalletChoice doAction
+INFOS: Qty Expected    :   [3]
+oct. 14, 2016 10:59:05 PM state.S040_PalletChoice doAction
+INFOS: Qty Read        :   [2]
+oct. 14, 2016 10:59:05 PM state.S040_PalletChoice doAction
+INFOS: Std Time        :   [0.0]
+oct. 14, 2016 10:59:05 PM state.S040_PalletChoice doAction
+INFOS: Harness Part [21953568] = Context Harness Part [21953568]
+oct. 14, 2016 10:59:05 PM state.S040_PalletChoice doAction
+INFOS: Harness Type [ENGINE] = Context Harness Type [ENGINE]
+oct. 14, 2016 10:59:05 PM state.S040_PalletChoice doAction
+INFOS: Quantité terminée BaseContainer{id=400000002,
+ createTime=2016-10-14 22:58:24.0,
+ writeTime=Fri Oct 14 22:59:05 WEST 2016,
+ createId=2,
+ writeId=2,
+ user=9999,
+ startTime=2016-10-14 22:58:24.0,
+ completeTime=null,
+ workTime=null,
+ palletNumber=10000007,
+ harnessPart=21953568,
+ harnessIndex=P04,
+ supplierPartNumber=26C93582A,
+ qtyExpected=3,
+ qtyRead=2,
+ containerState=OPEN,
+ containerStateCode=1000,
+ packType=1HV,
+ harnessType=ENGINE,
+ harnessList=[entity.BaseHarness@33bec, entity.BaseHarness@78e1114, entity.BaseHarness@1939e13],
+ stdTime=0.0}
+oct. 14, 2016 10:59:05 PM helper.Helper InitDailyDestPrintDir
+INFOS: nullPrint directory [.\print\2016_10_14] already exist!
+Print sub directory [.\print\2016_10_14.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\picking_label] already exist!
+Print sub directory [.\print\2016_10_14.\dispatch_label] already exist!
+
+oct. 14, 2016 10:59:05 PM helper.PrinterHelper saveAndPrintClosingSheet
+INFOS: Set Closing Pallet item [2] state to [IN_PROCESS]
+oct. 14, 2016 10:59:05 PM print.PrintClosingPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2016_10_14\closing_sheet\PrintClosingPallet_A5_2016_10_14_22_59_05.pdf] to the default printer...
+oct. 14, 2016 10:59:05 PM print.PrintClosingPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [%s] has been printed.
+oct. 14, 2016 10:59:05 PM helper.PrinterHelper saveAndPrintClosingSheet
+INFOS: Set Closing Pallet [2] state to [PRINTED]
+oct. 14, 2016 11:01:22 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_10_14] already exist!
+Print sub directory [.\print\2016_10_14.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\picking_label] already exist!
+Print sub directory [.\print\2016_10_14.\dispatch_label] already exist!
+
+oct. 14, 2016 11:01:28 PM gui.packaging.PACKAGING_UI0001_Main loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord ORDER BY id ASC
+oct. 14, 2016 11:01:28 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 14, 2016 11:01:28 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 14, 2016 11:01:35 PM gui.packaging.PACKAGING_UI0002_PasswordRequest connect
+INFOS: User Admin ENGINE / 9999 connected to host O-EZZIOURI at 2016-10-14 23:01:35 Project : ENGINE.
+oct. 14, 2016 11:01:41 PM helper.Helper InitDailyDestPrintDir
+INFOS: nullPrint directory [.\print\2016_10_14] already exist!
+Print sub directory [.\print\2016_10_14.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\picking_label] already exist!
+Print sub directory [.\print\2016_10_14.\dispatch_label] already exist!
+
+oct. 14, 2016 11:01:41 PM helper.PrinterHelper saveAndPrintClosingSheet
+INFOS: Set Closing Pallet item [2] state to [IN_PROCESS]
+oct. 14, 2016 11:01:41 PM print.PrintClosingPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2016_10_14\closing_sheet\PrintClosingPallet_A5_21953568_2016_10_14_23_01_41.pdf] to the default printer...
+oct. 14, 2016 11:01:42 PM print.PrintClosingPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [%s] has been printed.
+oct. 14, 2016 11:01:42 PM helper.PrinterHelper saveAndPrintClosingSheet
+INFOS: Set Closing Pallet [2] state to [PRINTED]
+oct. 14, 2016 11:04:04 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_10_14] already exist!
+Print sub directory [.\print\2016_10_14.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\picking_label] already exist!
+Print sub directory [.\print\2016_10_14.\dispatch_label] already exist!
+
+oct. 14, 2016 11:04:05 PM gui.packaging.PACKAGING_UI0001_Main loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord ORDER BY id ASC
+oct. 14, 2016 11:04:05 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 14, 2016 11:04:05 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 14, 2016 11:04:09 PM gui.packaging.PACKAGING_UI0002_PasswordRequest connect
+INFOS: User Admin ENGINE / 9999 connected to host O-EZZIOURI at 2016-10-14 23:04:09 Project : ENGINE.
+oct. 14, 2016 11:04:19 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [21953568] in ConfigUCS: ENGINE
+oct. 14, 2016 11:04:19 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [21953568] found for project [ENGINE].
+oct. 14, 2016 11:04:19 PM state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P21953568] OK.
+oct. 14, 2016 11:04:22 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2195356800000000000000] in BaseHarness.
+oct. 14, 2016 11:04:22 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+oct. 14, 2016 11:04:22 PM entity.BaseHarness getHarnessByCounter
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+oct. 14, 2016 11:04:26 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2195356800000000000003] in BaseHarness.
+oct. 14, 2016 11:04:26 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+oct. 14, 2016 11:04:26 PM state.S030_MatrixIdScan doAction
+INFOS: Valid Harness Counter scanned [P2195356800000000000003] OK.
+oct. 14, 2016 11:04:28 PM state.S040_PalletChoice doAction
+INFOS: Is it a new pallet ?
+oct. 14, 2016 11:04:28 PM state.S040_PalletChoice doAction
+INFOS:  [Yes]
+oct. 14, 2016 11:04:28 PM gui.packaging.PACKAGING_UI9000_ChoosePackType <init>
+INFOS: Item found 21953568--26C93582A--P04--1HV--3--0.0
+oct. 14, 2016 11:04:28 PM gui.packaging.PACKAGING_UI9000_ChoosePackType <init>
+INFOS: 1 UCS founds for Harness Part[21953568].
+oct. 14, 2016 11:04:28 PM gui.packaging.PACKAGING_UI9000_ChoosePackType mappingContextVals
+INFOS: Selected pack type : 21953568--26C93582A--P04--1HV--3--0.0 
+oct. 14, 2016 11:04:30 PM gui.packaging.PACKAGING_UI9000_ChoosePackType items_listKeyPressed
+INFOS: Palette/Box déjà ouvert(e) du type 1HV dans ce poste O-EZZIOURI, pour la référence 21953568.
+Solution N° 1 : - Veuillez terminer le packaging de la palette 21953568 avant d'ouvrir une nouvelle palette de type 10000007.
+Solution N° 2 : - Emballer cette référence dans un autre poste packaging.
+oct. 14, 2016 11:04:43 PM entity.BaseHarness checkHarnessPartFormat
+INFOS: Invalid Harness Part scanned [P2139507800000000000001] !
+oct. 14, 2016 11:04:43 PM state.S020_HarnessPartScan doAction
+AVERTISSEMENT: Invalid Harness Part scanned [P2139507800000000000001] !
+oct. 14, 2016 11:04:46 PM entity.BaseHarness checkHarnessPartFormat
+INFOS: Invalid Harness Part scanned [P2139507800000000000002] !
+oct. 14, 2016 11:04:46 PM state.S020_HarnessPartScan doAction
+AVERTISSEMENT: Invalid Harness Part scanned [P2139507800000000000002] !
+oct. 14, 2016 11:04:50 PM entity.BaseHarness checkHarnessPartFormat
+INFOS: Invalid Harness Part scanned [P2139507800000000000003] !
+oct. 14, 2016 11:04:50 PM state.S020_HarnessPartScan doAction
+AVERTISSEMENT: Invalid Harness Part scanned [P2139507800000000000003] !
+oct. 14, 2016 11:04:53 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [21395078] in ConfigUCS: ENGINE
+oct. 14, 2016 11:04:53 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [21395078] found for project [ENGINE].
+oct. 14, 2016 11:04:53 PM state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P21395078] OK.
+oct. 14, 2016 11:04:54 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2139507800000000000002] in BaseHarness.
+oct. 14, 2016 11:04:54 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+oct. 14, 2016 11:04:54 PM state.S030_MatrixIdScan doAction
+INFOS: Valid Harness Counter scanned [P2139507800000000000002] OK.
+oct. 14, 2016 11:04:57 PM state.S040_PalletChoice doAction
+INFOS: Is it a new pallet ?
+oct. 14, 2016 11:04:57 PM state.S040_PalletChoice doAction
+INFOS:  [No]
+oct. 14, 2016 11:04:57 PM state.S040_PalletChoice doAction
+INFOS: Pallet values 
+oct. 14, 2016 11:04:57 PM state.S040_PalletChoice doAction
+INFOS: State           :   [true]
+oct. 14, 2016 11:04:57 PM state.S040_PalletChoice doAction
+INFOS: Qty Expected    :   [3]
+oct. 14, 2016 11:04:57 PM state.S040_PalletChoice doAction
+INFOS: Qty Read        :   [1]
+oct. 14, 2016 11:04:57 PM state.S040_PalletChoice doAction
+INFOS: Std Time        :   [0.0]
+oct. 14, 2016 11:04:57 PM state.S040_PalletChoice doAction
+INFOS: Harness Part [21395078] = Context Harness Part [21395078]
+oct. 14, 2016 11:04:57 PM state.S040_PalletChoice doAction
+INFOS: Harness Type [ENGINE] = Context Harness Type [ENGINE]
+oct. 14, 2016 11:05:00 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [21395078] in ConfigUCS: ENGINE
+oct. 14, 2016 11:05:00 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [21395078] found for project [ENGINE].
+oct. 14, 2016 11:05:00 PM state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P21395078] OK.
+oct. 14, 2016 11:05:02 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2139507800000000000003] in BaseHarness.
+oct. 14, 2016 11:05:02 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+oct. 14, 2016 11:05:02 PM state.S030_MatrixIdScan doAction
+INFOS: Valid Harness Counter scanned [P2139507800000000000003] OK.
+oct. 14, 2016 11:05:10 PM state.S040_PalletChoice doAction
+INFOS: Is it a new pallet ?
+oct. 14, 2016 11:05:10 PM state.S040_PalletChoice doAction
+INFOS:  [No]
+oct. 14, 2016 11:05:10 PM state.S040_PalletChoice doAction
+INFOS: Pallet values 
+oct. 14, 2016 11:05:10 PM state.S040_PalletChoice doAction
+INFOS: State           :   [true]
+oct. 14, 2016 11:05:10 PM state.S040_PalletChoice doAction
+INFOS: Qty Expected    :   [3]
+oct. 14, 2016 11:05:10 PM state.S040_PalletChoice doAction
+INFOS: Qty Read        :   [2]
+oct. 14, 2016 11:05:10 PM state.S040_PalletChoice doAction
+INFOS: Std Time        :   [0.0]
+oct. 14, 2016 11:05:10 PM state.S040_PalletChoice doAction
+INFOS: Harness Part [21395078] = Context Harness Part [21395078]
+oct. 14, 2016 11:05:10 PM state.S040_PalletChoice doAction
+INFOS: Harness Type [ENGINE] = Context Harness Type [ENGINE]
+oct. 14, 2016 11:05:10 PM state.S040_PalletChoice doAction
+INFOS: Quantité terminée BaseContainer{id=200000002,
+ createTime=2016-10-14 22:07:54.0,
+ writeTime=Fri Oct 14 23:05:10 WEST 2016,
+ createId=2,
+ writeId=2,
+ user=9999,
+ startTime=2016-10-14 22:07:54.0,
+ completeTime=null,
+ workTime=null,
+ palletNumber=10000004,
+ harnessPart=21395078,
+ harnessIndex=P02,
+ supplierPartNumber=26C31251A,
+ qtyExpected=3,
+ qtyRead=2,
+ containerState=OPEN,
+ containerStateCode=1000,
+ packType=1HV,
+ harnessType=ENGINE,
+ harnessList=[entity.BaseHarness@28978349, entity.BaseHarness@12ff20f7, entity.BaseHarness@1f8e1356],
+ stdTime=0.0}
+oct. 14, 2016 11:05:10 PM helper.Helper InitDailyDestPrintDir
+INFOS: nullPrint directory [.\print\2016_10_14] already exist!
+Print sub directory [.\print\2016_10_14.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\picking_label] already exist!
+Print sub directory [.\print\2016_10_14.\dispatch_label] already exist!
+
+oct. 14, 2016 11:05:10 PM helper.PrinterHelper saveAndPrintClosingSheet
+INFOS: Set Closing Pallet item [3] state to [IN_PROCESS]
+oct. 14, 2016 11:05:10 PM print.PrintClosingPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2016_10_14\closing_sheet\PrintClosingPallet_A5_21395078_2016_10_14_23_05_10.pdf] to the default printer...
+oct. 14, 2016 11:05:10 PM print.PrintClosingPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [%s] has been printed.
+oct. 14, 2016 11:05:10 PM helper.PrinterHelper saveAndPrintClosingSheet
+INFOS: Set Closing Pallet [3] state to [PRINTED]
+oct. 14, 2016 11:38:50 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_10_14] already exist!
+Print sub directory [.\print\2016_10_14.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\picking_label] already exist!
+Print sub directory [.\print\2016_10_14.\dispatch_label] already exist!
+
+oct. 14, 2016 11:38:52 PM gui.warehouse_output.WAREHOUSE_OUT_UI0002_DISPATCH_SCAN loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord IN (:keyWord) ORDER BY id ASC
+oct. 14, 2016 11:41:50 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_10_14] already exist!
+Print sub directory [.\print\2016_10_14.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\picking_label] already exist!
+Print sub directory [.\print\2016_10_14.\dispatch_label] already exist!
+
+oct. 14, 2016 11:41:54 PM gui.warehouse_output.WAREHOUSE_OUT_UI0002_DISPATCH_SCAN loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord IN (:keyWords) ORDER BY id ASC
+oct. 14, 2016 11:43:56 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_10_14] already exist!
+Print sub directory [.\print\2016_10_14.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\picking_label] already exist!
+Print sub directory [.\print\2016_10_14.\dispatch_label] already exist!
+
+oct. 14, 2016 11:43:58 PM gui.warehouse_output.WAREHOUSE_OUT_UI0002_DISPATCH_SCAN loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord IN (:keyWords) ORDER BY id ASC
+oct. 14, 2016 11:44:14 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_10_14] already exist!
+Print sub directory [.\print\2016_10_14.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\picking_label] already exist!
+Print sub directory [.\print\2016_10_14.\dispatch_label] already exist!
+
+oct. 14, 2016 11:44:16 PM gui.warehouse_output.WAREHOUSE_OUT_UI0002_DISPATCH_SCAN loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord IN (:keyWords) ORDER BY id ASC
+oct. 14, 2016 11:45:22 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_10_14] already exist!
+Print sub directory [.\print\2016_10_14.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\picking_label] already exist!
+Print sub directory [.\print\2016_10_14.\dispatch_label] already exist!
+
+oct. 14, 2016 11:46:01 PM gui.warehouse_output.WAREHOUSE_OUT_UI0002_DISPATCH_SCAN loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord IN (:keyWords) ORDER BY id ASC
+oct. 14, 2016 11:46:13 PM gui.warehouse_output.WAREHOUSE_OUT_UI0002_DISPATCH_SCAN loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord IN (:keyWords) ORDER BY id ASC
+oct. 14, 2016 11:50:36 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_10_14] already exist!
+Print sub directory [.\print\2016_10_14.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\picking_label] already exist!
+Print sub directory [.\print\2016_10_14.\dispatch_label] already exist!
+
+oct. 14, 2016 11:50:37 PM gui.warehouse_output.WAREHOUSE_OUT_UI0002_DISPATCH_SCAN loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord IN (:keyWords) ORDER BY id ASC
+oct. 14, 2016 11:50:46 PM gui.warehouse_output.state.S010_DispatchUserCodeScan doAction
+INFOS: Invalid matricule number or account locked !
+oct. 14, 2016 11:51:07 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_10_14] already exist!
+Print sub directory [.\print\2016_10_14.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\picking_label] already exist!
+Print sub directory [.\print\2016_10_14.\dispatch_label] already exist!
+
+oct. 14, 2016 11:51:08 PM gui.warehouse_output.WAREHOUSE_OUT_UI0002_DISPATCH_SCAN loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord IN (:keyWords) ORDER BY id ASC
+oct. 14, 2016 11:51:11 PM gui.warehouse_output.state.S010_DispatchUserCodeScan doAction
+INFOS: Invalid matricule number or account locked !
+oct. 14, 2016 11:52:08 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_10_14] already exist!
+Print sub directory [.\print\2016_10_14.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\picking_label] already exist!
+Print sub directory [.\print\2016_10_14.\dispatch_label] already exist!
+
+oct. 14, 2016 11:52:09 PM gui.warehouse_output.WAREHOUSE_OUT_UI0002_DISPATCH_SCAN loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord IN (:keyWords) ORDER BY id ASC
+oct. 14, 2016 11:52:15 PM gui.warehouse_output.WAREHOUSE_OUT_UI0002_DISPATCH_SCAN loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord IN (:keyWords) ORDER BY id ASC
+oct. 14, 2016 11:52:21 PM gui.warehouse_output.WAREHOUSE_OUT_UI0002_DISPATCH_SCAN loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord IN (:keyWords) ORDER BY id ASC
+oct. 14, 2016 11:54:12 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_10_14] already exist!
+Print sub directory [.\print\2016_10_14.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\picking_label] already exist!
+Print sub directory [.\print\2016_10_14.\dispatch_label] already exist!
+
+oct. 14, 2016 11:54:14 PM gui.warehouse_output.WAREHOUSE_OUT_UI0002_DISPATCH_SCAN loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord IN (:keyWords) ORDER BY id ASC
+oct. 14, 2016 11:54:17 PM gui.warehouse_output.WAREHOUSE_OUT_UI0002_DISPATCH_SCAN loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord IN (:keyWords) ORDER BY id ASC
+oct. 14, 2016 11:55:59 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_10_14] already exist!
+Print sub directory [.\print\2016_10_14.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\picking_label] already exist!
+Print sub directory [.\print\2016_10_14.\dispatch_label] already exist!
+
+oct. 14, 2016 11:56:00 PM gui.warehouse_output.WAREHOUSE_OUT_UI0002_DISPATCH_SCAN loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord IN (:keyWords) ORDER BY id ASC
+oct. 14, 2016 11:56:03 PM gui.warehouse_output.WAREHOUSE_OUT_UI0002_DISPATCH_SCAN loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord IN (:keyWords) ORDER BY id ASC
+oct. 14, 2016 11:56:56 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_10_14] already exist!
+Print sub directory [.\print\2016_10_14.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\picking_label] already exist!
+Print sub directory [.\print\2016_10_14.\dispatch_label] already exist!
+
+oct. 14, 2016 11:56:57 PM gui.warehouse_output.WAREHOUSE_OUT_UI0002_DISPATCH_SCAN loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord IN (:keyWords) ORDER BY id ASC
+oct. 14, 2016 11:58:39 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_10_14] already exist!
+Print sub directory [.\print\2016_10_14.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_14.\picking_label] already exist!
+Print sub directory [.\print\2016_10_14.\dispatch_label] already exist!
+
+oct. 14, 2016 11:58:40 PM gui.warehouse_output.WAREHOUSE_OUT_UI0002_DISPATCH_SCAN loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord IN (:keyWords) ORDER BY id ASC

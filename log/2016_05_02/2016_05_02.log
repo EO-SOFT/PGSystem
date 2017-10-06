@@ -1,0 +1,261 @@
+févr. 05, 2016 9:08:26 AM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_05_02] is created!
+Print sub directory [.\print\2016_05_02.\pallet] is created!
+Print sub directory [.\print\2016_05_02.\galia] is created!
+
+févr. 05, 2016 9:08:37 AM state.S01_UserCodeScan authentication
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 05, 2016 9:08:37 AM state.S01_UserCodeScan authentication
+INFOS: User Oussama EZZIOURI / 1001 connected to host user-PC at 2016-05-02 09:08:26.
+févr. 05, 2016 9:08:37 AM entity.BaseContainer select
+INFOS: FROM BaseContainer bc
+févr. 05, 2016 9:10:40 AM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_05_02] already exist!
+Print sub directory [.\print\2016_05_02.\pallet] already exist!
+Print sub directory [.\print\2016_05_02.\galia] already exist!
+
+févr. 05, 2016 9:10:44 AM state.S01_UserCodeScan authentication
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 05, 2016 9:10:44 AM state.S01_UserCodeScan authentication
+INFOS: User Oussama EZZIOURI / 1001 connected to host user-PC at 2016-05-02 09:10:40.
+févr. 05, 2016 9:10:44 AM entity.BaseContainer select
+INFOS: FROM BaseContainer bc
+févr. 05, 2016 9:16:07 AM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_05_02] already exist!
+Print sub directory [.\print\2016_05_02.\pallet] already exist!
+Print sub directory [.\print\2016_05_02.\galia] already exist!
+
+févr. 05, 2016 9:16:12 AM state.S01_UserCodeScan authentication
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 05, 2016 9:16:12 AM state.S01_UserCodeScan authentication
+INFOS: User Oussama EZZIOURI / 1001 connected to host user-PC at 2016-05-02 09:16:07.
+févr. 05, 2016 9:16:12 AM entity.BaseContainer select
+INFOS: FROM BaseContainer bc
+févr. 05, 2016 9:23:41 AM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_05_02] already exist!
+Print sub directory [.\print\2016_05_02.\pallet] already exist!
+Print sub directory [.\print\2016_05_02.\galia] already exist!
+
+févr. 05, 2016 9:32:11 AM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_05_02] already exist!
+Print sub directory [.\print\2016_05_02.\pallet] already exist!
+Print sub directory [.\print\2016_05_02.\galia] already exist!
+
+févr. 05, 2016 9:32:35 AM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_05_02] already exist!
+Print sub directory [.\print\2016_05_02.\pallet] already exist!
+Print sub directory [.\print\2016_05_02.\galia] already exist!
+
+févr. 05, 2016 9:32:41 AM state.S01_UserCodeScan authentication
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 05, 2016 9:32:41 AM state.S01_UserCodeScan authentication
+INFOS: Invalid matricule number !
+févr. 05, 2016 9:32:44 AM state.S01_UserCodeScan authentication
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 05, 2016 9:32:44 AM state.S01_UserCodeScan authentication
+INFOS: Invalid matricule number !
+févr. 05, 2016 9:32:46 AM state.S01_UserCodeScan authentication
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 05, 2016 9:32:46 AM state.S01_UserCodeScan authentication
+INFOS: User Oussama EZZIOURI / 1001 connected to host user-PC at 2016-05-02 09:32:35.
+févr. 05, 2016 9:32:46 AM entity.BaseContainer select
+INFOS: FROM BaseContainer bc
+févr. 05, 2016 9:34:08 AM state.S01_UserCodeScan authentication
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 05, 2016 9:34:11 AM state.S01_UserCodeScan authentication
+INFOS: Invalid matricule number !
+févr. 05, 2016 9:42:03 AM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_05_02] already exist!
+Print sub directory [.\print\2016_05_02.\pallet] already exist!
+Print sub directory [.\print\2016_05_02.\galia] already exist!
+
+févr. 05, 2016 9:43:20 AM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_05_02] already exist!
+Print sub directory [.\print\2016_05_02.\pallet] already exist!
+Print sub directory [.\print\2016_05_02.\galia] already exist!
+
+févr. 05, 2016 9:43:24 AM state.S01_UserCodeScan doAction
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 05, 2016 9:43:24 AM state.S01_UserCodeScan doAction
+INFOS: User Oussama EZZIOURI / 1001 connected to host user-PC at 2016-05-02 09:43:20.
+févr. 05, 2016 9:44:38 AM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_05_02] already exist!
+Print sub directory [.\print\2016_05_02.\pallet] already exist!
+Print sub directory [.\print\2016_05_02.\galia] already exist!
+
+févr. 05, 2016 9:45:04 AM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_05_02] already exist!
+Print sub directory [.\print\2016_05_02.\pallet] already exist!
+Print sub directory [.\print\2016_05_02.\galia] already exist!
+
+févr. 05, 2016 9:45:07 AM state.S01_UserCodeScan doAction
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 05, 2016 9:45:07 AM state.S01_UserCodeScan doAction
+INFOS: User Oussama EZZIOURI / 1001 connected to host user-PC at 2016-05-02 09:45:04.
+févr. 05, 2016 9:45:07 AM entity.BaseContainer select
+INFOS: FROM BaseContainer bc
+févr. 05, 2016 9:45:11 AM state.S01_UserCodeScan doAction
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 05, 2016 9:45:12 AM state.S01_UserCodeScan doAction
+INFOS: Invalid matricule number !
+févr. 05, 2016 9:59:35 AM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_05_02] already exist!
+Print sub directory [.\print\2016_05_02.\pallet] already exist!
+Print sub directory [.\print\2016_05_02.\galia] already exist!
+
+févr. 05, 2016 10:14:26 AM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_05_02] already exist!
+Print sub directory [.\print\2016_05_02.\pallet] already exist!
+Print sub directory [.\print\2016_05_02.\galia] already exist!
+
+févr. 05, 2016 10:14:29 AM state.S01_UserCodeScan doAction
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 05, 2016 10:14:29 AM state.S01_UserCodeScan doAction
+INFOS: User Oussama EZZIOURI / 1001 connected to host user-PC at 2016-05-02 10:14:26.
+févr. 05, 2016 10:14:29 AM entity.BaseContainer select
+INFOS: FROM BaseContainer bc
+févr. 05, 2016 10:14:38 AM state.S02_HarnessPartScan doAction
+INFOS: Invalid Harness Part scanned [888888]
+févr. 05, 2016 10:14:39 AM state.S02_HarnessPartScan doAction
+INFOS: Invalid Harness Part scanned [888888]
+févr. 05, 2016 10:22:24 AM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_05_02] already exist!
+Print sub directory [.\print\2016_05_02.\pallet] already exist!
+Print sub directory [.\print\2016_05_02.\galia] already exist!
+
+févr. 05, 2016 10:22:28 AM state.S01_UserCodeScan doAction
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 05, 2016 10:22:28 AM state.S01_UserCodeScan doAction
+INFOS: User Yassine HADDANI / 1002 connected to host user-PC at 2016-05-02 10:22:24.
+févr. 05, 2016 10:22:28 AM entity.BaseContainer select
+INFOS: FROM BaseContainer bc
+févr. 05, 2016 10:22:34 AM state.S02_HarnessPartScan doAction
+INFOS: Invalid Harness Part scanned ! [31321]
+févr. 05, 2016 10:24:36 AM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_05_02] already exist!
+Print sub directory [.\print\2016_05_02.\pallet] already exist!
+Print sub directory [.\print\2016_05_02.\galia] already exist!
+
+févr. 05, 2016 10:24:38 AM state.S01_UserCodeScan doAction
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 05, 2016 10:24:38 AM state.S01_UserCodeScan doAction
+INFOS: User Oussama EZZIOURI / 1001 connected to host user-PC at 2016-05-02 10:24:36.
+févr. 05, 2016 10:24:38 AM entity.BaseContainer select
+INFOS: FROM BaseContainer bc
+févr. 05, 2016 10:24:43 AM state.S02_HarnessPartScan doAction
+INFOS: Invalid Harness Part scanned ! [654987]
+févr. 05, 2016 10:24:48 AM state.S02_HarnessPartScan doAction
+INFOS: Invalid Harness Part scanned ! [321687]
+févr. 05, 2016 10:24:57 AM state.S02_HarnessPartScan doAction
+INFOS: Invalid Harness Part scanned ! [22205127]
+févr. 05, 2016 10:25:03 AM state.S02_HarnessPartScan doAction
+INFOS: Invalid Harness Part scanned ! [p22205127]
+févr. 05, 2016 10:25:40 AM state.S02_HarnessPartScan doAction
+INFOS: Invalid Harness Part scanned ! [P22205127]
+févr. 05, 2016 10:25:44 AM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_05_02] already exist!
+Print sub directory [.\print\2016_05_02.\pallet] already exist!
+Print sub directory [.\print\2016_05_02.\galia] already exist!
+
+févr. 05, 2016 10:25:47 AM state.S01_UserCodeScan doAction
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 05, 2016 10:25:47 AM state.S01_UserCodeScan doAction
+INFOS: User Yassine HADDANI / 1002 connected to host user-PC at 2016-05-02 10:25:44.
+févr. 05, 2016 10:25:48 AM entity.BaseContainer select
+INFOS: FROM BaseContainer bc
+févr. 05, 2016 10:25:51 AM state.S02_HarnessPartScan doAction
+INFOS: Invalid Harness Part scanned ! [22205127]
+févr. 05, 2016 10:25:52 AM state.S02_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22205127] OK.
+févr. 05, 2016 10:31:19 AM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_05_02] already exist!
+Print sub directory [.\print\2016_05_02.\pallet] already exist!
+Print sub directory [.\print\2016_05_02.\galia] already exist!
+
+févr. 05, 2016 10:31:21 AM state.S01_UserCodeScan doAction
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 05, 2016 10:31:21 AM state.S01_UserCodeScan doAction
+INFOS: User Yassine HADDANI / 1002 connected to host user-PC at 2016-05-02 10:31:19.
+févr. 05, 2016 10:31:21 AM entity.BaseContainer select
+INFOS: FROM BaseContainer bc
+févr. 05, 2016 10:31:30 AM state.S02_HarnessPartScan doAction
+INFOS: Invalid Harness Part scanned ! [P2150621]
+févr. 05, 2016 10:31:41 AM state.S02_HarnessPartScan doAction
+INFOS: Harness Part scanned [P21520621] OK.
+févr. 05, 2016 10:36:37 AM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_05_02] already exist!
+Print sub directory [.\print\2016_05_02.\pallet] already exist!
+Print sub directory [.\print\2016_05_02.\galia] already exist!
+
+févr. 05, 2016 10:38:09 AM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_05_02] already exist!
+Print sub directory [.\print\2016_05_02.\pallet] already exist!
+Print sub directory [.\print\2016_05_02.\galia] already exist!
+
+févr. 05, 2016 10:39:00 AM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_05_02] already exist!
+Print sub directory [.\print\2016_05_02.\pallet] already exist!
+Print sub directory [.\print\2016_05_02.\galia] already exist!
+
+févr. 05, 2016 10:40:18 AM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_05_02] already exist!
+Print sub directory [.\print\2016_05_02.\pallet] already exist!
+Print sub directory [.\print\2016_05_02.\galia] already exist!
+
+févr. 05, 2016 10:41:03 AM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_05_02] already exist!
+Print sub directory [.\print\2016_05_02.\pallet] already exist!
+Print sub directory [.\print\2016_05_02.\galia] already exist!
+
+févr. 05, 2016 10:41:38 AM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_05_02] already exist!
+Print sub directory [.\print\2016_05_02.\pallet] already exist!
+Print sub directory [.\print\2016_05_02.\galia] already exist!
+
+févr. 05, 2016 10:42:33 AM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_05_02] already exist!
+Print sub directory [.\print\2016_05_02.\pallet] already exist!
+Print sub directory [.\print\2016_05_02.\galia] already exist!
+
+févr. 05, 2016 10:44:06 AM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_05_02] already exist!
+Print sub directory [.\print\2016_05_02.\pallet] already exist!
+Print sub directory [.\print\2016_05_02.\galia] already exist!
+
+févr. 05, 2016 10:44:52 AM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_05_02] already exist!
+Print sub directory [.\print\2016_05_02.\pallet] already exist!
+Print sub directory [.\print\2016_05_02.\galia] already exist!
+
+févr. 05, 2016 10:45:17 AM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_05_02] already exist!
+Print sub directory [.\print\2016_05_02.\pallet] already exist!
+Print sub directory [.\print\2016_05_02.\galia] already exist!
+
+févr. 05, 2016 10:46:17 AM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_05_02] already exist!
+Print sub directory [.\print\2016_05_02.\pallet] already exist!
+Print sub directory [.\print\2016_05_02.\galia] already exist!
+
+févr. 05, 2016 10:46:21 AM state.S01_UserCodeScan doAction
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 05, 2016 10:46:22 AM state.S01_UserCodeScan doAction
+INFOS: Invalid matricule number !
+févr. 05, 2016 10:47:06 AM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_05_02] already exist!
+Print sub directory [.\print\2016_05_02.\pallet] already exist!
+Print sub directory [.\print\2016_05_02.\galia] already exist!
+
+févr. 05, 2016 10:48:27 AM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_05_02] already exist!
+Print sub directory [.\print\2016_05_02.\pallet] already exist!
+Print sub directory [.\print\2016_05_02.\galia] already exist!
+
+févr. 05, 2016 10:48:29 AM state.S01_UserCodeScan doAction
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 05, 2016 10:48:29 AM state.S01_UserCodeScan doAction
+INFOS: User Oussama EZZIOURI / 1001 connected to host user-PC at 2016-05-02 10:48:27.
+févr. 05, 2016 10:48:29 AM entity.BaseContainer select
+INFOS: FROM BaseContainer bc
+févr. 05, 2016 10:48:37 AM state.S02_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22205127] OK.

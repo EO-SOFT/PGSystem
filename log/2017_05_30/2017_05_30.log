@@ -1,0 +1,318 @@
+mai 30, 2017 10:55:42 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_05_30] is created!
+Print sub directory [.\print\2017_05_30.\open_sheet] is created!
+Print sub directory [.\print\2017_05_30.\closing_sheet] is created!
+Print sub directory [.\print\2017_05_30.\picking_label] is created!
+Print sub directory [.\print\2017_05_30.\dispatch_label] is created!
+
+mai 30, 2017 10:56:10 AM gui.warehouse_dispatch.WAREHOUSE_DISPATCH_UI0003_PasswordRequest connect
+INFOS: User OUSSAMA EZZIOURI / 9999 connected to host WSMA7040 at 2017-05-30 10:56:10 Dispatch interface : .
+mai 30, 2017 11:21:37 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_05_30] already exist!
+Print sub directory [.\print\2017_05_30.\open_sheet] already exist!
+Print sub directory [.\print\2017_05_30.\closing_sheet] already exist!
+Print sub directory [.\print\2017_05_30.\picking_label] already exist!
+Print sub directory [.\print\2017_05_30.\dispatch_label] already exist!
+
+mai 30, 2017 11:28:18 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_05_30] already exist!
+Print sub directory [.\print\2017_05_30.\open_sheet] already exist!
+Print sub directory [.\print\2017_05_30.\closing_sheet] already exist!
+Print sub directory [.\print\2017_05_30.\picking_label] already exist!
+Print sub directory [.\print\2017_05_30.\dispatch_label] already exist!
+
+mai 30, 2017 11:30:48 AM gui.config.CONFIG_UI0000_AdminPassword checkLoginAndPass
+INFOS: User OUSSAMA EZZIOURI / 9999 connected to host WSMA7040 at 2017-05-30 11:30:48 Module : Planner.
+mai 30, 2017 11:30:48 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mai 30, 2017 11:30:48 AM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+mai 30, 2017 11:30:48 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mai 30, 2017 11:35:31 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_05_30] already exist!
+Print sub directory [.\print\2017_05_30.\open_sheet] already exist!
+Print sub directory [.\print\2017_05_30.\closing_sheet] already exist!
+Print sub directory [.\print\2017_05_30.\picking_label] already exist!
+Print sub directory [.\print\2017_05_30.\dispatch_label] already exist!
+
+mai 30, 2017 11:35:37 AM gui.config.CONFIG_UI0000_AdminPassword checkLoginAndPass
+INFOS: User OUSSAMA EZZIOURI / 9999 connected to host WSMA7040 at 2017-05-30 11:35:37 Module : Planner.
+mai 30, 2017 11:35:37 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mai 30, 2017 11:35:37 AM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+mai 30, 2017 11:35:37 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mai 30, 2017 11:38:30 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_05_30] already exist!
+Print sub directory [.\print\2017_05_30.\open_sheet] already exist!
+Print sub directory [.\print\2017_05_30.\closing_sheet] already exist!
+Print sub directory [.\print\2017_05_30.\picking_label] already exist!
+Print sub directory [.\print\2017_05_30.\dispatch_label] already exist!
+
+mai 30, 2017 11:38:36 AM gui.config.CONFIG_UI0000_AdminPassword checkLoginAndPass
+INFOS: User OUSSAMA EZZIOURI / 9999 connected to host WSMA7040 at 2017-05-30 11:38:36 Module : Planner.
+mai 30, 2017 11:38:36 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mai 30, 2017 11:38:36 AM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+mai 30, 2017 11:38:36 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mai 30, 2017 11:42:12 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_05_30] already exist!
+Print sub directory [.\print\2017_05_30.\open_sheet] already exist!
+Print sub directory [.\print\2017_05_30.\closing_sheet] already exist!
+Print sub directory [.\print\2017_05_30.\picking_label] already exist!
+Print sub directory [.\print\2017_05_30.\dispatch_label] already exist!
+
+mai 30, 2017 11:42:20 AM gui.config.CONFIG_UI0000_AdminPassword checkLoginAndPass
+INFOS: User OUSSAMA EZZIOURI / 9999 connected to host WSMA7040 at 2017-05-30 11:42:20 Module : Planner.
+mai 30, 2017 11:42:21 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mai 30, 2017 11:42:21 AM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+mai 30, 2017 11:42:21 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mai 30, 2017 11:44:09 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_05_30] already exist!
+Print sub directory [.\print\2017_05_30.\open_sheet] already exist!
+Print sub directory [.\print\2017_05_30.\closing_sheet] already exist!
+Print sub directory [.\print\2017_05_30.\picking_label] already exist!
+Print sub directory [.\print\2017_05_30.\dispatch_label] already exist!
+
+mai 30, 2017 11:44:15 AM gui.config.CONFIG_UI0000_AdminPassword checkLoginAndPass
+INFOS: User OUSSAMA EZZIOURI / 9999 connected to host WSMA7040 at 2017-05-30 11:44:15 Module : Planner.
+mai 30, 2017 11:44:15 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mai 30, 2017 11:44:15 AM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+mai 30, 2017 11:44:15 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mai 30, 2017 12:19:46 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_05_30] already exist!
+Print sub directory [.\print\2017_05_30.\open_sheet] already exist!
+Print sub directory [.\print\2017_05_30.\closing_sheet] already exist!
+Print sub directory [.\print\2017_05_30.\picking_label] already exist!
+Print sub directory [.\print\2017_05_30.\dispatch_label] already exist!
+
+mai 30, 2017 12:20:00 PM gui.config.CONFIG_UI0000_AdminPassword checkLoginAndPass
+INFOS: User OUSSAMA EZZIOURI / 9999 connected to host WSMA7040 at 2017-05-30 12:20:00 Module : Planner.
+mai 30, 2017 12:20:01 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mai 30, 2017 12:20:01 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+mai 30, 2017 12:20:01 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mai 30, 2017 12:21:06 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_05_30] already exist!
+Print sub directory [.\print\2017_05_30.\open_sheet] already exist!
+Print sub directory [.\print\2017_05_30.\closing_sheet] already exist!
+Print sub directory [.\print\2017_05_30.\picking_label] already exist!
+Print sub directory [.\print\2017_05_30.\dispatch_label] already exist!
+
+mai 30, 2017 12:21:11 PM gui.config.CONFIG_UI0000_AdminPassword checkLoginAndPass
+INFOS: User OUSSAMA EZZIOURI / 9999 connected to host WSMA7040 at 2017-05-30 12:21:11 Module : Planner.
+mai 30, 2017 12:21:12 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mai 30, 2017 12:21:12 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+mai 30, 2017 12:21:12 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mai 30, 2017 12:22:35 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+mai 30, 2017 12:22:35 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+mai 30, 2017 12:27:42 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_05_30] already exist!
+Print sub directory [.\print\2017_05_30.\open_sheet] already exist!
+Print sub directory [.\print\2017_05_30.\closing_sheet] already exist!
+Print sub directory [.\print\2017_05_30.\picking_label] already exist!
+Print sub directory [.\print\2017_05_30.\dispatch_label] already exist!
+
+mai 30, 2017 12:27:50 PM gui.config.CONFIG_UI0000_AdminPassword checkLoginAndPass
+INFOS: User OUSSAMA EZZIOURI / 9999 connected to host WSMA7040 at 2017-05-30 12:27:50 Module : Planner.
+mai 30, 2017 12:27:51 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mai 30, 2017 12:27:51 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+mai 30, 2017 12:27:51 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mai 30, 2017 12:27:55 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+mai 30, 2017 12:27:55 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+mai 30, 2017 12:27:58 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+mai 30, 2017 12:27:58 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+mai 30, 2017 12:27:58 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+mai 30, 2017 12:27:58 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+mai 30, 2017 12:28:00 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+mai 30, 2017 12:28:00 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+mai 30, 2017 12:30:17 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_05_30] already exist!
+Print sub directory [.\print\2017_05_30.\open_sheet] already exist!
+Print sub directory [.\print\2017_05_30.\closing_sheet] already exist!
+Print sub directory [.\print\2017_05_30.\picking_label] already exist!
+Print sub directory [.\print\2017_05_30.\dispatch_label] already exist!
+
+mai 30, 2017 12:30:27 PM gui.config.CONFIG_UI0000_AdminPassword checkLoginAndPass
+INFOS: User OUSSAMA EZZIOURI / 9999 connected to host WSMA7040 at 2017-05-30 12:30:27 Module : Planner.
+mai 30, 2017 12:30:28 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mai 30, 2017 12:30:28 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+mai 30, 2017 12:30:28 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mai 30, 2017 12:30:37 PM gui.packaging_warehouse.PACKAGING_WAREHOUSE_UI0001_PasswordRequest connect
+INFOS: User OUSSAMA EZZIOURI / 9999 connected to host WSMA7040 at 2017-05-30 12:30:37 Packaging warehouse interface : .
+mai 30, 2017 12:35:17 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_05_30] already exist!
+Print sub directory [.\print\2017_05_30.\open_sheet] already exist!
+Print sub directory [.\print\2017_05_30.\closing_sheet] already exist!
+Print sub directory [.\print\2017_05_30.\picking_label] already exist!
+Print sub directory [.\print\2017_05_30.\dispatch_label] already exist!
+
+mai 30, 2017 12:35:37 PM gui.config.CONFIG_UI0000_AdminPassword checkLoginAndPass
+INFOS: User OUSSAMA EZZIOURI / 9999 connected to host WSMA7040 at 2017-05-30 12:35:37 Module : Planner.
+mai 30, 2017 12:35:37 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mai 30, 2017 12:35:37 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+mai 30, 2017 12:35:37 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mai 30, 2017 12:37:28 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_05_30] already exist!
+Print sub directory [.\print\2017_05_30.\open_sheet] already exist!
+Print sub directory [.\print\2017_05_30.\closing_sheet] already exist!
+Print sub directory [.\print\2017_05_30.\picking_label] already exist!
+Print sub directory [.\print\2017_05_30.\dispatch_label] already exist!
+
+mai 30, 2017 12:37:37 PM gui.config.CONFIG_UI0000_AdminPassword checkLoginAndPass
+INFOS: User OUSSAMA EZZIOURI / 9999 connected to host WSMA7040 at 2017-05-30 12:37:37 Module : Planner.
+mai 30, 2017 12:37:37 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mai 30, 2017 12:37:37 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+mai 30, 2017 12:37:37 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mai 30, 2017 12:37:53 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+mai 30, 2017 12:37:53 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+mai 30, 2017 12:38:36 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_05_30] already exist!
+Print sub directory [.\print\2017_05_30.\open_sheet] already exist!
+Print sub directory [.\print\2017_05_30.\closing_sheet] already exist!
+Print sub directory [.\print\2017_05_30.\picking_label] already exist!
+Print sub directory [.\print\2017_05_30.\dispatch_label] already exist!
+
+mai 30, 2017 12:38:40 PM gui.config.CONFIG_UI0000_AdminPassword checkLoginAndPass
+INFOS: User OUSSAMA EZZIOURI / 9999 connected to host WSMA7040 at 2017-05-30 12:38:40 Module : Planner.
+mai 30, 2017 12:38:41 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mai 30, 2017 12:38:41 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+mai 30, 2017 12:38:41 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mai 30, 2017 12:39:56 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_05_30] already exist!
+Print sub directory [.\print\2017_05_30.\open_sheet] already exist!
+Print sub directory [.\print\2017_05_30.\closing_sheet] already exist!
+Print sub directory [.\print\2017_05_30.\picking_label] already exist!
+Print sub directory [.\print\2017_05_30.\dispatch_label] already exist!
+
+mai 30, 2017 12:40:36 PM gui.config.CONFIG_UI0000_AdminPassword checkLoginAndPass
+INFOS: User OUSSAMA EZZIOURI / 9999 connected to host WSMA7040 at 2017-05-30 12:40:36 Module : Planner.
+mai 30, 2017 12:40:36 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mai 30, 2017 12:40:36 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+mai 30, 2017 12:40:36 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mai 30, 2017 12:41:17 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_05_30] already exist!
+Print sub directory [.\print\2017_05_30.\open_sheet] already exist!
+Print sub directory [.\print\2017_05_30.\closing_sheet] already exist!
+Print sub directory [.\print\2017_05_30.\picking_label] already exist!
+Print sub directory [.\print\2017_05_30.\dispatch_label] already exist!
+
+mai 30, 2017 12:41:21 PM gui.config.CONFIG_UI0000_AdminPassword checkLoginAndPass
+INFOS: User OUSSAMA EZZIOURI / 9999 connected to host WSMA7040 at 2017-05-30 12:41:21 Module : Planner.
+mai 30, 2017 12:41:21 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mai 30, 2017 12:41:21 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+mai 30, 2017 12:41:21 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mai 30, 2017 12:41:36 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+mai 30, 2017 12:41:36 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+mai 30, 2017 1:04:05 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_05_30] already exist!
+Print sub directory [.\print\2017_05_30.\open_sheet] already exist!
+Print sub directory [.\print\2017_05_30.\closing_sheet] already exist!
+Print sub directory [.\print\2017_05_30.\picking_label] already exist!
+Print sub directory [.\print\2017_05_30.\dispatch_label] already exist!
+
+mai 30, 2017 1:04:11 PM gui.warehouse_dispatch.WAREHOUSE_DISPATCH_UI0003_PasswordRequest connect
+INFOS: User OUSSAMA EZZIOURI / 9999 connected to host WSMA7040 at 2017-05-30 13:04:11 Dispatch interface : .
+mai 30, 2017 1:05:50 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_05_30] already exist!
+Print sub directory [.\print\2017_05_30.\open_sheet] already exist!
+Print sub directory [.\print\2017_05_30.\closing_sheet] already exist!
+Print sub directory [.\print\2017_05_30.\picking_label] already exist!
+Print sub directory [.\print\2017_05_30.\dispatch_label] already exist!
+
+mai 30, 2017 1:06:19 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_05_30] already exist!
+Print sub directory [.\print\2017_05_30.\open_sheet] already exist!
+Print sub directory [.\print\2017_05_30.\closing_sheet] already exist!
+Print sub directory [.\print\2017_05_30.\picking_label] already exist!
+Print sub directory [.\print\2017_05_30.\dispatch_label] already exist!
+
+mai 30, 2017 1:06:59 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_05_30] already exist!
+Print sub directory [.\print\2017_05_30.\open_sheet] already exist!
+Print sub directory [.\print\2017_05_30.\closing_sheet] already exist!
+Print sub directory [.\print\2017_05_30.\picking_label] already exist!
+Print sub directory [.\print\2017_05_30.\dispatch_label] already exist!
+
+mai 30, 2017 1:07:04 PM gui.config.CONFIG_UI0000_AdminPassword checkLoginAndPass
+INFOS: User OUSSAMA EZZIOURI / 9999 connected to host WSMA7040 at 2017-05-30 13:07:04 Module : Planner.
+mai 30, 2017 1:07:04 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mai 30, 2017 1:07:04 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+mai 30, 2017 1:07:04 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mai 30, 2017 1:07:05 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+mai 30, 2017 1:07:05 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+mai 30, 2017 1:07:14 PM gui.warehouse_dispatch.WAREHOUSE_DISPATCH_UI0003_PasswordRequest connect
+INFOS: User OUSSAMA EZZIOURI / 9999 connected to host WSMA7040 at 2017-05-30 13:07:14 Dispatch interface : .
+mai 30, 2017 2:08:12 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_05_30] already exist!
+Print sub directory [.\print\2017_05_30.\open_sheet] already exist!
+Print sub directory [.\print\2017_05_30.\closing_sheet] already exist!
+Print sub directory [.\print\2017_05_30.\picking_label] already exist!
+Print sub directory [.\print\2017_05_30.\dispatch_label] already exist!
+
+mai 30, 2017 2:08:24 PM gui.warehouse_dispatch.WAREHOUSE_DISPATCH_UI0003_PasswordRequest connect
+INFOS: User OUSSAMA EZZIOURI / 9999 connected to host WSMA7040 at 2017-05-30 14:08:24 Dispatch interface : .
+mai 30, 2017 2:15:05 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_05_30] already exist!
+Print sub directory [.\print\2017_05_30.\open_sheet] already exist!
+Print sub directory [.\print\2017_05_30.\closing_sheet] already exist!
+Print sub directory [.\print\2017_05_30.\picking_label] already exist!
+Print sub directory [.\print\2017_05_30.\dispatch_label] already exist!
+
+mai 30, 2017 2:15:09 PM gui.warehouse_dispatch.WAREHOUSE_DISPATCH_UI0003_PasswordRequest connect
+INFOS: User OUSSAMA EZZIOURI / 9999 connected to host WSMA7040 at 2017-05-30 14:15:09 Dispatch interface : .

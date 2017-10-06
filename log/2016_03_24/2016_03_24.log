@@ -1,0 +1,195 @@
+mars 24, 2016 8:49:00 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_24] is created!
+Print sub directory [.\print\2016_03_24.\open_sheet] is created!
+Print sub directory [.\print\2016_03_24.\closing_sheet] is created!
+
+mars 24, 2016 8:49:07 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 24, 2016 8:49:08 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 24, 2016 8:49:11 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 24, 2016 8:49:11 AM entity.ConfigShift select
+INFOS: FROM ConfigShift cs ORDER BY startHour ASC
+mars 24, 2016 8:49:50 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_24] already exist!
+Print sub directory [.\print\2016_03_24.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_24.\closing_sheet] already exist!
+
+mars 24, 2016 8:49:53 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 24, 2016 8:49:54 AM entity.ConfigShift select
+INFOS: FROM ConfigShift cs ORDER BY startHour ASC
+mars 24, 2016 8:52:19 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_24] already exist!
+Print sub directory [.\print\2016_03_24.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_24.\closing_sheet] already exist!
+
+mars 24, 2016 8:52:20 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 24, 2016 8:52:20 AM entity.ConfigShift select
+INFOS: FROM ConfigShift cs ORDER BY startHour ASC
+mars 24, 2016 8:52:44 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_24] already exist!
+Print sub directory [.\print\2016_03_24.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_24.\closing_sheet] already exist!
+
+mars 24, 2016 8:52:46 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 24, 2016 8:52:46 AM entity.ConfigShift select
+INFOS: FROM ConfigShift cs ORDER BY startHour ASC
+mars 24, 2016 8:52:48 AM entity.ConfigShift selectShiftById
+INFOS: FROM ConfigShift cs WHERE id = :id
+mars 24, 2016 8:52:48 AM entity.ConfigShift selectShiftById
+INFOS: FROM ConfigShift cs WHERE id = :id
+mars 24, 2016 8:52:52 AM entity.ConfigShift selectShiftById
+INFOS: FROM ConfigShift cs WHERE id = :id
+mars 24, 2016 8:52:52 AM entity.ConfigShift selectShiftById
+INFOS: FROM ConfigShift cs WHERE id = :id
+mars 24, 2016 8:54:23 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_24] already exist!
+Print sub directory [.\print\2016_03_24.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_24.\closing_sheet] already exist!
+
+mars 24, 2016 8:54:24 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 24, 2016 8:54:24 AM entity.ConfigShift select
+INFOS: FROM ConfigShift cs ORDER BY startHour ASC
+mars 24, 2016 8:56:40 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_24] already exist!
+Print sub directory [.\print\2016_03_24.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_24.\closing_sheet] already exist!
+
+mars 24, 2016 8:56:41 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 24, 2016 8:56:41 AM entity.ConfigShift select
+INFOS: FROM ConfigShift cs ORDER BY startHour ASC
+mars 24, 2016 9:05:38 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_24] already exist!
+Print sub directory [.\print\2016_03_24.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_24.\closing_sheet] already exist!
+
+mars 24, 2016 9:05:40 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 24, 2016 9:05:40 AM entity.ConfigShift select
+INFOS: FROM ConfigShift cs ORDER BY startHour ASC
+mars 24, 2016 9:05:42 AM entity.ConfigShift selectShiftByName
+INFOS: FROM ConfigShift cs WHERE cs.name = :name
+mars 24, 2016 9:05:42 AM entity.ConfigShift selectShiftByName
+INFOS: FROM ConfigShift cs WHERE cs.name = :name
+mars 24, 2016 9:07:34 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_24] already exist!
+Print sub directory [.\print\2016_03_24.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_24.\closing_sheet] already exist!
+
+mars 24, 2016 9:07:35 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 24, 2016 9:07:35 AM entity.ConfigShift select
+INFOS: FROM ConfigShift cs ORDER BY startHour ASC
+mars 24, 2016 9:07:36 AM entity.ConfigShift selectShiftByName
+INFOS: FROM ConfigShift cs WHERE cs.name = :name
+mars 24, 2016 9:07:36 AM entity.ConfigShift selectShiftByName
+INFOS: FROM ConfigShift cs WHERE cs.name = :name
+mars 24, 2016 9:07:59 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_24] already exist!
+Print sub directory [.\print\2016_03_24.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_24.\closing_sheet] already exist!
+
+mars 24, 2016 9:08:02 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 24, 2016 9:08:02 AM entity.ConfigShift select
+INFOS: FROM ConfigShift cs ORDER BY startHour ASC
+mars 24, 2016 9:08:09 AM entity.ConfigShift selectShiftByName
+INFOS: FROM ConfigShift cs WHERE cs.name = :name
+mars 24, 2016 9:08:09 AM entity.ConfigShift selectShiftByName
+INFOS: FROM ConfigShift cs WHERE cs.name = :name
+mars 24, 2016 9:18:53 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_24] already exist!
+Print sub directory [.\print\2016_03_24.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_24.\closing_sheet] already exist!
+
+mars 24, 2016 9:18:55 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 24, 2016 9:18:55 AM entity.ConfigShift select
+INFOS: FROM ConfigShift cs ORDER BY startHour ASC
+mars 24, 2016 9:25:08 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_24] already exist!
+Print sub directory [.\print\2016_03_24.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_24.\closing_sheet] already exist!
+
+mars 24, 2016 9:25:10 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 24, 2016 9:25:10 AM entity.ConfigShift select
+INFOS: FROM ConfigShift cs ORDER BY startHour ASC
+mars 24, 2016 9:26:04 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_24] already exist!
+Print sub directory [.\print\2016_03_24.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_24.\closing_sheet] already exist!
+
+mars 24, 2016 9:26:05 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 24, 2016 9:26:05 AM entity.ConfigShift select
+INFOS: FROM ConfigShift cs ORDER BY startHour ASC
+mars 24, 2016 9:27:19 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_24] already exist!
+Print sub directory [.\print\2016_03_24.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_24.\closing_sheet] already exist!
+
+mars 24, 2016 9:27:21 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 24, 2016 9:27:21 AM entity.ConfigShift select
+INFOS: FROM ConfigShift cs ORDER BY startHour ASC
+mars 24, 2016 9:27:46 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_24] already exist!
+Print sub directory [.\print\2016_03_24.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_24.\closing_sheet] already exist!
+
+mars 24, 2016 9:27:47 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 24, 2016 9:27:47 AM entity.ConfigShift select
+INFOS: FROM ConfigShift cs ORDER BY startHour ASC
+mars 24, 2016 9:28:53 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_24] already exist!
+Print sub directory [.\print\2016_03_24.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_24.\closing_sheet] already exist!
+
+mars 24, 2016 9:28:54 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 24, 2016 9:28:54 AM entity.ConfigShift select
+INFOS: FROM ConfigShift cs ORDER BY startHour ASC
+mars 24, 2016 11:56:27 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_24] already exist!
+Print sub directory [.\print\2016_03_24.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_24.\closing_sheet] already exist!
+
+mars 24, 2016 11:56:39 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 24, 2016 11:56:39 AM entity.ConfigShift select
+INFOS: FROM ConfigShift cs ORDER BY startHour ASC
+mars 24, 2016 11:57:40 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_24] already exist!
+Print sub directory [.\print\2016_03_24.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_24.\closing_sheet] already exist!
+
+mars 24, 2016 11:57:41 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 24, 2016 11:57:41 AM entity.ConfigShift select
+INFOS: FROM ConfigShift cs ORDER BY startHour ASC
+mars 24, 2016 11:58:41 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_24] already exist!
+Print sub directory [.\print\2016_03_24.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_24.\closing_sheet] already exist!
+
+mars 24, 2016 11:58:42 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 24, 2016 11:58:42 AM entity.ConfigShift select
+INFOS: FROM ConfigShift cs ORDER BY startHour ASC
+mars 24, 2016 1:51:45 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_24] already exist!
+Print sub directory [.\print\2016_03_24.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_24.\closing_sheet] already exist!
+
+mars 24, 2016 1:51:47 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 24, 2016 1:51:47 PM entity.ConfigShift select
+INFOS: FROM ConfigShift cs ORDER BY startHour ASC

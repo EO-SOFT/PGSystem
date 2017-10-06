@@ -1,0 +1,10 @@
+mars 06, 2016 5:21:33 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_06_03] is created!
+Print sub directory [.\print\2016_06_03.\pallet] is created!
+Print sub directory [.\print\2016_06_03.\closing_pallet] is created!
+
+mars 06, 2016 8:37:23 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_06_03] already exist!
+Print sub directory [.\print\2016_06_03.\pallet] already exist!
+Print sub directory [.\print\2016_06_03.\closing_pallet] already exist!
+

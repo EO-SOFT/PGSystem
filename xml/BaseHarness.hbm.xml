@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 6 f?vr. 2016 21:43:56 by Hibernate Tools 3.6.0 -->
+<hibernate-mapping package="entity">
+    <class name="BaseHarness" table="base_harness">
+        <id name="id">
+            <!--  PostgreSQL generator for a sequence which is named manufacture_users_id_seq
+            -->
+            <generator class="sequence">
+                <param name="sequence">base_harness_id_seq</param>
+            </generator>
+        </id>
+        <property column="create_time" name="createTime" type="java.sql.Timestamp" />
+        <property column="write_time" name="writeTime" type="java.sql.Timestamp" />
+        <property column="create_id" name="createId" />
+        <property column="write_id" name="writeId" />
+        <property column="harness_part" name="harnessPart" />
+        <property column="counter" name="counter" />
+        <property column="m_user" name="user" />            
+        <property column="pallet_number" name="palletNumber" />
+        <property column="harness_type" name="harnessType" />
+        <many-to-one class="BaseContainer" fetch="select" name="container">
+            <column name="container_id" not-null="true" />
+        </many-to-one>
+        
+    </class>
+</hibernate-mapping>

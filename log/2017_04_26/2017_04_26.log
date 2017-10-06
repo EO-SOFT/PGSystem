@@ -1,0 +1,46 @@
+avr. 26, 2017 10:48:23 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_04_26] is created!
+Print sub directory [.\print\2017_04_26.\open_sheet] is created!
+Print sub directory [.\print\2017_04_26.\closing_sheet] is created!
+Print sub directory [.\print\2017_04_26.\picking_label] is created!
+Print sub directory [.\print\2017_04_26.\dispatch_label] is created!
+
+avr. 26, 2017 10:48:54 PM gui.warehouse_dispatch.WAREHOUSE_DISPATCH_UI0003_PasswordRequest connect
+INFOS: User Admin   / 9999 connected to host O-EZZIOURI at 2017-04-26 22:48:54 Dispatch interface : .
+avr. 26, 2017 11:08:05 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_04_26] already exist!
+Print sub directory [.\print\2017_04_26.\open_sheet] already exist!
+Print sub directory [.\print\2017_04_26.\closing_sheet] already exist!
+Print sub directory [.\print\2017_04_26.\picking_label] already exist!
+Print sub directory [.\print\2017_04_26.\dispatch_label] already exist!
+
+avr. 26, 2017 11:08:51 PM gui.warehouse_dispatch.WAREHOUSE_DISPATCH_UI0003_PasswordRequest connect
+INFOS: User Admin   / 9999 connected to host O-EZZIOURI at 2017-04-26 23:08:51 Dispatch interface : .
+avr. 26, 2017 11:12:55 PM entity.BaseContainer checkContainerByState
+INFOS: Searching Container [200008261] in BaseContainer.
+avr. 26, 2017 11:12:55 PM entity.BaseContainer checkContainerByState
+INFOS: FROM BaseContainer bc WHERE bc.palletNumber = :palletNumber AND bc.containerState = :state
+avr. 26, 2017 11:13:23 PM entity.BaseContainer checkContainerByState
+INFOS: Searching Container [200008128] in BaseContainer.
+avr. 26, 2017 11:13:23 PM entity.BaseContainer checkContainerByState
+INFOS: FROM BaseContainer bc WHERE bc.palletNumber = :palletNumber AND bc.containerState = :state
+avr. 26, 2017 11:14:38 PM entity.BaseContainer checkContainerByState
+INFOS: Searching Container [200008119 ] in BaseContainer.
+avr. 26, 2017 11:14:38 PM entity.BaseContainer checkContainerByState
+INFOS: FROM BaseContainer bc WHERE bc.palletNumber = :palletNumber AND bc.containerState = :state
+avr. 26, 2017 11:14:39 PM entity.BaseContainer checkContainerByState
+INFOS: Searching Container [200008119] in BaseContainer.
+avr. 26, 2017 11:14:39 PM entity.BaseContainer checkContainerByState
+INFOS: FROM BaseContainer bc WHERE bc.palletNumber = :palletNumber AND bc.containerState = :state
+avr. 26, 2017 11:14:44 PM entity.BaseContainer checkContainerByState
+INFOS: Searching Container [200008114 ] in BaseContainer.
+avr. 26, 2017 11:14:44 PM entity.BaseContainer checkContainerByState
+INFOS: FROM BaseContainer bc WHERE bc.palletNumber = :palletNumber AND bc.containerState = :state
+avr. 26, 2017 11:14:45 PM entity.BaseContainer checkContainerByState
+INFOS: Searching Container [200008114] in BaseContainer.
+avr. 26, 2017 11:14:45 PM entity.BaseContainer checkContainerByState
+INFOS: FROM BaseContainer bc WHERE bc.palletNumber = :palletNumber AND bc.containerState = :state
+avr. 26, 2017 11:14:51 PM entity.BaseContainer checkContainerByState
+INFOS: Searching Container [200008107] in BaseContainer.
+avr. 26, 2017 11:14:51 PM entity.BaseContainer checkContainerByState
+INFOS: FROM BaseContainer bc WHERE bc.palletNumber = :palletNumber AND bc.containerState = :state

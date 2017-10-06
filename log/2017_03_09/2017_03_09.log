@@ -1,0 +1,47 @@
+mars 09, 2017 3:03:43 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_03_09] is created!
+Print sub directory [.\print\2017_03_09.\open_sheet] is created!
+Print sub directory [.\print\2017_03_09.\closing_sheet] is created!
+Print sub directory [.\print\2017_03_09.\picking_label] is created!
+Print sub directory [.\print\2017_03_09.\dispatch_label] is created!
+
+mars 09, 2017 3:03:45 PM gui.packaging.PACKAGING_UI0001_Main loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord ORDER BY id ASC
+mars 09, 2017 3:03:45 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2017 3:03:45 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 09, 2017 3:03:48 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mars 09, 2017 3:03:48 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mars 09, 2017 3:03:48 PM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+mars 09, 2017 3:03:56 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mars 09, 2017 3:03:56 PM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+mars 09, 2017 3:03:56 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mars 09, 2017 3:03:56 PM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+mars 09, 2017 3:03:57 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mars 09, 2017 3:03:57 PM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+mars 09, 2017 3:05:29 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mars 09, 2017 3:05:32 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mars 09, 2017 3:05:32 PM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+mars 09, 2017 3:17:54 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mars 13, 2017 9:28:55 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mars 13, 2017 9:28:59 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mars 13, 2017 9:29:00 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mars 13, 2017 9:29:04 AM gui.packaging.PACKAGING_UI0001_Main loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord ORDER BY id ASC

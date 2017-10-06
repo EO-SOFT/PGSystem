@@ -1,0 +1,45 @@
+mai 26, 2017 2:41:55 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_05_26] is created!
+Print sub directory [.\print\2017_05_26.\open_sheet] is created!
+Print sub directory [.\print\2017_05_26.\closing_sheet] is created!
+Print sub directory [.\print\2017_05_26.\picking_label] is created!
+Print sub directory [.\print\2017_05_26.\dispatch_label] is created!
+
+mai 26, 2017 2:42:31 PM gui.warehouse_dispatch.WAREHOUSE_DISPATCH_UI0003_PasswordRequest connect
+INFOS: User OUSSAMA EZZIOURI / ezou1001 connected to host WSMA7040 at 2017-05-26 14:42:31 Dispatch interface : .
+mai 26, 2017 2:44:16 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_05_26] already exist!
+Print sub directory [.\print\2017_05_26.\open_sheet] already exist!
+Print sub directory [.\print\2017_05_26.\closing_sheet] already exist!
+Print sub directory [.\print\2017_05_26.\picking_label] already exist!
+Print sub directory [.\print\2017_05_26.\dispatch_label] already exist!
+
+mai 26, 2017 2:44:27 PM gui.warehouse_dispatch.WAREHOUSE_DISPATCH_UI0003_PasswordRequest connect
+INFOS: User OUSSAMA EZZIOURI / ezou1001 connected to host WSMA7040 at 2017-05-26 14:44:27 Dispatch interface : .
+mai 26, 2017 2:45:12 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_05_26] already exist!
+Print sub directory [.\print\2017_05_26.\open_sheet] already exist!
+Print sub directory [.\print\2017_05_26.\closing_sheet] already exist!
+Print sub directory [.\print\2017_05_26.\picking_label] already exist!
+Print sub directory [.\print\2017_05_26.\dispatch_label] already exist!
+
+mai 26, 2017 2:45:18 PM gui.warehouse_dispatch.WAREHOUSE_DISPATCH_UI0003_PasswordRequest connect
+INFOS: User OUSSAMA EZZIOURI / ezou1001 connected to host WSMA7040 at 2017-05-26 14:45:18 Dispatch interface : .
+mai 26, 2017 2:46:00 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_05_26] already exist!
+Print sub directory [.\print\2017_05_26.\open_sheet] already exist!
+Print sub directory [.\print\2017_05_26.\closing_sheet] already exist!
+Print sub directory [.\print\2017_05_26.\picking_label] already exist!
+Print sub directory [.\print\2017_05_26.\dispatch_label] already exist!
+
+mai 26, 2017 2:46:07 PM gui.warehouse_dispatch.WAREHOUSE_DISPATCH_UI0003_PasswordRequest connect
+INFOS: User OUSSAMA EZZIOURI / ezou1001 connected to host WSMA7040 at 2017-05-26 14:46:07 Dispatch interface : .
+mai 26, 2017 2:46:48 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_05_26] already exist!
+Print sub directory [.\print\2017_05_26.\open_sheet] already exist!
+Print sub directory [.\print\2017_05_26.\closing_sheet] already exist!
+Print sub directory [.\print\2017_05_26.\picking_label] already exist!
+Print sub directory [.\print\2017_05_26.\dispatch_label] already exist!
+
+mai 26, 2017 2:46:58 PM gui.warehouse_dispatch.WAREHOUSE_DISPATCH_UI0003_PasswordRequest connect
+INFOS: User OUSSAMA EZZIOURI / ezou1001 connected to host WSMA7040 at 2017-05-26 14:46:58 Dispatch interface : .

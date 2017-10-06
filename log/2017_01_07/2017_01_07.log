@@ -1,0 +1,425 @@
+janv. 07, 2017 7:03:32 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_01_07] is created!
+Print sub directory [.\print\2017_01_07.\open_sheet] is created!
+Print sub directory [.\print\2017_01_07.\closing_sheet] is created!
+Print sub directory [.\print\2017_01_07.\picking_label] is created!
+Print sub directory [.\print\2017_01_07.\dispatch_label] is created!
+
+janv. 07, 2017 7:28:59 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_01_07] already exist!
+Print sub directory [.\print\2017_01_07.\open_sheet] already exist!
+Print sub directory [.\print\2017_01_07.\closing_sheet] already exist!
+Print sub directory [.\print\2017_01_07.\picking_label] already exist!
+Print sub directory [.\print\2017_01_07.\dispatch_label] already exist!
+
+janv. 07, 2017 7:29:01 AM gui.packaging.PACKAGING_UI0001_Main loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord ORDER BY id ASC
+janv. 07, 2017 7:29:01 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+janv. 07, 2017 7:29:01 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+janv. 07, 2017 7:29:06 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+janv. 07, 2017 7:29:06 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+janv. 07, 2017 7:29:06 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+janv. 07, 2017 7:29:20 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+janv. 07, 2017 7:29:20 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+janv. 07, 2017 7:29:20 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+janv. 07, 2017 7:29:28 AM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+janv. 07, 2017 7:29:28 AM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+janv. 07, 2017 7:29:28 AM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+janv. 07, 2017 7:29:28 AM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+janv. 07, 2017 7:29:28 AM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+janv. 07, 2017 7:29:28 AM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+janv. 07, 2017 7:29:33 AM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+janv. 07, 2017 7:29:34 AM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+janv. 07, 2017 7:29:34 AM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+janv. 07, 2017 7:29:34 AM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+janv. 07, 2017 7:29:34 AM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+janv. 07, 2017 7:29:34 AM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+janv. 07, 2017 7:40:59 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_01_07] already exist!
+Print sub directory [.\print\2017_01_07.\open_sheet] already exist!
+Print sub directory [.\print\2017_01_07.\closing_sheet] already exist!
+Print sub directory [.\print\2017_01_07.\picking_label] already exist!
+Print sub directory [.\print\2017_01_07.\dispatch_label] already exist!
+
+janv. 07, 2017 7:41:02 AM gui.packaging.PACKAGING_UI0001_Main loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord ORDER BY id ASC
+janv. 07, 2017 7:41:02 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+janv. 07, 2017 7:41:02 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+janv. 07, 2017 7:41:07 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+janv. 07, 2017 7:41:07 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+janv. 07, 2017 7:41:07 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+janv. 07, 2017 7:41:15 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+janv. 07, 2017 7:41:15 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+janv. 07, 2017 7:41:17 AM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+janv. 07, 2017 7:41:17 AM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+janv. 07, 2017 7:41:17 AM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+janv. 07, 2017 7:41:17 AM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+janv. 07, 2017 7:41:17 AM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+janv. 07, 2017 7:41:17 AM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+janv. 07, 2017 7:42:05 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_01_07] already exist!
+Print sub directory [.\print\2017_01_07.\open_sheet] already exist!
+Print sub directory [.\print\2017_01_07.\closing_sheet] already exist!
+Print sub directory [.\print\2017_01_07.\picking_label] already exist!
+Print sub directory [.\print\2017_01_07.\dispatch_label] already exist!
+
+janv. 07, 2017 7:44:25 AM gui.packaging.PACKAGING_UI0001_Main loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord ORDER BY id ASC
+janv. 07, 2017 7:44:25 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+janv. 07, 2017 7:44:25 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+janv. 07, 2017 7:44:27 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+janv. 07, 2017 7:44:27 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+janv. 07, 2017 7:44:27 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+janv. 07, 2017 7:44:35 AM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+janv. 07, 2017 7:44:35 AM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+janv. 07, 2017 7:44:35 AM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+janv. 07, 2017 7:44:35 AM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+janv. 07, 2017 7:44:35 AM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+janv. 07, 2017 7:44:35 AM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+janv. 07, 2017 7:45:34 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+janv. 07, 2017 7:45:40 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+janv. 07, 2017 7:45:40 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+janv. 07, 2017 7:45:44 AM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+janv. 07, 2017 7:45:44 AM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+janv. 07, 2017 7:45:44 AM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+janv. 07, 2017 7:45:44 AM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+janv. 07, 2017 7:45:44 AM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+janv. 07, 2017 7:45:44 AM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+janv. 07, 2017 7:46:18 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+janv. 07, 2017 7:48:39 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+janv. 07, 2017 7:48:39 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+janv. 07, 2017 7:50:07 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+janv. 07, 2017 7:50:07 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+janv. 07, 2017 7:50:24 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+janv. 07, 2017 7:50:24 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+janv. 07, 2017 7:51:36 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+janv. 07, 2017 7:51:36 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+janv. 07, 2017 7:55:50 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+janv. 07, 2017 7:55:50 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+janv. 07, 2017 7:56:31 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+janv. 07, 2017 7:56:31 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+janv. 07, 2017 8:00:17 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_01_07] already exist!
+Print sub directory [.\print\2017_01_07.\open_sheet] already exist!
+Print sub directory [.\print\2017_01_07.\closing_sheet] already exist!
+Print sub directory [.\print\2017_01_07.\picking_label] already exist!
+Print sub directory [.\print\2017_01_07.\dispatch_label] already exist!
+
+janv. 07, 2017 8:00:19 AM gui.packaging.PACKAGING_UI0001_Main loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord ORDER BY id ASC
+janv. 07, 2017 8:00:19 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+janv. 07, 2017 8:00:19 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+janv. 07, 2017 8:00:25 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+janv. 07, 2017 8:01:00 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+janv. 07, 2017 8:01:00 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+janv. 07, 2017 8:03:27 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_01_07] already exist!
+Print sub directory [.\print\2017_01_07.\open_sheet] already exist!
+Print sub directory [.\print\2017_01_07.\closing_sheet] already exist!
+Print sub directory [.\print\2017_01_07.\picking_label] already exist!
+Print sub directory [.\print\2017_01_07.\dispatch_label] already exist!
+
+janv. 07, 2017 8:03:32 AM gui.packaging.PACKAGING_UI0001_Main loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord ORDER BY id ASC
+janv. 07, 2017 8:03:32 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+janv. 07, 2017 8:03:32 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+janv. 07, 2017 8:03:35 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+janv. 07, 2017 8:03:43 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+janv. 07, 2017 8:03:43 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+janv. 07, 2017 4:03:58 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+janv. 07, 2017 4:03:58 PM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+janv. 07, 2017 4:06:04 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+janv. 07, 2017 4:06:33 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+janv. 07, 2017 4:06:33 PM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+janv. 07, 2017 4:07:02 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+janv. 07, 2017 4:07:02 PM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+janv. 07, 2017 4:08:24 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+janv. 07, 2017 4:08:24 PM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+janv. 07, 2017 4:09:15 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+janv. 07, 2017 4:09:15 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+janv. 07, 2017 4:09:15 PM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+janv. 07, 2017 4:09:36 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+janv. 07, 2017 4:09:36 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+janv. 07, 2017 4:09:36 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+janv. 07, 2017 4:09:36 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+janv. 07, 2017 4:09:36 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+janv. 07, 2017 4:09:36 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+janv. 07, 2017 4:13:40 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_01_07] already exist!
+Print sub directory [.\print\2017_01_07.\open_sheet] already exist!
+Print sub directory [.\print\2017_01_07.\closing_sheet] already exist!
+Print sub directory [.\print\2017_01_07.\picking_label] already exist!
+Print sub directory [.\print\2017_01_07.\dispatch_label] already exist!
+
+janv. 07, 2017 4:13:44 PM gui.packaging.PACKAGING_UI0001_Main loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord ORDER BY id ASC
+janv. 07, 2017 4:13:44 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+janv. 07, 2017 4:13:44 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+janv. 07, 2017 4:13:45 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+janv. 07, 2017 4:13:45 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+janv. 07, 2017 4:13:45 PM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+janv. 07, 2017 4:13:55 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+janv. 07, 2017 4:13:55 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+janv. 07, 2017 4:13:55 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+janv. 07, 2017 4:13:55 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+janv. 07, 2017 4:13:55 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+janv. 07, 2017 4:13:55 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+janv. 07, 2017 4:13:57 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+janv. 07, 2017 4:13:57 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+janv. 07, 2017 4:13:57 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+janv. 07, 2017 4:13:57 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+janv. 07, 2017 4:13:58 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+janv. 07, 2017 4:13:58 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+janv. 07, 2017 4:16:04 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_01_07] already exist!
+Print sub directory [.\print\2017_01_07.\open_sheet] already exist!
+Print sub directory [.\print\2017_01_07.\closing_sheet] already exist!
+Print sub directory [.\print\2017_01_07.\picking_label] already exist!
+Print sub directory [.\print\2017_01_07.\dispatch_label] already exist!
+
+janv. 07, 2017 4:16:07 PM gui.packaging.PACKAGING_UI0001_Main loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord ORDER BY id ASC
+janv. 07, 2017 4:16:07 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+janv. 07, 2017 4:16:07 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+janv. 07, 2017 4:16:08 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+janv. 07, 2017 4:16:08 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+janv. 07, 2017 4:16:08 PM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+janv. 07, 2017 4:16:32 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+janv. 07, 2017 4:16:32 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+janv. 07, 2017 4:16:32 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+janv. 07, 2017 4:16:32 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+janv. 07, 2017 4:16:33 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+janv. 07, 2017 4:16:33 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+janv. 07, 2017 4:55:59 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_01_07] already exist!
+Print sub directory [.\print\2017_01_07.\open_sheet] already exist!
+Print sub directory [.\print\2017_01_07.\closing_sheet] already exist!
+Print sub directory [.\print\2017_01_07.\picking_label] already exist!
+Print sub directory [.\print\2017_01_07.\dispatch_label] already exist!
+
+janv. 07, 2017 4:56:04 PM gui.packaging.PACKAGING_UI0001_Main loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord ORDER BY id ASC
+janv. 07, 2017 4:56:05 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+janv. 07, 2017 4:56:06 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+janv. 07, 2017 4:56:07 PM gui.packaging.PACKAGING_UI0001_Main loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord ORDER BY id ASC
+janv. 07, 2017 4:56:07 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+janv. 07, 2017 4:56:07 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+janv. 07, 2017 4:56:09 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+janv. 07, 2017 4:57:50 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_01_07] already exist!
+Print sub directory [.\print\2017_01_07.\open_sheet] already exist!
+Print sub directory [.\print\2017_01_07.\closing_sheet] already exist!
+Print sub directory [.\print\2017_01_07.\picking_label] already exist!
+Print sub directory [.\print\2017_01_07.\dispatch_label] already exist!
+
+janv. 07, 2017 4:57:52 PM gui.packaging.PACKAGING_UI0001_Main loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord ORDER BY id ASC
+janv. 07, 2017 4:57:52 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+janv. 07, 2017 4:57:52 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+janv. 07, 2017 4:57:53 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+janv. 07, 2017 5:40:19 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_01_07] already exist!
+Print sub directory [.\print\2017_01_07.\open_sheet] already exist!
+Print sub directory [.\print\2017_01_07.\closing_sheet] already exist!
+Print sub directory [.\print\2017_01_07.\picking_label] already exist!
+Print sub directory [.\print\2017_01_07.\dispatch_label] already exist!
+
+janv. 07, 2017 5:40:21 PM gui.packaging.PACKAGING_UI0001_Main loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord ORDER BY id ASC
+janv. 07, 2017 5:40:21 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+janv. 07, 2017 5:40:21 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+janv. 07, 2017 5:40:22 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+janv. 07, 2017 5:41:48 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_01_07] already exist!
+Print sub directory [.\print\2017_01_07.\open_sheet] already exist!
+Print sub directory [.\print\2017_01_07.\closing_sheet] already exist!
+Print sub directory [.\print\2017_01_07.\picking_label] already exist!
+Print sub directory [.\print\2017_01_07.\dispatch_label] already exist!
+
+janv. 07, 2017 5:41:50 PM gui.packaging.PACKAGING_UI0001_Main loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord ORDER BY id ASC
+janv. 07, 2017 5:41:50 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+janv. 07, 2017 5:41:51 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+janv. 07, 2017 5:41:52 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+janv. 07, 2017 5:42:25 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_01_07] already exist!
+Print sub directory [.\print\2017_01_07.\open_sheet] already exist!
+Print sub directory [.\print\2017_01_07.\closing_sheet] already exist!
+Print sub directory [.\print\2017_01_07.\picking_label] already exist!
+Print sub directory [.\print\2017_01_07.\dispatch_label] already exist!
+
+janv. 07, 2017 5:42:27 PM gui.packaging.PACKAGING_UI0001_Main loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord ORDER BY id ASC
+janv. 07, 2017 5:42:27 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+janv. 07, 2017 5:42:27 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+janv. 07, 2017 5:42:28 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+janv. 07, 2017 5:42:58 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_01_07] already exist!
+Print sub directory [.\print\2017_01_07.\open_sheet] already exist!
+Print sub directory [.\print\2017_01_07.\closing_sheet] already exist!
+Print sub directory [.\print\2017_01_07.\picking_label] already exist!
+Print sub directory [.\print\2017_01_07.\dispatch_label] already exist!
+
+janv. 07, 2017 5:43:00 PM gui.packaging.PACKAGING_UI0001_Main loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord ORDER BY id ASC
+janv. 07, 2017 5:43:00 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+janv. 07, 2017 5:43:00 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+janv. 07, 2017 5:43:01 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+janv. 07, 2017 5:43:54 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_01_07] already exist!
+Print sub directory [.\print\2017_01_07.\open_sheet] already exist!
+Print sub directory [.\print\2017_01_07.\closing_sheet] already exist!
+Print sub directory [.\print\2017_01_07.\picking_label] already exist!
+Print sub directory [.\print\2017_01_07.\dispatch_label] already exist!
+
+janv. 07, 2017 5:43:56 PM gui.packaging.PACKAGING_UI0001_Main loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord ORDER BY id ASC
+janv. 07, 2017 5:43:56 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+janv. 07, 2017 5:43:56 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+janv. 07, 2017 5:43:59 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC

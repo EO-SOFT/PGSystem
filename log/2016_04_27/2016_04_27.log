@@ -1,0 +1,108 @@
+avr. 27, 2016 5:57:28 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_04_27] is created!
+Print sub directory [.\print\2016_04_27.\open_sheet] is created!
+Print sub directory [.\print\2016_04_27.\closing_sheet] is created!
+Print sub directory [.\print\2016_04_27.\picking_label] is created!
+
+avr. 27, 2016 5:57:30 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+avr. 27, 2016 5:57:30 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+avr. 27, 2016 5:57:50 PM state.S010_UserCodeScan doAction
+INFOS: User Admin   / 9999 connected to host WSMA7040 at 2016-04-27 17:57:50 Project : ENGINE.
+avr. 27, 2016 6:00:22 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_04_27] already exist!
+Print sub directory [.\print\2016_04_27.\open_sheet] already exist!
+Print sub directory [.\print\2016_04_27.\closing_sheet] already exist!
+Print sub directory [.\print\2016_04_27.\picking_label] already exist!
+
+avr. 27, 2016 6:00:29 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+avr. 27, 2016 6:00:29 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+avr. 27, 2016 6:00:41 PM state.S010_UserCodeScan doAction
+INFOS: User Admin   / 9999 connected to host WSMA7040 at 2016-04-27 18:00:41 Project : ENGINE.
+avr. 27, 2016 6:08:35 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_04_27] already exist!
+Print sub directory [.\print\2016_04_27.\open_sheet] already exist!
+Print sub directory [.\print\2016_04_27.\closing_sheet] already exist!
+Print sub directory [.\print\2016_04_27.\picking_label] already exist!
+
+avr. 27, 2016 6:08:36 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+avr. 27, 2016 6:08:36 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+avr. 27, 2016 6:08:40 PM state.S010_UserCodeScan doAction
+INFOS: User Admin   / 9999 connected to host WSMA7040 at 2016-04-27 18:08:40 Project : ENGINE.
+avr. 27, 2016 6:10:48 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_04_27] already exist!
+Print sub directory [.\print\2016_04_27.\open_sheet] already exist!
+Print sub directory [.\print\2016_04_27.\closing_sheet] already exist!
+Print sub directory [.\print\2016_04_27.\picking_label] already exist!
+
+avr. 27, 2016 6:10:56 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+avr. 27, 2016 6:10:56 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+avr. 27, 2016 6:10:59 PM state.S010_UserCodeScan doAction
+INFOS: User Admin   / 9999 connected to host WSMA7040 at 2016-04-27 18:10:59 Project : ENGINE.
+avr. 27, 2016 6:11:32 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+avr. 27, 2016 6:11:46 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22701793] in ConfigUCS: ENGINE
+avr. 27, 2016 6:11:46 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22701793] found for project [ENGINE].
+avr. 27, 2016 6:11:46 PM state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22701793] OK.
+avr. 27, 2016 6:11:47 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2270179305.02.2016;00:00:03] in BaseHarness.
+avr. 27, 2016 6:11:47 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+avr. 27, 2016 6:11:47 PM state.S030_MatrixIdScan doAction
+INFOS: Valid Harness Counter scanned [P2270179305.02.2016;00:00:03] OK.
+avr. 27, 2016 6:12:01 PM entity.BaseEngineLabel isLabelCodeExist
+INFOS: Searching Engine Label code [00000000011] in BaseEngineLabel.
+avr. 27, 2016 6:12:01 PM entity.BaseEngineLabel isLabelCodeExist
+INFOS: FROM BaseEngineLabel bel WHERE bel.labelCode = :labelCode
+avr. 27, 2016 6:12:01 PM entity.BaseEngineLabel isLabelCodeExist
+INFOS: New label engine [00000000011]
+avr. 27, 2016 6:12:01 PM state.S031_EngineLabel1Scan doAction
+INFOS: First Valid Engine Label scanned [00000000011] OK.
+avr. 27, 2016 6:12:03 PM entity.BaseEngineLabel isLabelCodeExist
+INFOS: Searching Engine Label code [00000000012] in BaseEngineLabel.
+avr. 27, 2016 6:12:03 PM entity.BaseEngineLabel isLabelCodeExist
+INFOS: FROM BaseEngineLabel bel WHERE bel.labelCode = :labelCode
+avr. 27, 2016 6:12:03 PM entity.BaseEngineLabel isLabelCodeExist
+INFOS: New label engine [00000000012]
+avr. 27, 2016 6:12:03 PM state.S032_EngineLabel2Scan doAction
+INFOS: Second Valid Engine Label scanned [00000000012] OK.
+avr. 27, 2016 6:12:07 PM state.S040_PalletChoice doAction
+INFOS: Is it a new pallet ?
+avr. 27, 2016 6:12:07 PM state.S040_PalletChoice doAction
+INFOS:  [No]
+avr. 27, 2016 6:12:07 PM state.S040_PalletChoice doAction
+INFOS: Pallet values 
+avr. 27, 2016 6:12:07 PM state.S040_PalletChoice doAction
+INFOS: State           :   [true]
+avr. 27, 2016 6:12:07 PM state.S040_PalletChoice doAction
+INFOS: Qty Expected    :   [24]
+avr. 27, 2016 6:12:07 PM state.S040_PalletChoice doAction
+INFOS: Qty Read        :   [3]
+avr. 27, 2016 6:12:07 PM state.S040_PalletChoice doAction
+INFOS: Harness Part [22701793] = Context Harness Part [22701793]
+avr. 27, 2016 6:12:07 PM state.S040_PalletChoice doAction
+INFOS: Harness Type [ENGINE] = Context Harness Type [ENGINE]
+avr. 27, 2016 6:12:54 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+avr. 27, 2016 6:13:23 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22701793] in ConfigUCS: ENGINE
+avr. 27, 2016 6:13:23 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22701793] found for project [ENGINE].
+avr. 27, 2016 6:13:23 PM state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22701793] OK.
+avr. 27, 2016 6:13:23 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2270179305.02.2016;00:00:00] in BaseHarness.
+avr. 27, 2016 6:13:23 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+avr. 27, 2016 6:13:23 PM entity.BaseHarness getHarnessByCounter
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter

@@ -1,0 +1,963 @@
+févr. 06, 2016 6:21:22 AM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_06_02] is created!
+Print sub directory [.\print\2016_06_02.\pallet] is created!
+Print sub directory [.\print\2016_06_02.\galia] is created!
+
+févr. 06, 2016 6:21:31 AM state.S01_UserCodeScan doAction
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 06, 2016 6:21:31 AM state.S01_UserCodeScan doAction
+INFOS: User Yassine HADDANI / 1002 connected to host user-PC at 2016-06-02 06:21:22.
+févr. 06, 2016 6:21:31 AM entity.BaseContainer select
+INFOS: FROM BaseContainer bc
+févr. 06, 2016 6:21:48 AM state.S02_HarnessPartScan doAction
+INFOS: Invalid Harness Part scanned ! []
+févr. 06, 2016 6:21:50 AM state.S02_HarnessPartScan doAction
+INFOS: Invalid Harness Part scanned ! []
+févr. 06, 2016 6:22:50 AM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_06_02] already exist!
+Print sub directory [.\print\2016_06_02.\pallet] already exist!
+Print sub directory [.\print\2016_06_02.\galia] already exist!
+
+févr. 06, 2016 6:23:21 AM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_06_02] already exist!
+Print sub directory [.\print\2016_06_02.\pallet] already exist!
+Print sub directory [.\print\2016_06_02.\galia] already exist!
+
+févr. 06, 2016 6:23:27 AM state.S01_UserCodeScan doAction
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 06, 2016 6:23:27 AM state.S01_UserCodeScan doAction
+INFOS: User Oussama EZZIOURI / 1001 connected to host user-PC at 2016-06-02 06:23:21.
+févr. 06, 2016 6:23:27 AM entity.BaseContainer select
+INFOS: FROM BaseContainer bc
+févr. 06, 2016 6:24:19 AM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_06_02] already exist!
+Print sub directory [.\print\2016_06_02.\pallet] already exist!
+Print sub directory [.\print\2016_06_02.\galia] already exist!
+
+févr. 06, 2016 6:24:42 AM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_06_02] already exist!
+Print sub directory [.\print\2016_06_02.\pallet] already exist!
+Print sub directory [.\print\2016_06_02.\galia] already exist!
+
+févr. 06, 2016 6:26:12 AM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_06_02] already exist!
+Print sub directory [.\print\2016_06_02.\pallet] already exist!
+Print sub directory [.\print\2016_06_02.\galia] already exist!
+
+févr. 06, 2016 6:27:10 AM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_06_02] already exist!
+Print sub directory [.\print\2016_06_02.\pallet] already exist!
+Print sub directory [.\print\2016_06_02.\galia] already exist!
+
+févr. 06, 2016 6:27:47 AM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_06_02] already exist!
+Print sub directory [.\print\2016_06_02.\pallet] already exist!
+Print sub directory [.\print\2016_06_02.\galia] already exist!
+
+févr. 06, 2016 6:29:21 AM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_06_02] already exist!
+Print sub directory [.\print\2016_06_02.\pallet] already exist!
+Print sub directory [.\print\2016_06_02.\galia] already exist!
+
+févr. 06, 2016 6:33:01 AM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_06_02] already exist!
+Print sub directory [.\print\2016_06_02.\pallet] already exist!
+Print sub directory [.\print\2016_06_02.\galia] already exist!
+
+févr. 06, 2016 6:33:22 AM state.S01_UserCodeScan doAction
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 06, 2016 6:33:22 AM state.S01_UserCodeScan doAction
+INFOS: User Yassine HADDANI / 1002 connected to host user-PC at 2016-06-02 06:33:01.
+févr. 06, 2016 6:33:22 AM entity.BaseContainer select
+INFOS: FROM BaseContainer bc
+févr. 06, 2016 6:33:54 AM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_06_02] already exist!
+Print sub directory [.\print\2016_06_02.\pallet] already exist!
+Print sub directory [.\print\2016_06_02.\galia] already exist!
+
+févr. 06, 2016 6:34:05 AM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_06_02] already exist!
+Print sub directory [.\print\2016_06_02.\pallet] already exist!
+Print sub directory [.\print\2016_06_02.\galia] already exist!
+
+févr. 06, 2016 6:34:40 AM state.S01_UserCodeScan doAction
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 06, 2016 6:34:40 AM state.S01_UserCodeScan doAction
+INFOS: User Yassine HADDANI / 1002 connected to host user-PC at 2016-06-02 06:34:05.
+févr. 06, 2016 6:34:41 AM entity.BaseContainer select
+INFOS: FROM BaseContainer bc
+févr. 06, 2016 6:36:26 AM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_06_02] already exist!
+Print sub directory [.\print\2016_06_02.\pallet] already exist!
+Print sub directory [.\print\2016_06_02.\galia] already exist!
+
+févr. 06, 2016 6:39:21 AM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_06_02] already exist!
+Print sub directory [.\print\2016_06_02.\pallet] already exist!
+Print sub directory [.\print\2016_06_02.\galia] already exist!
+
+févr. 06, 2016 6:39:45 AM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_06_02] already exist!
+Print sub directory [.\print\2016_06_02.\pallet] already exist!
+Print sub directory [.\print\2016_06_02.\galia] already exist!
+
+févr. 06, 2016 6:41:22 AM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_06_02] already exist!
+Print sub directory [.\print\2016_06_02.\pallet] already exist!
+Print sub directory [.\print\2016_06_02.\galia] already exist!
+
+févr. 06, 2016 6:41:40 AM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_06_02] already exist!
+Print sub directory [.\print\2016_06_02.\pallet] already exist!
+Print sub directory [.\print\2016_06_02.\galia] already exist!
+
+févr. 06, 2016 6:42:11 AM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_06_02] already exist!
+Print sub directory [.\print\2016_06_02.\pallet] already exist!
+Print sub directory [.\print\2016_06_02.\galia] already exist!
+
+févr. 06, 2016 6:42:22 AM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_06_02] already exist!
+Print sub directory [.\print\2016_06_02.\pallet] already exist!
+Print sub directory [.\print\2016_06_02.\galia] already exist!
+
+févr. 06, 2016 6:42:28 AM state.S01_UserCodeScan doAction
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 06, 2016 6:42:28 AM state.S01_UserCodeScan doAction
+INFOS: User Oussama EZZIOURI / 1001 connected to host user-PC at 2016-06-02 06:42:22.
+févr. 06, 2016 6:42:28 AM entity.BaseContainer select
+INFOS: FROM BaseContainer bc
+févr. 06, 2016 6:43:03 AM state.S02_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22205127] OK.
+févr. 06, 2016 7:03:47 AM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_06_02] already exist!
+Print sub directory [.\print\2016_06_02.\pallet] already exist!
+Print sub directory [.\print\2016_06_02.\galia] already exist!
+
+févr. 06, 2016 7:04:03 AM state.S01_UserCodeScan doAction
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 06, 2016 7:04:03 AM state.S01_UserCodeScan doAction
+INFOS: User Yassine HADDANI / 1002 connected to host user-PC at 2016-06-02 07:03:47.
+févr. 06, 2016 7:04:03 AM entity.BaseContainer select
+INFOS: FROM BaseContainer bc
+févr. 06, 2016 7:04:56 AM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_06_02] already exist!
+Print sub directory [.\print\2016_06_02.\pallet] already exist!
+Print sub directory [.\print\2016_06_02.\galia] already exist!
+
+févr. 06, 2016 7:05:52 AM state.S01_UserCodeScan doAction
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 06, 2016 7:05:52 AM state.S01_UserCodeScan doAction
+INFOS: User Oussama EZZIOURI / 1001 connected to host user-PC at 2016-06-02 07:04:56.
+févr. 06, 2016 7:05:52 AM entity.BaseContainer select
+INFOS: FROM BaseContainer bc
+févr. 06, 2016 7:06:00 AM state.S02_HarnessPartScan doAction
+INFOS: Invalid Harness Part scanned ! [22205127]
+févr. 06, 2016 7:46:46 AM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_06_02] already exist!
+Print sub directory [.\print\2016_06_02.\pallet] already exist!
+Print sub directory [.\print\2016_06_02.\galia] already exist!
+
+févr. 06, 2016 7:46:49 AM state.S01_UserCodeScan doAction
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 06, 2016 7:46:49 AM state.S01_UserCodeScan doAction
+INFOS: User Oussama EZZIOURI / 1001 connected to host user-PC at 2016-06-02 07:46:46.
+févr. 06, 2016 7:46:49 AM entity.BaseContainer select
+INFOS: FROM BaseContainer bc
+févr. 06, 2016 7:48:32 AM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_06_02] already exist!
+Print sub directory [.\print\2016_06_02.\pallet] already exist!
+Print sub directory [.\print\2016_06_02.\galia] already exist!
+
+févr. 06, 2016 7:48:35 AM state.S01_UserCodeScan doAction
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 06, 2016 7:48:35 AM state.S01_UserCodeScan doAction
+INFOS: User Yassine HADDANI / 1002 connected to host user-PC at 2016-06-02 07:48:32.
+févr. 06, 2016 7:48:35 AM entity.BaseContainer select
+INFOS: FROM BaseContainer bc
+févr. 06, 2016 7:48:39 AM entity.ConfigUcs select
+INFOS: FROM ConfigUcs cu WHERE cu.harnessPart = :hp
+févr. 06, 2016 7:48:39 AM state.S02_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22205127] OK.
+févr. 06, 2016 7:59:36 AM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_06_02] already exist!
+Print sub directory [.\print\2016_06_02.\pallet] already exist!
+Print sub directory [.\print\2016_06_02.\galia] already exist!
+
+févr. 06, 2016 7:59:39 AM state.S01_UserCodeScan doAction
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 06, 2016 7:59:39 AM state.S01_UserCodeScan doAction
+INFOS: User Yassine HADDANI / 1002 connected to host user-PC at 2016-06-02 07:59:36.
+févr. 06, 2016 7:59:40 AM entity.BaseContainer select
+INFOS: FROM BaseContainer bc
+févr. 06, 2016 8:00:20 AM entity.ConfigUcs select
+INFOS: FROM ConfigUcs cu WHERE cu.harnessPart = :hp
+févr. 06, 2016 8:00:20 AM state.S02_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22205127] OK.
+févr. 06, 2016 8:00:30 AM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_06_02] already exist!
+Print sub directory [.\print\2016_06_02.\pallet] already exist!
+Print sub directory [.\print\2016_06_02.\galia] already exist!
+
+févr. 06, 2016 8:00:33 AM state.S01_UserCodeScan doAction
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 06, 2016 8:00:33 AM state.S01_UserCodeScan doAction
+INFOS: User Yassine HADDANI / 1002 connected to host user-PC at 2016-06-02 08:00:30.
+févr. 06, 2016 8:00:33 AM entity.BaseContainer select
+INFOS: FROM BaseContainer bc
+févr. 06, 2016 8:00:39 AM entity.ConfigUcs select
+INFOS: FROM ConfigUcs cu WHERE cu.harnessPart = :hp
+févr. 06, 2016 8:00:39 AM state.S02_HarnessPartScan doAction
+INFOS: Harness Part scanned [P55555555] OK.
+févr. 06, 2016 8:14:21 AM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_06_02] already exist!
+Print sub directory [.\print\2016_06_02.\pallet] already exist!
+Print sub directory [.\print\2016_06_02.\galia] already exist!
+
+févr. 06, 2016 8:14:25 AM state.S01_UserCodeScan doAction
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 06, 2016 8:14:25 AM state.S01_UserCodeScan doAction
+INFOS: User Oussama EZZIOURI / 1001 connected to host user-PC at 2016-06-02 08:14:21.
+févr. 06, 2016 8:14:25 AM entity.BaseContainer select
+INFOS: FROM BaseContainer bc
+févr. 06, 2016 8:14:34 AM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [12345678] in ConfigUCS: 12345678
+févr. 06, 2016 8:14:34 AM entity.ConfigUcs select
+INFOS: FROM ConfigUcs cu WHERE cu.harnessPart = :hp
+févr. 06, 2016 8:14:34 AM state.S02_HarnessPartScan doAction
+INFOS: Harness Part scanned [P12345678] OK.
+févr. 06, 2016 8:15:59 AM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_06_02] already exist!
+Print sub directory [.\print\2016_06_02.\pallet] already exist!
+Print sub directory [.\print\2016_06_02.\galia] already exist!
+
+févr. 06, 2016 8:16:02 AM state.S01_UserCodeScan doAction
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 06, 2016 8:16:02 AM state.S01_UserCodeScan doAction
+INFOS: User Oussama EZZIOURI / 1001 connected to host user-PC at 2016-06-02 08:15:59.
+févr. 06, 2016 8:16:02 AM entity.BaseContainer select
+INFOS: FROM BaseContainer bc
+févr. 06, 2016 8:16:07 AM state.S02_HarnessPartScan doAction
+INFOS: Invalid Harness Part scanned ! [P1213]
+févr. 06, 2016 8:16:10 AM state.S02_HarnessPartScan doAction
+INFOS: Invalid Harness Part scanned ! [P123456]
+févr. 06, 2016 8:16:13 AM state.S02_HarnessPartScan doAction
+INFOS: Invalid Harness Part scanned ! [P1234567]
+févr. 06, 2016 8:16:16 AM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [12345678] in ConfigUCS: 12345678
+févr. 06, 2016 8:16:16 AM entity.ConfigUcs select
+INFOS: FROM ConfigUcs cu WHERE cu.harnessPart = :hp
+févr. 06, 2016 8:16:16 AM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part 12345678 NOT found.
+févr. 06, 2016 8:16:21 AM state.S02_HarnessPartScan doAction
+INFOS: Invalid Harness Part scanned ! [P12345678]
+févr. 06, 2016 8:16:41 AM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_06_02] already exist!
+Print sub directory [.\print\2016_06_02.\pallet] already exist!
+Print sub directory [.\print\2016_06_02.\galia] already exist!
+
+févr. 06, 2016 8:16:43 AM state.S01_UserCodeScan doAction
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 06, 2016 8:16:43 AM state.S01_UserCodeScan doAction
+INFOS: User Oussama EZZIOURI / 1001 connected to host user-PC at 2016-06-02 08:16:41.
+févr. 06, 2016 8:16:43 AM entity.BaseContainer select
+INFOS: FROM BaseContainer bc
+févr. 06, 2016 8:16:49 AM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [12345678] in ConfigUCS: 12345678
+févr. 06, 2016 8:16:49 AM entity.ConfigUcs select
+INFOS: FROM ConfigUcs cu WHERE cu.harnessPart = :hp
+févr. 06, 2016 8:16:49 AM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [12345678] NOT found.
+févr. 06, 2016 8:16:52 AM state.S02_HarnessPartScan doAction
+INFOS: Invalid Harness Part scanned ! [P12345678]
+févr. 06, 2016 8:27:55 AM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_06_02] already exist!
+Print sub directory [.\print\2016_06_02.\pallet] already exist!
+Print sub directory [.\print\2016_06_02.\galia] already exist!
+
+févr. 06, 2016 8:27:59 AM state.S01_UserCodeScan doAction
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 06, 2016 8:27:59 AM state.S01_UserCodeScan doAction
+INFOS: User Yassine HADDANI / 1002 connected to host user-PC at 2016-06-02 08:27:55.
+févr. 06, 2016 8:27:59 AM entity.BaseContainer select
+INFOS: FROM BaseContainer bc
+févr. 06, 2016 8:28:03 AM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [12345678] in ConfigUCS: 12345678
+févr. 06, 2016 8:28:03 AM entity.ConfigUcs select
+INFOS: FROM ConfigUcs cu WHERE cu.harnessPart = :hp
+févr. 06, 2016 8:28:09 AM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [12345678] found.
+févr. 06, 2016 8:28:11 AM state.S02_HarnessPartScan doAction
+INFOS: Invalid Harness Part scanned ! [P12345678]
+févr. 06, 2016 8:28:20 AM state.S02_HarnessPartScan doAction
+INFOS: Invalid Harness Part scanned ! [P2205127]
+févr. 06, 2016 8:28:25 AM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22205127] in ConfigUCS: 22205127
+févr. 06, 2016 8:28:25 AM entity.ConfigUcs select
+INFOS: FROM ConfigUcs cu WHERE cu.harnessPart = :hp
+févr. 06, 2016 8:28:25 AM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22205127] found.
+févr. 06, 2016 8:28:25 AM state.S02_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22205127] OK.
+févr. 06, 2016 8:31:53 AM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_06_02] already exist!
+Print sub directory [.\print\2016_06_02.\pallet] already exist!
+Print sub directory [.\print\2016_06_02.\galia] already exist!
+
+févr. 06, 2016 8:32:01 AM state.S01_UserCodeScan doAction
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 06, 2016 8:32:01 AM state.S01_UserCodeScan doAction
+INFOS: User Oussama EZZIOURI / 1001 connected to host user-PC at 2016-06-02 08:31:53.
+févr. 06, 2016 8:32:01 AM entity.BaseContainer select
+INFOS: FROM BaseContainer bc
+févr. 06, 2016 8:32:14 AM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [12345678] in ConfigUCS: 12345678
+févr. 06, 2016 8:32:14 AM entity.ConfigUcs select
+INFOS: FROM ConfigUcs cu WHERE cu.harnessPart = :hp
+févr. 06, 2016 8:32:16 AM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [12345678] NOT found.
+févr. 06, 2016 8:32:18 AM state.S02_HarnessPartScan doAction
+INFOS: Invalid Harness Part scanned ! [P12345678]
+févr. 06, 2016 8:32:48 AM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22205127] in ConfigUCS: 22205127
+févr. 06, 2016 8:32:48 AM entity.ConfigUcs select
+INFOS: FROM ConfigUcs cu WHERE cu.harnessPart = :hp
+févr. 06, 2016 8:32:48 AM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22205127] found.
+févr. 06, 2016 8:32:48 AM state.S02_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22205127] OK.
+févr. 06, 2016 8:42:37 AM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_06_02] already exist!
+Print sub directory [.\print\2016_06_02.\pallet] already exist!
+Print sub directory [.\print\2016_06_02.\galia] already exist!
+
+févr. 06, 2016 8:42:41 AM state.S01_UserCodeScan doAction
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 06, 2016 8:42:41 AM state.S01_UserCodeScan doAction
+INFOS: User Yassine HADDANI / 1002 connected to host user-PC at 2016-06-02 08:42:37.
+févr. 06, 2016 8:42:41 AM entity.BaseContainer select
+INFOS: FROM BaseContainer bc
+févr. 06, 2016 8:42:47 AM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [12345678] in ConfigUCS: 12345678
+févr. 06, 2016 8:42:47 AM entity.ConfigUcs select
+INFOS: FROM ConfigUcs cu WHERE cu.harnessPart = :hp
+févr. 06, 2016 8:42:49 AM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [12345678] NOT found.
+févr. 06, 2016 8:42:50 AM state.S02_HarnessPartScan doAction
+INFOS: Invalid Harness Part scanned ! [P12345678]
+févr. 06, 2016 8:43:01 AM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22205127] in ConfigUCS: 22205127
+févr. 06, 2016 8:43:01 AM entity.ConfigUcs select
+INFOS: FROM ConfigUcs cu WHERE cu.harnessPart = :hp
+févr. 06, 2016 8:43:01 AM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22205127] found.
+févr. 06, 2016 8:43:01 AM state.S02_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22205127] OK.
+févr. 06, 2016 2:34:45 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_06_02] already exist!
+Print sub directory [.\print\2016_06_02.\pallet] already exist!
+Print sub directory [.\print\2016_06_02.\galia] already exist!
+
+févr. 06, 2016 2:35:51 PM state.S01_UserCodeScan doAction
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 06, 2016 2:35:51 PM state.S01_UserCodeScan doAction
+INFOS: User Yassine HADDANI / 1002 connected to host WSMA7165 at 2016-06-02 14:34:45.
+févr. 06, 2016 2:35:51 PM entity.BaseContainer select
+INFOS: FROM BaseContainer bc
+févr. 06, 2016 2:36:58 PM entity.BaseHarness checkHarnessPartFormat
+INFOS: Invalid Harness Part scanned !
+févr. 06, 2016 2:37:00 PM state.S02_HarnessPartScan doAction
+INFOS: Invalid Harness Part scanned ! [P]
+févr. 06, 2016 2:37:04 PM entity.BaseHarness checkHarnessPartFormat
+INFOS: Invalid Harness Part scanned !
+févr. 06, 2016 2:37:05 PM state.S02_HarnessPartScan doAction
+INFOS: Invalid Harness Part scanned ! [P]
+févr. 06, 2016 2:38:08 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_06_02] already exist!
+Print sub directory [.\print\2016_06_02.\pallet] already exist!
+Print sub directory [.\print\2016_06_02.\galia] already exist!
+
+févr. 06, 2016 2:38:30 PM state.S01_UserCodeScan doAction
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 06, 2016 2:38:30 PM state.S01_UserCodeScan doAction
+INFOS: User Yassine HADDANI / 1002 connected to host WSMA7165 at 2016-06-02 14:38:08.
+févr. 06, 2016 2:38:30 PM entity.BaseContainer select
+INFOS: FROM BaseContainer bc
+févr. 06, 2016 2:39:28 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_06_02] already exist!
+Print sub directory [.\print\2016_06_02.\pallet] already exist!
+Print sub directory [.\print\2016_06_02.\galia] already exist!
+
+févr. 06, 2016 2:40:07 PM state.S01_UserCodeScan doAction
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 06, 2016 2:40:07 PM state.S01_UserCodeScan doAction
+INFOS: User Yassine HADDANI / 1002 connected to host WSMA7165 at 2016-06-02 14:39:27.
+févr. 06, 2016 2:40:07 PM entity.BaseContainer select
+INFOS: FROM BaseContainer bc
+févr. 06, 2016 2:40:20 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22205127] in ConfigUCS: 22205127
+févr. 06, 2016 2:40:20 PM entity.ConfigUcs select
+INFOS: FROM ConfigUcs cu WHERE cu.harnessPart = :hp
+févr. 06, 2016 2:40:23 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22205127] NOT found.
+févr. 06, 2016 2:40:23 PM state.S02_HarnessPartScan doAction
+INFOS: Invalid Harness Part scanned ! [P22205127]
+févr. 06, 2016 2:40:33 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22205127] in ConfigUCS: 22205127
+févr. 06, 2016 2:40:33 PM entity.ConfigUcs select
+INFOS: FROM ConfigUcs cu WHERE cu.harnessPart = :hp
+févr. 06, 2016 2:40:34 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22205127] NOT found.
+févr. 06, 2016 2:40:34 PM state.S02_HarnessPartScan doAction
+INFOS: Invalid Harness Part scanned ! [P22205127]
+févr. 06, 2016 2:41:42 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_06_02] already exist!
+Print sub directory [.\print\2016_06_02.\pallet] already exist!
+Print sub directory [.\print\2016_06_02.\galia] already exist!
+
+févr. 06, 2016 2:41:46 PM state.S01_UserCodeScan doAction
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 06, 2016 2:41:46 PM state.S01_UserCodeScan doAction
+INFOS: User Yassine HADDANI / 1002 connected to host WSMA7165 at 2016-06-02 14:41:42.
+févr. 06, 2016 2:41:46 PM entity.BaseContainer select
+INFOS: FROM BaseContainer bc
+févr. 06, 2016 2:41:54 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22205127] in ConfigUCS: 22205127
+févr. 06, 2016 2:41:54 PM entity.ConfigUcs select
+INFOS: FROM ConfigUcs cu WHERE cu.harnessPart = :hp
+févr. 06, 2016 2:41:54 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22205127] found.
+févr. 06, 2016 2:41:54 PM state.S02_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22205127] OK.
+févr. 06, 2016 3:06:42 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_06_02] already exist!
+Print sub directory [.\print\2016_06_02.\pallet] already exist!
+Print sub directory [.\print\2016_06_02.\galia] already exist!
+
+févr. 06, 2016 3:06:48 PM state.S01_UserCodeScan doAction
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 06, 2016 3:06:48 PM state.S01_UserCodeScan doAction
+INFOS: User Yassine HADDANI / 1002 connected to host WSMA7165 at 2016-06-02 15:06:42.
+févr. 06, 2016 3:06:48 PM entity.BaseContainer select
+INFOS: FROM BaseContainer bc
+févr. 06, 2016 3:07:11 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22205128] in ConfigUCS: 22205128
+févr. 06, 2016 3:07:11 PM entity.ConfigUcs select
+INFOS: FROM ConfigUcs cu WHERE cu.harnessPart = :hp
+févr. 06, 2016 3:07:17 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22205128] NOT found.
+févr. 06, 2016 3:07:17 PM state.S02_HarnessPartScan doAction
+INFOS: Invalid Harness Part scanned ! [P22205128]
+févr. 06, 2016 3:07:24 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22205127] in ConfigUCS: 22205127
+févr. 06, 2016 3:07:24 PM entity.ConfigUcs select
+INFOS: FROM ConfigUcs cu WHERE cu.harnessPart = :hp
+févr. 06, 2016 3:07:24 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22205127] found.
+févr. 06, 2016 3:07:24 PM state.S02_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22205127] OK.
+févr. 06, 2016 3:39:12 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_06_02] already exist!
+Print sub directory [.\print\2016_06_02.\pallet] already exist!
+Print sub directory [.\print\2016_06_02.\galia] already exist!
+
+févr. 06, 2016 3:39:24 PM state.S01_UserCodeScan doAction
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 06, 2016 3:39:24 PM state.S01_UserCodeScan doAction
+INFOS: User Yassine HADDANI / 1002 connected to host WSMA7165 at 2016-06-02 15:39:12.
+févr. 06, 2016 3:39:24 PM entity.BaseContainer select
+INFOS: FROM BaseContainer bc
+févr. 06, 2016 3:39:30 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22205127] in ConfigUCS: 22205127
+févr. 06, 2016 3:39:30 PM entity.ConfigUcs select
+INFOS: FROM ConfigUcs cu WHERE cu.harnessPart = :hp
+févr. 06, 2016 3:39:30 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22205127] found.
+févr. 06, 2016 3:39:30 PM state.S02_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22205127] OK.
+févr. 06, 2016 3:43:15 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_06_02] already exist!
+Print sub directory [.\print\2016_06_02.\pallet] already exist!
+Print sub directory [.\print\2016_06_02.\galia] already exist!
+
+févr. 06, 2016 3:43:17 PM state.S01_UserCodeScan doAction
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 06, 2016 3:43:17 PM state.S01_UserCodeScan doAction
+INFOS: User Yassine HADDANI / 1002 connected to host WSMA7165 at 2016-06-02 15:43:15.
+févr. 06, 2016 3:43:17 PM entity.BaseContainer select
+INFOS: FROM BaseContainer bc
+févr. 06, 2016 3:43:22 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22205127] in ConfigUCS: 22205127
+févr. 06, 2016 3:43:22 PM entity.ConfigUcs select
+INFOS: FROM ConfigUcs cu WHERE cu.harnessPart = :hp
+févr. 06, 2016 3:43:22 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22205127] found.
+févr. 06, 2016 3:43:22 PM state.S02_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22205127] OK.
+févr. 06, 2016 3:45:46 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_06_02] already exist!
+Print sub directory [.\print\2016_06_02.\pallet] already exist!
+Print sub directory [.\print\2016_06_02.\galia] already exist!
+
+févr. 06, 2016 3:47:20 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_06_02] already exist!
+Print sub directory [.\print\2016_06_02.\pallet] already exist!
+Print sub directory [.\print\2016_06_02.\galia] already exist!
+
+févr. 06, 2016 4:13:19 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_06_02] already exist!
+Print sub directory [.\print\2016_06_02.\pallet] already exist!
+Print sub directory [.\print\2016_06_02.\galia] already exist!
+
+févr. 06, 2016 4:20:36 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_06_02] already exist!
+Print sub directory [.\print\2016_06_02.\pallet] already exist!
+Print sub directory [.\print\2016_06_02.\galia] already exist!
+
+févr. 06, 2016 4:20:46 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_06_02] already exist!
+Print sub directory [.\print\2016_06_02.\pallet] already exist!
+Print sub directory [.\print\2016_06_02.\galia] already exist!
+
+févr. 06, 2016 4:20:53 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_06_02] already exist!
+Print sub directory [.\print\2016_06_02.\pallet] already exist!
+Print sub directory [.\print\2016_06_02.\galia] already exist!
+
+févr. 06, 2016 4:21:51 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_06_02] already exist!
+Print sub directory [.\print\2016_06_02.\pallet] already exist!
+Print sub directory [.\print\2016_06_02.\galia] already exist!
+
+févr. 06, 2016 4:23:02 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_06_02] already exist!
+Print sub directory [.\print\2016_06_02.\pallet] already exist!
+Print sub directory [.\print\2016_06_02.\galia] already exist!
+
+févr. 06, 2016 4:23:06 PM state.S01_UserCodeScan doAction
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 06, 2016 4:23:06 PM state.S01_UserCodeScan doAction
+INFOS: User Yassine HADDANI / 1002 connected to host WSMA7165 at 2016-06-02 16:23:02.
+févr. 06, 2016 4:23:06 PM entity.BaseContainer select
+INFOS: FROM BaseContainer bc
+févr. 06, 2016 4:23:13 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22205127] in ConfigUCS: 22205127
+févr. 06, 2016 4:23:13 PM entity.ConfigUcs select
+INFOS: FROM ConfigUcs cu WHERE cu.harnessPart = :hp
+févr. 06, 2016 4:23:13 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22205127] found.
+févr. 06, 2016 4:23:13 PM state.S02_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22205127] OK.
+févr. 06, 2016 4:23:33 PM entity.BaseHarness checkCounterFormat
+INFOS: Invalid Harness Part scanned [J2220512705.02.2016;11:44:57]!
+févr. 06, 2016 4:23:47 PM entity.BaseHarness checkCounterFormat
+INFOS: Invalid Harness Part scanned [P2220512705:02:2016;11:44:57]!
+févr. 06, 2016 4:24:38 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_06_02] already exist!
+Print sub directory [.\print\2016_06_02.\pallet] already exist!
+Print sub directory [.\print\2016_06_02.\galia] already exist!
+
+févr. 06, 2016 4:24:41 PM state.S01_UserCodeScan doAction
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 06, 2016 4:24:41 PM state.S01_UserCodeScan doAction
+INFOS: User Yassine HADDANI / 1002 connected to host WSMA7165 at 2016-06-02 16:24:38.
+févr. 06, 2016 4:24:41 PM entity.BaseContainer select
+INFOS: FROM BaseContainer bc
+févr. 06, 2016 4:24:45 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22205127] in ConfigUCS: 22205127
+févr. 06, 2016 4:24:45 PM entity.ConfigUcs select
+INFOS: FROM ConfigUcs cu WHERE cu.harnessPart = :hp
+févr. 06, 2016 4:24:45 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22205127] found.
+févr. 06, 2016 4:24:45 PM state.S02_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22205127] OK.
+févr. 06, 2016 4:24:49 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [2220512705.02.2016;11:44:57] in ConfigUCS: 2220512705.02.2016;11:44:57
+févr. 06, 2016 4:24:49 PM entity.BaseHarness select
+INFOS: FROM BaseHarness bh WHERE bh.harnessPart = :hp
+févr. 06, 2016 4:24:49 PM entity.BaseHarness isCounterExist
+INFOS: New Harness counter [2220512705.02.2016;11:44:57].
+févr. 06, 2016 4:24:49 PM state.S03_QRCodeScan doAction
+INFOS: Valid Harness Counter scanned [P2220512705.02.2016;11:44:57] OK.
+févr. 06, 2016 4:37:54 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_06_02] already exist!
+Print sub directory [.\print\2016_06_02.\pallet] already exist!
+Print sub directory [.\print\2016_06_02.\galia] already exist!
+
+févr. 06, 2016 4:38:01 PM state.S01_UserCodeScan doAction
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 06, 2016 4:38:01 PM state.S01_UserCodeScan doAction
+INFOS: User CV Technical Administrator null / wwroot connected to host WSMA7165 at 2016-06-02 16:37:54.
+févr. 06, 2016 4:38:01 PM entity.BaseContainer select
+INFOS: FROM BaseContainer bc
+févr. 06, 2016 4:38:08 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22205127] in ConfigUCS: 22205127
+févr. 06, 2016 4:38:08 PM entity.ConfigUcs select
+INFOS: FROM ConfigUcs cu WHERE cu.harnessPart = :hp
+févr. 06, 2016 4:38:08 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22205127] found.
+févr. 06, 2016 4:38:08 PM state.S02_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22205127] OK.
+févr. 06, 2016 4:38:15 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [2220512705.02.2016;11:44:57] in BaseHarness: 2220512705.02.2016;11:44:57
+févr. 06, 2016 4:38:15 PM entity.BaseHarness select
+INFOS: FROM BaseHarness bh WHERE bh.harnessPart = :hp
+févr. 06, 2016 4:38:15 PM entity.BaseHarness isCounterExist
+INFOS: New Harness counter [2220512705.02.2016;11:44:57].
+févr. 06, 2016 4:38:15 PM state.S03_QRCodeScan doAction
+INFOS: Valid Harness Counter scanned [P2220512705.02.2016;11:44:57] OK.
+févr. 06, 2016 4:48:44 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_06_02] already exist!
+Print sub directory [.\print\2016_06_02.\pallet] already exist!
+Print sub directory [.\print\2016_06_02.\galia] already exist!
+
+févr. 06, 2016 4:48:48 PM state.S01_UserCodeScan doAction
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 06, 2016 4:48:48 PM state.S01_UserCodeScan doAction
+INFOS: User Yassine HADDANI / 1002 connected to host WSMA7165 at 2016-06-02 16:48:43.
+févr. 06, 2016 4:48:48 PM entity.BaseContainer select
+INFOS: FROM BaseContainer bc
+févr. 06, 2016 4:48:53 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22205127] in ConfigUCS: 22205127
+févr. 06, 2016 4:48:53 PM entity.ConfigUcs select
+INFOS: FROM ConfigUcs cu WHERE cu.harnessPart = :hp
+févr. 06, 2016 4:48:53 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22205127] found.
+févr. 06, 2016 4:48:53 PM state.S02_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22205127] OK.
+févr. 06, 2016 4:48:55 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2220512705.02.2016;11:44:57] in BaseHarness.
+févr. 06, 2016 4:48:55 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+févr. 06, 2016 4:50:12 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_06_02] already exist!
+Print sub directory [.\print\2016_06_02.\pallet] already exist!
+Print sub directory [.\print\2016_06_02.\galia] already exist!
+
+févr. 06, 2016 4:50:14 PM state.S01_UserCodeScan doAction
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 06, 2016 4:50:14 PM state.S01_UserCodeScan doAction
+INFOS: User Yassine HADDANI / 1002 connected to host WSMA7165 at 2016-06-02 16:50:12.
+févr. 06, 2016 4:50:14 PM entity.BaseContainer select
+INFOS: FROM BaseContainer bc
+févr. 06, 2016 4:50:19 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22205127] in ConfigUCS: 22205127
+févr. 06, 2016 4:50:19 PM entity.ConfigUcs select
+INFOS: FROM ConfigUcs cu WHERE cu.harnessPart = :hp
+févr. 06, 2016 4:50:19 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22205127] found.
+févr. 06, 2016 4:50:19 PM state.S02_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22205127] OK.
+févr. 06, 2016 4:50:25 PM entity.BaseHarness checkCounterFormat
+INFOS: Invalid Harness Part scanned [query.list()]!
+févr. 06, 2016 4:50:42 PM entity.BaseHarness checkCounterFormat
+INFOS: Invalid Harness Part scanned [J2220512705.02.2016;11:44:57]!
+févr. 06, 2016 4:50:54 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2220512705.02.2016;11:44:57] in BaseHarness.
+févr. 06, 2016 4:50:54 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+févr. 06, 2016 4:51:03 PM entity.BaseHarness isCounterExist
+AVERTISSEMENT: Harness counter [P2220512705.02.2016;11:44:57] already scanned !
+févr. 06, 2016 4:51:05 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2220512705.02.2016;11:44:57] in BaseHarness.
+févr. 06, 2016 4:51:05 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+févr. 06, 2016 4:51:06 PM entity.BaseHarness isCounterExist
+AVERTISSEMENT: Harness counter [P2220512705.02.2016;11:44:57] already scanned !
+févr. 06, 2016 4:51:16 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2220512705.02.2016;11:44:58] in BaseHarness.
+févr. 06, 2016 4:51:16 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+févr. 06, 2016 4:51:16 PM entity.BaseHarness isCounterExist
+INFOS: New Harness counter [P2220512705.02.2016;11:44:58].
+févr. 06, 2016 4:51:16 PM state.S03_QRCodeScan doAction
+INFOS: Valid Harness Counter scanned [P2220512705.02.2016;11:44:58] OK.
+févr. 06, 2016 4:52:58 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_06_02] already exist!
+Print sub directory [.\print\2016_06_02.\pallet] already exist!
+Print sub directory [.\print\2016_06_02.\galia] already exist!
+
+févr. 06, 2016 4:53:02 PM state.S01_UserCodeScan doAction
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 06, 2016 4:53:02 PM state.S01_UserCodeScan doAction
+INFOS: User CV Administrator null / wwadmin connected to host WSMA7165 at 2016-06-02 16:52:58.
+févr. 06, 2016 4:53:02 PM entity.BaseContainer select
+INFOS: FROM BaseContainer bc
+févr. 06, 2016 4:53:07 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22205127] in ConfigUCS: 22205127
+févr. 06, 2016 4:53:07 PM entity.ConfigUcs select
+INFOS: FROM ConfigUcs cu WHERE cu.harnessPart = :hp
+févr. 06, 2016 4:53:07 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22205127] found.
+févr. 06, 2016 4:53:07 PM state.S02_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22205127] OK.
+févr. 06, 2016 4:53:11 PM entity.BaseHarness checkCounterFormat
+INFOS: Invalid Harness Part scanned [S040_PaletChoice]!
+févr. 06, 2016 4:53:19 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2220512705.02.2016;11:44:58] in BaseHarness.
+févr. 06, 2016 4:53:19 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+févr. 06, 2016 4:53:19 PM entity.BaseHarness isCounterExist
+INFOS: New Harness counter [P2220512705.02.2016;11:44:58].
+févr. 06, 2016 4:53:19 PM state.S03_QRCodeScan doAction
+INFOS: Valid Harness Counter scanned [P2220512705.02.2016;11:44:58] OK.
+févr. 06, 2016 4:54:50 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_06_02] already exist!
+Print sub directory [.\print\2016_06_02.\pallet] already exist!
+Print sub directory [.\print\2016_06_02.\galia] already exist!
+
+févr. 06, 2016 4:54:55 PM state.S01_UserCodeScan doAction
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 06, 2016 4:54:55 PM state.S01_UserCodeScan doAction
+INFOS: User Oussama EZZIOURI / 1001 connected to host WSMA7165 at 2016-06-02 16:54:50.
+févr. 06, 2016 4:54:55 PM entity.BaseContainer select
+INFOS: FROM BaseContainer bc
+févr. 06, 2016 4:55:02 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22205127] in ConfigUCS: 22205127
+févr. 06, 2016 4:55:02 PM entity.ConfigUcs select
+INFOS: FROM ConfigUcs cu WHERE cu.harnessPart = :hp
+févr. 06, 2016 4:55:02 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22205127] found.
+févr. 06, 2016 4:55:02 PM state.S02_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22205127] OK.
+févr. 06, 2016 4:55:17 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2220512705.02.2016;11:44:58] in BaseHarness.
+févr. 06, 2016 4:55:17 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+févr. 06, 2016 4:55:17 PM entity.BaseHarness isCounterExist
+INFOS: New Harness counter [P2220512705.02.2016;11:44:58].
+févr. 06, 2016 4:55:17 PM state.S03_QRCodeScan doAction
+INFOS: Valid Harness Counter scanned [P2220512705.02.2016;11:44:58] OK.
+févr. 06, 2016 5:08:11 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_06_02] already exist!
+Print sub directory [.\print\2016_06_02.\pallet] already exist!
+Print sub directory [.\print\2016_06_02.\galia] already exist!
+
+févr. 06, 2016 5:08:13 PM state.S01_UserCodeScan doAction
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 06, 2016 5:08:13 PM state.S01_UserCodeScan doAction
+INFOS: User Yassine HADDANI / 1002 connected to host WSMA7165 at 2016-06-02 17:08:11.
+févr. 06, 2016 5:08:13 PM entity.BaseContainer select
+INFOS: FROM BaseContainer bc
+févr. 06, 2016 5:08:18 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22205127] in ConfigUCS: 22205127
+févr. 06, 2016 5:08:18 PM entity.ConfigUcs select
+INFOS: FROM ConfigUcs cu WHERE cu.harnessPart = :hp
+févr. 06, 2016 5:08:18 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22205127] found.
+févr. 06, 2016 5:08:18 PM state.S02_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22205127] OK.
+févr. 06, 2016 5:08:31 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2220512705.02.2016;11:44:56] in BaseHarness.
+févr. 06, 2016 5:08:31 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+févr. 06, 2016 5:08:31 PM entity.BaseHarness isCounterExist
+INFOS: New Harness counter [P2220512705.02.2016;11:44:56].
+févr. 06, 2016 5:08:31 PM state.S03_QRCodeScan doAction
+INFOS: Valid Harness Counter scanned [P2220512705.02.2016;11:44:56] OK.
+févr. 06, 2016 5:20:29 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_06_02] already exist!
+Print sub directory [.\print\2016_06_02.\pallet] already exist!
+Print sub directory [.\print\2016_06_02.\galia] already exist!
+
+févr. 06, 2016 5:20:31 PM state.S01_UserCodeScan doAction
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 06, 2016 5:20:32 PM state.S01_UserCodeScan doAction
+INFOS: User Yassine HADDANI / 1002 connected to host WSMA7165 at 2016-06-02 17:20:29.
+févr. 06, 2016 5:20:32 PM entity.BaseContainer select
+INFOS: FROM BaseContainer bc
+févr. 06, 2016 5:20:36 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22205127] in ConfigUCS: 22205127
+févr. 06, 2016 5:20:36 PM entity.ConfigUcs select
+INFOS: FROM ConfigUcs cu WHERE cu.harnessPart = :hp
+févr. 06, 2016 5:20:36 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22205127] found.
+févr. 06, 2016 5:20:36 PM state.S02_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22205127] OK.
+févr. 06, 2016 5:20:51 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2220512705.02.2016;11:44:51] in BaseHarness.
+févr. 06, 2016 5:20:51 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+févr. 06, 2016 5:20:51 PM entity.BaseHarness isCounterExist
+INFOS: New Harness counter [P2220512705.02.2016;11:44:51].
+févr. 06, 2016 5:20:51 PM state.S03_QRCodeScan doAction
+INFOS: Valid Harness Counter scanned [P2220512705.02.2016;11:44:51] OK.
+févr. 06, 2016 5:20:56 PM state.S040_PaletChoice doAction
+INFOS: Invalid OPEN PALLET barcode [%s]! [POP]
+févr. 06, 2016 5:21:47 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_06_02] already exist!
+Print sub directory [.\print\2016_06_02.\pallet] already exist!
+Print sub directory [.\print\2016_06_02.\galia] already exist!
+
+févr. 06, 2016 5:21:50 PM state.S01_UserCodeScan doAction
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 06, 2016 5:21:50 PM state.S01_UserCodeScan doAction
+INFOS: User Oussama EZZIOURI / 1001 connected to host WSMA7165 at 2016-06-02 17:21:46.
+févr. 06, 2016 5:21:50 PM entity.BaseContainer select
+INFOS: FROM BaseContainer bc
+févr. 06, 2016 5:21:54 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22205127] in ConfigUCS: 22205127
+févr. 06, 2016 5:21:54 PM entity.ConfigUcs select
+INFOS: FROM ConfigUcs cu WHERE cu.harnessPart = :hp
+févr. 06, 2016 5:21:54 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22205127] found.
+févr. 06, 2016 5:21:54 PM state.S02_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22205127] OK.
+févr. 06, 2016 5:22:07 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2220512705.02.2016;11:44:51] in BaseHarness.
+févr. 06, 2016 5:22:07 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+févr. 06, 2016 5:22:07 PM entity.BaseHarness isCounterExist
+INFOS: New Harness counter [P2220512705.02.2016;11:44:51].
+févr. 06, 2016 5:22:07 PM state.S03_QRCodeScan doAction
+INFOS: Valid Harness Counter scanned [P2220512705.02.2016;11:44:51] OK.
+févr. 06, 2016 5:22:09 PM state.S040_PaletChoice doAction
+INFOS: Invalid OPEN PALLET barcode [POP]!
+févr. 06, 2016 5:22:12 PM state.S040_PaletChoice doAction
+INFOS: Invalid OPEN PALLET barcode [LOL]!
+févr. 06, 2016 5:22:17 PM state.S040_PaletChoice doAction
+INFOS: Invalid OPEN PALLET barcode [NEWP]!
+févr. 06, 2016 5:23:52 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_06_02] already exist!
+Print sub directory [.\print\2016_06_02.\pallet] already exist!
+Print sub directory [.\print\2016_06_02.\galia] already exist!
+
+févr. 06, 2016 5:23:54 PM state.S01_UserCodeScan doAction
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 06, 2016 5:23:55 PM state.S01_UserCodeScan doAction
+INFOS: User Yassine HADDANI / 1002 connected to host WSMA7165 at 2016-06-02 17:23:52.
+févr. 06, 2016 5:23:55 PM entity.BaseContainer select
+INFOS: FROM BaseContainer bc
+févr. 06, 2016 5:23:59 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22205127] in ConfigUCS: 22205127
+févr. 06, 2016 5:23:59 PM entity.ConfigUcs select
+INFOS: FROM ConfigUcs cu WHERE cu.harnessPart = :hp
+févr. 06, 2016 5:23:59 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22205127] found.
+févr. 06, 2016 5:23:59 PM state.S02_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22205127] OK.
+févr. 06, 2016 5:24:07 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2220512705.02.2016;11:44:51] in BaseHarness.
+févr. 06, 2016 5:24:07 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+févr. 06, 2016 5:24:07 PM entity.BaseHarness isCounterExist
+INFOS: New Harness counter [P2220512705.02.2016;11:44:51].
+févr. 06, 2016 5:24:07 PM state.S03_QRCodeScan doAction
+INFOS: Valid Harness Counter scanned [P2220512705.02.2016;11:44:51] OK.
+févr. 06, 2016 5:24:11 PM state.S040_PaletChoice doAction
+INFOS: Invalid OPEN PALLET barcode [NEWO]!
+févr. 06, 2016 5:24:14 PM state.S040_PaletChoice doAction
+INFOS: Openning new container.
+févr. 06, 2016 6:34:28 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_06_02] already exist!
+Print sub directory [.\print\2016_06_02.\pallet] already exist!
+Print sub directory [.\print\2016_06_02.\galia] already exist!
+
+févr. 06, 2016 6:37:43 PM state.S01_UserCodeScan doAction
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 06, 2016 6:37:43 PM state.S01_UserCodeScan doAction
+INFOS: User Oussama EZZIOURI / 1001 connected to host WSMA7165 at 2016-06-02 18:34:28.
+févr. 06, 2016 6:37:43 PM entity.BaseContainer select
+INFOS: FROM BaseContainer bc
+févr. 06, 2016 6:38:47 PM entity.BaseHarness checkHarnessPartFormat
+INFOS: Invalid Harness Part scanned !
+févr. 06, 2016 6:38:47 PM state.S02_HarnessPartScan doAction
+INFOS: Invalid Harness Part scanned ! [P9999999]
+févr. 06, 2016 6:38:58 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [99999999] in ConfigUCS: 99999999
+févr. 06, 2016 6:38:58 PM entity.ConfigUcs select
+INFOS: FROM ConfigUcs cu WHERE cu.harnessPart = :hp
+févr. 06, 2016 6:39:04 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [99999999] NOT found.
+févr. 06, 2016 6:39:04 PM state.S02_HarnessPartScan doAction
+INFOS: Invalid Harness Part scanned ! [P99999999]
+févr. 06, 2016 6:39:11 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22205127] in ConfigUCS: 22205127
+févr. 06, 2016 6:39:11 PM entity.ConfigUcs select
+INFOS: FROM ConfigUcs cu WHERE cu.harnessPart = :hp
+févr. 06, 2016 6:39:11 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22205127] found.
+févr. 06, 2016 6:39:11 PM state.S02_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22205127] OK.
+févr. 06, 2016 6:39:38 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2220512705.02.2016;11:44:57] in BaseHarness.
+févr. 06, 2016 6:39:38 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+févr. 06, 2016 6:39:45 PM entity.BaseHarness isCounterExist
+AVERTISSEMENT: Harness counter [P2220512705.02.2016;11:44:57] already scanned !
+févr. 06, 2016 6:39:50 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2220512705.02.2016;11:44:56] in BaseHarness.
+févr. 06, 2016 6:39:50 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+févr. 06, 2016 6:39:50 PM entity.BaseHarness isCounterExist
+INFOS: New Harness counter [P2220512705.02.2016;11:44:56].
+févr. 06, 2016 6:39:50 PM state.S03_QRCodeScan doAction
+INFOS: Valid Harness Counter scanned [P2220512705.02.2016;11:44:56] OK.
+févr. 06, 2016 6:40:18 PM state.S040_PaletChoice doAction
+INFOS: Openning new container.
+févr. 06, 2016 6:57:12 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_06_02] already exist!
+Print sub directory [.\print\2016_06_02.\pallet] already exist!
+Print sub directory [.\print\2016_06_02.\galia] already exist!
+
+févr. 06, 2016 6:57:15 PM state.S01_UserCodeScan doAction
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 06, 2016 6:57:15 PM state.S01_UserCodeScan doAction
+INFOS: User Oussama EZZIOURI / 1001 connected to host WSMA7165 at 2016-06-02 18:57:12.
+févr. 06, 2016 6:57:15 PM entity.BaseContainer select
+INFOS: FROM BaseContainer bc
+févr. 06, 2016 6:57:21 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [21520621] in ConfigUCS: 21520621
+févr. 06, 2016 6:57:21 PM entity.ConfigUcs select
+INFOS: FROM ConfigUcs cu WHERE cu.harnessPart = :hp
+févr. 06, 2016 6:57:21 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [21520621] found.
+févr. 06, 2016 6:57:21 PM state.S02_HarnessPartScan doAction
+INFOS: Harness Part scanned [P21520621] OK.
+févr. 06, 2016 9:27:23 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_06_02] already exist!
+Print sub directory [.\print\2016_06_02.\pallet] already exist!
+Print sub directory [.\print\2016_06_02.\galia] already exist!
+
+févr. 06, 2016 9:27:26 PM state.S01_UserCodeScan doAction
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 06, 2016 9:27:26 PM state.S01_UserCodeScan doAction
+INFOS: User Oussama EZZIOURI / 1001 connected to host WSMA7165 at 2016-06-02 21:27:23.
+févr. 06, 2016 9:27:26 PM entity.BaseContainer select
+INFOS: FROM BaseContainer bc
+févr. 06, 2016 9:37:34 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_06_02] already exist!
+Print sub directory [.\print\2016_06_02.\pallet] already exist!
+Print sub directory [.\print\2016_06_02.\galia] already exist!
+
+févr. 06, 2016 9:57:28 PM classes.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_06_02] already exist!
+Print sub directory [.\print\2016_06_02.\pallet] already exist!
+Print sub directory [.\print\2016_06_02.\galia] already exist!
+
+févr. 06, 2016 9:57:30 PM state.S01_UserCodeScan doAction
+DÉSACTIVÉ: FROM BaseUser bu WHERE bu.login = :login
+févr. 06, 2016 9:57:30 PM state.S01_UserCodeScan doAction
+INFOS: User Oussama EZZIOURI / 1001 connected to host WSMA7165 at 2016-06-02 21:57:28.
+févr. 06, 2016 9:57:30 PM entity.BaseContainer select
+INFOS: FROM BaseContainer bc
+févr. 06, 2016 9:57:37 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22205127] in ConfigUCS: 22205127
+févr. 06, 2016 9:57:37 PM entity.ConfigUcs select
+INFOS: FROM ConfigUcs cu WHERE cu.harnessPart = :hp
+févr. 06, 2016 9:57:37 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22205127] found.
+févr. 06, 2016 9:57:37 PM state.S02_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22205127] OK.
+févr. 06, 2016 9:58:03 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2220512705.02.2016;11:44:56] in BaseHarness.
+févr. 06, 2016 9:58:03 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+févr. 06, 2016 9:58:03 PM entity.BaseHarness isCounterExist
+INFOS: New Harness counter [P2220512705.02.2016;11:44:56].
+févr. 06, 2016 9:58:03 PM state.S03_QRCodeScan doAction
+INFOS: Valid Harness Counter scanned [P2220512705.02.2016;11:44:56] OK.
+févr. 06, 2016 9:58:14 PM state.S040_PaletChoice doAction
+INFOS: Openning new container.
+févr. 06, 2016 9:58:14 PM gui.UI0002_Choose_Harness <init>
+DÉSACTIVÉ: FROM ConfigUcs cu WHERE cu.harnessPart = :hp

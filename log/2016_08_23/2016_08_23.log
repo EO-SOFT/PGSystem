@@ -1,0 +1,122 @@
+août 23, 2016 9:31:09 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_08_23] is created!
+Print sub directory [.\print\2016_08_23.\open_sheet] is created!
+Print sub directory [.\print\2016_08_23.\closing_sheet] is created!
+Print sub directory [.\print\2016_08_23.\picking_label] is created!
+
+août 23, 2016 4:22:25 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_08_23] already exist!
+Print sub directory [.\print\2016_08_23.\open_sheet] already exist!
+Print sub directory [.\print\2016_08_23.\closing_sheet] already exist!
+Print sub directory [.\print\2016_08_23.\picking_label] already exist!
+
+août 23, 2016 4:22:27 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+août 23, 2016 4:22:28 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+août 23, 2016 4:22:32 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+août 23, 2016 4:23:11 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_08_23] already exist!
+Print sub directory [.\print\2016_08_23.\open_sheet] already exist!
+Print sub directory [.\print\2016_08_23.\closing_sheet] already exist!
+Print sub directory [.\print\2016_08_23.\picking_label] already exist!
+
+août 23, 2016 4:23:14 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+août 23, 2016 4:23:14 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+août 23, 2016 4:23:15 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+août 23, 2016 4:25:40 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_08_23] already exist!
+Print sub directory [.\print\2016_08_23.\open_sheet] already exist!
+Print sub directory [.\print\2016_08_23.\closing_sheet] already exist!
+Print sub directory [.\print\2016_08_23.\picking_label] already exist!
+
+août 23, 2016 4:25:41 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+août 23, 2016 4:25:41 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+août 23, 2016 4:25:44 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+août 23, 2016 4:26:23 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_08_23] already exist!
+Print sub directory [.\print\2016_08_23.\open_sheet] already exist!
+Print sub directory [.\print\2016_08_23.\closing_sheet] already exist!
+Print sub directory [.\print\2016_08_23.\picking_label] already exist!
+
+août 23, 2016 4:26:25 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+août 23, 2016 4:26:25 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+août 23, 2016 4:26:27 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+août 23, 2016 4:27:05 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_08_23] already exist!
+Print sub directory [.\print\2016_08_23.\open_sheet] already exist!
+Print sub directory [.\print\2016_08_23.\closing_sheet] already exist!
+Print sub directory [.\print\2016_08_23.\picking_label] already exist!
+
+août 23, 2016 4:27:06 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+août 23, 2016 4:27:06 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+août 23, 2016 4:27:07 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+août 23, 2016 4:27:10 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+août 23, 2016 4:27:11 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+août 23, 2016 4:27:43 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+août 23, 2016 4:28:50 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+août 23, 2016 4:30:04 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_08_23] already exist!
+Print sub directory [.\print\2016_08_23.\open_sheet] already exist!
+Print sub directory [.\print\2016_08_23.\closing_sheet] already exist!
+Print sub directory [.\print\2016_08_23.\picking_label] already exist!
+
+août 23, 2016 4:30:05 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+août 23, 2016 4:30:05 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+août 23, 2016 4:30:06 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+août 23, 2016 4:31:31 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_08_23] already exist!
+Print sub directory [.\print\2016_08_23.\open_sheet] already exist!
+Print sub directory [.\print\2016_08_23.\closing_sheet] already exist!
+Print sub directory [.\print\2016_08_23.\picking_label] already exist!
+
+août 23, 2016 4:31:36 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+août 23, 2016 4:31:36 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+août 23, 2016 4:31:37 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+août 23, 2016 4:32:40 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_08_23] already exist!
+Print sub directory [.\print\2016_08_23.\open_sheet] already exist!
+Print sub directory [.\print\2016_08_23.\closing_sheet] already exist!
+Print sub directory [.\print\2016_08_23.\picking_label] already exist!
+
+août 23, 2016 4:32:41 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+août 23, 2016 4:32:41 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+août 23, 2016 4:32:43 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+août 23, 2016 4:34:25 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_08_23] already exist!
+Print sub directory [.\print\2016_08_23.\open_sheet] already exist!
+Print sub directory [.\print\2016_08_23.\closing_sheet] already exist!
+Print sub directory [.\print\2016_08_23.\picking_label] already exist!
+
+août 23, 2016 4:34:26 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+août 23, 2016 4:34:26 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+août 23, 2016 4:34:28 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC

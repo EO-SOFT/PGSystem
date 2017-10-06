@@ -1,0 +1,81 @@
+mars 06, 2017 10:55:32 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_03_06] is created!
+Print sub directory [.\print\2017_03_06.\open_sheet] is created!
+Print sub directory [.\print\2017_03_06.\closing_sheet] is created!
+Print sub directory [.\print\2017_03_06.\picking_label] is created!
+Print sub directory [.\print\2017_03_06.\dispatch_label] is created!
+
+mars 06, 2017 10:55:39 PM gui.warehouse_output.WAREHOUSE_OUT_UI0003_PasswordRequest connect
+INFOS: User Admin SMALL / 9999 connected to host O-EZZIOURI at 2017-03-06 22:55:39 Dispatch interface : .
+mars 06, 2017 11:01:56 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_03_06] already exist!
+Print sub directory [.\print\2017_03_06.\open_sheet] already exist!
+Print sub directory [.\print\2017_03_06.\closing_sheet] already exist!
+Print sub directory [.\print\2017_03_06.\picking_label] already exist!
+Print sub directory [.\print\2017_03_06.\dispatch_label] already exist!
+
+mars 06, 2017 11:03:26 PM gui.warehouse_output.WAREHOUSE_OUT_UI0003_PasswordRequest connect
+INFOS: User Admin SMALL / 9999 connected to host O-EZZIOURI at 2017-03-06 23:03:26 Dispatch interface : .
+mars 06, 2017 11:06:47 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_03_06] already exist!
+Print sub directory [.\print\2017_03_06.\open_sheet] already exist!
+Print sub directory [.\print\2017_03_06.\closing_sheet] already exist!
+Print sub directory [.\print\2017_03_06.\picking_label] already exist!
+Print sub directory [.\print\2017_03_06.\dispatch_label] already exist!
+
+mars 06, 2017 11:06:54 PM gui.warehouse_output.WAREHOUSE_OUT_UI0003_PasswordRequest connect
+INFOS: User Admin SMALL / 9999 connected to host O-EZZIOURI at 2017-03-06 23:06:54 Dispatch interface : .
+mars 06, 2017 11:07:57 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_03_06] already exist!
+Print sub directory [.\print\2017_03_06.\open_sheet] already exist!
+Print sub directory [.\print\2017_03_06.\closing_sheet] already exist!
+Print sub directory [.\print\2017_03_06.\picking_label] already exist!
+Print sub directory [.\print\2017_03_06.\dispatch_label] already exist!
+
+mars 06, 2017 11:08:02 PM gui.warehouse_output.WAREHOUSE_OUT_UI0003_PasswordRequest connect
+INFOS: User Admin SMALL / 9999 connected to host O-EZZIOURI at 2017-03-06 23:08:02 Dispatch interface : .
+mars 06, 2017 11:09:11 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_03_06] already exist!
+Print sub directory [.\print\2017_03_06.\open_sheet] already exist!
+Print sub directory [.\print\2017_03_06.\closing_sheet] already exist!
+Print sub directory [.\print\2017_03_06.\picking_label] already exist!
+Print sub directory [.\print\2017_03_06.\dispatch_label] already exist!
+
+mars 06, 2017 11:09:20 PM gui.warehouse_output.WAREHOUSE_OUT_UI0003_PasswordRequest connect
+INFOS: User Admin SMALL / 9999 connected to host O-EZZIOURI at 2017-03-06 23:09:20 Dispatch interface : .
+mars 06, 2017 11:16:39 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_03_06] already exist!
+Print sub directory [.\print\2017_03_06.\open_sheet] already exist!
+Print sub directory [.\print\2017_03_06.\closing_sheet] already exist!
+Print sub directory [.\print\2017_03_06.\picking_label] already exist!
+Print sub directory [.\print\2017_03_06.\dispatch_label] already exist!
+
+mars 06, 2017 11:16:45 PM gui.warehouse_output.WAREHOUSE_OUT_UI0003_PasswordRequest connect
+INFOS: User Admin SMALL / 9999 connected to host O-EZZIOURI at 2017-03-06 23:16:45 Dispatch interface : .
+mars 06, 2017 11:18:38 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_03_06] already exist!
+Print sub directory [.\print\2017_03_06.\open_sheet] already exist!
+Print sub directory [.\print\2017_03_06.\closing_sheet] already exist!
+Print sub directory [.\print\2017_03_06.\picking_label] already exist!
+Print sub directory [.\print\2017_03_06.\dispatch_label] already exist!
+
+mars 06, 2017 11:18:45 PM gui.warehouse_output.WAREHOUSE_OUT_UI0003_PasswordRequest connect
+INFOS: User Admin SMALL / 9999 connected to host O-EZZIOURI at 2017-03-06 23:18:45 Dispatch interface : .
+mars 06, 2017 11:20:30 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_03_06] already exist!
+Print sub directory [.\print\2017_03_06.\open_sheet] already exist!
+Print sub directory [.\print\2017_03_06.\closing_sheet] already exist!
+Print sub directory [.\print\2017_03_06.\picking_label] already exist!
+Print sub directory [.\print\2017_03_06.\dispatch_label] already exist!
+
+mars 06, 2017 11:20:36 PM gui.warehouse_output.WAREHOUSE_OUT_UI0003_PasswordRequest connect
+INFOS: User Admin SMALL / 9999 connected to host O-EZZIOURI at 2017-03-06 23:20:36 Dispatch interface : .
+mars 06, 2017 11:37:49 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_03_06] already exist!
+Print sub directory [.\print\2017_03_06.\open_sheet] already exist!
+Print sub directory [.\print\2017_03_06.\closing_sheet] already exist!
+Print sub directory [.\print\2017_03_06.\picking_label] already exist!
+Print sub directory [.\print\2017_03_06.\dispatch_label] already exist!
+
+mars 06, 2017 11:37:58 PM gui.warehouse_output.WAREHOUSE_OUT_UI0003_PasswordRequest connect
+INFOS: User Admin SMALL / 9999 connected to host O-EZZIOURI at 2017-03-06 23:37:58 Dispatch interface : .

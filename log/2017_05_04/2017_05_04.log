@@ -1,0 +1,9 @@
+mai 04, 2017 11:27:12 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_05_04] is created!
+Print sub directory [.\print\2017_05_04.\open_sheet] is created!
+Print sub directory [.\print\2017_05_04.\closing_sheet] is created!
+Print sub directory [.\print\2017_05_04.\picking_label] is created!
+Print sub directory [.\print\2017_05_04.\dispatch_label] is created!
+
+mai 04, 2017 11:33:22 PM gui.warehouse_dispatch.WAREHOUSE_DISPATCH_UI0003_PasswordRequest connect
+INFOS: User Admin   / 9999 connected to host O-EZZIOURI at 2017-05-04 23:33:22 Dispatch interface : .

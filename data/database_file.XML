@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Liste_Contenaires>
+  <contenaire date_debut_lecture="2016-02-02 07:32:06 " date_fin_lecture="2016-02-02 08:05:43 " qte_expected="3" harness_Part="22205127" index="P01" pallet_Number="100000009" supplier_part_number="26C42291A" operateur="0111">
+    <faisceaux harness_Part_fx="P22205127" cpt="P2220512702.02.2016;10:24:57" operateur_fx="0111" date="2016-02-02 07:28:00 " />
+    <faisceaux harness_Part_fx="P22205127" cpt="P2220512702.02.2016;11:11:12" operateur_fx="0112" date="2016-02-02 07:36:07 " />
+    <faisceaux harness_Part_fx="P22205127" cpt="P2220512702.02.2016;11:04:11" operateur_fx="0123" date="2016-02-02 08:04:49 " />
+  </contenaire>
+  <contenaire date_debut_lecture="2016-02-02 08:03:51 " date_fin_lecture="2016-02-02 08:03:51 " qte_expected="3" harness_Part="22205127" index="P01" pallet_Number="100000010" supplier_part_number="26C42291A" operateur="0123">
+    <faisceaux harness_Part_fx="P22205127" cpt="P2220512702.02.2016;10:55:25" operateur_fx="0123" date="2016-02-02 08:02:14 " />
+  </contenaire>
+</Liste_Contenaires>
+

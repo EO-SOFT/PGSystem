@@ -1,0 +1,138 @@
+nov. 23, 2016 7:47:40 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_11_23] is created!
+Print sub directory [.\print\2016_11_23.\open_sheet] is created!
+Print sub directory [.\print\2016_11_23.\closing_sheet] is created!
+Print sub directory [.\print\2016_11_23.\picking_label] is created!
+Print sub directory [.\print\2016_11_23.\dispatch_label] is created!
+
+nov. 23, 2016 7:47:59 PM gui.warehouse_output.WAREHOUSE_OUT_UI0003_PasswordRequest connect
+INFOS: User Admin ENGINE / 9999 connected to host O-EZZIOURI at 2016-11-23 19:47:59 Dispatch interface : .
+nov. 23, 2016 8:18:21 PM gui.warehouse_output.state.S010_DispatchUserCodeScan doAction
+INFOS: Invalid matricule number or account locked !
+nov. 23, 2016 8:20:15 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_11_23] already exist!
+Print sub directory [.\print\2016_11_23.\open_sheet] already exist!
+Print sub directory [.\print\2016_11_23.\closing_sheet] already exist!
+Print sub directory [.\print\2016_11_23.\picking_label] already exist!
+Print sub directory [.\print\2016_11_23.\dispatch_label] already exist!
+
+nov. 23, 2016 8:20:19 PM gui.warehouse_output.WAREHOUSE_OUT_UI0003_PasswordRequest connect
+INFOS: User Admin ENGINE / 9999 connected to host O-EZZIOURI at 2016-11-23 20:20:19 Dispatch interface : .
+nov. 23, 2016 9:25:56 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_11_23] already exist!
+Print sub directory [.\print\2016_11_23.\open_sheet] already exist!
+Print sub directory [.\print\2016_11_23.\closing_sheet] already exist!
+Print sub directory [.\print\2016_11_23.\picking_label] already exist!
+Print sub directory [.\print\2016_11_23.\dispatch_label] already exist!
+
+nov. 23, 2016 9:26:57 PM gui.warehouse_output.WAREHOUSE_OUT_UI0003_PasswordRequest connect
+INFOS: User Admin ENGINE / 9999 connected to host O-EZZIOURI at 2016-11-23 21:26:57 Dispatch interface : .
+nov. 23, 2016 9:54:52 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_11_23] already exist!
+Print sub directory [.\print\2016_11_23.\open_sheet] already exist!
+Print sub directory [.\print\2016_11_23.\closing_sheet] already exist!
+Print sub directory [.\print\2016_11_23.\picking_label] already exist!
+Print sub directory [.\print\2016_11_23.\dispatch_label] already exist!
+
+nov. 23, 2016 9:55:32 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_11_23] already exist!
+Print sub directory [.\print\2016_11_23.\open_sheet] already exist!
+Print sub directory [.\print\2016_11_23.\closing_sheet] already exist!
+Print sub directory [.\print\2016_11_23.\picking_label] already exist!
+Print sub directory [.\print\2016_11_23.\dispatch_label] already exist!
+
+nov. 23, 2016 9:55:59 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_11_23] already exist!
+Print sub directory [.\print\2016_11_23.\open_sheet] already exist!
+Print sub directory [.\print\2016_11_23.\closing_sheet] already exist!
+Print sub directory [.\print\2016_11_23.\picking_label] already exist!
+Print sub directory [.\print\2016_11_23.\dispatch_label] already exist!
+
+nov. 23, 2016 10:14:01 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_11_23] already exist!
+Print sub directory [.\print\2016_11_23.\open_sheet] already exist!
+Print sub directory [.\print\2016_11_23.\closing_sheet] already exist!
+Print sub directory [.\print\2016_11_23.\picking_label] already exist!
+Print sub directory [.\print\2016_11_23.\dispatch_label] already exist!
+
+nov. 23, 2016 10:15:04 PM gui.warehouse_output.WAREHOUSE_OUT_UI0003_PasswordRequest connect
+INFOS: User Admin ENGINE / 9999 connected to host O-EZZIOURI at 2016-11-23 22:15:04 Dispatch interface : .
+nov. 23, 2016 10:21:44 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_11_23] already exist!
+Print sub directory [.\print\2016_11_23.\open_sheet] already exist!
+Print sub directory [.\print\2016_11_23.\closing_sheet] already exist!
+Print sub directory [.\print\2016_11_23.\picking_label] already exist!
+Print sub directory [.\print\2016_11_23.\dispatch_label] already exist!
+
+nov. 23, 2016 10:27:02 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_11_23] already exist!
+Print sub directory [.\print\2016_11_23.\open_sheet] already exist!
+Print sub directory [.\print\2016_11_23.\closing_sheet] already exist!
+Print sub directory [.\print\2016_11_23.\picking_label] already exist!
+Print sub directory [.\print\2016_11_23.\dispatch_label] already exist!
+
+nov. 23, 2016 10:27:37 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_11_23] already exist!
+Print sub directory [.\print\2016_11_23.\open_sheet] already exist!
+Print sub directory [.\print\2016_11_23.\closing_sheet] already exist!
+Print sub directory [.\print\2016_11_23.\picking_label] already exist!
+Print sub directory [.\print\2016_11_23.\dispatch_label] already exist!
+
+nov. 23, 2016 10:31:31 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_11_23] already exist!
+Print sub directory [.\print\2016_11_23.\open_sheet] already exist!
+Print sub directory [.\print\2016_11_23.\closing_sheet] already exist!
+Print sub directory [.\print\2016_11_23.\picking_label] already exist!
+Print sub directory [.\print\2016_11_23.\dispatch_label] already exist!
+
+nov. 23, 2016 10:31:54 PM gui.packaging.PACKAGING_UI0001_Main loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord ORDER BY id ASC
+nov. 23, 2016 10:31:54 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+nov. 23, 2016 10:31:54 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+nov. 23, 2016 10:32:02 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+nov. 23, 2016 10:32:44 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_11_23] already exist!
+Print sub directory [.\print\2016_11_23.\open_sheet] already exist!
+Print sub directory [.\print\2016_11_23.\closing_sheet] already exist!
+Print sub directory [.\print\2016_11_23.\picking_label] already exist!
+Print sub directory [.\print\2016_11_23.\dispatch_label] already exist!
+
+nov. 23, 2016 10:32:57 PM gui.packaging.PACKAGING_UI0001_Main loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord ORDER BY id ASC
+nov. 23, 2016 10:32:57 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+nov. 23, 2016 10:32:57 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+nov. 23, 2016 10:33:00 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+nov. 23, 2016 10:38:13 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_11_23] already exist!
+Print sub directory [.\print\2016_11_23.\open_sheet] already exist!
+Print sub directory [.\print\2016_11_23.\closing_sheet] already exist!
+Print sub directory [.\print\2016_11_23.\picking_label] already exist!
+Print sub directory [.\print\2016_11_23.\dispatch_label] already exist!
+
+nov. 23, 2016 10:39:00 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_11_23] already exist!
+Print sub directory [.\print\2016_11_23.\open_sheet] already exist!
+Print sub directory [.\print\2016_11_23.\closing_sheet] already exist!
+Print sub directory [.\print\2016_11_23.\picking_label] already exist!
+Print sub directory [.\print\2016_11_23.\dispatch_label] already exist!
+
+nov. 23, 2016 10:41:22 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_11_23] already exist!
+Print sub directory [.\print\2016_11_23.\open_sheet] already exist!
+Print sub directory [.\print\2016_11_23.\closing_sheet] already exist!
+Print sub directory [.\print\2016_11_23.\picking_label] already exist!
+Print sub directory [.\print\2016_11_23.\dispatch_label] already exist!
+
+nov. 23, 2016 10:43:17 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_11_23] already exist!
+Print sub directory [.\print\2016_11_23.\open_sheet] already exist!
+Print sub directory [.\print\2016_11_23.\closing_sheet] already exist!
+Print sub directory [.\print\2016_11_23.\picking_label] already exist!
+Print sub directory [.\print\2016_11_23.\dispatch_label] already exist!
+

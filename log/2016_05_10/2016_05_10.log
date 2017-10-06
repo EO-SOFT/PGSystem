@@ -1,0 +1,118 @@
+mai 10, 2016 8:09:05 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_05_10] is created!
+Print sub directory [.\print\2016_05_10.\open_sheet] is created!
+Print sub directory [.\print\2016_05_10.\closing_sheet] is created!
+Print sub directory [.\print\2016_05_10.\picking_label] is created!
+
+mai 10, 2016 8:11:19 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_05_10] already exist!
+Print sub directory [.\print\2016_05_10.\open_sheet] already exist!
+Print sub directory [.\print\2016_05_10.\closing_sheet] already exist!
+Print sub directory [.\print\2016_05_10.\picking_label] already exist!
+
+mai 10, 2016 8:12:36 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mai 10, 2016 8:12:36 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mai 10, 2016 8:12:39 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mai 10, 2016 8:17:50 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_05_10] already exist!
+Print sub directory [.\print\2016_05_10.\open_sheet] already exist!
+Print sub directory [.\print\2016_05_10.\closing_sheet] already exist!
+Print sub directory [.\print\2016_05_10.\picking_label] already exist!
+
+mai 10, 2016 8:17:51 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mai 10, 2016 8:17:52 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mai 10, 2016 8:17:53 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mai 10, 2016 8:28:19 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_05_10] already exist!
+Print sub directory [.\print\2016_05_10.\open_sheet] already exist!
+Print sub directory [.\print\2016_05_10.\closing_sheet] already exist!
+Print sub directory [.\print\2016_05_10.\picking_label] already exist!
+
+mai 10, 2016 8:28:21 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mai 10, 2016 8:28:21 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mai 10, 2016 8:28:26 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mai 10, 2016 8:28:29 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mai 10, 2016 8:29:29 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_05_10] already exist!
+Print sub directory [.\print\2016_05_10.\open_sheet] already exist!
+Print sub directory [.\print\2016_05_10.\closing_sheet] already exist!
+Print sub directory [.\print\2016_05_10.\picking_label] already exist!
+
+mai 10, 2016 8:29:31 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mai 10, 2016 8:29:31 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mai 10, 2016 8:29:33 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mai 10, 2016 8:30:37 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_05_10] already exist!
+Print sub directory [.\print\2016_05_10.\open_sheet] already exist!
+Print sub directory [.\print\2016_05_10.\closing_sheet] already exist!
+Print sub directory [.\print\2016_05_10.\picking_label] already exist!
+
+mai 10, 2016 8:30:39 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mai 10, 2016 8:30:39 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mai 10, 2016 8:30:40 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mai 10, 2016 8:33:04 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_05_10] already exist!
+Print sub directory [.\print\2016_05_10.\open_sheet] already exist!
+Print sub directory [.\print\2016_05_10.\closing_sheet] already exist!
+Print sub directory [.\print\2016_05_10.\picking_label] already exist!
+
+mai 10, 2016 8:33:06 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mai 10, 2016 8:33:06 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mai 10, 2016 8:33:07 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mai 10, 2016 8:36:23 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_05_10] already exist!
+Print sub directory [.\print\2016_05_10.\open_sheet] already exist!
+Print sub directory [.\print\2016_05_10.\closing_sheet] already exist!
+Print sub directory [.\print\2016_05_10.\picking_label] already exist!
+
+mai 10, 2016 8:36:24 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mai 10, 2016 8:36:24 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mai 10, 2016 8:36:25 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mai 10, 2016 8:37:58 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_05_10] already exist!
+Print sub directory [.\print\2016_05_10.\open_sheet] already exist!
+Print sub directory [.\print\2016_05_10.\closing_sheet] already exist!
+Print sub directory [.\print\2016_05_10.\picking_label] already exist!
+
+mai 10, 2016 8:37:58 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mai 10, 2016 8:37:58 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mai 10, 2016 8:37:59 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mai 10, 2016 8:39:45 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_05_10] already exist!
+Print sub directory [.\print\2016_05_10.\open_sheet] already exist!
+Print sub directory [.\print\2016_05_10.\closing_sheet] already exist!
+Print sub directory [.\print\2016_05_10.\picking_label] already exist!
+
+mai 10, 2016 8:39:47 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mai 10, 2016 8:39:47 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mai 10, 2016 8:39:50 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mai 10, 2016 8:40:20 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC

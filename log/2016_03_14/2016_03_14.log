@@ -1,0 +1,111 @@
+mars 14, 2016 11:57:25 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_14] is created!
+Print sub directory [.\print\2016_03_14.\pallet] is created!
+Print sub directory [.\print\2016_03_14.\closing_pallet] is created!
+
+mars 14, 2016 11:57:26 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 14, 2016 11:57:26 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 14, 2016 11:59:20 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_14] already exist!
+Print sub directory [.\print\2016_03_14.\pallet] already exist!
+Print sub directory [.\print\2016_03_14.\closing_pallet] already exist!
+
+mars 14, 2016 11:59:21 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 14, 2016 11:59:21 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 14, 2016 5:32:03 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_14] already exist!
+Print sub directory [.\print\2016_03_14.\pallet] already exist!
+Print sub directory [.\print\2016_03_14.\closing_pallet] already exist!
+
+mars 14, 2016 5:32:04 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 14, 2016 5:32:04 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 14, 2016 5:32:10 PM state.S010_UserCodeScan doAction
+INFOS: User Admin   / 1009 connected to host WSMA7040 at 2016-03-14 17:32:10 Project : ENGINE.
+mars 14, 2016 5:39:26 PM state.S010_UserCodeScan doAction
+INFOS: Invalid matricule number or account locked !
+mars 14, 2016 5:39:31 PM state.S010_UserCodeScan doAction
+INFOS: User Mohamed Ramali / 14228 connected to host WSMA7040 at 2016-03-14 17:39:31 Project : ENGINE.
+mars 14, 2016 5:52:56 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_14] already exist!
+Print sub directory [.\print\2016_03_14.\pallet] already exist!
+Print sub directory [.\print\2016_03_14.\closing_pallet] already exist!
+
+mars 14, 2016 5:52:56 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 14, 2016 5:52:56 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 14, 2016 5:53:00 PM state.S010_UserCodeScan doAction
+INFOS: User Admin   / 1009 connected to host WSMA7040 at 2016-03-14 17:53:00 Project : ENGINE.
+mars 14, 2016 5:53:35 PM state.S010_UserCodeScan doAction
+INFOS: User Mohamed Ramali / 14228 connected to host WSMA7040 at 2016-03-14 17:53:35 Project : ENGINE.
+mars 14, 2016 5:54:14 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_14] already exist!
+Print sub directory [.\print\2016_03_14.\pallet] already exist!
+Print sub directory [.\print\2016_03_14.\closing_pallet] already exist!
+
+mars 14, 2016 5:54:15 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 14, 2016 5:54:15 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 14, 2016 5:54:29 PM state.S010_UserCodeScan doAction
+INFOS: User Mohamed Ramali / 14228 connected to host WSMA7040 at 2016-03-14 17:54:29 Project : ENGINE.
+mars 14, 2016 5:57:25 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_14] already exist!
+Print sub directory [.\print\2016_03_14.\pallet] already exist!
+Print sub directory [.\print\2016_03_14.\closing_pallet] already exist!
+
+mars 14, 2016 5:57:25 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 14, 2016 5:57:25 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 14, 2016 6:23:38 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_14] already exist!
+Print sub directory [.\print\2016_03_14.\pallet] already exist!
+Print sub directory [.\print\2016_03_14.\closing_pallet] already exist!
+
+mars 14, 2016 6:23:38 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 14, 2016 6:23:38 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 14, 2016 6:28:05 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_14] already exist!
+Print sub directory [.\print\2016_03_14.\pallet] already exist!
+Print sub directory [.\print\2016_03_14.\closing_pallet] already exist!
+
+mars 14, 2016 6:28:06 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 14, 2016 6:28:06 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 14, 2016 6:28:20 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_14] already exist!
+Print sub directory [.\print\2016_03_14.\pallet] already exist!
+Print sub directory [.\print\2016_03_14.\closing_pallet] already exist!
+
+mars 14, 2016 6:28:21 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 14, 2016 6:28:21 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 14, 2016 6:48:56 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_14] already exist!
+Print sub directory [.\print\2016_03_14.\pallet] already exist!
+Print sub directory [.\print\2016_03_14.\closing_pallet] already exist!
+
+mars 14, 2016 6:48:56 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 14, 2016 6:48:56 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 14, 2016 6:50:37 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_14] already exist!
+Print sub directory [.\print\2016_03_14.\pallet] already exist!
+Print sub directory [.\print\2016_03_14.\closing_pallet] already exist!
+
+mars 14, 2016 6:50:37 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 14, 2016 6:50:37 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC

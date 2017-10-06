@@ -1,0 +1,790 @@
+mars 18, 2016 12:49:34 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_18] is created!
+Print sub directory [.\print\2016_03_18.\open_sheet] is created!
+Print sub directory [.\print\2016_03_18.\closing_sheet] is created!
+
+mars 18, 2016 12:49:35 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 18, 2016 12:49:35 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 18, 2016 12:49:47 PM state.S010_UserCodeScan doAction
+INFOS: User Admin   / 0 connected to host WSMA7040 at 2016-03-18 12:49:47 Project : ENGINE.
+mars 18, 2016 12:51:05 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_18] already exist!
+Print sub directory [.\print\2016_03_18.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_18.\closing_sheet] already exist!
+
+mars 18, 2016 12:51:06 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 18, 2016 12:51:06 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 18, 2016 12:51:12 PM state.S010_UserCodeScan doAction
+INFOS: User Admin   / 0 connected to host WSMA7040 at 2016-03-18 12:51:12 Project : ENGINE.
+mars 18, 2016 12:51:51 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_18] already exist!
+Print sub directory [.\print\2016_03_18.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_18.\closing_sheet] already exist!
+
+mars 18, 2016 12:51:51 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 18, 2016 12:51:51 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 18, 2016 12:51:55 PM state.S010_UserCodeScan doAction
+INFOS: User Admin   / 0 connected to host WSMA7040 at 2016-03-18 12:51:55 Project : ENGINE.
+mars 18, 2016 12:53:03 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_18] already exist!
+Print sub directory [.\print\2016_03_18.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_18.\closing_sheet] already exist!
+
+mars 18, 2016 12:53:04 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 18, 2016 12:53:04 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 18, 2016 12:53:22 PM state.S010_UserCodeScan doAction
+INFOS: User Admin   / 0 connected to host WSMA7040 at 2016-03-18 12:53:22 Project : ENGINE.
+mars 18, 2016 12:53:33 PM helper.PrinterHelper saveAndPrintOpenSheet
+INFOS: Set Pallet [100000002] state to [IN_PROCESS]
+mars 18, 2016 12:53:33 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2016_03_18\open_sheet\PrintOpenPallet_A5_2016_03_18_12_53_32100000002.pdf] to the default printer...
+mars 18, 2016 12:53:33 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [%s] has been printed.
+mars 18, 2016 12:53:33 PM helper.PrinterHelper saveAndPrintOpenSheet
+INFOS: Set Pallet [100000002] state to [PRINTED]
+mars 18, 2016 2:57:28 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_18] already exist!
+Print sub directory [.\print\2016_03_18.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_18.\closing_sheet] already exist!
+
+mars 18, 2016 2:57:29 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 18, 2016 2:57:29 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 18, 2016 2:57:34 PM state.S010_UserCodeScan doAction
+INFOS: User Admin   / 0 connected to host WSMA7040 at 2016-03-18 14:57:34 Project : ENGINE.
+mars 18, 2016 2:58:34 PM helper.PrinterHelper saveAndPrintOpenSheet
+INFOS: Set Pallet [100000003] state to [IN_PROCESS]
+mars 18, 2016 2:58:34 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2016_03_18\open_sheet\PrintOpenPallet_A5_2016_03_18_14_58_33100000003.pdf] to the default printer...
+mars 18, 2016 2:58:34 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [%s] has been printed.
+mars 18, 2016 2:58:34 PM helper.PrinterHelper saveAndPrintOpenSheet
+INFOS: Set Pallet [100000003] state to [PRINTED]
+mars 18, 2016 3:28:21 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_18] already exist!
+Print sub directory [.\print\2016_03_18.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_18.\closing_sheet] already exist!
+
+mars 18, 2016 3:28:22 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 18, 2016 3:28:22 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 18, 2016 3:28:26 PM state.S010_UserCodeScan doAction
+INFOS: User Admin   / 0 connected to host WSMA7040 at 2016-03-18 15:28:26 Project : ENGINE.
+mars 18, 2016 3:53:40 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_18] already exist!
+Print sub directory [.\print\2016_03_18.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_18.\closing_sheet] already exist!
+
+mars 18, 2016 3:53:41 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 18, 2016 3:53:41 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 18, 2016 3:53:50 PM state.S010_UserCodeScan doAction
+INFOS: User Admin   / 0 connected to host WSMA7040 at 2016-03-18 15:53:50 Project : ENGINE.
+mars 18, 2016 3:56:02 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_18] already exist!
+Print sub directory [.\print\2016_03_18.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_18.\closing_sheet] already exist!
+
+mars 18, 2016 3:56:02 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 18, 2016 3:56:02 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 18, 2016 3:56:04 PM state.S010_UserCodeScan doAction
+INFOS: User Admin   / 0 connected to host WSMA7040 at 2016-03-18 15:56:04 Project : ENGINE.
+mars 18, 2016 3:56:08 PM helper.PrinterHelper saveAndReprintOpenSheet
+INFOS: Set Pallet [200000006] state to [IN_PROCESS]
+mars 18, 2016 3:56:08 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2016_03_18\open_sheet\PrintOpenPallet_A5_2016_03_18_15_56_08200000006.pdf] to the default printer...
+mars 18, 2016 3:56:08 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [%s] has been printed.
+mars 18, 2016 3:56:08 PM helper.PrinterHelper saveAndReprintOpenSheet
+INFOS: Set Pallet [200000006] state to [PRINTED]
+mars 18, 2016 3:57:07 PM helper.PrinterHelper saveAndReprintOpenSheet
+INFOS: Set Pallet [200000006] state to [IN_PROCESS]
+mars 18, 2016 3:57:07 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2016_03_18\open_sheet\PrintOpenPallet_A5_2016_03_18_15_57_07200000006.pdf] to the default printer...
+mars 18, 2016 3:57:07 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [%s] has been printed.
+mars 18, 2016 3:57:07 PM helper.PrinterHelper saveAndReprintOpenSheet
+INFOS: Set Pallet [200000006] state to [PRINTED]
+mars 18, 2016 3:58:03 PM helper.PrinterHelper saveAndReprintOpenSheet
+INFOS: Set Pallet [200000006] state to [IN_PROCESS]
+mars 18, 2016 3:58:03 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2016_03_18\open_sheet\PrintOpenPallet_A5_2016_03_18_15_58_03200000006.pdf] to the default printer...
+mars 18, 2016 3:58:03 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [%s] has been printed.
+mars 18, 2016 3:58:03 PM helper.PrinterHelper saveAndReprintOpenSheet
+INFOS: Set Pallet [200000006] state to [PRINTED]
+mars 18, 2016 3:59:14 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_18] already exist!
+Print sub directory [.\print\2016_03_18.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_18.\closing_sheet] already exist!
+
+mars 18, 2016 3:59:15 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 18, 2016 3:59:15 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 18, 2016 3:59:29 PM state.S010_UserCodeScan doAction
+INFOS: User Admin   / 0 connected to host WSMA7040 at 2016-03-18 15:59:29 Project : ENGINE.
+mars 18, 2016 3:59:48 PM helper.PrinterHelper saveAndReprintOpenSheet
+INFOS: Set Pallet [200000006] state to [IN_PROCESS]
+mars 18, 2016 3:59:48 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2016_03_18\open_sheet\PrintOpenPallet_A5_2016_03_18_15_59_48_200000006.pdf] to the default printer...
+mars 18, 2016 3:59:48 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [%s] has been printed.
+mars 18, 2016 3:59:48 PM helper.PrinterHelper saveAndReprintOpenSheet
+INFOS: Set Pallet [200000006] state to [PRINTED]
+mars 18, 2016 4:09:03 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_18] already exist!
+Print sub directory [.\print\2016_03_18.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_18.\closing_sheet] already exist!
+
+mars 18, 2016 4:09:04 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 18, 2016 4:09:04 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 18, 2016 4:09:13 PM state.S010_UserCodeScan doAction
+INFOS: User Admin   / 0 connected to host WSMA7040 at 2016-03-18 16:09:13 Project : ENGINE.
+mars 18, 2016 4:09:17 PM helper.PrinterHelper saveAndReprintOpenSheet
+INFOS: Set Pallet [200000006] state to [IN_PROCESS]
+mars 18, 2016 4:09:17 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2016_03_18\open_sheet\PrintOpenPallet_A5_2016_03_18_16_09_17_200000006.pdf] to the default printer...
+mars 18, 2016 4:09:17 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [%s] has been printed.
+mars 18, 2016 4:09:17 PM helper.PrinterHelper saveAndReprintOpenSheet
+INFOS: Set Pallet [200000006] state to [PRINTED]
+mars 18, 2016 4:13:25 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_18] already exist!
+Print sub directory [.\print\2016_03_18.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_18.\closing_sheet] already exist!
+
+mars 18, 2016 4:13:26 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 18, 2016 4:13:26 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 18, 2016 4:13:29 PM state.S010_UserCodeScan doAction
+INFOS: User Admin   / 0 connected to host WSMA7040 at 2016-03-18 16:13:29 Project : ENGINE.
+mars 18, 2016 4:13:42 PM helper.PrinterHelper saveAndReprintOpenSheet
+INFOS: Set Pallet [200000006] state to [IN_PROCESS]
+mars 18, 2016 4:13:42 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2016_03_18\open_sheet\PrintOpenPallet_A5_2016_03_18_16_13_42_200000006.pdf] to the default printer...
+mars 18, 2016 4:13:42 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [%s] has been printed.
+mars 18, 2016 4:13:42 PM helper.PrinterHelper saveAndReprintOpenSheet
+INFOS: Set Pallet [200000006] state to [PRINTED]
+mars 18, 2016 4:15:09 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_18] already exist!
+Print sub directory [.\print\2016_03_18.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_18.\closing_sheet] already exist!
+
+mars 18, 2016 4:15:10 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 18, 2016 4:15:10 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 18, 2016 4:15:15 PM state.S010_UserCodeScan doAction
+INFOS: User Admin   / 0 connected to host WSMA7040 at 2016-03-18 16:15:15 Project : ENGINE.
+mars 18, 2016 4:15:19 PM helper.PrinterHelper saveAndReprintOpenSheet
+INFOS: Set Pallet [200000006] state to [IN_PROCESS]
+mars 18, 2016 4:15:19 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2016_03_18\open_sheet\PrintOpenPallet_A5_2016_03_18_16_15_18_200000006.pdf] to the default printer...
+mars 18, 2016 4:15:19 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [%s] has been printed.
+mars 18, 2016 4:15:19 PM helper.PrinterHelper saveAndReprintOpenSheet
+INFOS: Set Pallet [200000006] state to [PRINTED]
+mars 18, 2016 4:18:16 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_18] already exist!
+Print sub directory [.\print\2016_03_18.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_18.\closing_sheet] already exist!
+
+mars 18, 2016 4:18:17 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 18, 2016 4:18:17 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 18, 2016 4:18:19 PM state.S010_UserCodeScan doAction
+INFOS: User Admin   / 0 connected to host WSMA7040 at 2016-03-18 16:18:19 Project : ENGINE.
+mars 18, 2016 4:18:23 PM helper.PrinterHelper saveAndReprintOpenSheet
+INFOS: Set Pallet [200000006] state to [IN_PROCESS]
+mars 18, 2016 4:18:23 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2016_03_18\open_sheet\PrintOpenPallet_A5_2016_03_18_16_18_23_200000006.pdf] to the default printer...
+mars 18, 2016 4:18:23 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [%s] has been printed.
+mars 18, 2016 4:18:23 PM helper.PrinterHelper saveAndReprintOpenSheet
+INFOS: Set Pallet [200000006] state to [PRINTED]
+mars 18, 2016 4:18:47 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_18] already exist!
+Print sub directory [.\print\2016_03_18.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_18.\closing_sheet] already exist!
+
+mars 18, 2016 4:18:48 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 18, 2016 4:18:48 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 18, 2016 4:19:20 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_18] already exist!
+Print sub directory [.\print\2016_03_18.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_18.\closing_sheet] already exist!
+
+mars 18, 2016 4:19:21 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 18, 2016 4:19:21 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 18, 2016 4:19:24 PM state.S010_UserCodeScan doAction
+INFOS: User Admin   / 0 connected to host WSMA7040 at 2016-03-18 16:19:24 Project : ENGINE.
+mars 18, 2016 4:19:27 PM helper.PrinterHelper saveAndReprintOpenSheet
+INFOS: Set Pallet [200000006] state to [IN_PROCESS]
+mars 18, 2016 4:19:27 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2016_03_18\open_sheet\PrintOpenPallet_A5_2016_03_18_16_19_27_200000006.pdf] to the default printer...
+mars 18, 2016 4:19:27 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [%s] has been printed.
+mars 18, 2016 4:19:28 PM helper.PrinterHelper saveAndReprintOpenSheet
+INFOS: Set Pallet [200000006] state to [PRINTED]
+mars 18, 2016 4:19:56 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_18] already exist!
+Print sub directory [.\print\2016_03_18.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_18.\closing_sheet] already exist!
+
+mars 18, 2016 4:19:57 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 18, 2016 4:19:57 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 18, 2016 4:20:00 PM state.S010_UserCodeScan doAction
+INFOS: User Admin   / 0 connected to host WSMA7040 at 2016-03-18 16:20:00 Project : ENGINE.
+mars 18, 2016 4:20:10 PM helper.PrinterHelper saveAndReprintOpenSheet
+INFOS: Set Pallet [200000006] state to [IN_PROCESS]
+mars 18, 2016 4:20:10 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2016_03_18\open_sheet\PrintOpenPallet_A5_2016_03_18_16_20_10_200000006.pdf] to the default printer...
+mars 18, 2016 4:20:10 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [%s] has been printed.
+mars 18, 2016 4:20:10 PM helper.PrinterHelper saveAndReprintOpenSheet
+INFOS: Set Pallet [200000006] state to [PRINTED]
+mars 18, 2016 4:21:10 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_18] already exist!
+Print sub directory [.\print\2016_03_18.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_18.\closing_sheet] already exist!
+
+mars 18, 2016 4:21:11 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 18, 2016 4:21:11 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 18, 2016 4:21:14 PM state.S010_UserCodeScan doAction
+INFOS: User Admin   / 0 connected to host WSMA7040 at 2016-03-18 16:21:14 Project : ENGINE.
+mars 18, 2016 4:21:17 PM helper.PrinterHelper saveAndReprintOpenSheet
+INFOS: Set Pallet [200000006] state to [IN_PROCESS]
+mars 18, 2016 4:21:17 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2016_03_18\open_sheet\PrintOpenPallet_A5_2016_03_18_16_21_17_200000006.pdf] to the default printer...
+mars 18, 2016 4:21:17 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [%s] has been printed.
+mars 18, 2016 4:21:17 PM helper.PrinterHelper saveAndReprintOpenSheet
+INFOS: Set Pallet [200000006] state to [PRINTED]
+mars 18, 2016 4:21:40 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22701793] in ConfigUCS: ENGINE
+mars 18, 2016 4:21:40 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22701793] found for project [ENGINE].
+mars 18, 2016 4:21:40 PM state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22701793] OK.
+mars 18, 2016 4:22:00 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2270179305.02.2016;00:00:00] in BaseHarness.
+mars 18, 2016 4:22:00 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+mars 18, 2016 4:22:00 PM state.S030_QRCodeScan doAction
+INFOS: Valid Harness Counter scanned [P2270179305.02.2016;00:00:00] OK.
+mars 18, 2016 4:22:05 PM entity.BaseEngineLabel isLabelCodeExist
+INFOS: Searching Engine Label code [00000000001] in BaseEngineLabel.
+mars 18, 2016 4:22:05 PM entity.BaseEngineLabel isLabelCodeExist
+INFOS: FROM BaseEngineLabel bel WHERE bel.labelCode = :labelCode
+mars 18, 2016 4:22:05 PM entity.BaseEngineLabel isLabelCodeExist
+INFOS: New label engine [00000000001]
+mars 18, 2016 4:22:05 PM state.S031_EngineLabel1Scan doAction
+INFOS: First Valid Engine Label scanned [00000000001] OK.
+mars 18, 2016 4:22:07 PM entity.BaseEngineLabel isLabelCodeExist
+INFOS: Searching Engine Label code [00000000002] in BaseEngineLabel.
+mars 18, 2016 4:22:07 PM entity.BaseEngineLabel isLabelCodeExist
+INFOS: FROM BaseEngineLabel bel WHERE bel.labelCode = :labelCode
+mars 18, 2016 4:22:07 PM entity.BaseEngineLabel isLabelCodeExist
+INFOS: New label engine [00000000002]
+mars 18, 2016 4:22:07 PM state.S032_EngineLabel2Scan doAction
+INFOS: Second Valid Engine Label scanned [00000000002] OK.
+mars 18, 2016 4:22:09 PM gui.UI9000_ChooseContainerType <init>
+INFOS: Item found 22701793--26C37100A--P01--3RV--24
+mars 18, 2016 4:22:09 PM gui.UI9000_ChooseContainerType <init>
+INFOS: 1 item(s) found for Harness Part[22701793].
+mars 18, 2016 4:22:38 PM gui.UI9000_ChooseContainerType mappingContextVals
+INFOS: Selected pack type : 22701793--26C37100A--P01--3RV--24 
+mars 18, 2016 4:22:38 PM helper.PrinterHelper saveAndPrintOpenSheet
+INFOS: Set Pallet [200000007] state to [IN_PROCESS]
+mars 18, 2016 4:22:38 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2016_03_18\open_sheet\PrintOpenPallet_A5_2016_03_18_16_22_38_200000007.pdf] to the default printer...
+mars 18, 2016 4:22:38 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [%s] has been printed.
+mars 18, 2016 4:22:38 PM helper.PrinterHelper saveAndPrintOpenSheet
+INFOS: Set Pallet [200000007] state to [PRINTED]
+mars 18, 2016 4:22:38 PM gui.UI9000_ChooseContainerType items_listKeyPressed
+INFOS: Openning new container for first harness part [22701793].
+mars 18, 2016 5:06:45 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_18] already exist!
+Print sub directory [.\print\2016_03_18.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_18.\closing_sheet] already exist!
+
+mars 18, 2016 5:06:45 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 18, 2016 5:06:45 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 18, 2016 5:07:01 PM state.S010_UserCodeScan doAction
+INFOS: User Admin   / 0 connected to host WSMA7040 at 2016-03-18 17:07:01 Project : ENGINE.
+mars 18, 2016 5:07:20 PM helper.PrinterHelper saveAndReprintOpenSheet
+INFOS: Set Pallet [200000001] state to [IN_PROCESS]
+mars 18, 2016 5:07:20 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2016_03_18\open_sheet\PrintOpenPallet_A5_2016_03_18_17_07_20_200000001.pdf] to the default printer...
+mars 18, 2016 5:07:20 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [%s] has been printed.
+mars 18, 2016 5:07:20 PM helper.PrinterHelper saveAndReprintOpenSheet
+INFOS: Set Pallet [200000001] state to [PRINTED]
+mars 18, 2016 5:08:16 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_18] already exist!
+Print sub directory [.\print\2016_03_18.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_18.\closing_sheet] already exist!
+
+mars 18, 2016 5:08:17 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 18, 2016 5:08:17 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 18, 2016 5:08:25 PM state.S010_UserCodeScan doAction
+INFOS: User Admin   / 0 connected to host WSMA7040 at 2016-03-18 17:08:25 Project : ENGINE.
+mars 18, 2016 5:08:29 PM helper.PrinterHelper saveAndReprintOpenSheet
+INFOS: Set Pallet [200000006] state to [IN_PROCESS]
+mars 18, 2016 5:08:29 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2016_03_18\open_sheet\PrintOpenPallet_A5_2016_03_18_17_08_29_200000006.pdf] to the default printer...
+mars 18, 2016 5:08:29 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [%s] has been printed.
+mars 18, 2016 5:08:29 PM helper.PrinterHelper saveAndReprintOpenSheet
+INFOS: Set Pallet [200000006] state to [PRINTED]
+mars 18, 2016 5:09:26 PM entity.BaseHarness checkHarnessPartFormat
+INFOS: Invalid Harness Part scanned [0] !
+mars 18, 2016 5:09:26 PM state.S020_HarnessPartScan doAction
+AVERTISSEMENT: Invalid Harness Part scanned [0] !
+mars 18, 2016 5:09:46 PM helper.PrinterHelper saveAndReprintOpenSheet
+INFOS: Set Pallet [200000006] state to [IN_PROCESS]
+mars 18, 2016 5:09:46 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2016_03_18\open_sheet\PrintOpenPallet_A5_2016_03_18_17_09_46_200000006.pdf] to the default printer...
+mars 18, 2016 5:09:46 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [%s] has been printed.
+mars 18, 2016 5:09:46 PM helper.PrinterHelper saveAndReprintOpenSheet
+INFOS: Set Pallet [200000006] state to [PRINTED]
+mars 18, 2016 5:11:33 PM helper.PrinterHelper saveAndReprintOpenSheet
+INFOS: Set Pallet [200000004] state to [IN_PROCESS]
+mars 18, 2016 5:11:33 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2016_03_18\open_sheet\PrintOpenPallet_A5_2016_03_18_17_11_33_200000004.pdf] to the default printer...
+mars 18, 2016 5:11:33 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [%s] has been printed.
+mars 18, 2016 5:11:33 PM helper.PrinterHelper saveAndReprintOpenSheet
+INFOS: Set Pallet [200000004] state to [PRINTED]
+mars 18, 2016 5:20:08 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_18] already exist!
+Print sub directory [.\print\2016_03_18.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_18.\closing_sheet] already exist!
+
+mars 18, 2016 5:20:09 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 18, 2016 5:20:09 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 18, 2016 5:20:11 PM state.S010_UserCodeScan doAction
+INFOS: User Admin   / 0 connected to host WSMA7040 at 2016-03-18 17:20:11 Project : ENGINE.
+mars 18, 2016 5:20:19 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22701793] in ConfigUCS: ENGINE
+mars 18, 2016 5:20:19 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22701793] found for project [ENGINE].
+mars 18, 2016 5:20:19 PM state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22701793] OK.
+mars 18, 2016 5:20:26 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2270179305.02.2016;00:00:01] in BaseHarness.
+mars 18, 2016 5:20:26 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+mars 18, 2016 5:20:26 PM state.S030_QRCodeScan doAction
+INFOS: Valid Harness Counter scanned [P2270179305.02.2016;00:00:01] OK.
+mars 18, 2016 5:20:30 PM entity.BaseEngineLabel isLabelCodeExist
+INFOS: Searching Engine Label code [00000000003] in BaseEngineLabel.
+mars 18, 2016 5:20:30 PM entity.BaseEngineLabel isLabelCodeExist
+INFOS: FROM BaseEngineLabel bel WHERE bel.labelCode = :labelCode
+mars 18, 2016 5:20:30 PM entity.BaseEngineLabel isLabelCodeExist
+INFOS: New label engine [00000000003]
+mars 18, 2016 5:20:30 PM state.S031_EngineLabel1Scan doAction
+INFOS: First Valid Engine Label scanned [00000000003] OK.
+mars 18, 2016 5:20:31 PM entity.BaseEngineLabel checkLabelFormat
+INFOS: Invalid Engine Label scanned format []
+mars 18, 2016 5:20:33 PM entity.BaseEngineLabel isLabelCodeExist
+INFOS: Searching Engine Label code [00000000004] in BaseEngineLabel.
+mars 18, 2016 5:20:33 PM entity.BaseEngineLabel isLabelCodeExist
+INFOS: FROM BaseEngineLabel bel WHERE bel.labelCode = :labelCode
+mars 18, 2016 5:20:33 PM entity.BaseEngineLabel isLabelCodeExist
+INFOS: New label engine [00000000004]
+mars 18, 2016 5:20:33 PM state.S032_EngineLabel2Scan doAction
+INFOS: Second Valid Engine Label scanned [00000000004] OK.
+mars 18, 2016 5:20:35 PM gui.UI9000_ChooseContainerType <init>
+INFOS: Item found 22701793--26C37100A--P01--3RV--24
+mars 18, 2016 5:20:35 PM gui.UI9000_ChooseContainerType <init>
+INFOS: 1 item(s) found for Harness Part[22701793].
+mars 18, 2016 5:20:36 PM gui.UI9000_ChooseContainerType mappingContextVals
+INFOS: Selected pack type : 22701793--26C37100A--P01--3RV--24 
+mars 18, 2016 5:20:36 PM helper.PrinterHelper saveAndPrintOpenSheet
+INFOS: Set Pallet [200000008] state to [IN_PROCESS]
+mars 18, 2016 5:20:36 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2016_03_18\open_sheet\PrintOpenPallet_A5_2016_03_18_17_20_36_200000008.pdf] to the default printer...
+mars 18, 2016 5:20:36 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [%s] has been printed.
+mars 18, 2016 5:20:36 PM helper.PrinterHelper saveAndPrintOpenSheet
+INFOS: Set Pallet [200000008] state to [PRINTED]
+mars 18, 2016 5:20:36 PM gui.UI9000_ChooseContainerType items_listKeyPressed
+INFOS: Openning new container for first harness part [22701793].
+mars 18, 2016 5:21:24 PM state.S041_NewPalletScan doAction
+INFOS: Scanned Pallet number [200000008] OK.
+mars 18, 2016 5:21:25 PM state.S041_NewPalletScan doAction
+INFOS: BaseContainer created BaseContainer{id=2, createTime=Fri Mar 18 17:21:24 WET 2016, writeTime=Fri Mar 18 17:21:24 WET 2016, createId=4, writeId=4, user=0, startTime=Fri Mar 18 17:21:24 WET 2016, completeTime=null, workTime=null, palletNumber=200000008, harnessPart=22701793, harnessIndex=P01, supplierPartNumber=26C37100A, qtyExpected=24, qtyRead=1, state=OPEN, packType=3RV} 
+mars 18, 2016 5:22:07 PM state.S041_NewPalletScan doAction
+INFOS: Scanned Pallet number [200000008] OK.
+mars 18, 2016 5:22:07 PM state.S041_NewPalletScan doAction
+INFOS: BaseContainer created BaseContainer{id=null, createTime=Fri Mar 18 17:22:07 WET 2016, writeTime=Fri Mar 18 17:22:07 WET 2016, createId=4, writeId=4, user=0, startTime=Fri Mar 18 17:22:07 WET 2016, completeTime=null, workTime=null, palletNumber=200000008, harnessPart=22701793, harnessIndex=P01, supplierPartNumber=26C37100A, qtyExpected=24, qtyRead=1, state=OPEN, packType=3RV} 
+mars 18, 2016 5:22:56 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_18] already exist!
+Print sub directory [.\print\2016_03_18.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_18.\closing_sheet] already exist!
+
+mars 18, 2016 5:22:56 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 18, 2016 5:22:56 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 18, 2016 5:22:59 PM state.S010_UserCodeScan doAction
+INFOS: User Admin   / 0 connected to host WSMA7040 at 2016-03-18 17:22:59 Project : ENGINE.
+mars 18, 2016 5:23:48 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_18] already exist!
+Print sub directory [.\print\2016_03_18.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_18.\closing_sheet] already exist!
+
+mars 18, 2016 5:23:49 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 18, 2016 5:23:49 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 18, 2016 5:23:52 PM state.S010_UserCodeScan doAction
+INFOS: User Admin   / 0 connected to host WSMA7040 at 2016-03-18 17:23:52 Project : ENGINE.
+mars 18, 2016 5:24:00 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22701793] in ConfigUCS: ENGINE
+mars 18, 2016 5:24:00 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22701793] found for project [ENGINE].
+mars 18, 2016 5:24:00 PM state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22701793] OK.
+mars 18, 2016 5:24:05 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2270179305.02.2016;00:00:00] in BaseHarness.
+mars 18, 2016 5:24:05 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+mars 18, 2016 5:24:05 PM state.S030_QRCodeScan doAction
+INFOS: Valid Harness Counter scanned [P2270179305.02.2016;00:00:00] OK.
+mars 18, 2016 5:24:11 PM entity.BaseEngineLabel isLabelCodeExist
+INFOS: Searching Engine Label code [00000000003] in BaseEngineLabel.
+mars 18, 2016 5:24:11 PM entity.BaseEngineLabel isLabelCodeExist
+INFOS: FROM BaseEngineLabel bel WHERE bel.labelCode = :labelCode
+mars 18, 2016 5:24:11 PM entity.BaseEngineLabel isLabelCodeExist
+INFOS: New label engine [00000000003]
+mars 18, 2016 5:24:11 PM state.S031_EngineLabel1Scan doAction
+INFOS: First Valid Engine Label scanned [00000000003] OK.
+mars 18, 2016 5:24:12 PM entity.BaseEngineLabel isLabelCodeExist
+INFOS: Searching Engine Label code [00000000004] in BaseEngineLabel.
+mars 18, 2016 5:24:12 PM entity.BaseEngineLabel isLabelCodeExist
+INFOS: FROM BaseEngineLabel bel WHERE bel.labelCode = :labelCode
+mars 18, 2016 5:24:12 PM entity.BaseEngineLabel isLabelCodeExist
+INFOS: New label engine [00000000004]
+mars 18, 2016 5:24:12 PM state.S032_EngineLabel2Scan doAction
+INFOS: Second Valid Engine Label scanned [00000000004] OK.
+mars 18, 2016 5:24:14 PM gui.UI9000_ChooseContainerType <init>
+INFOS: Item found 22701793--26C37100A--P01--3RV--24
+mars 18, 2016 5:24:14 PM gui.UI9000_ChooseContainerType <init>
+INFOS: 1 item(s) found for Harness Part[22701793].
+mars 18, 2016 5:24:15 PM gui.UI9000_ChooseContainerType mappingContextVals
+INFOS: Selected pack type : 22701793--26C37100A--P01--3RV--24 
+mars 18, 2016 5:24:15 PM helper.PrinterHelper saveAndPrintOpenSheet
+INFOS: Set Pallet [200000009] state to [IN_PROCESS]
+mars 18, 2016 5:24:15 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2016_03_18\open_sheet\PrintOpenPallet_A5_2016_03_18_17_24_15_200000009.pdf] to the default printer...
+mars 18, 2016 5:24:15 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [%s] has been printed.
+mars 18, 2016 5:24:15 PM helper.PrinterHelper saveAndPrintOpenSheet
+INFOS: Set Pallet [200000009] state to [PRINTED]
+mars 18, 2016 5:24:15 PM gui.UI9000_ChooseContainerType items_listKeyPressed
+INFOS: Openning new container for first harness part [22701793].
+mars 18, 2016 5:24:27 PM state.S041_NewPalletScan doAction
+INFOS: Scanned Pallet number [200000009] OK.
+mars 18, 2016 5:24:27 PM state.S041_NewPalletScan doAction
+INFOS: BaseContainer created BaseContainer{id=29, createTime=Fri Mar 18 17:24:27 WET 2016, writeTime=Fri Mar 18 17:24:27 WET 2016, createId=4, writeId=4, user=0, startTime=Fri Mar 18 17:24:27 WET 2016, completeTime=null, workTime=null, palletNumber=200000009, harnessPart=22701793, harnessIndex=P01, supplierPartNumber=26C37100A, qtyExpected=24, qtyRead=1, state=OPEN, packType=3RV} 
+mars 18, 2016 5:24:46 PM helper.PrinterHelper saveAndReprintOpenSheet
+INFOS: Set Pallet [200000009] state to [IN_PROCESS]
+mars 18, 2016 5:24:46 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2016_03_18\open_sheet\PrintOpenPallet_A5_2016_03_18_17_24_46_200000009.pdf] to the default printer...
+mars 18, 2016 5:24:46 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [%s] has been printed.
+mars 18, 2016 5:24:46 PM helper.PrinterHelper saveAndReprintOpenSheet
+INFOS: Set Pallet [200000009] state to [PRINTED]
+mars 18, 2016 5:39:44 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_18] already exist!
+Print sub directory [.\print\2016_03_18.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_18.\closing_sheet] already exist!
+
+mars 18, 2016 5:39:44 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 18, 2016 5:39:44 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 18, 2016 5:39:51 PM state.S010_UserCodeScan doAction
+INFOS: User Admin   / 0 connected to host WSMA7040 at 2016-03-18 17:39:51 Project : ENGINE.
+mars 18, 2016 5:40:41 PM helper.Helper InitDailyDestPrintDir
+INFOS: nullPrint directory [.\print\2016_03_18] is created!
+Print sub directory [.\print\2016_03_18.\open_sheet] is created!
+Print sub directory [.\print\2016_03_18.\closing_sheet] is created!
+
+mars 18, 2016 5:40:41 PM helper.PrinterHelper saveAndReprintOpenSheet
+INFOS: Set Pallet [200000009] state to [IN_PROCESS]
+mars 18, 2016 5:40:41 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2016_03_18\open_sheet\PrintOpenPallet_A5_2016_03_18_17_40_41_200000009.pdf] to the default printer...
+mars 18, 2016 5:40:41 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [%s] has been printed.
+mars 18, 2016 5:40:41 PM helper.PrinterHelper saveAndReprintOpenSheet
+INFOS: Set Pallet [200000009] state to [PRINTED]
+mars 18, 2016 6:15:38 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_18] already exist!
+Print sub directory [.\print\2016_03_18.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_18.\closing_sheet] already exist!
+
+mars 18, 2016 6:15:39 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 18, 2016 6:15:39 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 18, 2016 6:16:11 PM state.S010_UserCodeScan doAction
+INFOS: User Admin   / 0 connected to host WSMA7040 at 2016-03-18 18:16:11 Project : ENGINE.
+mars 18, 2016 6:17:20 PM helper.Helper InitDailyDestPrintDir
+INFOS: nullPrint directory [.\print\2016_03_18] already exist!
+Print sub directory [.\print\2016_03_18.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_18.\closing_sheet] already exist!
+
+mars 18, 2016 6:17:21 PM helper.PrinterHelper saveAndPrintClosingSheet
+INFOS: Set Closing Pallet item [5] state to [IN_PROCESS]
+mars 18, 2016 6:17:21 PM print.PrintClosingPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2016_03_18\closing_sheet\PrintClosingPallet_A5_2016_03_18_18_17_20.pdf] to the default printer...
+mars 18, 2016 6:17:21 PM print.PrintClosingPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [%s] has been printed.
+mars 18, 2016 6:17:21 PM helper.PrinterHelper saveAndPrintClosingSheet
+INFOS: Set Closing Pallet [5] state to [PRINTED]
+mars 18, 2016 6:21:16 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_18] already exist!
+Print sub directory [.\print\2016_03_18.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_18.\closing_sheet] already exist!
+
+mars 18, 2016 6:21:16 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 18, 2016 6:21:16 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 18, 2016 6:24:04 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_18] already exist!
+Print sub directory [.\print\2016_03_18.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_18.\closing_sheet] already exist!
+
+mars 18, 2016 6:24:05 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 18, 2016 6:24:05 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 18, 2016 6:24:42 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_18] already exist!
+Print sub directory [.\print\2016_03_18.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_18.\closing_sheet] already exist!
+
+mars 18, 2016 6:24:43 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 18, 2016 6:24:43 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 18, 2016 6:25:01 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_18] already exist!
+Print sub directory [.\print\2016_03_18.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_18.\closing_sheet] already exist!
+
+mars 18, 2016 6:25:02 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 18, 2016 6:25:02 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 18, 2016 6:26:05 PM state.S010_UserCodeScan doAction
+INFOS: User Admin   / 0 connected to host WSMA7040 at 2016-03-18 18:26:05 Project : ENGINE.
+mars 18, 2016 6:29:18 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_18] already exist!
+Print sub directory [.\print\2016_03_18.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_18.\closing_sheet] already exist!
+
+mars 18, 2016 6:29:19 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 18, 2016 6:29:19 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 18, 2016 6:37:53 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_18] already exist!
+Print sub directory [.\print\2016_03_18.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_18.\closing_sheet] already exist!
+
+mars 18, 2016 6:37:54 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 18, 2016 6:37:54 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 18, 2016 6:38:00 PM state.S010_UserCodeScan doAction
+INFOS: User Admin   / 0 connected to host WSMA7040 at 2016-03-18 18:38:00 Project : ENGINE.
+mars 18, 2016 6:38:53 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_18] already exist!
+Print sub directory [.\print\2016_03_18.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_18.\closing_sheet] already exist!
+
+mars 18, 2016 6:38:54 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 18, 2016 6:38:54 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 18, 2016 6:39:09 PM state.S010_UserCodeScan doAction
+INFOS: Invalid matricule number or account locked !
+mars 18, 2016 6:39:13 PM state.S010_UserCodeScan doAction
+INFOS: User Mohamed Ramali / 14228 connected to host WSMA7040 at 2016-03-18 18:39:13 Project : ENGINE.
+mars 18, 2016 6:39:30 PM state.S010_UserCodeScan doAction
+INFOS: User Admin   / 0 connected to host WSMA7040 at 2016-03-18 18:39:30 Project : ENGINE.
+mars 18, 2016 6:41:49 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_18] already exist!
+Print sub directory [.\print\2016_03_18.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_18.\closing_sheet] already exist!
+
+mars 18, 2016 6:41:49 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 18, 2016 6:41:49 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 18, 2016 6:41:55 PM state.S010_UserCodeScan doAction
+INFOS: User Admin   / 0 connected to host WSMA7040 at 2016-03-18 18:41:55 Project : ENGINE.
+mars 18, 2016 6:43:45 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_18] already exist!
+Print sub directory [.\print\2016_03_18.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_18.\closing_sheet] already exist!
+
+mars 18, 2016 6:43:46 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 18, 2016 6:43:46 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 18, 2016 6:43:48 PM state.S010_UserCodeScan doAction
+INFOS: User Admin   / 0 connected to host WSMA7040 at 2016-03-18 18:43:48 Project : ENGINE.
+mars 18, 2016 6:44:11 PM state.S010_UserCodeScan doAction
+INFOS: User Admin   / 0 connected to host WSMA7040 at 2016-03-18 18:44:11 Project : ENGINE.
+mars 18, 2016 6:44:21 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22701793] in ConfigUCS: ENGINE
+mars 18, 2016 6:44:21 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22701793] found for project [ENGINE].
+mars 18, 2016 6:44:21 PM state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22701793] OK.
+mars 18, 2016 6:44:28 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2270179305.02.2016;00:00:03] in BaseHarness.
+mars 18, 2016 6:44:28 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+mars 18, 2016 6:44:28 PM state.S030_QRCodeScan doAction
+INFOS: Valid Harness Counter scanned [P2270179305.02.2016;00:00:03] OK.
+mars 18, 2016 6:44:33 PM entity.BaseEngineLabel isLabelCodeExist
+INFOS: Searching Engine Label code [00000000004] in BaseEngineLabel.
+mars 18, 2016 6:44:33 PM entity.BaseEngineLabel isLabelCodeExist
+INFOS: FROM BaseEngineLabel bel WHERE bel.labelCode = :labelCode
+mars 18, 2016 6:44:33 PM entity.BaseEngineLabel isLabelCodeExist
+AVERTISSEMENT: Duplicated engine label [00000000004]
+mars 18, 2016 6:44:35 PM entity.BaseEngineLabel isLabelCodeExist
+INFOS: Searching Engine Label code [00000000005] in BaseEngineLabel.
+mars 18, 2016 6:44:35 PM entity.BaseEngineLabel isLabelCodeExist
+INFOS: FROM BaseEngineLabel bel WHERE bel.labelCode = :labelCode
+mars 18, 2016 6:44:35 PM entity.BaseEngineLabel isLabelCodeExist
+INFOS: New label engine [00000000005]
+mars 18, 2016 6:44:35 PM state.S031_EngineLabel1Scan doAction
+INFOS: First Valid Engine Label scanned [00000000005] OK.
+mars 18, 2016 6:44:36 PM entity.BaseEngineLabel isLabelCodeExist
+INFOS: Searching Engine Label code [00000000006] in BaseEngineLabel.
+mars 18, 2016 6:44:36 PM entity.BaseEngineLabel isLabelCodeExist
+INFOS: FROM BaseEngineLabel bel WHERE bel.labelCode = :labelCode
+mars 18, 2016 6:44:36 PM entity.BaseEngineLabel isLabelCodeExist
+INFOS: New label engine [00000000006]
+mars 18, 2016 6:44:36 PM state.S032_EngineLabel2Scan doAction
+INFOS: Second Valid Engine Label scanned [00000000006] OK.
+mars 18, 2016 6:47:15 PM state.S010_UserCodeScan doAction
+INFOS: User Admin   / 0 connected to host WSMA7040 at 2016-03-18 18:47:15 Project : ENGINE.
+mars 18, 2016 6:47:34 PM gui.UI9001_DropPalletConfirmation ok_btnActionPerformed
+INFOS: Droping harness list...2
+mars 18, 2016 6:47:34 PM gui.UI9001_DropPalletConfirmation ok_btnActionPerformed
+INFOS: Droping Engine label harness list...0
+mars 18, 2016 6:47:34 PM gui.UI9001_DropPalletConfirmation ok_btnActionPerformed
+INFOS: Droping Engine label harness list...2
+mars 18, 2016 6:51:20 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_18] already exist!
+Print sub directory [.\print\2016_03_18.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_18.\closing_sheet] already exist!
+
+mars 18, 2016 6:51:21 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 18, 2016 6:51:21 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 18, 2016 6:51:27 PM state.S010_UserCodeScan doAction
+INFOS: User Admin   / 0 connected to host WSMA7040 at 2016-03-18 18:51:27 Project : ENGINE.
+mars 18, 2016 6:52:01 PM helper.Helper InitDailyDestPrintDir
+INFOS: nullPrint directory [.\print\2016_03_18] already exist!
+Print sub directory [.\print\2016_03_18.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_18.\closing_sheet] already exist!
+
+mars 18, 2016 6:54:09 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_18] already exist!
+Print sub directory [.\print\2016_03_18.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_18.\closing_sheet] already exist!
+
+mars 18, 2016 6:54:09 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 18, 2016 6:54:09 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 18, 2016 6:54:15 PM state.S010_UserCodeScan doAction
+INFOS: User Admin   / 0 connected to host WSMA7040 at 2016-03-18 18:54:15 Project : ENGINE.
+mars 18, 2016 6:57:31 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_18] already exist!
+Print sub directory [.\print\2016_03_18.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_18.\closing_sheet] already exist!
+
+mars 18, 2016 6:57:32 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 18, 2016 6:57:32 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 18, 2016 6:57:39 PM state.S010_UserCodeScan doAction
+INFOS: User Admin   / 0 connected to host WSMA7040 at 2016-03-18 18:57:39 Project : ENGINE.
+mars 18, 2016 6:57:45 PM helper.Helper InitDailyDestPrintDir
+INFOS: nullPrint directory [.\print\2016_03_18] already exist!
+Print sub directory [.\print\2016_03_18.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_18.\closing_sheet] already exist!
+
+mars 18, 2016 6:57:45 PM helper.PrinterHelper saveAndReprintOpenSheet
+INFOS: Set Pallet [200000006] state to [IN_PROCESS]
+mars 18, 2016 6:57:45 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2016_03_18\open_sheet\PrintOpenPallet_A5_2016_03_18_18_57_45_200000006.pdf] to the default printer...
+mars 18, 2016 6:57:45 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [%s] has been printed.
+mars 18, 2016 6:57:45 PM helper.PrinterHelper saveAndReprintOpenSheet
+INFOS: Set Pallet [200000006] state to [PRINTED]
+mars 18, 2016 6:58:23 PM helper.Helper InitDailyDestPrintDir
+INFOS: nullPrint directory [.\print\2016_03_18] already exist!
+Print sub directory [.\print\2016_03_18.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_18.\closing_sheet] already exist!
+
+mars 18, 2016 6:58:23 PM helper.PrinterHelper saveAndPrintClosingSheet
+INFOS: Set Closing Pallet item [5] state to [IN_PROCESS]
+mars 18, 2016 6:58:23 PM print.PrintClosingPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2016_03_18\closing_sheet\PrintClosingPallet_A5_2016_03_18_18_58_23.pdf] to the default printer...
+mars 18, 2016 6:58:23 PM print.PrintClosingPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [%s] has been printed.
+mars 18, 2016 6:58:23 PM helper.PrinterHelper saveAndPrintClosingSheet
+INFOS: Set Closing Pallet [5] state to [PRINTED]
+mars 18, 2016 6:58:45 PM helper.Helper InitDailyDestPrintDir
+INFOS: nullPrint directory [.\print\2016_03_18] already exist!
+Print sub directory [.\print\2016_03_18.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_18.\closing_sheet] already exist!
+

@@ -1,0 +1,31 @@
+avr. 01, 2016 10:33:43 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_04_01] is created!
+Print sub directory [.\print\2016_04_01.\open_sheet] is created!
+Print sub directory [.\print\2016_04_01.\closing_sheet] is created!
+
+avr. 01, 2016 10:33:45 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+avr. 01, 2016 10:33:45 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+avr. 01, 2016 10:34:59 AM state.S010_UserCodeScan doAction
+INFOS: User Admin   / 0 connected to host WSMA7040 at 2016-04-01 10:34:59 Project : SMALL.
+avr. 01, 2016 10:35:06 AM gui.packaging.PACKAGING_UI9001_DropPalletConfirmation ok_btnActionPerformed
+INFOS: Droping harness list...32
+avr. 01, 2016 12:05:42 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_04_01] already exist!
+Print sub directory [.\print\2016_04_01.\open_sheet] already exist!
+Print sub directory [.\print\2016_04_01.\closing_sheet] already exist!
+Print sub directory [.\print\2016_04_01.\picking_label] is created!
+
+avr. 01, 2016 1:34:27 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_04_01] already exist!
+Print sub directory [.\print\2016_04_01.\open_sheet] already exist!
+Print sub directory [.\print\2016_04_01.\closing_sheet] already exist!
+Print sub directory [.\print\2016_04_01.\picking_label] already exist!
+
+avr. 01, 2016 1:35:36 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_04_01] already exist!
+Print sub directory [.\print\2016_04_01.\open_sheet] already exist!
+Print sub directory [.\print\2016_04_01.\closing_sheet] already exist!
+Print sub directory [.\print\2016_04_01.\picking_label] already exist!
+

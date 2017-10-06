@@ -1,0 +1,120 @@
+mai 18, 2017 11:56:57 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_05_18] is created!
+Print sub directory [.\print\2017_05_18.\open_sheet] is created!
+Print sub directory [.\print\2017_05_18.\closing_sheet] is created!
+Print sub directory [.\print\2017_05_18.\picking_label] is created!
+Print sub directory [.\print\2017_05_18.\dispatch_label] is created!
+
+mai 18, 2017 11:57:03 AM gui.packaging.PACKAGING_UI0001_Main loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord ORDER BY id ASC
+mai 18, 2017 11:57:03 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mai 18, 2017 11:57:03 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mai 18, 2017 11:58:51 AM gui.packaging.PACKAGING_UI0001_Main loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord ORDER BY id ASC
+mai 18, 2017 11:58:51 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mai 18, 2017 11:58:51 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mai 18, 2017 11:59:32 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mai 18, 2017 11:59:34 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mai 18, 2017 11:59:34 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+mai 18, 2017 11:59:37 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mai 18, 2017 11:59:37 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+mai 18, 2017 11:59:48 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mai 18, 2017 11:59:48 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+mai 18, 2017 12:00:13 PM gui.packaging_warehouse.PACKAGING_WAREHOUSE_UI0001_PasswordRequest connect
+INFOS: User OUSSAMA EZZIOURI / 9999 connected to host WSMA7040 at 2017-05-18 12:00:13 Packaging warehouse interface : .
+mai 18, 2017 12:01:26 PM gui.packaging_warehouse.PACKAGING_WAREHOUSE_UI0001_PasswordRequest connect
+INFOS: User OUSSAMA EZZIOURI / 9999 connected to host WSMA7040 at 2017-05-18 12:01:26 Packaging warehouse interface : .
+mai 18, 2017 12:04:32 PM gui.packaging_warehouse.PACKAGING_WAREHOUSE_UI0001_PasswordRequest connect
+INFOS: User OUSSAMA EZZIOURI / 9999 connected to host WSMA7040 at 2017-05-18 12:04:32 Packaging warehouse interface : .
+mai 18, 2017 12:07:13 PM gui.config.CONFIG_UI0000_AdminPassword checkLoginAndPass
+INFOS: User OUSSAMA EZZIOURI / 9999 connected to host WSMA7040 at 2017-05-18 12:07:13 Module : Planner.
+mai 18, 2017 12:07:13 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mai 18, 2017 12:07:13 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+mai 18, 2017 12:07:13 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mai 18, 2017 12:07:23 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+mai 18, 2017 12:07:23 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+mai 18, 2017 12:07:42 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+mai 18, 2017 12:07:42 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+mai 18, 2017 12:08:23 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+mai 18, 2017 12:08:23 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+mai 18, 2017 2:47:18 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_05_18] already exist!
+Print sub directory [.\print\2017_05_18.\open_sheet] already exist!
+Print sub directory [.\print\2017_05_18.\closing_sheet] already exist!
+Print sub directory [.\print\2017_05_18.\picking_label] already exist!
+Print sub directory [.\print\2017_05_18.\dispatch_label] already exist!
+
+mai 18, 2017 2:47:21 PM gui.packaging.PACKAGING_UI0001_Main loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord ORDER BY id ASC
+mai 18, 2017 2:47:21 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mai 18, 2017 2:47:21 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mai 19, 2017 8:13:46 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mai 19, 2017 8:13:48 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mai 19, 2017 8:13:48 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+mai 19, 2017 8:13:49 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mai 19, 2017 8:13:49 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+mai 19, 2017 8:13:51 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mai 19, 2017 8:13:51 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+mai 19, 2017 8:13:56 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mai 19, 2017 8:13:56 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+mai 19, 2017 8:14:12 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mai 19, 2017 8:14:14 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mai 19, 2017 8:14:14 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+mai 19, 2017 8:14:17 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mai 19, 2017 8:14:17 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+mai 19, 2017 9:08:12 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mai 19, 2017 9:08:14 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mai 19, 2017 9:08:14 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+mai 19, 2017 9:08:15 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mai 19, 2017 9:08:15 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+mai 19, 2017 9:08:17 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mai 19, 2017 9:08:17 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+mai 19, 2017 10:09:08 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mai 19, 2017 10:09:08 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+mai 19, 2017 10:09:08 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC

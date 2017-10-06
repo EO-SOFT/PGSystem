@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 6 f?vr. 2016 21:43:56 by Hibernate Tools 3.6.0 -->
+<hibernate-mapping package="entity">
+  <class name="entity.HisPalletPrint" table="his_pallet_print">
+        <id name="id"/>
+            <!--  PostgreSQL generator for a sequence which is named his_pallet_id_seq
+            -->
+            <generator class="sequence"/>
+                <param name="sequence"/>his_pallet_id_seq</param>
+            </generator>
+        </id>
+        <property column="create_time" name="createTime" type="java.sql.Timestamp"/>
+        <property column="create_id" name="createId" />
+        <property column="write_time" name="writeTime" type="java.sql.Timestamp"/>
+        <property column="write_id" name="writeId" />
+        <property column="m_user" name="user" />
+        <property column="harness_part" name="harnessPart" />
+        <property column="harness_index" name="harnessIndex" />
+        <property column="pack_size" name="packSize" />
+        <property column="print_state" name="printState" />
+        <property column="reprint" name="reprint" />
+  </class>
+</hibernate-mapping>

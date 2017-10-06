@@ -1,0 +1,49 @@
+<ivysettings>
+	<property name="central.repo" value="http://repo1.maven.org/maven2" />
+	<property name="jboss.repo"
+		value="http://repository.jboss.org/maven2" />
+	<property name="ivy.local.default.root"
+		value="${ivy.default.ivy.user.dir}/maven/local/" override="false" />
+	<property name="ivy.local.default.ivy.pattern"
+		value="[organisation]/[module]/[revision]/[type]s/[artifact].[ext]"
+		override="false" />
+	<property name="ivy.local.default.artifact.pattern"
+		value="[organisation]/[module]/[revision]/[type]s/[artifact].[ext]"
+		override="false" />
+
+	<settings defaultResolver="default" />
+	<caches defaultCacheDir="${ivy.default.ivy.user.dir}/tutorial" />
+
+
+	<resolvers>
+		<filesystem name="local">
+			<ivy
+				pattern="${ivy.local.default.root}/${ivy.local.default.ivy.pattern}" />
+			<artifact
+				pattern="${ivy.local.default.root}/${ivy.local.default.artifact.pattern}" />
+		</filesystem>
+		<url name="fix" m2compatible="true">
+			<ivy
+				pattern="${jboss.repo}/[organisation]/[module]/[revision]/[artifact]-[revision]/ivy.xml" />
+			<artifact
+				pattern="${jboss.repo}/[organisation]/[module]/[revision]/[artifact]-[revision](-[classifier]).[ext]" />
+
+		</url>
+
+		<ibiblio name="central" m2compatible="true" usepoms="true"
+			root="${central.repo}"
+			pattern="[organisation]/[module]/[revision]/[artifact]-[revision](-[classifier]).[ext]" />
+		<ibiblio name="jboss" m2compatible="true" usepoms="true"
+			root="${jboss.repo}"
+			pattern="[organisation]/[module]/[revision]/[artifact]-[revision](-[classifier]).[ext]" />
+		<chain name="default" returnFirst="true">
+			<resolver ref="local" />
+			<resolver ref="central" />
+			<resolver ref="jboss" />
+		</chain>
+	</resolvers>
+<modules>
+  <module organisation="org.hibernate" name="ejb3-persistence"  resolver="fix"/>
+</modules>
+
+</ivysettings>

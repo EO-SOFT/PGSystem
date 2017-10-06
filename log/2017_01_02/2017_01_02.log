@@ -1,0 +1,166 @@
+janv. 02, 2017 12:13:52 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_01_02] is created!
+Print sub directory [.\print\2017_01_02.\open_sheet] is created!
+Print sub directory [.\print\2017_01_02.\closing_sheet] is created!
+Print sub directory [.\print\2017_01_02.\picking_label] is created!
+Print sub directory [.\print\2017_01_02.\dispatch_label] is created!
+
+janv. 02, 2017 12:14:28 PM gui.config.CONFIG_UI0000_AdminPassword checkLoginAndPass
+INFOS: User Admin   / 9999 connected to host O-EZZIOURI at 2017-01-02 12:14:28 Module : Planner.
+janv. 02, 2017 12:17:35 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_01_02] already exist!
+Print sub directory [.\print\2017_01_02.\open_sheet] already exist!
+Print sub directory [.\print\2017_01_02.\closing_sheet] already exist!
+Print sub directory [.\print\2017_01_02.\picking_label] already exist!
+Print sub directory [.\print\2017_01_02.\dispatch_label] already exist!
+
+janv. 02, 2017 12:17:47 PM gui.config.CONFIG_UI0000_AdminPassword checkLoginAndPass
+INFOS: User Admin   / 9999 connected to host O-EZZIOURI at 2017-01-02 12:17:47 Module : Planner.
+janv. 02, 2017 12:19:23 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_01_02] already exist!
+Print sub directory [.\print\2017_01_02.\open_sheet] already exist!
+Print sub directory [.\print\2017_01_02.\closing_sheet] already exist!
+Print sub directory [.\print\2017_01_02.\picking_label] already exist!
+Print sub directory [.\print\2017_01_02.\dispatch_label] already exist!
+
+janv. 02, 2017 12:19:36 PM gui.config.CONFIG_UI0000_AdminPassword checkLoginAndPass
+INFOS: User Admin   / 9999 connected to host O-EZZIOURI at 2017-01-02 12:19:36 Module : Planner.
+janv. 02, 2017 12:21:44 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_01_02] already exist!
+Print sub directory [.\print\2017_01_02.\open_sheet] already exist!
+Print sub directory [.\print\2017_01_02.\closing_sheet] already exist!
+Print sub directory [.\print\2017_01_02.\picking_label] already exist!
+Print sub directory [.\print\2017_01_02.\dispatch_label] already exist!
+
+janv. 02, 2017 12:21:58 PM gui.config.CONFIG_UI0000_AdminPassword checkLoginAndPass
+INFOS: User Admin   / 9999 connected to host O-EZZIOURI at 2017-01-02 12:21:58 Module : Planner.
+janv. 02, 2017 1:03:24 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_01_02] already exist!
+Print sub directory [.\print\2017_01_02.\open_sheet] already exist!
+Print sub directory [.\print\2017_01_02.\closing_sheet] already exist!
+Print sub directory [.\print\2017_01_02.\picking_label] already exist!
+Print sub directory [.\print\2017_01_02.\dispatch_label] already exist!
+
+janv. 02, 2017 1:03:43 PM gui.config.CONFIG_UI0000_AdminPassword checkLoginAndPass
+INFOS: User Admin   / 9999 connected to host O-EZZIOURI at 2017-01-02 13:03:43 Module : Planner.
+janv. 02, 2017 1:12:36 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_01_02] already exist!
+Print sub directory [.\print\2017_01_02.\open_sheet] already exist!
+Print sub directory [.\print\2017_01_02.\closing_sheet] already exist!
+Print sub directory [.\print\2017_01_02.\picking_label] already exist!
+Print sub directory [.\print\2017_01_02.\dispatch_label] already exist!
+
+janv. 02, 2017 1:12:38 PM gui.packaging.PACKAGING_UI0001_Main loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord ORDER BY id ASC
+janv. 02, 2017 1:12:38 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+janv. 02, 2017 1:12:38 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+janv. 02, 2017 1:13:00 PM gui.config.CONFIG_UI0000_AdminPassword checkLoginAndPass
+INFOS: User Admin   / 9999 connected to host O-EZZIOURI at 2017-01-02 13:13:00 Module : Planner.
+janv. 02, 2017 2:48:35 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_01_02] already exist!
+Print sub directory [.\print\2017_01_02.\open_sheet] already exist!
+Print sub directory [.\print\2017_01_02.\closing_sheet] already exist!
+Print sub directory [.\print\2017_01_02.\picking_label] already exist!
+Print sub directory [.\print\2017_01_02.\dispatch_label] already exist!
+
+janv. 02, 2017 2:48:50 PM gui.config.CONFIG_UI0000_AdminPassword checkLoginAndPass
+INFOS: User Admin   / 9999 connected to host O-EZZIOURI at 2017-01-02 14:48:50 Module : Planner.
+janv. 02, 2017 2:55:22 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_01_02] already exist!
+Print sub directory [.\print\2017_01_02.\open_sheet] already exist!
+Print sub directory [.\print\2017_01_02.\closing_sheet] already exist!
+Print sub directory [.\print\2017_01_02.\picking_label] already exist!
+Print sub directory [.\print\2017_01_02.\dispatch_label] already exist!
+
+janv. 02, 2017 2:55:30 PM gui.config.CONFIG_UI0000_AdminPassword checkLoginAndPass
+INFOS: User Admin   / 9999 connected to host O-EZZIOURI at 2017-01-02 14:55:30 Module : Planner.
+janv. 02, 2017 3:10:33 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_01_02] already exist!
+Print sub directory [.\print\2017_01_02.\open_sheet] already exist!
+Print sub directory [.\print\2017_01_02.\closing_sheet] already exist!
+Print sub directory [.\print\2017_01_02.\picking_label] already exist!
+Print sub directory [.\print\2017_01_02.\dispatch_label] already exist!
+
+janv. 02, 2017 3:22:58 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_01_02] already exist!
+Print sub directory [.\print\2017_01_02.\open_sheet] already exist!
+Print sub directory [.\print\2017_01_02.\closing_sheet] already exist!
+Print sub directory [.\print\2017_01_02.\picking_label] already exist!
+Print sub directory [.\print\2017_01_02.\dispatch_label] already exist!
+
+janv. 02, 2017 3:23:17 PM gui.config.CONFIG_UI0000_AdminPassword checkLoginAndPass
+INFOS: User Admin   / 9999 connected to host O-EZZIOURI at 2017-01-02 15:23:17 Module : Planner.
+janv. 02, 2017 3:45:53 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_01_02] already exist!
+Print sub directory [.\print\2017_01_02.\open_sheet] already exist!
+Print sub directory [.\print\2017_01_02.\closing_sheet] already exist!
+Print sub directory [.\print\2017_01_02.\picking_label] already exist!
+Print sub directory [.\print\2017_01_02.\dispatch_label] already exist!
+
+janv. 02, 2017 3:46:13 PM gui.config.CONFIG_UI0000_AdminPassword checkLoginAndPass
+INFOS: User Admin   / 9999 connected to host O-EZZIOURI at 2017-01-02 15:46:13 Module : Planner.
+janv. 02, 2017 3:47:11 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_01_02] already exist!
+Print sub directory [.\print\2017_01_02.\open_sheet] already exist!
+Print sub directory [.\print\2017_01_02.\closing_sheet] already exist!
+Print sub directory [.\print\2017_01_02.\picking_label] already exist!
+Print sub directory [.\print\2017_01_02.\dispatch_label] already exist!
+
+janv. 02, 2017 3:47:25 PM gui.config.CONFIG_UI0000_AdminPassword checkLoginAndPass
+INFOS: User Admin   / 9999 connected to host O-EZZIOURI at 2017-01-02 15:47:25 Module : Planner.
+janv. 02, 2017 3:49:48 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_01_02] already exist!
+Print sub directory [.\print\2017_01_02.\open_sheet] already exist!
+Print sub directory [.\print\2017_01_02.\closing_sheet] already exist!
+Print sub directory [.\print\2017_01_02.\picking_label] already exist!
+Print sub directory [.\print\2017_01_02.\dispatch_label] already exist!
+
+janv. 02, 2017 3:50:03 PM gui.config.CONFIG_UI0000_AdminPassword checkLoginAndPass
+INFOS: User Admin   / 9999 connected to host O-EZZIOURI at 2017-01-02 15:50:03 Module : Planner.
+janv. 02, 2017 3:51:06 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_01_02] already exist!
+Print sub directory [.\print\2017_01_02.\open_sheet] already exist!
+Print sub directory [.\print\2017_01_02.\closing_sheet] already exist!
+Print sub directory [.\print\2017_01_02.\picking_label] already exist!
+Print sub directory [.\print\2017_01_02.\dispatch_label] already exist!
+
+janv. 02, 2017 3:51:24 PM gui.config.CONFIG_UI0000_AdminPassword checkLoginAndPass
+INFOS: User Admin   / 9999 connected to host O-EZZIOURI at 2017-01-02 15:51:24 Module : Planner.
+janv. 02, 2017 3:52:27 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_01_02] already exist!
+Print sub directory [.\print\2017_01_02.\open_sheet] already exist!
+Print sub directory [.\print\2017_01_02.\closing_sheet] already exist!
+Print sub directory [.\print\2017_01_02.\picking_label] already exist!
+Print sub directory [.\print\2017_01_02.\dispatch_label] already exist!
+
+janv. 02, 2017 3:52:39 PM gui.config.CONFIG_UI0000_AdminPassword checkLoginAndPass
+INFOS: User Admin   / 9999 connected to host O-EZZIOURI at 2017-01-02 15:52:39 Module : Planner.
+janv. 02, 2017 4:48:40 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_01_02] already exist!
+Print sub directory [.\print\2017_01_02.\open_sheet] already exist!
+Print sub directory [.\print\2017_01_02.\closing_sheet] already exist!
+Print sub directory [.\print\2017_01_02.\picking_label] already exist!
+Print sub directory [.\print\2017_01_02.\dispatch_label] already exist!
+
+janv. 02, 2017 4:48:54 PM gui.config.CONFIG_UI0000_AdminPassword checkLoginAndPass
+INFOS: User Admin   / 9999 connected to host O-EZZIOURI at 2017-01-02 16:48:54 Module : Planner.
+janv. 02, 2017 4:50:01 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_01_02] already exist!
+Print sub directory [.\print\2017_01_02.\open_sheet] already exist!
+Print sub directory [.\print\2017_01_02.\closing_sheet] already exist!
+Print sub directory [.\print\2017_01_02.\picking_label] already exist!
+Print sub directory [.\print\2017_01_02.\dispatch_label] already exist!
+
+janv. 02, 2017 4:50:16 PM gui.config.CONFIG_UI0000_AdminPassword checkLoginAndPass
+INFOS: User Admin   / 9999 connected to host O-EZZIOURI at 2017-01-02 16:50:16 Module : Planner.
+janv. 02, 2017 4:51:18 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_01_02] already exist!
+Print sub directory [.\print\2017_01_02.\open_sheet] already exist!
+Print sub directory [.\print\2017_01_02.\closing_sheet] already exist!
+Print sub directory [.\print\2017_01_02.\picking_label] already exist!
+Print sub directory [.\print\2017_01_02.\dispatch_label] already exist!
+
+janv. 02, 2017 4:51:49 PM gui.config.CONFIG_UI0000_AdminPassword checkLoginAndPass
+INFOS: User Admin   / 9999 connected to host O-EZZIOURI at 2017-01-02 16:51:49 Module : Planner.

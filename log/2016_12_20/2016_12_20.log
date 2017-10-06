@@ -1,0 +1,43 @@
+déc. 20, 2016 11:27:28 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_12_20] is created!
+Print sub directory [.\print\2016_12_20.\open_sheet] is created!
+Print sub directory [.\print\2016_12_20.\closing_sheet] is created!
+Print sub directory [.\print\2016_12_20.\picking_label] is created!
+Print sub directory [.\print\2016_12_20.\dispatch_label] is created!
+
+déc. 20, 2016 11:27:31 AM gui.packaging.PACKAGING_UI0001_Main loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord ORDER BY id ASC
+déc. 20, 2016 11:27:31 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+déc. 20, 2016 11:27:31 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+déc. 20, 2016 11:27:36 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+déc. 20, 2016 11:27:36 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+déc. 20, 2016 11:27:36 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+déc. 20, 2016 11:27:36 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+déc. 20, 2016 11:27:49 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+déc. 20, 2016 11:27:49 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+déc. 20, 2016 11:28:22 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+déc. 20, 2016 11:28:22 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+déc. 20, 2016 11:28:40 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+déc. 20, 2016 11:30:03 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+déc. 20, 2016 11:36:01 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+déc. 20, 2016 11:36:01 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+déc. 20, 2016 11:36:01 AM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+déc. 20, 2016 11:36:01 AM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+déc. 20, 2016 11:45:28 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC

@@ -1,0 +1,477 @@
+avr. 05, 2016 10:54:30 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_04_05] is created!
+Print sub directory [.\print\2016_04_05.\open_sheet] is created!
+Print sub directory [.\print\2016_04_05.\closing_sheet] is created!
+Print sub directory [.\print\2016_04_05.\picking_label] is created!
+
+avr. 05, 2016 10:54:37 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+avr. 05, 2016 10:54:37 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+avr. 05, 2016 10:54:45 AM state.S010_UserCodeScan doAction
+INFOS: Invalid matricule number or account locked !
+avr. 05, 2016 10:54:51 AM state.S010_UserCodeScan doAction
+INFOS: User Admin   / 0 connected to host WSMA7040 at 2016-04-05 10:54:51 Project : SMALL.
+avr. 05, 2016 10:55:30 AM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [21725994] in ConfigUCS: SMALL
+avr. 05, 2016 10:55:30 AM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [21725994] found for project [SMALL].
+avr. 05, 2016 10:55:30 AM state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P21725994] OK.
+avr. 05, 2016 10:55:48 AM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2172599405.02.201601:00:01] in BaseHarness.
+avr. 05, 2016 10:55:48 AM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+avr. 05, 2016 10:55:48 AM state.S030_MatrixIdScan doAction
+INFOS: Valid Harness Counter scanned [P2172599405.02.201601:00:01] OK.
+avr. 05, 2016 10:55:51 AM state.S040_PalletChoice doAction
+INFOS: Is it a new pallet ?
+avr. 05, 2016 10:55:51 AM state.S040_PalletChoice doAction
+INFOS:  [Yes]
+avr. 05, 2016 10:55:51 AM gui.packaging.PACKAGING_UI9000_ChooseContainerType <init>
+INFOS: Item found 21725994--26C53212A--P05--2RV--100
+avr. 05, 2016 10:55:51 AM gui.packaging.PACKAGING_UI9000_ChooseContainerType <init>
+INFOS: 1 item(s) found for Harness Part[21725994].
+avr. 05, 2016 10:56:49 AM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [21725994] in ConfigUCS: SMALL
+avr. 05, 2016 10:56:49 AM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [21725994] found for project [SMALL].
+avr. 05, 2016 10:56:49 AM state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P21725994] OK.
+avr. 05, 2016 10:56:51 AM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2172599405.02.201601:00:01] in BaseHarness.
+avr. 05, 2016 10:56:51 AM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+avr. 05, 2016 10:56:51 AM state.S030_MatrixIdScan doAction
+INFOS: Valid Harness Counter scanned [P2172599405.02.201601:00:01] OK.
+avr. 05, 2016 10:56:53 AM state.S040_PalletChoice doAction
+INFOS: Is it a new pallet ?
+avr. 05, 2016 10:56:53 AM state.S040_PalletChoice doAction
+INFOS:  [Yes]
+avr. 05, 2016 10:56:53 AM gui.packaging.PACKAGING_UI9000_ChooseContainerType <init>
+INFOS: Item found 21725994--26C53212A--P05--2RV--100
+avr. 05, 2016 10:56:53 AM gui.packaging.PACKAGING_UI9000_ChooseContainerType <init>
+INFOS: Item found 21725994--26C53212A--P05--C8--5
+avr. 05, 2016 10:56:53 AM gui.packaging.PACKAGING_UI9000_ChooseContainerType <init>
+INFOS: 2 item(s) found for Harness Part[21725994].
+avr. 05, 2016 10:57:12 AM gui.packaging.PACKAGING_UI9000_ChooseContainerType mappingContextVals
+INFOS: Selected pack type : 21725994--26C53212A--P05--C8--5 
+avr. 05, 2016 10:57:12 AM helper.Helper InitDailyDestPrintDir
+INFOS: nullPrint directory [.\print\2016_04_05] already exist!
+Print sub directory [.\print\2016_04_05.\open_sheet] already exist!
+Print sub directory [.\print\2016_04_05.\closing_sheet] already exist!
+Print sub directory [.\print\2016_04_05.\picking_label] already exist!
+
+avr. 05, 2016 10:57:13 AM helper.PrinterHelper saveAndPrintOpenSheet
+INFOS: Set Pallet [200000259] state to [IN_PROCESS]
+avr. 05, 2016 10:57:13 AM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2016_04_05\open_sheet\PrintOpenPallet_A5_2016_04_05_10_57_13_200000259.pdf] to the default printer...
+avr. 05, 2016 10:57:13 AM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [%s] has been printed.
+avr. 05, 2016 10:57:13 AM helper.PrinterHelper saveAndPrintOpenSheet
+INFOS: Set Pallet [200000259] state to [PRINTED]
+avr. 05, 2016 10:57:13 AM gui.packaging.PACKAGING_UI9000_ChooseContainerType items_listKeyPressed
+INFOS: Openning new container for first harness part [21725994].
+avr. 05, 2016 11:04:14 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_04_05] already exist!
+Print sub directory [.\print\2016_04_05.\open_sheet] already exist!
+Print sub directory [.\print\2016_04_05.\closing_sheet] already exist!
+Print sub directory [.\print\2016_04_05.\picking_label] already exist!
+
+avr. 05, 2016 11:04:15 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+avr. 05, 2016 11:04:15 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+avr. 05, 2016 11:04:20 AM state.S010_UserCodeScan doAction
+INFOS: User Admin   / 0 connected to host WSMA7040 at 2016-04-05 11:04:20 Project : SMALL.
+avr. 05, 2016 11:05:23 AM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [21725994] in ConfigUCS: SMALL
+avr. 05, 2016 11:05:23 AM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [21725994] found for project [SMALL].
+avr. 05, 2016 11:05:23 AM state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P21725994] OK.
+avr. 05, 2016 11:05:25 AM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2172599405.02.201601:00:01] in BaseHarness.
+avr. 05, 2016 11:05:25 AM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+avr. 05, 2016 11:05:25 AM state.S030_MatrixIdScan doAction
+INFOS: Valid Harness Counter scanned [P2172599405.02.201601:00:01] OK.
+avr. 05, 2016 11:05:28 AM state.S040_PalletChoice doAction
+INFOS: Is it a new pallet ?
+avr. 05, 2016 11:05:28 AM state.S040_PalletChoice doAction
+INFOS:  [Yes]
+avr. 05, 2016 11:05:28 AM gui.packaging.PACKAGING_UI9000_ChooseContainerType <init>
+INFOS: Item found 21725994--26C53212A--P05--2RV--100
+avr. 05, 2016 11:05:28 AM gui.packaging.PACKAGING_UI9000_ChooseContainerType <init>
+INFOS: Item found 21725994--26C53212A--P05--C8--5
+avr. 05, 2016 11:05:28 AM gui.packaging.PACKAGING_UI9000_ChooseContainerType <init>
+INFOS: 2 item(s) found for Harness Part[21725994].
+avr. 05, 2016 11:15:01 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_04_05] already exist!
+Print sub directory [.\print\2016_04_05.\open_sheet] already exist!
+Print sub directory [.\print\2016_04_05.\closing_sheet] already exist!
+Print sub directory [.\print\2016_04_05.\picking_label] already exist!
+
+avr. 05, 2016 11:15:02 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+avr. 05, 2016 11:15:02 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+avr. 05, 2016 11:15:06 AM state.S010_UserCodeScan doAction
+INFOS: User Admin   / 0 connected to host WSMA7040 at 2016-04-05 11:15:06 Project : SMALL.
+avr. 05, 2016 11:15:14 AM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [21725994] in ConfigUCS: SMALL
+avr. 05, 2016 11:15:14 AM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [21725994] found for project [SMALL].
+avr. 05, 2016 11:15:14 AM state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P21725994] OK.
+avr. 05, 2016 11:15:15 AM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2172599405.02.201601:00:01] in BaseHarness.
+avr. 05, 2016 11:15:15 AM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+avr. 05, 2016 11:15:15 AM state.S030_MatrixIdScan doAction
+INFOS: Valid Harness Counter scanned [P2172599405.02.201601:00:01] OK.
+avr. 05, 2016 11:15:18 AM state.S040_PalletChoice doAction
+INFOS: Is it a new pallet ?
+avr. 05, 2016 11:15:18 AM state.S040_PalletChoice doAction
+INFOS:  [Yes]
+avr. 05, 2016 11:15:18 AM gui.packaging.PACKAGING_UI9000_ChooseContainerType <init>
+INFOS: Item found 21725994--26C53212A--P05--2RV--100
+avr. 05, 2016 11:15:18 AM gui.packaging.PACKAGING_UI9000_ChooseContainerType <init>
+INFOS: Item found 21725994--26C53212A--P05--C8--5
+avr. 05, 2016 11:15:18 AM gui.packaging.PACKAGING_UI9000_ChooseContainerType <init>
+INFOS: 2 UCS founds for Harness Part[21725994].
+avr. 05, 2016 11:15:20 AM gui.packaging.PACKAGING_UI9000_ChooseContainerType mappingContextVals
+INFOS: Selected pack type : 21725994--26C53212A--P05--C8--5 
+avr. 05, 2016 11:15:27 AM gui.packaging.PACKAGING_UI9000_ChooseContainerType mappingContextVals
+INFOS: Selected pack type : 21725994--26C53212A--P05--C8--5 
+avr. 05, 2016 11:15:47 AM gui.packaging.PACKAGING_UI9000_ChooseContainerType mappingContextVals
+INFOS: Selected pack type : 21725994--26C53212A--P05--C8--5 
+avr. 05, 2016 11:22:43 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_04_05] already exist!
+Print sub directory [.\print\2016_04_05.\open_sheet] already exist!
+Print sub directory [.\print\2016_04_05.\closing_sheet] already exist!
+Print sub directory [.\print\2016_04_05.\picking_label] already exist!
+
+avr. 05, 2016 11:22:45 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+avr. 05, 2016 11:22:45 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+avr. 05, 2016 11:22:48 AM state.S010_UserCodeScan doAction
+INFOS: User Admin   / 0 connected to host WSMA7040 at 2016-04-05 11:22:48 Project : SMALL.
+avr. 05, 2016 11:22:54 AM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [21725994] in ConfigUCS: SMALL
+avr. 05, 2016 11:22:54 AM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [21725994] found for project [SMALL].
+avr. 05, 2016 11:22:54 AM state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P21725994] OK.
+avr. 05, 2016 11:22:55 AM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2172599405.02.201601:00:01] in BaseHarness.
+avr. 05, 2016 11:22:55 AM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+avr. 05, 2016 11:22:55 AM state.S030_MatrixIdScan doAction
+INFOS: Valid Harness Counter scanned [P2172599405.02.201601:00:01] OK.
+avr. 05, 2016 11:22:57 AM state.S040_PalletChoice doAction
+INFOS: Is it a new pallet ?
+avr. 05, 2016 11:22:57 AM state.S040_PalletChoice doAction
+INFOS:  [Yes]
+avr. 05, 2016 11:22:58 AM gui.packaging.PACKAGING_UI9000_ChooseContainerType <init>
+INFOS: Item found 21725994--26C53212A--P05--2RV--100
+avr. 05, 2016 11:22:58 AM gui.packaging.PACKAGING_UI9000_ChooseContainerType <init>
+INFOS: Item found 21725994--26C53212A--P05--C8--5
+avr. 05, 2016 11:22:58 AM gui.packaging.PACKAGING_UI9000_ChooseContainerType <init>
+INFOS: 2 UCS founds for Harness Part[21725994].
+avr. 05, 2016 11:23:04 AM gui.packaging.PACKAGING_UI9000_ChooseContainerType mappingContextVals
+INFOS: Selected pack type : 21725994--26C53212A--P05--C8--5 
+avr. 05, 2016 11:24:11 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_04_05] already exist!
+Print sub directory [.\print\2016_04_05.\open_sheet] already exist!
+Print sub directory [.\print\2016_04_05.\closing_sheet] already exist!
+Print sub directory [.\print\2016_04_05.\picking_label] already exist!
+
+avr. 05, 2016 11:24:13 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+avr. 05, 2016 11:24:13 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+avr. 05, 2016 11:24:16 AM state.S010_UserCodeScan doAction
+INFOS: User Admin   / 0 connected to host WSMA7040 at 2016-04-05 11:24:16 Project : SMALL.
+avr. 05, 2016 11:24:25 AM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [21725994] in ConfigUCS: SMALL
+avr. 05, 2016 11:24:25 AM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [21725994] found for project [SMALL].
+avr. 05, 2016 11:24:25 AM state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P21725994] OK.
+avr. 05, 2016 11:24:26 AM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2172599405.02.201601:00:01] in BaseHarness.
+avr. 05, 2016 11:24:26 AM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+avr. 05, 2016 11:24:26 AM state.S030_MatrixIdScan doAction
+INFOS: Valid Harness Counter scanned [P2172599405.02.201601:00:01] OK.
+avr. 05, 2016 11:24:33 AM state.S040_PalletChoice doAction
+INFOS: Is it a new pallet ?
+avr. 05, 2016 11:24:33 AM state.S040_PalletChoice doAction
+INFOS:  [Yes]
+avr. 05, 2016 11:24:33 AM gui.packaging.PACKAGING_UI9000_ChooseContainerType <init>
+INFOS: Item found 21725994--26C53212A--P05--2RV--100
+avr. 05, 2016 11:24:33 AM gui.packaging.PACKAGING_UI9000_ChooseContainerType <init>
+INFOS: Item found 21725994--26C53212A--P05--C8--5
+avr. 05, 2016 11:24:33 AM gui.packaging.PACKAGING_UI9000_ChooseContainerType <init>
+INFOS: 2 UCS founds for Harness Part[21725994].
+avr. 05, 2016 11:24:48 AM gui.packaging.PACKAGING_UI9000_ChooseContainerType mappingContextVals
+INFOS: Selected pack type : 21725994--26C53212A--P05--C8--5 
+avr. 05, 2016 11:24:48 AM helper.Helper InitDailyDestPrintDir
+INFOS: nullPrint directory [.\print\2016_04_05] already exist!
+Print sub directory [.\print\2016_04_05.\open_sheet] already exist!
+Print sub directory [.\print\2016_04_05.\closing_sheet] already exist!
+Print sub directory [.\print\2016_04_05.\picking_label] already exist!
+
+avr. 05, 2016 11:24:48 AM helper.PrinterHelper saveAndPrintOpenSheet
+INFOS: Set Pallet [200000260] state to [IN_PROCESS]
+avr. 05, 2016 11:24:48 AM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2016_04_05\open_sheet\PrintOpenPallet_A5_2016_04_05_11_24_48_200000260.pdf] to the default printer...
+avr. 05, 2016 11:24:48 AM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [%s] has been printed.
+avr. 05, 2016 11:24:48 AM helper.PrinterHelper saveAndPrintOpenSheet
+INFOS: Set Pallet [200000260] state to [PRINTED]
+avr. 05, 2016 11:24:48 AM gui.packaging.PACKAGING_UI9000_ChooseContainerType items_listKeyPressed
+INFOS: Openning new container for first harness part [21725994].
+avr. 05, 2016 3:35:21 PM state.S041_NewPalletScan doAction
+INFOS: Scanned Pallet number [200000260] OK.
+avr. 05, 2016 3:35:21 PM state.S041_NewPalletScan doAction
+INFOS: BaseContainer created BaseContainer{id=533,
+ createTime=Tue Apr 05 15:35:21 WEST 2016,
+ writeTime=Tue Apr 05 15:35:21 WEST 2016,
+ createId=3,
+ writeId=3,
+ user=0,
+ startTime=Tue Apr 05 15:35:21 WEST 2016,
+ completeTime=null,
+ workTime=null,
+ palletNumber=200000260,
+ harnessPart=21725994,
+ harnessIndex=P05,
+ supplierPartNumber=26C53212A,
+ qtyExpected=5,
+ qtyRead=1,
+ containerState=OPEN,
+ containerStateCode=1000,
+ packType=C8,
+ harnessType=SMALL,
+ harnessList=[]} 
+avr. 05, 2016 3:36:44 PM gui.planner.PLANNER_UI0002_AdminPassword checkLoginAndPass
+INFOS: User Admin   / 0 connected to host WSMA7040 at 2016-04-05 15:36:44 Module : Planner.
+avr. 05, 2016 3:36:44 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+avr. 05, 2016 3:36:44 PM entity.ConfigShift select
+INFOS: FROM ConfigShift cs ORDER BY startHour ASC
+avr. 05, 2016 4:53:08 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_04_05] already exist!
+Print sub directory [.\print\2016_04_05.\open_sheet] already exist!
+Print sub directory [.\print\2016_04_05.\closing_sheet] already exist!
+Print sub directory [.\print\2016_04_05.\picking_label] already exist!
+
+avr. 05, 2016 4:53:50 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_04_05] already exist!
+Print sub directory [.\print\2016_04_05.\open_sheet] already exist!
+Print sub directory [.\print\2016_04_05.\closing_sheet] already exist!
+Print sub directory [.\print\2016_04_05.\picking_label] already exist!
+
+avr. 05, 2016 5:05:02 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_04_05] already exist!
+Print sub directory [.\print\2016_04_05.\open_sheet] already exist!
+Print sub directory [.\print\2016_04_05.\closing_sheet] already exist!
+Print sub directory [.\print\2016_04_05.\picking_label] already exist!
+
+avr. 05, 2016 5:06:03 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_04_05] already exist!
+Print sub directory [.\print\2016_04_05.\open_sheet] already exist!
+Print sub directory [.\print\2016_04_05.\closing_sheet] already exist!
+Print sub directory [.\print\2016_04_05.\picking_label] already exist!
+
+avr. 05, 2016 5:06:44 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_04_05] already exist!
+Print sub directory [.\print\2016_04_05.\open_sheet] already exist!
+Print sub directory [.\print\2016_04_05.\closing_sheet] already exist!
+Print sub directory [.\print\2016_04_05.\picking_label] already exist!
+
+avr. 05, 2016 5:08:13 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_04_05] already exist!
+Print sub directory [.\print\2016_04_05.\open_sheet] already exist!
+Print sub directory [.\print\2016_04_05.\closing_sheet] already exist!
+Print sub directory [.\print\2016_04_05.\picking_label] already exist!
+
+avr. 05, 2016 5:10:33 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_04_05] already exist!
+Print sub directory [.\print\2016_04_05.\open_sheet] already exist!
+Print sub directory [.\print\2016_04_05.\closing_sheet] already exist!
+Print sub directory [.\print\2016_04_05.\picking_label] already exist!
+
+avr. 05, 2016 5:10:36 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+avr. 05, 2016 5:10:36 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+avr. 05, 2016 5:10:42 PM gui.planner.PLANNER_UI0002_AdminPassword checkLoginAndPass
+INFOS: User Admin   / 0 connected to host WSMA7040 at 2016-04-05 17:10:42 Module : Planner.
+avr. 05, 2016 5:10:42 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+avr. 05, 2016 5:10:42 PM entity.ConfigShift select
+INFOS: FROM ConfigShift cs ORDER BY startHour ASC
+avr. 05, 2016 5:11:55 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_04_05] already exist!
+Print sub directory [.\print\2016_04_05.\open_sheet] already exist!
+Print sub directory [.\print\2016_04_05.\closing_sheet] already exist!
+Print sub directory [.\print\2016_04_05.\picking_label] already exist!
+
+avr. 05, 2016 5:12:01 PM gui.planner.PLANNER_UI0002_AdminPassword checkLoginAndPass
+INFOS: User Admin   / 0 connected to host WSMA7040 at 2016-04-05 17:12:01 Module : Planner.
+avr. 05, 2016 5:12:02 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+avr. 05, 2016 5:12:02 PM entity.ConfigShift select
+INFOS: FROM ConfigShift cs ORDER BY startHour ASC
+avr. 05, 2016 5:16:12 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_04_05] already exist!
+Print sub directory [.\print\2016_04_05.\open_sheet] already exist!
+Print sub directory [.\print\2016_04_05.\closing_sheet] already exist!
+Print sub directory [.\print\2016_04_05.\picking_label] already exist!
+
+avr. 05, 2016 5:16:57 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_04_05] already exist!
+Print sub directory [.\print\2016_04_05.\open_sheet] already exist!
+Print sub directory [.\print\2016_04_05.\closing_sheet] already exist!
+Print sub directory [.\print\2016_04_05.\picking_label] already exist!
+
+avr. 05, 2016 5:17:43 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_04_05] already exist!
+Print sub directory [.\print\2016_04_05.\open_sheet] already exist!
+Print sub directory [.\print\2016_04_05.\closing_sheet] already exist!
+Print sub directory [.\print\2016_04_05.\picking_label] already exist!
+
+avr. 05, 2016 5:25:37 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_04_05] already exist!
+Print sub directory [.\print\2016_04_05.\open_sheet] already exist!
+Print sub directory [.\print\2016_04_05.\closing_sheet] already exist!
+Print sub directory [.\print\2016_04_05.\picking_label] already exist!
+
+avr. 05, 2016 5:26:55 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_04_05] already exist!
+Print sub directory [.\print\2016_04_05.\open_sheet] already exist!
+Print sub directory [.\print\2016_04_05.\closing_sheet] already exist!
+Print sub directory [.\print\2016_04_05.\picking_label] already exist!
+
+avr. 05, 2016 5:29:17 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_04_05] already exist!
+Print sub directory [.\print\2016_04_05.\open_sheet] already exist!
+Print sub directory [.\print\2016_04_05.\closing_sheet] already exist!
+Print sub directory [.\print\2016_04_05.\picking_label] already exist!
+
+avr. 05, 2016 5:48:44 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_04_05] already exist!
+Print sub directory [.\print\2016_04_05.\open_sheet] already exist!
+Print sub directory [.\print\2016_04_05.\closing_sheet] already exist!
+Print sub directory [.\print\2016_04_05.\picking_label] already exist!
+
+avr. 05, 2016 5:49:34 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_04_05] already exist!
+Print sub directory [.\print\2016_04_05.\open_sheet] already exist!
+Print sub directory [.\print\2016_04_05.\closing_sheet] already exist!
+Print sub directory [.\print\2016_04_05.\picking_label] already exist!
+
+avr. 05, 2016 5:50:03 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_04_05] already exist!
+Print sub directory [.\print\2016_04_05.\open_sheet] already exist!
+Print sub directory [.\print\2016_04_05.\closing_sheet] already exist!
+Print sub directory [.\print\2016_04_05.\picking_label] already exist!
+
+avr. 05, 2016 6:12:26 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_04_05] already exist!
+Print sub directory [.\print\2016_04_05.\open_sheet] already exist!
+Print sub directory [.\print\2016_04_05.\closing_sheet] already exist!
+Print sub directory [.\print\2016_04_05.\picking_label] already exist!
+
+avr. 05, 2016 6:12:59 PM entity.BaseContainer checkContainerByState
+INFOS: Searching Container [200000252] in BaseContainer.
+avr. 05, 2016 6:12:59 PM entity.BaseContainer checkContainerByState
+INFOS: FROM BaseContainer bc WHERE bc.palletNumber = :palletNumber AND bc.containerState = :state
+avr. 05, 2016 6:13:10 PM entity.BaseContainer checkContainerByState
+INFOS: Searching Container [200000252] in BaseContainer.
+avr. 05, 2016 6:13:10 PM entity.BaseContainer checkContainerByState
+INFOS: FROM BaseContainer bc WHERE bc.palletNumber = :palletNumber AND bc.containerState = :state
+avr. 05, 2016 6:17:30 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_04_05] already exist!
+Print sub directory [.\print\2016_04_05.\open_sheet] already exist!
+Print sub directory [.\print\2016_04_05.\closing_sheet] already exist!
+Print sub directory [.\print\2016_04_05.\picking_label] already exist!
+
+avr. 05, 2016 6:18:44 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_04_05] already exist!
+Print sub directory [.\print\2016_04_05.\open_sheet] already exist!
+Print sub directory [.\print\2016_04_05.\closing_sheet] already exist!
+Print sub directory [.\print\2016_04_05.\picking_label] already exist!
+
+avr. 05, 2016 6:18:56 PM entity.BaseContainer checkContainerByState
+INFOS: Searching Container [200000244] in BaseContainer.
+avr. 05, 2016 6:18:56 PM entity.BaseContainer checkContainerByState
+INFOS: FROM BaseContainer bc WHERE bc.palletNumber = :palletNumber AND bc.containerState = :state
+avr. 05, 2016 6:19:26 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_04_05] already exist!
+Print sub directory [.\print\2016_04_05.\open_sheet] already exist!
+Print sub directory [.\print\2016_04_05.\closing_sheet] already exist!
+Print sub directory [.\print\2016_04_05.\picking_label] already exist!
+
+avr. 05, 2016 6:19:56 PM entity.BaseContainer checkContainerByState
+INFOS: Searching Container [200000247] in BaseContainer.
+avr. 05, 2016 6:19:56 PM entity.BaseContainer checkContainerByState
+INFOS: FROM BaseContainer bc WHERE bc.palletNumber = :palletNumber AND bc.containerState = :state
+avr. 05, 2016 6:20:25 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_04_05] already exist!
+Print sub directory [.\print\2016_04_05.\open_sheet] already exist!
+Print sub directory [.\print\2016_04_05.\closing_sheet] already exist!
+Print sub directory [.\print\2016_04_05.\picking_label] already exist!
+
+avr. 05, 2016 6:20:38 PM entity.BaseContainer checkContainerByState
+INFOS: Searching Container [200000247] in BaseContainer.
+avr. 05, 2016 6:20:38 PM entity.BaseContainer checkContainerByState
+INFOS: FROM BaseContainer bc WHERE bc.palletNumber = :palletNumber AND bc.containerState = :state
+avr. 05, 2016 6:22:36 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_04_05] already exist!
+Print sub directory [.\print\2016_04_05.\open_sheet] already exist!
+Print sub directory [.\print\2016_04_05.\closing_sheet] already exist!
+Print sub directory [.\print\2016_04_05.\picking_label] already exist!
+
+avr. 05, 2016 6:22:45 PM entity.BaseContainer checkContainerByState
+INFOS: Searching Container [200000247] in BaseContainer.
+avr. 05, 2016 6:22:45 PM entity.BaseContainer checkContainerByState
+INFOS: FROM BaseContainer bc WHERE bc.palletNumber = :palletNumber AND bc.containerState = :state
+avr. 05, 2016 6:22:51 PM entity.BaseContainer checkContainerByState
+INFOS: Searching Container [200000247] in BaseContainer.
+avr. 05, 2016 6:22:51 PM entity.BaseContainer checkContainerByState
+INFOS: FROM BaseContainer bc WHERE bc.palletNumber = :palletNumber AND bc.containerState = :state
+avr. 05, 2016 6:23:57 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_04_05] already exist!
+Print sub directory [.\print\2016_04_05.\open_sheet] already exist!
+Print sub directory [.\print\2016_04_05.\closing_sheet] already exist!
+Print sub directory [.\print\2016_04_05.\picking_label] already exist!
+
+avr. 05, 2016 6:24:24 PM entity.BaseContainer checkContainerByState
+INFOS: Searching Container [200000247] in BaseContainer.
+avr. 05, 2016 6:24:24 PM entity.BaseContainer checkContainerByState
+INFOS: FROM BaseContainer bc WHERE bc.palletNumber = :palletNumber AND bc.containerState = :state
+avr. 05, 2016 6:24:57 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_04_05] already exist!
+Print sub directory [.\print\2016_04_05.\open_sheet] already exist!
+Print sub directory [.\print\2016_04_05.\closing_sheet] already exist!
+Print sub directory [.\print\2016_04_05.\picking_label] already exist!
+
+avr. 05, 2016 6:25:13 PM entity.BaseContainer checkContainerByState
+INFOS: Searching Container [200000247] in BaseContainer.
+avr. 05, 2016 6:25:13 PM entity.BaseContainer checkContainerByState
+INFOS: FROM BaseContainer bc WHERE bc.palletNumber = :palletNumber AND bc.containerState = :state
+avr. 05, 2016 6:26:02 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_04_05] already exist!
+Print sub directory [.\print\2016_04_05.\open_sheet] already exist!
+Print sub directory [.\print\2016_04_05.\closing_sheet] already exist!
+Print sub directory [.\print\2016_04_05.\picking_label] already exist!
+
+avr. 05, 2016 6:26:07 PM entity.BaseContainer checkContainerByState
+INFOS: Searching Container [200000247] in BaseContainer.
+avr. 05, 2016 6:26:07 PM entity.BaseContainer checkContainerByState
+INFOS: FROM BaseContainer bc WHERE bc.palletNumber = :palletNumber AND bc.containerState = :state

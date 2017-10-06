@@ -1,0 +1,349 @@
+oct. 13, 2016 9:28:55 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_10_13] is created!
+Print sub directory [.\print\2016_10_13.\open_sheet] is created!
+Print sub directory [.\print\2016_10_13.\closing_sheet] is created!
+Print sub directory [.\print\2016_10_13.\picking_label] is created!
+
+oct. 13, 2016 9:28:57 AM gui.packaging.PACKAGING_UI0001_Main loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord ORDER BY id ASC
+oct. 13, 2016 9:28:57 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 13, 2016 9:28:57 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 13, 2016 9:29:05 AM gui.packaging.PACKAGING_UI0002_PasswordRequest connect
+INFOS: User Admin   / 9999 connected to host WSMA7040 at 2016-10-13 09:29:05 Project : ENGINE.
+oct. 13, 2016 9:29:10 AM helper.Helper InitDailyDestPrintDir
+INFOS: nullPrint directory [.\print\2016_10_13] already exist!
+Print sub directory [.\print\2016_10_13.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_13.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_13.\picking_label] already exist!
+
+oct. 13, 2016 9:29:46 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 13, 2016 9:30:02 AM helper.Helper InitDailyDestPrintDir
+INFOS: nullPrint directory [.\print\2016_10_13] already exist!
+Print sub directory [.\print\2016_10_13.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_13.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_13.\picking_label] already exist!
+
+oct. 13, 2016 9:30:03 AM helper.PrinterHelper saveAndPrintClosingSheet
+INFOS: Set Closing Pallet item [714] state to [IN_PROCESS]
+oct. 13, 2016 9:30:03 AM print.PrintClosingPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2016_10_13\closing_sheet\PrintClosingPallet_A5_2016_10_13_09_30_02.pdf] to the default printer...
+oct. 13, 2016 9:30:03 AM print.PrintClosingPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [%s] has been printed.
+oct. 13, 2016 9:30:03 AM helper.PrinterHelper saveAndPrintClosingSheet
+INFOS: Set Closing Pallet [714] state to [PRINTED]
+oct. 13, 2016 9:32:15 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_10_13] already exist!
+Print sub directory [.\print\2016_10_13.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_13.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_13.\picking_label] already exist!
+
+oct. 13, 2016 9:33:43 AM gui.packaging.PACKAGING_UI0001_Main loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord ORDER BY id ASC
+oct. 13, 2016 9:33:43 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 13, 2016 9:33:43 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 13, 2016 9:34:02 AM gui.packaging.PACKAGING_UI0002_PasswordRequest connect
+INFOS: User Admin   / 9999 connected to host WSMA7040 at 2016-10-13 09:34:02 Project : ENGINE.
+oct. 13, 2016 9:34:14 AM helper.Helper InitDailyDestPrintDir
+INFOS: nullPrint directory [.\print\2016_10_13] already exist!
+Print sub directory [.\print\2016_10_13.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_13.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_13.\picking_label] already exist!
+
+oct. 13, 2016 9:34:20 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 13, 2016 9:34:26 AM helper.Helper InitDailyDestPrintDir
+INFOS: nullPrint directory [.\print\2016_10_13] already exist!
+Print sub directory [.\print\2016_10_13.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_13.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_13.\picking_label] already exist!
+
+oct. 13, 2016 9:34:27 AM helper.PrinterHelper saveAndPrintClosingSheet
+INFOS: Set Closing Pallet item [714] state to [IN_PROCESS]
+oct. 13, 2016 9:34:27 AM print.PrintClosingPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2016_10_13\closing_sheet\PrintClosingPallet_A5_2016_10_13_09_34_27.pdf] to the default printer...
+oct. 13, 2016 9:34:27 AM print.PrintClosingPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [%s] has been printed.
+oct. 13, 2016 9:34:27 AM helper.PrinterHelper saveAndPrintClosingSheet
+INFOS: Set Closing Pallet [714] state to [PRINTED]
+oct. 13, 2016 9:46:28 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_10_13] already exist!
+Print sub directory [.\print\2016_10_13.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_13.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_13.\picking_label] already exist!
+
+oct. 13, 2016 9:46:30 AM gui.packaging.PACKAGING_UI0001_Main loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord ORDER BY id ASC
+oct. 13, 2016 9:46:30 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 13, 2016 9:46:30 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 13, 2016 9:49:42 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_10_13] already exist!
+Print sub directory [.\print\2016_10_13.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_13.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_13.\picking_label] already exist!
+
+oct. 13, 2016 9:49:43 AM gui.packaging.PACKAGING_UI0001_Main loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord ORDER BY id ASC
+oct. 13, 2016 9:49:43 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 13, 2016 9:49:43 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 13, 2016 9:49:55 AM gui.packaging.PACKAGING_UI0002_PasswordRequest connect
+INFOS: User Admin   / 9999 connected to host WSMA7040 at 2016-10-13 09:49:55 Project : ENGINE.
+oct. 13, 2016 9:50:26 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 13, 2016 9:50:47 AM helper.Helper InitDailyDestPrintDir
+INFOS: nullPrint directory [.\print\2016_10_13] already exist!
+Print sub directory [.\print\2016_10_13.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_13.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_13.\picking_label] already exist!
+
+oct. 13, 2016 9:50:48 AM helper.PrinterHelper saveAndPrintClosingSheet
+INFOS: Set Closing Pallet item [715] state to [IN_PROCESS]
+oct. 13, 2016 9:50:48 AM print.PrintClosingPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2016_10_13\closing_sheet\PrintClosingPallet_A5_2016_10_13_09_50_47.pdf] to the default printer...
+oct. 13, 2016 9:50:48 AM print.PrintClosingPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [%s] has been printed.
+oct. 13, 2016 9:50:48 AM helper.PrinterHelper saveAndPrintClosingSheet
+INFOS: Set Closing Pallet [715] state to [PRINTED]
+oct. 13, 2016 10:53:12 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_10_13] already exist!
+Print sub directory [.\print\2016_10_13.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_13.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_13.\picking_label] already exist!
+
+oct. 13, 2016 1:57:41 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_10_13] already exist!
+Print sub directory [.\print\2016_10_13.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_13.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_13.\picking_label] already exist!
+Print sub directory [.\print\2016_10_13.\dispatch_label] is created!
+
+oct. 13, 2016 2:01:44 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_10_13] already exist!
+Print sub directory [.\print\2016_10_13.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_13.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_13.\picking_label] already exist!
+Print sub directory [.\print\2016_10_13.\dispatch_label] already exist!
+
+oct. 13, 2016 2:02:40 PM gui.packaging.PACKAGING_UI0001_Main loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord ORDER BY id ASC
+oct. 13, 2016 2:02:40 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 13, 2016 2:02:40 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 13, 2016 2:03:05 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_10_13] already exist!
+Print sub directory [.\print\2016_10_13.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_13.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_13.\picking_label] already exist!
+Print sub directory [.\print\2016_10_13.\dispatch_label] already exist!
+
+oct. 13, 2016 2:04:34 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_10_13] already exist!
+Print sub directory [.\print\2016_10_13.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_13.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_13.\picking_label] already exist!
+Print sub directory [.\print\2016_10_13.\dispatch_label] already exist!
+
+oct. 13, 2016 2:06:11 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_10_13] already exist!
+Print sub directory [.\print\2016_10_13.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_13.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_13.\picking_label] already exist!
+Print sub directory [.\print\2016_10_13.\dispatch_label] already exist!
+
+oct. 13, 2016 2:07:19 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_10_13] already exist!
+Print sub directory [.\print\2016_10_13.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_13.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_13.\picking_label] already exist!
+Print sub directory [.\print\2016_10_13.\dispatch_label] already exist!
+
+oct. 13, 2016 2:08:50 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_10_13] already exist!
+Print sub directory [.\print\2016_10_13.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_13.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_13.\picking_label] already exist!
+Print sub directory [.\print\2016_10_13.\dispatch_label] already exist!
+
+oct. 13, 2016 2:12:52 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_10_13] already exist!
+Print sub directory [.\print\2016_10_13.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_13.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_13.\picking_label] already exist!
+Print sub directory [.\print\2016_10_13.\dispatch_label] already exist!
+
+oct. 13, 2016 2:17:06 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_10_13] already exist!
+Print sub directory [.\print\2016_10_13.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_13.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_13.\picking_label] already exist!
+Print sub directory [.\print\2016_10_13.\dispatch_label] already exist!
+
+oct. 13, 2016 2:20:39 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_10_13] already exist!
+Print sub directory [.\print\2016_10_13.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_13.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_13.\picking_label] already exist!
+Print sub directory [.\print\2016_10_13.\dispatch_label] already exist!
+
+oct. 13, 2016 2:29:34 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_10_13] already exist!
+Print sub directory [.\print\2016_10_13.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_13.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_13.\picking_label] already exist!
+Print sub directory [.\print\2016_10_13.\dispatch_label] already exist!
+
+oct. 13, 2016 2:29:41 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_10_13] already exist!
+Print sub directory [.\print\2016_10_13.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_13.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_13.\picking_label] already exist!
+Print sub directory [.\print\2016_10_13.\dispatch_label] already exist!
+
+oct. 13, 2016 2:30:15 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_10_13] already exist!
+Print sub directory [.\print\2016_10_13.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_13.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_13.\picking_label] already exist!
+Print sub directory [.\print\2016_10_13.\dispatch_label] already exist!
+
+oct. 13, 2016 2:31:33 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_10_13] already exist!
+Print sub directory [.\print\2016_10_13.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_13.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_13.\picking_label] already exist!
+Print sub directory [.\print\2016_10_13.\dispatch_label] already exist!
+
+oct. 13, 2016 2:32:40 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_10_13] already exist!
+Print sub directory [.\print\2016_10_13.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_13.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_13.\picking_label] already exist!
+Print sub directory [.\print\2016_10_13.\dispatch_label] already exist!
+
+oct. 13, 2016 4:07:28 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_10_13] already exist!
+Print sub directory [.\print\2016_10_13.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_13.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_13.\picking_label] already exist!
+Print sub directory [.\print\2016_10_13.\dispatch_label] already exist!
+
+oct. 13, 2016 4:08:32 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_10_13] already exist!
+Print sub directory [.\print\2016_10_13.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_13.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_13.\picking_label] already exist!
+Print sub directory [.\print\2016_10_13.\dispatch_label] already exist!
+
+oct. 13, 2016 4:13:03 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_10_13] already exist!
+Print sub directory [.\print\2016_10_13.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_13.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_13.\picking_label] already exist!
+Print sub directory [.\print\2016_10_13.\dispatch_label] already exist!
+
+oct. 13, 2016 4:14:53 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_10_13] already exist!
+Print sub directory [.\print\2016_10_13.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_13.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_13.\picking_label] already exist!
+Print sub directory [.\print\2016_10_13.\dispatch_label] already exist!
+
+oct. 13, 2016 4:18:00 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_10_13] already exist!
+Print sub directory [.\print\2016_10_13.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_13.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_13.\picking_label] already exist!
+Print sub directory [.\print\2016_10_13.\dispatch_label] already exist!
+
+oct. 13, 2016 4:19:29 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_10_13] already exist!
+Print sub directory [.\print\2016_10_13.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_13.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_13.\picking_label] already exist!
+Print sub directory [.\print\2016_10_13.\dispatch_label] already exist!
+
+oct. 13, 2016 4:23:22 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_10_13] already exist!
+Print sub directory [.\print\2016_10_13.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_13.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_13.\picking_label] already exist!
+Print sub directory [.\print\2016_10_13.\dispatch_label] already exist!
+
+oct. 13, 2016 4:24:23 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_10_13] already exist!
+Print sub directory [.\print\2016_10_13.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_13.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_13.\picking_label] already exist!
+Print sub directory [.\print\2016_10_13.\dispatch_label] already exist!
+
+oct. 13, 2016 4:26:18 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_10_13] already exist!
+Print sub directory [.\print\2016_10_13.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_13.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_13.\picking_label] already exist!
+Print sub directory [.\print\2016_10_13.\dispatch_label] already exist!
+
+oct. 13, 2016 4:27:52 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_10_13] already exist!
+Print sub directory [.\print\2016_10_13.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_13.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_13.\picking_label] already exist!
+Print sub directory [.\print\2016_10_13.\dispatch_label] already exist!
+
+oct. 13, 2016 4:36:02 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_10_13] already exist!
+Print sub directory [.\print\2016_10_13.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_13.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_13.\picking_label] already exist!
+Print sub directory [.\print\2016_10_13.\dispatch_label] already exist!
+
+oct. 13, 2016 4:36:43 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_10_13] already exist!
+Print sub directory [.\print\2016_10_13.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_13.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_13.\picking_label] already exist!
+Print sub directory [.\print\2016_10_13.\dispatch_label] already exist!
+
+oct. 13, 2016 6:29:27 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_10_13] already exist!
+Print sub directory [.\print\2016_10_13.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_13.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_13.\picking_label] already exist!
+Print sub directory [.\print\2016_10_13.\dispatch_label] already exist!
+
+oct. 13, 2016 6:29:31 PM gui.packaging.PACKAGING_UI0001_Main loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord ORDER BY id ASC
+oct. 13, 2016 6:29:31 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 13, 2016 6:29:31 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 13, 2016 6:30:47 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_10_13] already exist!
+Print sub directory [.\print\2016_10_13.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_13.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_13.\picking_label] already exist!
+Print sub directory [.\print\2016_10_13.\dispatch_label] already exist!
+
+oct. 13, 2016 6:31:48 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_10_13] already exist!
+Print sub directory [.\print\2016_10_13.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_13.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_13.\picking_label] already exist!
+Print sub directory [.\print\2016_10_13.\dispatch_label] already exist!
+
+oct. 13, 2016 6:33:45 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_10_13] already exist!
+Print sub directory [.\print\2016_10_13.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_13.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_13.\picking_label] already exist!
+Print sub directory [.\print\2016_10_13.\dispatch_label] already exist!
+

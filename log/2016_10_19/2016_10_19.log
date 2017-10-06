@@ -1,0 +1,338 @@
+oct. 19, 2016 10:28:52 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_10_19] is created!
+Print sub directory [.\print\2016_10_19.\open_sheet] is created!
+Print sub directory [.\print\2016_10_19.\closing_sheet] is created!
+Print sub directory [.\print\2016_10_19.\picking_label] is created!
+Print sub directory [.\print\2016_10_19.\dispatch_label] is created!
+
+oct. 19, 2016 10:28:56 PM gui.warehouse_output.WAREHOUSE_OUT_UI0002_DISPATCH_SCAN loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord IN (:keyWords) ORDER BY id ASC
+oct. 19, 2016 10:29:01 PM gui.warehouse_output.WAREHOUSE_OUT_UI0003_PasswordRequest connect
+INFOS: User Admin ENGINE / 9999 connected to host O-EZZIOURI at 2016-10-19 22:29:01 Dispatch interface : .
+oct. 19, 2016 10:29:04 PM gui.warehouse_output.state.WarehouseOutHelper isAdviceNoteNumberExist
+INFOS: Searching advice note number [1001].
+oct. 19, 2016 10:29:04 PM gui.warehouse_output.state.WarehouseOutHelper isAdviceNoteNumberExist
+INFOS: FROM DispatchNote dn WHERE dn.adviceNoteNum = :advice_note_num
+oct. 19, 2016 10:29:04 PM gui.warehouse_output.state.S020_AdviceNoteNumberScan doAction
+INFOS: Advice not number scanned [1001] OK.
+oct. 19, 2016 10:29:06 PM gui.warehouse_output.state.S020_FORSBlScan doAction
+INFOS: FORS Advice note number scanned [1001] OK.
+oct. 19, 2016 10:29:17 PM gui.warehouse_output.state.S030_FORSHpScan doAction
+INFOS: FORS label harness part scanned [22630882] OK.
+oct. 19, 2016 10:29:17 PM gui.warehouse_output.state.WarehouseOutHelper checkForsQtyFormat
+INFOS: Erreur Galia FORS. Quantité faisceau invalide [2'].
+La quantité doit contenir que des chiffres !
+oct. 19, 2016 10:29:17 PM gui.warehouse_output.state.S040_FORSQtyScan doAction
+AVERTISSEMENT: Erreur Galia FORS. Quantité faisceau invalide [2'].
+La quantité doit contenir que des chiffres !
+oct. 19, 2016 10:29:20 PM gui.warehouse_output.state.S040_FORSQtyScan doAction
+INFOS: FORS label qty scanned [24] OK.
+oct. 19, 2016 10:29:25 PM gui.warehouse_output.state.WarehouseOutHelper isForsLabelSerialExist
+INFOS: Searching fors label with id [650000002].
+oct. 19, 2016 10:29:25 PM gui.warehouse_output.state.WarehouseOutHelper isForsLabelSerialExist
+INFOS: FROM DispatchNoteLine dn WHERE dn.forsLabelId = :fors_label_id
+oct. 19, 2016 10:29:25 PM gui.warehouse_output.state.S050_FORSLabelIdScan doAction
+INFOS: FORS label ID scanned [650000002] OK.
+oct. 19, 2016 10:29:27 PM gui.warehouse_output.state.S060_ProdHpScan doAction
+INFOS: Harness part scanned [22630882] OK.
+oct. 19, 2016 10:29:29 PM gui.warehouse_output.state.S070_ProdQtyScan doAction
+INFOS: Production label qty scanned [Q24] OK.
+oct. 19, 2016 10:30:21 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_10_19] already exist!
+Print sub directory [.\print\2016_10_19.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_19.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_19.\picking_label] already exist!
+Print sub directory [.\print\2016_10_19.\dispatch_label] already exist!
+
+oct. 19, 2016 10:30:23 PM gui.warehouse_output.WAREHOUSE_OUT_UI0002_DISPATCH_SCAN loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord IN (:keyWords) ORDER BY id ASC
+oct. 19, 2016 10:30:28 PM gui.warehouse_output.WAREHOUSE_OUT_UI0003_PasswordRequest connect
+INFOS: User Admin ENGINE / 9999 connected to host O-EZZIOURI at 2016-10-19 22:30:28 Dispatch interface : .
+oct. 19, 2016 10:31:06 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_10_19] already exist!
+Print sub directory [.\print\2016_10_19.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_19.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_19.\picking_label] already exist!
+Print sub directory [.\print\2016_10_19.\dispatch_label] already exist!
+
+oct. 19, 2016 10:31:08 PM gui.warehouse_output.WAREHOUSE_OUT_UI0002_DISPATCH_SCAN loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord IN (:keyWords) ORDER BY id ASC
+oct. 19, 2016 10:31:14 PM gui.warehouse_output.WAREHOUSE_OUT_UI0003_PasswordRequest connect
+INFOS: User Admin ENGINE / 9999 connected to host O-EZZIOURI at 2016-10-19 22:31:14 Dispatch interface : .
+oct. 19, 2016 10:31:18 PM gui.warehouse_output.state.WarehouseOutHelper isAdviceNoteNumberExist
+INFOS: Searching advice note number [1001].
+oct. 19, 2016 10:31:18 PM gui.warehouse_output.state.WarehouseOutHelper isAdviceNoteNumberExist
+INFOS: FROM DispatchNote dn WHERE dn.adviceNoteNum = :advice_note_num
+oct. 19, 2016 10:31:19 PM gui.warehouse_output.state.S020_AdviceNoteNumberScan doAction
+INFOS: Advice not number scanned [1001] OK.
+oct. 19, 2016 10:31:21 PM gui.warehouse_output.state.S020_FORSBlScan doAction
+INFOS: FORS Advice note number scanned [1001] OK.
+oct. 19, 2016 10:31:24 PM gui.warehouse_output.state.S030_FORSHpScan doAction
+INFOS: FORS label harness part scanned [22222222] OK.
+oct. 19, 2016 10:31:25 PM gui.warehouse_output.state.S040_FORSQtyScan doAction
+INFOS: FORS label qty scanned [24] OK.
+oct. 19, 2016 10:31:30 PM gui.warehouse_output.state.WarehouseOutHelper checkForsIdFormat
+INFOS: Numéro BL invalide [65000003].
+Le numéro BL ne doit contenir que des chiffres.
+oct. 19, 2016 10:31:30 PM gui.warehouse_output.state.S050_FORSLabelIdScan doAction
+AVERTISSEMENT: Erreur Galia FORS. Numéro série invalide du Galia FORS [65000003].
+Le N° de série doit contenir que des chiffres !
+oct. 19, 2016 10:31:37 PM gui.warehouse_output.state.WarehouseOutHelper isForsLabelSerialExist
+INFOS: Searching fors label with id [650000003].
+oct. 19, 2016 10:31:37 PM gui.warehouse_output.state.WarehouseOutHelper isForsLabelSerialExist
+INFOS: FROM DispatchNoteLine dn WHERE dn.forsLabelId = :fors_label_id
+oct. 19, 2016 10:31:37 PM gui.warehouse_output.state.S050_FORSLabelIdScan doAction
+INFOS: FORS label ID scanned [650000003] OK.
+oct. 19, 2016 10:31:43 PM gui.warehouse_output.state.S060_ProdHpScan doAction
+INFOS: Harness part scanned [22222222] OK.
+oct. 19, 2016 10:31:45 PM gui.warehouse_output.state.S070_ProdQtyScan doAction
+INFOS: Production label qty scanned [Q24] OK.
+oct. 19, 2016 10:32:24 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_10_19] already exist!
+Print sub directory [.\print\2016_10_19.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_19.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_19.\picking_label] already exist!
+Print sub directory [.\print\2016_10_19.\dispatch_label] already exist!
+
+oct. 19, 2016 10:32:26 PM gui.warehouse_output.WAREHOUSE_OUT_UI0002_DISPATCH_SCAN loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord IN (:keyWords) ORDER BY id ASC
+oct. 19, 2016 10:32:30 PM gui.warehouse_output.WAREHOUSE_OUT_UI0003_PasswordRequest connect
+INFOS: User Admin ENGINE / 9999 connected to host O-EZZIOURI at 2016-10-19 22:32:30 Dispatch interface : .
+oct. 19, 2016 10:32:32 PM gui.warehouse_output.state.WarehouseOutHelper isAdviceNoteNumberExist
+INFOS: Searching advice note number [1001].
+oct. 19, 2016 10:32:32 PM gui.warehouse_output.state.WarehouseOutHelper isAdviceNoteNumberExist
+INFOS: FROM DispatchNote dn WHERE dn.adviceNoteNum = :advice_note_num
+oct. 19, 2016 10:32:32 PM gui.warehouse_output.state.S020_AdviceNoteNumberScan doAction
+INFOS: Advice not number scanned [1001] OK.
+oct. 19, 2016 10:32:38 PM gui.warehouse_output.state.S020_FORSBlScan doAction
+INFOS: FORS Advice note number scanned [1001] OK.
+oct. 19, 2016 10:33:05 PM gui.warehouse_output.state.S030_FORSHpScan doAction
+INFOS: FORS label harness part scanned [22222222] OK.
+oct. 19, 2016 10:33:06 PM gui.warehouse_output.state.S040_FORSQtyScan doAction
+INFOS: FORS label qty scanned [24] OK.
+oct. 19, 2016 10:33:11 PM gui.warehouse_output.state.WarehouseOutHelper isForsLabelSerialExist
+INFOS: Searching fors label with id [123456789].
+oct. 19, 2016 10:33:11 PM gui.warehouse_output.state.WarehouseOutHelper isForsLabelSerialExist
+INFOS: FROM DispatchNoteLine dn WHERE dn.forsLabelId = :fors_label_id
+oct. 19, 2016 10:33:11 PM gui.warehouse_output.state.S050_FORSLabelIdScan doAction
+INFOS: FORS label ID scanned [123456789] OK.
+oct. 19, 2016 10:33:15 PM gui.warehouse_output.state.S060_ProdHpScan doAction
+INFOS: Harness part scanned [22222222] OK.
+oct. 19, 2016 10:33:16 PM gui.warehouse_output.state.S070_ProdQtyScan doAction
+INFOS: Production label qty scanned [Q24] OK.
+oct. 19, 2016 10:33:38 PM gui.warehouse_output.state.S020_FORSBlScan doAction
+AVERTISSEMENT: Numéro BL différence à celui scanné au début [1002].
+oct. 19, 2016 10:33:41 PM gui.warehouse_output.state.S020_FORSBlScan doAction
+INFOS: FORS Advice note number scanned [1001] OK.
+oct. 19, 2016 10:33:44 PM gui.warehouse_output.state.S030_FORSHpScan doAction
+INFOS: FORS label harness part scanned [33333333] OK.
+oct. 19, 2016 10:33:47 PM gui.warehouse_output.state.S040_FORSQtyScan doAction
+INFOS: FORS label qty scanned [10] OK.
+oct. 19, 2016 10:33:53 PM gui.warehouse_output.state.WarehouseOutHelper isForsLabelSerialExist
+INFOS: Searching fors label with id [123456780].
+oct. 19, 2016 10:33:53 PM gui.warehouse_output.state.WarehouseOutHelper isForsLabelSerialExist
+INFOS: FROM DispatchNoteLine dn WHERE dn.forsLabelId = :fors_label_id
+oct. 19, 2016 10:33:53 PM gui.warehouse_output.state.S050_FORSLabelIdScan doAction
+INFOS: FORS label ID scanned [123456780] OK.
+oct. 19, 2016 10:33:56 PM gui.warehouse_output.state.S060_ProdHpScan doAction
+INFOS: Harness part scanned [33333333] OK.
+oct. 19, 2016 10:33:59 PM gui.warehouse_output.state.S070_ProdQtyScan doAction
+INFOS: Production label qty scanned [Q10] OK.
+oct. 19, 2016 10:34:22 PM gui.warehouse_output.state.S020_FORSBlScan doAction
+INFOS: FORS Advice note number scanned [1001] OK.
+oct. 19, 2016 10:34:30 PM gui.warehouse_output.state.S030_FORSHpScan doAction
+INFOS: FORS label harness part scanned [44444444] OK.
+oct. 19, 2016 10:34:32 PM gui.warehouse_output.state.S040_FORSQtyScan doAction
+INFOS: FORS label qty scanned [5] OK.
+oct. 19, 2016 10:34:39 PM gui.warehouse_output.state.WarehouseOutHelper isForsLabelSerialExist
+INFOS: Searching fors label with id [123456781].
+oct. 19, 2016 10:34:39 PM gui.warehouse_output.state.WarehouseOutHelper isForsLabelSerialExist
+INFOS: FROM DispatchNoteLine dn WHERE dn.forsLabelId = :fors_label_id
+oct. 19, 2016 10:34:39 PM gui.warehouse_output.state.S050_FORSLabelIdScan doAction
+INFOS: FORS label ID scanned [123456781] OK.
+oct. 19, 2016 10:34:43 PM gui.warehouse_output.state.S060_ProdHpScan doAction
+INFOS: Harness part scanned [44444444] OK.
+oct. 19, 2016 10:34:48 PM gui.warehouse_output.state.S070_ProdQtyScan doAction
+INFOS: Production label qty scanned [Q5] OK.
+oct. 19, 2016 10:39:21 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_10_19] already exist!
+Print sub directory [.\print\2016_10_19.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_19.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_19.\picking_label] already exist!
+Print sub directory [.\print\2016_10_19.\dispatch_label] already exist!
+
+oct. 19, 2016 10:39:25 PM gui.warehouse_output.WAREHOUSE_OUT_UI0002_DISPATCH_SCAN loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord IN (:keyWords) ORDER BY id ASC
+oct. 19, 2016 10:39:33 PM gui.warehouse_output.WAREHOUSE_OUT_UI0003_PasswordRequest connect
+INFOS: User Admin ENGINE / 9999 connected to host O-EZZIOURI at 2016-10-19 22:39:33 Dispatch interface : .
+oct. 19, 2016 10:39:35 PM gui.warehouse_output.state.WarehouseOutHelper isAdviceNoteNumberExist
+INFOS: Searching advice note number [1001].
+oct. 19, 2016 10:39:35 PM gui.warehouse_output.state.WarehouseOutHelper isAdviceNoteNumberExist
+INFOS: FROM DispatchNote dn WHERE dn.adviceNoteNum = :advice_note_num
+oct. 19, 2016 10:39:35 PM gui.warehouse_output.state.S020_AdviceNoteNumberScan doAction
+AVERTISSEMENT: N° 1001 BL déjà scanné. !
+oct. 19, 2016 10:39:38 PM gui.warehouse_output.state.WarehouseOutHelper isAdviceNoteNumberExist
+INFOS: Searching advice note number [1002].
+oct. 19, 2016 10:39:38 PM gui.warehouse_output.state.WarehouseOutHelper isAdviceNoteNumberExist
+INFOS: FROM DispatchNote dn WHERE dn.adviceNoteNum = :advice_note_num
+oct. 19, 2016 10:39:38 PM gui.warehouse_output.state.S020_AdviceNoteNumberScan doAction
+INFOS: Advice not number scanned [1002] OK.
+oct. 19, 2016 10:39:40 PM gui.warehouse_output.state.S020_FORSBlScan doAction
+INFOS: FORS Advice note number scanned [1002] OK.
+oct. 19, 2016 10:39:43 PM gui.warehouse_output.state.S030_FORSHpScan doAction
+INFOS: FORS label harness part scanned [11111111] OK.
+oct. 19, 2016 10:39:46 PM gui.warehouse_output.state.S040_FORSQtyScan doAction
+INFOS: FORS label qty scanned [4] OK.
+oct. 19, 2016 10:39:51 PM gui.warehouse_output.state.WarehouseOutHelper isForsLabelSerialExist
+INFOS: Searching fors label with id [640000005].
+oct. 19, 2016 10:39:51 PM gui.warehouse_output.state.WarehouseOutHelper isForsLabelSerialExist
+INFOS: FROM DispatchNoteLine dn WHERE dn.forsLabelId = :fors_label_id
+oct. 19, 2016 10:39:51 PM gui.warehouse_output.state.S050_FORSLabelIdScan doAction
+INFOS: FORS label ID scanned [640000005] OK.
+oct. 19, 2016 10:39:54 PM gui.warehouse_output.state.S060_ProdHpScan doAction
+INFOS: Harness part scanned [11111111] OK.
+oct. 19, 2016 10:39:58 PM gui.warehouse_output.state.S070_ProdQtyScan doAction
+INFOS: Production label qty scanned [4] OK.
+oct. 19, 2016 10:40:08 PM helper.Helper InitDailyDestPrintDir
+INFOS: nullPrint directory [.\print\2016_10_19] already exist!
+Print sub directory [.\print\2016_10_19.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_19.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_19.\picking_label] already exist!
+Print sub directory [.\print\2016_10_19.\dispatch_label] already exist!
+
+oct. 19, 2016 10:40:08 PM print.PrintDispatchNote_A4 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2016_10_19\dispatch_label\PrintDispatchNote_A4_2016_10_19_22_40_08_1002.pdf] to the default printer...
+oct. 19, 2016 10:40:09 PM print.PrintDispatchNote_A4 sentToDefaultDesktopPrinter
+INFOS: File [.\print\2016_10_19\dispatch_label\PrintDispatchNote_A4_2016_10_19_22_40_08_1002.pdf] has been printed.
+oct. 19, 2016 10:40:09 PM helper.PrinterHelper saveAndPrintDispatchNote
+INFOS: Document printed.
+oct. 19, 2016 10:48:06 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_10_19] already exist!
+Print sub directory [.\print\2016_10_19.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_19.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_19.\picking_label] already exist!
+Print sub directory [.\print\2016_10_19.\dispatch_label] already exist!
+
+oct. 19, 2016 10:48:09 PM gui.warehouse_output.WAREHOUSE_OUT_UI0002_DISPATCH_SCAN loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord IN (:keyWords) ORDER BY id ASC
+oct. 19, 2016 10:48:14 PM gui.warehouse_output.WAREHOUSE_OUT_UI0003_PasswordRequest connect
+INFOS: User Admin ENGINE / 9999 connected to host O-EZZIOURI at 2016-10-19 22:48:14 Dispatch interface : .
+oct. 19, 2016 10:48:22 PM gui.warehouse_output.state.WarehouseOutHelper isAdviceNoteNumberExist
+INFOS: Searching advice note number [1004].
+oct. 19, 2016 10:48:22 PM gui.warehouse_output.state.WarehouseOutHelper isAdviceNoteNumberExist
+INFOS: FROM DispatchNote dn WHERE dn.adviceNoteNum = :advice_note_num
+oct. 19, 2016 10:48:22 PM gui.warehouse_output.state.S020_AdviceNoteNumberScan doAction
+INFOS: Advice not number scanned [1004] OK.
+oct. 19, 2016 10:48:24 PM gui.warehouse_output.state.S020_FORSBlScan doAction
+AVERTISSEMENT: Numéro BL différence à celui scanné au début [1003].
+oct. 19, 2016 10:48:26 PM gui.warehouse_output.state.S020_FORSBlScan doAction
+INFOS: FORS Advice note number scanned [1004] OK.
+oct. 19, 2016 10:48:29 PM gui.warehouse_output.state.WarehouseOutHelper checkForsHpFormat
+INFOS: Erreur Galia FORS. Référence faisceau invalide [2222]. !
+oct. 19, 2016 10:48:29 PM gui.warehouse_output.state.S030_FORSHpScan doAction
+AVERTISSEMENT: Erreur Galia FORS. Référence faisceau invalide [2222]. !
+oct. 19, 2016 10:48:38 PM gui.warehouse_output.state.S030_FORSHpScan doAction
+INFOS: FORS label harness part scanned [22630882] OK.
+oct. 19, 2016 10:48:40 PM gui.warehouse_output.state.S040_FORSQtyScan doAction
+INFOS: FORS label qty scanned [24] OK.
+oct. 19, 2016 10:48:48 PM gui.warehouse_output.state.WarehouseOutHelper isForsLabelSerialExist
+INFOS: Searching fors label with id [650000006].
+oct. 19, 2016 10:48:48 PM gui.warehouse_output.state.WarehouseOutHelper isForsLabelSerialExist
+INFOS: FROM DispatchNoteLine dn WHERE dn.forsLabelId = :fors_label_id
+oct. 19, 2016 10:48:48 PM gui.warehouse_output.state.S050_FORSLabelIdScan doAction
+INFOS: FORS label ID scanned [650000006] OK.
+oct. 19, 2016 10:48:50 PM gui.warehouse_output.state.S060_ProdHpScan doAction
+INFOS: Harness part scanned [22630882] OK.
+oct. 19, 2016 10:48:51 PM gui.warehouse_output.state.S070_ProdQtyScan doAction
+INFOS: Production label qty scanned [24] OK.
+oct. 19, 2016 10:48:54 PM gui.warehouse_output.state.S020_FORSBlScan doAction
+INFOS: FORS Advice note number scanned [1004] OK.
+oct. 19, 2016 10:48:56 PM gui.warehouse_output.state.S030_FORSHpScan doAction
+INFOS: FORS label harness part scanned [22630882] OK.
+oct. 19, 2016 10:48:57 PM gui.warehouse_output.state.S040_FORSQtyScan doAction
+INFOS: FORS label qty scanned [24] OK.
+oct. 19, 2016 10:49:11 PM gui.warehouse_output.state.WarehouseOutHelper isForsLabelSerialExist
+INFOS: Searching fors label with id [640000007].
+oct. 19, 2016 10:49:11 PM gui.warehouse_output.state.WarehouseOutHelper isForsLabelSerialExist
+INFOS: FROM DispatchNoteLine dn WHERE dn.forsLabelId = :fors_label_id
+oct. 19, 2016 10:49:11 PM gui.warehouse_output.state.S050_FORSLabelIdScan doAction
+INFOS: FORS label ID scanned [640000007] OK.
+oct. 19, 2016 10:49:12 PM gui.warehouse_output.state.S060_ProdHpScan doAction
+INFOS: Harness part scanned [22630882] OK.
+oct. 19, 2016 10:49:15 PM gui.warehouse_output.state.S070_ProdQtyScan doAction
+INFOS: Production label qty scanned [24] OK.
+oct. 19, 2016 10:49:20 PM gui.warehouse_output.state.S020_FORSBlScan doAction
+INFOS: FORS Advice note number scanned [1004] OK.
+oct. 19, 2016 10:49:21 PM gui.warehouse_output.state.S030_FORSHpScan doAction
+INFOS: FORS label harness part scanned [22630882] OK.
+oct. 19, 2016 10:49:24 PM gui.warehouse_output.state.WarehouseOutHelper checkForsQtyFormat
+INFOS: Erreur Galia FORS. Quantité faisceau invalide [Q24].
+La quantité doit contenir que des chiffres !
+oct. 19, 2016 10:49:24 PM gui.warehouse_output.state.S040_FORSQtyScan doAction
+AVERTISSEMENT: Erreur Galia FORS. Quantité faisceau invalide [Q24].
+La quantité doit contenir que des chiffres !
+oct. 19, 2016 10:49:26 PM gui.warehouse_output.state.S040_FORSQtyScan doAction
+INFOS: FORS label qty scanned [24] OK.
+oct. 19, 2016 10:49:35 PM gui.warehouse_output.state.WarehouseOutHelper isForsLabelSerialExist
+INFOS: Searching fors label with id [640000008].
+oct. 19, 2016 10:49:35 PM gui.warehouse_output.state.WarehouseOutHelper isForsLabelSerialExist
+INFOS: FROM DispatchNoteLine dn WHERE dn.forsLabelId = :fors_label_id
+oct. 19, 2016 10:49:35 PM gui.warehouse_output.state.S050_FORSLabelIdScan doAction
+INFOS: FORS label ID scanned [640000008] OK.
+oct. 19, 2016 10:49:36 PM gui.warehouse_output.state.S060_ProdHpScan doAction
+INFOS: Harness part scanned [22630882] OK.
+oct. 19, 2016 10:49:38 PM gui.warehouse_output.state.S070_ProdQtyScan doAction
+INFOS: Production label qty scanned [24] OK.
+oct. 19, 2016 10:49:42 PM gui.warehouse_output.state.S020_FORSBlScan doAction
+INFOS: FORS Advice note number scanned [1004] OK.
+oct. 19, 2016 10:49:44 PM gui.warehouse_output.state.S030_FORSHpScan doAction
+INFOS: FORS label harness part scanned [22630882] OK.
+oct. 19, 2016 10:49:47 PM gui.warehouse_output.state.WarehouseOutHelper checkForsQtyFormat
+INFOS: Erreur Galia FORS. Quantité faisceau invalide [Q24].
+La quantité doit contenir que des chiffres !
+oct. 19, 2016 10:49:47 PM gui.warehouse_output.state.S040_FORSQtyScan doAction
+AVERTISSEMENT: Erreur Galia FORS. Quantité faisceau invalide [Q24].
+La quantité doit contenir que des chiffres !
+oct. 19, 2016 10:49:49 PM gui.warehouse_output.state.S040_FORSQtyScan doAction
+INFOS: FORS label qty scanned [24] OK.
+oct. 19, 2016 10:49:58 PM gui.warehouse_output.state.WarehouseOutHelper isForsLabelSerialExist
+INFOS: Searching fors label with id [640000009].
+oct. 19, 2016 10:49:58 PM gui.warehouse_output.state.WarehouseOutHelper isForsLabelSerialExist
+INFOS: FROM DispatchNoteLine dn WHERE dn.forsLabelId = :fors_label_id
+oct. 19, 2016 10:49:58 PM gui.warehouse_output.state.S050_FORSLabelIdScan doAction
+INFOS: FORS label ID scanned [640000009] OK.
+oct. 19, 2016 10:49:59 PM gui.warehouse_output.state.S060_ProdHpScan doAction
+INFOS: Harness part scanned [22630882] OK.
+oct. 19, 2016 10:50:01 PM gui.warehouse_output.state.S070_ProdQtyScan doAction
+INFOS: Production label qty scanned [24] OK.
+oct. 19, 2016 10:50:21 PM helper.Helper InitDailyDestPrintDir
+INFOS: nullPrint directory [.\print\2016_10_19] already exist!
+Print sub directory [.\print\2016_10_19.\open_sheet] already exist!
+Print sub directory [.\print\2016_10_19.\closing_sheet] already exist!
+Print sub directory [.\print\2016_10_19.\picking_label] already exist!
+Print sub directory [.\print\2016_10_19.\dispatch_label] already exist!
+
+oct. 19, 2016 10:50:22 PM print.PrintDispatchNote_A4 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2016_10_19\dispatch_label\PrintDispatchNote_A4_2016_10_19_22_50_21_1004.pdf] to the default printer...
+oct. 19, 2016 10:50:22 PM print.PrintDispatchNote_A4 sentToDefaultDesktopPrinter
+INFOS: File [.\print\2016_10_19\dispatch_label\PrintDispatchNote_A4_2016_10_19_22_50_21_1004.pdf] has been printed.
+oct. 19, 2016 10:50:22 PM helper.PrinterHelper saveAndPrintDispatchNote
+INFOS: Document printed.
+oct. 19, 2016 10:52:29 PM gui.warehouse_output.state.WarehouseOutHelper isAdviceNoteNumberExist
+INFOS: Searching advice note number [1005].
+oct. 19, 2016 10:52:29 PM gui.warehouse_output.state.WarehouseOutHelper isAdviceNoteNumberExist
+INFOS: FROM DispatchNote dn WHERE dn.adviceNoteNum = :advice_note_num
+oct. 19, 2016 10:52:29 PM gui.warehouse_output.state.S020_AdviceNoteNumberScan doAction
+INFOS: Advice not number scanned [1005] OK.
+oct. 19, 2016 10:52:31 PM gui.warehouse_output.state.S020_FORSBlScan doAction
+INFOS: FORS Advice note number scanned [1005] OK.
+oct. 19, 2016 10:52:37 PM gui.warehouse_output.state.S030_FORSHpScan doAction
+INFOS: FORS label harness part scanned [22630882] OK.
+oct. 19, 2016 10:52:38 PM gui.warehouse_output.state.S040_FORSQtyScan doAction
+INFOS: FORS label qty scanned [24] OK.
+oct. 19, 2016 10:52:40 PM gui.warehouse_output.state.WarehouseOutHelper isForsLabelSerialExist
+INFOS: Searching fors label with id [640000001].
+oct. 19, 2016 10:52:40 PM gui.warehouse_output.state.WarehouseOutHelper isForsLabelSerialExist
+INFOS: FROM DispatchNoteLine dn WHERE dn.forsLabelId = :fors_label_id
+oct. 19, 2016 10:52:40 PM gui.warehouse_output.state.S050_FORSLabelIdScan doAction
+AVERTISSEMENT: N° série Galia FORS déjà scanné. !

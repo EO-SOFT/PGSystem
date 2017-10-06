@@ -1,0 +1,128 @@
+avr. 04, 2017 10:14:47 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_04_04] is created!
+Print sub directory [.\print\2017_04_04.\open_sheet] is created!
+Print sub directory [.\print\2017_04_04.\closing_sheet] is created!
+Print sub directory [.\print\2017_04_04.\picking_label] is created!
+Print sub directory [.\print\2017_04_04.\dispatch_label] is created!
+
+avr. 04, 2017 10:46:28 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_04_04] already exist!
+Print sub directory [.\print\2017_04_04.\open_sheet] already exist!
+Print sub directory [.\print\2017_04_04.\closing_sheet] already exist!
+Print sub directory [.\print\2017_04_04.\picking_label] already exist!
+Print sub directory [.\print\2017_04_04.\dispatch_label] already exist!
+
+avr. 04, 2017 10:46:46 PM gui.warehouse_dispatch.WAREHOUSE_DISPATCH_UI0003_PasswordRequest connect
+INFOS: User Admin   / 9999 connected to host O-EZZIOURI at 2017-04-04 22:46:46 Dispatch interface : .
+avr. 04, 2017 10:50:55 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_04_04] already exist!
+Print sub directory [.\print\2017_04_04.\open_sheet] already exist!
+Print sub directory [.\print\2017_04_04.\closing_sheet] already exist!
+Print sub directory [.\print\2017_04_04.\picking_label] already exist!
+Print sub directory [.\print\2017_04_04.\dispatch_label] already exist!
+
+avr. 04, 2017 10:51:00 PM gui.warehouse_dispatch.WAREHOUSE_DISPATCH_UI0003_PasswordRequest connect
+INFOS: User Admin   / 9999 connected to host O-EZZIOURI at 2017-04-04 22:51:00 Dispatch interface : .
+avr. 04, 2017 10:54:11 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_04_04] already exist!
+Print sub directory [.\print\2017_04_04.\open_sheet] already exist!
+Print sub directory [.\print\2017_04_04.\closing_sheet] already exist!
+Print sub directory [.\print\2017_04_04.\picking_label] already exist!
+Print sub directory [.\print\2017_04_04.\dispatch_label] already exist!
+
+avr. 04, 2017 10:54:16 PM gui.warehouse_dispatch.WAREHOUSE_DISPATCH_UI0003_PasswordRequest connect
+INFOS: User Admin   / 9999 connected to host O-EZZIOURI at 2017-04-04 22:54:16 Dispatch interface : .
+avr. 04, 2017 11:06:51 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_04_04] already exist!
+Print sub directory [.\print\2017_04_04.\open_sheet] already exist!
+Print sub directory [.\print\2017_04_04.\closing_sheet] already exist!
+Print sub directory [.\print\2017_04_04.\picking_label] already exist!
+Print sub directory [.\print\2017_04_04.\dispatch_label] already exist!
+
+avr. 04, 2017 11:06:58 PM gui.warehouse_dispatch.WAREHOUSE_DISPATCH_UI0003_PasswordRequest connect
+INFOS: User Admin   / 9999 connected to host O-EZZIOURI at 2017-04-04 23:06:58 Dispatch interface : .
+avr. 04, 2017 11:13:07 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_04_04] already exist!
+Print sub directory [.\print\2017_04_04.\open_sheet] already exist!
+Print sub directory [.\print\2017_04_04.\closing_sheet] already exist!
+Print sub directory [.\print\2017_04_04.\picking_label] already exist!
+Print sub directory [.\print\2017_04_04.\dispatch_label] already exist!
+
+avr. 04, 2017 11:13:18 PM gui.warehouse_dispatch.WAREHOUSE_DISPATCH_UI0003_PasswordRequest connect
+INFOS: User Admin   / 9999 connected to host O-EZZIOURI at 2017-04-04 23:13:18 Dispatch interface : .
+avr. 04, 2017 11:24:14 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_04_04] already exist!
+Print sub directory [.\print\2017_04_04.\open_sheet] already exist!
+Print sub directory [.\print\2017_04_04.\closing_sheet] already exist!
+Print sub directory [.\print\2017_04_04.\picking_label] already exist!
+Print sub directory [.\print\2017_04_04.\dispatch_label] already exist!
+
+avr. 04, 2017 11:24:24 PM gui.warehouse_dispatch.WAREHOUSE_DISPATCH_UI0003_PasswordRequest connect
+INFOS: User Admin   / 9999 connected to host O-EZZIOURI at 2017-04-04 23:24:24 Dispatch interface : .
+avr. 04, 2017 11:40:11 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_04_04] already exist!
+Print sub directory [.\print\2017_04_04.\open_sheet] already exist!
+Print sub directory [.\print\2017_04_04.\closing_sheet] already exist!
+Print sub directory [.\print\2017_04_04.\picking_label] already exist!
+Print sub directory [.\print\2017_04_04.\dispatch_label] already exist!
+
+avr. 04, 2017 11:40:16 PM gui.warehouse_dispatch.WAREHOUSE_DISPATCH_UI0003_PasswordRequest connect
+INFOS: User Admin   / 9999 connected to host O-EZZIOURI at 2017-04-04 23:40:16 Dispatch interface : .
+avr. 04, 2017 11:41:03 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_04_04] already exist!
+Print sub directory [.\print\2017_04_04.\open_sheet] already exist!
+Print sub directory [.\print\2017_04_04.\closing_sheet] already exist!
+Print sub directory [.\print\2017_04_04.\picking_label] already exist!
+Print sub directory [.\print\2017_04_04.\dispatch_label] already exist!
+
+avr. 04, 2017 11:41:51 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_04_04] already exist!
+Print sub directory [.\print\2017_04_04.\open_sheet] already exist!
+Print sub directory [.\print\2017_04_04.\closing_sheet] already exist!
+Print sub directory [.\print\2017_04_04.\picking_label] already exist!
+Print sub directory [.\print\2017_04_04.\dispatch_label] already exist!
+
+avr. 04, 2017 11:41:54 PM gui.warehouse_dispatch.WAREHOUSE_DISPATCH_UI0003_PasswordRequest connect
+INFOS: User Admin   / 9999 connected to host O-EZZIOURI at 2017-04-04 23:41:54 Dispatch interface : .
+avr. 04, 2017 11:44:21 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_04_04] already exist!
+Print sub directory [.\print\2017_04_04.\open_sheet] already exist!
+Print sub directory [.\print\2017_04_04.\closing_sheet] already exist!
+Print sub directory [.\print\2017_04_04.\picking_label] already exist!
+Print sub directory [.\print\2017_04_04.\dispatch_label] already exist!
+
+avr. 04, 2017 11:44:24 PM gui.warehouse_dispatch.WAREHOUSE_DISPATCH_UI0003_PasswordRequest connect
+INFOS: User Admin   / 9999 connected to host O-EZZIOURI at 2017-04-04 23:44:24 Dispatch interface : .
+avr. 04, 2017 11:46:06 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2017_04_04] already exist!
+Print sub directory [.\print\2017_04_04.\open_sheet] already exist!
+Print sub directory [.\print\2017_04_04.\closing_sheet] already exist!
+Print sub directory [.\print\2017_04_04.\picking_label] already exist!
+Print sub directory [.\print\2017_04_04.\dispatch_label] already exist!
+
+avr. 04, 2017 11:46:10 PM gui.warehouse_dispatch.WAREHOUSE_DISPATCH_UI0003_PasswordRequest connect
+INFOS: User Admin   / 9999 connected to host O-EZZIOURI at 2017-04-04 23:46:10 Dispatch interface : .
+avr. 04, 2017 11:51:25 PM gui.packaging.PACKAGING_UI0001_Main loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord ORDER BY id ASC
+avr. 04, 2017 11:51:25 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+avr. 04, 2017 11:51:25 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+avr. 04, 2017 11:51:38 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+avr. 04, 2017 11:51:38 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+avr. 04, 2017 11:51:38 PM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+avr. 04, 2017 11:51:46 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+avr. 04, 2017 11:51:46 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+avr. 04, 2017 11:51:46 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+avr. 04, 2017 11:51:47 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+avr. 04, 2017 11:51:47 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+avr. 04, 2017 11:51:47 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC

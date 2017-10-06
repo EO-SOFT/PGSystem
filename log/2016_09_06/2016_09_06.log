@@ -1,0 +1,250 @@
+sept. 06, 2016 8:38:50 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_09_06] is created!
+Print sub directory [.\print\2016_09_06.\open_sheet] is created!
+Print sub directory [.\print\2016_09_06.\closing_sheet] is created!
+Print sub directory [.\print\2016_09_06.\picking_label] is created!
+
+sept. 06, 2016 8:38:53 AM gui.packaging.PACKAGING_UI0001_Main loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord ORDER BY id ASC
+sept. 06, 2016 8:38:53 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+sept. 06, 2016 8:38:53 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+sept. 06, 2016 8:38:57 AM gui.packaging.PACKAGING_UI0002_PasswordRequest admin_password_txtboxKeyPressed
+INFOS: User Admin   / 9999 connected to host WSMA7040 at 2016-09-06 08:38:57 Project : ENGINE.
+sept. 06, 2016 8:39:03 AM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22630882] in ConfigUCS: ENGINE
+sept. 06, 2016 8:39:03 AM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22630882] found for project [ENGINE].
+sept. 06, 2016 8:39:03 AM state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22630882] OK.
+sept. 06, 2016 8:39:11 AM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2263088222332016000000] in BaseHarness.
+sept. 06, 2016 8:39:11 AM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+sept. 06, 2016 8:39:11 AM state.S030_MatrixIdScan doAction
+INFOS: Valid Harness Counter scanned [P2263088222332016000000] OK.
+sept. 06, 2016 8:39:57 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_09_06] already exist!
+Print sub directory [.\print\2016_09_06.\open_sheet] already exist!
+Print sub directory [.\print\2016_09_06.\closing_sheet] already exist!
+Print sub directory [.\print\2016_09_06.\picking_label] already exist!
+
+sept. 06, 2016 8:39:58 AM gui.packaging.PACKAGING_UI0001_Main loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord ORDER BY id ASC
+sept. 06, 2016 8:39:58 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+sept. 06, 2016 8:39:58 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+sept. 06, 2016 8:40:03 AM gui.packaging.PACKAGING_UI0002_PasswordRequest admin_password_txtboxKeyPressed
+INFOS: User Admin   / 9999 connected to host WSMA7040 at 2016-09-06 08:40:03 Project : ENGINE.
+sept. 06, 2016 8:40:14 AM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22630882] in ConfigUCS: ENGINE
+sept. 06, 2016 8:40:14 AM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22630882] found for project [ENGINE].
+sept. 06, 2016 8:40:14 AM state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22630882] OK.
+sept. 06, 2016 8:40:20 AM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2263088200002016000000] in BaseHarness.
+sept. 06, 2016 8:40:20 AM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+sept. 06, 2016 8:40:20 AM state.S030_MatrixIdScan doAction
+INFOS: Valid Harness Counter scanned [P2263088200002016000000] OK.
+sept. 06, 2016 8:42:49 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_09_06] already exist!
+Print sub directory [.\print\2016_09_06.\open_sheet] already exist!
+Print sub directory [.\print\2016_09_06.\closing_sheet] already exist!
+Print sub directory [.\print\2016_09_06.\picking_label] already exist!
+
+sept. 06, 2016 8:42:50 AM gui.packaging.PACKAGING_UI0001_Main loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord ORDER BY id ASC
+sept. 06, 2016 8:42:50 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+sept. 06, 2016 8:42:50 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+sept. 06, 2016 8:42:53 AM gui.packaging.PACKAGING_UI0002_PasswordRequest admin_password_txtboxKeyPressed
+INFOS: User Admin   / 9999 connected to host WSMA7040 at 2016-09-06 08:42:53 Project : ENGINE.
+sept. 06, 2016 8:42:58 AM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22630882] in ConfigUCS: ENGINE
+sept. 06, 2016 8:42:58 AM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22630882] found for project [ENGINE].
+sept. 06, 2016 8:42:58 AM state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22630882] OK.
+sept. 06, 2016 8:43:03 AM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2263088200002016000000] in BaseHarness.
+sept. 06, 2016 8:43:03 AM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+sept. 06, 2016 8:43:03 AM state.S030_MatrixIdScan doAction
+INFOS: Valid Harness Counter scanned [P2263088200002016000000] OK.
+sept. 06, 2016 8:43:38 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_09_06] already exist!
+Print sub directory [.\print\2016_09_06.\open_sheet] already exist!
+Print sub directory [.\print\2016_09_06.\closing_sheet] already exist!
+Print sub directory [.\print\2016_09_06.\picking_label] already exist!
+
+sept. 06, 2016 8:43:40 AM gui.packaging.PACKAGING_UI0001_Main loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord ORDER BY id ASC
+sept. 06, 2016 8:43:40 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+sept. 06, 2016 8:43:40 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+sept. 06, 2016 8:43:44 AM gui.packaging.PACKAGING_UI0002_PasswordRequest admin_password_txtboxKeyPressed
+INFOS: User Admin   / 9999 connected to host WSMA7040 at 2016-09-06 08:43:44 Project : ENGINE.
+sept. 06, 2016 8:44:08 AM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22630882] in ConfigUCS: ENGINE
+sept. 06, 2016 8:44:08 AM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22630882] found for project [ENGINE].
+sept. 06, 2016 8:44:08 AM state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22630882] OK.
+sept. 06, 2016 8:44:08 AM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2263088200002016112200] in BaseHarness.
+sept. 06, 2016 8:44:08 AM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+sept. 06, 2016 8:44:08 AM state.S030_MatrixIdScan doAction
+INFOS: Valid Harness Counter scanned [P2263088200002016112200] OK.
+sept. 06, 2016 8:44:52 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_09_06] already exist!
+Print sub directory [.\print\2016_09_06.\open_sheet] already exist!
+Print sub directory [.\print\2016_09_06.\closing_sheet] already exist!
+Print sub directory [.\print\2016_09_06.\picking_label] already exist!
+
+sept. 06, 2016 8:44:53 AM gui.packaging.PACKAGING_UI0001_Main loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord ORDER BY id ASC
+sept. 06, 2016 8:44:53 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+sept. 06, 2016 8:44:53 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+sept. 06, 2016 8:44:56 AM gui.packaging.PACKAGING_UI0002_PasswordRequest admin_password_txtboxKeyPressed
+INFOS: User Admin   / 9999 connected to host WSMA7040 at 2016-09-06 08:44:56 Project : ENGINE.
+sept. 06, 2016 8:45:06 AM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22630882] in ConfigUCS: ENGINE
+sept. 06, 2016 8:45:06 AM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22630882] found for project [ENGINE].
+sept. 06, 2016 8:45:06 AM state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22630882] OK.
+sept. 06, 2016 8:45:08 AM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2263088200002016112200] in BaseHarness.
+sept. 06, 2016 8:45:08 AM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+sept. 06, 2016 8:45:08 AM state.S030_MatrixIdScan doAction
+INFOS: Valid Harness Counter scanned [P2263088200002016112200] OK.
+sept. 06, 2016 8:45:44 AM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_09_06] already exist!
+Print sub directory [.\print\2016_09_06.\open_sheet] already exist!
+Print sub directory [.\print\2016_09_06.\closing_sheet] already exist!
+Print sub directory [.\print\2016_09_06.\picking_label] already exist!
+
+sept. 06, 2016 8:45:45 AM gui.packaging.PACKAGING_UI0001_Main loadBarcodeConfig
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord ORDER BY id ASC
+sept. 06, 2016 8:45:45 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+sept. 06, 2016 8:45:45 AM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+sept. 06, 2016 8:45:48 AM gui.packaging.PACKAGING_UI0002_PasswordRequest admin_password_txtboxKeyPressed
+INFOS: User Admin   / 9999 connected to host WSMA7040 at 2016-09-06 08:45:48 Project : ENGINE.
+sept. 06, 2016 8:45:55 AM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22630882] in ConfigUCS: ENGINE
+sept. 06, 2016 8:45:55 AM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22630882] found for project [ENGINE].
+sept. 06, 2016 8:45:55 AM state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22630882] OK.
+sept. 06, 2016 8:46:00 AM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2263088200002016112200] in BaseHarness.
+sept. 06, 2016 8:46:00 AM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+sept. 06, 2016 8:46:00 AM state.S030_MatrixIdScan doAction
+INFOS: Valid Harness Counter scanned [P2263088200002016112200] OK.
+sept. 06, 2016 8:46:06 AM entity.BaseEngineLabel isLabelCodeExist
+INFOS: Searching Engine Label code [12345678911] in BaseEngineLabel.
+sept. 06, 2016 8:46:06 AM entity.BaseEngineLabel isLabelCodeExist
+INFOS: FROM BaseEngineLabel bel WHERE bel.labelCode = :labelCode
+sept. 06, 2016 8:46:06 AM entity.BaseEngineLabel isLabelCodeExist
+AVERTISSEMENT: Duplicated engine label [12345678911]
+sept. 06, 2016 8:46:15 AM entity.BaseEngineLabel isLabelCodeExist
+INFOS: Searching Engine Label code [12345678933] in BaseEngineLabel.
+sept. 06, 2016 8:46:15 AM entity.BaseEngineLabel isLabelCodeExist
+INFOS: FROM BaseEngineLabel bel WHERE bel.labelCode = :labelCode
+sept. 06, 2016 8:46:15 AM entity.BaseEngineLabel isLabelCodeExist
+INFOS: New label engine [12345678933]
+sept. 06, 2016 8:46:15 AM state.S031_PlasticBagScan doAction
+INFOS: First Valid Engine Label scanned [12345678933] OK.
+sept. 06, 2016 8:46:19 AM entity.BaseEngineLabel isLabelCodeExist
+INFOS: Searching Engine Label code [12345678944] in BaseEngineLabel.
+sept. 06, 2016 8:46:19 AM entity.BaseEngineLabel isLabelCodeExist
+INFOS: FROM BaseEngineLabel bel WHERE bel.labelCode = :labelCode
+sept. 06, 2016 8:46:19 AM entity.BaseEngineLabel isLabelCodeExist
+INFOS: New label engine [12345678944]
+sept. 06, 2016 8:46:26 AM state.S040_PalletChoice doAction
+INFOS: Is it a new pallet ?
+sept. 06, 2016 8:46:26 AM state.S040_PalletChoice doAction
+INFOS:  [No]
+sept. 06, 2016 8:46:26 AM state.S040_PalletChoice doAction
+INFOS: Pallet values 
+sept. 06, 2016 8:46:26 AM state.S040_PalletChoice doAction
+INFOS: State           :   [true]
+sept. 06, 2016 8:46:26 AM state.S040_PalletChoice doAction
+INFOS: Qty Expected    :   [24]
+sept. 06, 2016 8:46:26 AM state.S040_PalletChoice doAction
+INFOS: Qty Read        :   [2]
+sept. 06, 2016 8:46:26 AM state.S040_PalletChoice doAction
+INFOS: Std Time        :   [0.0]
+sept. 06, 2016 8:46:26 AM state.S040_PalletChoice doAction
+INFOS: Harness Part [22630882] = Context Harness Part [22630882]
+sept. 06, 2016 8:46:26 AM state.S040_PalletChoice doAction
+INFOS: Harness Type [ENGINE] = Context Harness Type [ENGINE]
+sept. 06, 2016 8:46:32 AM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22630882] in ConfigUCS: ENGINE
+sept. 06, 2016 8:46:32 AM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22630882] found for project [ENGINE].
+sept. 06, 2016 8:46:32 AM state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22630882] OK.
+sept. 06, 2016 8:46:34 AM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2263088200002016112200] in BaseHarness.
+sept. 06, 2016 8:46:34 AM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+sept. 06, 2016 8:46:34 AM entity.BaseHarness getHarnessByCounter
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+sept. 06, 2016 8:46:37 AM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2263088200002016112201] in BaseHarness.
+sept. 06, 2016 8:46:37 AM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+sept. 06, 2016 8:46:37 AM state.S030_MatrixIdScan doAction
+INFOS: Valid Harness Counter scanned [P2263088200002016112201] OK.
+sept. 06, 2016 8:46:53 AM entity.BaseEngineLabel isLabelCodeExist
+INFOS: Searching Engine Label code [12345678944] in BaseEngineLabel.
+sept. 06, 2016 8:46:53 AM entity.BaseEngineLabel isLabelCodeExist
+INFOS: FROM BaseEngineLabel bel WHERE bel.labelCode = :labelCode
+sept. 06, 2016 8:46:53 AM entity.BaseEngineLabel isLabelCodeExist
+AVERTISSEMENT: Duplicated engine label [12345678944]
+sept. 06, 2016 8:46:56 AM entity.BaseEngineLabel isLabelCodeExist
+INFOS: Searching Engine Label code [12345678955] in BaseEngineLabel.
+sept. 06, 2016 8:46:56 AM entity.BaseEngineLabel isLabelCodeExist
+INFOS: FROM BaseEngineLabel bel WHERE bel.labelCode = :labelCode
+sept. 06, 2016 8:46:56 AM entity.BaseEngineLabel isLabelCodeExist
+INFOS: New label engine [12345678955]
+sept. 06, 2016 8:46:56 AM state.S031_PlasticBagScan doAction
+INFOS: First Valid Engine Label scanned [12345678955] OK.
+sept. 06, 2016 8:47:01 AM entity.BaseEngineLabel isLabelCodeExist
+INFOS: Searching Engine Label code [12345678966] in BaseEngineLabel.
+sept. 06, 2016 8:47:01 AM entity.BaseEngineLabel isLabelCodeExist
+INFOS: FROM BaseEngineLabel bel WHERE bel.labelCode = :labelCode
+sept. 06, 2016 8:47:01 AM entity.BaseEngineLabel isLabelCodeExist
+INFOS: New label engine [12345678966]
+sept. 06, 2016 8:47:21 AM state.S040_PalletChoice doAction
+INFOS: Is it a new pallet ?
+sept. 06, 2016 8:47:21 AM state.S040_PalletChoice doAction
+INFOS:  [No]
+sept. 06, 2016 8:47:21 AM state.S040_PalletChoice doAction
+INFOS: Pallet values 
+sept. 06, 2016 8:47:21 AM state.S040_PalletChoice doAction
+INFOS: State           :   [true]
+sept. 06, 2016 8:47:21 AM state.S040_PalletChoice doAction
+INFOS: Qty Expected    :   [24]
+sept. 06, 2016 8:47:21 AM state.S040_PalletChoice doAction
+INFOS: Qty Read        :   [3]
+sept. 06, 2016 8:47:21 AM state.S040_PalletChoice doAction
+INFOS: Std Time        :   [0.0]
+sept. 06, 2016 8:47:21 AM state.S040_PalletChoice doAction
+INFOS: Harness Part [22630882] = Context Harness Part [22630882]
+sept. 06, 2016 8:47:21 AM state.S040_PalletChoice doAction
+INFOS: Harness Type [ENGINE] = Context Harness Type [ENGINE]

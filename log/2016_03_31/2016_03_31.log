@@ -1,0 +1,1840 @@
+mars 31, 2016 3:22:15 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_31] is created!
+Print sub directory [.\print\2016_03_31.\open_sheet] is created!
+Print sub directory [.\print\2016_03_31.\closing_sheet] is created!
+
+mars 31, 2016 3:22:18 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 31, 2016 3:22:18 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 31, 2016 3:23:05 PM state.S010_UserCodeScan doAction
+INFOS: User Mohamed Ramali / 14228 connected to host WSMA7040 at 2016-03-31 15:23:05 Project : SMALL.
+mars 31, 2016 3:23:38 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [21493685] in ConfigUCS: SMALL
+mars 31, 2016 3:23:38 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [21493685] found for project [SMALL].
+mars 31, 2016 3:23:38 PM state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P21493685] OK.
+mars 31, 2016 3:24:01 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2149368500.00.0000;00:00:10] in BaseHarness.
+mars 31, 2016 3:24:01 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+mars 31, 2016 3:24:01 PM state.S030_MatrixIdScan doAction
+INFOS: Valid Harness Counter scanned [P2149368500.00.0000;00:00:10] OK.
+mars 31, 2016 3:24:04 PM state.S040_PalletChoice doAction
+INFOS: Is it a new pallet ?
+mars 31, 2016 3:24:04 PM state.S040_PalletChoice doAction
+INFOS:  [Yes]
+mars 31, 2016 3:24:05 PM gui.packaging.PACKAGING_UI9000_ChooseContainerType <init>
+INFOS: Item found 21493685--26C41284A--P08--2RV--60
+mars 31, 2016 3:24:05 PM gui.packaging.PACKAGING_UI9000_ChooseContainerType <init>
+INFOS: 1 item(s) found for Harness Part[21493685].
+mars 31, 2016 3:24:06 PM gui.packaging.PACKAGING_UI9000_ChooseContainerType mappingContextVals
+INFOS: Selected pack type : 21493685--26C41284A--P08--2RV--60 
+mars 31, 2016 3:24:06 PM helper.Helper InitDailyDestPrintDir
+INFOS: nullPrint directory [.\print\2016_03_31] already exist!
+Print sub directory [.\print\2016_03_31.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_31.\closing_sheet] already exist!
+
+mars 31, 2016 3:24:07 PM helper.PrinterHelper saveAndPrintOpenSheet
+INFOS: Set Pallet [200000250] state to [IN_PROCESS]
+mars 31, 2016 3:24:07 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2016_03_31\open_sheet\PrintOpenPallet_A5_2016_03_31_15_24_06_200000250.pdf] to the default printer...
+mars 31, 2016 3:24:07 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [%s] has been printed.
+mars 31, 2016 3:24:07 PM helper.PrinterHelper saveAndPrintOpenSheet
+INFOS: Set Pallet [200000250] state to [PRINTED]
+mars 31, 2016 3:24:07 PM gui.packaging.PACKAGING_UI9000_ChooseContainerType items_listKeyPressed
+INFOS: Openning new container for first harness part [21493685].
+mars 31, 2016 3:24:31 PM state.S041_NewPalletScan doAction
+INFOS: Scanned Pallet number [200000250] OK.
+mars 31, 2016 3:24:31 PM state.S041_NewPalletScan doAction
+INFOS: BaseContainer created BaseContainer{id=524, createTime=Thu Mar 31 15:24:31 WEST 2016, writeTime=Thu Mar 31 15:24:31 WEST 2016, createId=6, writeId=6, user=14228, startTime=Thu Mar 31 15:24:31 WEST 2016, completeTime=null, workTime=null, palletNumber=200000250, harnessPart=21493685, harnessIndex=P08, supplierPartNumber=26C41284A, qtyExpected=60, qtyRead=1, state=OPEN, packType=2RV} 
+mars 31, 2016 3:51:01 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_31] already exist!
+Print sub directory [.\print\2016_03_31.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_31.\closing_sheet] already exist!
+
+mars 31, 2016 3:51:08 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 31, 2016 3:51:08 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 31, 2016 3:51:20 PM state.S010_UserCodeScan doAction
+INFOS: User Mohamed Ramali / 14228 connected to host WSMA7040 at 2016-03-31 15:51:20 Project : SMALL.
+mars 31, 2016 3:51:28 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [21493685] in ConfigUCS: SMALL
+mars 31, 2016 3:51:28 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [21493685] found for project [SMALL].
+mars 31, 2016 3:51:28 PM state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P21493685] OK.
+mars 31, 2016 3:51:49 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2149368500.00.0000;00:00:11] in BaseHarness.
+mars 31, 2016 3:51:49 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+mars 31, 2016 3:51:49 PM state.S030_MatrixIdScan doAction
+INFOS: Valid Harness Counter scanned [P2149368500.00.0000;00:00:11] OK.
+mars 31, 2016 3:51:54 PM state.S040_PalletChoice doAction
+INFOS: Is it a new pallet ?
+mars 31, 2016 3:51:54 PM state.S040_PalletChoice doAction
+INFOS:  [No]
+mars 31, 2016 3:51:54 PM state.S040_PalletChoice doAction
+INFOS: Pallet values 
+mars 31, 2016 3:51:54 PM state.S040_PalletChoice doAction
+INFOS: State           :   [true]
+mars 31, 2016 3:51:54 PM state.S040_PalletChoice doAction
+INFOS: Qty Expected    :   [2]
+mars 31, 2016 3:51:54 PM state.S040_PalletChoice doAction
+INFOS: Qty Read        :   [1]
+mars 31, 2016 3:51:54 PM state.S040_PalletChoice doAction
+INFOS: Harness Part [21493685] = Context Harness Part [21493685]
+mars 31, 2016 3:51:54 PM state.S040_PalletChoice doAction
+INFOS: Harness Type [SMALL] = Context Harness Type [SMALL]
+mars 31, 2016 3:51:54 PM state.S040_PalletChoice doAction
+INFOS: Quantité terminée BaseContainer{id=524, createTime=2016-03-31 15:24:31.0, writeTime=Thu Mar 31 15:51:54 WEST 2016, createId=6, writeId=6, user=14228, startTime=2016-03-31 15:24:31.0, completeTime=null, workTime=null, palletNumber=200000250, harnessPart=21493685, harnessIndex=P08, supplierPartNumber=26C41284A, qtyExpected=2, qtyRead=2, state=OPEN, packType=2RV}
+mars 31, 2016 3:51:54 PM helper.Helper InitDailyDestPrintDir
+INFOS: nullPrint directory [.\print\2016_03_31] already exist!
+Print sub directory [.\print\2016_03_31.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_31.\closing_sheet] already exist!
+
+mars 31, 2016 3:51:55 PM helper.PrinterHelper saveAndPrintClosingSheet
+INFOS: Set Closing Pallet item [484] state to [IN_PROCESS]
+mars 31, 2016 3:51:55 PM print.PrintClosingPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2016_03_31\closing_sheet\PrintClosingPallet_A5_2016_03_31_15_51_55.pdf] to the default printer...
+mars 31, 2016 3:51:55 PM print.PrintClosingPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [%s] has been printed.
+mars 31, 2016 3:51:55 PM helper.PrinterHelper saveAndPrintClosingSheet
+INFOS: Set Closing Pallet [484] state to [PRINTED]
+mars 31, 2016 4:10:01 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_31] already exist!
+Print sub directory [.\print\2016_03_31.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_31.\closing_sheet] already exist!
+
+mars 31, 2016 4:10:02 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 31, 2016 4:10:02 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 31, 2016 4:10:29 PM state.S010_UserCodeScan doAction
+INFOS: User Mohamed Ramali / 14228 connected to host WSMA7040 at 2016-03-31 16:10:29 Project : SMALL.
+mars 31, 2016 4:10:56 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [21493685] in ConfigUCS: SMALL
+mars 31, 2016 4:10:56 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [21493685] found for project [SMALL].
+mars 31, 2016 4:10:56 PM state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P21493685] OK.
+mars 31, 2016 4:11:02 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2149368500.00.0000;00:00:12] in BaseHarness.
+mars 31, 2016 4:11:02 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+mars 31, 2016 4:11:02 PM state.S030_MatrixIdScan doAction
+INFOS: Valid Harness Counter scanned [P2149368500.00.0000;00:00:12] OK.
+mars 31, 2016 4:11:07 PM state.S040_PalletChoice doAction
+INFOS: Is it a new pallet ?
+mars 31, 2016 4:11:07 PM state.S040_PalletChoice doAction
+INFOS:  [No]
+mars 31, 2016 4:11:07 PM state.S040_PalletChoice doAction
+INFOS: Pallet values 
+mars 31, 2016 4:11:07 PM state.S040_PalletChoice doAction
+INFOS: State           :   [true]
+mars 31, 2016 4:11:07 PM state.S040_PalletChoice doAction
+INFOS: Qty Expected    :   [60]
+mars 31, 2016 4:11:07 PM state.S040_PalletChoice doAction
+INFOS: Qty Read        :   [4]
+mars 31, 2016 4:11:07 PM state.S040_PalletChoice doAction
+INFOS: Harness Part [21493685] = Context Harness Part [21493685]
+mars 31, 2016 4:11:07 PM state.S040_PalletChoice doAction
+INFOS: Harness Type [SMALL] = Context Harness Type [SMALL]
+mars 31, 2016 4:11:24 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [21493685] in ConfigUCS: SMALL
+mars 31, 2016 4:11:24 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [21493685] found for project [SMALL].
+mars 31, 2016 4:11:24 PM state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P21493685] OK.
+mars 31, 2016 4:11:48 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2149368500.00.0000;00:00:13] in BaseHarness.
+mars 31, 2016 4:11:48 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+mars 31, 2016 4:11:48 PM state.S030_MatrixIdScan doAction
+INFOS: Valid Harness Counter scanned [P2149368500.00.0000;00:00:13] OK.
+mars 31, 2016 4:11:56 PM state.S040_PalletChoice doAction
+INFOS: Is it a new pallet ?
+mars 31, 2016 4:11:56 PM state.S040_PalletChoice doAction
+INFOS:  [Yes]
+mars 31, 2016 4:11:56 PM gui.packaging.PACKAGING_UI9000_ChooseContainerType <init>
+INFOS: Item found 21493685--26C41284A--P08--2RV--60
+mars 31, 2016 4:11:56 PM gui.packaging.PACKAGING_UI9000_ChooseContainerType <init>
+INFOS: 1 item(s) found for Harness Part[21493685].
+mars 31, 2016 4:12:00 PM gui.packaging.PACKAGING_UI9000_ChooseContainerType mappingContextVals
+INFOS: Selected pack type : 21493685--26C41284A--P08--2RV--60 
+mars 31, 2016 4:12:00 PM helper.Helper InitDailyDestPrintDir
+INFOS: nullPrint directory [.\print\2016_03_31] already exist!
+Print sub directory [.\print\2016_03_31.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_31.\closing_sheet] already exist!
+
+mars 31, 2016 4:12:01 PM helper.PrinterHelper saveAndPrintOpenSheet
+INFOS: Set Pallet [200000251] state to [IN_PROCESS]
+mars 31, 2016 4:12:01 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2016_03_31\open_sheet\PrintOpenPallet_A5_2016_03_31_16_12_00_200000251.pdf] to the default printer...
+mars 31, 2016 4:12:01 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [%s] has been printed.
+mars 31, 2016 4:12:01 PM helper.PrinterHelper saveAndPrintOpenSheet
+INFOS: Set Pallet [200000251] state to [PRINTED]
+mars 31, 2016 4:12:01 PM gui.packaging.PACKAGING_UI9000_ChooseContainerType items_listKeyPressed
+INFOS: Openning new container for first harness part [21493685].
+mars 31, 2016 4:12:10 PM state.S041_NewPalletScan doAction
+INFOS: Scanned Pallet number [200000251] OK.
+mars 31, 2016 4:12:10 PM state.S041_NewPalletScan doAction
+INFOS: BaseContainer created BaseContainer{id=525,
+ createTime=Thu Mar 31 16:12:10 WEST 2016,
+ writeTime=Thu Mar 31 16:12:10 WEST 2016,
+ createId=6,
+ writeId=6,
+ user=14228,
+ startTime=Thu Mar 31 16:12:10 WEST 2016,
+ completeTime=null,
+ workTime=null,
+ palletNumber=200000251,
+ harnessPart=21493685,
+ harnessIndex=P08,
+ supplierPartNumber=26C41284A,
+ qtyExpected=60,
+ qtyRead=1,
+ containerState=OPEN,
+ containerStateCode=1000,
+ packType=2RV,
+ harnessType=SMALL,
+ harnessList=[]} 
+mars 31, 2016 4:22:41 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_31] already exist!
+Print sub directory [.\print\2016_03_31.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_31.\closing_sheet] already exist!
+
+mars 31, 2016 4:24:00 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_31] already exist!
+Print sub directory [.\print\2016_03_31.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_31.\closing_sheet] already exist!
+
+mars 31, 2016 4:24:02 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 31, 2016 4:24:02 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 31, 2016 4:24:13 PM state.S010_UserCodeScan doAction
+INFOS: User Mohamed Ramali / 14228 connected to host WSMA7040 at 2016-03-31 16:24:13 Project : SMALL.
+mars 31, 2016 4:24:22 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [21493685] in ConfigUCS: SMALL
+mars 31, 2016 4:24:22 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [21493685] found for project [SMALL].
+mars 31, 2016 4:24:22 PM state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P21493685] OK.
+mars 31, 2016 4:24:29 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2149368500.00.0000;00:00:13] in BaseHarness.
+mars 31, 2016 4:24:29 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+mars 31, 2016 4:24:29 PM state.S030_MatrixIdScan doAction
+INFOS: Valid Harness Counter scanned [P2149368500.00.0000;00:00:13] OK.
+mars 31, 2016 4:24:35 PM state.S040_PalletChoice doAction
+INFOS: Is it a new pallet ?
+mars 31, 2016 4:24:35 PM state.S040_PalletChoice doAction
+INFOS:  [Yes]
+mars 31, 2016 4:24:35 PM gui.packaging.PACKAGING_UI9000_ChooseContainerType <init>
+INFOS: Item found 21493685--26C41284A--P08--2RV--60
+mars 31, 2016 4:24:35 PM gui.packaging.PACKAGING_UI9000_ChooseContainerType <init>
+INFOS: 1 item(s) found for Harness Part[21493685].
+mars 31, 2016 4:24:36 PM gui.packaging.PACKAGING_UI9000_ChooseContainerType mappingContextVals
+INFOS: Selected pack type : 21493685--26C41284A--P08--2RV--60 
+mars 31, 2016 4:24:36 PM helper.Helper InitDailyDestPrintDir
+INFOS: nullPrint directory [.\print\2016_03_31] already exist!
+Print sub directory [.\print\2016_03_31.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_31.\closing_sheet] already exist!
+
+mars 31, 2016 4:24:37 PM helper.PrinterHelper saveAndPrintOpenSheet
+INFOS: Set Pallet [200000252] state to [IN_PROCESS]
+mars 31, 2016 4:24:37 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2016_03_31\open_sheet\PrintOpenPallet_A5_2016_03_31_16_24_36_200000252.pdf] to the default printer...
+mars 31, 2016 4:24:37 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [%s] has been printed.
+mars 31, 2016 4:24:37 PM helper.PrinterHelper saveAndPrintOpenSheet
+INFOS: Set Pallet [200000252] state to [PRINTED]
+mars 31, 2016 4:24:37 PM gui.packaging.PACKAGING_UI9000_ChooseContainerType items_listKeyPressed
+INFOS: Openning new container for first harness part [21493685].
+mars 31, 2016 4:24:49 PM state.S041_NewPalletScan doAction
+INFOS: Scanned Pallet number [200000252] OK.
+mars 31, 2016 4:24:49 PM state.S041_NewPalletScan doAction
+INFOS: BaseContainer created BaseContainer{id=526,
+ createTime=Thu Mar 31 16:24:49 WEST 2016,
+ writeTime=Thu Mar 31 16:24:49 WEST 2016,
+ createId=6,
+ writeId=6,
+ user=14228,
+ startTime=Thu Mar 31 16:24:49 WEST 2016,
+ completeTime=null,
+ workTime=null,
+ palletNumber=200000252,
+ harnessPart=21493685,
+ harnessIndex=P08,
+ supplierPartNumber=26C41284A,
+ qtyExpected=60,
+ qtyRead=1,
+ containerState=OPEN,
+ containerStateCode=1000,
+ packType=2RV,
+ harnessType=SMALL,
+ harnessList=[]} 
+mars 31, 2016 4:25:47 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [21493685] in ConfigUCS: SMALL
+mars 31, 2016 4:25:47 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [21493685] found for project [SMALL].
+mars 31, 2016 4:25:47 PM state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P21493685] OK.
+mars 31, 2016 4:25:50 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2149368500.00.0000;00:00:13] in BaseHarness.
+mars 31, 2016 4:25:50 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+mars 31, 2016 4:25:50 PM entity.BaseHarness getHarnessByCounter
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+mars 31, 2016 4:25:54 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2149368500.00.0000;00:00:14] in BaseHarness.
+mars 31, 2016 4:25:54 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+mars 31, 2016 4:25:54 PM state.S030_MatrixIdScan doAction
+INFOS: Valid Harness Counter scanned [P2149368500.00.0000;00:00:14] OK.
+mars 31, 2016 4:26:00 PM state.S040_PalletChoice doAction
+INFOS: Is it a new pallet ?
+mars 31, 2016 4:26:00 PM state.S040_PalletChoice doAction
+INFOS:  [No]
+mars 31, 2016 4:26:00 PM state.S040_PalletChoice doAction
+INFOS: Pallet values 
+mars 31, 2016 4:26:00 PM state.S040_PalletChoice doAction
+INFOS: State           :   [true]
+mars 31, 2016 4:26:00 PM state.S040_PalletChoice doAction
+INFOS: Qty Expected    :   [2]
+mars 31, 2016 4:26:00 PM state.S040_PalletChoice doAction
+INFOS: Qty Read        :   [1]
+mars 31, 2016 4:26:00 PM state.S040_PalletChoice doAction
+INFOS: Harness Part [21493685] = Context Harness Part [21493685]
+mars 31, 2016 4:26:00 PM state.S040_PalletChoice doAction
+INFOS: Harness Type [SMALL] = Context Harness Type [SMALL]
+mars 31, 2016 4:26:00 PM state.S040_PalletChoice doAction
+INFOS: Quantité terminée BaseContainer{id=526,
+ createTime=2016-03-31 16:24:49.0,
+ writeTime=Thu Mar 31 16:26:00 WEST 2016,
+ createId=6,
+ writeId=6,
+ user=14228,
+ startTime=2016-03-31 16:24:49.0,
+ completeTime=null,
+ workTime=null,
+ palletNumber=200000252,
+ harnessPart=21493685,
+ harnessIndex=P08,
+ supplierPartNumber=26C41284A,
+ qtyExpected=2,
+ qtyRead=2,
+ containerState=OPEN,
+ containerStateCode=1000,
+ packType=2RV,
+ harnessType=SMALL,
+ harnessList=[entity.BaseHarness@471d966a, entity.BaseHarness@3ea08805]}
+mars 31, 2016 4:26:00 PM helper.Helper InitDailyDestPrintDir
+INFOS: nullPrint directory [.\print\2016_03_31] already exist!
+Print sub directory [.\print\2016_03_31.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_31.\closing_sheet] already exist!
+
+mars 31, 2016 4:26:00 PM helper.PrinterHelper saveAndPrintClosingSheet
+INFOS: Set Closing Pallet item [485] state to [IN_PROCESS]
+mars 31, 2016 4:26:00 PM print.PrintClosingPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2016_03_31\closing_sheet\PrintClosingPallet_A5_2016_03_31_16_26_00.pdf] to the default printer...
+mars 31, 2016 4:26:00 PM print.PrintClosingPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [%s] has been printed.
+mars 31, 2016 4:26:00 PM helper.PrinterHelper saveAndPrintClosingSheet
+INFOS: Set Closing Pallet [485] state to [PRINTED]
+mars 31, 2016 4:27:43 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_31] already exist!
+Print sub directory [.\print\2016_03_31.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_31.\closing_sheet] already exist!
+
+mars 31, 2016 4:27:45 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 31, 2016 4:27:45 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 31, 2016 4:28:42 PM state.S010_UserCodeScan doAction
+INFOS: User Mohamed Ramali / 14228 connected to host WSMA7040 at 2016-03-31 16:28:42 Project : SMALL.
+mars 31, 2016 4:28:50 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [21493685] in ConfigUCS: SMALL
+mars 31, 2016 4:28:50 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [21493685] found for project [SMALL].
+mars 31, 2016 4:28:50 PM state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P21493685] OK.
+mars 31, 2016 4:28:56 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2149368500.00.0000;00:00:16] in BaseHarness.
+mars 31, 2016 4:28:56 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+mars 31, 2016 4:28:56 PM state.S030_MatrixIdScan doAction
+INFOS: Valid Harness Counter scanned [P2149368500.00.0000;00:00:16] OK.
+mars 31, 2016 4:29:07 PM state.S040_PalletChoice doAction
+INFOS: Is it a new pallet ?
+mars 31, 2016 4:29:07 PM state.S040_PalletChoice doAction
+INFOS:  [No]
+mars 31, 2016 4:29:07 PM state.S040_PalletChoice doAction
+INFOS: Pallet values 
+mars 31, 2016 4:29:07 PM state.S040_PalletChoice doAction
+INFOS: State           :   [true]
+mars 31, 2016 4:29:07 PM state.S040_PalletChoice doAction
+INFOS: Qty Expected    :   [2]
+mars 31, 2016 4:29:07 PM state.S040_PalletChoice doAction
+INFOS: Qty Read        :   [1]
+mars 31, 2016 4:29:07 PM state.S040_PalletChoice doAction
+INFOS: Harness Part [21493685] = Context Harness Part [21493685]
+mars 31, 2016 4:29:07 PM state.S040_PalletChoice doAction
+INFOS: Harness Type [SMALL] = Context Harness Type [SMALL]
+mars 31, 2016 4:29:07 PM state.S040_PalletChoice doAction
+INFOS: Quantité terminée BaseContainer{id=525,
+ createTime=2016-03-31 16:12:10.0,
+ writeTime=Thu Mar 31 16:29:07 WEST 2016,
+ createId=6,
+ writeId=6,
+ user=14228,
+ startTime=2016-03-31 16:12:10.0,
+ completeTime=null,
+ workTime=null,
+ palletNumber=200000251,
+ harnessPart=21493685,
+ harnessIndex=P08,
+ supplierPartNumber=26C41284A,
+ qtyExpected=2,
+ qtyRead=2,
+ containerState=OPEN,
+ containerStateCode=1000,
+ packType=2RV,
+ harnessType=SMALL,
+ harnessList=[entity.BaseHarness@4dffb848]}
+mars 31, 2016 4:29:07 PM helper.Helper InitDailyDestPrintDir
+INFOS: nullPrint directory [.\print\2016_03_31] already exist!
+Print sub directory [.\print\2016_03_31.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_31.\closing_sheet] already exist!
+
+mars 31, 2016 4:29:08 PM helper.PrinterHelper saveAndPrintClosingSheet
+INFOS: Set Closing Pallet item [486] state to [IN_PROCESS]
+mars 31, 2016 4:29:08 PM print.PrintClosingPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2016_03_31\closing_sheet\PrintClosingPallet_A5_2016_03_31_16_29_07.pdf] to the default printer...
+mars 31, 2016 4:29:08 PM print.PrintClosingPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [%s] has been printed.
+mars 31, 2016 4:29:08 PM helper.PrinterHelper saveAndPrintClosingSheet
+INFOS: Set Closing Pallet [486] state to [PRINTED]
+mars 31, 2016 5:20:35 PM entity.BaseHarness checkHarnessPartFormat
+INFOS: Invalid Harness Part scanned [14228] !
+mars 31, 2016 5:20:35 PM state.S020_HarnessPartScan doAction
+AVERTISSEMENT: Invalid Harness Part scanned [14228] !
+mars 31, 2016 5:21:28 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [21493685] in ConfigUCS: SMALL
+mars 31, 2016 5:21:28 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [21493685] found for project [SMALL].
+mars 31, 2016 5:21:28 PM state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P21493685] OK.
+mars 31, 2016 5:21:42 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2149368500.00.0000;00:00:16] in BaseHarness.
+mars 31, 2016 5:21:42 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+mars 31, 2016 5:21:42 PM entity.BaseHarness getHarnessByCounter
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+mars 31, 2016 5:21:47 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2149368500.00.0000;00:00:17] in BaseHarness.
+mars 31, 2016 5:21:47 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+mars 31, 2016 5:21:47 PM state.S030_MatrixIdScan doAction
+INFOS: Valid Harness Counter scanned [P2149368500.00.0000;00:00:17] OK.
+mars 31, 2016 5:21:58 PM state.S040_PalletChoice doAction
+INFOS: Is it a new pallet ?
+mars 31, 2016 5:21:58 PM state.S040_PalletChoice doAction
+INFOS:  [No]
+mars 31, 2016 5:21:58 PM state.S040_PalletChoice doAction
+INFOS: Pallet values 
+mars 31, 2016 5:21:58 PM state.S040_PalletChoice doAction
+INFOS: State           :   [true]
+mars 31, 2016 5:21:58 PM state.S040_PalletChoice doAction
+INFOS: Qty Expected    :   [60]
+mars 31, 2016 5:21:58 PM state.S040_PalletChoice doAction
+INFOS: Qty Read        :   [5]
+mars 31, 2016 5:21:58 PM state.S040_PalletChoice doAction
+INFOS: Harness Part [21493685] = Context Harness Part [21493685]
+mars 31, 2016 5:21:58 PM state.S040_PalletChoice doAction
+INFOS: Harness Type [SMALL] = Context Harness Type [SMALL]
+mars 31, 2016 5:23:46 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [21493685] in ConfigUCS: SMALL
+mars 31, 2016 5:23:46 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [21493685] found for project [SMALL].
+mars 31, 2016 5:23:46 PM state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P21493685] OK.
+mars 31, 2016 5:23:54 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2149368500.00.0000;00:00:18] in BaseHarness.
+mars 31, 2016 5:23:54 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+mars 31, 2016 5:23:54 PM state.S030_MatrixIdScan doAction
+INFOS: Valid Harness Counter scanned [P2149368500.00.0000;00:00:18] OK.
+mars 31, 2016 5:24:24 PM state.S040_PalletChoice doAction
+INFOS: Is it a new pallet ?
+mars 31, 2016 5:24:24 PM state.S040_PalletChoice doAction
+INFOS:  [No]
+mars 31, 2016 5:24:24 PM state.S040_PalletChoice doAction
+INFOS: Pallet values 
+mars 31, 2016 5:24:24 PM state.S040_PalletChoice doAction
+INFOS: State           :   [true]
+mars 31, 2016 5:24:24 PM state.S040_PalletChoice doAction
+INFOS: Qty Expected    :   [60]
+mars 31, 2016 5:24:24 PM state.S040_PalletChoice doAction
+INFOS: Qty Read        :   [6]
+mars 31, 2016 5:24:24 PM state.S040_PalletChoice doAction
+INFOS: Harness Part [21493685] = Context Harness Part [21493685]
+mars 31, 2016 5:24:24 PM state.S040_PalletChoice doAction
+INFOS: Harness Type [SMALL] = Context Harness Type [SMALL]
+mars 31, 2016 5:28:11 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_31] already exist!
+Print sub directory [.\print\2016_03_31.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_31.\closing_sheet] already exist!
+
+mars 31, 2016 5:28:13 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 31, 2016 5:28:13 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 31, 2016 5:28:21 PM state.S010_UserCodeScan doAction
+INFOS: User Mohamed Ramali / 14228 connected to host WSMA7040 at 2016-03-31 17:28:21 Project : SMALL.
+mars 31, 2016 5:28:28 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [21493685] in ConfigUCS: SMALL
+mars 31, 2016 5:28:28 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [21493685] found for project [SMALL].
+mars 31, 2016 5:28:28 PM state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P21493685] OK.
+mars 31, 2016 5:28:33 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2149368500.00.0000;00:00:18] in BaseHarness.
+mars 31, 2016 5:28:33 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+mars 31, 2016 5:28:33 PM entity.BaseHarness getHarnessByCounter
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+mars 31, 2016 5:28:35 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2149368500.00.0000;00:00:19] in BaseHarness.
+mars 31, 2016 5:28:35 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+mars 31, 2016 5:28:35 PM state.S030_MatrixIdScan doAction
+INFOS: Valid Harness Counter scanned [P2149368500.00.0000;00:00:19] OK.
+mars 31, 2016 5:28:39 PM state.S040_PalletChoice doAction
+INFOS: Is it a new pallet ?
+mars 31, 2016 5:28:39 PM state.S040_PalletChoice doAction
+INFOS:  [No]
+mars 31, 2016 5:28:39 PM state.S040_PalletChoice doAction
+INFOS: Pallet values 
+mars 31, 2016 5:28:39 PM state.S040_PalletChoice doAction
+INFOS: State           :   [true]
+mars 31, 2016 5:28:39 PM state.S040_PalletChoice doAction
+INFOS: Qty Expected    :   [60]
+mars 31, 2016 5:28:39 PM state.S040_PalletChoice doAction
+INFOS: Qty Read        :   [7]
+mars 31, 2016 5:28:39 PM state.S040_PalletChoice doAction
+INFOS: Harness Part [21493685] = Context Harness Part [21493685]
+mars 31, 2016 5:28:39 PM state.S040_PalletChoice doAction
+INFOS: Harness Type [SMALL] = Context Harness Type [SMALL]
+mars 31, 2016 5:29:10 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [21493685] in ConfigUCS: SMALL
+mars 31, 2016 5:29:10 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [21493685] found for project [SMALL].
+mars 31, 2016 5:29:10 PM state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P21493685] OK.
+mars 31, 2016 5:29:13 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2149368500.00.0000;00:00:20] in BaseHarness.
+mars 31, 2016 5:29:13 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+mars 31, 2016 5:29:13 PM state.S030_MatrixIdScan doAction
+INFOS: Valid Harness Counter scanned [P2149368500.00.0000;00:00:20] OK.
+mars 31, 2016 5:29:21 PM state.S040_PalletChoice doAction
+INFOS: Is it a new pallet ?
+mars 31, 2016 5:29:21 PM state.S040_PalletChoice doAction
+INFOS:  [No]
+mars 31, 2016 5:29:21 PM state.S040_PalletChoice doAction
+INFOS: Pallet values 
+mars 31, 2016 5:29:21 PM state.S040_PalletChoice doAction
+INFOS: State           :   [true]
+mars 31, 2016 5:29:21 PM state.S040_PalletChoice doAction
+INFOS: Qty Expected    :   [9]
+mars 31, 2016 5:29:21 PM state.S040_PalletChoice doAction
+INFOS: Qty Read        :   [8]
+mars 31, 2016 5:29:21 PM state.S040_PalletChoice doAction
+INFOS: Harness Part [21493685] = Context Harness Part [21493685]
+mars 31, 2016 5:29:21 PM state.S040_PalletChoice doAction
+INFOS: Harness Type [SMALL] = Context Harness Type [SMALL]
+mars 31, 2016 5:29:21 PM state.S040_PalletChoice doAction
+INFOS: Quantité terminée BaseContainer{id=522,
+ createTime=2016-03-28 10:50:33.0,
+ writeTime=Thu Mar 31 17:29:21 WEST 2016,
+ createId=14,
+ writeId=6,
+ user=14264,
+ startTime=2016-03-28 10:50:33.0,
+ completeTime=null,
+ workTime=null,
+ palletNumber=200000247,
+ harnessPart=21493685,
+ harnessIndex=P08,
+ supplierPartNumber=26C41284A,
+ qtyExpected=9,
+ qtyRead=9,
+ containerState=OPEN,
+ containerStateCode=1000,
+ packType=2RV,
+ harnessType=SMALL,
+ harnessList=[entity.BaseHarness@4d46eae8, entity.BaseHarness@6ae84cfa, entity.BaseHarness@4a1eda21, entity.BaseHarness@328d188d, entity.BaseHarness@4d2d1294, entity.BaseHarness@4a1b9892, entity.BaseHarness@2f82d28b, entity.BaseHarness@bfb9758, entity.BaseHarness@3915e7eb]}
+mars 31, 2016 5:29:21 PM helper.Helper InitDailyDestPrintDir
+INFOS: nullPrint directory [.\print\2016_03_31] already exist!
+Print sub directory [.\print\2016_03_31.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_31.\closing_sheet] already exist!
+
+mars 31, 2016 5:29:21 PM helper.PrinterHelper saveAndPrintClosingSheet
+INFOS: Set Closing Pallet item [487] state to [IN_PROCESS]
+mars 31, 2016 5:29:21 PM print.PrintClosingPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2016_03_31\closing_sheet\PrintClosingPallet_A5_2016_03_31_17_29_21.pdf] to the default printer...
+mars 31, 2016 5:29:21 PM print.PrintClosingPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [%s] has been printed.
+mars 31, 2016 5:29:21 PM helper.PrinterHelper saveAndPrintClosingSheet
+INFOS: Set Closing Pallet [487] state to [PRINTED]
+mars 31, 2016 5:29:40 PM state.S050_ClosingPallet doAction
+AVERTISSEMENT: Invalid CLOSE PALLET barcode [CP20000247]!
+mars 31, 2016 5:30:10 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_31] already exist!
+Print sub directory [.\print\2016_03_31.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_31.\closing_sheet] already exist!
+
+mars 31, 2016 5:30:25 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 31, 2016 5:30:25 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 31, 2016 5:30:31 PM state.S010_UserCodeScan doAction
+INFOS: User Mohamed Ramali / 14228 connected to host WSMA7040 at 2016-03-31 17:30:31 Project : SMALL.
+mars 31, 2016 5:31:01 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22216200] in ConfigUCS: SMALL
+mars 31, 2016 5:31:01 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22216200] found for project [SMALL].
+mars 31, 2016 5:31:01 PM state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22216200] OK.
+mars 31, 2016 5:31:03 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2221620000.00.0000;00:00:00] in BaseHarness.
+mars 31, 2016 5:31:03 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+mars 31, 2016 5:31:03 PM state.S030_MatrixIdScan doAction
+INFOS: Valid Harness Counter scanned [P2221620000.00.0000;00:00:00] OK.
+mars 31, 2016 5:31:07 PM state.S040_PalletChoice doAction
+INFOS: Is it a new pallet ?
+mars 31, 2016 5:31:07 PM state.S040_PalletChoice doAction
+INFOS:  [Yes]
+mars 31, 2016 5:31:07 PM gui.packaging.PACKAGING_UI9000_ChooseContainerType <init>
+INFOS: Item found 22216200--26C06970A--P01--2RV--120
+mars 31, 2016 5:31:07 PM gui.packaging.PACKAGING_UI9000_ChooseContainerType <init>
+INFOS: 1 item(s) found for Harness Part[22216200].
+mars 31, 2016 5:31:08 PM gui.packaging.PACKAGING_UI9000_ChooseContainerType mappingContextVals
+INFOS: Selected pack type : 22216200--26C06970A--P01--2RV--120 
+mars 31, 2016 5:31:08 PM helper.Helper InitDailyDestPrintDir
+INFOS: nullPrint directory [.\print\2016_03_31] already exist!
+Print sub directory [.\print\2016_03_31.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_31.\closing_sheet] already exist!
+
+mars 31, 2016 5:31:08 PM helper.PrinterHelper saveAndPrintOpenSheet
+INFOS: Set Pallet [200000253] state to [IN_PROCESS]
+mars 31, 2016 5:31:08 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2016_03_31\open_sheet\PrintOpenPallet_A5_2016_03_31_17_31_08_200000253.pdf] to the default printer...
+mars 31, 2016 5:31:08 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [%s] has been printed.
+mars 31, 2016 5:31:08 PM helper.PrinterHelper saveAndPrintOpenSheet
+INFOS: Set Pallet [200000253] state to [PRINTED]
+mars 31, 2016 5:31:08 PM gui.packaging.PACKAGING_UI9000_ChooseContainerType items_listKeyPressed
+INFOS: Openning new container for first harness part [22216200].
+mars 31, 2016 5:31:16 PM state.S041_NewPalletScan doAction
+INFOS: Scanned Pallet number [200000253] OK.
+mars 31, 2016 5:31:17 PM state.S041_NewPalletScan doAction
+INFOS: BaseContainer created BaseContainer{id=527,
+ createTime=Thu Mar 31 17:31:16 WEST 2016,
+ writeTime=Thu Mar 31 17:31:16 WEST 2016,
+ createId=6,
+ writeId=6,
+ user=14228,
+ startTime=Thu Mar 31 17:31:16 WEST 2016,
+ completeTime=null,
+ workTime=null,
+ palletNumber=200000253,
+ harnessPart=22216200,
+ harnessIndex=P01,
+ supplierPartNumber=26C06970A,
+ qtyExpected=120,
+ qtyRead=1,
+ containerState=OPEN,
+ containerStateCode=1000,
+ packType=2RV,
+ harnessType=SMALL,
+ harnessList=[]} 
+mars 31, 2016 5:31:41 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22216200] in ConfigUCS: SMALL
+mars 31, 2016 5:31:41 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22216200] found for project [SMALL].
+mars 31, 2016 5:31:41 PM state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22216200] OK.
+mars 31, 2016 5:31:44 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2221620000.00.0000;00:00:01] in BaseHarness.
+mars 31, 2016 5:31:44 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+mars 31, 2016 5:31:44 PM state.S030_MatrixIdScan doAction
+INFOS: Valid Harness Counter scanned [P2221620000.00.0000;00:00:01] OK.
+mars 31, 2016 5:31:50 PM state.S040_PalletChoice doAction
+INFOS: Is it a new pallet ?
+mars 31, 2016 5:31:50 PM state.S040_PalletChoice doAction
+INFOS:  [No]
+mars 31, 2016 5:31:50 PM state.S040_PalletChoice doAction
+INFOS: Pallet values 
+mars 31, 2016 5:31:50 PM state.S040_PalletChoice doAction
+INFOS: State           :   [true]
+mars 31, 2016 5:31:50 PM state.S040_PalletChoice doAction
+INFOS: Qty Expected    :   [2]
+mars 31, 2016 5:31:50 PM state.S040_PalletChoice doAction
+INFOS: Qty Read        :   [1]
+mars 31, 2016 5:31:50 PM state.S040_PalletChoice doAction
+INFOS: Harness Part [22216200] = Context Harness Part [22216200]
+mars 31, 2016 5:31:50 PM state.S040_PalletChoice doAction
+INFOS: Harness Type [SMALL] = Context Harness Type [SMALL]
+mars 31, 2016 5:31:50 PM state.S040_PalletChoice doAction
+INFOS: Quantité terminée BaseContainer{id=527,
+ createTime=2016-03-31 17:31:16.0,
+ writeTime=Thu Mar 31 17:31:50 WEST 2016,
+ createId=6,
+ writeId=6,
+ user=14228,
+ startTime=2016-03-31 17:31:16.0,
+ completeTime=null,
+ workTime=null,
+ palletNumber=200000253,
+ harnessPart=22216200,
+ harnessIndex=P01,
+ supplierPartNumber=26C06970A,
+ qtyExpected=2,
+ qtyRead=2,
+ containerState=OPEN,
+ containerStateCode=1000,
+ packType=2RV,
+ harnessType=SMALL,
+ harnessList=[entity.BaseHarness@55cfb701, entity.BaseHarness@122f2075]}
+mars 31, 2016 5:31:50 PM helper.Helper InitDailyDestPrintDir
+INFOS: nullPrint directory [.\print\2016_03_31] already exist!
+Print sub directory [.\print\2016_03_31.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_31.\closing_sheet] already exist!
+
+mars 31, 2016 5:31:50 PM helper.PrinterHelper saveAndPrintClosingSheet
+INFOS: Set Closing Pallet item [488] state to [IN_PROCESS]
+mars 31, 2016 5:31:50 PM print.PrintClosingPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2016_03_31\closing_sheet\PrintClosingPallet_A5_2016_03_31_17_31_50.pdf] to the default printer...
+mars 31, 2016 5:31:50 PM print.PrintClosingPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [%s] has been printed.
+mars 31, 2016 5:31:50 PM helper.PrinterHelper saveAndPrintClosingSheet
+INFOS: Set Closing Pallet [488] state to [PRINTED]
+mars 31, 2016 5:32:31 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_31] already exist!
+Print sub directory [.\print\2016_03_31.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_31.\closing_sheet] already exist!
+
+mars 31, 2016 5:32:32 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 31, 2016 5:32:32 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 31, 2016 5:32:49 PM state.S010_UserCodeScan doAction
+INFOS: Invalid matricule number or account locked !
+mars 31, 2016 5:33:00 PM state.S010_UserCodeScan doAction
+INFOS: User Mohamed Ramali / 14228 connected to host WSMA7040 at 2016-03-31 17:33:00 Project : SMALL.
+mars 31, 2016 5:33:05 PM entity.BaseHarness checkHarnessPartFormat
+INFOS: Invalid Harness Part scanned [P222216200] !
+mars 31, 2016 5:33:05 PM state.S020_HarnessPartScan doAction
+AVERTISSEMENT: Invalid Harness Part scanned [P222216200] !
+mars 31, 2016 5:33:12 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22216200] in ConfigUCS: SMALL
+mars 31, 2016 5:33:12 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22216200] found for project [SMALL].
+mars 31, 2016 5:33:12 PM state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22216200] OK.
+mars 31, 2016 5:33:22 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2221620000.00.0000;00:00:03] in BaseHarness.
+mars 31, 2016 5:33:22 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+mars 31, 2016 5:33:22 PM state.S030_MatrixIdScan doAction
+INFOS: Valid Harness Counter scanned [P2221620000.00.0000;00:00:03] OK.
+mars 31, 2016 5:33:27 PM state.S040_PalletChoice doAction
+INFOS: Is it a new pallet ?
+mars 31, 2016 5:33:27 PM state.S040_PalletChoice doAction
+INFOS:  [Yes]
+mars 31, 2016 5:33:27 PM gui.packaging.PACKAGING_UI9000_ChooseContainerType <init>
+INFOS: Item found 22216200--26C06970A--P01--2RV--120
+mars 31, 2016 5:33:27 PM gui.packaging.PACKAGING_UI9000_ChooseContainerType <init>
+INFOS: 1 item(s) found for Harness Part[22216200].
+mars 31, 2016 5:33:28 PM gui.packaging.PACKAGING_UI9000_ChooseContainerType mappingContextVals
+INFOS: Selected pack type : 22216200--26C06970A--P01--2RV--120 
+mars 31, 2016 5:33:28 PM helper.Helper InitDailyDestPrintDir
+INFOS: nullPrint directory [.\print\2016_03_31] already exist!
+Print sub directory [.\print\2016_03_31.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_31.\closing_sheet] already exist!
+
+mars 31, 2016 5:33:28 PM helper.PrinterHelper saveAndPrintOpenSheet
+INFOS: Set Pallet [200000254] state to [IN_PROCESS]
+mars 31, 2016 5:33:28 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2016_03_31\open_sheet\PrintOpenPallet_A5_2016_03_31_17_33_28_200000254.pdf] to the default printer...
+mars 31, 2016 5:33:28 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [%s] has been printed.
+mars 31, 2016 5:33:28 PM helper.PrinterHelper saveAndPrintOpenSheet
+INFOS: Set Pallet [200000254] state to [PRINTED]
+mars 31, 2016 5:33:28 PM gui.packaging.PACKAGING_UI9000_ChooseContainerType items_listKeyPressed
+INFOS: Openning new container for first harness part [22216200].
+mars 31, 2016 5:33:36 PM state.S041_NewPalletScan doAction
+INFOS: Scanned Pallet number [200000254] OK.
+mars 31, 2016 5:33:36 PM state.S041_NewPalletScan doAction
+INFOS: BaseContainer created BaseContainer{id=528,
+ createTime=Thu Mar 31 17:33:36 WEST 2016,
+ writeTime=Thu Mar 31 17:33:36 WEST 2016,
+ createId=6,
+ writeId=6,
+ user=14228,
+ startTime=Thu Mar 31 17:33:36 WEST 2016,
+ completeTime=null,
+ workTime=null,
+ palletNumber=200000254,
+ harnessPart=22216200,
+ harnessIndex=P01,
+ supplierPartNumber=26C06970A,
+ qtyExpected=120,
+ qtyRead=1,
+ containerState=OPEN,
+ containerStateCode=1000,
+ packType=2RV,
+ harnessType=SMALL,
+ harnessList=[]} 
+mars 31, 2016 5:33:55 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22216200] in ConfigUCS: SMALL
+mars 31, 2016 5:33:56 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22216200] found for project [SMALL].
+mars 31, 2016 5:33:56 PM state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22216200] OK.
+mars 31, 2016 5:33:59 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2221620000.00.0000;00:00:03] in BaseHarness.
+mars 31, 2016 5:33:59 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+mars 31, 2016 5:33:59 PM entity.BaseHarness getHarnessByCounter
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+mars 31, 2016 5:34:01 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2221620000.00.0000;00:00:04] in BaseHarness.
+mars 31, 2016 5:34:01 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+mars 31, 2016 5:34:01 PM state.S030_MatrixIdScan doAction
+INFOS: Valid Harness Counter scanned [P2221620000.00.0000;00:00:04] OK.
+mars 31, 2016 5:34:09 PM state.S040_PalletChoice doAction
+INFOS: Is it a new pallet ?
+mars 31, 2016 5:34:09 PM state.S040_PalletChoice doAction
+INFOS:  [No]
+mars 31, 2016 5:34:09 PM state.S040_PalletChoice doAction
+INFOS: Pallet values 
+mars 31, 2016 5:34:09 PM state.S040_PalletChoice doAction
+INFOS: State           :   [true]
+mars 31, 2016 5:34:09 PM state.S040_PalletChoice doAction
+INFOS: Qty Expected    :   [2]
+mars 31, 2016 5:34:09 PM state.S040_PalletChoice doAction
+INFOS: Qty Read        :   [1]
+mars 31, 2016 5:34:09 PM state.S040_PalletChoice doAction
+INFOS: Harness Part [22216200] = Context Harness Part [22216200]
+mars 31, 2016 5:34:09 PM state.S040_PalletChoice doAction
+INFOS: Harness Type [SMALL] = Context Harness Type [SMALL]
+mars 31, 2016 5:34:09 PM state.S040_PalletChoice doAction
+INFOS: Quantité terminée BaseContainer{id=528,
+ createTime=2016-03-31 17:33:36.0,
+ writeTime=Thu Mar 31 17:34:09 WEST 2016,
+ createId=6,
+ writeId=6,
+ user=14228,
+ startTime=2016-03-31 17:33:36.0,
+ completeTime=null,
+ workTime=null,
+ palletNumber=200000254,
+ harnessPart=22216200,
+ harnessIndex=P01,
+ supplierPartNumber=26C06970A,
+ qtyExpected=2,
+ qtyRead=2,
+ containerState=OPEN,
+ containerStateCode=1000,
+ packType=2RV,
+ harnessType=SMALL,
+ harnessList=[entity.BaseHarness@359d9606, entity.BaseHarness@2eb36cfd]}
+mars 31, 2016 5:34:09 PM helper.Helper InitDailyDestPrintDir
+INFOS: nullPrint directory [.\print\2016_03_31] already exist!
+Print sub directory [.\print\2016_03_31.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_31.\closing_sheet] already exist!
+
+mars 31, 2016 5:34:09 PM helper.PrinterHelper saveAndPrintClosingSheet
+INFOS: Set Closing Pallet item [489] state to [IN_PROCESS]
+mars 31, 2016 5:34:09 PM print.PrintClosingPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2016_03_31\closing_sheet\PrintClosingPallet_A5_2016_03_31_17_34_09.pdf] to the default printer...
+mars 31, 2016 5:34:09 PM print.PrintClosingPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [%s] has been printed.
+mars 31, 2016 5:34:09 PM helper.PrinterHelper saveAndPrintClosingSheet
+INFOS: Set Closing Pallet [489] state to [PRINTED]
+mars 31, 2016 6:07:11 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_31] already exist!
+Print sub directory [.\print\2016_03_31.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_31.\closing_sheet] already exist!
+
+mars 31, 2016 6:07:12 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 31, 2016 6:07:12 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 31, 2016 6:13:35 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_31] already exist!
+Print sub directory [.\print\2016_03_31.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_31.\closing_sheet] already exist!
+
+mars 31, 2016 6:13:36 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 31, 2016 6:13:36 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 31, 2016 6:14:33 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_31] already exist!
+Print sub directory [.\print\2016_03_31.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_31.\closing_sheet] already exist!
+
+mars 31, 2016 6:14:34 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 31, 2016 6:14:34 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 31, 2016 6:15:32 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_31] already exist!
+Print sub directory [.\print\2016_03_31.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_31.\closing_sheet] already exist!
+
+mars 31, 2016 6:15:33 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 31, 2016 6:15:33 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 31, 2016 6:17:28 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_31] already exist!
+Print sub directory [.\print\2016_03_31.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_31.\closing_sheet] already exist!
+
+mars 31, 2016 6:17:29 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 31, 2016 6:18:51 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_31] already exist!
+Print sub directory [.\print\2016_03_31.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_31.\closing_sheet] already exist!
+
+mars 31, 2016 6:18:52 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 31, 2016 6:18:53 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 31, 2016 6:19:56 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_31] already exist!
+Print sub directory [.\print\2016_03_31.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_31.\closing_sheet] already exist!
+
+mars 31, 2016 6:19:57 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 31, 2016 6:19:57 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 31, 2016 6:20:59 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_31] already exist!
+Print sub directory [.\print\2016_03_31.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_31.\closing_sheet] already exist!
+
+mars 31, 2016 6:21:00 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 31, 2016 6:21:00 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 31, 2016 6:21:02 PM gui.UI0000_ModuleChoice PACKAGING_MODULEActionPerformed
+AVERTISSEMENT: Already running.
+mars 31, 2016 6:21:35 PM state.S010_UserCodeScan doAction
+INFOS: Invalid matricule number or account locked !
+mars 31, 2016 6:21:47 PM state.S010_UserCodeScan doAction
+INFOS: User Admin   / 0 connected to host WSMA7040 at 2016-03-31 18:21:47 Project : SMALL.
+mars 31, 2016 6:22:24 PM gui.packaging.PACKAGING_UI9001_DropPalletConfirmation ok_btnActionPerformed
+INFOS: Droping harness list...68
+mars 31, 2016 6:24:05 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_31] already exist!
+Print sub directory [.\print\2016_03_31.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_31.\closing_sheet] already exist!
+
+mars 31, 2016 6:24:31 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 31, 2016 6:24:31 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 31, 2016 6:24:44 PM state.S010_UserCodeScan doAction
+INFOS: User Mohamed Ramali / 14228 connected to host WSMA7040 at 2016-03-31 18:24:44 Project : SMALL.
+mars 31, 2016 6:24:49 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22216200] in ConfigUCS: SMALL
+mars 31, 2016 6:24:49 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22216200] found for project [SMALL].
+mars 31, 2016 6:24:49 PM state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22216200] OK.
+mars 31, 2016 6:24:56 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2221620000.00.0000;00:00:13] in BaseHarness.
+mars 31, 2016 6:24:56 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+mars 31, 2016 6:24:56 PM state.S030_MatrixIdScan doAction
+INFOS: Valid Harness Counter scanned [P2221620000.00.0000;00:00:13] OK.
+mars 31, 2016 6:24:59 PM state.S040_PalletChoice doAction
+INFOS: Is it a new pallet ?
+mars 31, 2016 6:24:59 PM state.S040_PalletChoice doAction
+INFOS:  [Yes]
+mars 31, 2016 6:24:59 PM gui.packaging.PACKAGING_UI9000_ChooseContainerType <init>
+INFOS: Item found 22216200--26C06970A--P01--2RV--120
+mars 31, 2016 6:24:59 PM gui.packaging.PACKAGING_UI9000_ChooseContainerType <init>
+INFOS: 1 item(s) found for Harness Part[22216200].
+mars 31, 2016 6:24:59 PM gui.packaging.PACKAGING_UI9000_ChooseContainerType mappingContextVals
+INFOS: Selected pack type : 22216200--26C06970A--P01--2RV--120 
+mars 31, 2016 6:24:59 PM helper.Helper InitDailyDestPrintDir
+INFOS: nullPrint directory [.\print\2016_03_31] already exist!
+Print sub directory [.\print\2016_03_31.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_31.\closing_sheet] already exist!
+
+mars 31, 2016 6:25:00 PM helper.PrinterHelper saveAndPrintOpenSheet
+INFOS: Set Pallet [200000255] state to [IN_PROCESS]
+mars 31, 2016 6:25:00 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2016_03_31\open_sheet\PrintOpenPallet_A5_2016_03_31_18_24_59_200000255.pdf] to the default printer...
+mars 31, 2016 6:25:00 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [%s] has been printed.
+mars 31, 2016 6:25:00 PM helper.PrinterHelper saveAndPrintOpenSheet
+INFOS: Set Pallet [200000255] state to [PRINTED]
+mars 31, 2016 6:25:00 PM gui.packaging.PACKAGING_UI9000_ChooseContainerType items_listKeyPressed
+INFOS: Openning new container for first harness part [22216200].
+mars 31, 2016 6:25:06 PM state.S041_NewPalletScan doAction
+INFOS: Scanned Pallet number [200000255] OK.
+mars 31, 2016 6:25:06 PM state.S041_NewPalletScan doAction
+INFOS: BaseContainer created BaseContainer{id=529,
+ createTime=Thu Mar 31 18:25:06 WEST 2016,
+ writeTime=Thu Mar 31 18:25:06 WEST 2016,
+ createId=6,
+ writeId=6,
+ user=14228,
+ startTime=Thu Mar 31 18:25:06 WEST 2016,
+ completeTime=null,
+ workTime=null,
+ palletNumber=200000255,
+ harnessPart=22216200,
+ harnessIndex=P01,
+ supplierPartNumber=26C06970A,
+ qtyExpected=120,
+ qtyRead=1,
+ containerState=OPEN,
+ containerStateCode=1000,
+ packType=2RV,
+ harnessType=SMALL,
+ harnessList=[]} 
+mars 31, 2016 6:25:49 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22216200] in ConfigUCS: SMALL
+mars 31, 2016 6:25:49 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22216200] found for project [SMALL].
+mars 31, 2016 6:25:49 PM state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22216200] OK.
+mars 31, 2016 6:25:54 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2221620000.00.0000;00:00:14] in BaseHarness.
+mars 31, 2016 6:25:54 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+mars 31, 2016 6:25:54 PM state.S030_MatrixIdScan doAction
+INFOS: Valid Harness Counter scanned [P2221620000.00.0000;00:00:14] OK.
+mars 31, 2016 6:26:00 PM state.S040_PalletChoice doAction
+INFOS: Is it a new pallet ?
+mars 31, 2016 6:26:00 PM state.S040_PalletChoice doAction
+INFOS:  [No]
+mars 31, 2016 6:26:00 PM state.S040_PalletChoice doAction
+INFOS: Pallet values 
+mars 31, 2016 6:26:00 PM state.S040_PalletChoice doAction
+INFOS: State           :   [true]
+mars 31, 2016 6:26:00 PM state.S040_PalletChoice doAction
+INFOS: Qty Expected    :   [2]
+mars 31, 2016 6:26:00 PM state.S040_PalletChoice doAction
+INFOS: Qty Read        :   [1]
+mars 31, 2016 6:26:00 PM state.S040_PalletChoice doAction
+INFOS: Harness Part [22216200] = Context Harness Part [22216200]
+mars 31, 2016 6:26:00 PM state.S040_PalletChoice doAction
+INFOS: Harness Type [SMALL] = Context Harness Type [SMALL]
+mars 31, 2016 6:26:00 PM state.S040_PalletChoice doAction
+INFOS: Quantité terminée BaseContainer{id=529,
+ createTime=2016-03-31 18:25:06.0,
+ writeTime=Thu Mar 31 18:26:00 WEST 2016,
+ createId=6,
+ writeId=6,
+ user=14228,
+ startTime=2016-03-31 18:25:06.0,
+ completeTime=null,
+ workTime=null,
+ palletNumber=200000255,
+ harnessPart=22216200,
+ harnessIndex=P01,
+ supplierPartNumber=26C06970A,
+ qtyExpected=2,
+ qtyRead=2,
+ containerState=OPEN,
+ containerStateCode=1000,
+ packType=2RV,
+ harnessType=SMALL,
+ harnessList=[entity.BaseHarness@42ecf8c4, entity.BaseHarness@d47f419]}
+mars 31, 2016 6:26:00 PM helper.Helper InitDailyDestPrintDir
+INFOS: nullPrint directory [.\print\2016_03_31] already exist!
+Print sub directory [.\print\2016_03_31.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_31.\closing_sheet] already exist!
+
+mars 31, 2016 6:26:00 PM helper.PrinterHelper saveAndPrintClosingSheet
+INFOS: Set Closing Pallet item [490] state to [IN_PROCESS]
+mars 31, 2016 6:26:00 PM print.PrintClosingPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2016_03_31\closing_sheet\PrintClosingPallet_A5_2016_03_31_18_26_00.pdf] to the default printer...
+mars 31, 2016 6:26:00 PM print.PrintClosingPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [%s] has been printed.
+mars 31, 2016 6:26:00 PM helper.PrinterHelper saveAndPrintClosingSheet
+INFOS: Set Closing Pallet [490] state to [PRINTED]
+mars 31, 2016 6:26:15 PM state.S010_UserCodeScan doAction
+INFOS: User Admin   / 0 connected to host WSMA7040 at 2016-03-31 18:26:15 Project : SMALL.
+mars 31, 2016 6:26:58 PM gui.packaging.PACKAGING_UI9001_DropPalletConfirmation ok_btnActionPerformed
+INFOS: Droping harness list...2
+mars 31, 2016 6:28:10 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22216200] in ConfigUCS: SMALL
+mars 31, 2016 6:28:10 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22216200] found for project [SMALL].
+mars 31, 2016 6:28:10 PM state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22216200] OK.
+mars 31, 2016 6:28:12 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2221620000.00.0000;00:00:16] in BaseHarness.
+mars 31, 2016 6:28:12 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+mars 31, 2016 6:28:12 PM state.S030_MatrixIdScan doAction
+INFOS: Valid Harness Counter scanned [P2221620000.00.0000;00:00:16] OK.
+mars 31, 2016 6:28:15 PM state.S040_PalletChoice doAction
+INFOS: Is it a new pallet ?
+mars 31, 2016 6:28:15 PM state.S040_PalletChoice doAction
+INFOS:  [Yes]
+mars 31, 2016 6:28:15 PM gui.packaging.PACKAGING_UI9000_ChooseContainerType <init>
+INFOS: Item found 22216200--26C06970A--P01--2RV--120
+mars 31, 2016 6:28:15 PM gui.packaging.PACKAGING_UI9000_ChooseContainerType <init>
+INFOS: 1 item(s) found for Harness Part[22216200].
+mars 31, 2016 6:28:16 PM gui.packaging.PACKAGING_UI9000_ChooseContainerType mappingContextVals
+INFOS: Selected pack type : 22216200--26C06970A--P01--2RV--120 
+mars 31, 2016 6:28:16 PM helper.Helper InitDailyDestPrintDir
+INFOS: nullPrint directory [.\print\2016_03_31] already exist!
+Print sub directory [.\print\2016_03_31.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_31.\closing_sheet] already exist!
+
+mars 31, 2016 6:28:16 PM helper.PrinterHelper saveAndPrintOpenSheet
+INFOS: Set Pallet [200000256] state to [IN_PROCESS]
+mars 31, 2016 6:28:16 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2016_03_31\open_sheet\PrintOpenPallet_A5_2016_03_31_18_28_16_200000256.pdf] to the default printer...
+mars 31, 2016 6:28:16 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [%s] has been printed.
+mars 31, 2016 6:28:16 PM helper.PrinterHelper saveAndPrintOpenSheet
+INFOS: Set Pallet [200000256] state to [PRINTED]
+mars 31, 2016 6:28:16 PM gui.packaging.PACKAGING_UI9000_ChooseContainerType items_listKeyPressed
+INFOS: Openning new container for first harness part [22216200].
+mars 31, 2016 6:28:29 PM state.S041_NewPalletScan doAction
+INFOS: Scanned Pallet number [200000256] OK.
+mars 31, 2016 6:28:29 PM state.S041_NewPalletScan doAction
+INFOS: BaseContainer created BaseContainer{id=530,
+ createTime=Thu Mar 31 18:28:29 WEST 2016,
+ writeTime=Thu Mar 31 18:28:29 WEST 2016,
+ createId=3,
+ writeId=3,
+ user=0,
+ startTime=Thu Mar 31 18:28:29 WEST 2016,
+ completeTime=null,
+ workTime=null,
+ palletNumber=200000256,
+ harnessPart=22216200,
+ harnessIndex=P01,
+ supplierPartNumber=26C06970A,
+ qtyExpected=120,
+ qtyRead=1,
+ containerState=OPEN,
+ containerStateCode=1000,
+ packType=2RV,
+ harnessType=SMALL,
+ harnessList=[]} 
+mars 31, 2016 6:28:48 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22216200] in ConfigUCS: SMALL
+mars 31, 2016 6:28:48 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22216200] found for project [SMALL].
+mars 31, 2016 6:28:48 PM state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22216200] OK.
+mars 31, 2016 6:28:51 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2221620000.00.0000;00:00:17] in BaseHarness.
+mars 31, 2016 6:28:51 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+mars 31, 2016 6:28:51 PM state.S030_MatrixIdScan doAction
+INFOS: Valid Harness Counter scanned [P2221620000.00.0000;00:00:17] OK.
+mars 31, 2016 6:28:55 PM state.S040_PalletChoice doAction
+INFOS: Is it a new pallet ?
+mars 31, 2016 6:28:55 PM state.S040_PalletChoice doAction
+INFOS:  [No]
+mars 31, 2016 6:28:55 PM state.S040_PalletChoice doAction
+INFOS: Pallet values 
+mars 31, 2016 6:28:55 PM state.S040_PalletChoice doAction
+INFOS: State           :   [true]
+mars 31, 2016 6:28:55 PM state.S040_PalletChoice doAction
+INFOS: Qty Expected    :   [2]
+mars 31, 2016 6:28:55 PM state.S040_PalletChoice doAction
+INFOS: Qty Read        :   [1]
+mars 31, 2016 6:28:55 PM state.S040_PalletChoice doAction
+INFOS: Harness Part [22216200] = Context Harness Part [22216200]
+mars 31, 2016 6:28:55 PM state.S040_PalletChoice doAction
+INFOS: Harness Type [SMALL] = Context Harness Type [SMALL]
+mars 31, 2016 6:28:55 PM state.S040_PalletChoice doAction
+INFOS: Quantité terminée BaseContainer{id=530,
+ createTime=2016-03-31 18:28:29.0,
+ writeTime=Thu Mar 31 18:28:55 WEST 2016,
+ createId=3,
+ writeId=3,
+ user=0,
+ startTime=2016-03-31 18:28:29.0,
+ completeTime=null,
+ workTime=null,
+ palletNumber=200000256,
+ harnessPart=22216200,
+ harnessIndex=P01,
+ supplierPartNumber=26C06970A,
+ qtyExpected=2,
+ qtyRead=2,
+ containerState=OPEN,
+ containerStateCode=1000,
+ packType=2RV,
+ harnessType=SMALL,
+ harnessList=[entity.BaseHarness@1d74e61a, entity.BaseHarness@24a038ab]}
+mars 31, 2016 6:28:55 PM helper.Helper InitDailyDestPrintDir
+INFOS: nullPrint directory [.\print\2016_03_31] already exist!
+Print sub directory [.\print\2016_03_31.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_31.\closing_sheet] already exist!
+
+mars 31, 2016 6:28:55 PM helper.PrinterHelper saveAndPrintClosingSheet
+INFOS: Set Closing Pallet item [491] state to [IN_PROCESS]
+mars 31, 2016 6:28:55 PM print.PrintClosingPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2016_03_31\closing_sheet\PrintClosingPallet_A5_2016_03_31_18_28_55.pdf] to the default printer...
+mars 31, 2016 6:28:55 PM print.PrintClosingPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [%s] has been printed.
+mars 31, 2016 6:28:55 PM helper.PrinterHelper saveAndPrintClosingSheet
+INFOS: Set Closing Pallet [491] state to [PRINTED]
+mars 31, 2016 6:29:50 PM gui.packaging.PACKAGING_UI9001_DropPalletConfirmation ok_btnActionPerformed
+INFOS: Droping harness list...2
+mars 31, 2016 6:34:07 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_31] already exist!
+Print sub directory [.\print\2016_03_31.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_31.\closing_sheet] already exist!
+
+mars 31, 2016 6:34:08 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 31, 2016 6:34:08 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 31, 2016 6:34:33 PM state.S010_UserCodeScan doAction
+INFOS: User Admin   / 0 connected to host WSMA7040 at 2016-03-31 18:34:33 Project : ENGINE.
+mars 31, 2016 6:34:52 PM gui.packaging.PACKAGING_UI9001_DropPalletConfirmation ok_btnActionPerformed
+INFOS: Droping harness list...24
+mars 31, 2016 6:34:52 PM gui.packaging.PACKAGING_UI9001_DropPalletConfirmation ok_btnActionPerformed
+INFOS: Droping Engine label harness list...2
+mars 31, 2016 6:34:52 PM gui.packaging.PACKAGING_UI9001_DropPalletConfirmation ok_btnActionPerformed
+INFOS: Droping Engine label harness list...2
+mars 31, 2016 6:34:52 PM gui.packaging.PACKAGING_UI9001_DropPalletConfirmation ok_btnActionPerformed
+INFOS: Droping Engine label harness list...2
+mars 31, 2016 6:34:52 PM gui.packaging.PACKAGING_UI9001_DropPalletConfirmation ok_btnActionPerformed
+INFOS: Droping Engine label harness list...2
+mars 31, 2016 6:34:52 PM gui.packaging.PACKAGING_UI9001_DropPalletConfirmation ok_btnActionPerformed
+INFOS: Droping Engine label harness list...2
+mars 31, 2016 6:34:52 PM gui.packaging.PACKAGING_UI9001_DropPalletConfirmation ok_btnActionPerformed
+INFOS: Droping Engine label harness list...2
+mars 31, 2016 6:34:52 PM gui.packaging.PACKAGING_UI9001_DropPalletConfirmation ok_btnActionPerformed
+INFOS: Droping Engine label harness list...2
+mars 31, 2016 6:34:52 PM gui.packaging.PACKAGING_UI9001_DropPalletConfirmation ok_btnActionPerformed
+INFOS: Droping Engine label harness list...2
+mars 31, 2016 6:34:52 PM gui.packaging.PACKAGING_UI9001_DropPalletConfirmation ok_btnActionPerformed
+INFOS: Droping Engine label harness list...2
+mars 31, 2016 6:34:52 PM gui.packaging.PACKAGING_UI9001_DropPalletConfirmation ok_btnActionPerformed
+INFOS: Droping Engine label harness list...2
+mars 31, 2016 6:34:52 PM gui.packaging.PACKAGING_UI9001_DropPalletConfirmation ok_btnActionPerformed
+INFOS: Droping Engine label harness list...2
+mars 31, 2016 6:34:52 PM gui.packaging.PACKAGING_UI9001_DropPalletConfirmation ok_btnActionPerformed
+INFOS: Droping Engine label harness list...2
+mars 31, 2016 6:34:52 PM gui.packaging.PACKAGING_UI9001_DropPalletConfirmation ok_btnActionPerformed
+INFOS: Droping Engine label harness list...2
+mars 31, 2016 6:34:52 PM gui.packaging.PACKAGING_UI9001_DropPalletConfirmation ok_btnActionPerformed
+INFOS: Droping Engine label harness list...2
+mars 31, 2016 6:34:52 PM gui.packaging.PACKAGING_UI9001_DropPalletConfirmation ok_btnActionPerformed
+INFOS: Droping Engine label harness list...2
+mars 31, 2016 6:34:52 PM gui.packaging.PACKAGING_UI9001_DropPalletConfirmation ok_btnActionPerformed
+INFOS: Droping Engine label harness list...2
+mars 31, 2016 6:34:52 PM gui.packaging.PACKAGING_UI9001_DropPalletConfirmation ok_btnActionPerformed
+INFOS: Droping Engine label harness list...2
+mars 31, 2016 6:34:52 PM gui.packaging.PACKAGING_UI9001_DropPalletConfirmation ok_btnActionPerformed
+INFOS: Droping Engine label harness list...2
+mars 31, 2016 6:34:52 PM gui.packaging.PACKAGING_UI9001_DropPalletConfirmation ok_btnActionPerformed
+INFOS: Droping Engine label harness list...2
+mars 31, 2016 6:34:52 PM gui.packaging.PACKAGING_UI9001_DropPalletConfirmation ok_btnActionPerformed
+INFOS: Droping Engine label harness list...2
+mars 31, 2016 6:34:52 PM gui.packaging.PACKAGING_UI9001_DropPalletConfirmation ok_btnActionPerformed
+INFOS: Droping Engine label harness list...2
+mars 31, 2016 6:34:52 PM gui.packaging.PACKAGING_UI9001_DropPalletConfirmation ok_btnActionPerformed
+INFOS: Droping Engine label harness list...2
+mars 31, 2016 6:34:52 PM gui.packaging.PACKAGING_UI9001_DropPalletConfirmation ok_btnActionPerformed
+INFOS: Droping Engine label harness list...2
+mars 31, 2016 6:34:52 PM gui.packaging.PACKAGING_UI9001_DropPalletConfirmation ok_btnActionPerformed
+INFOS: Droping Engine label harness list...2
+mars 31, 2016 6:36:11 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22701793] in ConfigUCS: ENGINE
+mars 31, 2016 6:36:11 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22701793] found for project [ENGINE].
+mars 31, 2016 6:36:11 PM state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22701793] OK.
+mars 31, 2016 6:36:22 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2270179300.00.0000;00:00:00] in BaseHarness.
+mars 31, 2016 6:36:22 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+mars 31, 2016 6:36:22 PM state.S030_MatrixIdScan doAction
+INFOS: Valid Harness Counter scanned [P2270179300.00.0000;00:00:00] OK.
+mars 31, 2016 6:36:45 PM entity.BaseEngineLabel isLabelCodeExist
+INFOS: Searching Engine Label code [15083100101] in BaseEngineLabel.
+mars 31, 2016 6:36:45 PM entity.BaseEngineLabel isLabelCodeExist
+INFOS: FROM BaseEngineLabel bel WHERE bel.labelCode = :labelCode
+mars 31, 2016 6:36:45 PM entity.BaseEngineLabel isLabelCodeExist
+INFOS: New label engine [15083100101]
+mars 31, 2016 6:36:45 PM state.S031_EngineLabel1Scan doAction
+INFOS: First Valid Engine Label scanned [15083100101] OK.
+mars 31, 2016 6:36:57 PM entity.BaseEngineLabel isLabelCodeExist
+INFOS: Searching Engine Label code [15083100102] in BaseEngineLabel.
+mars 31, 2016 6:36:57 PM entity.BaseEngineLabel isLabelCodeExist
+INFOS: FROM BaseEngineLabel bel WHERE bel.labelCode = :labelCode
+mars 31, 2016 6:36:57 PM entity.BaseEngineLabel isLabelCodeExist
+INFOS: New label engine [15083100102]
+mars 31, 2016 6:36:57 PM state.S032_EngineLabel2Scan doAction
+INFOS: Second Valid Engine Label scanned [15083100102] OK.
+mars 31, 2016 6:37:01 PM state.S040_PalletChoice doAction
+INFOS: Is it a new pallet ?
+mars 31, 2016 6:37:01 PM state.S040_PalletChoice doAction
+INFOS:  [Yes]
+mars 31, 2016 6:37:01 PM gui.packaging.PACKAGING_UI9000_ChooseContainerType <init>
+INFOS: Item found 22701793--26C37100A--P01--3RV--24
+mars 31, 2016 6:37:01 PM gui.packaging.PACKAGING_UI9000_ChooseContainerType <init>
+INFOS: 1 item(s) found for Harness Part[22701793].
+mars 31, 2016 6:37:01 PM gui.packaging.PACKAGING_UI9000_ChooseContainerType mappingContextVals
+INFOS: Selected pack type : 22701793--26C37100A--P01--3RV--24 
+mars 31, 2016 6:37:01 PM helper.Helper InitDailyDestPrintDir
+INFOS: nullPrint directory [.\print\2016_03_31] already exist!
+Print sub directory [.\print\2016_03_31.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_31.\closing_sheet] already exist!
+
+mars 31, 2016 6:37:01 PM helper.PrinterHelper saveAndPrintOpenSheet
+INFOS: Set Pallet [200000257] state to [IN_PROCESS]
+mars 31, 2016 6:37:01 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2016_03_31\open_sheet\PrintOpenPallet_A5_2016_03_31_18_37_01_200000257.pdf] to the default printer...
+mars 31, 2016 6:37:01 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [%s] has been printed.
+mars 31, 2016 6:37:01 PM helper.PrinterHelper saveAndPrintOpenSheet
+INFOS: Set Pallet [200000257] state to [PRINTED]
+mars 31, 2016 6:37:01 PM gui.packaging.PACKAGING_UI9000_ChooseContainerType items_listKeyPressed
+INFOS: Openning new container for first harness part [22701793].
+mars 31, 2016 6:37:46 PM state.S041_NewPalletScan doAction
+INFOS: Scanned Pallet number [200000257] OK.
+mars 31, 2016 6:37:46 PM state.S041_NewPalletScan doAction
+INFOS: BaseContainer created BaseContainer{id=531,
+ createTime=Thu Mar 31 18:37:46 WEST 2016,
+ writeTime=Thu Mar 31 18:37:46 WEST 2016,
+ createId=4,
+ writeId=4,
+ user=0,
+ startTime=Thu Mar 31 18:37:46 WEST 2016,
+ completeTime=null,
+ workTime=null,
+ palletNumber=200000257,
+ harnessPart=22701793,
+ harnessIndex=P01,
+ supplierPartNumber=26C37100A,
+ qtyExpected=24,
+ qtyRead=1,
+ containerState=OPEN,
+ containerStateCode=1000,
+ packType=3RV,
+ harnessType=ENGINE,
+ harnessList=[]} 
+mars 31, 2016 6:38:48 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22701793] in ConfigUCS: ENGINE
+mars 31, 2016 6:38:48 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22701793] found for project [ENGINE].
+mars 31, 2016 6:38:48 PM state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22701793] OK.
+mars 31, 2016 6:38:57 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2270179305.02.2016;00:00:01] in BaseHarness.
+mars 31, 2016 6:38:57 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+mars 31, 2016 6:38:57 PM state.S030_MatrixIdScan doAction
+INFOS: Valid Harness Counter scanned [P2270179305.02.2016;00:00:01] OK.
+mars 31, 2016 6:39:03 PM entity.BaseEngineLabel isLabelCodeExist
+INFOS: Searching Engine Label code [15083100103] in BaseEngineLabel.
+mars 31, 2016 6:39:03 PM entity.BaseEngineLabel isLabelCodeExist
+INFOS: FROM BaseEngineLabel bel WHERE bel.labelCode = :labelCode
+mars 31, 2016 6:39:03 PM entity.BaseEngineLabel isLabelCodeExist
+AVERTISSEMENT: Duplicated engine label [15083100103]
+mars 31, 2016 6:39:05 PM entity.BaseEngineLabel isLabelCodeExist
+INFOS: Searching Engine Label code [15083100104] in BaseEngineLabel.
+mars 31, 2016 6:39:05 PM entity.BaseEngineLabel isLabelCodeExist
+INFOS: FROM BaseEngineLabel bel WHERE bel.labelCode = :labelCode
+mars 31, 2016 6:39:05 PM entity.BaseEngineLabel isLabelCodeExist
+INFOS: New label engine [15083100104]
+mars 31, 2016 6:39:05 PM state.S031_EngineLabel1Scan doAction
+INFOS: First Valid Engine Label scanned [15083100104] OK.
+mars 31, 2016 6:39:07 PM entity.BaseEngineLabel isLabelCodeExist
+INFOS: Searching Engine Label code [15083100105] in BaseEngineLabel.
+mars 31, 2016 6:39:07 PM entity.BaseEngineLabel isLabelCodeExist
+INFOS: FROM BaseEngineLabel bel WHERE bel.labelCode = :labelCode
+mars 31, 2016 6:39:07 PM entity.BaseEngineLabel isLabelCodeExist
+INFOS: New label engine [15083100105]
+mars 31, 2016 6:39:07 PM state.S032_EngineLabel2Scan doAction
+INFOS: Second Valid Engine Label scanned [15083100105] OK.
+mars 31, 2016 6:39:17 PM state.S040_PalletChoice doAction
+INFOS: Is it a new pallet ?
+mars 31, 2016 6:39:17 PM state.S040_PalletChoice doAction
+INFOS:  [No]
+mars 31, 2016 6:39:17 PM state.S040_PalletChoice doAction
+INFOS: Pallet values 
+mars 31, 2016 6:39:17 PM state.S040_PalletChoice doAction
+INFOS: State           :   [true]
+mars 31, 2016 6:39:17 PM state.S040_PalletChoice doAction
+INFOS: Qty Expected    :   [2]
+mars 31, 2016 6:39:17 PM state.S040_PalletChoice doAction
+INFOS: Qty Read        :   [1]
+mars 31, 2016 6:39:17 PM state.S040_PalletChoice doAction
+INFOS: Harness Part [22701793] = Context Harness Part [22701793]
+mars 31, 2016 6:39:17 PM state.S040_PalletChoice doAction
+INFOS: Harness Type [ENGINE] = Context Harness Type [ENGINE]
+mars 31, 2016 6:39:18 PM state.S040_PalletChoice doAction
+INFOS: Quantité terminée BaseContainer{id=531,
+ createTime=2016-03-31 18:37:46.0,
+ writeTime=Thu Mar 31 18:39:17 WEST 2016,
+ createId=4,
+ writeId=4,
+ user=0,
+ startTime=2016-03-31 18:37:46.0,
+ completeTime=null,
+ workTime=null,
+ palletNumber=200000257,
+ harnessPart=22701793,
+ harnessIndex=P01,
+ supplierPartNumber=26C37100A,
+ qtyExpected=2,
+ qtyRead=2,
+ containerState=OPEN,
+ containerStateCode=1000,
+ packType=3RV,
+ harnessType=ENGINE,
+ harnessList=[entity.BaseHarness@780b0702, entity.BaseHarness@69c7cba]}
+mars 31, 2016 6:39:18 PM helper.Helper InitDailyDestPrintDir
+INFOS: nullPrint directory [.\print\2016_03_31] already exist!
+Print sub directory [.\print\2016_03_31.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_31.\closing_sheet] already exist!
+
+mars 31, 2016 6:39:18 PM helper.PrinterHelper saveAndPrintClosingSheet
+INFOS: Set Closing Pallet item [492] state to [IN_PROCESS]
+mars 31, 2016 6:39:18 PM print.PrintClosingPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2016_03_31\closing_sheet\PrintClosingPallet_A5_2016_03_31_18_39_18.pdf] to the default printer...
+mars 31, 2016 6:39:18 PM print.PrintClosingPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [%s] has been printed.
+mars 31, 2016 6:39:18 PM helper.PrinterHelper saveAndPrintClosingSheet
+INFOS: Set Closing Pallet [492] state to [PRINTED]
+mars 31, 2016 6:40:11 PM gui.packaging.PACKAGING_UI9001_DropPalletConfirmation ok_btnActionPerformed
+INFOS: Droping harness list...2
+mars 31, 2016 6:40:11 PM gui.packaging.PACKAGING_UI9001_DropPalletConfirmation ok_btnActionPerformed
+INFOS: Droping Engine label harness list...2
+mars 31, 2016 6:40:11 PM gui.packaging.PACKAGING_UI9001_DropPalletConfirmation ok_btnActionPerformed
+INFOS: Droping Engine label harness list...2
+mars 31, 2016 6:43:58 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22701793] in ConfigUCS: ENGINE
+mars 31, 2016 6:43:58 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22701793] found for project [ENGINE].
+mars 31, 2016 6:43:58 PM state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22701793] OK.
+mars 31, 2016 6:44:20 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2270179300.00.0000;00:00:05] in BaseHarness.
+mars 31, 2016 6:44:20 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+mars 31, 2016 6:44:20 PM state.S030_MatrixIdScan doAction
+INFOS: Valid Harness Counter scanned [P2270179300.00.0000;00:00:05] OK.
+mars 31, 2016 6:44:27 PM entity.BaseEngineLabel isLabelCodeExist
+INFOS: Searching Engine Label code [00000000001] in BaseEngineLabel.
+mars 31, 2016 6:44:27 PM entity.BaseEngineLabel isLabelCodeExist
+INFOS: FROM BaseEngineLabel bel WHERE bel.labelCode = :labelCode
+mars 31, 2016 6:44:27 PM entity.BaseEngineLabel isLabelCodeExist
+INFOS: New label engine [00000000001]
+mars 31, 2016 6:44:27 PM state.S031_EngineLabel1Scan doAction
+INFOS: First Valid Engine Label scanned [00000000001] OK.
+mars 31, 2016 6:44:29 PM entity.BaseEngineLabel isLabelCodeExist
+INFOS: Searching Engine Label code [00000000002] in BaseEngineLabel.
+mars 31, 2016 6:44:29 PM entity.BaseEngineLabel isLabelCodeExist
+INFOS: FROM BaseEngineLabel bel WHERE bel.labelCode = :labelCode
+mars 31, 2016 6:44:29 PM entity.BaseEngineLabel isLabelCodeExist
+INFOS: New label engine [00000000002]
+mars 31, 2016 6:44:29 PM state.S032_EngineLabel2Scan doAction
+INFOS: Second Valid Engine Label scanned [00000000002] OK.
+mars 31, 2016 6:44:41 PM state.S040_PalletChoice doAction
+INFOS: Is it a new pallet ?
+mars 31, 2016 6:44:41 PM state.S040_PalletChoice doAction
+INFOS:  [Yes]
+mars 31, 2016 6:44:41 PM gui.packaging.PACKAGING_UI9000_ChooseContainerType <init>
+INFOS: Item found 22701793--26C37100A--P01--3RV--24
+mars 31, 2016 6:44:41 PM gui.packaging.PACKAGING_UI9000_ChooseContainerType <init>
+INFOS: 1 item(s) found for Harness Part[22701793].
+mars 31, 2016 6:44:41 PM gui.packaging.PACKAGING_UI9000_ChooseContainerType mappingContextVals
+INFOS: Selected pack type : 22701793--26C37100A--P01--3RV--24 
+mars 31, 2016 6:44:41 PM helper.Helper InitDailyDestPrintDir
+INFOS: nullPrint directory [.\print\2016_03_31] already exist!
+Print sub directory [.\print\2016_03_31.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_31.\closing_sheet] already exist!
+
+mars 31, 2016 6:44:42 PM helper.PrinterHelper saveAndPrintOpenSheet
+INFOS: Set Pallet [200000258] state to [IN_PROCESS]
+mars 31, 2016 6:44:42 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2016_03_31\open_sheet\PrintOpenPallet_A5_2016_03_31_18_44_41_200000258.pdf] to the default printer...
+mars 31, 2016 6:44:42 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [%s] has been printed.
+mars 31, 2016 6:44:42 PM helper.PrinterHelper saveAndPrintOpenSheet
+INFOS: Set Pallet [200000258] state to [PRINTED]
+mars 31, 2016 6:44:42 PM gui.packaging.PACKAGING_UI9000_ChooseContainerType items_listKeyPressed
+INFOS: Openning new container for first harness part [22701793].
+mars 31, 2016 6:44:49 PM state.S041_NewPalletScan doAction
+AVERTISSEMENT: Incorrect pallet number [20000258]
+mars 31, 2016 6:44:52 PM state.S041_NewPalletScan doAction
+INFOS: Scanned Pallet number [200000258] OK.
+mars 31, 2016 6:44:52 PM state.S041_NewPalletScan doAction
+INFOS: BaseContainer created BaseContainer{id=532,
+ createTime=Thu Mar 31 18:44:52 WEST 2016,
+ writeTime=Thu Mar 31 18:44:52 WEST 2016,
+ createId=4,
+ writeId=4,
+ user=0,
+ startTime=Thu Mar 31 18:44:52 WEST 2016,
+ completeTime=null,
+ workTime=null,
+ palletNumber=200000258,
+ harnessPart=22701793,
+ harnessIndex=P01,
+ supplierPartNumber=26C37100A,
+ qtyExpected=24,
+ qtyRead=1,
+ containerState=OPEN,
+ containerStateCode=1000,
+ packType=3RV,
+ harnessType=ENGINE,
+ harnessList=[]} 
+mars 31, 2016 6:45:09 PM entity.BaseHarness checkHarnessPartFormat
+INFOS: Invalid Harness Part scanned [22701793] !
+mars 31, 2016 6:45:09 PM state.S020_HarnessPartScan doAction
+AVERTISSEMENT: Invalid Harness Part scanned [22701793] !
+mars 31, 2016 6:45:20 PM entity.BaseHarness checkHarnessPartFormat
+INFOS: Invalid Harness Part scanned [22701793] !
+mars 31, 2016 6:45:20 PM state.S020_HarnessPartScan doAction
+AVERTISSEMENT: Invalid Harness Part scanned [22701793] !
+mars 31, 2016 6:45:28 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22701793] in ConfigUCS: ENGINE
+mars 31, 2016 6:45:28 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22701793] found for project [ENGINE].
+mars 31, 2016 6:45:28 PM state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22701793] OK.
+mars 31, 2016 6:45:45 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2270179300.00.0000;00:00:02] in BaseHarness.
+mars 31, 2016 6:45:45 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+mars 31, 2016 6:45:45 PM state.S030_MatrixIdScan doAction
+INFOS: Valid Harness Counter scanned [P2270179300.00.0000;00:00:02] OK.
+mars 31, 2016 6:45:51 PM entity.BaseEngineLabel isLabelCodeExist
+INFOS: Searching Engine Label code [00000000003] in BaseEngineLabel.
+mars 31, 2016 6:45:51 PM entity.BaseEngineLabel isLabelCodeExist
+INFOS: FROM BaseEngineLabel bel WHERE bel.labelCode = :labelCode
+mars 31, 2016 6:45:51 PM entity.BaseEngineLabel isLabelCodeExist
+INFOS: New label engine [00000000003]
+mars 31, 2016 6:45:51 PM state.S031_EngineLabel1Scan doAction
+INFOS: First Valid Engine Label scanned [00000000003] OK.
+mars 31, 2016 6:45:53 PM entity.BaseEngineLabel isLabelCodeExist
+INFOS: Searching Engine Label code [00000000004] in BaseEngineLabel.
+mars 31, 2016 6:45:53 PM entity.BaseEngineLabel isLabelCodeExist
+INFOS: FROM BaseEngineLabel bel WHERE bel.labelCode = :labelCode
+mars 31, 2016 6:45:53 PM entity.BaseEngineLabel isLabelCodeExist
+INFOS: New label engine [00000000004]
+mars 31, 2016 6:45:53 PM state.S032_EngineLabel2Scan doAction
+INFOS: Second Valid Engine Label scanned [00000000004] OK.
+mars 31, 2016 6:46:01 PM state.S040_PalletChoice doAction
+INFOS: Is it a new pallet ?
+mars 31, 2016 6:46:01 PM state.S040_PalletChoice doAction
+INFOS:  [No]
+mars 31, 2016 6:46:01 PM state.S040_PalletChoice doAction
+INFOS: Pallet values 
+mars 31, 2016 6:46:01 PM state.S040_PalletChoice doAction
+INFOS: State           :   [true]
+mars 31, 2016 6:46:01 PM state.S040_PalletChoice doAction
+INFOS: Qty Expected    :   [2]
+mars 31, 2016 6:46:01 PM state.S040_PalletChoice doAction
+INFOS: Qty Read        :   [1]
+mars 31, 2016 6:46:01 PM state.S040_PalletChoice doAction
+INFOS: Harness Part [22701793] = Context Harness Part [22701793]
+mars 31, 2016 6:46:01 PM state.S040_PalletChoice doAction
+INFOS: Harness Type [ENGINE] = Context Harness Type [ENGINE]
+mars 31, 2016 6:46:01 PM state.S040_PalletChoice doAction
+INFOS: Quantité terminée BaseContainer{id=532,
+ createTime=2016-03-31 18:44:52.0,
+ writeTime=Thu Mar 31 18:46:01 WEST 2016,
+ createId=4,
+ writeId=4,
+ user=0,
+ startTime=2016-03-31 18:44:52.0,
+ completeTime=null,
+ workTime=null,
+ palletNumber=200000258,
+ harnessPart=22701793,
+ harnessIndex=P01,
+ supplierPartNumber=26C37100A,
+ qtyExpected=2,
+ qtyRead=2,
+ containerState=OPEN,
+ containerStateCode=1000,
+ packType=3RV,
+ harnessType=ENGINE,
+ harnessList=[entity.BaseHarness@3451eef5, entity.BaseHarness@53fa3fe4]}
+mars 31, 2016 6:46:01 PM helper.Helper InitDailyDestPrintDir
+INFOS: nullPrint directory [.\print\2016_03_31] already exist!
+Print sub directory [.\print\2016_03_31.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_31.\closing_sheet] already exist!
+
+mars 31, 2016 6:46:01 PM helper.PrinterHelper saveAndPrintClosingSheet
+INFOS: Set Closing Pallet item [493] state to [IN_PROCESS]
+mars 31, 2016 6:46:01 PM print.PrintClosingPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2016_03_31\closing_sheet\PrintClosingPallet_A5_2016_03_31_18_46_01.pdf] to the default printer...
+mars 31, 2016 6:46:01 PM print.PrintClosingPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [%s] has been printed.
+mars 31, 2016 6:46:01 PM helper.PrinterHelper saveAndPrintClosingSheet
+INFOS: Set Closing Pallet [493] state to [PRINTED]
+mars 31, 2016 6:46:44 PM gui.packaging.PACKAGING_UI9001_DropPalletConfirmation ok_btnActionPerformed
+INFOS: Droping harness list...2
+mars 31, 2016 6:46:44 PM gui.packaging.PACKAGING_UI9001_DropPalletConfirmation ok_btnActionPerformed
+INFOS: Droping Engine label harness list...2
+mars 31, 2016 6:46:44 PM gui.packaging.PACKAGING_UI9001_DropPalletConfirmation ok_btnActionPerformed
+INFOS: Droping Engine label harness list...2
+mars 31, 2016 6:48:51 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_31] already exist!
+Print sub directory [.\print\2016_03_31.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_31.\closing_sheet] already exist!
+
+mars 31, 2016 6:48:52 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 31, 2016 6:48:52 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 31, 2016 6:49:19 PM state.S010_UserCodeScan doAction
+INFOS: User Admin   / 0 connected to host WSMA7040 at 2016-03-31 18:49:19 Project : ENGINE.
+mars 31, 2016 6:49:29 PM entity.BaseHarness checkHarnessPartFormat
+INFOS: Invalid Harness Part scanned [22701793] !
+mars 31, 2016 6:49:29 PM state.S020_HarnessPartScan doAction
+AVERTISSEMENT: Invalid Harness Part scanned [22701793] !
+mars 31, 2016 6:49:36 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22701793] in ConfigUCS: ENGINE
+mars 31, 2016 6:49:36 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22701793] found for project [ENGINE].
+mars 31, 2016 6:49:36 PM state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22701793] OK.
+mars 31, 2016 6:49:42 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2270179305.02.2016;00:00:03] in BaseHarness.
+mars 31, 2016 6:49:42 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+mars 31, 2016 6:49:42 PM state.S030_MatrixIdScan doAction
+INFOS: Valid Harness Counter scanned [P2270179305.02.2016;00:00:03] OK.
+mars 31, 2016 6:49:47 PM entity.BaseEngineLabel isLabelCodeExist
+INFOS: Searching Engine Label code [00000000004] in BaseEngineLabel.
+mars 31, 2016 6:49:47 PM entity.BaseEngineLabel isLabelCodeExist
+INFOS: FROM BaseEngineLabel bel WHERE bel.labelCode = :labelCode
+mars 31, 2016 6:49:47 PM entity.BaseEngineLabel isLabelCodeExist
+INFOS: New label engine [00000000004]
+mars 31, 2016 6:49:47 PM state.S031_EngineLabel1Scan doAction
+INFOS: First Valid Engine Label scanned [00000000004] OK.
+mars 31, 2016 6:49:49 PM entity.BaseEngineLabel isLabelCodeExist
+INFOS: Searching Engine Label code [00000000004] in BaseEngineLabel.
+mars 31, 2016 6:49:49 PM entity.BaseEngineLabel isLabelCodeExist
+INFOS: FROM BaseEngineLabel bel WHERE bel.labelCode = :labelCode
+mars 31, 2016 6:49:49 PM entity.BaseEngineLabel isLabelCodeExist
+INFOS: New label engine [00000000004]
+mars 31, 2016 6:49:49 PM state.S032_EngineLabel2Scan doAction
+INFOS: Second Valid Engine Label scanned [00000000004] OK.
+mars 31, 2016 6:51:03 PM state.S040_PalletChoice doAction
+INFOS: Is it a new pallet ?
+mars 31, 2016 6:51:03 PM state.S040_PalletChoice doAction
+INFOS:  [No]
+mars 31, 2016 6:51:03 PM state.S040_PalletChoice doAction
+INFOS: Pallet values 
+mars 31, 2016 6:51:03 PM state.S040_PalletChoice doAction
+INFOS: State           :   [true]
+mars 31, 2016 6:51:03 PM state.S040_PalletChoice doAction
+INFOS: Qty Expected    :   [3]
+mars 31, 2016 6:51:03 PM state.S040_PalletChoice doAction
+INFOS: Qty Read        :   [2]
+mars 31, 2016 6:51:03 PM state.S040_PalletChoice doAction
+INFOS: Harness Part [22701793] = Context Harness Part [22701793]
+mars 31, 2016 6:51:03 PM state.S040_PalletChoice doAction
+INFOS: Harness Type [ENGINE] = Context Harness Type [ENGINE]
+mars 31, 2016 6:51:03 PM state.S040_PalletChoice doAction
+INFOS: Quantité terminée BaseContainer{id=523,
+ createTime=2016-03-28 10:14:42.0,
+ writeTime=Thu Mar 31 18:51:03 WEST 2016,
+ createId=15,
+ writeId=4,
+ user=14879,
+ startTime=2016-03-28 10:14:42.0,
+ completeTime=null,
+ workTime=null,
+ palletNumber=200000248,
+ harnessPart=22701793,
+ harnessIndex=P01,
+ supplierPartNumber=26C37100A,
+ qtyExpected=3,
+ qtyRead=3,
+ containerState=OPEN,
+ containerStateCode=1000,
+ packType=3RV,
+ harnessType=ENGINE,
+ harnessList=[entity.BaseHarness@1621d34e, entity.BaseHarness@66b21aae, entity.BaseHarness@6b7b13c]}
+mars 31, 2016 6:51:03 PM helper.Helper InitDailyDestPrintDir
+INFOS: nullPrint directory [.\print\2016_03_31] already exist!
+Print sub directory [.\print\2016_03_31.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_31.\closing_sheet] already exist!
+
+mars 31, 2016 6:51:03 PM helper.PrinterHelper saveAndPrintClosingSheet
+INFOS: Set Closing Pallet item [494] state to [IN_PROCESS]
+mars 31, 2016 6:51:03 PM print.PrintClosingPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2016_03_31\closing_sheet\PrintClosingPallet_A5_2016_03_31_18_51_03.pdf] to the default printer...
+mars 31, 2016 6:51:03 PM print.PrintClosingPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [%s] has been printed.
+mars 31, 2016 6:51:03 PM helper.PrinterHelper saveAndPrintClosingSheet
+INFOS: Set Closing Pallet [494] state to [PRINTED]
+mars 31, 2016 6:51:36 PM gui.packaging.PACKAGING_UI9001_DropPalletConfirmation ok_btnActionPerformed
+INFOS: Droping harness list...3
+mars 31, 2016 6:51:36 PM gui.packaging.PACKAGING_UI9001_DropPalletConfirmation ok_btnActionPerformed
+INFOS: Droping Engine label harness list...2
+mars 31, 2016 6:51:36 PM gui.packaging.PACKAGING_UI9001_DropPalletConfirmation ok_btnActionPerformed
+INFOS: Droping Engine label harness list...2
+mars 31, 2016 6:51:36 PM gui.packaging.PACKAGING_UI9001_DropPalletConfirmation ok_btnActionPerformed
+INFOS: Droping Engine label harness list...2
+mars 31, 2016 6:53:07 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_31] already exist!
+Print sub directory [.\print\2016_03_31.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_31.\closing_sheet] already exist!
+
+mars 31, 2016 6:53:12 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 31, 2016 6:53:12 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 31, 2016 6:53:31 PM state.S010_UserCodeScan doAction
+INFOS: User Admin   / 0 connected to host WSMA7040 at 2016-03-31 18:53:31 Project : SMALL.
+mars 31, 2016 6:53:38 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22216200] in ConfigUCS: SMALL
+mars 31, 2016 6:53:38 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22216200] found for project [SMALL].
+mars 31, 2016 6:53:38 PM state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22216200] OK.
+mars 31, 2016 6:53:50 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2221620000.00.0000;00:00:00] in BaseHarness.
+mars 31, 2016 6:53:50 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+mars 31, 2016 6:53:50 PM entity.BaseHarness getHarnessByCounter
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+mars 31, 2016 6:53:55 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2221620000.00.0000;00:00:15] in BaseHarness.
+mars 31, 2016 6:53:55 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+mars 31, 2016 6:53:55 PM state.S030_MatrixIdScan doAction
+INFOS: Valid Harness Counter scanned [P2221620000.00.0000;00:00:15] OK.
+mars 31, 2016 6:54:00 PM state.S040_PalletChoice doAction
+INFOS: Is it a new pallet ?
+mars 31, 2016 6:54:00 PM state.S040_PalletChoice doAction
+INFOS:  [No]
+mars 31, 2016 6:54:00 PM state.S040_PalletChoice doAction
+INFOS: Pallet values 
+mars 31, 2016 6:54:00 PM state.S040_PalletChoice doAction
+INFOS: State           :   [true]
+mars 31, 2016 6:54:00 PM state.S040_PalletChoice doAction
+INFOS: Qty Expected    :   [2]
+mars 31, 2016 6:54:00 PM state.S040_PalletChoice doAction
+INFOS: Qty Read        :   [1]
+mars 31, 2016 6:54:00 PM state.S040_PalletChoice doAction
+INFOS: Harness Part [22216200] = Context Harness Part [22216200]
+mars 31, 2016 6:54:00 PM state.S040_PalletChoice doAction
+INFOS: Harness Type [SMALL] = Context Harness Type [SMALL]
+mars 31, 2016 6:54:00 PM state.S040_PalletChoice doAction
+INFOS: Quantité terminée BaseContainer{id=506,
+ createTime=2016-03-26 12:22:39.0,
+ writeTime=Thu Mar 31 18:54:00 WEST 2016,
+ createId=13,
+ writeId=3,
+ user=13790,
+ startTime=2016-03-26 12:22:39.0,
+ completeTime=null,
+ workTime=null,
+ palletNumber=200000231,
+ harnessPart=22216200,
+ harnessIndex=P01,
+ supplierPartNumber=26C06970A,
+ qtyExpected=2,
+ qtyRead=2,
+ containerState=OPEN,
+ containerStateCode=1000,
+ packType=2RV,
+ harnessType=SMALL,
+ harnessList=[entity.BaseHarness@127cc7ca, entity.BaseHarness@7756f1fe]}
+mars 31, 2016 6:54:00 PM helper.Helper InitDailyDestPrintDir
+INFOS: nullPrint directory [.\print\2016_03_31] already exist!
+Print sub directory [.\print\2016_03_31.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_31.\closing_sheet] already exist!
+
+mars 31, 2016 6:54:01 PM helper.PrinterHelper saveAndPrintClosingSheet
+INFOS: Set Closing Pallet item [495] state to [IN_PROCESS]
+mars 31, 2016 6:54:01 PM print.PrintClosingPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2016_03_31\closing_sheet\PrintClosingPallet_A5_2016_03_31_18_54_00.pdf] to the default printer...
+mars 31, 2016 6:54:01 PM print.PrintClosingPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [%s] has been printed.
+mars 31, 2016 6:54:01 PM helper.PrinterHelper saveAndPrintClosingSheet
+INFOS: Set Closing Pallet [495] state to [PRINTED]
+mars 31, 2016 6:54:21 PM gui.packaging.PACKAGING_UI9001_DropPalletConfirmation ok_btnActionPerformed
+INFOS: Droping harness list...2
+mars 31, 2016 7:06:44 PM helper.Helper InitDailyDestPrintDir
+INFOS: Print directory [.\print\2016_03_31] already exist!
+Print sub directory [.\print\2016_03_31.\open_sheet] already exist!
+Print sub directory [.\print\2016_03_31.\closing_sheet] already exist!
+
+mars 31, 2016 7:06:46 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 31, 2016 7:06:46 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+mars 31, 2016 7:07:10 PM state.S010_UserCodeScan doAction
+INFOS: Invalid matricule number or account locked !
+mars 31, 2016 7:07:15 PM state.S010_UserCodeScan doAction
+INFOS: User Admin   / 0 connected to host WSMA7040 at 2016-03-31 19:07:15 Project : ENGINE.
+mars 31, 2016 7:07:17 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [22701793] in ConfigUCS: ENGINE
+mars 31, 2016 7:07:17 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [22701793] found for project [ENGINE].
+mars 31, 2016 7:07:17 PM state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P22701793] OK.
+mars 31, 2016 7:07:22 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2270179300.00.0000;00:00:00] in BaseHarness.
+mars 31, 2016 7:07:22 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+mars 31, 2016 7:07:22 PM state.S030_MatrixIdScan doAction
+INFOS: Valid Harness Counter scanned [P2270179300.00.0000;00:00:00] OK.
+mars 31, 2016 7:07:28 PM entity.BaseEngineLabel isLabelCodeExist
+INFOS: Searching Engine Label code [00000000009] in BaseEngineLabel.
+mars 31, 2016 7:07:28 PM entity.BaseEngineLabel isLabelCodeExist
+INFOS: FROM BaseEngineLabel bel WHERE bel.labelCode = :labelCode
+mars 31, 2016 7:07:28 PM entity.BaseEngineLabel isLabelCodeExist
+INFOS: New label engine [00000000009]
+mars 31, 2016 7:07:28 PM state.S031_EngineLabel1Scan doAction
+INFOS: First Valid Engine Label scanned [00000000009] OK.
+mars 31, 2016 7:07:31 PM entity.BaseEngineLabel isLabelCodeExist
+INFOS: Searching Engine Label code [00000000009] in BaseEngineLabel.
+mars 31, 2016 7:07:31 PM entity.BaseEngineLabel isLabelCodeExist
+INFOS: FROM BaseEngineLabel bel WHERE bel.labelCode = :labelCode
+mars 31, 2016 7:07:31 PM entity.BaseEngineLabel isLabelCodeExist
+INFOS: New label engine [00000000009]
+mars 31, 2016 7:07:35 PM entity.BaseEngineLabel isLabelCodeExist
+INFOS: Searching Engine Label code [00000000010] in BaseEngineLabel.
+mars 31, 2016 7:07:35 PM entity.BaseEngineLabel isLabelCodeExist
+INFOS: FROM BaseEngineLabel bel WHERE bel.labelCode = :labelCode
+mars 31, 2016 7:07:35 PM entity.BaseEngineLabel isLabelCodeExist
+INFOS: New label engine [00000000010]
+mars 31, 2016 7:07:35 PM state.S032_EngineLabel2Scan doAction
+INFOS: Second Valid Engine Label scanned [00000000010] OK.
