@@ -6,7 +6,7 @@
 package gui.packaging.state;
 
 import entity.BaseContainerTmp;
-import entity.BaseEngineLabelTmp;
+import entity.BaseHarnessAdditionalBarecodeTmp;
 import entity.ManufactureUsers;
 
 /**
@@ -16,7 +16,7 @@ import entity.ManufactureUsers;
 public class Context {
 
     private BaseContainerTmp baseContainerTmp = new BaseContainerTmp();
-    private BaseEngineLabelTmp baseEngineLabelTmp = new BaseEngineLabelTmp();
+    private BaseHarnessAdditionalBarecodeTmp baseHarnessAdditionalBarecodeTmp = new BaseHarnessAdditionalBarecodeTmp();
     private String feedback = "-";    
     private Integer labelCount = 0;
     //Connected User Object
@@ -51,12 +51,12 @@ public class Context {
         this.baseContainerTmp = baseContainerTmp;
     }
 
-    public BaseEngineLabelTmp getBaseEngineLabelTmp() {
-        return baseEngineLabelTmp;
+    public BaseHarnessAdditionalBarecodeTmp getBaseHarnessAdditionalBarecodeTmp() {
+        return baseHarnessAdditionalBarecodeTmp;
     }
 
-    public void setBaseEngineLabelTmp(BaseEngineLabelTmp baseEngineLabelTmp) {
-        this.baseEngineLabelTmp = baseEngineLabelTmp;
+    public void setBaseHarnessAdditionalBarecodeTmp(BaseHarnessAdditionalBarecodeTmp baseHarnessAdditionalBarecodeTmp) {
+        this.baseHarnessAdditionalBarecodeTmp = baseHarnessAdditionalBarecodeTmp;
     }
 
     public void setState(State state) {

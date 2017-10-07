@@ -409,7 +409,7 @@ public class Helper {
 
     public static String[] PARTNUMBER_PATTERN_LIST;
 
-    public static String[] PLASTICBAG_BARCODE_PATTERN_LIST;
+    public static String[][] PLASTICBAG_BARCODE_PATTERN_LIST;
 
     /**
      *
@@ -549,13 +549,13 @@ public class Helper {
      *
      */
     public static final String[][] PALLET_STATES = {
-        {PALLET_CLOSED, ""},
-        {PALLET_STORED, "selected"},
-        {PALLET_SHIPPED, ""},
+        {"ALL", ""},
         {PALLET_OPEN, ""},
         {PALLET_WAITING, ""},
-        {PALLET_DROPPED, ""},
-        {PALLET_QUARANTAINE, ""}
+        {PALLET_CLOSED, ""},
+        {PALLET_STORED, "selected"},
+        {PALLET_SHIPPED, ""},                        
+        //{PALLET_QUARANTAINE, ""}
     };
     //PALLET STATE COLLUMN INDEX IN UI0000_MAIN CONTAINER TABLE
     /**

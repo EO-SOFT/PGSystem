@@ -11,7 +11,7 @@ import helper.Helper;
 import helper.HQLHelper;
 import entity.BaseContainer;
 import entity.BaseContainerTmp;
-import entity.BaseEngineLabelTmp;
+import entity.BaseHarnessAdditionalBarecodeTmp;
 import entity.ConfigBarcode;
 import entity.HisLogin;
 import entity.ManufactureUsers;
@@ -621,7 +621,7 @@ public final class PACKAGING_UI0001_Main_Small_screen extends javax.swing.JFrame
     public void clearContextSessionVals() {
         //Pas besoin de réinitialiser le uid
         Helper.context.setBaseContainerTmp(new BaseContainerTmp());
-        Helper.context.setBaseEngineLabelTmp(new BaseEngineLabelTmp());
+        Helper.context.setBaseHarnessAdditionalBarecodeTmp(new BaseHarnessAdditionalBarecodeTmp());
         Helper.context.setUser(new ManufactureUsers());
     }
 

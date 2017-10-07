@@ -9,7 +9,7 @@ import helper.Helper;
 import helper.PrinterHelper;
 import entity.BaseContainer;
 import entity.BaseContainerTmp;
-import entity.BaseEngineLabel;
+import entity.BaseHarnessAdditionalBarecode;
 import entity.BaseHarness;
 import gui.packaging.PACKAGING_UI9000_ChoosePackType;
 import helper.HQLHelper;
@@ -36,11 +36,11 @@ public class S040_PalletChoice implements State {
     public void doAction(Context context) {
         JTextField scan_txtbox = Helper.Packaging_Gui.getScanTxt();
         String barcode = scan_txtbox.getText().trim();
-        
+
         //Textbox is not empty
         if (!barcode.isEmpty()) {
             BaseContainer bc = new BaseContainer().getBaseContainer(barcode);
-            
+
             //######################### OPEN NEW PALLET ########################
             Helper.log.info("Is it a new pallet ?");
             if (barcode.equals(Helper.OPEN_PALLET_PATTERN)) {//NEWP barcode
@@ -49,7 +49,12 @@ public class S040_PalletChoice implements State {
                 //Vide le scan box
                 this.clearScanBox(scan_txtbox);
                 //Afficher le popup du choix du type contenaire du harness_part
-                new PACKAGING_UI9000_ChoosePackType(null, true, context.getBaseContainerTmp().getHarnessPart().substring(1));
+                if (Helper.context.getBaseContainerTmp().getHarnessPart().startsWith(Helper.HARN_PART_PREF)) {
+                    new PACKAGING_UI9000_ChoosePackType(null, true, context.getBaseContainerTmp().getHarnessPart().substring(1));
+                } else {
+                    new PACKAGING_UI9000_ChoosePackType(null, true, context.getBaseContainerTmp().getHarnessPart());
+                }
+
             } //####################################################
             else if (!bc.getPackWorkstation().equals(Helper.HOSTNAME)) {
                 Helper.log.warning(String.format(Helper.ERR0025_WORKSTATION_PALLET, Helper.HOSTNAME, bc.getPackWorkstation()));
@@ -91,7 +96,7 @@ public class S040_PalletChoice implements State {
                 bh.setPalletNumber(barcode);
                 bh.setHarnessType(context.getBaseContainerTmp().getHarnessType());
                 bh.setStdTime(bc.getStdTime());
-                bh.setPackWorkstation(Helper.HOSTNAME);                
+                bh.setPackWorkstation(Helper.HOSTNAME);
                 bh.setSegment(bc.getSegment());
                 bh.setWorkplace(bc.getWorkplace());
                 bh.setContainer(bc);
@@ -99,9 +104,9 @@ public class S040_PalletChoice implements State {
 
                 //############### SET & SAVE ALL ENGINE LABELS DATA #################     
                 //Si ce part number contient des code à barre pour sachet
-                if (Helper.context.getBaseEngineLabelTmp().getLabelCode().length != 0) {
-                    for (String labelCode : Helper.context.getBaseEngineLabelTmp().getLabelCode()) {
-                        BaseEngineLabel bel = new BaseEngineLabel();
+                if (Helper.context.getBaseHarnessAdditionalBarecodeTmp().getLabelCode().length != 0) {
+                    for (String labelCode : Helper.context.getBaseHarnessAdditionalBarecodeTmp().getLabelCode()) {
+                        BaseHarnessAdditionalBarecode bel = new BaseHarnessAdditionalBarecode();
                         bel.setDefautlVals();
                         bel.setLabelCode(labelCode);
                         bel.setHarness(bh);
@@ -210,7 +215,7 @@ public class S040_PalletChoice implements State {
     public void clearContextSessionVals() {
         Helper.context.setBaseContainerTmp(new BaseContainerTmp());
         Helper.context.setLabelCount(0);
-        Helper.PLASTICBAG_BARCODE_PATTERN_LIST = new String[0];
+        Helper.PLASTICBAG_BARCODE_PATTERN_LIST = new String[0][];
     }
 
 }

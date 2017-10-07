@@ -436,7 +436,7 @@ public class UI0000_ModuleChoice extends javax.swing.JFrame implements ActionLis
     private void PACKAGING_MODULEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PACKAGING_MODULEActionPerformed
         //Bind to localhost adapter with a zero connection queue
         Helper.context.setState(new S010_UserCodeScan());
-        Helper.Packaging_Gui = new PACKAGING_UI0001_Main(null, null);
+        Helper.Packaging_Gui = new PACKAGING_UI0001_Main(null, this);
         Helper.Packaging_Gui.reloadDataTable();
         Helper.Packaging_Gui.disableAdminMenus();
     }//GEN-LAST:event_PACKAGING_MODULEActionPerformed

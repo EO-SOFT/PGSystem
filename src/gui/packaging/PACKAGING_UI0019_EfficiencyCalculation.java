@@ -123,8 +123,8 @@ public class PACKAGING_UI0019_EfficiencyCalculation extends javax.swing.JDialog 
 
     private void initTimeSpinners() {
 
-        String startTime = "06:00";
-        String endTime = "22:00";
+        String startTime = Helper.PROP.getProperty("START_TIME");
+        String endTime = Helper.PROP.getProperty("END_TIME");
         DateFormat timeFormat = new SimpleDateFormat("HH:mm");
 
         //################# Start Time Spinner ####################
@@ -916,7 +916,10 @@ public class PACKAGING_UI0019_EfficiencyCalculation extends javax.swing.JDialog 
                 row = sheet.createRow(sheetPointer);
                 row.createCell(0).setCellValue(String.valueOf(obj[0])); //SEGMENT
                 row.createCell(1).setCellValue(String.valueOf(obj[1])); //WORKPLACE
-                row.createCell(2).setCellValue(String.valueOf(obj[2]).substring(1));//PART NUMBER
+                if(String.valueOf(obj[2]).startsWith(Helper.HARN_PART_PREF))
+                    row.createCell(2).setCellValue(String.valueOf(obj[2]).substring(1));//PART NUMBER
+                else 
+                    row.createCell(2).setCellValue(String.valueOf(obj[2]));//PART NUMBER
                 row.createCell(3).setCellValue(Double.valueOf(obj[3].toString()));//STD TIME
                 row.createCell(4).setCellValue(Double.valueOf(obj[4].toString()));//PRODUCED QTY
                 row.createCell(5).setCellValue(Double.valueOf(obj[5].toString()));//PRODUCED HOURS

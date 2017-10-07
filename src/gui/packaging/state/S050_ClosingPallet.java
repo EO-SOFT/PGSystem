@@ -8,7 +8,7 @@ package gui.packaging.state;
 import helper.Helper;
 import entity.BaseContainer;
 import entity.BaseContainerTmp;
-import entity.BaseEngineLabelTmp;
+import entity.BaseHarnessAdditionalBarecodeTmp;
 import entity.ConfigUcs;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
@@ -107,7 +107,7 @@ public class S050_ClosingPallet implements State {
     public void clearContextSessionVals() {
         //Pas besoin de réinitialiser le uid
         Helper.context.setBaseContainerTmp(new BaseContainerTmp());
-        Helper.context.setBaseEngineLabelTmp(new BaseEngineLabelTmp());
+        Helper.context.setBaseHarnessAdditionalBarecodeTmp(new BaseHarnessAdditionalBarecodeTmp());
         Helper.context.setLabelCount(0);
     }
 

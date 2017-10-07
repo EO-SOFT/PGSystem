@@ -102,8 +102,8 @@ public class PACKAGING_UI0016_DroppedHarness extends javax.swing.JDialog {
 
     private void initTimeSpinners() {
 
-        String startTime = "06:00";
-        String endTime = "22:00";
+        String startTime = Helper.PROP.getProperty("START_TIME");
+        String endTime = Helper.PROP.getProperty("END_TIME");
         DateFormat timeFormat = new SimpleDateFormat("HH:mm");
 
         //################# Start Time Spinner ####################

@@ -114,12 +114,7 @@ public class PACKAGING_UI0018_OpenContainer extends javax.swing.JDialog {
                 harness_type_filter.addItem(new ComboItem(cp.getHarnessType(), cp.getHarnessType()));
             }
         }
-    }
-    
-    /**
-     * String startTime = "06:00";
-     * startDatePicker.setDate(new Date());
-     */    
+    }          
 
     public void reset_table_content() {
         open_result_table_data = new Vector();

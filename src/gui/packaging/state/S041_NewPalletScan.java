@@ -9,8 +9,8 @@ import helper.Helper;
 import helper.PrinterHelper;
 import entity.BaseContainer;
 import entity.BaseContainerTmp;
-import entity.BaseEngineLabel;
-import entity.BaseEngineLabelTmp;
+import entity.BaseHarnessAdditionalBarecode;
+import entity.BaseHarnessAdditionalBarecodeTmp;
 import entity.BaseHarness;
 import entity.HisBaseHarness;
 import javax.swing.ImageIcon;
@@ -101,14 +101,16 @@ public class S041_NewPalletScan implements State {
 
             //############### SET & SAVE ENGINE LABEL DATA #################       
             //if (Helper.context.getUser().getHarnessType().equals(Helper.ENGINE)) {
-            if(Helper.context.getBaseEngineLabelTmp().getLabelCode().length != 0)
-                for (String labelCode : Helper.context.getBaseEngineLabelTmp().getLabelCode()) {
-                    BaseEngineLabel bel = new BaseEngineLabel();
+            if(Helper.context.getBaseHarnessAdditionalBarecodeTmp().getLabelCode().length != 0)
+                for (String labelCode : Helper.context.getBaseHarnessAdditionalBarecodeTmp().getLabelCode()) {
+                    BaseHarnessAdditionalBarecode bel = new BaseHarnessAdditionalBarecode();
                     bel.setDefautlVals();
                     bel.setLabelCode(labelCode);
                     bel.setHarness(bh);
                     bel.create(bel);
                 }       
+            //}
+            //##############################################################       
             //}
             //##############################################################
 
@@ -150,7 +152,7 @@ public class S041_NewPalletScan implements State {
     public void clearContextSessionVals() {
         //Pas besoin de réinitialiser le uid
         Helper.context.setBaseContainerTmp(new BaseContainerTmp());
-        Helper.context.setBaseEngineLabelTmp(new BaseEngineLabelTmp());
+        Helper.context.setBaseHarnessAdditionalBarecodeTmp(new BaseHarnessAdditionalBarecodeTmp());
     }
 
     public String toString() {

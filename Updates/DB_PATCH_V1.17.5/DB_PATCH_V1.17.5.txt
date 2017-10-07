@@ -1,0 +1,24 @@
+Database Patch update 06/06/2017
+--------------------------------------
+ALTER TABLE base_container ADD COLUMN price float;
+UPDATE base_container SET price = 0.00;
+ALTER TABLE base_container ADD COLUMN destination character varying(255);
+UPDATE base_container SET destination = '';
+UPDATE config_ucs SET price = 0.00;
+
+ALTER TABLE load_plan_line ADD COLUMN price float;
+UPDATE load_plan_line SET price = 0.00;
+
+ALTER TABLE load_plan_line ADD COLUMN std_time float;
+UPDATE load_plan_line SET std_time = 0.00;
+
+ALTER TABLE load_plan_line ADD COLUMN dispatch_label_no character varying(255);
+UPDATE load_plan_line SET dispatch_label_no = '';
+
+
+
+
+ALTER TABLE config_ucs ADD COLUMN destination character varying(255);
+UPDATE config_ucs SET destination = '';
+
+INSERT INTO load_plan_destination(id, destination) VALUES (3, 'INVENTAIRE');

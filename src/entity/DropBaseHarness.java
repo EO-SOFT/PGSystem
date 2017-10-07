@@ -98,7 +98,7 @@ public class DropBaseHarness extends DAO implements java.io.Serializable {
     private String workplace;
 
     @OneToMany(fetch = FetchType.EAGER, mappedBy = "harness", cascade = CascadeType.ALL)
-    private Set<DropBaseEngineLabel> dropBaseEngineLabels = new HashSet<DropBaseEngineLabel>(0);
+    private Set<DropBaseHarnessAdditionalBarecode> dropAdditionalBarcodes = new HashSet<DropBaseHarnessAdditionalBarecode>(0);
 
     public DropBaseHarness() {
     }
@@ -267,12 +267,12 @@ public class DropBaseHarness extends DAO implements java.io.Serializable {
         this.dropTime = dropTime;
     }        
 
-    public Set<DropBaseEngineLabel> getBaseEngineLabels() {
-        return dropBaseEngineLabels;
+    public Set<DropBaseHarnessAdditionalBarecode> getHarnessAdditionalBarecodes() {
+        return dropAdditionalBarcodes;
     }
 
-    public void setBaseEngineLabels(Set<DropBaseEngineLabel> dropBaseEngineLabels) {
-        this.dropBaseEngineLabels = dropBaseEngineLabels;
+    public void setHarnessAdditionalBarcodes(Set<DropBaseHarnessAdditionalBarecode> dropAdditionalBarcodes) {
+        this.dropAdditionalBarcodes = dropAdditionalBarcodes;
     }
 
     public double getStdTime() {
@@ -397,7 +397,7 @@ public class DropBaseHarness extends DAO implements java.io.Serializable {
 
     @Override
     public String toString() {
-        return "DropBaseHarness{" + "id=" + id + ", createTime=" + createTime + ", writeTime=" + writeTime + ", createId=" + createId + ", writeId=" + writeId + ", harnessPart=" + harnessPart + ", counter=" + counter + ", user=" + user + ", containerId=" + containerId + ", container=" + container + ", palletNumber=" + palletNumber + ", harnessType=" + harnessType + ", dropFeedback=" + dropFeedback + ", baseEngineLabels=" + dropBaseEngineLabels + '}';
+        return "DropBaseHarness{" + "id=" + id + ", createTime=" + createTime + ", writeTime=" + writeTime + ", createId=" + createId + ", writeId=" + writeId + ", harnessPart=" + harnessPart + ", counter=" + counter + ", user=" + user + ", containerId=" + containerId + ", container=" + container + ", palletNumber=" + palletNumber + ", harnessType=" + harnessType + ", dropFeedback=" + dropFeedback + ", AdditionalBarcodes=" + dropAdditionalBarcodes + '}';
     }
 
 }

@@ -6,7 +6,7 @@
 package gui.packaging.state;
 
 import helper.Helper;
-import entity.BaseEngineLabel;
+import entity.BaseHarnessAdditionalBarecode;
 import entity.ConfigBarcode;
 import helper.HQLHelper;
 import java.util.Iterator;
@@ -30,7 +30,7 @@ public class S031_PlasticBagScan implements State {
     //
     private int patternIndex = 0;
 
-    public S031_PlasticBagScan(int numberOfPatterns, String[] patternList) {
+    public S031_PlasticBagScan(int numberOfPatterns, String[][] patternList) {
         this.numberOfPatterns = numberOfPatterns;
         Helper.Packaging_Gui.setIconLabel(this.imgIcon);
         //Reload container table content
@@ -39,45 +39,16 @@ public class S031_PlasticBagScan implements State {
         //this.loadPlasticBagPattern();
 
         if (this.numberOfPatterns != 0 && this.patternIndex == 0) {
-            Helper.Packaging_Gui.setRequestedPallet_txt(String.format("Scanner le code à barre sachet N° %d / %d ", this.patternIndex + 1, this.numberOfPatterns));
+            Helper.Packaging_Gui.setRequestedPallet_txt(String.format("Scanner code à barre N° %d / %d. %s ", this.patternIndex + 1, this.numberOfPatterns, patternList[this.patternIndex][1]));
         }
 
     }
 
-    public void loadPlasticBagPattern() {
-        //PLASTICBAG_BARCODE_PATTERN_LIST
-        System.out.println("Loading PLASTICBAG_BARCODE_PATTERN_LIST pattern list ... ");
-        Helper.startSession();
-        Query query = Helper.sess.createQuery(HQLHelper.GET_PATTERN_BY_HARNESSPART);
-        query.setParameter("harnessPart", Helper.context.getBaseContainerTmp().getHarnessPart().substring(1));
-        Helper.sess.getTransaction().commit();
-        List resultList = query.list();
-        System.out.println(String.format("%d pattern found for part number %s ", query.list().size(), Helper.context.getBaseContainerTmp().getHarnessPart().substring(1)));
-        if (query.list().size() != 0) {
-            Helper.PLASTICBAG_BARCODE_PATTERN_LIST = new String[query.list().size()];
-            //Allouer de l'espace pour la liste des code à barre getBaseEngineLabelTmp
-            Helper.context.getBaseEngineLabelTmp().setLabelCode(new String[query.list().size()]);
-            int i = 0;
-            for (Iterator it = resultList.iterator(); it.hasNext();) {
-                this.numberOfPatterns++;
-                ConfigBarcode object = (ConfigBarcode) it.next();
-                Helper.PLASTICBAG_BARCODE_PATTERN_LIST[i] = object.getBarcodePattern();
-                i++;
-
-            }
-            System.out.println(String.format("PLASTICBAG_BARCODE_PATTERN_LIST %d pattern(s) successfuly loaded 100% ! ", numberOfPatterns));
-        }else{//No pattern found ! Allez directement au choix de la palette !
-            this.doAction(new Context());
-            
-            S040_PalletChoice state = new S040_PalletChoice();
-            Helper.context.setState(state);            
-        }
-    }
 
     public void doAction(Context context) {
         JTextField scan_txtbox = Helper.Packaging_Gui.getScanTxt();
         String engineLabel = scan_txtbox.getText().trim();
-        BaseEngineLabel bel = new BaseEngineLabel();
+        BaseHarnessAdditionalBarecode bel = new BaseHarnessAdditionalBarecode();
 
         //Tester le format et l'existance et si le engineLabel concerne ce harness part
         if (!bel.checkLabelFormat(engineLabel)) {//Problème de format
@@ -96,12 +67,12 @@ public class S031_PlasticBagScan implements State {
             //Boucler sur le nombre des codes à barre pour cette référence.
             if (this.patternIndex + 1 < this.numberOfPatterns) {
                 this.clearScanBox(scan_txtbox);
-                Helper.context.getBaseEngineLabelTmp().setLabelCode(this.patternIndex, engineLabel);
+                Helper.context.getBaseHarnessAdditionalBarecodeTmp().setLabelCode(this.patternIndex, engineLabel);
                 Helper.log.info("First Valid Engine Label scanned [" + engineLabel + "] OK.");
                 this.patternIndex++;
-                Helper.Packaging_Gui.setRequestedPallet_txt(String.format("Scanner le code à barre sachet N° %d / %d ", this.patternIndex + 1, this.numberOfPatterns));
+                Helper.Packaging_Gui.setRequestedPallet_txt(String.format("Scanner le code à barre sachet N° %d / %d. %s ", this.patternIndex + 1, this.numberOfPatterns, Helper.PLASTICBAG_BARCODE_PATTERN_LIST[this.patternIndex][1]));
             } else { // Touts les patternes se sont scannés
-                Helper.context.getBaseEngineLabelTmp().setLabelCode(this.patternIndex, engineLabel);
+                Helper.context.getBaseHarnessAdditionalBarecodeTmp().setLabelCode(this.patternIndex, engineLabel);
                 Helper.Packaging_Gui.setRequestedPallet_txt("");
                 this.clearScanBox(scan_txtbox);
                 S040_PalletChoice state = new S040_PalletChoice();

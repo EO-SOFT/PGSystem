@@ -9,7 +9,7 @@ import entity.BaseContainer;
 import helper.Helper;
 import helper.HQLHelper;
 import entity.BaseContainerTmp;
-import entity.BaseEngineLabelTmp;
+import entity.BaseHarnessAdditionalBarecodeTmp;
 import entity.ConfigUcs;
 import helper.PrinterHelper;
 import helper.UIHelper;
@@ -25,6 +25,11 @@ import javax.swing.table.DefaultTableModel;
 import org.hibernate.Query;
 import gui.packaging.state.S020_HarnessPartScan;
 import gui.packaging.state.S041_NewPalletScan;
+import java.awt.Color;
+import java.awt.Component;
+import javax.swing.JLabel;
+import javax.swing.JTable;
+import javax.swing.table.DefaultTableCellRenderer;
 
 /**
  *
@@ -35,6 +40,7 @@ public final class PACKAGING_UI9000_ChoosePackType extends javax.swing.JDialog {
     Vector result_table_data = new Vector();
     Vector<String> ucs_result_table_header = new Vector<String>();
     private List<Object[]> resultList;
+    int SPECIAL_COMMANDE_INDEX = 12;
     List<String> table_header = Arrays.asList(
             "ID",
             "CPN",
@@ -68,7 +74,14 @@ public final class PACKAGING_UI9000_ChoosePackType extends javax.swing.JDialog {
 
         Helper.sess.getTransaction().commit();
         List result = query.list();
-
+        if (result.size() == 0) {
+            JOptionPane.showMessageDialog(null, "Pas d'UCS configuré pour le PN " + harness_part);
+            //Clear session vals in context
+            clearContextSessionVals();
+            // Change go back to state HarnessPartScan                    
+            S020_HarnessPartScan state = new S020_HarnessPartScan();
+            Helper.context.setState(state);
+        }
         this.reload_result_table_data(result);
 
         this.setVisible(true);
@@ -105,6 +118,7 @@ public final class PACKAGING_UI9000_ChoosePackType extends javax.swing.JDialog {
         ucs_jtable.setModel(new DefaultTableModel(result_table_data, ucs_result_table_header));
         ucs_jtable.setFont(new Font(String.valueOf(Helper.PROP.getProperty("JTABLE_FONT")), Font.BOLD, 16));
         ucs_jtable.setRowHeight(Integer.valueOf(Helper.PROP.getProperty("JTABLE_ROW_HEIGHT")));
+        setContainerTableRowsStyle();
     }
 
     public void disableEditingTables() {
@@ -118,7 +132,30 @@ public final class PACKAGING_UI9000_ChoosePackType extends javax.swing.JDialog {
             ucs_result_table_header.add(it.next());
         }
     }
+    
+    public void setContainerTableRowsStyle() {
+        ucs_jtable.setDefaultRenderer(Object.class, new DefaultTableCellRenderer() {
+            @Override
+            public Component getTableCellRendererComponent(JTable table,
+                    Object value, boolean isSelected, boolean hasFocus, int row, int col) {
 
+                super.getTableCellRendererComponent(table, value, isSelected, hasFocus, row, col);
+
+                Integer status = Integer.valueOf(table.getModel().getValueAt(row, SPECIAL_COMMANDE_INDEX).toString());
+                if (status == 1) {
+                    setBackground(Color.YELLOW);
+                    setForeground(Color.BLACK);
+                }
+                else{
+                    setBackground(Color.WHITE);
+                    setForeground(Color.BLACK);
+                } 
+                setHorizontalAlignment(JLabel.CENTER);
+
+                return this;
+            }
+        });
+    }
 
     private void initGui() {
 
@@ -262,7 +299,7 @@ public final class PACKAGING_UI9000_ChoosePackType extends javax.swing.JDialog {
         Helper.context.getBaseContainerTmp().setSpecial_order(Integer.valueOf(ucs_jtable.getValueAt(ucs_jtable.getSelectedRow(), 12).toString()));
         Helper.context.getBaseContainerTmp().setOrder_no((String) ucs_jtable.getValueAt(ucs_jtable.getSelectedRow(), 13));
         Helper.context.getBaseContainerTmp().setChoosen_pack_type((String) ucs_jtable.getValueAt(ucs_jtable.getSelectedRow(), 4));
-        
+
         System.out.println(Helper.context.getBaseContainerTmp().toString());
     }
 
@@ -334,7 +371,7 @@ public final class PACKAGING_UI9000_ChoosePackType extends javax.swing.JDialog {
             // User has pressed Carriage return button
             if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
                 //Set context session vals with the choosen valus after split them
-                System.out.println("Selected Row "+ucs_jtable.getValueAt(ucs_jtable.getSelectedRow(), 0).toString());
+                System.out.println("Selected Row " + ucs_jtable.getValueAt(ucs_jtable.getSelectedRow(), 0).toString());
                 Integer ucs_id = Integer.valueOf(ucs_jtable.getValueAt(ucs_jtable.getSelectedRow(), 0).toString());
                 this.mappingValsToContext();
                 List result;
@@ -342,7 +379,7 @@ public final class PACKAGING_UI9000_ChoosePackType extends javax.swing.JDialog {
                 /**
                  * -------------------------------
                  */
-            //Checker si des palettes du même type se sont ouvertes sur
+                //Checker si des palettes du même type se sont ouvertes sur
                 //la meme poste emballage.                        
                 Helper.startSession();
                 //Check s'il n'y a pas une palette ouverte pour la même référence avec le même type packaging.
@@ -359,7 +396,7 @@ public final class PACKAGING_UI9000_ChoosePackType extends javax.swing.JDialog {
                     if (Integer.valueOf(Helper.PROP.getProperty("UNIQUE_PALLET_PER_PACK_TYPE")) == 1) {
                         result = null;
                         Helper.startSession();
-                    //Check s'il n'y a pas de palette ouverte pour le même 
+                        //Check s'il n'y a pas de palette ouverte pour le même 
                         //packaging et en cours dans le même workstation.
                         query = Helper.sess.createQuery(
                                 "FROM BaseContainer bc WHERE "
@@ -416,7 +453,7 @@ public final class PACKAGING_UI9000_ChoosePackType extends javax.swing.JDialog {
     public void clearContextSessionVals() {
         //Pas besoin de réinitialiser le uid
         Helper.context.setBaseContainerTmp(new BaseContainerTmp());
-        Helper.context.setBaseEngineLabelTmp(new BaseEngineLabelTmp());
+        Helper.context.setBaseHarnessAdditionalBarecodeTmp(new BaseHarnessAdditionalBarecodeTmp());
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

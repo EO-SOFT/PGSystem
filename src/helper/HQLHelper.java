@@ -37,9 +37,9 @@ public class HQLHelper {
     public final static String GET_HP_BY_COUNTER = "FROM BaseHarness bh WHERE bh.counter = :counter";
     public final static String GET_HP_BY_HP = "FROM BaseHarness bh WHERE bh.harnessPart = :hp";
     public final static String GET_HP_BY_PALLET_NUMBER = "FROM BaseHarness bh WHERE bh.palletNumber = :palletNumber";
-    //BaseEngineLabel
-    public final static String GET_ENGINE_LABEL_BY_CODE = "FROM BaseEngineLabel bel WHERE bel.labelCode = :labelCode";
-    public final static String DEL_LABEL_BY_HP_ID = "DELETE FROM BaseEngineLabel bel WHERE bel.harnessId = :harnessId";
+    //BaseHarnessAdditionalBarecode
+    public final static String GET_ADDITIONAL_BARCODES_BY_CODE = "FROM BaseHarnessAdditionalBarecode bel WHERE bel.labelCode = :labelCode ORDER BY id ASC";
+    public final static String DEL_LABEL_BY_HP_ID = "DELETE FROM BaseHarnessAdditionalBarecode bel WHERE bel.harnessId = :harnessId";
     //ConfigUCS
     public final static String GET_UCS_BY_ID = "FROM ConfigUcs cu WHERE cu.id = :id";
     public final static String GET_UCS_BY_HP = "FROM ConfigUcs cu WHERE cu.harnessPart = :hp";

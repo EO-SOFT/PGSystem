@@ -1,8 +1,0 @@
-oct. 11, 2016 7:55:12 AM helper.Helper InitDailyDestPrintDir
-INFOS: Print directory [.\print\2016_10_11] is created!
-Print sub directory [.\print\2016_10_11.\open_sheet] is created!
-Print sub directory [.\print\2016_10_11.\closing_sheet] is created!
-Print sub directory [.\print\2016_10_11.\picking_label] is created!
-
-oct. 11, 2016 7:55:20 AM gui.config.CONFIG_UI0000_AdminPassword checkLoginAndPass
-INFOS: User Admin   / 9999 connected to host WSMA7040 at 2016-10-11 07:55:20 Module : Planner.

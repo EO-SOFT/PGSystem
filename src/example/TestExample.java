@@ -1,7 +1,7 @@
 package example;
 
 import entity.BaseContainer;
-import entity.BaseEngineLabel;
+import entity.BaseHarnessAdditionalBarecode;
 import entity.BaseHarness;
 import entity.BaseModule;
 import java.util.Iterator;
@@ -189,7 +189,7 @@ public class TestExample {
 //        bh.setUser("ezou1001");        
 //        bh.create(bh);
 ////        
-//        BaseEngineLabel bel = new BaseEngineLabel();
+//        BaseHarnessAdditionalBarecode bel = new BaseHarnessAdditionalBarecode();
 //        bel.setCreateId(1);
 //        bel.setCreateTime(new Date());
 //        bel.setWriteId(1);
@@ -198,7 +198,7 @@ public class TestExample {
 //        bel.setLabelCode("999999");
 //        bel.create(bel);
 //        
-//        BaseEngineLabel bel2 = new BaseEngineLabel();
+//        BaseHarnessAdditionalBarecode bel2 = new BaseHarnessAdditionalBarecode();
 //        bel2.setCreateId(1);
 //        bel2.setCreateTime(new Date());
 //        bel2.setWriteId(1);

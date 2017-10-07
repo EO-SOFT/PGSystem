@@ -101,7 +101,7 @@ public class BaseHarness extends DAO implements java.io.Serializable {
     private String workplace;
 
     @OneToMany(fetch = FetchType.EAGER, mappedBy = "harness", cascade = CascadeType.ALL)
-    private Set<BaseEngineLabel> baseEngineLabels = new HashSet<BaseEngineLabel>(0);
+    private Set<BaseHarnessAdditionalBarecode> additionalBarcodes = new HashSet<BaseHarnessAdditionalBarecode>(0);
 
     public BaseHarness() {
     }
@@ -250,12 +250,12 @@ public class BaseHarness extends DAO implements java.io.Serializable {
         this.harnessType = harnessType;
     }
 
-    public Set<BaseEngineLabel> getBaseEngineLabels() {
-        return baseEngineLabels;
+    public Set<BaseHarnessAdditionalBarecode> getAdditionalBarcodes() {
+        return additionalBarcodes;
     }
 
-    public void setBaseEngineLabels(Set<BaseEngineLabel> baseEngineLabels) {
-        this.baseEngineLabels = baseEngineLabels;
+    public void setAdditionalBarcodes(Set<BaseHarnessAdditionalBarecode> additionalBarcodes) {
+        this.additionalBarcodes = additionalBarcodes;
     }
 
     public double getStdTime() {

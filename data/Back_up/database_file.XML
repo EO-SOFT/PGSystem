@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Liste_Contenaires>
-  <contenaire date_debut_lecture="2016-01-26 08:59:02 " date_fin_lecture="2016-01-26 08:59:02 " qte_expected="1" harness_Part="Harness Part_c" index="index" pallet_Number="pallet_number" supplier_part_number="supp_part" operateur="0operateur_fx">
-    <faisceaux harness_Part_fx="harness_Part_fx" cpt="100001" operateur_fx="0operateur_fx" date="2016-01-26 08:59:02 " />
-  </contenaire>
-</Liste_Contenaires>
-

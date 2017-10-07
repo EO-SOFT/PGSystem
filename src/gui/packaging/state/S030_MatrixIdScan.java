@@ -92,32 +92,42 @@ public class S030_MatrixIdScan implements State {
      * @return patterns de scanne configurer pour ce part number.
      *
      */
-    public String[] loadPlasticBagPattern() {
+    public String[][] loadPlasticBagPattern() {
 
         //PLASTICBAG_BARCODE_PATTERN_LIST
-        System.out.println("Loading PLASTICBAG_BARCODE_PATTERN_LIST pattern list ... ");
+        String PN = "";
+        
         Helper.startSession();
         Query query = Helper.sess.createQuery(HQLHelper.GET_PATTERN_BY_HARNESSPART);
-        query.setParameter("harnessPart", Helper.context.getBaseContainerTmp().getHarnessPart().substring(1));
+        if(Helper.context.getBaseContainerTmp().getHarnessPart().startsWith(Helper.HARN_PART_PREF))
+            PN = Helper.context.getBaseContainerTmp().getHarnessPart().substring(1);
+        else
+            PN = Helper.context.getBaseContainerTmp().getHarnessPart();
+        
+        System.out.println("Loading Additional barecodes pattern list for PN %s... "+PN);
+        query.setParameter("harnessPart", PN);
         Helper.sess.getTransaction().commit();
         List resultList = query.list();
-        System.out.println(String.format("%d pattern found for part number %s ", query.list().size(), Helper.context.getBaseContainerTmp().getHarnessPart().substring(1)));
+        System.out.println(String.format("%d pattern found for part number %s ", query.list().size(), PN));
         if (!query.list().isEmpty()) {
-            Helper.PLASTICBAG_BARCODE_PATTERN_LIST = new String[query.list().size()];
-            //Allouer de l'espace pour la liste des code à barre getBaseEngineLabelTmp
-            Helper.context.getBaseEngineLabelTmp().setLabelCode(new String[query.list().size()]);
+            Helper.PLASTICBAG_BARCODE_PATTERN_LIST = new String[query.list().size()][2];
+            //Allouer de l'espace pour la liste des code à barre getBaseHarnessAdditionalBarecodeTmp
+            Helper.context.getBaseHarnessAdditionalBarecodeTmp().setLabelCode(new String[query.list().size()]);
             int i = 0;
             for (Iterator it = resultList.iterator(); it.hasNext();) {
                 this.numberOfPatterns++;
-                ConfigBarcode object = (ConfigBarcode) it.next();
-                Helper.PLASTICBAG_BARCODE_PATTERN_LIST[i] = object.getBarcodePattern();
+                ConfigBarcode config = (ConfigBarcode) it.next();
+                Helper.PLASTICBAG_BARCODE_PATTERN_LIST[i][0] = config.getBarcodePattern();
+                Helper.PLASTICBAG_BARCODE_PATTERN_LIST[i][1] = config.getDescription();
                 i++;
             }
             
             System.out.println("PLASTICBAG_BARCODE_PATTERN_LIST "+this.numberOfPatterns+" pattern(s) successfuly loaded 100% ! ");
         }
-        else
-            Helper.PLASTICBAG_BARCODE_PATTERN_LIST = new String[0];
+        else{
+            Helper.PLASTICBAG_BARCODE_PATTERN_LIST = new String[0][0];
+            
+        }
         //No pattern found ! Retourner une liste vide.
         return Helper.PLASTICBAG_BARCODE_PATTERN_LIST;
     }
