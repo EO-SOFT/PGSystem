@@ -5,7 +5,6 @@
  */
 package gui.config;
 
-import gui.planner.*;
 import entity.HisLogin;
 import entity.ManufactureUsers;
 import helper.ComboItem;
@@ -20,7 +19,6 @@ import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JComboBox;
-import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import org.hibernate.Query;
 import gui.packaging.state.S010_UserCodeScan;
@@ -42,9 +40,9 @@ public class CONFIG_UI0000_AUTH extends javax.swing.JDialog {
     public CONFIG_UI0000_AUTH(Frame parent, boolean modal) {
         super(parent, modal);
         menus_list = new JComboBox();
-        
+
         initComponents();
-        
+
         initMenusList();
         this.parent = parent;
         Helper.centerJDialog(this);
@@ -52,8 +50,9 @@ public class CONFIG_UI0000_AUTH extends javax.swing.JDialog {
     }
 
     public final void initMenusList() {
-        for (int i = 0; i < Helper.CONFIG_MENUS.size(); i++)         
-            menus_list.addItem(new ComboItem(Helper.CONFIG_MENUS.get(i), Helper.CONFIG_MENUS.get(i)));                
+        for (int i = 0; i < Helper.CONFIG_MENUS.size(); i++) {
+            menus_list.addItem(new ComboItem(Helper.CONFIG_MENUS.get(i), Helper.CONFIG_MENUS.get(i)));
+        }
     }
 
     /**
@@ -243,30 +242,29 @@ public class CONFIG_UI0000_AUTH extends javax.swing.JDialog {
 
     public void select_menu() {
         System.out.println("Selected menu [" + menus_list.getSelectedItem() + "]");
-        System.out.println("Config ["+Helper.CONFIG_MENUS.get(1)+"]");
         //"Unités de conditionnement standard (UCS)",
-        if (menus_list.getSelectedItem().toString().equals(Helper.CONFIG_MENUS.get(1).toString())) {//
+        if (menus_list.getSelectedItem().toString().equals(Helper.CONFIG_MENUS.get(1))) {//
             new CONFIG_UI0001_UCS_CONFIG(parent, true).setVisible(true);
             this.dispose();
         } //"Masque code à barre",
-        else if (menus_list.getSelectedItem().toString().equals(Helper.CONFIG_MENUS.get(2).toString())) {            
-            new CONFIG_IN_UI0001_BARCODE_CONFIG(parent, true).setVisible(true);
+        else if (menus_list.getSelectedItem().toString().equals(Helper.CONFIG_MENUS.get(2))) {
+            new CONFIG_UI0001_BARCODE_CONFIG().setVisible(true);
             this.dispose();
         } //"Utilisateurs"
         else if (menus_list.getSelectedItem().toString().equals(Helper.CONFIG_MENUS.get(3))) {
             new CONFIG_UI0003_USERS(parent, true).setVisible(true);
             this.dispose();
-            
+
         } //"Planner"
-        else if (menus_list.getSelectedItem().toString().equals(Helper.CONFIG_MENUS.get(4))) {
-            this.parent.setState(JFrame.ICONIFIED);
-            PLANNER_UI0001_Main planner = new PLANNER_UI0001_Main(null, null);
-            planner.setVisible(true);
-            planner.toFront();
-            planner.repaint();
-            this.dispose();
-        }
-        else if (menus_list.getSelectedItem().toString().equals(Helper.CONFIG_MENUS.get(5))) { //packaging config
+        //        else if (menus_list.getSelectedItem().toString().equals(Helper.CONFIG_MENUS.get(4))) {
+        //            this.parent.setState(JFrame.ICONIFIED);
+        //            PLANNER_UI0001_Main planner = new PLANNER_UI0001_Main(null, null);
+        //            planner.setVisible(true);
+        //            planner.toFront();
+        //            planner.repaint();
+        //            this.dispose();
+        //        }
+        else if (menus_list.getSelectedItem().toString().equals(Helper.CONFIG_MENUS.get(4))) { //packaging config
 //            this.parent.setState(JFrame.ICONIFIED);
             CONFIG_UI0002_PACKAGING_CONFIG packaging_config = new CONFIG_UI0002_PACKAGING_CONFIG(null, false);
             packaging_config.setVisible(true);

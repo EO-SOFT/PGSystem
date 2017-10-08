@@ -8,6 +8,7 @@ package gui.warehouse_dispatch;
 import entity.LoadPlan;
 import entity.LoadPlanLinePackaging;
 import entity.PackagingItems;
+import entity.PackagingStockMovement;
 import gui.warehouse_dispatch.state.WarehouseHelper;
 import helper.ComboItem;
 import helper.HQLHelper;
@@ -20,6 +21,7 @@ import java.awt.event.KeyEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.util.Arrays;
+import java.util.Date;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Vector;
@@ -60,6 +62,7 @@ public class WAREHOUSE_DISPATCH_UI0008_SET_PACKAGING_OF_PILE extends javax.swing
 
     /**
      * Creates new form WAREHOUSE_DISPATCH_UI0008_SET_PACKAGING_OF_PILE
+     *
      * @param parent
      * @param modal
      * @param destinationWh
@@ -113,14 +116,12 @@ public class WAREHOUSE_DISPATCH_UI0008_SET_PACKAGING_OF_PILE extends javax.swing
         }
 
     }
-    
-    
 
     private boolean initGui() {
         if (initPilesBox(this.lp.getId())) {
             load_plan_id_txt.setText(lp.getId() + "");
             destination_txt.setText(this.destinationWh);
-            if(WarehouseHelper.LOAD_PLAN_STATE_CLOSED.equals(this.lp.getPlanState())){
+            if (WarehouseHelper.LOAD_PLAN_STATE_CLOSED.equals(this.lp.getPlanState())) {
                 UIHelper.setComponentsState(false, ok_btn, ok_and_close_btn, pack_items_box, piles_box, qty_txt, comment_txt);
             }
             initPackItemsBox();
@@ -180,38 +181,38 @@ public class WAREHOUSE_DISPATCH_UI0008_SET_PACKAGING_OF_PILE extends javax.swing
     private void initjTableDoubleClick() {
         this.pack_items_jtable.addMouseListener(
                 new MouseAdapter() {
-                    private LoadPlanLinePackaging packLineAux = this.packLineAux;
+            private LoadPlanLinePackaging packLineAux = this.packLineAux;
 
-                    public void mouseClicked(MouseEvent e) {
-                        if (e.getClickCount() == 2) {
-                            loadPackItemsValues(this.packLineAux);
-                        }
-                    }
+            public void mouseClicked(MouseEvent e) {
+                if (e.getClickCount() == 2) {
+                    loadPackItemsValues(this.packLineAux);
+                }
+            }
 
-                    public void loadPackItemsValues(LoadPlanLinePackaging packLineAux) {
-                        String id = String.valueOf(pack_items_jtable.getValueAt(pack_items_jtable.getSelectedRow(), 0));
-                        Helper.startSession();
-                        Query query = Helper.sess.createQuery(HQLHelper.GET_LOAD_PLAN_PACKAGING_BY_ID);
-                        query.setParameter("id", Integer.valueOf(id));
+            public void loadPackItemsValues(LoadPlanLinePackaging packLineAux) {
+                String id = String.valueOf(pack_items_jtable.getValueAt(pack_items_jtable.getSelectedRow(), 0));
+                Helper.startSession();
+                Query query = Helper.sess.createQuery(HQLHelper.GET_LOAD_PLAN_PACKAGING_BY_ID);
+                query.setParameter("id", Integer.valueOf(id));
 
-                        Helper.sess.getTransaction().commit();
-                        List result = query.list();
-                        this.packLineAux = (LoadPlanLinePackaging) result.get(0);
-                        loadDataToLabels(this.packLineAux);
-                    }
+                Helper.sess.getTransaction().commit();
+                List result = query.list();
+                this.packLineAux = (LoadPlanLinePackaging) result.get(0);
+                loadDataToLabels(this.packLineAux);
+            }
 
-                    private void loadDataToLabels(LoadPlanLinePackaging packLineAux) {
-                        load_plan_id_txt.setText(packLineAux.getLoadPlanId() + "");
-                        destination_txt.setText(packLineAux.getDestination());
-                        for (int i = 0; i < pack_items_box.getItemCount(); i++) {
-                            if (pack_items_box.getItemAt(i).toString() == null ? packLineAux.getPackItem().toString() == null : pack_items_box.getItemAt(i).toString().equals(packLineAux.getPackItem().toString())) {
-                                pack_items_box.setSelectedIndex(i);
-                            }
-                        }
-                        id_txt.setText(packLineAux.getId() + "");
-                        qty_txt.setText(packLineAux.getQty() + "");
+            private void loadDataToLabels(LoadPlanLinePackaging packLineAux) {
+                load_plan_id_txt.setText(packLineAux.getLoadPlanId() + "");
+                destination_txt.setText(packLineAux.getDestination());
+                for (int i = 0; i < pack_items_box.getItemCount(); i++) {
+                    if (pack_items_box.getItemAt(i).toString() == null ? packLineAux.getPackItem().toString() == null : pack_items_box.getItemAt(i).toString().equals(packLineAux.getPackItem().toString())) {
+                        pack_items_box.setSelectedIndex(i);
                     }
                 }
+                id_txt.setText(packLineAux.getId() + "");
+                qty_txt.setText(packLineAux.getQty() + "");
+            }
+        }
         );
     }
 
@@ -221,7 +222,7 @@ public class WAREHOUSE_DISPATCH_UI0008_SET_PACKAGING_OF_PILE extends javax.swing
                 || Integer.valueOf(qty_txt.getText().toString()) == 0
                 || Integer.valueOf(qty_txt.getText().toString()) == null) {
             JOptionPane.showMessageDialog(null, "Erreur quantité.", "Erreur utilisateur !", ERROR_MESSAGE);
-            
+
         } else {
             if (id_txt.getText().equals("")) //Is a new entry
             {
@@ -233,6 +234,7 @@ public class WAREHOUSE_DISPATCH_UI0008_SET_PACKAGING_OF_PILE extends javax.swing
                         destination_txt.getText(),
                         comment_txt.getText());
                 p.create(p);
+                
                 clearPackItemsTabFields();
                 msg_lbl.setText("Nouveau élément enregistré !");
             } else { // Is an update
@@ -250,7 +252,7 @@ public class WAREHOUSE_DISPATCH_UI0008_SET_PACKAGING_OF_PILE extends javax.swing
                 this.packLineAux.update(this.packLineAux);
                 msg_lbl.setText("Données mises à jour !");
                 clearPackItemsTabFields();
-                
+
             }
         }
     }
@@ -319,7 +321,7 @@ public class WAREHOUSE_DISPATCH_UI0008_SET_PACKAGING_OF_PILE extends javax.swing
     }
 
     private void refresh() {
-        
+
         String id = load_plan_id_txt.getText();
         Helper.startSession();
         Query query = Helper.sess.createQuery(HQLHelper.GET_LOAD_PLAN_PACKAGING_BY_PLAN_ID_AND_DEST);

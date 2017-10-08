@@ -5,7 +5,6 @@
  */
 package gui;
 
-import com.sun.jmx.snmp.tasks.Task;
 import gui.config.CONFIG_UI0000_AUTH;
 import gui.packaging.PACKAGING_UI0001_Main;
 import gui.packaging_warehouse.PACKAGING_WAREHOUSE_UI0001_PasswordRequest;
@@ -34,8 +33,8 @@ import gui.packaging.state.S010_UserCodeScan;
  *
  * @author Administrator
  */
-public class UI0000_ModuleChoice extends javax.swing.JFrame implements ActionListener, 
-                                        PropertyChangeListener {
+public class UI0000_ModuleChoice extends javax.swing.JFrame implements ActionListener,
+        PropertyChangeListener {
 
     //private static final int PORT = 12345;        // random large port number
     private static ServerSocket s;
@@ -48,6 +47,7 @@ public class UI0000_ModuleChoice extends javax.swing.JFrame implements ActionLis
     }
 
     class UpdateTask extends SwingWorker<Void, Void> {
+
         /*
          * Main task. Executed in background thread.
          */
@@ -58,16 +58,28 @@ public class UI0000_ModuleChoice extends javax.swing.JFrame implements ActionLis
             int progress = 0;
             //Initialize progress property.
             setProgress(0);
-            while (progress < 100) {
-                //Sleep for up to one second.
+            int a = 15;
+            for (int i = 0; i < a; i++) {
                 try {
-                    Thread.sleep(random.nextInt(1000));
+                    Thread.sleep(100);
                 } catch (InterruptedException ignore) {
                 }
-                //Make random progress.
-                progress += random.nextInt(10);
-                setProgress(Math.min(progress, 100));
+                System.out.println("i "+i);
+                System.out.println("tot"+(i*100)/a);
+                progress += (int) (i*100)/a;
+                System.out.println("progress "+progress);
+                setProgress(progress);
             }
+//            while (progress < 100) {
+//                //Sleep for up to one second.
+//                try {
+//                    Thread.sleep(100);
+//                } catch (InterruptedException ignore) {
+//                }
+//                //Make random progress.
+//                progress += random.nextInt(10);
+//                setProgress(Math.min(progress, 100));
+//            }
             return null;
         }
 
@@ -104,10 +116,11 @@ public class UI0000_ModuleChoice extends javax.swing.JFrame implements ActionLis
 
         }
     }
-    
-    public void setLogTextArea(String text){
-        this.log_text_area.setText(log_text_area.getText()+"\n"+text);
+
+    public void setLogTextArea(String text) {
+        this.log_text_area.setText(log_text_area.getText() + "\n" + text);
     }
+
     /**
      * Creates new form UI0000_ProjectChoice
      */
@@ -453,7 +466,7 @@ public class UI0000_ModuleChoice extends javax.swing.JFrame implements ActionLis
     }//GEN-LAST:event_WAREHOUSE_DISPATCH_MODULEActionPerformed
 
     private void SETTING_MODULEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SETTING_MODULEActionPerformed
-        CONFIG_UI0000_AUTH configuration = new CONFIG_UI0000_AUTH(null, rootPaneCheckingEnabled);
+        CONFIG_UI0000_AUTH configuration = new CONFIG_UI0000_AUTH(null, true);
         configuration.setVisible(true);
         this.setExtendedState(this.getExtendedState() | JFrame.ICONIFIED);
     }//GEN-LAST:event_SETTING_MODULEActionPerformed
@@ -481,7 +494,7 @@ public class UI0000_ModuleChoice extends javax.swing.JFrame implements ActionLis
         if ("progress" == evt.getPropertyName()) {
             int progress = (Integer) evt.getNewValue();
             progressBar.setValue(progress);
-            
+
 //            JOptionPane.showMessageDialog(null, String.format(
 //                    "Completed %d%% of task.\n", task.getProgress()));
         }
@@ -496,7 +509,7 @@ public class UI0000_ModuleChoice extends javax.swing.JFrame implements ActionLis
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
          * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
          */
-        /* try {
+ /* try {
          UIManager.setLookAndFeel("SyntheticaSilverMoonLookAndFeel");
          } catch (Exception e) {
          e.printStackTrace();
@@ -527,7 +540,7 @@ public class UI0000_ModuleChoice extends javax.swing.JFrame implements ActionLis
             @Override
             public void run() {
 
-                UI0000_ModuleChoice ui = new UI0000_ModuleChoice(); 
+                UI0000_ModuleChoice ui = new UI0000_ModuleChoice();
                 ui.setVisible(true);
                 Helper.loadConfigProperties();
                 String str = Helper.InitDailyLogFile(Helper.PROP.getProperty("LOG_PATH"));
@@ -538,7 +551,7 @@ public class UI0000_ModuleChoice extends javax.swing.JFrame implements ActionLis
                         Helper.PROP.getProperty("PRINT_CLOSING_PALLET_DIR"),
                         Helper.PROP.getProperty("PRINT_PICKING_SHEET_DIR"),
                         Helper.PROP.getProperty("PRINT_DISPATCH_SHEET_DIR"));
-                ui.setLogTextArea(str);                
+                ui.setLogTextArea(str);
             }
         });
 

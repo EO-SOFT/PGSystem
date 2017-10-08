@@ -589,7 +589,7 @@ public class Helper {
             "Unités de conditionnement standard (UCS)",
             "Masque code à barre",
             "Utilisateurs",
-            "Planner",
+            //"Planner",
             "Configuration packaging"
     );
 
@@ -1058,9 +1058,9 @@ public class Helper {
     }
 
     public static void loadCustomersInJbox(JComboBox jbox) {
-        List<String[]> result = new ConfigProject().selectCustomers();
+        List<String[]> result = new ConfigProject().selectHarnessType();
         if (result.isEmpty()) {
-            //JOptionPane.showMessageDialog(null, Helper.ERR0014_NO_PROJECT_FOUND, "Projects Configuration error !", ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(null, Helper.ERR0014_NO_PROJECT_FOUND, "Projects Configuration error !", ERROR_MESSAGE);
             System.err.println(Helper.ERR0014_NO_PROJECT_FOUND);
         } else {
             System.out.println(result.toString());

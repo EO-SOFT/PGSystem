@@ -143,76 +143,78 @@ public class CONFIG_UI0001_UCS_CONFIG extends javax.swing.JFrame {
     private void initContainerTableDoubleClick() {
         this.ucs_table.addMouseListener(
                 new MouseAdapter() {
-                    @Override
-                    public void mouseClicked(MouseEvent e) {
-                        if (e.getClickCount() == 2) {
-                            Helper.startSession();
-                            Query query = Helper.sess.createQuery(HQLHelper.GET_UCS_BY_ID);
-                            query.setParameter("id", Integer.valueOf(ucs_table.getValueAt(ucs_table.getSelectedRow(), 0).toString()));
-                            Helper.sess.getTransaction().commit();
-                            aux = (ConfigUcs) query.list().get(0);
-                            id_lbl.setText(aux.getId().toString());
-                            cpn_txtbox.setText(aux.getHarnessPart());
-                            lpn_txtbox.setText(aux.getSupplierPartNumber());
-                            index_txtbox.setText(aux.getHarnessIndex());
-                            try {
-                                stdTime_txtbox.setText(aux.getStdTime() + "");
-                            } catch (Exception ex) {
-                                stdTime_txtbox.setText("0.00");
-                            }
-                            try {
-                                price_txtbox.setText(aux.getPrice() + "");
-                            } catch (Exception ex) {
-                                price_txtbox.setText("0.00");
-                            }
-                            pack_size_txtbox.setText(aux.getPackSize() + "");
-                            assy_txtbox.setText(aux.getAssyWorkstationName());
-                            barcodes_nbre_txtbox.setText(aux.getAdditionalBarcode() + "");
-                            lifes_txtbox.setText(aux.getLifes() + "");
-                            for (int i = 0; i < pack_type_filter.getItemCount(); i++) {
-                                if (pack_type_filter.getItemAt(i).toString().equals(aux.getPackType())) {
-                                    pack_type_filter.setSelectedIndex(i);
-                                    break;
-                                }
-                            }
-                            //segment_txtbox.setText(aux.getSegment());
-                            //workplace_txtbox.setText(aux.getWorkplace());
-                            for (int i = 0; i < segment_filter.getItemCount(); i++) {
-                                if (segment_filter.getItemAt(i).toString().equals(aux.getSegment())) {
-                                    segment_filter.setSelectedIndex(i);
-                                    break;
-                                }
-                            }
-                            for (int i = 0; i < workplace_filter.getItemCount(); i++) {
-                                if (workplace_filter.getItemAt(i).toString().equals(aux.getWorkplace())) {
-                                    workplace_filter.setSelectedIndex(i);
-                                    break;
-                                }
-                            }
-                            for (int i = 0; i < harnessType_filter.getItemCount(); i++) {
-                                if (harnessType_filter.getItemAt(i).toString().equals(aux.getHarnessType())) {
-                                    harnessType_filter.setSelectedIndex(i);
-                                    break;
-                                }
-                            }
-                            if (String.valueOf(aux.getActive()).equals("1")) {
-                                active_combobox.setSelectedIndex(0);
-                            } else {
-                                active_combobox.setSelectedIndex(1);
-                            }
-
-                            if (aux.getSpecialOrder() == 1) {
-                                special_order_check.setSelected(true);
-                            } else {
-                                special_order_check.setSelected(false);
-                            }
-                            order_no_txt.setText(aux.getOrderNo());
-                            comment_txt.setText(aux.getComment());
-                            deletel_btn.setEnabled(true);
-                            duplicate_btn.setEnabled(true);
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                if (e.getClickCount() == 2) {
+                    Helper.startSession();
+                    Query query = Helper.sess.createQuery(HQLHelper.GET_UCS_BY_ID);
+                    query.setParameter("id", Integer.valueOf(ucs_table.getValueAt(ucs_table.getSelectedRow(), 0).toString()));
+                    Helper.sess.getTransaction().commit();
+                    aux = (ConfigUcs) query.list().get(0);
+                    id_lbl.setText(aux.getId().toString());
+                    create_time_txt.setText(aux.getCreateTime().toString());
+                    write_time_txt.setText(aux.getWriteTime().toString());
+                    cpn_txtbox.setText(aux.getHarnessPart());
+                    lpn_txtbox.setText(aux.getSupplierPartNumber());
+                    index_txtbox.setText(aux.getHarnessIndex());
+                    try {
+                        stdTime_txtbox.setText(aux.getStdTime() + "");
+                    } catch (Exception ex) {
+                        stdTime_txtbox.setText("0.00");
+                    }
+                    try {
+                        price_txtbox.setText(aux.getPrice() + "");
+                    } catch (Exception ex) {
+                        price_txtbox.setText("0.00");
+                    }
+                    pack_size_txtbox.setText(aux.getPackSize() + "");
+                    assy_txtbox.setText(aux.getAssyWorkstationName());
+                    barcodes_nbre_txtbox.setText(aux.getAdditionalBarcode() + "");
+                    lifes_txtbox.setText(aux.getLifes() + "");
+                    for (int i = 0; i < pack_type_filter.getItemCount(); i++) {
+                        if (pack_type_filter.getItemAt(i).toString().equals(aux.getPackType())) {
+                            pack_type_filter.setSelectedIndex(i);
+                            break;
                         }
                     }
+                    //segment_txtbox.setText(aux.getSegment());
+                    //workplace_txtbox.setText(aux.getWorkplace());
+                    for (int i = 0; i < segment_filter.getItemCount(); i++) {
+                        if (segment_filter.getItemAt(i).toString().equals(aux.getSegment())) {
+                            segment_filter.setSelectedIndex(i);
+                            break;
+                        }
+                    }
+                    for (int i = 0; i < workplace_filter.getItemCount(); i++) {
+                        if (workplace_filter.getItemAt(i).toString().equals(aux.getWorkplace())) {
+                            workplace_filter.setSelectedIndex(i);
+                            break;
+                        }
+                    }
+                    for (int i = 0; i < harnessType_filter.getItemCount(); i++) {
+                        if (harnessType_filter.getItemAt(i).toString().equals(aux.getHarnessType())) {
+                            harnessType_filter.setSelectedIndex(i);
+                            break;
+                        }
+                    }
+                    if (String.valueOf(aux.getActive()).equals("1")) {
+                        active_combobox.setSelectedIndex(0);
+                    } else {
+                        active_combobox.setSelectedIndex(1);
+                    }
+
+                    if (aux.getSpecialOrder() == 1) {
+                        special_order_check.setSelected(true);
+                    } else {
+                        special_order_check.setSelected(false);
+                    }
+                    order_no_txt.setText(aux.getOrderNo());
+                    comment_txt.setText(aux.getComment());
+                    delete_btn.setEnabled(true);
+                    duplicate_btn.setEnabled(true);
                 }
+            }
+        }
         );
     }
 
@@ -254,6 +256,8 @@ public class CONFIG_UI0001_UCS_CONFIG extends javax.swing.JFrame {
 
     private void clearFields() {
         id_lbl.setText("");
+        create_time_txt.setText("");
+        write_time_txt.setText("");
         cpn_txtbox.setText("");
         lpn_txtbox.setText("");
         index_txtbox.setText("");
@@ -265,11 +269,10 @@ public class CONFIG_UI0001_UCS_CONFIG extends javax.swing.JFrame {
         stdTime_txtbox.setText("0.00");
         price_txtbox.setText("0.00");
         order_no_txt.setText("");
-        deletel_btn.setEnabled(false);
+        delete_btn.setEnabled(false);
         duplicate_btn.setEnabled(false);
         msg_lbl.setText("");
         comment_txt.setText("");
-        comment_txt.setEditable(false);
         special_order_check.setSelected(false);
         aux = null;
     }
@@ -281,7 +284,7 @@ public class CONFIG_UI0001_UCS_CONFIG extends javax.swing.JFrame {
     }
 
     private void refresh() {
-
+        Helper.startSession();
         String query_str = " SELECT "
                 + " u.id AS id, "
                 + " u.harness_part AS cpn, "
@@ -301,7 +304,7 @@ public class CONFIG_UI0001_UCS_CONFIG extends javax.swing.JFrame {
                 + " u.special_order AS special_order,"
                 + " u.price "
                 + " FROM Config_Ucs u WHERE 1=1 ";
-        Helper.startSession();
+        
         if (!cpn_txtbox_search.getText().trim().equals("")) {
             query_str += " AND harness_part LIKE '%" + cpn_txtbox_search.getText().trim() + "%'";
         }
@@ -314,7 +317,7 @@ public class CONFIG_UI0001_UCS_CONFIG extends javax.swing.JFrame {
         if (!supplier_pn_txtbox_search.getText().trim().equals("")) {
             query_str += " AND supplier_part_number LIKE '%" + supplier_pn_txtbox_search.getText().trim() + "%'";
         }
-        query_str += " ORDER BY harness_part ASC ";
+        query_str += " ORDER BY id DESC ";
         SQLQuery query = Helper.sess.createSQLQuery(query_str);
         resultList = query.list();
 
@@ -346,7 +349,7 @@ public class CONFIG_UI0001_UCS_CONFIG extends javax.swing.JFrame {
         cancel_btn = new javax.swing.JButton();
         active_combobox = new javax.swing.JComboBox();
         pwd_lbl2 = new javax.swing.JLabel();
-        deletel_btn = new javax.swing.JButton();
+        delete_btn = new javax.swing.JButton();
         id_lbl = new javax.swing.JLabel();
         index_txtbox = new javax.swing.JTextField();
         pwd_lbl3 = new javax.swing.JLabel();
@@ -384,13 +387,16 @@ public class CONFIG_UI0001_UCS_CONFIG extends javax.swing.JFrame {
         pack_type_txtbox_search = new javax.swing.JTextField();
         llogin_lbl_search = new javax.swing.JLabel();
         segment_txtbox_search = new javax.swing.JTextField();
-        refresh_btn = new javax.swing.JButton();
+        filter_btn = new javax.swing.JButton();
         clear_search_btn = new javax.swing.JButton();
         supplier_pn_txtbox_search = new javax.swing.JTextField();
         llogin_lbl_search1 = new javax.swing.JLabel();
+        lname_lbl1 = new javax.swing.JLabel();
+        create_time_txt = new javax.swing.JTextField();
+        lname_lbl2 = new javax.swing.JLabel();
+        write_time_txt = new javax.swing.JTextField();
 
         setTitle("Configuration packaging par référence");
-        setAlwaysOnTop(true);
         setName("Configuration packaging par référence"); // NOI18N
 
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Configuration packaging par référence", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Calibri", 1, 14))); // NOI18N
@@ -435,11 +441,11 @@ public class CONFIG_UI0001_UCS_CONFIG extends javax.swing.JFrame {
 
         pwd_lbl2.setText("Active *");
 
-        deletel_btn.setText("Delete");
-        deletel_btn.setEnabled(false);
-        deletel_btn.addActionListener(new java.awt.event.ActionListener() {
+        delete_btn.setText("Delete");
+        delete_btn.setEnabled(false);
+        delete_btn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                deletel_btnActionPerformed(evt);
+                delete_btnActionPerformed(evt);
             }
         });
 
@@ -590,14 +596,14 @@ public class CONFIG_UI0001_UCS_CONFIG extends javax.swing.JFrame {
             }
         });
 
-        refresh_btn.setText("Refresh");
-        refresh_btn.addActionListener(new java.awt.event.ActionListener() {
+        filter_btn.setText("Filter");
+        filter_btn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                refresh_btnActionPerformed(evt);
+                filter_btnActionPerformed(evt);
             }
         });
 
-        clear_search_btn.setText("Clear");
+        clear_search_btn.setText("Clear filters");
         clear_search_btn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 clear_search_btnActionPerformed(evt);
@@ -639,11 +645,11 @@ public class CONFIG_UI0001_UCS_CONFIG extends javax.swing.JFrame {
                         .addComponent(llogin_lbl_search1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(supplier_pn_txtbox_search, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 239, Short.MAX_VALUE)
-                        .addComponent(refresh_btn)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 293, Short.MAX_VALUE)
+                        .addComponent(filter_btn)
                         .addGap(18, 18, 18)
-                        .addComponent(clear_search_btn, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(124, 124, 124))
+                        .addComponent(clear_search_btn, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(83, 83, 83))
                     .addComponent(user_table_scroll))
                 .addContainerGap())
         );
@@ -653,21 +659,32 @@ public class CONFIG_UI0001_UCS_CONFIG extends javax.swing.JFrame {
                 .addGap(21, 21, 21)
                 .addGroup(user_list_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(user_list_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(refresh_btn)
+                        .addComponent(filter_btn)
                         .addComponent(clear_search_btn))
-                    .addGroup(user_list_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(cpn_txtbox_search, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(fname_lbl_search)
-                        .addComponent(lname_lbl_search)
-                        .addComponent(pack_type_txtbox_search, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(llogin_lbl_search)
-                        .addComponent(segment_txtbox_search, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(user_list_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(user_list_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(llogin_lbl_search1)
-                            .addComponent(supplier_pn_txtbox_search, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(supplier_pn_txtbox_search, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(user_list_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(cpn_txtbox_search, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(fname_lbl_search)
+                            .addComponent(lname_lbl_search)
+                            .addComponent(pack_type_txtbox_search, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(llogin_lbl_search)
+                            .addComponent(segment_txtbox_search, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(18, 18, 18)
                 .addComponent(user_table_scroll, javax.swing.GroupLayout.DEFAULT_SIZE, 489, Short.MAX_VALUE))
         );
+
+        lname_lbl1.setText("Creation Date");
+
+        create_time_txt.setEditable(false);
+        create_time_txt.setName("fname_txtbox"); // NOI18N
+
+        lname_lbl2.setText("Write Date");
+
+        write_time_txt.setEditable(false);
+        write_time_txt.setName("fname_txtbox"); // NOI18N
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -677,12 +694,8 @@ public class CONFIG_UI0001_UCS_CONFIG extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
-                                .addComponent(special_order_check)
-                                .addGap(18, 18, 18)
-                                .addComponent(jScrollPane1))
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(fname_lbl)
                                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -698,24 +711,41 @@ public class CONFIG_UI0001_UCS_CONFIG extends javax.swing.JFrame {
                                 .addGap(18, 18, 18)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(lname_lbl)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 63, Short.MAX_VALUE)
-                                        .addComponent(lpn_txtbox, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(login_lbl2)
-                                            .addComponent(pwd_lbl))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                            .addComponent(workplace_filter, 0, 146, Short.MAX_VALUE)
-                                            .addComponent(barcodes_nbre_txtbox))))))
-                        .addGap(18, 18, 18)
+                                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                                .addComponent(lname_lbl)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 63, Short.MAX_VALUE)
+                                                .addComponent(lpn_txtbox, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                    .addComponent(login_lbl2)
+                                                    .addComponent(pwd_lbl))
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                                    .addComponent(workplace_filter, 0, 146, Short.MAX_VALUE)
+                                                    .addComponent(barcodes_nbre_txtbox))))
+                                        .addGap(58, 58, 58))
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addComponent(lname_lbl1)
+                                        .addGap(23, 23, 23)
+                                        .addComponent(create_time_txt)
+                                        .addGap(18, 18, 18))))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(special_order_check)
+                                .addGap(18, 18, 18)
+                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 362, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(pwd_lbl1)
-                            .addComponent(pwd_lbl7)
-                            .addComponent(login_lbl1))
-                        .addGap(1, 1, 1)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(pwd_lbl1)
+                                    .addComponent(pwd_lbl7)
+                                    .addComponent(login_lbl1))
+                                .addGap(1, 1, 1))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(lname_lbl2)
+                                .addGap(57, 57, 57)))
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(assy_txtbox, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
@@ -727,8 +757,10 @@ public class CONFIG_UI0001_UCS_CONFIG extends javax.swing.JFrame {
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(harnessType_filter, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(pwd_lbl5)))
-                        .addGap(18, 18, 18)
+                                .addComponent(pwd_lbl5))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                .addComponent(write_time_txt)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(pack_type_filter, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(jPanel1Layout.createSequentialGroup()
@@ -759,8 +791,8 @@ public class CONFIG_UI0001_UCS_CONFIG extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(msg_lbl, javax.swing.GroupLayout.PREFERRED_SIZE, 503, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(deletel_btn, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(147, Short.MAX_VALUE))
+                        .addComponent(delete_btn, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(163, Short.MAX_VALUE))
             .addComponent(user_list_panel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel1Layout.setVerticalGroup(
@@ -768,25 +800,32 @@ public class CONFIG_UI0001_UCS_CONFIG extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(jPanel1Layout.createSequentialGroup()
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(fname_lbl1)
-                                .addComponent(id_lbl, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(fname_lbl)
-                                .addComponent(cpn_txtbox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(lname_lbl)))
-                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(lpn_txtbox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(pwd_lbl1)))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(index_txtbox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(pwd_lbl3)
-                        .addComponent(pack_type_filter, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(pwd_lbl4)
-                        .addComponent(pack_size_txtbox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(fname_lbl1)
+                            .addComponent(id_lbl, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(fname_lbl)
+                            .addComponent(cpn_txtbox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lname_lbl)))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                            .addComponent(create_time_txt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lname_lbl2)
+                            .addComponent(write_time_txt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lname_lbl1))
+                        .addGap(14, 14, 14)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(lpn_txtbox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(pwd_lbl1))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(index_txtbox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(pwd_lbl3)
+                                .addComponent(pack_type_filter, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(pwd_lbl4)
+                                .addComponent(pack_size_txtbox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -819,7 +858,7 @@ public class CONFIG_UI0001_UCS_CONFIG extends javax.swing.JFrame {
                             .addComponent(special_order_check))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(deletel_btn)
+                            .addComponent(delete_btn)
                             .addComponent(cancel_btn)
                             .addComponent(duplicate_btn)
                             .addComponent(save_btn))
@@ -851,9 +890,9 @@ public class CONFIG_UI0001_UCS_CONFIG extends javax.swing.JFrame {
         clearSearchFields();
     }//GEN-LAST:event_clear_search_btnActionPerformed
 
-    private void refresh_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_refresh_btnActionPerformed
+    private void filter_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_filter_btnActionPerformed
         refresh();
-    }//GEN-LAST:event_refresh_btnActionPerformed
+    }//GEN-LAST:event_filter_btnActionPerformed
 
     private void segment_txtbox_searchKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_segment_txtbox_searchKeyTyped
         refresh();
@@ -880,11 +919,6 @@ public class CONFIG_UI0001_UCS_CONFIG extends javax.swing.JFrame {
     }//GEN-LAST:event_cpn_txtbox_searchKeyPressed
 
     private void special_order_checkStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_special_order_checkStateChanged
-        if (special_order_check.isSelected()) {
-            comment_txt.setEditable(true);
-        } else {
-            comment_txt.setEditable(false);
-        }
     }//GEN-LAST:event_special_order_checkStateChanged
 
     private void workplace_filterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_workplace_filterActionPerformed
@@ -919,7 +953,7 @@ public class CONFIG_UI0001_UCS_CONFIG extends javax.swing.JFrame {
         lpn_txtbox.setText(aux.getSupplierPartNumber());
         index_txtbox.setText(aux.getHarnessIndex());
         stdTime_txtbox.setText(aux.getStdTime() + "");
-        price_txtbox.setText(aux.getPrice()+ "");
+        price_txtbox.setText(aux.getPrice() + "");
 
         pack_size_txtbox.setText(aux.getPackSize() + "");
         for (int i = 0; i < pack_type_filter.getItemCount(); i++) {
@@ -953,13 +987,6 @@ public class CONFIG_UI0001_UCS_CONFIG extends javax.swing.JFrame {
             special_order_check.setSelected(false);
         }
 
-        if (aux.getSpecialOrder() == 1) {
-            comment_txt.setEditable(true);
-        } else {
-            special_order_check.setSelected(false);
-        }
-        //if(aux.getSpecialOrder()) comment_txt.setEditable(true);
-
         assy_txtbox.setText(aux.getAssyWorkstationName());
         barcodes_nbre_txtbox.setText(aux.getAdditionalBarcode() + "");
         lifes_txtbox.setText(aux.getLifes() + "");
@@ -969,19 +996,19 @@ public class CONFIG_UI0001_UCS_CONFIG extends javax.swing.JFrame {
             active_combobox.setSelectedIndex(1);
         }
         this.aux = null;
-        msg_lbl.setText("Formulaire dupliqué !");
+        msg_lbl.setText("Element dupliqué !");
     }//GEN-LAST:event_duplicate_btnActionPerformed
 
     private void stdTime_txtboxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_stdTime_txtboxActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_stdTime_txtboxActionPerformed
 
-    private void deletel_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deletel_btnActionPerformed
+    private void delete_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_delete_btnActionPerformed
         int confirmed = JOptionPane.showConfirmDialog(this,
-            String.format("Confirmez-vous la suppression de cet élement [%s] ?",
-                this.aux.getId()),
-            "Suppression UCS",
-            JOptionPane.WARNING_MESSAGE);
+                String.format("Confirmez-vous la suppression de cet élement [%s] ?",
+                        this.aux.getId()),
+                "Suppression UCS",
+                JOptionPane.WARNING_MESSAGE);
 
         if (confirmed == 0) {
             aux.delete(aux);
@@ -989,7 +1016,7 @@ public class CONFIG_UI0001_UCS_CONFIG extends javax.swing.JFrame {
             msg_lbl.setText("Elément supprimé !");
             refresh();
         }
-    }//GEN-LAST:event_deletel_btnActionPerformed
+    }//GEN-LAST:event_delete_btnActionPerformed
 
     private void active_comboboxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_active_comboboxActionPerformed
         // TODO add your handling code here:
@@ -1041,7 +1068,7 @@ public class CONFIG_UI0001_UCS_CONFIG extends javax.swing.JFrame {
                 mu.create(mu);
 
                 clearFields();
-                msg_lbl.setText("Données enregistré !");
+                msg_lbl.setText("Nouveau élément enregistré !");
                 refresh();
             } else { // ID Label is filed, then is an update
                 aux.setWriteId(Helper.context.getUser().getId());
@@ -1069,7 +1096,7 @@ public class CONFIG_UI0001_UCS_CONFIG extends javax.swing.JFrame {
                 }
                 aux.update(aux);
                 clearFields();
-                msg_lbl.setText("Données enregistré !");
+                msg_lbl.setText("Changements enregistrés !");
                 refresh();
             }
         }
@@ -1093,8 +1120,10 @@ public class CONFIG_UI0001_UCS_CONFIG extends javax.swing.JFrame {
     private javax.swing.JTextArea comment_txt;
     private javax.swing.JTextField cpn_txtbox;
     private javax.swing.JTextField cpn_txtbox_search;
-    private javax.swing.JButton deletel_btn;
+    private javax.swing.JTextField create_time_txt;
+    private javax.swing.JButton delete_btn;
     private javax.swing.JButton duplicate_btn;
+    private javax.swing.JButton filter_btn;
     private javax.swing.JLabel fname_lbl;
     private javax.swing.JLabel fname_lbl1;
     private javax.swing.JLabel fname_lbl_search;
@@ -1107,6 +1136,8 @@ public class CONFIG_UI0001_UCS_CONFIG extends javax.swing.JFrame {
     private javax.swing.JLabel llogin_lbl_search;
     private javax.swing.JLabel llogin_lbl_search1;
     private javax.swing.JLabel lname_lbl;
+    private javax.swing.JLabel lname_lbl1;
+    private javax.swing.JLabel lname_lbl2;
     private javax.swing.JLabel lname_lbl_search;
     private javax.swing.JLabel login_lbl;
     private javax.swing.JLabel login_lbl1;
@@ -1128,7 +1159,6 @@ public class CONFIG_UI0001_UCS_CONFIG extends javax.swing.JFrame {
     private javax.swing.JLabel pwd_lbl6;
     private javax.swing.JLabel pwd_lbl7;
     private javax.swing.JLabel pwd_lbl8;
-    private javax.swing.JButton refresh_btn;
     private javax.swing.JButton save_btn;
     private javax.swing.JComboBox segment_filter;
     private javax.swing.JTextField segment_txtbox_search;
@@ -1139,6 +1169,7 @@ public class CONFIG_UI0001_UCS_CONFIG extends javax.swing.JFrame {
     private javax.swing.JPanel user_list_panel;
     private javax.swing.JScrollPane user_table_scroll;
     private javax.swing.JComboBox workplace_filter;
+    private javax.swing.JTextField write_time_txt;
     // End of variables declaration//GEN-END:variables
 
 }

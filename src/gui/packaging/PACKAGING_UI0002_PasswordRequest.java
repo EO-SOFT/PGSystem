@@ -166,13 +166,13 @@ public class PACKAGING_UI0002_PasswordRequest extends javax.swing.JDialog {
     
     /**
      * 
-     * @param customer : Harness Type to filter on (Volvo, Ducati)
+     * @param harnessType : Harness Type to filter on (Volvo, Ducati)
      */
-    public void loadDotMatrixCodePatterns(String customer) {
+    public void loadDotMatrixCodePatterns(String harnessType) {
         System.out.println("Loading DATAMATRIX_PATTERN_LIST pattern list ... ");
-        Query query = Helper.sess.createQuery(HQLHelper.GET_PATTERN_BY_KEYWORD_AND_PROJECT);
+        Query query = Helper.sess.createQuery(HQLHelper.GET_PATTERN_BY_KEYWORD_AND_HARNESSTYPE);
         query.setParameter("keyWord", "DOTMATRIX");
-        query.setParameter("customer", customer);
+        query.setParameter("harnessType", harnessType);
         //PLASTIC_BAG_BARCODE
         
         Helper.log.info(query.getQueryString());
@@ -188,7 +188,7 @@ public class PACKAGING_UI0002_PasswordRequest extends javax.swing.JDialog {
             System.out.println(Helper.DATAMATRIX_PATTERN_LIST[i].toString());
             i++;
         }
-        System.out.println(Helper.DATAMATRIX_PATTERN_LIST.length+" QR Code pattern for customer '"+customer+"' successfuly loaded 100% ! ");
+        System.out.println(Helper.DATAMATRIX_PATTERN_LIST.length+" QR Code pattern for customer '"+harnessType+"' successfuly loaded 100% ! ");
     }
     
     /**
@@ -197,7 +197,7 @@ public class PACKAGING_UI0002_PasswordRequest extends javax.swing.JDialog {
      */
     public void loadPartNumberCodePatterns(String customer) {
         System.out.println("Loading PARTNUMBER_PATTERN_LIST pattern list ... ");
-        Query query = Helper.sess.createQuery(HQLHelper.GET_PATTERN_BY_KEYWORD_AND_PROJECT);
+        Query query = Helper.sess.createQuery(HQLHelper.GET_PATTERN_BY_KEYWORD_AND_HARNESSTYPE);
         query.setParameter("keyWord", "PARTNUMBER");
         query.setParameter("customer", customer);
         //PLASTIC_BAG_BARCODE

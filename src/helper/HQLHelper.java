@@ -90,7 +90,8 @@ public class HQLHelper {
     public final static String GET_ALL_WORKPLACES = "FROM ConfigWorkplace bp ORDER BY workplace ASC";
     public final static String GET_WORKPLACES_BY_SEGMENT = "FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC";
     //ConfigBarcode
-    public final static String GET_PATTERN_BY_KEYWORD_AND_PROJECT = "FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord AND cb.customer = :customer ORDER BY id ASC";
+    public final static String GET_PATTERN_BY_ID = "FROM ConfigBarcode cb WHERE cb.id = :id";
+    public final static String GET_PATTERN_BY_KEYWORD_AND_HARNESSTYPE = "FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord AND cb.harness_type = :harnessType ORDER BY id ASC";
     public final static String GET_PATTERN_BY_KEYWORDS = "FROM ConfigBarcode cb WHERE cb.keyWord IN (:keyWords) ORDER BY id ASC";
     public final static String GET_PATTERN_BY_HARNESSPART = "FROM ConfigBarcode cb WHERE cb.harnessPart = :harnessPart ORDER BY id ASC";
     public final static String GET_PATTERNS_BY_PROJECT = "FROM ConfigBarcode cb WHERE cb.project = :project ORDER BY id ASC";
@@ -143,19 +144,7 @@ public class HQLHelper {
     public final static String GET_LOAD_PLAN_LINE_BY_PLAN_ID = "FROM LoadPlanLine lpl WHERE lpl.loadPlanId = :loadPlanId ORDER BY destinationWh ASC, pileNum DESC, id DESC";
     public final static String GET_LOAD_PLAN_LINE_BY_PLAN_ID_ASC = "FROM LoadPlanLine lpl WHERE lpl.loadPlanId = :loadPlanId ORDER BY destinationWh ASC, pileNum ASC, id ASC";
     
-    /*
-    addScalar("harness_type", StandardBasicTypes.STRING)
-    .addScalar("pile_num", StandardBasicTypes.INTEGER)
-    .addScalar("harness_part", StandardBasicTypes.INTEGER)
-    .addScalar("harness_index", StandardBasicTypes.STRING)
-    .addScalar("supplier_part", StandardBasicTypes.STRING)
-    .addScalar("total_qty", StandardBasicTypes.INTEGER)
-    .addScalar("qty", StandardBasicTypes.INTEGER)
-    .addScalar("pack_type", StandardBasicTypes.STRING)
-    .addScalar("nbre_pack", StandardBasicTypes.INTEGER)
-    .addScalar("order_num", StandardBasicTypes.INTEGER)
-    .addScalar("destination_wh", StandardBasicTypes.STRING);
-    */
+    
     public final static String GET_LOAD_PLAN_LINE_GROUPED_BY_PILES = "SELECT "
             + " line.harness_type AS harness_type, "
             + " line.pile_num as pile_num,          "

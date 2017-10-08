@@ -11,6 +11,7 @@ import entity.HisLogin;
 import entity.LoadPlan;
 import entity.LoadPlanDestinationRel;
 import entity.LoadPlanLine;
+import entity.LoadPlanLinePackaging;
 import entity.ManufactureUsers;
 import entity.PackagingStockMovement;
 import gui.packaging.PACKAGING_UI0010_PalletDetails;
@@ -22,15 +23,21 @@ import helper.HQLHelper;
 import helper.Helper;
 import java.awt.Color;
 import java.awt.Component;
+import java.awt.Cursor;
 import static java.awt.Event.DELETE;
 import java.awt.Font;
+import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.beans.PropertyChangeEvent;
+import java.beans.PropertyChangeListener;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
+import java.util.Random;
 import java.util.Vector;
 import javax.swing.AbstractAction;
 import javax.swing.ActionMap;
@@ -44,6 +51,7 @@ import static javax.swing.JOptionPane.ERROR_MESSAGE;
 import javax.swing.JTable;
 import javax.swing.JTextField;
 import javax.swing.KeyStroke;
+import javax.swing.SwingWorker;
 import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableModel;
@@ -60,7 +68,8 @@ import org.hibernate.type.StandardBasicTypes;
  *
  * @author user
  */
-public final class WAREHOUSE_DISPATCH_UI0002_DISPATCH_SCAN extends javax.swing.JFrame {
+public final class WAREHOUSE_DISPATCH_UI0002_DISPATCH_SCAN extends javax.swing.JFrame implements ActionListener,
+        PropertyChangeListener {
 
     State state = WarehouseHelper.warehouse_out_context.getState();
     @SuppressWarnings("UseOfObsoleteCollectionType")
@@ -76,6 +85,49 @@ public final class WAREHOUSE_DISPATCH_UI0002_DISPATCH_SCAN extends javax.swing.J
     int DESTINATION_COMLUMN = 8;
     int LINE_ID_COMLUMN = 9;
     int PALLET_NUM_COLUMN = 1;
+
+    private ReleasingJob task;
+
+    @Override
+    public void propertyChange(PropertyChangeEvent evt) {
+        if ("progress" == evt.getPropertyName()) {
+            int progress = (Integer) evt.getNewValue();
+            progressBar.setValue(progress);
+
+//            JOptionPane.showMessageDialog(null, String.format(
+//                    "Completed %d%% of task.\n", task.getProgress()));
+        }
+    }
+
+    class ReleasingJob extends SwingWorker<Void, Void> {
+
+        /*
+         * Main task. Executed in background thread.
+         */
+        @Override
+        public Void doInBackground() {
+            Random random = new Random();
+
+            return null;
+        }
+
+        /*
+         * Executed in event dispatching thread
+         */
+        @Override
+        public void done() {
+            Toolkit.getDefaultToolkit().beep();
+            //release_plan_btn.setEnabled(true);
+            setCursor(null); //turn off the wait cursor
+            JOptionPane.showMessageDialog(null, "Plan released !\n");
+
+        }
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 
     /**
      * Creates new form NewJFrame
@@ -144,74 +196,74 @@ public final class WAREHOUSE_DISPATCH_UI0002_DISPATCH_SCAN extends javax.swing.J
 
         this.load_plan_lines_table.addMouseListener(
                 new MouseAdapter() {
-                    public void mouseClicked(MouseEvent e) {
-                        if (e.getClickCount() == 2) {
+            public void mouseClicked(MouseEvent e) {
+                if (e.getClickCount() == 2) {
 
-                            new PACKAGING_UI0010_PalletDetails(null,
-                                    rootPaneCheckingEnabled,
-                                    String.valueOf(
-                                            load_plan_lines_table.getValueAt(
-                                                    load_plan_lines_table.getSelectedRow(),
-                                                    PALLET_NUM_COLUMN)), false, false, false
-                            ).setVisible(true);
-                        }
-                    }
+                    new PACKAGING_UI0010_PalletDetails(null,
+                            rootPaneCheckingEnabled,
+                            String.valueOf(
+                                    load_plan_lines_table.getValueAt(
+                                            load_plan_lines_table.getSelectedRow(),
+                                            PALLET_NUM_COLUMN)), false, false, false
+                    ).setVisible(true);
                 }
+            }
+        }
         );
 
         this.load_plan_table.addMouseListener(
                 new MouseAdapter() {
-                    public void mouseClicked(MouseEvent e) {
-                        if (e.getClickCount() == 2) {
-                            loadPlanDataInGui();
-                        }
-                    }
+            public void mouseClicked(MouseEvent e) {
+                if (e.getClickCount() == 2) {
+                    loadPlanDataInGui();
+                }
+            }
 
-                    public void loadPlanDataInGui() {
-                        String id = String.valueOf(load_plan_table.getValueAt(load_plan_table.getSelectedRow(), 0));
-                        Helper.startSession();
-                        Query query = Helper.sess.createQuery(HQLHelper.GET_LOAD_PLAN_BY_ID);
-                        query.setParameter("id", Integer.valueOf(id));
+            public void loadPlanDataInGui() {
+                String id = String.valueOf(load_plan_table.getValueAt(load_plan_table.getSelectedRow(), 0));
+                Helper.startSession();
+                Query query = Helper.sess.createQuery(HQLHelper.GET_LOAD_PLAN_BY_ID);
+                query.setParameter("id", Integer.valueOf(id));
 
-                        Helper.sess.getTransaction().commit();
-                        List result = query.list();
-                        LoadPlan plan = (LoadPlan) result.get(0);
-                        WarehouseHelper.temp_load_plan = plan;
+                Helper.sess.getTransaction().commit();
+                List result = query.list();
+                LoadPlan plan = (LoadPlan) result.get(0);
+                WarehouseHelper.temp_load_plan = plan;
 
-                        //Load destinations of the plan
-                        if (loadDestinations(Integer.valueOf(id))) {
-                            loadPlanDataToLabels(plan, destinations_box.getItemAt(0).toString());
-                            reloadPlanLinesData(Integer.valueOf(id), destinations_box.getItemAt(0).toString());
+                //Load destinations of the plan
+                if (loadDestinations(Integer.valueOf(id))) {
+                    loadPlanDataToLabels(plan, destinations_box.getItemAt(0).toString());
+                    reloadPlanLinesData(Integer.valueOf(id), destinations_box.getItemAt(0).toString());
 
-                            //Disable delete button if the plan is CLOSED
-                            if (WarehouseHelper.LOAD_PLAN_STATE_CLOSED.equals(plan.getPlanState())) {
-                                delete_plan_btn.setEnabled(false);
-                                end_load_btn.setEnabled(false);
-                                export_plan_btn.setEnabled(true);
-                                edit_plan_btn.setEnabled(false);
-                                set_packaging_pile_btn.setEnabled(true);
-                                destinations_box.setEnabled(true);
-                                piles_box.setEnabled(true);
-                                scan_txt.setEnabled(false);
-                                txt_filter_part.setEnabled(true);
-                            } else { // The plan still Open
-                                delete_plan_btn.setEnabled(true);
-                                end_load_btn.setEnabled(true);
-                                export_plan_btn.setEnabled(true);
-                                edit_plan_btn.setEnabled(true);
-                                set_packaging_pile_btn.setEnabled(true);
-                                destinations_box.setEnabled(true);
-                                destinations_box.setSelectedIndex(0);
-                                piles_box.setEnabled(true);
-                                scan_txt.setEnabled(true);
-                                txt_filter_part.setEnabled(true);
-                            }
-                        }
-
-                        filterPlanLines(false);
-                        filterPlanLines(false);
+                    //Disable delete button if the plan is CLOSED
+                    if (WarehouseHelper.LOAD_PLAN_STATE_CLOSED.equals(plan.getPlanState())) {
+                        delete_plan_btn.setEnabled(false);
+                        release_plan_btn.setEnabled(false);
+                        export_plan_btn.setEnabled(true);
+                        edit_plan_btn.setEnabled(false);
+                        set_packaging_pile_btn.setEnabled(true);
+                        destinations_box.setEnabled(true);
+                        piles_box.setEnabled(true);
+                        scan_txt.setEnabled(false);
+                        txt_filter_part.setEnabled(true);
+                    } else { // The plan still Open
+                        delete_plan_btn.setEnabled(true);
+                        release_plan_btn.setEnabled(true);
+                        export_plan_btn.setEnabled(true);
+                        edit_plan_btn.setEnabled(true);
+                        set_packaging_pile_btn.setEnabled(true);
+                        destinations_box.setEnabled(true);
+                        destinations_box.setSelectedIndex(0);
+                        piles_box.setEnabled(true);
+                        scan_txt.setEnabled(true);
+                        txt_filter_part.setEnabled(true);
                     }
                 }
+
+                filterPlanLines(false);
+                filterPlanLines(false);
+            }
+        }
         );
     }
 
@@ -347,7 +399,7 @@ public final class WAREHOUSE_DISPATCH_UI0002_DISPATCH_SCAN extends javax.swing.J
 
         export_plan_btn.setEnabled(false);
         delete_plan_btn.setEnabled(false);
-        end_load_btn.setEnabled(false);
+        release_plan_btn.setEnabled(false);
         edit_plan_btn.setEnabled(false);
         set_packaging_pile_btn.setEnabled(false);
 
@@ -732,7 +784,7 @@ public final class WAREHOUSE_DISPATCH_UI0002_DISPATCH_SCAN extends javax.swing.J
         jScrollPane1 = new javax.swing.JScrollPane();
         load_plan_table = new javax.swing.JTable();
         refresh_btn = new javax.swing.JButton();
-        end_load_btn = new javax.swing.JButton();
+        release_plan_btn = new javax.swing.JButton();
         time_label3 = new javax.swing.JLabel();
         create_user_label = new javax.swing.JLabel();
         time_label4 = new javax.swing.JLabel();
@@ -757,9 +809,9 @@ public final class WAREHOUSE_DISPATCH_UI0002_DISPATCH_SCAN extends javax.swing.J
         jSeparator1 = new javax.swing.JToolBar.Separator();
         edit_plan_btn = new javax.swing.JButton();
         message_label = new javax.swing.JTextField();
-        progressBar = new javax.swing.JProgressBar();
         txt_nbreLigne = new javax.swing.JLabel();
         label_control = new javax.swing.JCheckBox();
+        progressBar = new javax.swing.JProgressBar();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         pallet_details = new javax.swing.JMenuItem();
@@ -911,12 +963,12 @@ public final class WAREHOUSE_DISPATCH_UI0002_DISPATCH_SCAN extends javax.swing.J
                 .addContainerGap())
         );
 
-        end_load_btn.setBackground(new java.awt.Color(255, 255, 0));
-        end_load_btn.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        end_load_btn.setText("Fin de chargement");
-        end_load_btn.addActionListener(new java.awt.event.ActionListener() {
+        release_plan_btn.setBackground(new java.awt.Color(255, 255, 0));
+        release_plan_btn.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        release_plan_btn.setText("Release");
+        release_plan_btn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                end_load_btnActionPerformed(evt);
+                release_plan_btnActionPerformed(evt);
             }
         });
 
@@ -937,7 +989,7 @@ public final class WAREHOUSE_DISPATCH_UI0002_DISPATCH_SCAN extends javax.swing.J
 
         delete_plan_btn.setBackground(new java.awt.Color(255, 0, 0));
         delete_plan_btn.setForeground(new java.awt.Color(255, 255, 255));
-        delete_plan_btn.setText("Supprimer le plan");
+        delete_plan_btn.setText("Supprimer");
         delete_plan_btn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 delete_plan_btnActionPerformed(evt);
@@ -1042,6 +1094,8 @@ public final class WAREHOUSE_DISPATCH_UI0002_DISPATCH_SCAN extends javax.swing.J
 
         label_control.setText("Contrôle Galia/FORS");
 
+        progressBar.setStringPainted(true);
+
         jMenu1.setText("Menus");
 
         pallet_details.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_P, java.awt.event.InputEvent.CTRL_MASK));
@@ -1070,12 +1124,11 @@ public final class WAREHOUSE_DISPATCH_UI0002_DISPATCH_SCAN extends javax.swing.J
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jToolBar1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(message_label, javax.swing.GroupLayout.PREFERRED_SIZE, 1274, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(37, Short.MAX_VALUE))
+                    .addComponent(message_label)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
@@ -1089,97 +1142,92 @@ public final class WAREHOUSE_DISPATCH_UI0002_DISPATCH_SCAN extends javax.swing.J
                             .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(table_scroll, javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(145, 145, 145)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createSequentialGroup()
+                                        .addComponent(txt_filter_part, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(32, 32, 32)
+                                        .addComponent(destinations_box, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(2, 2, 2)
+                                        .addComponent(jLabel1)
+                                        .addGap(100, 100, 100)
+                                        .addComponent(jLabel3)))
+                                .addGap(18, 18, 18)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel2)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(piles_box, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(btn_filter_ok)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(set_packaging_pile_btn)
+                                        .addGap(53, 53, 53)
+                                        .addComponent(label_control)))
+                                .addGap(18, 18, 18)
+                                .addComponent(txt_nbreLigne)
+                                .addGap(0, 0, Short.MAX_VALUE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(145, 145, 145)
                                         .addComponent(destination_label_help, javax.swing.GroupLayout.PREFERRED_SIZE, 311, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(118, 118, 118)
-                                        .addComponent(pile_label_help)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(end_load_btn, javax.swing.GroupLayout.Alignment.TRAILING)
-                                            .addComponent(delete_plan_btn, javax.swing.GroupLayout.Alignment.TRAILING))
-                                        .addGap(49, 49, 49))
+                                        .addComponent(pile_label_help))
                                     .addGroup(layout.createSequentialGroup()
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(txt_nbreLigne)
-                                        .addGap(37, 37, 37))))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(progressBar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(table_scroll, javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(2, 2, 2)
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addGroup(layout.createSequentialGroup()
-                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addGroup(layout.createSequentialGroup()
-                                                        .addComponent(txt_filter_part, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                        .addGap(32, 32, 32)
-                                                        .addComponent(destinations_box, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                    .addGroup(layout.createSequentialGroup()
-                                                        .addGap(2, 2, 2)
-                                                        .addComponent(jLabel1)
-                                                        .addGap(100, 100, 100)
-                                                        .addComponent(jLabel3)))
-                                                .addGap(18, 18, 18)
-                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addComponent(jLabel2)
-                                                    .addGroup(layout.createSequentialGroup()
-                                                        .addComponent(piles_box, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                        .addGap(18, 18, 18)
-                                                        .addComponent(btn_filter_ok)
-                                                        .addGap(18, 18, 18)
-                                                        .addComponent(set_packaging_pile_btn)
-                                                        .addGap(53, 53, 53)
-                                                        .addComponent(label_control))))
-                                            .addGroup(layout.createSequentialGroup()
-                                                .addGap(2, 2, 2)
-                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addComponent(time_label5)
-                                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                                        .addGroup(layout.createSequentialGroup()
-                                                            .addComponent(jLabel15)
-                                                            .addGap(18, 18, 18)
-                                                            .addComponent(connectedUserName_label, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                                        .addGroup(layout.createSequentialGroup()
+                                            .addComponent(time_label5)
+                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                                .addGroup(layout.createSequentialGroup()
+                                                    .addComponent(jLabel15)
+                                                    .addGap(18, 18, 18)
+                                                    .addComponent(connectedUserName_label, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                        .addComponent(time_label1)
+                                                        .addComponent(time_label2)
+                                                        .addComponent(time_label6))
+                                                    .addGap(18, 18, 18)
+                                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                                .addComponent(time_label1)
-                                                                .addComponent(time_label2)
-                                                                .addComponent(time_label6))
-                                                            .addGap(18, 18, 18)
-                                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                                        .addComponent(plan_num_label)
-                                                                        .addComponent(create_time_label))
-                                                                    .addGap(28, 28, 28))
-                                                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                                                    .addComponent(state_label)
-                                                                    .addGap(95, 95, 95)))
-                                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                                .addComponent(time_label4)
-                                                                .addComponent(time_label3)
-                                                                .addComponent(time_label7))
-                                                            .addGap(18, 18, 18)
-                                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                                .addComponent(release_date_label)
-                                                                .addComponent(create_user_label)
-                                                                .addComponent(dispatch_date_label)))))))
-                                        .addGap(0, 0, Short.MAX_VALUE)))
-                                .addContainerGap())))))
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jToolBar1, javax.swing.GroupLayout.PREFERRED_SIZE, 1284, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                                                                .addComponent(plan_num_label)
+                                                                .addComponent(create_time_label))
+                                                            .addGap(28, 28, 28))
+                                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                                            .addComponent(state_label)
+                                                            .addGap(95, 95, 95)))
+                                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                        .addComponent(time_label4)
+                                                        .addComponent(time_label3)
+                                                        .addComponent(time_label7))
+                                                    .addGap(18, 18, 18)
+                                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                        .addComponent(release_date_label)
+                                                        .addComponent(create_user_label)
+                                                        .addComponent(dispatch_date_label)))))))
+                                .addGap(32, 32, 32)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(delete_plan_btn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 131, Short.MAX_VALUE))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                            .addComponent(progressBar, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                                            .addComponent(release_plan_btn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                        .addGap(132, 132, 132)))))
+                        .addContainerGap())))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addComponent(jToolBar1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(26, 26, 26)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jToolBar1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(message_label, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -1191,8 +1239,10 @@ public final class WAREHOUSE_DISPATCH_UI0002_DISPATCH_SCAN extends javax.swing.J
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(end_load_btn)
-                                .addGap(86, 86, 86))
+                                .addComponent(release_plan_btn)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(progressBar, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(61, 61, 61))
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(jLabel15)
@@ -1235,16 +1285,14 @@ public final class WAREHOUSE_DISPATCH_UI0002_DISPATCH_SCAN extends javax.swing.J
                                 .addComponent(piles_box, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(btn_filter_ok)
                                 .addComponent(set_packaging_pile_btn)
-                                .addComponent(txt_nbreLigne)
-                                .addComponent(label_control))
+                                .addComponent(label_control)
+                                .addComponent(txt_nbreLigne))
                             .addComponent(txt_filter_part, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(table_scroll, javax.swing.GroupLayout.PREFERRED_SIZE, 512, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(progressBar, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE))
+                        .addGap(0, 9, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(79, 79, 79)
+                        .addGap(43, 43, 43)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(scan_txt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(time_label5))
@@ -1362,28 +1410,33 @@ public final class WAREHOUSE_DISPATCH_UI0002_DISPATCH_SCAN extends javax.swing.J
 
     }//GEN-LAST:event_formKeyTyped
 
-    private void end_load_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_end_load_btnActionPerformed
+
+    private void release_plan_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_release_plan_btnActionPerformed
 
         int confirmed = JOptionPane.showConfirmDialog(null,
                 "Confirmez-vous la fin du chargement N° " + plan_num_label.getText() + " ?", "Fin du chargement",
                 JOptionPane.YES_NO_OPTION);
         if (confirmed == 0) {
-
-            Object[][] dispatchLines = getTableData(load_plan_lines_table);
-
-            if (dispatchLines.length != 0) {
-                BaseContainer bc = new BaseContainer();
-                int i = 0;
-                for (Object[] objects : dispatchLines) {
-                    progressBar.setValue((i / dispatchLines.length) * 100);
-                    bc = bc.getBaseContainer(objects[1].toString()); // Index 3 for pallet number.
-
+            Helper.startSession();
+            Query query = Helper.sess.createQuery(HQLHelper.GET_LOAD_PLAN_LINE_BY_PLAN_ID);
+            query.setParameter("loadPlanId", Integer.valueOf(plan_num_label.getText()));
+            Helper.sess.getTransaction().commit();
+            List result = query.list();
+            if (!result.isEmpty()) {
+                //Initialize progress property.
+                
+                release_plan_btn.setEnabled(false);
+                setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+                for (Object obj : result) {
+                    LoadPlanLine line = (LoadPlanLine) obj;
+                    BaseContainer bc = new BaseContainer().getBaseContainer(line.getPalletNumber());
                     bc.setContainerState(Helper.PALLET_SHIPPED);
                     bc.setContainerStateCode(Helper.PALLET_SHIPPED_CODE);
                     bc.setShippedTime(new Date());
                     bc.setFifoTime(new Date());
-                    bc.setDestination(objects[DESTINATION_COMLUMN].toString());
+                    bc.setDestination(line.getDestinationWh());
                     bc.update(bc);
+
                     if (Helper.PROP.getProperty("BOOK_PACKAGING") == null || "".equals(Helper.PROP.getProperty("BOOK_PACKAGING").toString())) {
                         JOptionPane.showMessageDialog(null, "Propriété BOOK_PACKAGING non spécifiée dans le "
                                 + "fichier des propriétées !", "Erreur propriétés", JOptionPane.ERROR_MESSAGE);
@@ -1399,16 +1452,36 @@ public final class WAREHOUSE_DISPATCH_UI0002_DISPATCH_SCAN extends javax.swing.J
                                 1,
                                 "OUT",
                                 Helper.PROP.getProperty("WH_FINISH_GOODS"),
-                                objects[DESTINATION_COMLUMN].toString(), //Indice 9 pour destination
+                                line.getDestinationWh(), //Indice 9 pour destination
                                 "End of Dispatch",
                                 plan_num_label.getText()
                         );
                     }
-
                 }
-
+                //Loop on packaging supplementaire et déduire les quantitées.
+                if ("1".equals(Helper.PROP.getProperty("BOOK_PACKAGING").toString())) {
+                    Helper.startSession();
+                    query = Helper.sess.createQuery(HQLHelper.GET_LOAD_PLAN_PACKAGING_BY_PLAN_ID);
+                    query.setParameter("loadPlanId", Integer.valueOf(plan_num_label.getText()));
+                    Helper.sess.getTransaction().commit();
+                    result = query.list();
+                    for (Object obj : result) {
+                        LoadPlanLinePackaging line = (LoadPlanLinePackaging) obj;
+                        PackagingStockMovement transaction
+                                = new PackagingStockMovement(
+                                        line.getPackItem(),
+                                        "", 
+                                        plan_num_label.getText(),
+                                        WarehouseHelper.warehouse_out_context.getUser().getFirstName() + " "
+                                        + WarehouseHelper.warehouse_out_context.getUser().getLastName(),
+                                        new Date(),
+                                        Helper.PROP.getProperty("WH_PACKAGING"),
+                                        -Float.valueOf(line.getQty()),
+                                        line.getComment());
+                        transaction.create(transaction);
+                    }
+                }
                 Helper.startSession();
-
                 WarehouseHelper.temp_load_plan.setPlanState(WarehouseHelper.LOAD_PLAN_STATE_CLOSED);
                 WarehouseHelper.temp_load_plan.setEndTime(new Date());
                 WarehouseHelper.temp_load_plan.update(WarehouseHelper.temp_load_plan);
@@ -1421,12 +1494,16 @@ public final class WAREHOUSE_DISPATCH_UI0002_DISPATCH_SCAN extends javax.swing.J
                 //Go back to step S020
                 state = new S020_PalletNumberScan();
                 WarehouseHelper.warehouse_out_context.setState(state);
+                
+                Toolkit.getDefaultToolkit().beep();
+                setCursor(null);
+                JOptionPane.showMessageDialog(null, "Plan released !\n");
             } else {
                 JOptionPane.showMessageDialog(null, Helper.ERR0028_EMPTY_LOAD_PLAN, "Erreur fin de chargement", JOptionPane.ERROR_MESSAGE);
             }
         }
 
-    }//GEN-LAST:event_end_load_btnActionPerformed
+    }//GEN-LAST:event_release_plan_btnActionPerformed
 
     private void refresh_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_refresh_btnActionPerformed
         reloadPlansData();
@@ -1853,7 +1930,7 @@ public final class WAREHOUSE_DISPATCH_UI0002_DISPATCH_SCAN extends javax.swing.J
         delete_plan_btn.setEnabled(false);
 
         //Disable End load button
-        end_load_btn.setEnabled(false);
+        release_plan_btn.setEnabled(false);
 
         //Disable Export Excel button
         export_plan_btn.setEnabled(false);
@@ -1876,7 +1953,6 @@ public final class WAREHOUSE_DISPATCH_UI0002_DISPATCH_SCAN extends javax.swing.J
     private javax.swing.JComboBox destinations_box;
     private javax.swing.JLabel dispatch_date_label;
     private javax.swing.JButton edit_plan_btn;
-    private javax.swing.JButton end_load_btn;
     private javax.swing.JButton export_plan_btn;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel15;
@@ -1903,6 +1979,7 @@ public final class WAREHOUSE_DISPATCH_UI0002_DISPATCH_SCAN extends javax.swing.J
     private javax.swing.JRadioButton radio_btn_40;
     private javax.swing.JButton refresh_btn;
     private javax.swing.JLabel release_date_label;
+    private javax.swing.JButton release_plan_btn;
     private javax.swing.JTextField scan_txt;
     private javax.swing.JButton set_packaging_pile_btn;
     private javax.swing.JLabel state_label;
@@ -1934,7 +2011,7 @@ public final class WAREHOUSE_DISPATCH_UI0002_DISPATCH_SCAN extends javax.swing.J
         //Disable delete button if the plan is CLOSED
         if (WarehouseHelper.LOAD_PLAN_STATE_CLOSED.equals(plan.getPlanState())) {
             delete_plan_btn.setEnabled(false);
-            end_load_btn.setEnabled(false);
+            release_plan_btn.setEnabled(false);
             export_plan_btn.setEnabled(true);
             edit_plan_btn.setEnabled(false);
             destinations_box.setEnabled(true);
@@ -1942,7 +2019,7 @@ public final class WAREHOUSE_DISPATCH_UI0002_DISPATCH_SCAN extends javax.swing.J
             set_packaging_pile_btn.setEnabled(false);
         } else {
             delete_plan_btn.setEnabled(true);
-            end_load_btn.setEnabled(true);
+            release_plan_btn.setEnabled(true);
             export_plan_btn.setEnabled(true);
             edit_plan_btn.setEnabled(true);
             destinations_box.setEnabled(true);

@@ -85,6 +85,15 @@ public class ConfigProject extends DAO implements Serializable{
         return query.list();
     }
     
+    public List<String[]> selectHarnessType() {
+        Helper.startSession();
+        SQLQuery query = Helper.sess.createSQLQuery("SELECT DISTINCT harness_type FROM config_project");
+        query.addScalar("harness_type", StandardBasicTypes.STRING);
+        Helper.log.info(query.getQueryString());
+        Helper.sess.getTransaction().commit();        
+        return query.list();
+    }
+    
     /**
      * 
      * @return 
