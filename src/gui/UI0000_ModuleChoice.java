@@ -6,7 +6,8 @@
 package gui;
 
 import gui.config.CONFIG_UI0000_AUTH;
-import gui.packaging.PACKAGING_UI0001_Main;
+import gui.packaging.mode1.gui.PACKAGING_UI0001_Main_Mode1;
+import gui.packaging.mode2.gui.PACKAGING_UI0001_Main_Mode2;
 import gui.packaging_warehouse.PACKAGING_WAREHOUSE_UI0001_PasswordRequest;
 import gui.warehouse_fg_reception.WAREHOUSE_FG_UI0001_SCAN;
 import gui.warehouse_dispatch.WAREHOUSE_DISPATCH_UI0003_PasswordRequest;
@@ -27,7 +28,7 @@ import java.util.Random;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.SwingWorker;
-import gui.packaging.state.S010_UserCodeScan;
+import gui.packaging.mode2.state.S010_UserCodeScan;
 
 /**
  *
@@ -449,9 +450,16 @@ public class UI0000_ModuleChoice extends javax.swing.JFrame implements ActionLis
     private void PACKAGING_MODULEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PACKAGING_MODULEActionPerformed
         //Bind to localhost adapter with a zero connection queue
         Helper.context.setState(new S010_UserCodeScan());
-        Helper.Packaging_Gui = new PACKAGING_UI0001_Main(null, this);
-        Helper.Packaging_Gui.reloadDataTable();
-        Helper.Packaging_Gui.disableAdminMenus();
+        
+        if(Helper.PROP.getProperty("PACKAGING_SCAN_MODE").equals("1")){
+            Helper.Packaging_Gui_Mode1 = new PACKAGING_UI0001_Main_Mode1(null, this);
+            Helper.Packaging_Gui_Mode1.reloadDataTable();
+            Helper.Packaging_Gui_Mode1.disableAdminMenus();
+        }else if(Helper.PROP.getProperty("PACKAGING_SCAN_MODE").equals("2")){
+            Helper.Packaging_Gui_Mode2 = new PACKAGING_UI0001_Main_Mode2(null, this);
+            Helper.Packaging_Gui_Mode2.reloadDataTable();
+            Helper.Packaging_Gui_Mode2.disableAdminMenus();
+        }
     }//GEN-LAST:event_PACKAGING_MODULEActionPerformed
 
     private void WAREHOUSE_INPUT_MODULEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_WAREHOUSE_INPUT_MODULEActionPerformed
@@ -466,9 +474,7 @@ public class UI0000_ModuleChoice extends javax.swing.JFrame implements ActionLis
     }//GEN-LAST:event_WAREHOUSE_DISPATCH_MODULEActionPerformed
 
     private void SETTING_MODULEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SETTING_MODULEActionPerformed
-        CONFIG_UI0000_AUTH configuration = new CONFIG_UI0000_AUTH(null, true);
-        configuration.setVisible(true);
-        this.setExtendedState(this.getExtendedState() | JFrame.ICONIFIED);
+        new CONFIG_UI0000_AUTH().setVisible(true);
     }//GEN-LAST:event_SETTING_MODULEActionPerformed
 
     private void PACKAGING_MGMT_MODULEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PACKAGING_MGMT_MODULEActionPerformed
@@ -542,7 +548,7 @@ public class UI0000_ModuleChoice extends javax.swing.JFrame implements ActionLis
 
                 UI0000_ModuleChoice ui = new UI0000_ModuleChoice();
                 ui.setVisible(true);
-                Helper.loadConfigProperties();
+                //Helper.loadConfigProperties();
                 String str = Helper.InitDailyLogFile(Helper.PROP.getProperty("LOG_PATH"));
                 ui.setLogTextArea(str);
                 str = Helper.InitDailyDestPrintDir(

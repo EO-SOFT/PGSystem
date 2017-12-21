@@ -129,7 +129,8 @@
                                   <EmptySpace min="-2" pref="57" max="-2" attributes="0"/>
                               </Group>
                           </Group>
-                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="write_time_txt" alignment="1" min="-2" pref="199" max="-2" attributes="0"/>
                               <Group type="102" attributes="0">
                                   <Component id="assy_txtbox" min="-2" pref="124" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
@@ -142,41 +143,40 @@
                               </Group>
                               <Group type="102" attributes="0">
                                   <Component id="harnessType_filter" min="-2" pref="133" max="-2" attributes="0"/>
-                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="pwd_lbl5" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="1" attributes="0">
-                                  <Component id="write_time_txt" max="32767" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="pwd_lbl2" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="pack_type_filter" min="-2" pref="103" max="-2" attributes="0"/>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                                      <Component id="lifes_txtbox" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="stdTime_txtbox" alignment="0" pref="54" max="32767" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="1" attributes="0">
-                                      <Component id="pwd_lbl2" min="-2" max="-2" attributes="0"/>
-                                      <Component id="pwd_lbl8" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
-                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" attributes="0">
-                                  <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
-                                  <Component id="pwd_lbl4" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="pack_size_txtbox" min="-2" pref="43" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="active_combobox" min="-2" pref="97" max="-2" attributes="0"/>
-                                      <Component id="price_txtbox" min="-2" pref="98" max="-2" attributes="0"/>
+                                      <Component id="pack_type_filter" min="-2" pref="103" max="-2" attributes="0"/>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="stdTime_txtbox" min="-2" pref="54" max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
+                                          <Component id="pwd_lbl8" min="-2" max="-2" attributes="0"/>
+                                      </Group>
                                   </Group>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" attributes="0">
+                                          <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
+                                          <Component id="pwd_lbl4" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Component id="pack_size_txtbox" min="-2" pref="43" max="-2" attributes="0"/>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Component id="pwd_lbl5" min="-2" max="-2" attributes="0"/>
+                                          <Component id="lifes_txtbox" max="32767" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Component id="price_txtbox" min="-2" pref="98" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <Component id="active_combobox" min="-2" pref="97" max="-2" attributes="0"/>
+                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
@@ -192,7 +192,7 @@
                           <Component id="delete_btn" min="-2" pref="102" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <EmptySpace pref="163" max="32767" attributes="0"/>
+                  <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
               </Group>
               <Component id="user_list_panel" alignment="0" max="32767" attributes="0"/>
           </Group>
@@ -233,6 +233,8 @@
                                   <Component id="pack_type_filter" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="pwd_lbl4" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="pack_size_txtbox" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="pwd_lbl5" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lifes_txtbox" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
@@ -247,10 +249,13 @@
                               <Component id="segment_filter" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
                               <Component id="workplace_filter" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
                               <Component id="harnessType_filter" alignment="3" max="32767" attributes="0"/>
-                              <Component id="pwd_lbl5" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="lifes_txtbox" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="pwd_lbl2" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="active_combobox" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="pwd_lbl2" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="active_combobox" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
                           </Group>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
@@ -402,7 +407,7 @@
         </Component>
         <Component class="javax.swing.JLabel" name="pwd_lbl5">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Lifes *"/>
+            <Property name="text" type="java.lang.String" value="Nbre Packs *"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="assy_txtbox">
@@ -597,7 +602,7 @@
                               <Component id="llogin_lbl_search1" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="supplier_pn_txtbox_search" min="-2" pref="109" max="-2" attributes="0"/>
-                              <EmptySpace pref="293" max="32767" attributes="0"/>
+                              <EmptySpace pref="297" max="32767" attributes="0"/>
                               <Component id="filter_btn" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Component id="clear_search_btn" min="-2" pref="114" max="-2" attributes="0"/>

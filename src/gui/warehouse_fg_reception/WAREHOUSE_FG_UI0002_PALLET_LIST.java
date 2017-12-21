@@ -9,8 +9,8 @@ import helper.Helper;
 import entity.BaseContainer;
 import entity.ConfigSegment;
 import entity.ConfigWorkplace;
-import gui.packaging.PACKAGING_UI0010_PalletDetails;
-import gui.packaging.PACKAGING_UI0011_ProdStatistics;
+import gui.packaging.mode1.gui.PACKAGING_UI0010_PalletDetails;
+import gui.packaging.mode1.gui.PACKAGING_UI0011_ProdStatistics;
 import helper.ComboItem;
 import helper.JDialogExcelFileChooser;
 import helper.UIHelper;
@@ -1107,8 +1107,8 @@ public final class WAREHOUSE_FG_UI0002_PALLET_LIST extends javax.swing.JFrame {
 
                 for (Object[] obj : lafmResult) {
                     row = sheet.createRow(sheetPointer);
-                    row.createCell(0).setCellValue(Helper.HARN_PART_PREF + String.valueOf(obj[0])); //LPN
-                    row.createCell(1).setCellValue(Helper.QUANTITY_PREF + String.valueOf(obj[1].toString()));//PACK SIZE
+                    row.createCell(0).setCellValue(Helper.HARN_PART_PREFIX + String.valueOf(obj[0])); //LPN
+                    row.createCell(1).setCellValue(Helper.QUANTITY_PREFIX + String.valueOf(obj[1].toString()));//PACK SIZE
                     row.createCell(2).setCellValue(String.valueOf("LO" + Helper.PROP.getProperty("WH_FINISH_GOODS")));//WAREHOUSE
                     sheetPointer++;
                 }

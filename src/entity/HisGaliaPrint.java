@@ -76,7 +76,7 @@ public class HisGaliaPrint extends DAO implements java.io.Serializable {
         this.supplierPartNumber = supplierPartNumber;
         this.harnessIndex = harnessIndex;
         this.qty = qty;
-        this.closingPallet = Helper.CLOSE_PAL_PREF + closingPalet;
+        this.closingPallet = Helper.CLOSING_PALLET_PREFIX + closingPalet;
         this.printState = state;
         this.reprint = reprint;
     }
@@ -89,7 +89,7 @@ public class HisGaliaPrint extends DAO implements java.io.Serializable {
         this.supplierPartNumber = supplierPartNumber;
         this.harnessIndex = harnessIndex;
         this.qty = qty;
-        this.closingPallet = Helper.CLOSE_PAL_PREF + closingPalet;
+        this.closingPallet = Helper.CLOSING_PALLET_PREFIX + closingPalet;
         this.printState = state;
         this.reprint = reprint;
     }

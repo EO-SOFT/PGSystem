@@ -1,316 +1,537 @@
-oct. 08, 2017 12:31:51 PM helper.Helper InitDailyDestPrintDir
+oct. 08, 2017 4:22:57 PM helper.Helper InitDailyDestPrintDir
 INFOS: File 2017_10_08.log created !Print directory [.\print\2017_10_08] created !
 Print sub directory [.\print\2017_10_08.\open_sheet] created !
 Print sub directory [.\print\2017_10_08.\closing_sheet] created !
 Print sub directory [.\print\2017_10_08.\picking_label] created !
 Print sub directory [.\print\2017_10_08.\dispatch_label] created !
 
-oct. 08, 2017 12:32:04 PM gui.warehouse_dispatch.WAREHOUSE_DISPATCH_UI0003_PasswordRequest connect
-INFOS: User EZZIOURI OUSSAMA / ezou1001 connected to host Oussama-PC at 2017-10-08 12:32:04 Dispatch interface : .
-oct. 08, 2017 12:43:36 PM helper.Helper InitDailyDestPrintDir
+oct. 08, 2017 4:24:22 PM helper.Helper InitDailyDestPrintDir
 INFOS: File 2017_10_08.log already exists.Print directory [.\print\2017_10_08] already exist!
 Print sub directory [.\print\2017_10_08.\open_sheet] already exist!
 Print sub directory [.\print\2017_10_08.\closing_sheet] already exist!
 Print sub directory [.\print\2017_10_08.\picking_label] already exist!
 Print sub directory [.\print\2017_10_08.\dispatch_label] already exist!
 
-oct. 08, 2017 12:43:52 PM gui.config.CONFIG_UI0000_AUTH checkLoginAndPass
-INFOS: User EZZIOURI OUSSAMA / ezou1001 connected to host Oussama-PC at 2017-10-08 12:43:52 Module : Planner.
-oct. 08, 2017 12:43:52 PM entity.ConfigSegment select
+oct. 08, 2017 4:24:41 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 08, 2017 4:24:42 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 08, 2017 4:27:21 PM helper.Helper InitDailyDestPrintDir
+INFOS: File 2017_10_08.log already exists.Print directory [.\print\2017_10_08] already exist!
+Print sub directory [.\print\2017_10_08.\open_sheet] already exist!
+Print sub directory [.\print\2017_10_08.\closing_sheet] already exist!
+Print sub directory [.\print\2017_10_08.\picking_label] already exist!
+Print sub directory [.\print\2017_10_08.\dispatch_label] already exist!
+
+oct. 08, 2017 4:28:10 PM helper.Helper InitDailyDestPrintDir
+INFOS: File 2017_10_08.log already exists.Print directory [.\print\2017_10_08] already exist!
+Print sub directory [.\print\2017_10_08.\open_sheet] already exist!
+Print sub directory [.\print\2017_10_08.\closing_sheet] already exist!
+Print sub directory [.\print\2017_10_08.\picking_label] already exist!
+Print sub directory [.\print\2017_10_08.\dispatch_label] already exist!
+
+oct. 08, 2017 4:34:05 PM helper.Helper InitDailyDestPrintDir
+INFOS: File 2017_10_08.log already exists.Print directory [.\print\2017_10_08] already exist!
+Print sub directory [.\print\2017_10_08.\open_sheet] already exist!
+Print sub directory [.\print\2017_10_08.\closing_sheet] already exist!
+Print sub directory [.\print\2017_10_08.\picking_label] already exist!
+Print sub directory [.\print\2017_10_08.\dispatch_label] already exist!
+
+oct. 08, 2017 4:34:11 PM gui.config.CONFIG_UI0000_AUTH3 checkLoginAndPass
+INFOS: User EZZIOURI OUSSAMA / * connected to host Oussama-PC at 2017-10-08 16:34:11 Module : Planner.
+oct. 08, 2017 4:34:11 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 08, 2017 4:36:15 PM helper.Helper InitDailyDestPrintDir
+INFOS: File 2017_10_08.log already exists.Print directory [.\print\2017_10_08] already exist!
+Print sub directory [.\print\2017_10_08.\open_sheet] already exist!
+Print sub directory [.\print\2017_10_08.\closing_sheet] already exist!
+Print sub directory [.\print\2017_10_08.\picking_label] already exist!
+Print sub directory [.\print\2017_10_08.\dispatch_label] already exist!
+
+oct. 08, 2017 4:36:29 PM gui.config.CONFIG_UI0000_AUTH3 checkLoginAndPass
+INFOS: User EZZIOURI OUSSAMA / * connected to host Oussama-PC at 2017-10-08 16:36:29 Module : Planner.
+oct. 08, 2017 4:36:29 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 08, 2017 4:40:33 PM helper.Helper InitDailyDestPrintDir
+INFOS: File 2017_10_08.log already exists.Print directory [.\print\2017_10_08] already exist!
+Print sub directory [.\print\2017_10_08.\open_sheet] already exist!
+Print sub directory [.\print\2017_10_08.\closing_sheet] already exist!
+Print sub directory [.\print\2017_10_08.\picking_label] already exist!
+Print sub directory [.\print\2017_10_08.\dispatch_label] already exist!
+
+oct. 08, 2017 4:40:36 PM gui.config.CONFIG_UI0000_AUTH checkLoginAndPass
+INFOS: User EZZIOURI OUSSAMA / * connected to host Oussama-PC at 2017-10-08 16:40:36 Module : Planner.
+oct. 08, 2017 4:40:36 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 08, 2017 4:40:56 PM helper.Helper InitDailyDestPrintDir
+INFOS: File 2017_10_08.log already exists.Print directory [.\print\2017_10_08] already exist!
+Print sub directory [.\print\2017_10_08.\open_sheet] already exist!
+Print sub directory [.\print\2017_10_08.\closing_sheet] already exist!
+Print sub directory [.\print\2017_10_08.\picking_label] already exist!
+Print sub directory [.\print\2017_10_08.\dispatch_label] already exist!
+
+oct. 08, 2017 4:41:01 PM gui.config.CONFIG_UI0000_AUTH checkLoginAndPass
+INFOS: User EZZIOURI OUSSAMA / * connected to host Oussama-PC at 2017-10-08 16:41:01 Module : Planner.
+oct. 08, 2017 4:41:02 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 08, 2017 5:23:20 PM helper.Helper InitDailyDestPrintDir
+INFOS: File 2017_10_08.log already exists.Print directory [.\print\2017_10_08] already exist!
+Print sub directory [.\print\2017_10_08.\open_sheet] already exist!
+Print sub directory [.\print\2017_10_08.\closing_sheet] already exist!
+Print sub directory [.\print\2017_10_08.\picking_label] already exist!
+Print sub directory [.\print\2017_10_08.\dispatch_label] already exist!
+
+oct. 08, 2017 5:23:31 PM gui.config.CONFIG_UI0000_AUTH checkLoginAndPass
+INFOS: User EZZIOURI OUSSAMA / * connected to host Oussama-PC at 2017-10-08 17:23:31 Module : Planner.
+oct. 08, 2017 5:23:31 PM entity.ConfigSegment select
 INFOS: FROM ConfigSegment bp ORDER BY segment ASC
-oct. 08, 2017 12:43:52 PM entity.ConfigWorkplace selectBySegment
+oct. 08, 2017 5:23:31 PM entity.ConfigWorkplace selectBySegment
 INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
-oct. 08, 2017 12:43:52 PM entity.ConfigProject select
+oct. 08, 2017 5:23:31 PM entity.ConfigProject select
 INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
-oct. 08, 2017 12:44:05 PM entity.ConfigProject select
+oct. 08, 2017 5:23:40 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+oct. 08, 2017 5:23:40 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+oct. 08, 2017 5:23:43 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+oct. 08, 2017 5:23:43 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+oct. 08, 2017 5:24:17 PM entity.ConfigProject select
 INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
-oct. 08, 2017 12:44:06 PM entity.ConfigProject select
+oct. 08, 2017 5:24:17 PM entity.ConfigProject select
 INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
-oct. 08, 2017 12:44:19 PM entity.ConfigWorkplace selectBySegment
-INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
-oct. 08, 2017 12:44:19 PM entity.ConfigWorkplace selectBySegment
-INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
-oct. 08, 2017 12:44:20 PM entity.ConfigWorkplace selectBySegment
-INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
-oct. 08, 2017 12:44:20 PM entity.ConfigWorkplace selectBySegment
-INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
-oct. 08, 2017 12:44:26 PM entity.ConfigWorkplace selectBySegment
-INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
-oct. 08, 2017 12:44:26 PM entity.ConfigWorkplace selectBySegment
-INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
-oct. 08, 2017 12:46:13 PM helper.Helper InitDailyDestPrintDir
+oct. 08, 2017 5:24:22 PM gui.packaging.state.S010_UserCodeScan doAction
+INFOS: Invalid matricule number or account locked !
+oct. 08, 2017 5:24:22 PM gui.packaging.PACKAGING_UI0002_PasswordRequest connect
+INFOS: User EZZIOURI OUSSAMA / ducati connected to host Oussama-PC at 2017-10-08 17:24:22 Project : DUCATI.
+oct. 08, 2017 5:24:22 PM gui.packaging.PACKAGING_UI0002_PasswordRequest loadDotMatrixCodePatterns
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord AND cb.harness_type = :harnessType ORDER BY id ASC
+oct. 08, 2017 5:25:50 PM helper.Helper InitDailyDestPrintDir
 INFOS: File 2017_10_08.log already exists.Print directory [.\print\2017_10_08] already exist!
 Print sub directory [.\print\2017_10_08.\open_sheet] already exist!
 Print sub directory [.\print\2017_10_08.\closing_sheet] already exist!
 Print sub directory [.\print\2017_10_08.\picking_label] already exist!
 Print sub directory [.\print\2017_10_08.\dispatch_label] already exist!
 
-oct. 08, 2017 12:46:26 PM gui.config.CONFIG_UI0000_AUTH checkLoginAndPass
-INFOS: User EZZIOURI OUSSAMA / ezou1001 connected to host Oussama-PC at 2017-10-08 12:46:26 Module : Planner.
-oct. 08, 2017 12:46:26 PM entity.ConfigSegment select
+oct. 08, 2017 5:25:55 PM gui.config.CONFIG_UI0000_AUTH checkLoginAndPass
+INFOS: User EZZIOURI OUSSAMA / * connected to host Oussama-PC at 2017-10-08 17:25:55 Module : Planner.
+oct. 08, 2017 5:25:55 PM entity.ConfigSegment select
 INFOS: FROM ConfigSegment bp ORDER BY segment ASC
-oct. 08, 2017 12:46:26 PM entity.ConfigWorkplace selectBySegment
+oct. 08, 2017 5:25:55 PM entity.ConfigWorkplace selectBySegment
 INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
-oct. 08, 2017 12:46:26 PM entity.ConfigProject select
+oct. 08, 2017 5:25:55 PM entity.ConfigProject select
 INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
-oct. 08, 2017 12:46:28 PM entity.ConfigWorkplace selectBySegment
-INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
-oct. 08, 2017 12:46:28 PM entity.ConfigWorkplace selectBySegment
-INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
-oct. 08, 2017 12:46:30 PM entity.ConfigWorkplace selectBySegment
-INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
-oct. 08, 2017 12:46:30 PM entity.ConfigWorkplace selectBySegment
-INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
-oct. 08, 2017 12:46:36 PM entity.ConfigWorkplace selectBySegment
-INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
-oct. 08, 2017 12:46:36 PM entity.ConfigWorkplace selectBySegment
-INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
-oct. 08, 2017 12:47:59 PM helper.Helper InitDailyDestPrintDir
+oct. 08, 2017 5:26:00 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 08, 2017 5:26:01 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 08, 2017 5:26:03 PM gui.packaging.state.S010_UserCodeScan doAction
+INFOS: Invalid matricule number or account locked !
+oct. 08, 2017 5:26:04 PM gui.packaging.PACKAGING_UI0002_PasswordRequest connect
+INFOS: User EZZIOURI OUSSAMA / ducati connected to host Oussama-PC at 2017-10-08 17:26:04 Project : DUCATI.
+oct. 08, 2017 5:26:04 PM gui.packaging.PACKAGING_UI0002_PasswordRequest loadDotMatrixCodePatterns
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord AND cb.harness_type = :harnessType ORDER BY id ASC
+oct. 08, 2017 5:26:04 PM gui.packaging.PACKAGING_UI0002_PasswordRequest loadPartNumberCodePatterns
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord AND cb.harness_type = :harnessType ORDER BY id ASC
+oct. 08, 2017 5:26:06 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [5101C861D] in ConfigUCS: DUCATI
+oct. 08, 2017 5:26:06 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [5101C861D] found for project [DUCATI].
+oct. 08, 2017 5:26:06 PM gui.packaging.state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P5101C861D] OK.
+oct. 08, 2017 5:26:13 PM entity.BaseHarness checkDataMatrixFormat
+INFOS: Invalid Counter scanned format [P5101C861D22112211222017]!
+oct. 08, 2017 5:26:37 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [5101C371E;05.10.2017;10:05:02] in BaseHarness.
+oct. 08, 2017 5:26:37 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+oct. 08, 2017 5:27:04 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [5101C861D;05.10.2017;10:05:02] in BaseHarness.
+oct. 08, 2017 5:27:04 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+oct. 08, 2017 5:27:48 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P5101C861D;05.10.2017;10:05:02] in BaseHarness.
+oct. 08, 2017 5:27:48 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+oct. 08, 2017 5:27:48 PM gui.packaging.state.S030_MatrixIdScan doAction
+INFOS: Valid Harness Counter scanned [P5101C861D;05.10.2017;10:05:02] OK.
+oct. 08, 2017 5:27:50 PM gui.packaging.state.S040_PalletChoice doAction
+INFOS: Is it a new pallet ?
+oct. 08, 2017 5:27:50 PM gui.packaging.state.S040_PalletChoice doAction
+INFOS:  [Yes]
+oct. 08, 2017 5:27:53 PM helper.Helper InitDailyDestPrintDir
 INFOS: File 2017_10_08.log already exists.Print directory [.\print\2017_10_08] already exist!
 Print sub directory [.\print\2017_10_08.\open_sheet] already exist!
 Print sub directory [.\print\2017_10_08.\closing_sheet] already exist!
 Print sub directory [.\print\2017_10_08.\picking_label] already exist!
 Print sub directory [.\print\2017_10_08.\dispatch_label] already exist!
+Print directory [.\print\2017_10_08] already exist!
+Print sub directory [.\print\2017_10_08.\open_sheet] already exist!
+Print sub directory [.\print\2017_10_08.\closing_sheet] already exist!
+Print sub directory [.\print\2017_10_08.\picking_label] already exist!
+Print sub directory [.\print\2017_10_08.\dispatch_label] already exist!
 
-oct. 08, 2017 12:48:10 PM gui.config.CONFIG_UI0000_AUTH checkLoginAndPass
-INFOS: User EZZIOURI OUSSAMA / ezou1001 connected to host Oussama-PC at 2017-10-08 12:48:10 Module : Planner.
-oct. 08, 2017 12:48:10 PM entity.ConfigSegment select
+oct. 08, 2017 5:27:53 PM helper.PrinterHelper saveAndPrintOpenSheet
+INFOS: Set Pallet [200035212] state to [IN_PROCESS]
+oct. 08, 2017 5:27:53 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2017_10_08\open_sheet\PrintOpenPallet_A5_2017_10_08_17_27_53_5101C861D_200035212.pdf] to the default printer...
+oct. 08, 2017 5:27:54 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [.\print\2017_10_08\open_sheet\PrintOpenPallet_A5_2017_10_08_17_27_53_5101C861D_200035212.pdf] has been printed.
+oct. 08, 2017 5:27:54 PM helper.PrinterHelper saveAndPrintOpenSheet
+INFOS: Set Pallet [200035212] state to [PRINTED]
+oct. 08, 2017 5:27:54 PM gui.packaging.PACKAGING_UI9000_ChoosePackType loadConfigUcs
+INFOS: Openning new container for first harness part [5101C861D].
+oct. 08, 2017 5:28:01 PM gui.packaging.state.S041_NewPalletScan doAction
+INFOS: Scanned Pallet number [200035212] OK.
+oct. 08, 2017 5:28:01 PM gui.packaging.state.S041_NewPalletScan doAction
+INFOS: BaseContainer created BaseContainer{id=34852, createTime=Sun Oct 08 17:28:01 WAT 2017, writeTime=Sun Oct 08 17:28:01 WAT 2017, createId=59, writeId=59, user=ducati, createUser=EZZIOURI OUSSAMA, startTime=Sun Oct 08 17:28:01 WAT 2017, closedTime=null, workTime=null, palletNumber=200035212, harnessPart=5101C861D, harnessIndex=1D, supplierPartNumber=26F139204, qtyExpected=1, qtyRead=1, containerState=OPEN, containerStateCode=1000, packType=C11, harnessType=DUCATI, stdTime=1.6, workstation=Oussama-PC, harnessList=[]} 
+oct. 08, 2017 5:28:01 PM helper.Helper InitDailyDestPrintDir
+INFOS: File 2017_10_08.log already exists.Print directory [.\print\2017_10_08] already exist!
+Print sub directory [.\print\2017_10_08.\open_sheet] already exist!
+Print sub directory [.\print\2017_10_08.\closing_sheet] already exist!
+Print sub directory [.\print\2017_10_08.\picking_label] already exist!
+Print sub directory [.\print\2017_10_08.\dispatch_label] already exist!
+Print directory [.\print\2017_10_08] already exist!
+Print sub directory [.\print\2017_10_08.\open_sheet] already exist!
+Print sub directory [.\print\2017_10_08.\closing_sheet] already exist!
+Print sub directory [.\print\2017_10_08.\picking_label] already exist!
+Print sub directory [.\print\2017_10_08.\dispatch_label] already exist!
+Print directory [.\print\2017_10_08] already exist!
+Print sub directory [.\print\2017_10_08.\open_sheet] already exist!
+Print sub directory [.\print\2017_10_08.\closing_sheet] already exist!
+Print sub directory [.\print\2017_10_08.\picking_label] already exist!
+Print sub directory [.\print\2017_10_08.\dispatch_label] already exist!
+
+oct. 08, 2017 5:28:02 PM helper.PrinterHelper saveAndPrintClosingSheet
+INFOS: Set Closing Pallet item [34486] state to [IN_PROCESS]
+oct. 08, 2017 5:28:02 PM print.PrintClosingPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2017_10_08\closing_sheet\PrintClosingPallet_A5_5101C861D_2017_10_08_17_28_01.pdf] to the default printer...
+oct. 08, 2017 5:28:02 PM print.PrintClosingPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [%s] has been printed.
+oct. 08, 2017 5:28:02 PM helper.PrinterHelper saveAndPrintClosingSheet
+INFOS: Set Closing Pallet [34486] state to [PRINTED]
+oct. 08, 2017 5:28:11 PM entity.ConfigSegment select
 INFOS: FROM ConfigSegment bp ORDER BY segment ASC
-oct. 08, 2017 12:48:10 PM entity.ConfigWorkplace selectBySegment
-INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
-oct. 08, 2017 12:48:10 PM entity.ConfigProject select
-INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
-oct. 08, 2017 12:59:53 PM entity.ConfigWorkplace selectBySegment
-INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
-oct. 08, 2017 12:59:53 PM entity.ConfigWorkplace selectBySegment
-INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
-oct. 08, 2017 1:01:56 PM gui.config.CONFIG_UI0000_AUTH checkLoginAndPass
-INFOS: User EZZIOURI OUSSAMA / ezou1001 connected to host Oussama-PC at 2017-10-08 13:01:56 Module : Planner.
-oct. 08, 2017 1:01:56 PM entity.ConfigProject selectCustomers
-INFOS: SELECT DISTINCT customer FROM config_project
-oct. 08, 2017 1:18:32 PM helper.Helper InitDailyDestPrintDir
-INFOS: File 2017_10_08.log already exists.Print directory [.\print\2017_10_08] already exist!
-Print sub directory [.\print\2017_10_08.\open_sheet] already exist!
-Print sub directory [.\print\2017_10_08.\closing_sheet] already exist!
-Print sub directory [.\print\2017_10_08.\picking_label] already exist!
-Print sub directory [.\print\2017_10_08.\dispatch_label] already exist!
-
-oct. 08, 2017 1:18:35 PM entity.ConfigProject select
-INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
-oct. 08, 2017 1:18:35 PM entity.ConfigProject select
-INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
-oct. 08, 2017 1:28:40 PM helper.Helper InitDailyDestPrintDir
-INFOS: File 2017_10_08.log already exists.Print directory [.\print\2017_10_08] already exist!
-Print sub directory [.\print\2017_10_08.\open_sheet] already exist!
-Print sub directory [.\print\2017_10_08.\closing_sheet] already exist!
-Print sub directory [.\print\2017_10_08.\picking_label] already exist!
-Print sub directory [.\print\2017_10_08.\dispatch_label] already exist!
-
-oct. 08, 2017 1:28:50 PM gui.config.CONFIG_UI0000_AUTH checkLoginAndPass
-INFOS: User EZZIOURI OUSSAMA / ezou1001 connected to host Oussama-PC at 2017-10-08 13:28:50 Module : Planner.
-oct. 08, 2017 1:28:50 PM entity.ConfigProject selectHarnessType
-INFOS: SELECT DISTINCT harness_type FROM config_project
-oct. 08, 2017 1:32:08 PM helper.Helper InitDailyDestPrintDir
-INFOS: File 2017_10_08.log already exists.Print directory [.\print\2017_10_08] already exist!
-Print sub directory [.\print\2017_10_08.\open_sheet] already exist!
-Print sub directory [.\print\2017_10_08.\closing_sheet] already exist!
-Print sub directory [.\print\2017_10_08.\picking_label] already exist!
-Print sub directory [.\print\2017_10_08.\dispatch_label] already exist!
-
-oct. 08, 2017 1:32:21 PM gui.config.CONFIG_UI0000_AUTH checkLoginAndPass
-INFOS: User EZZIOURI OUSSAMA / ezou1001 connected to host Oussama-PC at 2017-10-08 13:32:21 Module : Planner.
-oct. 08, 2017 1:32:21 PM entity.ConfigProject select
-INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
-oct. 08, 2017 1:38:39 PM helper.Helper InitDailyDestPrintDir
-INFOS: File 2017_10_08.log already exists.Print directory [.\print\2017_10_08] already exist!
-Print sub directory [.\print\2017_10_08.\open_sheet] already exist!
-Print sub directory [.\print\2017_10_08.\closing_sheet] already exist!
-Print sub directory [.\print\2017_10_08.\picking_label] already exist!
-Print sub directory [.\print\2017_10_08.\dispatch_label] already exist!
-
-oct. 08, 2017 1:38:51 PM gui.config.CONFIG_UI0000_AUTH checkLoginAndPass
-INFOS: User EZZIOURI OUSSAMA / ezou1001 connected to host Oussama-PC at 2017-10-08 13:38:51 Module : Planner.
-oct. 08, 2017 1:38:51 PM entity.ConfigProject select
-INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
-oct. 08, 2017 1:39:13 PM helper.Helper InitDailyDestPrintDir
-INFOS: File 2017_10_08.log already exists.Print directory [.\print\2017_10_08] already exist!
-Print sub directory [.\print\2017_10_08.\open_sheet] already exist!
-Print sub directory [.\print\2017_10_08.\closing_sheet] already exist!
-Print sub directory [.\print\2017_10_08.\picking_label] already exist!
-Print sub directory [.\print\2017_10_08.\dispatch_label] already exist!
-
-oct. 08, 2017 1:39:22 PM gui.config.CONFIG_UI0000_AUTH checkLoginAndPass
-INFOS: User EZZIOURI OUSSAMA / ezou1001 connected to host Oussama-PC at 2017-10-08 13:39:22 Module : Planner.
-oct. 08, 2017 1:39:23 PM entity.ConfigProject select
-INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
-oct. 08, 2017 1:40:09 PM helper.Helper InitDailyDestPrintDir
-INFOS: File 2017_10_08.log already exists.Print directory [.\print\2017_10_08] already exist!
-Print sub directory [.\print\2017_10_08.\open_sheet] already exist!
-Print sub directory [.\print\2017_10_08.\closing_sheet] already exist!
-Print sub directory [.\print\2017_10_08.\picking_label] already exist!
-Print sub directory [.\print\2017_10_08.\dispatch_label] already exist!
-
-oct. 08, 2017 1:40:21 PM gui.config.CONFIG_UI0000_AUTH checkLoginAndPass
-INFOS: User EZZIOURI OUSSAMA / ezou1001 connected to host Oussama-PC at 2017-10-08 13:40:21 Module : Planner.
-oct. 08, 2017 1:40:21 PM entity.ConfigProject select
-INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
-oct. 08, 2017 1:41:02 PM gui.config.CONFIG_UI0000_AUTH checkLoginAndPass
-INFOS: User EZZIOURI OUSSAMA / ezou1001 connected to host Oussama-PC at 2017-10-08 13:41:02 Module : Planner.
-oct. 08, 2017 1:41:02 PM entity.ConfigSegment select
+oct. 08, 2017 5:28:11 PM entity.ConfigSegment select
 INFOS: FROM ConfigSegment bp ORDER BY segment ASC
-oct. 08, 2017 1:41:02 PM entity.ConfigWorkplace selectBySegment
-INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
-oct. 08, 2017 1:41:02 PM entity.ConfigProject select
-INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
-oct. 08, 2017 1:59:59 PM helper.Helper InitDailyDestPrintDir
-INFOS: File 2017_10_08.log already exists.Print directory [.\print\2017_10_08] already exist!
-Print sub directory [.\print\2017_10_08.\open_sheet] already exist!
-Print sub directory [.\print\2017_10_08.\closing_sheet] already exist!
-Print sub directory [.\print\2017_10_08.\picking_label] already exist!
-Print sub directory [.\print\2017_10_08.\dispatch_label] already exist!
-
-oct. 08, 2017 2:00:40 PM gui.config.CONFIG_UI0000_AUTH checkLoginAndPass
-INFOS: User EZZIOURI OUSSAMA / ezou1001 connected to host Oussama-PC at 2017-10-08 14:00:40 Module : Planner.
-oct. 08, 2017 2:00:40 PM entity.ConfigProject select
-INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
-oct. 08, 2017 2:02:34 PM helper.Helper InitDailyDestPrintDir
-INFOS: File 2017_10_08.log already exists.Print directory [.\print\2017_10_08] already exist!
-Print sub directory [.\print\2017_10_08.\open_sheet] already exist!
-Print sub directory [.\print\2017_10_08.\closing_sheet] already exist!
-Print sub directory [.\print\2017_10_08.\picking_label] already exist!
-Print sub directory [.\print\2017_10_08.\dispatch_label] already exist!
-
-oct. 08, 2017 2:02:39 PM gui.config.CONFIG_UI0000_AUTH checkLoginAndPass
-INFOS: User EZZIOURI OUSSAMA / * connected to host Oussama-PC at 2017-10-08 14:02:39 Module : Planner.
-oct. 08, 2017 2:02:39 PM entity.ConfigProject select
-INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
-oct. 08, 2017 2:03:02 PM gui.config.CONFIG_UI0000_AUTH checkLoginAndPass
-INFOS: User EZZIOURI OUSSAMA / * connected to host Oussama-PC at 2017-10-08 14:03:02 Module : Planner.
-oct. 08, 2017 2:03:02 PM entity.ConfigSegment select
+oct. 08, 2017 5:28:11 PM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+oct. 08, 2017 5:28:15 PM entity.ConfigSegment select
 INFOS: FROM ConfigSegment bp ORDER BY segment ASC
-oct. 08, 2017 2:03:02 PM entity.ConfigWorkplace selectBySegment
+oct. 08, 2017 5:28:15 PM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+oct. 08, 2017 5:28:15 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+oct. 08, 2017 5:28:15 PM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+oct. 08, 2017 5:28:16 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+oct. 08, 2017 5:28:16 PM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+oct. 08, 2017 5:28:16 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+oct. 08, 2017 5:28:16 PM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+oct. 08, 2017 5:28:19 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+oct. 08, 2017 5:28:19 PM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+oct. 08, 2017 5:28:32 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+oct. 08, 2017 5:28:34 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+oct. 08, 2017 5:28:34 PM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+oct. 08, 2017 5:28:44 PM gui.packaging.PACKAGING_UI9001_DropContainerConfirmation ok_btnActionPerformed
+INFOS: Droping harness list...1
+oct. 08, 2017 5:28:47 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+oct. 08, 2017 5:28:47 PM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+oct. 08, 2017 5:28:49 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+oct. 08, 2017 5:28:49 PM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+oct. 08, 2017 5:28:49 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+oct. 08, 2017 5:28:49 PM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+oct. 08, 2017 5:28:50 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+oct. 08, 2017 5:28:50 PM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+oct. 08, 2017 5:28:50 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+oct. 08, 2017 5:28:50 PM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+oct. 08, 2017 5:28:51 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+oct. 08, 2017 5:28:51 PM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+oct. 08, 2017 5:28:52 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+oct. 08, 2017 5:28:52 PM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+oct. 08, 2017 5:28:56 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+oct. 08, 2017 5:28:56 PM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+oct. 08, 2017 5:29:27 PM gui.config.CONFIG_UI0000_AUTH checkLoginAndPass
+INFOS: User EZZIOURI OUSSAMA / * connected to host Oussama-PC at 2017-10-08 17:29:27 Module : Planner.
+oct. 08, 2017 5:29:27 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 08, 2017 5:32:37 PM helper.Helper InitDailyDestPrintDir
+INFOS: File 2017_10_08.log already exists.Print directory [.\print\2017_10_08] already exist!
+Print sub directory [.\print\2017_10_08.\open_sheet] already exist!
+Print sub directory [.\print\2017_10_08.\closing_sheet] already exist!
+Print sub directory [.\print\2017_10_08.\picking_label] already exist!
+Print sub directory [.\print\2017_10_08.\dispatch_label] already exist!
+
+oct. 08, 2017 5:32:41 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 08, 2017 5:32:41 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 08, 2017 5:32:45 PM gui.packaging.state.S010_UserCodeScan doAction
+INFOS: Invalid matricule number or account locked !
+oct. 08, 2017 5:32:45 PM gui.packaging.PACKAGING_UI0002_PasswordRequest connect
+INFOS: User EZZIOURI OUSSAMA / ducati connected to host Oussama-PC at 2017-10-08 17:32:45 Project : DUCATI.
+oct. 08, 2017 5:32:45 PM gui.packaging.PACKAGING_UI0002_PasswordRequest loadDotMatrixCodePatterns
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord AND cb.harness_type = :harnessType ORDER BY id ASC
+oct. 08, 2017 5:32:45 PM gui.packaging.PACKAGING_UI0002_PasswordRequest loadPartNumberCodePatterns
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord AND cb.harness_type = :harnessType ORDER BY id ASC
+oct. 08, 2017 5:33:03 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [5101C861D] in ConfigUCS: DUCATI
+oct. 08, 2017 5:33:03 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [5101C861D] found for project [DUCATI].
+oct. 08, 2017 5:33:03 PM gui.packaging.state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P5101C861D] OK.
+oct. 08, 2017 5:33:07 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [5101C861D;05.10.2017;10:05:03] in BaseHarness.
+oct. 08, 2017 5:33:07 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+oct. 08, 2017 5:34:48 PM helper.Helper InitDailyDestPrintDir
+INFOS: File 2017_10_08.log already exists.Print directory [.\print\2017_10_08] already exist!
+Print sub directory [.\print\2017_10_08.\open_sheet] already exist!
+Print sub directory [.\print\2017_10_08.\closing_sheet] already exist!
+Print sub directory [.\print\2017_10_08.\picking_label] already exist!
+Print sub directory [.\print\2017_10_08.\dispatch_label] already exist!
+
+oct. 08, 2017 5:34:56 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 08, 2017 5:34:56 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 08, 2017 5:34:58 PM gui.packaging.state.S010_UserCodeScan doAction
+INFOS: Invalid matricule number or account locked !
+oct. 08, 2017 5:35:00 PM gui.packaging.PACKAGING_UI0002_PasswordRequest connect
+INFOS: User EZZIOURI OUSSAMA / ducati connected to host Oussama-PC at 2017-10-08 17:35:00 Project : DUCATI.
+oct. 08, 2017 5:35:00 PM gui.packaging.PACKAGING_UI0002_PasswordRequest loadDotMatrixCodePatterns
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord AND cb.harness_type = :harnessType ORDER BY id ASC
+oct. 08, 2017 5:35:00 PM gui.packaging.PACKAGING_UI0002_PasswordRequest loadPartNumberCodePatterns
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord AND cb.harness_type = :harnessType ORDER BY id ASC
+oct. 08, 2017 5:35:02 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [5101C861D] in ConfigUCS: DUCATI
+oct. 08, 2017 5:35:02 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [5101C861D] found for project [DUCATI].
+oct. 08, 2017 5:35:02 PM gui.packaging.state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P5101C861D] OK.
+oct. 08, 2017 5:35:09 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P5101C861D;05.10.2017;10:05:03] in BaseHarness.
+oct. 08, 2017 5:35:09 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+oct. 08, 2017 5:35:09 PM gui.packaging.state.S030_MatrixIdScan doAction
+INFOS: Valid Harness Counter scanned [P5101C861D;05.10.2017;10:05:03] OK.
+oct. 08, 2017 5:35:12 PM gui.packaging.state.S040_PalletChoice doAction
+INFOS: Is it a new pallet ?
+oct. 08, 2017 5:35:12 PM gui.packaging.state.S040_PalletChoice doAction
+INFOS:  [Yes]
+oct. 08, 2017 5:35:14 PM helper.Helper InitDailyDestPrintDir
+INFOS: File 2017_10_08.log already exists.Print directory [.\print\2017_10_08] already exist!
+Print sub directory [.\print\2017_10_08.\open_sheet] already exist!
+Print sub directory [.\print\2017_10_08.\closing_sheet] already exist!
+Print sub directory [.\print\2017_10_08.\picking_label] already exist!
+Print sub directory [.\print\2017_10_08.\dispatch_label] already exist!
+Print directory [.\print\2017_10_08] already exist!
+Print sub directory [.\print\2017_10_08.\open_sheet] already exist!
+Print sub directory [.\print\2017_10_08.\closing_sheet] already exist!
+Print sub directory [.\print\2017_10_08.\picking_label] already exist!
+Print sub directory [.\print\2017_10_08.\dispatch_label] already exist!
+
+oct. 08, 2017 5:35:14 PM helper.PrinterHelper saveAndPrintOpenSheet
+INFOS: Set Pallet [200035213] state to [IN_PROCESS]
+oct. 08, 2017 5:35:14 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2017_10_08\open_sheet\PrintOpenPallet_A5_2017_10_08_17_35_14_5101C861D_200035213.pdf] to the default printer...
+oct. 08, 2017 5:35:14 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [.\print\2017_10_08\open_sheet\PrintOpenPallet_A5_2017_10_08_17_35_14_5101C861D_200035213.pdf] has been printed.
+oct. 08, 2017 5:35:14 PM helper.PrinterHelper saveAndPrintOpenSheet
+INFOS: Set Pallet [200035213] state to [PRINTED]
+oct. 08, 2017 5:35:14 PM gui.packaging.PACKAGING_UI9000_ChoosePackType loadConfigUcs
+INFOS: Openning new container for first harness part [5101C861D].
+oct. 08, 2017 5:35:21 PM gui.packaging.state.S041_NewPalletScan doAction
+INFOS: Scanned Pallet number [200035213] OK.
+oct. 08, 2017 5:35:21 PM gui.packaging.state.S041_NewPalletScan doAction
+INFOS: BaseContainer created BaseContainer{id=34853, createTime=Sun Oct 08 17:35:21 WAT 2017, writeTime=Sun Oct 08 17:35:21 WAT 2017, createId=59, writeId=59, user=ducati, createUser=EZZIOURI OUSSAMA, startTime=Sun Oct 08 17:35:21 WAT 2017, closedTime=null, workTime=null, palletNumber=200035213, harnessPart=5101C861D, harnessIndex=1D, supplierPartNumber=26F139204, qtyExpected=3, qtyRead=1, containerState=OPEN, containerStateCode=1000, packType=C11, harnessType=DUCATI, stdTime=1.6, workstation=Oussama-PC, harnessList=[]} 
+oct. 08, 2017 5:35:27 PM entity.BaseHarness checkPartNumberFormat
+INFOS: Invalid part number format [P5101C861D;05.10.2017;10:05:02]!
+oct. 08, 2017 5:35:27 PM gui.packaging.state.S020_HarnessPartScan doAction
+AVERTISSEMENT: Invalid Harness Part scanned [P5101C861D;05.10.2017;10:05:02] !
+oct. 08, 2017 5:35:38 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [5101C861D] in ConfigUCS: DUCATI
+oct. 08, 2017 5:35:38 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [5101C861D] found for project [DUCATI].
+oct. 08, 2017 5:35:38 PM gui.packaging.state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [5101C861D] OK.
+oct. 08, 2017 5:35:49 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P5101C861D;05.10.2017;10:05:05] in BaseHarness.
+oct. 08, 2017 5:35:49 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+oct. 08, 2017 5:35:49 PM gui.packaging.state.S030_MatrixIdScan doAction
+INFOS: Valid Harness Counter scanned [P5101C861D;05.10.2017;10:05:05] OK.
+oct. 08, 2017 5:35:52 PM gui.packaging.state.S040_PalletChoice doAction
+INFOS: Is it a new pallet ?
+oct. 08, 2017 5:35:52 PM gui.packaging.state.S040_PalletChoice doAction
+INFOS:  [Yes]
+oct. 08, 2017 5:35:59 PM gui.packaging.PACKAGING_UI9000_ChoosePackType ucs_jtableKeyPressed
+INFOS: Palette déjà ouverte pour la référence 5101C861D !
+oct. 08, 2017 7:42:19 PM gui.packaging.state.S010_UserCodeScan doAction
+INFOS: Invalid matricule number or account locked !
+oct. 08, 2017 7:42:22 PM gui.packaging.state.S010_UserCodeScan doAction
+INFOS: Invalid matricule number or account locked !
+oct. 08, 2017 7:42:28 PM gui.packaging.state.S010_UserCodeScan doAction
+INFOS: Invalid matricule number or account locked !
+oct. 08, 2017 7:42:29 PM gui.packaging.state.S010_UserCodeScan doAction
+INFOS: Invalid matricule number or account locked !
+oct. 08, 2017 7:42:33 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 08, 2017 7:42:33 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 08, 2017 7:42:41 PM gui.packaging.state.S010_UserCodeScan doAction
+INFOS: Invalid matricule number or account locked !
+oct. 08, 2017 7:43:20 PM gui.packaging.PACKAGING_UI0002_PasswordRequest connect
+INFOS: User OUSSAMA EZZIOURI / hdep connected to host Oussama-PC at 2017-10-08 19:43:20 Project : HDEP.
+oct. 08, 2017 7:43:20 PM gui.packaging.PACKAGING_UI0002_PasswordRequest loadDotMatrixCodePatterns
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord AND cb.harness_type = :harnessType ORDER BY id ASC
+oct. 08, 2017 7:43:20 PM gui.packaging.PACKAGING_UI0002_PasswordRequest loadPartNumberCodePatterns
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord AND cb.harness_type = :harnessType ORDER BY id ASC
+oct. 08, 2017 7:43:40 PM gui.config.CONFIG_UI0000_AUTH checkLoginAndPass
+INFOS: User EZZIOURI OUSSAMA / * connected to host Oussama-PC at 2017-10-08 19:43:40 Module : Planner.
+oct. 08, 2017 7:43:40 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+oct. 08, 2017 7:43:40 PM entity.ConfigWorkplace selectBySegment
 INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
-oct. 08, 2017 2:03:02 PM entity.ConfigProject select
+oct. 08, 2017 7:43:41 PM entity.ConfigProject select
 INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
-oct. 08, 2017 2:03:12 PM gui.config.CONFIG_UI0000_AUTH checkLoginAndPass
-INFOS: User EZZIOURI OUSSAMA / * connected to host Oussama-PC at 2017-10-08 14:03:12 Module : Planner.
-oct. 08, 2017 2:03:12 PM entity.ConfigProject select
+oct. 08, 2017 7:43:56 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+oct. 08, 2017 7:43:56 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+oct. 08, 2017 7:44:33 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [23059254] in ConfigUCS: HDEP
+oct. 08, 2017 7:44:33 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [23059254] found for project [HDEP].
+oct. 08, 2017 7:44:33 PM gui.packaging.state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P23059254] OK.
+oct. 08, 2017 7:44:43 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P2305925422112209092017] in BaseHarness.
+oct. 08, 2017 7:44:43 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+oct. 08, 2017 7:44:45 PM gui.packaging.state.S030_MatrixIdScan doAction
+INFOS: Valid Harness Counter scanned [P2305925422112209092017] OK.
+oct. 08, 2017 7:44:47 PM gui.packaging.state.S040_PalletChoice doAction
+INFOS: Is it a new pallet ?
+oct. 08, 2017 7:44:47 PM gui.packaging.state.S040_PalletChoice doAction
+INFOS:  [Yes]
+oct. 08, 2017 7:44:51 PM helper.Helper InitDailyDestPrintDir
+INFOS: File 2017_10_08.log already exists.Print directory [.\print\2017_10_08] already exist!
+Print sub directory [.\print\2017_10_08.\open_sheet] already exist!
+Print sub directory [.\print\2017_10_08.\closing_sheet] already exist!
+Print sub directory [.\print\2017_10_08.\picking_label] already exist!
+Print sub directory [.\print\2017_10_08.\dispatch_label] already exist!
+Print directory [.\print\2017_10_08] already exist!
+Print sub directory [.\print\2017_10_08.\open_sheet] already exist!
+Print sub directory [.\print\2017_10_08.\closing_sheet] already exist!
+Print sub directory [.\print\2017_10_08.\picking_label] already exist!
+Print sub directory [.\print\2017_10_08.\dispatch_label] already exist!
+Print directory [.\print\2017_10_08] already exist!
+Print sub directory [.\print\2017_10_08.\open_sheet] already exist!
+Print sub directory [.\print\2017_10_08.\closing_sheet] already exist!
+Print sub directory [.\print\2017_10_08.\picking_label] already exist!
+Print sub directory [.\print\2017_10_08.\dispatch_label] already exist!
+
+oct. 08, 2017 7:44:51 PM helper.PrinterHelper saveAndPrintOpenSheet
+INFOS: Set Pallet [200035214] state to [IN_PROCESS]
+oct. 08, 2017 7:44:51 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2017_10_08\open_sheet\PrintOpenPallet_A5_2017_10_08_19_44_51_23059254_200035214.pdf] to the default printer...
+oct. 08, 2017 7:44:51 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [.\print\2017_10_08\open_sheet\PrintOpenPallet_A5_2017_10_08_19_44_51_23059254_200035214.pdf] has been printed.
+oct. 08, 2017 7:44:51 PM helper.PrinterHelper saveAndPrintOpenSheet
+INFOS: Set Pallet [200035214] state to [PRINTED]
+oct. 08, 2017 7:44:51 PM gui.packaging.PACKAGING_UI9000_ChoosePackType loadConfigUcs
+INFOS: Openning new container for first harness part [23059254].
+oct. 08, 2017 7:44:57 PM gui.packaging.state.S041_NewPalletScan doAction
+INFOS: Scanned Pallet number [200035214] OK.
+oct. 08, 2017 7:44:57 PM gui.packaging.state.S041_NewPalletScan doAction
+INFOS: BaseContainer created BaseContainer{id=34854, createTime=Sun Oct 08 19:44:57 WAT 2017, writeTime=Sun Oct 08 19:44:57 WAT 2017, createId=58, writeId=58, user=*, createUser=EZZIOURI OUSSAMA, startTime=Sun Oct 08 19:44:57 WAT 2017, closedTime=null, workTime=null, palletNumber=200035214, harnessPart=23059254, harnessIndex=P01, supplierPartNumber=26C54410A, qtyExpected=1, qtyRead=1, containerState=OPEN, containerStateCode=1000, packType=C9, harnessType=HDEP, stdTime=1.825, workstation=Oussama-PC, harnessList=[]} 
+oct. 08, 2017 7:44:57 PM helper.Helper InitDailyDestPrintDir
+INFOS: File 2017_10_08.log already exists.Print directory [.\print\2017_10_08] already exist!
+Print sub directory [.\print\2017_10_08.\open_sheet] already exist!
+Print sub directory [.\print\2017_10_08.\closing_sheet] already exist!
+Print sub directory [.\print\2017_10_08.\picking_label] already exist!
+Print sub directory [.\print\2017_10_08.\dispatch_label] already exist!
+Print directory [.\print\2017_10_08] already exist!
+Print sub directory [.\print\2017_10_08.\open_sheet] already exist!
+Print sub directory [.\print\2017_10_08.\closing_sheet] already exist!
+Print sub directory [.\print\2017_10_08.\picking_label] already exist!
+Print sub directory [.\print\2017_10_08.\dispatch_label] already exist!
+Print directory [.\print\2017_10_08] already exist!
+Print sub directory [.\print\2017_10_08.\open_sheet] already exist!
+Print sub directory [.\print\2017_10_08.\closing_sheet] already exist!
+Print sub directory [.\print\2017_10_08.\picking_label] already exist!
+Print sub directory [.\print\2017_10_08.\dispatch_label] already exist!
+Print directory [.\print\2017_10_08] already exist!
+Print sub directory [.\print\2017_10_08.\open_sheet] already exist!
+Print sub directory [.\print\2017_10_08.\closing_sheet] already exist!
+Print sub directory [.\print\2017_10_08.\picking_label] already exist!
+Print sub directory [.\print\2017_10_08.\dispatch_label] already exist!
+
+oct. 08, 2017 7:44:58 PM helper.PrinterHelper saveAndPrintClosingSheet
+INFOS: Set Closing Pallet item [34487] state to [IN_PROCESS]
+oct. 08, 2017 7:44:58 PM print.PrintClosingPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2017_10_08\closing_sheet\PrintClosingPallet_A5_23059254_2017_10_08_19_44_58.pdf] to the default printer...
+oct. 08, 2017 7:44:58 PM print.PrintClosingPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [%s] has been printed.
+oct. 08, 2017 7:44:58 PM helper.PrinterHelper saveAndPrintClosingSheet
+INFOS: Set Closing Pallet [34487] state to [PRINTED]
+oct. 08, 2017 7:46:34 PM gui.packaging.PACKAGING_UI9001_DropContainerConfirmation ok_btnActionPerformed
+INFOS: Droping harness list...1
+oct. 08, 2017 8:02:51 PM helper.Helper InitDailyDestPrintDir
+INFOS: File 2017_10_08.log already exists.Print directory [.\print\2017_10_08] already exist!
+Print sub directory [.\print\2017_10_08.\open_sheet] already exist!
+Print sub directory [.\print\2017_10_08.\closing_sheet] already exist!
+Print sub directory [.\print\2017_10_08.\picking_label] already exist!
+Print sub directory [.\print\2017_10_08.\dispatch_label] already exist!
+
+oct. 08, 2017 8:02:55 PM entity.ConfigProject select
 INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
-oct. 08, 2017 2:04:06 PM helper.Helper InitDailyDestPrintDir
-INFOS: File 2017_10_08.log already exists.Print directory [.\print\2017_10_08] already exist!
-Print sub directory [.\print\2017_10_08.\open_sheet] already exist!
-Print sub directory [.\print\2017_10_08.\closing_sheet] already exist!
-Print sub directory [.\print\2017_10_08.\picking_label] already exist!
-Print sub directory [.\print\2017_10_08.\dispatch_label] already exist!
-
-oct. 08, 2017 2:04:12 PM gui.config.CONFIG_UI0000_AUTH checkLoginAndPass
-INFOS: User EZZIOURI OUSSAMA / * connected to host Oussama-PC at 2017-10-08 14:04:12 Module : Planner.
-oct. 08, 2017 2:04:12 PM entity.ConfigProject select
+oct. 08, 2017 8:02:55 PM entity.ConfigProject select
 INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
-oct. 08, 2017 2:05:01 PM helper.Helper InitDailyDestPrintDir
-INFOS: File 2017_10_08.log already exists.Print directory [.\print\2017_10_08] already exist!
-Print sub directory [.\print\2017_10_08.\open_sheet] already exist!
-Print sub directory [.\print\2017_10_08.\closing_sheet] already exist!
-Print sub directory [.\print\2017_10_08.\picking_label] already exist!
-Print sub directory [.\print\2017_10_08.\dispatch_label] already exist!
-
-oct. 08, 2017 2:05:06 PM gui.config.CONFIG_UI0000_AUTH checkLoginAndPass
-INFOS: User EZZIOURI OUSSAMA / * connected to host Oussama-PC at 2017-10-08 14:05:06 Module : Planner.
-oct. 08, 2017 2:05:58 PM helper.Helper InitDailyDestPrintDir
-INFOS: File 2017_10_08.log already exists.Print directory [.\print\2017_10_08] already exist!
-Print sub directory [.\print\2017_10_08.\open_sheet] already exist!
-Print sub directory [.\print\2017_10_08.\closing_sheet] already exist!
-Print sub directory [.\print\2017_10_08.\picking_label] already exist!
-Print sub directory [.\print\2017_10_08.\dispatch_label] already exist!
-
-oct. 08, 2017 2:06:11 PM gui.config.CONFIG_UI0000_AUTH checkLoginAndPass
-INFOS: User EZZIOURI OUSSAMA / * connected to host Oussama-PC at 2017-10-08 14:06:11 Module : Planner.
-oct. 08, 2017 2:06:11 PM entity.ConfigProject select
+oct. 08, 2017 8:03:03 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+oct. 08, 2017 8:03:03 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+oct. 08, 2017 8:03:03 PM entity.ConfigWorkplace select
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+oct. 08, 2017 8:04:31 PM gui.config.CONFIG_UI0000_AUTH checkLoginAndPass
+INFOS: User EZZIOURI OUSSAMA / ezou1001 connected to host Oussama-PC at 2017-10-08 20:04:31 Module : Planner.
+oct. 08, 2017 8:04:31 PM entity.ConfigSegment select
+INFOS: FROM ConfigSegment bp ORDER BY segment ASC
+oct. 08, 2017 8:04:31 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+oct. 08, 2017 8:04:31 PM entity.ConfigProject select
 INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
-oct. 08, 2017 2:06:58 PM helper.Helper InitDailyDestPrintDir
-INFOS: File 2017_10_08.log already exists.Print directory [.\print\2017_10_08] already exist!
-Print sub directory [.\print\2017_10_08.\open_sheet] already exist!
-Print sub directory [.\print\2017_10_08.\closing_sheet] already exist!
-Print sub directory [.\print\2017_10_08.\picking_label] already exist!
-Print sub directory [.\print\2017_10_08.\dispatch_label] already exist!
-
-oct. 08, 2017 2:07:04 PM gui.config.CONFIG_UI0000_AUTH checkLoginAndPass
-INFOS: User EZZIOURI OUSSAMA / * connected to host Oussama-PC at 2017-10-08 14:07:04 Module : Planner.
-oct. 08, 2017 2:07:04 PM entity.ConfigProject select
-INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
-oct. 08, 2017 2:10:09 PM helper.Helper InitDailyDestPrintDir
-INFOS: File 2017_10_08.log already exists.Print directory [.\print\2017_10_08] already exist!
-Print sub directory [.\print\2017_10_08.\open_sheet] already exist!
-Print sub directory [.\print\2017_10_08.\closing_sheet] already exist!
-Print sub directory [.\print\2017_10_08.\picking_label] already exist!
-Print sub directory [.\print\2017_10_08.\dispatch_label] already exist!
-
-oct. 08, 2017 2:10:16 PM gui.config.CONFIG_UI0000_AUTH checkLoginAndPass
-INFOS: User EZZIOURI OUSSAMA / * connected to host Oussama-PC at 2017-10-08 14:10:16 Module : Planner.
-oct. 08, 2017 2:10:16 PM entity.ConfigProject select
-INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
-oct. 08, 2017 2:12:38 PM helper.Helper InitDailyDestPrintDir
-INFOS: File 2017_10_08.log already exists.Print directory [.\print\2017_10_08] already exist!
-Print sub directory [.\print\2017_10_08.\open_sheet] already exist!
-Print sub directory [.\print\2017_10_08.\closing_sheet] already exist!
-Print sub directory [.\print\2017_10_08.\picking_label] already exist!
-Print sub directory [.\print\2017_10_08.\dispatch_label] already exist!
-
-oct. 08, 2017 2:12:48 PM gui.config.CONFIG_UI0000_AUTH checkLoginAndPass
-INFOS: User EZZIOURI OUSSAMA / * connected to host Oussama-PC at 2017-10-08 14:12:48 Module : Planner.
-oct. 08, 2017 2:12:49 PM entity.ConfigProject select
-INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
-oct. 08, 2017 2:16:43 PM helper.Helper InitDailyDestPrintDir
-INFOS: File 2017_10_08.log already exists.Print directory [.\print\2017_10_08] already exist!
-Print sub directory [.\print\2017_10_08.\open_sheet] already exist!
-Print sub directory [.\print\2017_10_08.\closing_sheet] already exist!
-Print sub directory [.\print\2017_10_08.\picking_label] already exist!
-Print sub directory [.\print\2017_10_08.\dispatch_label] already exist!
-
-oct. 08, 2017 2:17:00 PM gui.config.CONFIG_UI0000_AUTH checkLoginAndPass
-INFOS: User EZZIOURI OUSSAMA / * connected to host Oussama-PC at 2017-10-08 14:17:00 Module : Planner.
-oct. 08, 2017 2:17:00 PM entity.ConfigProject select
-INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
-oct. 08, 2017 3:11:35 PM helper.Helper InitDailyDestPrintDir
-INFOS: File 2017_10_08.log already exists.Print directory [.\print\2017_10_08] already exist!
-Print sub directory [.\print\2017_10_08.\open_sheet] already exist!
-Print sub directory [.\print\2017_10_08.\closing_sheet] already exist!
-Print sub directory [.\print\2017_10_08.\picking_label] already exist!
-Print sub directory [.\print\2017_10_08.\dispatch_label] already exist!
-
-oct. 08, 2017 3:11:42 PM gui.config.CONFIG_UI0000_AUTH checkLoginAndPass
-INFOS: User EZZIOURI OUSSAMA / * connected to host Oussama-PC at 2017-10-08 15:11:42 Module : Planner.
-oct. 08, 2017 3:11:42 PM entity.ConfigProject select
-INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
-oct. 08, 2017 3:58:33 PM helper.Helper InitDailyDestPrintDir
-INFOS: File 2017_10_08.log already exists.Print directory [.\print\2017_10_08] already exist!
-Print sub directory [.\print\2017_10_08.\open_sheet] already exist!
-Print sub directory [.\print\2017_10_08.\closing_sheet] already exist!
-Print sub directory [.\print\2017_10_08.\picking_label] already exist!
-Print sub directory [.\print\2017_10_08.\dispatch_label] already exist!
-
-oct. 08, 2017 4:01:29 PM helper.Helper InitDailyDestPrintDir
-INFOS: File 2017_10_08.log already exists.Print directory [.\print\2017_10_08] already exist!
-Print sub directory [.\print\2017_10_08.\open_sheet] already exist!
-Print sub directory [.\print\2017_10_08.\closing_sheet] already exist!
-Print sub directory [.\print\2017_10_08.\picking_label] already exist!
-Print sub directory [.\print\2017_10_08.\dispatch_label] already exist!
-
-oct. 08, 2017 4:01:45 PM gui.packaging_warehouse.PACKAGING_WAREHOUSE_UI0001_PasswordRequest connect
-INFOS: User EZZIOURI OUSSAMA / * connected to host Oussama-PC at 2017-10-08 16:01:45 Packaging warehouse interface : .
-oct. 08, 2017 4:01:55 PM gui.warehouse_dispatch.WAREHOUSE_DISPATCH_UI0003_PasswordRequest connect
-INFOS: User EZZIOURI OUSSAMA / * connected to host Oussama-PC at 2017-10-08 16:01:55 Dispatch interface : .
-oct. 08, 2017 4:03:32 PM helper.Helper InitDailyDestPrintDir
-INFOS: File 2017_10_08.log already exists.Print directory [.\print\2017_10_08] already exist!
-Print sub directory [.\print\2017_10_08.\open_sheet] already exist!
-Print sub directory [.\print\2017_10_08.\closing_sheet] already exist!
-Print sub directory [.\print\2017_10_08.\picking_label] already exist!
-Print sub directory [.\print\2017_10_08.\dispatch_label] already exist!
-
-oct. 08, 2017 4:04:14 PM helper.Helper InitDailyDestPrintDir
-INFOS: File 2017_10_08.log already exists.Print directory [.\print\2017_10_08] already exist!
-Print sub directory [.\print\2017_10_08.\open_sheet] already exist!
-Print sub directory [.\print\2017_10_08.\closing_sheet] already exist!
-Print sub directory [.\print\2017_10_08.\picking_label] already exist!
-Print sub directory [.\print\2017_10_08.\dispatch_label] already exist!
-
+oct. 08, 2017 8:04:37 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+oct. 08, 2017 8:04:37 PM entity.ConfigWorkplace selectBySegment
+INFOS: FROM ConfigWorkplace bp WHERE segment = :segment ORDER BY workplace ASC
+oct. 08, 2017 8:04:52 PM gui.packaging_warehouse.PACKAGING_WAREHOUSE_UI0001_PasswordRequest connect
+INFOS: User EZZIOURI OUSSAMA / ezou1001 connected to host Oussama-PC at 2017-10-08 20:04:52 Packaging warehouse interface : .

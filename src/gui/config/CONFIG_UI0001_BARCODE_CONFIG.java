@@ -178,7 +178,6 @@ public class CONFIG_UI0001_BARCODE_CONFIG extends javax.swing.JFrame {
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         search_harness_type = new javax.swing.JTextField();
-        refresh_btn = new javax.swing.JButton();
         clear_filters_btn = new javax.swing.JButton();
 
         setTitle("Configuration des codes à barres");
@@ -392,6 +391,12 @@ public class CONFIG_UI0001_BARCODE_CONFIG extends javax.swing.JFrame {
 
         jLabel6.setText("Customer P.N");
 
+        search_harness_part.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                search_harness_partKeyPressed(evt);
+            }
+        });
+
         filter_btn.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
         filter_btn.setText("Filter");
         filter_btn.setToolTipText("Filter");
@@ -406,21 +411,19 @@ public class CONFIG_UI0001_BARCODE_CONFIG extends javax.swing.JFrame {
             }
         });
 
+        search_keyword.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                search_keywordKeyPressed(evt);
+            }
+        });
+
         jLabel8.setText("Key Word");
 
         jLabel9.setText("Harness Type");
 
-        refresh_btn.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
-        refresh_btn.setText("Refresh");
-        refresh_btn.setToolTipText("Filter");
-        refresh_btn.setBorderPainted(false);
-        refresh_btn.setMaximumSize(new java.awt.Dimension(24, 24));
-        refresh_btn.setMinimumSize(new java.awt.Dimension(24, 24));
-        refresh_btn.setOpaque(false);
-        refresh_btn.setPreferredSize(new java.awt.Dimension(24, 24));
-        refresh_btn.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                refresh_btnActionPerformed(evt);
+        search_harness_type.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                search_harness_typeKeyPressed(evt);
             }
         });
 
@@ -444,63 +447,51 @@ public class CONFIG_UI0001_BARCODE_CONFIG extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel15)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel6)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(search_harness_part, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jLabel8)
-                        .addGap(16, 16, 16)
-                        .addComponent(search_keyword, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jLabel9)
-                        .addGap(16, 16, 16)
-                        .addComponent(search_harness_type, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel15)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(refresh_btn, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(398, 398, 398))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(jLabel6)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(search_harness_part, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(jLabel8)
+                                .addGap(16, 16, 16)
+                                .addComponent(search_keyword, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(jLabel9)
+                                .addGap(16, 16, 16)
+                                .addComponent(search_harness_type, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(83, 83, 83)
                                 .addComponent(filter_btn, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(clear_filters_btn, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))))
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 1470, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(clear_filters_btn, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 1470, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(6, 6, 6)
                 .addComponent(jLabel15)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                                .addComponent(jLabel8)
-                                .addComponent(search_keyword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jLabel9)
-                                .addComponent(search_harness_type, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(search_harness_part, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jLabel6))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(filter_btn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(clear_filters_btn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(18, 18, 18)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 406, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(refresh_btn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18))))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                        .addComponent(jLabel8)
+                        .addComponent(search_keyword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabel9)
+                        .addComponent(search_harness_type, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(search_harness_part, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabel6))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(filter_btn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(clear_filters_btn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(18, 18, 18)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 406, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -616,10 +607,6 @@ public class CONFIG_UI0001_BARCODE_CONFIG extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_formKeyPressed
 
-    private void refresh_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_refresh_btnActionPerformed
-        refresh();
-    }//GEN-LAST:event_refresh_btnActionPerformed
-
     private void duplicate_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_duplicate_btnActionPerformed
         id_txt.setText("");
         create_time_txt.setText("");
@@ -654,6 +641,10 @@ public class CONFIG_UI0001_BARCODE_CONFIG extends javax.swing.JFrame {
             cb.setHarnessPart(cpn_txt.getText().trim());
             cb.setKeyWord(keyword_txt.getText().trim());
             cb.setDescription(description_txt.getText());
+            cb.setCreateId(Helper.context.getUser().getId());
+            cb.setWriteId(Helper.context.getUser().getId());
+            cb.setCreateTime(new Date());
+            cb.setWriteTime(new Date());
             cb.create(cb);
             clearFields();
             msg_lbl.setText("Nouveau élément enregistré !");
@@ -694,6 +685,18 @@ public class CONFIG_UI0001_BARCODE_CONFIG extends javax.swing.JFrame {
         search_keyword.setText("");
     }//GEN-LAST:event_clear_filters_btnActionPerformed
 
+    private void search_harness_partKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_search_harness_partKeyPressed
+        refresh();
+    }//GEN-LAST:event_search_harness_partKeyPressed
+
+    private void search_keywordKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_search_keywordKeyPressed
+        refresh();
+    }//GEN-LAST:event_search_keywordKeyPressed
+
+    private void search_harness_typeKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_search_harness_typeKeyPressed
+        refresh();
+    }//GEN-LAST:event_search_harness_typeKeyPressed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTable barcode_table;
@@ -727,7 +730,6 @@ public class CONFIG_UI0001_BARCODE_CONFIG extends javax.swing.JFrame {
     private javax.swing.JLabel lname_lbl2;
     private javax.swing.JLabel msg_lbl;
     private javax.swing.JTextField pattern_txt;
-    private javax.swing.JButton refresh_btn;
     private javax.swing.JButton save_btn;
     private javax.swing.JTextField search_harness_part;
     private javax.swing.JTextField search_harness_type;

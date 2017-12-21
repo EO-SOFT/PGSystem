@@ -9,7 +9,7 @@ import com.itextpdf.text.DocumentException;
 import entity.BaseContainer;
 import entity.HisGaliaPrint;
 import entity.HisPalletPrint;
-import gui.packaging.PACKAGING_UI9000_ChoosePackType;
+import gui.packaging.mode1.gui.PACKAGING_UI9000_ChoosePackType;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -209,7 +209,7 @@ public class PrinterHelper {
         else {
             //Get the hisGalia to be reprinted
             Query query = Helper.sess.createQuery(HQLHelper.GET_CLOSING_SHEET);
-            query.setParameter("closingPallet", Helper.CLOSE_PAL_PREF + bc.getPalletNumber());
+            query.setParameter("closingPallet", Helper.CLOSING_PALLET_PREFIX + bc.getPalletNumber());
             Helper.sess.beginTransaction();
             Helper.sess.getTransaction().commit();
             List result = query.list();
@@ -230,9 +230,9 @@ public class PrinterHelper {
             PrintClosingPallet_A5 closePallet = new PrintClosingPallet_A5(
                     bc.getHarnessPart(),
                     bc.getHarnessIndex(),
-                    Helper.QUANTITY_PREF + String.valueOf(bc.getQtyExpected()),
-                    Helper.CLOSE_PAL_PREF + bc.getPalletNumber(),
-                    Helper.SUPPLIER_PART_PREF + bc.getSupplierPartNumber(),
+                    Helper.QUANTITY_PREFIX + String.valueOf(bc.getQtyExpected()),
+                    Helper.CLOSING_PALLET_PREFIX + bc.getPalletNumber(),
+                    Helper.SUPPLIER_PART_PREFIX + bc.getSupplierPartNumber(),
                     Helper.PROP.getProperty("SUPPLIER_NAME"),
                     Helper.getStrTimeStamp(),
                     Helper.PROP.getProperty("WAREHOUSE_CODE"));

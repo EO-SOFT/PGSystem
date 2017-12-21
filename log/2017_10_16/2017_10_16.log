@@ -1,0 +1,207 @@
+oct. 16, 2017 2:58:02 PM helper.Helper InitDailyDestPrintDir
+INFOS: File 2017_10_16.log created !Print directory [.\print\2017_10_16] created !
+Print sub directory [.\print\2017_10_16.\open_sheet] created !
+Print sub directory [.\print\2017_10_16.\closing_sheet] created !
+Print sub directory [.\print\2017_10_16.\picking_label] created !
+Print sub directory [.\print\2017_10_16.\dispatch_label] created !
+
+oct. 16, 2017 2:58:13 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 16, 2017 2:58:13 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 16, 2017 2:58:16 PM gui.packaging.state.S010_UserCodeScan doAction
+INFOS: Invalid matricule number or account locked !
+oct. 16, 2017 2:58:20 PM gui.packaging.PACKAGING_UI0002_PasswordRequest connect
+INFOS: User EZZIOURI OUSSAMA / ducati connected to host WSMA7040 at 2017-10-16 14:58:20 Project : DUCATI.
+oct. 16, 2017 2:58:21 PM gui.packaging.PACKAGING_UI0002_PasswordRequest loadDotMatrixCodePatterns
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord AND cb.harness_type = :harnessType ORDER BY id ASC
+oct. 16, 2017 2:58:21 PM gui.packaging.PACKAGING_UI0002_PasswordRequest loadPartNumberCodePatterns
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord AND cb.harness_type = :harnessType ORDER BY id ASC
+oct. 16, 2017 2:58:55 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [5101C371E] in ConfigUCS: DUCATI
+oct. 16, 2017 2:58:55 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [5101C371E] found for project [DUCATI].
+oct. 16, 2017 2:58:55 PM gui.packaging.state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [5101C371E] OK.
+oct. 16, 2017 2:58:59 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P5101C371E;16.10.2017;12:19:00] in BaseHarness.
+oct. 16, 2017 2:58:59 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+oct. 16, 2017 2:59:00 PM gui.packaging.state.S030_MatrixIdScan doAction
+INFOS: Valid Harness Counter scanned [P5101C371E;16.10.2017;12:19:00] OK.
+oct. 16, 2017 2:59:04 PM gui.packaging.state.S040_PalletChoice doAction
+INFOS: Is it a new pallet ?
+oct. 16, 2017 2:59:04 PM gui.packaging.state.S040_PalletChoice doAction
+INFOS:  [Yes]
+oct. 16, 2017 2:59:06 PM helper.Helper InitDailyDestPrintDir
+INFOS: File 2017_10_16.log created !Print directory [.\print\2017_10_16] created !
+Print sub directory [.\print\2017_10_16.\open_sheet] created !
+Print sub directory [.\print\2017_10_16.\closing_sheet] created !
+Print sub directory [.\print\2017_10_16.\picking_label] created !
+Print sub directory [.\print\2017_10_16.\dispatch_label] created !
+Print directory [.\print\2017_10_16] already exist!
+Print sub directory [.\print\2017_10_16.\open_sheet] already exist!
+Print sub directory [.\print\2017_10_16.\closing_sheet] already exist!
+Print sub directory [.\print\2017_10_16.\picking_label] already exist!
+Print sub directory [.\print\2017_10_16.\dispatch_label] already exist!
+
+oct. 16, 2017 2:59:07 PM helper.PrinterHelper saveAndPrintOpenSheet
+INFOS: Set Pallet [200035352] state to [IN_PROCESS]
+oct. 16, 2017 2:59:07 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2017_10_16\open_sheet\PrintOpenPallet_A5_2017_10_16_14_59_06_5101C371E_200035352.pdf] to the default printer...
+oct. 16, 2017 2:59:07 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [.\print\2017_10_16\open_sheet\PrintOpenPallet_A5_2017_10_16_14_59_06_5101C371E_200035352.pdf] has been printed.
+oct. 16, 2017 2:59:07 PM helper.PrinterHelper saveAndPrintOpenSheet
+INFOS: Set Pallet [200035352] state to [PRINTED]
+oct. 16, 2017 2:59:07 PM gui.packaging.PACKAGING_UI9000_ChoosePackType loadConfigUcs
+INFOS: Openning new container for first harness part [5101C371E].
+oct. 16, 2017 2:59:18 PM gui.packaging.state.S041_NewPalletScan doAction
+INFOS: Scanned Pallet number [200035352] OK.
+oct. 16, 2017 2:59:19 PM gui.packaging.state.S041_NewPalletScan doAction
+INFOS: BaseContainer created BaseContainer{id=34988, createTime=Mon Oct 16 14:59:18 WEST 2017, writeTime=Mon Oct 16 14:59:18 WEST 2017, createId=59, writeId=59, user=ducati, createUser=EZZIOURI OUSSAMA, startTime=Mon Oct 16 14:59:18 WEST 2017, closedTime=null, workTime=null, palletNumber=200035352, harnessPart=5101C371E, harnessIndex=1E, supplierPartNumber=26F139104, qtyExpected=3, qtyRead=1, containerState=OPEN, containerStateCode=1000, packType=C11, harnessType=DUCATI, stdTime=1.8, workstation=WSMA7040, harnessList=[]} 
+oct. 16, 2017 2:59:28 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [5101C371E] in ConfigUCS: DUCATI
+oct. 16, 2017 2:59:28 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [5101C371E] found for project [DUCATI].
+oct. 16, 2017 2:59:28 PM gui.packaging.state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [5101C371E] OK.
+oct. 16, 2017 2:59:31 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [5101C371E;16.10.2017;12:19:01] in BaseHarness.
+oct. 16, 2017 2:59:31 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+oct. 16, 2017 2:59:31 PM gui.packaging.state.S030_MatrixIdScan doAction
+INFOS: Valid Harness Counter scanned [5101C371E;16.10.2017;12:19:01] OK.
+oct. 16, 2017 2:59:36 PM gui.packaging.state.S040_PalletChoice doAction
+INFOS: Is it a new pallet ?
+oct. 16, 2017 2:59:36 PM gui.packaging.state.S040_PalletChoice doAction
+AVERTISSEMENT: Invalid OPEN PALLET barcode [200035352]!
+oct. 16, 2017 3:02:19 PM helper.Helper InitDailyDestPrintDir
+INFOS: File 2017_10_16.log already exists.Print directory [.\print\2017_10_16] already exist!
+Print sub directory [.\print\2017_10_16.\open_sheet] already exist!
+Print sub directory [.\print\2017_10_16.\closing_sheet] already exist!
+Print sub directory [.\print\2017_10_16.\picking_label] already exist!
+Print sub directory [.\print\2017_10_16.\dispatch_label] already exist!
+
+oct. 16, 2017 3:03:34 PM helper.Helper InitDailyDestPrintDir
+INFOS: File 2017_10_16.log already exists.Print directory [.\print\2017_10_16] already exist!
+Print sub directory [.\print\2017_10_16.\open_sheet] already exist!
+Print sub directory [.\print\2017_10_16.\closing_sheet] already exist!
+Print sub directory [.\print\2017_10_16.\picking_label] already exist!
+Print sub directory [.\print\2017_10_16.\dispatch_label] already exist!
+
+oct. 16, 2017 3:03:36 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 16, 2017 3:03:36 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+oct. 16, 2017 3:03:39 PM gui.packaging.state.S010_UserCodeScan doAction
+INFOS: Invalid matricule number or account locked !
+oct. 16, 2017 3:03:44 PM gui.packaging.PACKAGING_UI0002_PasswordRequest connect
+INFOS: User EZZIOURI OUSSAMA / ducati connected to host WSMA7040 at 2017-10-16 15:03:44 Project : DUCATI.
+oct. 16, 2017 3:03:44 PM gui.packaging.PACKAGING_UI0002_PasswordRequest loadDotMatrixCodePatterns
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord AND cb.harness_type = :harnessType ORDER BY id ASC
+oct. 16, 2017 3:03:44 PM gui.packaging.PACKAGING_UI0002_PasswordRequest loadPartNumberCodePatterns
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord AND cb.harness_type = :harnessType ORDER BY id ASC
+oct. 16, 2017 3:03:53 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [5101C371E] in ConfigUCS: DUCATI
+oct. 16, 2017 3:03:53 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [5101C371E] found for project [DUCATI].
+oct. 16, 2017 3:03:53 PM gui.packaging.state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [5101C371E] OK.
+oct. 16, 2017 3:03:56 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P5101C371E;16.10.2017;12:19:01] in BaseHarness.
+oct. 16, 2017 3:03:56 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+oct. 16, 2017 3:03:56 PM gui.packaging.state.S030_MatrixIdScan doAction
+INFOS: Valid Harness Counter scanned [P5101C371E;16.10.2017;12:19:01] OK.
+oct. 16, 2017 3:04:00 PM gui.packaging.state.S040_PalletChoice doAction
+INFOS: Is it a new pallet ?
+oct. 16, 2017 3:04:00 PM gui.packaging.state.S040_PalletChoice doAction
+INFOS:  [Yes]
+oct. 16, 2017 3:04:03 PM gui.packaging.PACKAGING_UI9000_ChoosePackType ucs_jtableKeyPressed
+INFOS: Palette déjà ouverte pour la référence 5101C371E !
+oct. 16, 2017 3:04:08 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [5101C371E] in ConfigUCS: DUCATI
+oct. 16, 2017 3:04:08 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [5101C371E] found for project [DUCATI].
+oct. 16, 2017 3:04:08 PM gui.packaging.state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [5101C371E] OK.
+oct. 16, 2017 3:04:09 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [P5101C371E;16.10.2017;12:19:01] in BaseHarness.
+oct. 16, 2017 3:04:09 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+oct. 16, 2017 3:04:09 PM gui.packaging.state.S030_MatrixIdScan doAction
+INFOS: Valid Harness Counter scanned [P5101C371E;16.10.2017;12:19:01] OK.
+oct. 16, 2017 3:04:13 PM gui.packaging.state.S040_PalletChoice doAction
+INFOS: Is it a new pallet ?
+oct. 16, 2017 3:04:13 PM gui.packaging.state.S040_PalletChoice doAction
+INFOS:  [No]
+oct. 16, 2017 3:04:13 PM gui.packaging.state.S040_PalletChoice doAction
+INFOS: Pallet values 
+oct. 16, 2017 3:04:13 PM gui.packaging.state.S040_PalletChoice doAction
+INFOS: State           :   [true]
+oct. 16, 2017 3:04:13 PM gui.packaging.state.S040_PalletChoice doAction
+INFOS: Qty Expected    :   [3]
+oct. 16, 2017 3:04:13 PM gui.packaging.state.S040_PalletChoice doAction
+INFOS: Qty Read        :   [1]
+oct. 16, 2017 3:04:13 PM gui.packaging.state.S040_PalletChoice doAction
+INFOS: Std Time        :   [1.8]
+oct. 16, 2017 3:04:13 PM gui.packaging.state.S040_PalletChoice doAction
+INFOS: Harness Part [5101C371E] = Context Harness Part [101C371E]
+oct. 16, 2017 3:04:13 PM gui.packaging.state.S040_PalletChoice doAction
+INFOS: Harness Type [DUCATI] = Context Harness Type [DUCATI]
+oct. 16, 2017 3:04:20 PM entity.BaseHarness checkPartNumberFormat
+INFOS: Invalid part number format [P5101C371E;16.10.2017;12:19:02]!
+oct. 16, 2017 3:04:20 PM gui.packaging.state.S020_HarnessPartScan doAction
+AVERTISSEMENT: Invalid Harness Part scanned [P5101C371E;16.10.2017;12:19:02] !
+oct. 16, 2017 3:04:24 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [5101C371E] in ConfigUCS: DUCATI
+oct. 16, 2017 3:04:24 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [5101C371E] found for project [DUCATI].
+oct. 16, 2017 3:04:24 PM gui.packaging.state.S020_HarnessPartScan doAction
+INFOS: Harness Part scanned [P5101C371E] OK.
+oct. 16, 2017 3:04:27 PM entity.BaseHarness isCounterExist
+INFOS: Searching Harness counter [5101C371E;16.10.2017;12:19:02] in BaseHarness.
+oct. 16, 2017 3:04:27 PM entity.BaseHarness isCounterExist
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+oct. 16, 2017 3:04:27 PM gui.packaging.state.S030_MatrixIdScan doAction
+INFOS: Valid Harness Counter scanned [5101C371E;16.10.2017;12:19:02] OK.
+oct. 16, 2017 3:04:32 PM gui.packaging.state.S040_PalletChoice doAction
+INFOS: Is it a new pallet ?
+oct. 16, 2017 3:04:32 PM gui.packaging.state.S040_PalletChoice doAction
+INFOS:  [No]
+oct. 16, 2017 3:04:32 PM gui.packaging.state.S040_PalletChoice doAction
+INFOS: Pallet values 
+oct. 16, 2017 3:04:32 PM gui.packaging.state.S040_PalletChoice doAction
+INFOS: State           :   [true]
+oct. 16, 2017 3:04:32 PM gui.packaging.state.S040_PalletChoice doAction
+INFOS: Qty Expected    :   [3]
+oct. 16, 2017 3:04:32 PM gui.packaging.state.S040_PalletChoice doAction
+INFOS: Qty Read        :   [2]
+oct. 16, 2017 3:04:32 PM gui.packaging.state.S040_PalletChoice doAction
+INFOS: Std Time        :   [1.8]
+oct. 16, 2017 3:04:32 PM gui.packaging.state.S040_PalletChoice doAction
+INFOS: Harness Part [5101C371E] = Context Harness Part [5101C371E]
+oct. 16, 2017 3:04:32 PM gui.packaging.state.S040_PalletChoice doAction
+INFOS: Harness Type [DUCATI] = Context Harness Type [DUCATI]
+oct. 16, 2017 3:04:32 PM gui.packaging.state.S040_PalletChoice doAction
+INFOS: Quantité terminée BaseContainer{id=34988, createTime=2017-10-16 14:59:18.0, writeTime=Mon Oct 16 15:04:32 WEST 2017, createId=59, writeId=59, user=ducati, createUser=EZZIOURI OUSSAMA, startTime=2017-10-16 14:59:18.0, closedTime=null, workTime=null, palletNumber=200035352, harnessPart=5101C371E, harnessIndex=1E, supplierPartNumber=26F139104, qtyExpected=3, qtyRead=2, containerState=OPEN, containerStateCode=1000, packType=C11, harnessType=DUCATI, stdTime=1.8, workstation=WSMA7040, harnessList=[entity.BaseHarness@2dee09ce, entity.BaseHarness@6ecce8fe, entity.BaseHarness@4ed4b486]}
+oct. 16, 2017 3:04:32 PM helper.Helper InitDailyDestPrintDir
+INFOS: File 2017_10_16.log already exists.Print directory [.\print\2017_10_16] already exist!
+Print sub directory [.\print\2017_10_16.\open_sheet] already exist!
+Print sub directory [.\print\2017_10_16.\closing_sheet] already exist!
+Print sub directory [.\print\2017_10_16.\picking_label] already exist!
+Print sub directory [.\print\2017_10_16.\dispatch_label] already exist!
+Print directory [.\print\2017_10_16] already exist!
+Print sub directory [.\print\2017_10_16.\open_sheet] already exist!
+Print sub directory [.\print\2017_10_16.\closing_sheet] already exist!
+Print sub directory [.\print\2017_10_16.\picking_label] already exist!
+Print sub directory [.\print\2017_10_16.\dispatch_label] already exist!
+
+oct. 16, 2017 3:04:32 PM helper.PrinterHelper saveAndPrintClosingSheet
+INFOS: Set Closing Pallet item [34623] state to [IN_PROCESS]
+oct. 16, 2017 3:04:32 PM print.PrintClosingPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2017_10_16\closing_sheet\PrintClosingPallet_A5_5101C371E_2017_10_16_15_04_32.pdf] to the default printer...
+oct. 16, 2017 3:04:33 PM print.PrintClosingPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [%s] has been printed.
+oct. 16, 2017 3:04:33 PM helper.PrinterHelper saveAndPrintClosingSheet
+INFOS: Set Closing Pallet [34623] state to [PRINTED]

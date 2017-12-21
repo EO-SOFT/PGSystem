@@ -6,23 +6,27 @@ ALTER SEQUENCE base_engine_label_id_seq RENAME TO base_harness_additional_barcod
 ALTER TABLE drop_base_engine_label RENAME TO drop_base_harness_additional_barcode;
 ALTER SEQUENCE drop_base_engine_label_id_seq RENAME TO drop_base_harness_additional_barcode_id_seq;
 
+ALTER TABLE config_barcode DROP COLUMN IF EXISTS reference;
 ALTER TABLE config_barcode ADD COLUMN harness_type character varying(255);
 ALTER TABLE config_barcode ADD COLUMN create_id integer;
 ALTER TABLE config_barcode ADD COLUMN create_time timestamp without time zone;
 ALTER TABLE config_barcode ADD COLUMN write_id integer;
 ALTER TABLE config_barcode ADD COLUMN write_time timestamp without time zone;
-
-ALTER TABLE config_barcode DROP COLUMN IF EXISTS reference;
-ALTER TABLE config_project ADD COLUMN customer character varying(255);
-
-UPDATE config_barcode SET key_word = null WHERE key_word = 'ENGINE_BARCODE';
-
 UPDATE config_barcode SET harness_type = null WHERE harness_type = 'VOLVO';
+UPDATE config_barcode SET key_word = null WHERE key_word = 'ENGINE_BARCODE';
+UPDATE config_barcode SET create_time='2017-10-09 00:00:00', write_time='2017-10-09 00:00:00';
+UPDATE config_barcode SET create_id=1, write_id=1;
+
+// Import CSV file 
+--After importing config_barcode.csv, restart the sequence to 160
+ALTER SEQUENCE config_barcode_id_seq RESTART WITH 160;
+
+
+ALTER TABLE config_project ADD COLUMN customer character varying(255);
 UPDATE config_project SET customer = 'VOLVO' WHERE harness_type != 'DUCATI';
 UPDATE config_project SET customer = 'DUCATI' WHERE harness_type = 'DUCATI';
 
-// Import CSV file 
-
+//Ducati UCS
 INSERT INTO config_ucs 
 (id, create_id, create_time, harness_index, harness_part, harness_type, pack_size, pack_type, supplier_part_number, write_id, write_time, active, additional_barcode, std_time, addtional_barcode, assy_workstation, lifes, segment, workplace, comment, order_no, special_order, price, destination) 
 VALUES 
@@ -36,7 +40,7 @@ VALUES
 //P5101C371E;05.10.2017;10:05:01
 //5101C371E
 //5101C371E;05.10.2017;10:05:02
-
+//P5101C861D;05.10.2017;10:05:02
 
 //214550870510.2017;10:05:02
 //^[P]{1}\d{8}[P]{1}\d{4}[C]{1}\d{6}[A]{1}\d{17}

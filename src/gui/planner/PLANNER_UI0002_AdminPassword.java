@@ -5,9 +5,9 @@
  */
 package gui.planner;
 
+import gui.packaging.mode1.gui.PACKAGING_UI0001_Main_Mode1;
 import entity.HisLogin;
 import entity.ManufactureUsers;
-import gui.packaging.*;
 import helper.HQLHelper;
 import helper.Helper;
 import java.awt.Frame;
@@ -21,8 +21,8 @@ import java.util.logging.Logger;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import org.hibernate.Query;
-import gui.packaging.state.S010_UserCodeScan;
-import gui.packaging.state.S020_HarnessPartScan;
+import gui.packaging.mode2.state.S010_UserCodeScan;
+import gui.packaging.mode2.state.S020_HarnessPartScan;
 
 /**
  *
@@ -189,7 +189,7 @@ public class PLANNER_UI0002_AdminPassword extends javax.swing.JDialog {
 
     private void ok_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ok_btnActionPerformed
         if (checkLoginAndPass()) {
-            new PACKAGING_UI0001_Main().setVisible(true);
+            new PACKAGING_UI0001_Main_Mode1().setVisible(true);
             this.dispose();
         } else {
             JOptionPane.showMessageDialog(null, Helper.ERR0001_LOGIN_FAILED, "Login Error", JOptionPane.ERROR_MESSAGE);

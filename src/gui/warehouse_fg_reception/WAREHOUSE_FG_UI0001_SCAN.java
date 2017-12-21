@@ -12,7 +12,7 @@ import entity.BaseHarness;
 import entity.HisBaseContainer;
 import entity.HisLogin;
 import entity.PackagingStockMovement;
-import gui.packaging.PACKAGING_UI0014_PalletHistory;
+import gui.packaging.mode1.gui.PACKAGING_UI0014_PalletHistory;
 import gui.warehouse_dispatch.state.WarehouseHelper;
 import java.awt.Color;
 import java.awt.event.KeyEvent;
@@ -768,13 +768,13 @@ public class WAREHOUSE_FG_UI0001_SCAN extends javax.swing.JFrame {
         try {
             BaseContainer bc = new BaseContainer();
 
-            if (bc.checkContainerByState(store_txt.getText().substring(Helper.CLOSE_PAL_PREF.length()), Helper.PALLET_CLOSED)) {
-                this.searchForPallet(store_txt.getText().substring(Helper.CLOSE_PAL_PREF.length()));
-                System.out.println("Exist and closed. set to stored ! " + store_txt.getText().substring(Helper.CLOSE_PAL_PREF.length()));
+            if (bc.checkContainerByState(store_txt.getText().substring(Helper.CLOSING_PALLET_PREFIX.length()), Helper.PALLET_CLOSED)) {
+                this.searchForPallet(store_txt.getText().substring(Helper.CLOSING_PALLET_PREFIX.length()));
+                System.out.println("Exist and closed. set to stored ! " + store_txt.getText().substring(Helper.CLOSING_PALLET_PREFIX.length()));
                 Date fifoTime = new Date();
                 Helper.sess.beginTransaction();
                 Query query = Helper.sess.createQuery(HQLHelper.SET_CONTAINER_STATE_TO_STORED);
-                query.setParameter("palletNumber", store_txt.getText().substring(Helper.CLOSE_PAL_PREF.length()));
+                query.setParameter("palletNumber", store_txt.getText().substring(Helper.CLOSING_PALLET_PREFIX.length()));
                 query.setParameter("containerState", Helper.PALLET_STORED);
                 query.setParameter("containerStateCode", Helper.PALLET_STORED_CODE);
                 query.setParameter("fifoTime", fifoTime);
@@ -793,7 +793,7 @@ public class WAREHOUSE_FG_UI0001_SCAN extends javax.swing.JFrame {
                 //hbc.setFifoTime(fifoTime);
                 
                 hbc.create(hbc);
-                this.searchForPallet(store_txt.getText().substring(Helper.CLOSE_PAL_PREF.length()));
+                this.searchForPallet(store_txt.getText().substring(Helper.CLOSING_PALLET_PREFIX.length()));
                 showMsg("Statut palette modifié !", 1);
 
                 if ("1".equals(Helper.PROP.getProperty("BOOK_PACKAGING").toString())) {
@@ -893,7 +893,7 @@ public class WAREHOUSE_FG_UI0001_SCAN extends javax.swing.JFrame {
                 && search_txtbox.getText().matches(Helper.PALLET_NUMBER_PATTERN)) {
             this.searchForPallet(search_txtbox.getText());
         } else if (search_txtbox.getText().toUpperCase().matches(Helper.CLOSING_PALLET_PATTERN)) {
-            this.searchForPallet(search_txtbox.getText().substring(Helper.CLOSE_PAL_PREF.length()));
+            this.searchForPallet(search_txtbox.getText().substring(Helper.CLOSING_PALLET_PREFIX.length()));
         } else {
             showMsg("Invalid pallet number !", -1);
 
@@ -927,7 +927,7 @@ public class WAREHOUSE_FG_UI0001_SCAN extends javax.swing.JFrame {
                 this.searchForPallet(search_txtbox.getText());
             } else if (!search_txtbox.getText().toUpperCase().equals("")
                     && search_txtbox.getText().toUpperCase().matches(Helper.CLOSING_PALLET_PATTERN)) {
-                this.searchForPallet(search_txtbox.getText().substring(Helper.CLOSE_PAL_PREF.length()));
+                this.searchForPallet(search_txtbox.getText().substring(Helper.CLOSING_PALLET_PREFIX.length()));
             } else {
                 showMsg("Invalid pallet number !", -1);
             }

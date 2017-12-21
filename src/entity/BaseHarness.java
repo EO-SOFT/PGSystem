@@ -373,7 +373,7 @@ public class BaseHarness extends DAO implements java.io.Serializable {
     public static Boolean checkHarnessPartFormat(String hp) {
         //Tester le format du harness part        
         if (!hp.equals("")
-                && hp.startsWith(Helper.HARN_PART_PREF)
+                && hp.startsWith(Helper.HARN_PART_PREFIX)
                 && (hp.length() == Helper.HARN_PART_LEN)) {
             return true;
         } else {
@@ -416,7 +416,7 @@ public class BaseHarness extends DAO implements java.io.Serializable {
     public static Boolean isHarnessPartExist(String hp) {
         //Tester si le harness part exist dans la base UCS        
 
-        String[] part = hp.split(Helper.HARN_PART_PREF);
+        String[] part = hp.split(Helper.HARN_PART_PREFIX);
         Helper.log.info("Searching Harness part [" + part[1] + "] in ConfigUCS: " + part[1]);
         List resultList = new ConfigUcs().select(part[1]);
         if (!resultList.isEmpty()) {

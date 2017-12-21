@@ -14,7 +14,7 @@ import entity.LoadPlanLine;
 import entity.LoadPlanLinePackaging;
 import entity.ManufactureUsers;
 import entity.PackagingStockMovement;
-import gui.packaging.PACKAGING_UI0010_PalletDetails;
+import gui.packaging.mode1.gui.PACKAGING_UI0010_PalletDetails;
 import helper.JDialogExcelFileChooser;
 import gui.warehouse_dispatch.state.S020_PalletNumberScan;
 import gui.warehouse_dispatch.state.WarehouseHelper;
@@ -806,12 +806,25 @@ public final class WAREHOUSE_DISPATCH_UI0002_DISPATCH_SCAN extends javax.swing.J
         jLabel3 = new javax.swing.JLabel();
         jToolBar1 = new javax.swing.JToolBar();
         export_plan_btn = new javax.swing.JButton();
-        jSeparator1 = new javax.swing.JToolBar.Separator();
+        filler5 = new javax.swing.Box.Filler(new java.awt.Dimension(5, 0), new java.awt.Dimension(5, 0), new java.awt.Dimension(5, 32767));
+        jSeparator3 = new javax.swing.JToolBar.Separator();
+        filler4 = new javax.swing.Box.Filler(new java.awt.Dimension(5, 0), new java.awt.Dimension(5, 0), new java.awt.Dimension(5, 32767));
         edit_plan_btn = new javax.swing.JButton();
+        filler2 = new javax.swing.Box.Filler(new java.awt.Dimension(5, 0), new java.awt.Dimension(5, 0), new java.awt.Dimension(5, 32767));
+        jSeparator2 = new javax.swing.JToolBar.Separator();
+        filler3 = new javax.swing.Box.Filler(new java.awt.Dimension(5, 0), new java.awt.Dimension(5, 0), new java.awt.Dimension(5, 32767));
+        pallet_details_btn = new javax.swing.JButton();
+        filler6 = new javax.swing.Box.Filler(new java.awt.Dimension(5, 0), new java.awt.Dimension(5, 0), new java.awt.Dimension(5, 32767));
+        jSeparator4 = new javax.swing.JToolBar.Separator();
+        filler7 = new javax.swing.Box.Filler(new java.awt.Dimension(5, 0), new java.awt.Dimension(5, 0), new java.awt.Dimension(5, 32767));
+        plan_list_btn = new javax.swing.JButton();
         message_label = new javax.swing.JTextField();
         txt_nbreLigne = new javax.swing.JLabel();
-        label_control = new javax.swing.JCheckBox();
         progressBar = new javax.swing.JProgressBar();
+        txt_filter_pal_number = new javax.swing.JTextField();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        plan_id_filter = new javax.swing.JFormattedTextField();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         pallet_details = new javax.swing.JMenuItem();
@@ -958,7 +971,7 @@ public final class WAREHOUSE_DISPATCH_UI0002_DISPATCH_SCAN extends javax.swing.J
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(new_plan_btn)
                     .addComponent(refresh_btn))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jScrollPane1)
                 .addContainerGap())
         );
@@ -1038,6 +1051,11 @@ public final class WAREHOUSE_DISPATCH_UI0002_DISPATCH_SCAN extends javax.swing.J
 
         txt_filter_part.setBackground(new java.awt.Color(204, 255, 204));
         txt_filter_part.setToolTipText("Part Number");
+        txt_filter_part.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txt_filter_partActionPerformed(evt);
+            }
+        });
         txt_filter_part.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 txt_filter_partKeyTyped(evt);
@@ -1071,7 +1089,11 @@ public final class WAREHOUSE_DISPATCH_UI0002_DISPATCH_SCAN extends javax.swing.J
             }
         });
         jToolBar1.add(export_plan_btn);
-        jToolBar1.add(jSeparator1);
+        jToolBar1.add(filler5);
+        jToolBar1.add(jSeparator3);
+
+        filler4.setBackground(new java.awt.Color(102, 102, 102));
+        jToolBar1.add(filler4);
 
         edit_plan_btn.setText("Modifier Plan");
         edit_plan_btn.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, java.awt.Color.lightGray, java.awt.Color.lightGray, null, null));
@@ -1084,6 +1106,36 @@ public final class WAREHOUSE_DISPATCH_UI0002_DISPATCH_SCAN extends javax.swing.J
             }
         });
         jToolBar1.add(edit_plan_btn);
+        jToolBar1.add(filler2);
+        jToolBar1.add(jSeparator2);
+        jToolBar1.add(filler3);
+
+        pallet_details_btn.setText("Détails palette");
+        pallet_details_btn.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, java.awt.Color.lightGray, java.awt.Color.lightGray, null, null));
+        pallet_details_btn.setFocusable(false);
+        pallet_details_btn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        pallet_details_btn.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        pallet_details_btn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                pallet_details_btnActionPerformed(evt);
+            }
+        });
+        jToolBar1.add(pallet_details_btn);
+        jToolBar1.add(filler6);
+        jToolBar1.add(jSeparator4);
+        jToolBar1.add(filler7);
+
+        plan_list_btn.setText("Plans de chargement");
+        plan_list_btn.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, java.awt.Color.lightGray, java.awt.Color.lightGray, null, null));
+        plan_list_btn.setFocusable(false);
+        plan_list_btn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        plan_list_btn.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        plan_list_btn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                plan_list_btnActionPerformed(evt);
+            }
+        });
+        jToolBar1.add(plan_list_btn);
 
         message_label.setEditable(false);
         message_label.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
@@ -1092,9 +1144,27 @@ public final class WAREHOUSE_DISPATCH_UI0002_DISPATCH_SCAN extends javax.swing.J
         txt_nbreLigne.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         txt_nbreLigne.setText("0");
 
-        label_control.setText("Contrôle Galia/FORS");
-
         progressBar.setStringPainted(true);
+
+        txt_filter_pal_number.setBackground(new java.awt.Color(204, 255, 204));
+        txt_filter_pal_number.setToolTipText("Part Number");
+        txt_filter_pal_number.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txt_filter_pal_numberKeyTyped(evt);
+            }
+        });
+
+        jLabel4.setText("Pallet ");
+
+        jLabel5.setText("Plan ID");
+
+        plan_id_filter.setBackground(new java.awt.Color(153, 255, 255));
+        plan_id_filter.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+        plan_id_filter.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                plan_id_filterKeyPressed(evt);
+            }
+        });
 
         jMenu1.setText("Menus");
 
@@ -1145,70 +1215,75 @@ public final class WAREHOUSE_DISPATCH_UI0002_DISPATCH_SCAN extends javax.swing.J
                             .addComponent(table_scroll, javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(txt_filter_part, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(32, 32, 32)
-                                        .addComponent(destinations_box, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGap(2, 2, 2)
-                                        .addComponent(jLabel1)
-                                        .addGap(100, 100, 100)
-                                        .addComponent(jLabel3)))
-                                .addGap(18, 18, 18)
+                                    .addComponent(plan_id_filter, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(txt_filter_part, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel1))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel4)
+                                    .addComponent(txt_filter_pal_number, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(destinations_box, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel3))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel2)
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(piles_box, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(18, 18, 18)
                                         .addComponent(btn_filter_ok)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(set_packaging_pile_btn)
-                                        .addGap(53, 53, 53)
-                                        .addComponent(label_control)))
-                                .addGap(18, 18, 18)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(set_packaging_pile_btn)))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(txt_nbreLigne)
-                                .addGap(0, 0, Short.MAX_VALUE))
+                                .addGap(42, 42, 42))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createSequentialGroup()
-                                        .addGap(145, 145, 145)
+                                        .addGap(143, 143, 143)
                                         .addComponent(destination_label_help, javax.swing.GroupLayout.PREFERRED_SIZE, 311, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(118, 118, 118)
-                                        .addComponent(pile_label_help))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGap(2, 2, 2)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(time_label5)
-                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                                .addGroup(layout.createSequentialGroup()
-                                                    .addComponent(jLabel15)
-                                                    .addGap(18, 18, 18)
-                                                    .addComponent(connectedUserName_label, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                        .addGap(57, 57, 57))
+                                    .addComponent(time_label5)
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                        .addGroup(layout.createSequentialGroup()
+                                            .addComponent(jLabel15)
+                                            .addGap(446, 446, 446))
+                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                .addComponent(time_label1)
+                                                .addComponent(time_label2)
+                                                .addComponent(time_label6))
+                                            .addGap(18, 18, 18)
+                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                        .addComponent(time_label1)
-                                                        .addComponent(time_label2)
-                                                        .addComponent(time_label6))
-                                                    .addGap(18, 18, 18)
-                                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                                .addComponent(plan_num_label)
-                                                                .addComponent(create_time_label))
-                                                            .addGap(28, 28, 28))
-                                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                                            .addComponent(state_label)
-                                                            .addGap(95, 95, 95)))
-                                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                        .addComponent(time_label4)
-                                                        .addComponent(time_label3)
-                                                        .addComponent(time_label7))
-                                                    .addGap(18, 18, 18)
-                                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                        .addComponent(release_date_label)
-                                                        .addComponent(create_user_label)
-                                                        .addComponent(dispatch_date_label)))))))
+                                                        .addComponent(plan_num_label)
+                                                        .addComponent(create_time_label))
+                                                    .addGap(28, 28, 28))
+                                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                                    .addComponent(state_label)
+                                                    .addGap(95, 95, 95)))
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                .addComponent(time_label4)
+                                                .addComponent(time_label3)
+                                                .addComponent(time_label7))
+                                            .addGap(18, 18, 18)
+                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                .addComponent(release_date_label)
+                                                .addComponent(create_user_label)
+                                                .addComponent(dispatch_date_label)))))
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(pile_label_help))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(2, 158, Short.MAX_VALUE)
+                                        .addComponent(connectedUserName_label, javax.swing.GroupLayout.PREFERRED_SIZE, 428, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                 .addGap(32, 32, 32)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addGroup(layout.createSequentialGroup()
@@ -1225,77 +1300,87 @@ public final class WAREHOUSE_DISPATCH_UI0002_DISPATCH_SCAN extends javax.swing.J
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addComponent(jToolBar1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(26, 26, 26)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(message_label, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(destination_label_help)
-                                .addComponent(pile_label_help))
                             .addGroup(layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(delete_plan_btn)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(release_plan_btn)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(pile_label_help)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(delete_plan_btn)))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(progressBar, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(61, 61, 61))
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(release_plan_btn)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(progressBar, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(85, 85, 85))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(connectedUserName_label, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(110, 110, 110))))
                             .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jLabel15)
-                                    .addComponent(connectedUserName_label, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGap(6, 6, 6)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createSequentialGroup()
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                            .addComponent(time_label2)
-                                            .addComponent(plan_num_label))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                            .addComponent(time_label1)
-                                            .addComponent(create_time_label))
-                                        .addGap(18, 18, 18)
+                                        .addComponent(destination_label_help)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(jLabel15)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(time_label6)
-                                            .addComponent(state_label)))
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                                    .addComponent(time_label2)
+                                                    .addComponent(plan_num_label))
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                                    .addComponent(time_label1)
+                                                    .addComponent(create_time_label))
+                                                .addGap(18, 18, 18)
+                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                    .addComponent(time_label6)
+                                                    .addComponent(state_label)))
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                                    .addComponent(time_label3)
+                                                    .addComponent(create_user_label))
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                                    .addComponent(time_label4)
+                                                    .addComponent(dispatch_date_label))
+                                                .addGap(18, 18, 18)
+                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                                    .addComponent(time_label7)
+                                                    .addComponent(release_date_label)))))
                                     .addGroup(layout.createSequentialGroup()
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                            .addComponent(time_label3)
-                                            .addComponent(create_user_label))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                            .addComponent(time_label4)
-                                            .addComponent(dispatch_date_label))
-                                        .addGap(18, 18, 18)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                            .addComponent(time_label7)
-                                            .addComponent(release_date_label))))))
-                        .addGap(25, 25, 25)
+                                        .addGap(6, 6, 6)
+                                        .addComponent(time_label5)
+                                        .addGap(128, 128, 128)))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel1)
+                            .addComponent(jLabel4)
+                            .addComponent(jLabel5)
                             .addComponent(jLabel3)
                             .addComponent(jLabel2))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(destinations_box, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(piles_box, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(btn_filter_ok)
-                                .addComponent(set_packaging_pile_btn)
-                                .addComponent(label_control)
-                                .addComponent(txt_nbreLigne))
-                            .addComponent(txt_filter_part, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(txt_filter_part, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txt_filter_pal_number, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(plan_id_filter, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(destinations_box, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(piles_box, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btn_filter_ok)
+                            .addComponent(set_packaging_pile_btn)
+                            .addComponent(txt_nbreLigne))
+                        .addGap(7, 7, 7)
                         .addComponent(table_scroll, javax.swing.GroupLayout.PREFERRED_SIZE, 512, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 9, Short.MAX_VALUE))
+                        .addGap(0, 28, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(43, 43, 43)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(scan_txt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(time_label5))
+                        .addComponent(scan_txt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(radio_btn_20)
@@ -1424,7 +1509,7 @@ public final class WAREHOUSE_DISPATCH_UI0002_DISPATCH_SCAN extends javax.swing.J
             List result = query.list();
             if (!result.isEmpty()) {
                 //Initialize progress property.
-                
+
                 release_plan_btn.setEnabled(false);
                 setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
                 for (Object obj : result) {
@@ -1470,14 +1555,14 @@ public final class WAREHOUSE_DISPATCH_UI0002_DISPATCH_SCAN extends javax.swing.J
                         PackagingStockMovement transaction
                                 = new PackagingStockMovement(
                                         line.getPackItem(),
-                                        "", 
+                                        "",
                                         plan_num_label.getText(),
                                         WarehouseHelper.warehouse_out_context.getUser().getFirstName() + " "
                                         + WarehouseHelper.warehouse_out_context.getUser().getLastName(),
                                         new Date(),
                                         Helper.PROP.getProperty("WH_PACKAGING"),
                                         -Float.valueOf(line.getQty()),
-                                        line.getComment());
+                                        "Packaging Supplementaire. " + line.getComment());
                         transaction.create(transaction);
                     }
                 }
@@ -1494,7 +1579,7 @@ public final class WAREHOUSE_DISPATCH_UI0002_DISPATCH_SCAN extends javax.swing.J
                 //Go back to step S020
                 state = new S020_PalletNumberScan();
                 WarehouseHelper.warehouse_out_context.setState(state);
-                
+
                 Toolkit.getDefaultToolkit().beep();
                 setCursor(null);
                 JOptionPane.showMessageDialog(null, "Plan released !\n");
@@ -1566,7 +1651,7 @@ public final class WAREHOUSE_DISPATCH_UI0002_DISPATCH_SCAN extends javax.swing.J
     }//GEN-LAST:event_load_plans_listActionPerformed
 
     private void pallet_detailsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pallet_detailsActionPerformed
-        new PACKAGING_UI0010_PalletDetails(this, rootPaneCheckingEnabled, false, false, false, false).setVisible(true);
+        
     }//GEN-LAST:event_pallet_detailsActionPerformed
 
     private void destinations_boxItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_destinations_boxItemStateChanged
@@ -1596,8 +1681,7 @@ public final class WAREHOUSE_DISPATCH_UI0002_DISPATCH_SCAN extends javax.swing.J
     }//GEN-LAST:event_piles_boxItemStateChanged
 
     private void btn_filter_okActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_filter_okActionPerformed
-
-
+        filterPlanLines(false);
     }//GEN-LAST:event_btn_filter_okActionPerformed
 
     private void export_plan_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_export_plan_btnActionPerformed
@@ -1916,6 +2000,73 @@ public final class WAREHOUSE_DISPATCH_UI0002_DISPATCH_SCAN extends javax.swing.J
         // TODO add your handling code here:
     }//GEN-LAST:event_destinations_boxActionPerformed
 
+    private void txt_filter_pal_numberKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_filter_pal_numberKeyTyped
+        filterPlanLines(false);
+    }//GEN-LAST:event_txt_filter_pal_numberKeyTyped
+
+    private void txt_filter_partActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_filter_partActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txt_filter_partActionPerformed
+
+    public void loadPlanDataInGui(int id) {
+
+        Helper.startSession();
+        Query query = Helper.sess.createQuery(HQLHelper.GET_LOAD_PLAN_BY_ID);
+        query.setParameter("id", id);
+
+        Helper.sess.getTransaction().commit();
+        List result = query.list();
+        LoadPlan plan = (LoadPlan) result.get(0);
+        WarehouseHelper.temp_load_plan = plan;
+
+        //Load destinations of the plan
+        if (loadDestinations(Integer.valueOf(id))) {
+            loadPlanDataToLabels(plan, destinations_box.getItemAt(0).toString());
+            reloadPlanLinesData(Integer.valueOf(id), destinations_box.getItemAt(0).toString());
+
+            //Disable delete button if the plan is CLOSED
+            if (WarehouseHelper.LOAD_PLAN_STATE_CLOSED.equals(plan.getPlanState())) {
+                delete_plan_btn.setEnabled(false);
+                release_plan_btn.setEnabled(false);
+                export_plan_btn.setEnabled(true);
+                edit_plan_btn.setEnabled(false);
+                set_packaging_pile_btn.setEnabled(true);
+                destinations_box.setEnabled(true);
+                piles_box.setEnabled(true);
+                scan_txt.setEnabled(false);
+                txt_filter_part.setEnabled(true);
+            } else { // The plan still Open
+                delete_plan_btn.setEnabled(true);
+                release_plan_btn.setEnabled(true);
+                export_plan_btn.setEnabled(true);
+                edit_plan_btn.setEnabled(true);
+                set_packaging_pile_btn.setEnabled(true);
+                destinations_box.setEnabled(true);
+                destinations_box.setSelectedIndex(0);
+                piles_box.setEnabled(true);
+                scan_txt.setEnabled(true);
+                txt_filter_part.setEnabled(true);
+            }
+        }
+
+        filterPlanLines(false);
+        filterPlanLines(false);
+    }
+
+    private void plan_id_filterKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_plan_id_filterKeyPressed
+        if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
+            loadPlanDataInGui(Integer.valueOf(plan_id_filter.getText()));
+        }
+    }//GEN-LAST:event_plan_id_filterKeyPressed
+
+    private void pallet_details_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pallet_details_btnActionPerformed
+        new PACKAGING_UI0010_PalletDetails(this, rootPaneCheckingEnabled, true, true, true, true).setVisible(true);
+    }//GEN-LAST:event_pallet_details_btnActionPerformed
+
+    private void plan_list_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_plan_list_btnActionPerformed
+        new WAREHOUSE_DISPATCH_UI0006_LIST(this, true).setVisible(true);
+    }//GEN-LAST:event_plan_list_btnActionPerformed
+
     private void clearGui() {
 
         this.cleanDataLabels();
@@ -1954,25 +2105,37 @@ public final class WAREHOUSE_DISPATCH_UI0002_DISPATCH_SCAN extends javax.swing.J
     private javax.swing.JLabel dispatch_date_label;
     private javax.swing.JButton edit_plan_btn;
     private javax.swing.JButton export_plan_btn;
+    private javax.swing.Box.Filler filler2;
+    private javax.swing.Box.Filler filler3;
+    private javax.swing.Box.Filler filler4;
+    private javax.swing.Box.Filler filler5;
+    private javax.swing.Box.Filler filler6;
+    private javax.swing.Box.Filler filler7;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JToolBar.Separator jSeparator1;
+    private javax.swing.JToolBar.Separator jSeparator2;
+    private javax.swing.JToolBar.Separator jSeparator3;
+    private javax.swing.JToolBar.Separator jSeparator4;
     private javax.swing.JToolBar jToolBar1;
-    private javax.swing.JCheckBox label_control;
     private javax.swing.JTable load_plan_lines_table;
     private javax.swing.JTable load_plan_table;
     private javax.swing.JMenuItem load_plans_list;
     private javax.swing.JTextField message_label;
     private javax.swing.JButton new_plan_btn;
     private javax.swing.JMenuItem pallet_details;
+    private javax.swing.JButton pallet_details_btn;
     private javax.swing.JLabel pile_label_help;
     private javax.swing.JComboBox piles_box;
+    private javax.swing.JFormattedTextField plan_id_filter;
+    private javax.swing.JButton plan_list_btn;
     private javax.swing.JLabel plan_num_label;
     private javax.swing.JProgressBar progressBar;
     private javax.swing.JRadioButton radio_btn_20;
@@ -1991,6 +2154,7 @@ public final class WAREHOUSE_DISPATCH_UI0002_DISPATCH_SCAN extends javax.swing.J
     private javax.swing.JLabel time_label5;
     private javax.swing.JLabel time_label6;
     private javax.swing.JLabel time_label7;
+    private javax.swing.JTextField txt_filter_pal_number;
     private javax.swing.JTextField txt_filter_part;
     private javax.swing.JLabel txt_nbreLigne;
     // End of variables declaration//GEN-END:variables
@@ -2034,27 +2198,7 @@ public final class WAREHOUSE_DISPATCH_UI0002_DISPATCH_SCAN extends javax.swing.J
      * @param pass
      */
     public void filterPlanLines(boolean pass) {
-//        if (!pass) {
-//            int pileNum = 0;
-//            try {
-//                pileNum = Integer.valueOf(piles_box.getSelectedItem().toString());
-//                filterPlanLines(
-//                        Integer.valueOf(plan_num_label.getText()),
-//                        destinations_box.getSelectedItem().toString(),
-//                        txt_filter_part.getText(),
-//                        pileNum
-//                );
-//            } catch (NumberFormatException e) {
-//                filterPlanLines(true);
-//                
-////            filterPlanLines(
-////                    Integer.valueOf(plan_num_label.getText()),
-////                    destinations_box.getSelectedItem().toString(),
-////                    txt_filter_part.getText(),
-////                    0);
-//                //JOptionPane.showOptionDialog(null, "Numéro de pile invalide " + e.getMessage(), "Destinations Configuration error !", JOptionPane.DEFAULT_OPTION,JOptionPane.ERROR_MESSAGE, null, new Object[]{}, null);
-//            }
-//        }
+
         if (!"*".equals(piles_box.getSelectedItem().toString())) {
             try {
                 int pile = Integer.parseInt(piles_box.getSelectedItem().toString());
@@ -2062,18 +2206,33 @@ public final class WAREHOUSE_DISPATCH_UI0002_DISPATCH_SCAN extends javax.swing.J
                         Integer.valueOf(plan_num_label.getText()),
                         destinations_box.getSelectedItem().toString(),
                         txt_filter_part.getText(), pile);
+                
+                filterPlanLines(
+                        Integer.valueOf(plan_num_label.getText()),
+                        destinations_box.getSelectedItem().toString(),
+                        txt_filter_part.getText(), 0);
 
             } catch (NumberFormatException e) {
                 filterPlanLines(
                         Integer.valueOf(plan_num_label.getText()),
                         destinations_box.getSelectedItem().toString(),
                         txt_filter_part.getText(), 0);
+                filterPlanLines(
+                        Integer.valueOf(plan_num_label.getText()),
+                        destinations_box.getSelectedItem().toString(),
+                        txt_filter_part.getText(), 0);
             }
         } else {
-            filterPlanLines(
-                    Integer.valueOf(plan_num_label.getText()),
-                    destinations_box.getSelectedItem().toString(),
-                    txt_filter_part.getText(), 0);
+            if (!plan_num_label.getText().equals("#")) {                
+                filterPlanLines(
+                        Integer.valueOf(plan_num_label.getText()),
+                        destinations_box.getSelectedItem().toString(),
+                        txt_filter_part.getText(), 0);
+                filterPlanLines(
+                        Integer.valueOf(plan_num_label.getText()),
+                        destinations_box.getSelectedItem().toString(),
+                        txt_filter_part.getText(), 0);
+            }
         }
     }
 }

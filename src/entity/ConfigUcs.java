@@ -419,8 +419,9 @@ public class ConfigUcs extends DAO implements java.io.Serializable {
 
     public static Boolean isHarnessPartExist(String harnessPart, String harnessType) {
         //Tester le format du harness part
-        if(harnessPart.substring(0, 1).equals(Helper.HARN_PART_PREF)){
-            String[] part = harnessPart.split(Helper.HARN_PART_PREF);
+        System.out.println("Helper.HARN_PART_PREFIX "+Helper.HARN_PART_PREFIX);
+        if(harnessPart.substring(0, 1).equals(Helper.HARN_PART_PREFIX)){
+            String[] part = harnessPart.split(Helper.HARN_PART_PREFIX);
             harnessPart = part[1];
         }
         Helper.log.log(Level.INFO, "Searching Harness part [{0}] in ConfigUCS: {1}", new Object[]{harnessPart, harnessType});

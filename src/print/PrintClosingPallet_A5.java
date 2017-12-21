@@ -234,7 +234,7 @@ public class PrintClosingPallet_A5 implements BarcodeCreator {
 //        table.addCell(cell);
         //########################## Line 1 ##########################
         if (special_order == 0) {   //True
-            cell.setColspan(3);
+            cell.setColspan(4);
             cell.setPaddingTop(1f);
             cell.setPaddingLeft(12f);
             cell.setPhrase(new Phrase(map_title.get("supplier_name"), FontFactory.getFont(FontFactory.COURIER, 16f)));

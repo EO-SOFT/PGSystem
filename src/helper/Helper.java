@@ -9,7 +9,8 @@ import entity.ConfigProject;
 import entity.ConfigShift;
 import entity.ConfigUcs;
 import gui.UI0000_ModuleChoice;
-import gui.packaging.PACKAGING_UI0001_Main;
+import gui.packaging.mode1.gui.PACKAGING_UI0001_Main_Mode1;
+import gui.packaging.mode2.gui.PACKAGING_UI0001_Main_Mode2;
 import java.awt.Dimension;
 import java.awt.Toolkit;
 import java.io.File;
@@ -39,7 +40,7 @@ import javax.swing.JOptionPane;
 import static javax.swing.JOptionPane.ERROR_MESSAGE;
 import static javax.swing.JOptionPane.WARNING_MESSAGE;
 import org.hibernate.Session;
-import gui.packaging.state.Context;
+import gui.packaging.mode2.state.Context;
 import java.util.Iterator;
 import java.util.Vector;
 
@@ -51,7 +52,7 @@ public class Helper {
 
     public static String APPNAME = "PGSystem";
 
-    public static String VERSION = "1.17.10.05";
+    public static String VERSION = "1.17.12.05";
 
     public static String AUTHOR = "Created By EZZIOURI Oussama";
 
@@ -83,7 +84,12 @@ public class Helper {
     /**
      *
      */
-    public static PACKAGING_UI0001_Main Packaging_Gui = null;
+    public static PACKAGING_UI0001_Main_Mode1 Packaging_Gui_Mode1 = null;
+    
+    /**
+     *
+     */
+    public static PACKAGING_UI0001_Main_Mode2 Packaging_Gui_Mode2 = null;
     
     /**
      * 
@@ -275,7 +281,7 @@ public class Helper {
     /**
      *
      */
-    public static String ERR0006_INVALID_OPEN_PALLET_BARCODE = "Invalid OPEN PALLET barcode [%s]!";
+    public static String ERR0006_INVALID_OPEN_PALLET_BARCODE = "Invalid OPEN PALLET barcode [%s]! \n. Verify the QR code/Barcode scanned.";
 
     /**
      *
@@ -371,27 +377,27 @@ public class Helper {
     /**
      *
      */
-    public static String HARN_PART_PREF = "P";
+    public static String HARN_PART_PREFIX = Helper.PROP.getProperty("HARN_PART_PREFIX");
 
     /**
      *
      */
-    public static String SUPPLIER_PART_PREF = "P";
+    public static String SUPPLIER_PART_PREFIX = Helper.PROP.getProperty("SUPPLIER_PART_PREFIX");
 
     /**
      *
      */
-    public static String HARN_COUNTER_PREF = "P";
+    public static String HARN_COUNTER_PREFIX = Helper.PROP.getProperty("HARN_COUNTER_PREFIX");
 
     /**
      *
      */
-    public static String QUANTITY_PREF = "Q";
+    public static String QUANTITY_PREFIX = Helper.PROP.getProperty("QUANTITY_PREFIX");
 
     /**
      *
      */
-    public static String CLOSE_PAL_PREF = "CP";
+    public static String CLOSING_PALLET_PREFIX = Helper.PROP.getProperty("CLOSING_PALLET_PREFIX");
 
     public static String BOOK_WAREHOUSE_IN_PACK_FG = "BOOK PACKAGING RECIEVED FINISH GOODS";
 
@@ -419,7 +425,7 @@ public class Helper {
     /**
      *
      */
-    public static String OPEN_PALLET_PATTERN = "NEWP";
+    public static String OPEN_PALLET_KEYWORD = Helper.PROP.getProperty("OPEN_PALLET_KEYWORD");
 
     /**
      *
@@ -431,22 +437,7 @@ public class Helper {
      */
     public static String CLOSING_PALLET_PATTERN = "^[C]{1}[P]{1}\\d{9}";
 
-    //-------------------------- HARNESS TYPE
-    /**
-     *
-     */
-    //public static final String SMALL = "SMALL";
-
-    /**
-     *
-     */
-    //public static final String ENGINE = "ENGINE";
-
-    /**
-     *
-     */
-    //public static final String MDEP = "MDEP";
-
+    
     //Pallet print state
     /**
      *
@@ -787,7 +778,21 @@ public class Helper {
         log.info(TMP_MSG);
         return TMP_MSG;        
     }
+    
+    public static void mapProperties(){
+        OPEN_PALLET_KEYWORD = Helper.PROP.getProperty("OPEN_PALLET_KEYWORD");
 
+        HARN_PART_PREFIX = Helper.PROP.getProperty("HARN_PART_PREFIX");
+
+        SUPPLIER_PART_PREFIX = Helper.PROP.getProperty("SUPPLIER_PART_PREFIX");
+
+        HARN_COUNTER_PREFIX = Helper.PROP.getProperty("HARN_COUNTER_PREFIX");
+
+        QUANTITY_PREFIX = Helper.PROP.getProperty("QUANTITY_PREFIX");
+
+        CLOSING_PALLET_PREFIX = Helper.PROP.getProperty("CLOSING_PALLET_PREFIX");
+    }
+    
     /**
      * Load Helper.PROP attribut values from config.properties
      */
@@ -799,8 +804,11 @@ public class Helper {
             input = new FileInputStream(".\\config.properties");
             // load a properties file
             PROP.load(input);
+            
+            mapProperties();
             // get the property value and print it out
             System.out.println("Load properties file :\n " + PROP.toString());
+            
         } catch (IOException ex) {
             JOptionPane.showMessageDialog(null, ex.getMessage(), "Config properties error !", ERROR_MESSAGE);
             JOptionPane.showMessageDialog(null, "Properties file must be in the same folder as the .jar file.", "Config properties error !", WARNING_MESSAGE);

@@ -35,6 +35,7 @@ public class S020_PalletNumberScan implements State {
     public void doAction(WarehouseOutContext context) {
         JTextField scan_txtbox = WarehouseHelper.Dispatch_Gui.getScanTxt();
         String palletNum = "";
+        System.out.println("Helper.CLOSING_PALLET_PREFIX "+this.getClass().getSimpleName()+" "+Helper.CLOSING_PALLET_PREFIX);
         WarehouseHelper.Dispatch_Gui.setMessageLabel("", 0);
         if (WarehouseHelper.temp_load_plan == null || !"OPEN".equals(WarehouseHelper.temp_load_plan.getPlanState())) {
             SoundHelper.PlayNotificationSound(null, 1);
@@ -42,8 +43,8 @@ public class S020_PalletNumberScan implements State {
             WarehouseHelper.Dispatch_Gui.setMessageLabel(msg, -1);
             JOptionPane.showOptionDialog(null, msg, "Erreur plan de chargement", JOptionPane.DEFAULT_OPTION,JOptionPane.ERROR_MESSAGE, null, new Object[]{}, null);
             clearScanBox(scan_txtbox);
-        } else if (scan_txtbox.getText().startsWith(Helper.CLOSE_PAL_PREF)) {
-            palletNum = scan_txtbox.getText().trim().substring(2);
+        } else if (scan_txtbox.getText().startsWith(Helper.CLOSING_PALLET_PREFIX)) {
+            palletNum = scan_txtbox.getText().trim().substring(Helper.CLOSING_PALLET_PREFIX.length());
             Helper.startSession();
             Query query = Helper.sess.createQuery(HQLHelper.GET_CONTAINER_BY_NUMBER);
             query.setParameter("palletNumber", palletNum);
@@ -80,7 +81,7 @@ public class S020_PalletNumberScan implements State {
                     try {
                         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
                         String hp = "";
-                        if (bc.getHarnessPart().startsWith(Helper.HARN_PART_PREF)) {
+                        if (bc.getHarnessPart().startsWith(Helper.HARN_PART_PREFIX)) {
                             hp = bc.getHarnessPart().substring(1);
                         } else {
                             hp = bc.getHarnessPart();
