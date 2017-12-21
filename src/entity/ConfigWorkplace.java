@@ -73,10 +73,15 @@ public class ConfigWorkplace extends DAO implements Serializable{
         return query.list();
     }
     
-    public List selectBySegment(String segment) {
+    public List selectBySegment(String segment) {        
         Helper.startSession();
-        Query query = Helper.sess.createQuery(HQLHelper.GET_WORKPLACES_BY_SEGMENT);
-        query.setParameter("segment", segment);
+        Query query ;
+        if(segment != ""){            
+            query = Helper.sess.createQuery(HQLHelper.GET_WORKPLACES_BY_SEGMENT);
+            query.setParameter("segment", segment);
+        }else
+            query = Helper.sess.createQuery(HQLHelper.GET_ALL_WORKPLACES);
+        
         Helper.log.info(query.getQueryString());
         Helper.sess.getTransaction().commit();
         return query.list();

@@ -28,14 +28,17 @@ public class S010_UserCodeScan implements State {
 
     }
 
+    @Override
     public String toString() {
         return "State S01 : S01_UserCodeScan";
     }
 
+    @Override
     public ImageIcon getImg() {
         return this.imgIcon;
     }
 
+    @Override
     public void doAction(Context context) {
 
         JTextField scan_txtbox = Helper.Packaging_Gui_Mode2.getScanTxt();

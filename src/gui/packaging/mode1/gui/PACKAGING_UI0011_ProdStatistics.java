@@ -952,7 +952,7 @@ public class PACKAGING_UI0011_ProdStatistics extends javax.swing.JDialog {
     }//GEN-LAST:event_workplace_filterActionPerformed
 
     private void segment_filterItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_segment_filterItemStateChanged
-        System.out.println("Selected Segment " + String.valueOf(segment_filter.getSelectedItem()));
+        
         if ("ALL".equals(String.valueOf(segment_filter.getSelectedItem()).trim())) {
             this.workplace_filter.setSelectedIndex(0);
             this.workplace_filter.setEnabled(false);

@@ -1,9 +1,11 @@
+package main;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package gui;
+
 
 import gui.config.CONFIG_UI0000_AUTH;
 import gui.packaging.mode1.gui.PACKAGING_UI0001_Main_Mode1;
@@ -34,7 +36,7 @@ import gui.packaging.mode2.state.S010_UserCodeScan;
  *
  * @author Administrator
  */
-public class UI0000_ModuleChoice extends javax.swing.JFrame implements ActionListener,
+public class Main extends javax.swing.JFrame implements ActionListener,
         PropertyChangeListener {
 
     //private static final int PORT = 12345;        // random large port number
@@ -125,7 +127,7 @@ public class UI0000_ModuleChoice extends javax.swing.JFrame implements ActionLis
     /**
      * Creates new form UI0000_ProjectChoice
      */
-    public UI0000_ModuleChoice() {
+    public Main() {
         initComponents();
         versionLabel.setText(Helper.APPNAME + " " + Helper.VERSION);
         authorLabel.setText(Helper.AUTHOR);
@@ -531,14 +533,15 @@ public class UI0000_ModuleChoice extends javax.swing.JFrame implements ActionLis
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(UI0000_ModuleChoice.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Main.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(UI0000_ModuleChoice.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Main.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(UI0000_ModuleChoice.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Main.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(UI0000_ModuleChoice.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Main.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
@@ -546,7 +549,7 @@ public class UI0000_ModuleChoice extends javax.swing.JFrame implements ActionLis
             @Override
             public void run() {
 
-                UI0000_ModuleChoice ui = new UI0000_ModuleChoice();
+                Main ui = new Main();
                 ui.setVisible(true);
                 //Helper.loadConfigProperties();
                 String str = Helper.InitDailyLogFile(Helper.PROP.getProperty("LOG_PATH"));

@@ -9,7 +9,7 @@ import entity.ConfigWarehouse;
 import entity.LoadPlanLinePackaging;
 import entity.PackagingItems;
 import entity.PackagingStockMovement;
-import gui.UI0000_ModuleChoice;
+import main.Main;
 import helper.ComboItem;
 import helper.Helper;
 import helper.UIHelper;
@@ -33,7 +33,7 @@ import org.hibernate.type.StandardBasicTypes;
  */
 public class PACKAGING_WAREHOUSE_UI0001_MAIN_FORM extends javax.swing.JFrame {
 
-    private UI0000_ModuleChoice parent;
+    private Main parent;
     Vector<String> transactions_table_header = new Vector<String>();
 
     List<String> header_columns = Arrays.asList(
@@ -56,11 +56,11 @@ public class PACKAGING_WAREHOUSE_UI0001_MAIN_FORM extends javax.swing.JFrame {
     /**
      * Creates new form WAREHOUSE_DISPATCH_UI0008_SET_PACKAGING_OF_PILE
      */
-    public PACKAGING_WAREHOUSE_UI0001_MAIN_FORM(UI0000_ModuleChoice parent, boolean modal) {
+    public PACKAGING_WAREHOUSE_UI0001_MAIN_FORM(Main parent, boolean modal) {
         this.parent = parent;
     }
 
-    PACKAGING_WAREHOUSE_UI0001_MAIN_FORM(Object object, UI0000_ModuleChoice parent) {
+    PACKAGING_WAREHOUSE_UI0001_MAIN_FORM(Object object, Main parent) {
         this.parent = parent;
         initComponents();
         initGui();

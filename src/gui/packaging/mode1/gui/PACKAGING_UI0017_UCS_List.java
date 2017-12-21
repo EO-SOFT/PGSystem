@@ -6,6 +6,7 @@
 package gui.packaging.mode1.gui;
 
 import entity.ConfigSegment;
+import entity.ConfigWorkplace;
 import helper.ComboItem;
 import helper.Helper;
 import helper.JDialogExcelFileChooser;
@@ -14,6 +15,8 @@ import java.awt.Component;
 import java.awt.Font;
 import java.awt.Frame;
 import java.awt.event.KeyEvent;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
@@ -80,6 +83,9 @@ public class PACKAGING_UI0017_UCS_List extends javax.swing.JFrame {
 
         //Init projects filter
         initSegmentFilter();
+
+        //Focuse on text filter field
+        harness_part_filter.requestFocus();
     }
 
     private void load_table_header() {
@@ -142,28 +148,51 @@ public class PACKAGING_UI0017_UCS_List extends javax.swing.JFrame {
         ucs_result_table.setRowHeight(Integer.valueOf(Helper.PROP.getProperty("JTABLE_ROW_HEIGHT")));
         setContainerTableRowsStyle();
     }
-    
+
+    private void initContainerTableDoubleClick() {
+        this.ucs_result_table.addMouseListener(
+                new MouseAdapter() {
+            public void mouseClicked(MouseEvent e) {
+                if (e.getClickCount() == 1) {
+                    //System.out.println("Helper.context.getUser().getAccessLevel()" + Helper.context.getUser().getAccessLevel());
+//                    if (Helper.context.getUser().getAccessLevel() == Helper.PROFIL_ADMIN) {
+//                        new PACKAGING_UI0010_PalletDetails(null, rootPaneCheckingEnabled, String.valueOf(searchResult_table.getValueAt(searchResult_table.getSelectedRow(), PALLET_NUMBER_COLINDEX)), true, true, true).setVisible(true);
+//                    } else {
+//                        new PACKAGING_UI0010_PalletDetails(null, rootPaneCheckingEnabled, String.valueOf(searchResult_table.getValueAt(searchResult_table.getSelectedRow(), PALLET_NUMBER_COLINDEX)), false, false, false).setVisible(true);
+//                    }
+
+                }
+            }
+        }
+        );
+    }
+
     public void setContainerTableRowsStyle() {
+
         ucs_result_table.setDefaultRenderer(Object.class, new DefaultTableCellRenderer() {
             @Override
             public Component getTableCellRendererComponent(JTable table,
                     Object value, boolean isSelected, boolean hasFocus, int row, int col) {
 
-                super.getTableCellRendererComponent(table, value, isSelected, hasFocus, row, col);
+                super.getTableCellRendererComponent(table, value, true, hasFocus, row, col);
 
                 Integer status = Integer.valueOf(table.getModel().getValueAt(row, 10).toString());
                 if (status == 1) {
                     setBackground(Color.YELLOW);
                     setForeground(Color.BLACK);
-                }else{
+
+                } else {
                     setBackground(Color.WHITE);
                     setForeground(Color.BLACK);
-                } 
+                }
+
+                ucs_result_table.setRowSelectionAllowed(true);
                 setHorizontalAlignment(JLabel.CENTER);
 
                 return this;
             }
         });
+
     }
 
     private void refresh() {
@@ -172,15 +201,29 @@ public class PACKAGING_UI0017_UCS_List extends javax.swing.JFrame {
         this.reset_table_content();
 
         List<Object> segments = new ArrayList<Object>();
+        List<Object> workplaces = new ArrayList<Object>();
+        segments.clear();
+        workplaces.clear();
+        workplaces.add("1");
         segments.add("1");
 
-        //Harness Type filter
+        //Segment filter
         if (String.valueOf(segment_filter.getSelectedItem()).equals("ALL")) {
             for (int i = 0; i < segment_filter.getItemCount(); i++) {
                 segments.add(String.valueOf(segment_filter.getItemAt(i)));
-            }
+            }           
+
         } else {
             segments.add(String.valueOf(segment_filter.getSelectedItem()));
+        }
+        
+        //Workplace filter
+        if (String.valueOf(workplace_filter.getSelectedItem()).equals("ALL")) {
+            for (int i = 0; i < workplace_filter.getItemCount(); i++) {
+                workplaces.add(String.valueOf(workplace_filter.getItemAt(i)));
+            }
+        } else {
+            workplaces.add(String.valueOf(workplace_filter.getSelectedItem()));
         }
 
         try {
@@ -201,7 +244,7 @@ public class PACKAGING_UI0017_UCS_List extends javax.swing.JFrame {
                     + " bc.lifes AS lifes, "
                     + " bc.special_order AS special_order "
                     + " FROM config_ucs bc "
-                    + " WHERE bc.segment IN (:segment) ";
+                    + " WHERE bc.segment IN (:segment) AND bc.workplace IN (:workplace)";
 
             if (!harness_part_filter.getText().trim().isEmpty()) {
                 query_str += "AND bc.harness_part like '%" + harness_part_filter.getText().trim() + "%'";
@@ -222,7 +265,8 @@ public class PACKAGING_UI0017_UCS_List extends javax.swing.JFrame {
                     .addScalar("order_no", StandardBasicTypes.STRING)
                     .addScalar("lifes", StandardBasicTypes.INTEGER)
                     .addScalar("special_order", StandardBasicTypes.INTEGER)
-                    .setParameterList("segment", segments);
+                    .setParameterList("segment", segments)
+                    .setParameterList("workplace", workplaces);
 
             resultList = query.list();
 
@@ -260,6 +304,9 @@ public class PACKAGING_UI0017_UCS_List extends javax.swing.JFrame {
         refresh_btn1 = new javax.swing.JButton();
         export_btn = new javax.swing.JButton();
         jLabel20 = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
+        workplace_filter = new javax.swing.JComboBox();
+        jLabel22 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Production statistics");
@@ -284,7 +331,7 @@ public class PACKAGING_UI0017_UCS_List extends javax.swing.JFrame {
             }
         });
 
-        segment_filter.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        segment_filter.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         segment_filter.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "ALL" }));
         segment_filter.addItemListener(new java.awt.event.ItemListener() {
             public void itemStateChanged(java.awt.event.ItemEvent evt) {
@@ -299,7 +346,7 @@ public class PACKAGING_UI0017_UCS_List extends javax.swing.JFrame {
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel6.setText("Liste UCS");
+        jLabel6.setText("Liste Packaging Standard Externe");
 
         ucs_result_table.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -320,6 +367,11 @@ public class PACKAGING_UI0017_UCS_List extends javax.swing.JFrame {
         jScrollPane1.setViewportView(ucs_result_table);
 
         harness_part_filter.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
+        harness_part_filter.addComponentListener(new java.awt.event.ComponentAdapter() {
+            public void componentShown(java.awt.event.ComponentEvent evt) {
+                harness_part_filterComponentShown(evt);
+            }
+        });
         harness_part_filter.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 harness_part_filterKeyPressed(evt);
@@ -345,6 +397,27 @@ public class PACKAGING_UI0017_UCS_List extends javax.swing.JFrame {
         jLabel20.setForeground(new java.awt.Color(255, 255, 255));
         jLabel20.setText("Segment");
 
+        jLabel21.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel21.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel21.setText("Workplace");
+
+        workplace_filter.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        workplace_filter.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "ALL" }));
+        workplace_filter.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                workplace_filterItemStateChanged(evt);
+            }
+        });
+        workplace_filter.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                workplace_filterActionPerformed(evt);
+            }
+        });
+
+        jLabel22.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel22.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel22.setText("Part Number");
+
         javax.swing.GroupLayout north_panelLayout = new javax.swing.GroupLayout(north_panel);
         north_panel.setLayout(north_panelLayout);
         north_panelLayout.setHorizontalGroup(
@@ -353,21 +426,30 @@ public class PACKAGING_UI0017_UCS_List extends javax.swing.JFrame {
             .addGroup(north_panelLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(north_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel6)
                     .addGroup(north_panelLayout.createSequentialGroup()
-                        .addComponent(jLabel20)
+                        .addComponent(jLabel6)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(north_panelLayout.createSequentialGroup()
+                        .addGroup(north_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel20)
+                            .addComponent(segment_filter, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(segment_filter, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(north_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(workplace_filter, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel21))
                         .addGap(18, 18, 18)
-                        .addComponent(harness_part_filter, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(refresh_btn1, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(north_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel22)
+                            .addGroup(north_panelLayout.createSequentialGroup()
+                                .addComponent(harness_part_filter, javax.swing.GroupLayout.PREFERRED_SIZE, 276, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 157, Short.MAX_VALUE)
+                                .addComponent(refresh_btn1, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(clear_btn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(export_btn)))
-                .addContainerGap(401, Short.MAX_VALUE))
-            .addComponent(jScrollPane1)
+                .addContainerGap())
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING)
         );
         north_panelLayout.setVerticalGroup(
             north_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -376,16 +458,24 @@ public class PACKAGING_UI0017_UCS_List extends javax.swing.JFrame {
                 .addComponent(jLabel6)
                 .addGap(18, 18, 18)
                 .addGroup(north_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                    .addComponent(segment_filter, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(harness_part_filter, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(refresh_btn1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(clear_btn, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(export_btn, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel20))
-                .addGap(18, 18, 18)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 797, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(north_panelLayout.createSequentialGroup()
+                        .addGroup(north_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel20)
+                            .addComponent(jLabel21)
+                            .addComponent(jLabel22))
+                        .addGap(4, 4, 4)
+                        .addGroup(north_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(segment_filter, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(workplace_filter, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(harness_part_filter, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(refresh_btn1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, north_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(export_btn, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(clear_btn, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 49, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 742, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jSeparator1, javax.swing.GroupLayout.DEFAULT_SIZE, 1, Short.MAX_VALUE)
+                .addComponent(jSeparator1, javax.swing.GroupLayout.DEFAULT_SIZE, 7, Short.MAX_VALUE)
                 .addGap(0, 0, 0))
         );
 
@@ -426,8 +516,32 @@ public class PACKAGING_UI0017_UCS_List extends javax.swing.JFrame {
     }//GEN-LAST:event_segment_filterActionPerformed
 
     private void segment_filterItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_segment_filterItemStateChanged
-        //
+        if ("ALL".equals(String.valueOf(segment_filter.getSelectedItem()).trim())) {
+            this.workplace_filter.setSelectedIndex(0);
+            this.workplace_filter.removeAllItems();
+            this.setWorkplaceBySegment("");
+            //this.workplace_filter.setEnabled(false);
+        } else {
+            this.workplace_filter.removeAllItems();
+            this.workplace_filter.addItem("ALL");            
+            this.setWorkplaceBySegment(String.valueOf(segment_filter.getSelectedItem()));
+        }
+
+        refresh();
     }//GEN-LAST:event_segment_filterItemStateChanged
+
+    private void setWorkplaceBySegment(String segment) {
+        List result = new ConfigWorkplace().selectBySegment(segment);
+        if (result.isEmpty()) {
+            JOptionPane.showMessageDialog(null, Helper.ERR0027_NO_WORKPLACE_FOUND, "Configuration error !", ERROR_MESSAGE);
+            System.err.println(Helper.ERR0027_NO_WORKPLACE_FOUND);
+        } else { //Map project data in the list
+            for (Object o : result) {
+                ConfigWorkplace cp = (ConfigWorkplace) o;
+                workplace_filter.addItem(new ComboItem(cp.getWorkplace(), cp.getWorkplace()));
+            }
+        }
+    }
 
     private void refresh_btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_refresh_btn1ActionPerformed
         refresh();
@@ -451,7 +565,7 @@ public class PACKAGING_UI0017_UCS_List extends javax.swing.JFrame {
         //Initialiser les entête du fichier
         // Create a row and put some cells in it. Rows are 0 based.
         Row row = sheet.createRow((short) 0);
-               
+
         row.createCell(0).setCellValue("SEGMENT");
         row.createCell(1).setCellValue("WORKPLACE");
         row.createCell(2).setCellValue("PART NUMBER");
@@ -476,11 +590,11 @@ public class PACKAGING_UI0017_UCS_List extends javax.swing.JFrame {
             row.createCell(5).setCellValue(String.valueOf(obj[5]));
             row.createCell(6).setCellValue(String.valueOf(obj[6]));
             row.createCell(7).setCellValue(String.valueOf(obj[7]));
-            try{
+            try {
                 row.createCell(8).setCellValue(Integer.valueOf(obj[8].toString()));
-            }catch(Exception e){
-                row.createCell(8).setCellValue(0+"");
-            }                
+            } catch (Exception e) {
+                row.createCell(8).setCellValue(0 + "");
+            }
             row.createCell(9).setCellValue(Integer.valueOf(obj[9].toString()));
             row.createCell(10).setCellValue(Integer.valueOf(obj[10].toString()));
             sheetPointer++;
@@ -493,12 +607,26 @@ public class PACKAGING_UI0017_UCS_List extends javax.swing.JFrame {
 
     }//GEN-LAST:event_ucs_result_tableKeyPressed
 
+    private void harness_part_filterComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_harness_part_filterComponentShown
+
+    }//GEN-LAST:event_harness_part_filterComponentShown
+
+    private void workplace_filterItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_workplace_filterItemStateChanged
+        refresh();
+    }//GEN-LAST:event_workplace_filterItemStateChanged
+
+    private void workplace_filterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_workplace_filterActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_workplace_filterActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton clear_btn;
     private javax.swing.JButton export_btn;
     private javax.swing.JTextField harness_part_filter;
     private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator1;
@@ -506,5 +634,6 @@ public class PACKAGING_UI0017_UCS_List extends javax.swing.JFrame {
     private javax.swing.JButton refresh_btn1;
     private javax.swing.JComboBox segment_filter;
     private javax.swing.JTable ucs_result_table;
+    private javax.swing.JComboBox workplace_filter;
     // End of variables declaration//GEN-END:variables
 }

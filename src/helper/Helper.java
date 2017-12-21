@@ -8,7 +8,6 @@ package helper;
 import entity.ConfigProject;
 import entity.ConfigShift;
 import entity.ConfigUcs;
-import gui.UI0000_ModuleChoice;
 import gui.packaging.mode1.gui.PACKAGING_UI0001_Main_Mode1;
 import gui.packaging.mode2.gui.PACKAGING_UI0001_Main_Mode2;
 import java.awt.Dimension;
@@ -41,8 +40,6 @@ import static javax.swing.JOptionPane.ERROR_MESSAGE;
 import static javax.swing.JOptionPane.WARNING_MESSAGE;
 import org.hibernate.Session;
 import gui.packaging.mode2.state.Context;
-import java.util.Iterator;
-import java.util.Vector;
 
 /**
  *
@@ -94,7 +91,7 @@ public class Helper {
     /**
      * 
      */
-    //public static UI0000_ModuleChoice Module_Choice_Gui = null;
+    //public static Main Module_Choice_Gui = null;
             
     private static MessageDigest digester;
 

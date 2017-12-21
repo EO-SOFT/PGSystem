@@ -56,10 +56,15 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" attributes="0">
+              <Component id="user_list_panel" alignment="0" max="32767" attributes="0"/>
+              <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" alignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Component id="msg_lbl" max="32767" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
@@ -109,9 +114,22 @@
                                   </Group>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
-                                  <Component id="special_order_check" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jScrollPane1" min="-2" pref="362" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="1" attributes="0">
+                                      <Group type="102" attributes="0">
+                                          <Component id="save_btn" min="-2" pref="88" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="duplicate_btn" min="-2" pref="91" max="-2" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Component id="cancel_btn" min="-2" pref="102" max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" pref="98" max="-2" attributes="0"/>
+                                          <Component id="delete_btn" min="-2" pref="102" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" attributes="0">
+                                          <Component id="special_order_check" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Component id="jScrollPane1" min="-2" pref="362" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
                                   <EmptySpace max="-2" attributes="0"/>
                               </Group>
                           </Group>
@@ -166,6 +184,7 @@
                                           <Component id="pack_size_txtbox" min="-2" pref="43" max="-2" attributes="0"/>
                                           <EmptySpace type="separate" max="-2" attributes="0"/>
                                           <Component id="pwd_lbl5" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
                                           <Component id="lifes_txtbox" max="32767" attributes="0"/>
                                       </Group>
                                       <Group type="102" alignment="0" attributes="0">
@@ -179,27 +198,16 @@
                                   <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                               </Group>
                           </Group>
-                      </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <Component id="save_btn" min="-2" pref="88" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="duplicate_btn" min="-2" pref="91" max="-2" attributes="0"/>
-                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Component id="cancel_btn" min="-2" pref="102" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="msg_lbl" min="-2" pref="503" max="-2" attributes="0"/>
-                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Component id="delete_btn" min="-2" pref="102" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
               </Group>
-              <Component id="user_list_panel" alignment="0" max="32767" attributes="0"/>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" attributes="0">
+                  <Component id="msg_lbl" min="-2" pref="23" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
@@ -239,58 +247,53 @@
                           </Group>
                       </Group>
                   </Group>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" attributes="0">
-                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="login_lbl" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="pwd_lbl" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="pwd_lbl7" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="segment_filter" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
-                              <Component id="workplace_filter" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
-                              <Component id="harnessType_filter" alignment="3" max="32767" attributes="0"/>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="pwd_lbl2" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="active_combobox" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
+                              <Component id="pwd_lbl2" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="active_combobox" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="login_lbl1" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="assy_txtbox" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="barcodes_nbre_txtbox" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="login_lbl2" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="order_no_txt" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="login_lbl4" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="pwd_lbl6" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="stdTime_txtbox" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="pwd_lbl8" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="price_txtbox" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="jScrollPane1" min="-2" pref="73" max="-2" attributes="0"/>
-                              <Component id="special_order_check" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="delete_btn" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="cancel_btn" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="duplicate_btn" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="save_btn" alignment="0" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace max="32767" attributes="0"/>
-                          <Component id="user_list_panel" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <Group type="102" alignment="1" attributes="0">
-                          <EmptySpace min="174" pref="176" max="32767" attributes="0"/>
-                          <Component id="msg_lbl" min="-2" pref="23" max="-2" attributes="0"/>
-                          <EmptySpace min="588" pref="588" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="login_lbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="pwd_lbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="pwd_lbl7" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="segment_filter" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
+                          <Component id="workplace_filter" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
+                          <Component id="harnessType_filter" alignment="3" max="32767" attributes="0"/>
                       </Group>
                   </Group>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="login_lbl1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="assy_txtbox" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="barcodes_nbre_txtbox" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="login_lbl2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="order_no_txt" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="login_lbl4" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="pwd_lbl6" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="stdTime_txtbox" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="pwd_lbl8" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="price_txtbox" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jScrollPane1" min="-2" pref="73" max="-2" attributes="0"/>
+                      <Component id="special_order_check" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                          <Component id="cancel_btn" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="delete_btn" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Component id="duplicate_btn" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="save_btn" alignment="0" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace pref="13" max="32767" attributes="0"/>
+                  <Component id="user_list_panel" min="-2" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>

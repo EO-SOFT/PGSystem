@@ -7,7 +7,7 @@ package gui.packaging_warehouse;
 
 import entity.HisLogin;
 import entity.ManufactureUsers;
-import gui.UI0000_ModuleChoice;
+import main.Main;
 import gui.warehouse_dispatch.state.WarehouseHelper;
 import helper.HQLHelper;
 import helper.Helper;
@@ -32,7 +32,7 @@ public class PACKAGING_WAREHOUSE_UI0001_PasswordRequest extends javax.swing.JDia
     
 
     //Object to preserve the main frame as parent
-    private UI0000_ModuleChoice main_gui;
+    private Main main_gui;
 
     /**
      * Creates new form UI0010_PalletDetails
@@ -46,7 +46,7 @@ public class PACKAGING_WAREHOUSE_UI0001_PasswordRequest extends javax.swing.JDia
         Helper.centerJDialog(this);
         this.setResizable(false);
         this.user = null;
-        this.main_gui = (UI0000_ModuleChoice) parent;
+        this.main_gui = (Main) parent;
     }
 
     /**
