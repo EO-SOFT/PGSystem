@@ -59,12 +59,12 @@ public class BaseHarnessAdditionalBarecode extends DAO implements java.io.Serial
     public BaseHarnessAdditionalBarecode setDefautlVals() {
         /*
          Set default values of this object 
-         from the global context values
+         from the global mode2_context values
          */
         this.createTime = Helper.getTimeStamp(null);
         this.writeTime = Helper.getTimeStamp(null);
-        this.createId = Helper.context.getUser().getId();
-        this.writeId = Helper.context.getUser().getId();
+        this.createId = Helper.mode2_context.getUser().getId();
+        this.writeId = Helper.mode2_context.getUser().getId();
 
         return this;
     }
@@ -153,7 +153,7 @@ public class BaseHarnessAdditionalBarecode extends DAO implements java.io.Serial
         Helper.sess.getTransaction().commit();
 
         if (query.list().isEmpty()) {
-            for (String item : Helper.context.getBaseHarnessAdditionalBarecodeTmp().getLabelCode()) {
+            for (String item : Helper.mode2_context.getBaseHarnessAdditionalBarecodeTmp().getLabelCode()) {
                 if (labelCode.equals(item)) {
                     return true;                    
                 }

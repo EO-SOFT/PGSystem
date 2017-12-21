@@ -325,8 +325,8 @@ public class HisBaseContainer extends DAO implements java.io.Serializable {
             hbc.setQtyExpected(bc.getQtyExpected());
             hbc.setQtyRead(bc.getQtyRead());
             hbc.setSupplierPartNumber(bc.getSupplierPartNumber());
-            hbc.setUser(Helper.context.getUser().getLogin());
-            hbc.setCreateUser(Helper.context.getUser().getFirstName() + " " + Helper.context.getUser().getLastName());
+            hbc.setUser(Helper.mode2_context.getUser().getLogin());
+            hbc.setCreateUser(Helper.mode2_context.getUser().getFirstName() + " " + Helper.mode2_context.getUser().getLastName());
             hbc.setWriteId(bc.getWriteId());
             hbc.setFifoTime(new Date());            
             hbc.setWorkTime(                    

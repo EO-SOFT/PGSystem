@@ -5,6 +5,16 @@
  */
 package gui.packaging.mode1.gui;
 
+import gui.packaging.reports.PACKAGING_UI0011_ProdStatistics;
+import gui.packaging.reports.PACKAGING_UI0012_HarnessDetails;
+import gui.packaging.reports.PACKAGING_UI0015_DroppedContainer;
+import gui.packaging.reports.PACKAGING_UI0018_OpenContainer;
+import gui.packaging.reports.PACKAGING_UI0020_ProdStatisticsByShift;
+import gui.packaging.reports.PACKAGING_UI0013_PalletWaiting;
+import gui.packaging.reports.PACKAGING_UI0010_PalletDetails;
+import gui.packaging.reports.PACKAGING_UI0019_EfficiencyCalculation;
+import gui.packaging.reports.PACKAGING_UI0017_UCS_List;
+import gui.packaging.reports.PACKAGING_UI0016_DroppedHarness;
 import java.util.List;
 import javax.swing.JFrame;
 import helper.Helper;
@@ -14,6 +24,7 @@ import entity.BaseContainerTmp;
 import entity.BaseHarnessAdditionalBarecodeTmp;
 import entity.ConfigBarcode;
 import entity.HisLogin;
+import gui.packaging.mode1.state.Mode1_State;
 import gui.warehouse_fg_reception.WAREHOUSE_FG_UI0002_PALLET_LIST;
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -38,8 +49,7 @@ import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.DefaultTableModel;
 import org.hibernate.Query;
 import scanner.GUI;
-import gui.packaging.mode2.state.S010_UserCodeScan;
-import gui.packaging.mode2.state.State;
+import gui.packaging.mode1.state.Mode1_S010_UserCodeScan;
 
 /**
  *
@@ -48,7 +58,7 @@ import gui.packaging.mode2.state.State;
 public final class PACKAGING_UI0001_Main_Mode1 extends javax.swing.JFrame {
 
     String str = null;
-    State state = Helper.context.getState();
+    public Mode1_State state = Helper.mode1_context.getState();
     Vector<String> container_table_header = new Vector<String>();
     List<String> table_header = Arrays.asList(
             "Pallet Number",
@@ -249,9 +259,9 @@ public final class PACKAGING_UI0001_Main_Mode1 extends javax.swing.JFrame {
                 new MouseAdapter() {
                     public void mouseClicked(MouseEvent e) {
                         if (e.getClickCount() == 2) {
-                            if (Helper.context.getUser() == null) {
+                            if (Helper.mode2_context.getUser() == null) {
                                 new PACKAGING_UI0010_PalletDetails(null, rootPaneCheckingEnabled, String.valueOf(container_table.getValueAt(container_table.getSelectedRow(), PALLET_NUMBER_COLINDEX)), false, false, false).setVisible(true);
-                            } else if (Helper.context.getUser().getAccessLevel() == Helper.PROFIL_ADMIN) {
+                            } else if (Helper.mode2_context.getUser().getAccessLevel() == Helper.PROFIL_ADMIN) {
                                 new PACKAGING_UI0010_PalletDetails(null, rootPaneCheckingEnabled, String.valueOf(container_table.getValueAt(container_table.getSelectedRow(), PALLET_NUMBER_COLINDEX)), true, true, true).setVisible(true);
                             } else {
                                 new PACKAGING_UI0010_PalletDetails(null, rootPaneCheckingEnabled, String.valueOf(container_table.getValueAt(container_table.getSelectedRow(), PALLET_NUMBER_COLINDEX)), false, false, false).setVisible(true);
@@ -618,7 +628,7 @@ public final class PACKAGING_UI0001_Main_Mode1 extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addComponent(panel_top, javax.swing.GroupLayout.PREFERRED_SIZE, 842, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(panel_bottom, javax.swing.GroupLayout.DEFAULT_SIZE, 87, Short.MAX_VALUE))
+                .addComponent(panel_bottom, javax.swing.GroupLayout.PREFERRED_SIZE, 87, Short.MAX_VALUE))
         );
 
         pack();
@@ -663,9 +673,9 @@ public final class PACKAGING_UI0001_Main_Mode1 extends javax.swing.JFrame {
 
     public void clearContextSessionVals() {
         //Pas besoin de réinitialiser le uid
-        Helper.context.setBaseContainerTmp(new BaseContainerTmp());
-        Helper.context.setBaseHarnessAdditionalBarecodeTmp(new BaseHarnessAdditionalBarecodeTmp());
-        Helper.context.setUser(null);
+        Helper.mode2_context.setBaseContainerTmp(new BaseContainerTmp());
+        Helper.mode2_context.setBaseHarnessAdditionalBarecodeTmp(new BaseHarnessAdditionalBarecodeTmp());
+        Helper.mode2_context.setUser(null);
     }
 
     //########################################################################
@@ -678,38 +688,38 @@ public final class PACKAGING_UI0001_Main_Mode1 extends javax.swing.JFrame {
     }
 
     //########################################################################
-    //################ Reset GUI Component to State S01 ######################
+    //################ Reset GUI Component to Mode2_State S01 ######################
     //########################################################################
     public void logout() {
 
         //Save authentication line in HisLogin table
-        if (Helper.context.getUser().getId() != null) {
+        if (Helper.mode2_context.getUser().getId() != null) {
             HisLogin his_login = new HisLogin(
-                    Helper.context.getUser().getId(), Helper.context.getUser().getId(),
+                    Helper.mode2_context.getUser().getId(), Helper.mode2_context.getUser().getId(),
                     String.format(Helper.INFO0012_LOGOUT_SUCCESS,
-                            Helper.context.getUser().getFirstName()
-                            + " " + Helper.context.getUser().getLastName()
-                            + " / " + Helper.context.getUser().getLogin(),
+                            Helper.mode2_context.getUser().getFirstName()
+                            + " " + Helper.mode2_context.getUser().getLastName()
+                            + " / " + Helper.mode2_context.getUser().getLogin(),
                             Helper.HOSTNAME, Helper.getStrTimeStamp()));
-            his_login.setCreateId(Helper.context.getUser().getId());
-            his_login.setWriteId(Helper.context.getUser().getId());
+            his_login.setCreateId(Helper.mode2_context.getUser().getId());
+            his_login.setWriteId(Helper.mode2_context.getUser().getId());
 
             str = String.format(Helper.INFO0012_LOGOUT_SUCCESS,
-                    Helper.context.getUser().getFirstName() + " " + Helper.context.getUser().getLastName()
-                    + " / " + Helper.context.getUser().getLogin(), Helper.HOSTNAME,
+                    Helper.mode2_context.getUser().getFirstName() + " " + Helper.mode2_context.getUser().getLastName()
+                    + " / " + Helper.mode2_context.getUser().getLogin(), Helper.HOSTNAME,
                     Helper.getStrTimeStamp() + " Project : "
-                    + Helper.context.getUser().getHarnessType());
+                    + Helper.mode2_context.getUser().getHarnessType());
             his_login.setMessage(str);
 
             str = "";
             his_login.create(his_login);
         }
         //Reset the state
-        state = new S010_UserCodeScan();
+        state = new Mode1_S010_UserCodeScan();
 
         this.clearContextSessionVals();
 
-        //Helper.context.setUser(null);
+        //Helper.mode2_context.setUser(null);
         //Reset Image
         Helper.Packaging_Gui_Mode1.img_lbl.setIcon(state.getImg());
         //Clear Scan Box
@@ -726,7 +736,7 @@ public final class PACKAGING_UI0001_Main_Mode1 extends javax.swing.JFrame {
     }
 
     private void menu010_pallet_detailsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menu010_pallet_detailsActionPerformed
-        if (Helper.context.getUser().getAccessLevel() == Helper.PROFIL_ADMIN) {
+        if (Helper.mode2_context.getUser().getAccessLevel() == Helper.PROFIL_ADMIN) {
             new PACKAGING_UI0010_PalletDetails(this, rootPaneCheckingEnabled, true, true, true, true).setVisible(true);
         } else {
             new PACKAGING_UI0010_PalletDetails(this, rootPaneCheckingEnabled, false, false, false, false).setVisible(true);
@@ -772,7 +782,7 @@ public final class PACKAGING_UI0001_Main_Mode1 extends javax.swing.JFrame {
     }
     private void menu012_harness_detailsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menu012_harness_detailsActionPerformed
         PACKAGING_UI0012_HarnessDetails harnessDetails;
-        if (Helper.context.getUser()!= null && Helper.context.getUser().getAccessLevel() == Helper.PROFIL_ADMIN) {
+        if (Helper.mode2_context.getUser()!= null && Helper.mode2_context.getUser().getAccessLevel() == Helper.PROFIL_ADMIN) {
             harnessDetails = new PACKAGING_UI0012_HarnessDetails(this, rootPaneCheckingEnabled, true);
         } else {
             harnessDetails = new PACKAGING_UI0012_HarnessDetails(this, rootPaneCheckingEnabled, false);
@@ -782,7 +792,7 @@ public final class PACKAGING_UI0001_Main_Mode1 extends javax.swing.JFrame {
     }//GEN-LAST:event_menu012_harness_detailsActionPerformed
 
     private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
-        if (Helper.context.getUser() != null) {
+        if (Helper.mode2_context.getUser() != null) {
             this.logout();
         }
 
@@ -797,8 +807,8 @@ public final class PACKAGING_UI0001_Main_Mode1 extends javax.swing.JFrame {
     private void scan_txtboxKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_scan_txtboxKeyPressed
         // User has pressed Carriage return button
         if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
-            state.doAction(Helper.context);
-            state = Helper.context.getState();
+            state.doAction(Helper.mode1_context);
+            state = Helper.mode1_context.getState();
         } else if (evt.getKeyCode() == KeyEvent.VK_ESCAPE) {
             int confirmed = JOptionPane.showConfirmDialog(null,
                     "Are you sure you want to logoff ?", "Logoff confirmation",

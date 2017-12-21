@@ -7,7 +7,7 @@ package gui.config;
 
 import entity.HisLogin;
 import entity.ManufactureUsers;
-import gui.packaging.mode2.state.S010_UserCodeScan;
+import gui.packaging.mode2.state.Mode2_S010_UserCodeScan;
 import helper.ComboItem;
 import helper.HQLHelper;
 import helper.Helper;
@@ -71,13 +71,13 @@ public class CONFIG_UI0000_AUTH extends javax.swing.JDialog {
             Helper.startSession();
             ManufactureUsers user = (ManufactureUsers) result.get(0);
             user.setLoginTime(new Date());
-            Helper.context.setUser(user);
-            Helper.context.getUser().update(Helper.context.getUser());
+            Helper.mode2_context.setUser(user);
+            Helper.mode2_context.getUser().update(Helper.mode2_context.getUser());
 
             try {
                 Helper.HOSTNAME = InetAddress.getLocalHost().getHostName();
             } catch (UnknownHostException ex) {
-                Logger.getLogger(S010_UserCodeScan.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(Mode2_S010_UserCodeScan.class.getName()).log(Level.SEVERE, null, ex);
             }
             String str = String.format(Helper.INFO0001_LOGIN_SUCCESS,
                     user.getFirstName() + " " + user.getLastName()

@@ -12,7 +12,7 @@ import entity.BaseHarness;
 import entity.HisBaseContainer;
 import entity.HisLogin;
 import entity.PackagingStockMovement;
-import gui.packaging.mode1.gui.PACKAGING_UI0014_PalletHistory;
+import gui.packaging.reports.PACKAGING_UI0014_PalletHistory;
 import gui.warehouse_dispatch.state.WarehouseHelper;
 import java.awt.Color;
 import java.awt.event.KeyEvent;
@@ -839,7 +839,7 @@ public class WAREHOUSE_FG_UI0001_SCAN extends javax.swing.JFrame {
 
             String str = String.format(Helper.INFO0012_LOGOUT_SUCCESS,
                     WarehouseHelper.warehouse_out_context.getUser().getFirstName() + " " + WarehouseHelper.warehouse_out_context.getUser().getLastName()
-                    + " / " + Helper.context.getUser().getLogin(), Helper.HOSTNAME,
+                    + " / " + Helper.mode2_context.getUser().getLogin(), Helper.HOSTNAME,
                     Helper.getStrTimeStamp());
             his_login.setMessage(str);
 

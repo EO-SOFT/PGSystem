@@ -106,20 +106,20 @@ public class DropBaseHarness extends DAO implements java.io.Serializable {
     public DropBaseHarness setDefautlVals() {
         /*
          Set default values of this object 
-         from the global context values
+         from the global mode2_context values
          */
         this.createTime = this.dropTime = this.writeTime = Helper.getTimeStamp(null);
-        this.createId = this.writeId = Helper.context.getUser().getId();
-        this.user = Helper.context.getUser().getLogin();
-        this.createUser = Helper.context.getUser().getFirstName() + " " + Helper.context.getUser().getLastName();
+        this.createId = this.writeId = Helper.mode2_context.getUser().getId();
+        this.user = Helper.mode2_context.getUser().getLogin();
+        this.createUser = Helper.mode2_context.getUser().getFirstName() + " " + Helper.mode2_context.getUser().getLastName();
         return this;
     }
 
     public DropBaseHarness(String harnessPart, String counter, int containerId, DropBaseContainer container, String palletNumber, String harnessType, String dropFeedback, double stdTime) {
         this.createTime = this.dropTime = this.writeTime = Helper.getTimeStamp(null);
-        this.createId = this.writeId = Helper.context.getUser().getId();
-        this.createUser = Helper.context.getUser().getFirstName() + " " + Helper.context.getUser().getLastName();
-        this.user = Helper.context.getUser().getLogin();
+        this.createId = this.writeId = Helper.mode2_context.getUser().getId();
+        this.createUser = Helper.mode2_context.getUser().getFirstName() + " " + Helper.mode2_context.getUser().getLastName();
+        this.user = Helper.mode2_context.getUser().getLogin();
         this.harnessPart = harnessPart;
         this.counter = counter;
         this.containerId = containerId;

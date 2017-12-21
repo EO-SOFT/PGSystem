@@ -9,8 +9,8 @@ import helper.Helper;
 import entity.BaseContainer;
 import entity.ConfigSegment;
 import entity.ConfigWorkplace;
-import gui.packaging.mode1.gui.PACKAGING_UI0010_PalletDetails;
-import gui.packaging.mode1.gui.PACKAGING_UI0011_ProdStatistics;
+import gui.packaging.reports.PACKAGING_UI0010_PalletDetails;
+import gui.packaging.reports.PACKAGING_UI0011_ProdStatistics;
 import helper.ComboItem;
 import helper.JDialogExcelFileChooser;
 import helper.UIHelper;
@@ -144,8 +144,8 @@ public final class WAREHOUSE_FG_UI0002_PALLET_LIST extends javax.swing.JFrame {
                 new MouseAdapter() {
             public void mouseClicked(MouseEvent e) {
                 if (e.getClickCount() == 2) {
-                    //System.out.println("Helper.context.getUser().getAccessLevel()" + Helper.context.getUser().getAccessLevel());
-                    if (Helper.context.getUser().getAccessLevel() == Helper.PROFIL_ADMIN) {
+                    //System.out.println("Helper.mode2_context.getUser().getAccessLevel()" + Helper.mode2_context.getUser().getAccessLevel());
+                    if (Helper.mode2_context.getUser().getAccessLevel() == Helper.PROFIL_ADMIN) {
                         new PACKAGING_UI0010_PalletDetails(null, rootPaneCheckingEnabled, String.valueOf(searchResult_table.getValueAt(searchResult_table.getSelectedRow(), PALLET_NUMBER_COLINDEX)), true, true, true).setVisible(true);
                     } else {
                         new PACKAGING_UI0010_PalletDetails(null, rootPaneCheckingEnabled, String.valueOf(searchResult_table.getValueAt(searchResult_table.getSelectedRow(), PALLET_NUMBER_COLINDEX)), false, false, false).setVisible(true);

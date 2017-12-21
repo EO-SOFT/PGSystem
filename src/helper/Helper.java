@@ -39,7 +39,8 @@ import javax.swing.JOptionPane;
 import static javax.swing.JOptionPane.ERROR_MESSAGE;
 import static javax.swing.JOptionPane.WARNING_MESSAGE;
 import org.hibernate.Session;
-import gui.packaging.mode2.state.Context;
+import gui.packaging.mode2.state.Mode2_Context;
+import gui.packaging.mode1.state.Mode1_Context;
 
 /**
  *
@@ -49,7 +50,7 @@ public class Helper {
 
     public static String APPNAME = "PGSystem";
 
-    public static String VERSION = "1.17.12.05";
+    public static String VERSION = "1.17.12.21";
 
     public static String AUTHOR = "Created By EZZIOURI Oussama";
 
@@ -76,7 +77,12 @@ public class Helper {
     /**
      *
      */
-    public static Context context = new Context();
+    public static Mode2_Context mode2_context = new Mode2_Context();
+    
+    /**
+     *
+     */
+    public static Mode1_Context mode1_context = new Mode1_Context();
 
     /**
      *

@@ -76,7 +76,7 @@ public class HisPalletPrint extends DAO implements java.io.Serializable {
     public HisPalletPrint(String harnessPart, String harnessIndex, String supplier_part_number, int packSize,
             String packType, String user, String reprint, String printState) {
         this.createTime = this.writeTime = Helper.getTimeStamp(null);
-        this.createId = this.writeId = Helper.context.getUser().getId();
+        this.createId = this.writeId = Helper.mode2_context.getUser().getId();
         this.harnessPart = harnessPart;
         this.harnessIndex = harnessIndex;
         this.supplier_part_number = supplier_part_number;

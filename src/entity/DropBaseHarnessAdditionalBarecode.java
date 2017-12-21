@@ -56,12 +56,12 @@ public class DropBaseHarnessAdditionalBarecode extends DAO implements java.io.Se
     public DropBaseHarnessAdditionalBarecode setDefautlVals() {
         /*
          Set default values of this object 
-         from the global context values
+         from the global mode2_context values
          */
         this.createTime = Helper.getTimeStamp(null);
         this.writeTime = Helper.getTimeStamp(null);
-        this.createId = Helper.context.getUser().getId();
-        this.writeId = Helper.context.getUser().getId();
+        this.createId = Helper.mode2_context.getUser().getId();
+        this.writeId = Helper.mode2_context.getUser().getId();
 
         return this;
     }

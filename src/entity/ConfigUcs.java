@@ -161,10 +161,10 @@ public class ConfigUcs extends DAO implements java.io.Serializable {
     public ConfigUcs setDefautlVals() {
         /*
          Set default values of this object 
-         from the global context values
+         from the global mode2_context values
          */
         this.createTime = this.writeTime = Helper.getTimeStamp(null);
-        this.createId = this.writeId = Helper.context.getUser().getId();
+        this.createId = this.writeId = Helper.mode2_context.getUser().getId();
         this.additionalBarcode = 0;
         return this;
     }

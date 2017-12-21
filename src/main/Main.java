@@ -30,7 +30,7 @@ import java.util.Random;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.SwingWorker;
-import gui.packaging.mode2.state.S010_UserCodeScan;
+import gui.packaging.mode2.state.Mode2_S010_UserCodeScan;
 
 /**
  *
@@ -451,7 +451,7 @@ public class Main extends javax.swing.JFrame implements ActionListener,
 
     private void PACKAGING_MODULEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PACKAGING_MODULEActionPerformed
         //Bind to localhost adapter with a zero connection queue
-        Helper.context.setState(new S010_UserCodeScan());
+        Helper.mode2_context.setState(new Mode2_S010_UserCodeScan());
         
         if(Helper.PROP.getProperty("PACKAGING_SCAN_MODE").equals("1")){
             Helper.Packaging_Gui_Mode1 = new PACKAGING_UI0001_Main_Mode1(null, this);

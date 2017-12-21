@@ -185,13 +185,13 @@ public class BaseContainer extends DAO implements java.io.Serializable {
     public BaseContainer setDefautlVals() {
         /*
          Set default values of this object 
-         from the global context values
+         from the global mode2_context values
          */
         this.startTime = this.createTime = this.fifoTime = Helper.getTimeStamp(null);
-        this.createId = Helper.context.getUser().getId();
-        this.writeId = Helper.context.getUser().getId();
-        this.user = Helper.context.getUser().getLogin();
-        this.createUser = Helper.context.getUser().getFirstName() + " " + Helper.context.getUser().getLastName();
+        this.createId = Helper.mode2_context.getUser().getId();
+        this.writeId = Helper.mode2_context.getUser().getId();
+        this.user = Helper.mode2_context.getUser().getLogin();
+        this.createUser = Helper.mode2_context.getUser().getFirstName() + " " + Helper.mode2_context.getUser().getLastName();
         return this;
     }
 
@@ -199,9 +199,9 @@ public class BaseContainer extends DAO implements java.io.Serializable {
             Integer qtyExpected, Integer qtyRead, String state, String state_code, String packType, String harnessType, Double stdTime,
             Double price) {
         this.startTime = this.createTime = this.fifoTime = Helper.getTimeStamp(null);
-        this.createId = this.writeId = Helper.context.getUser().getId();
-        this.user = Helper.context.getUser().getLogin();
-        this.createUser = Helper.context.getUser().getFirstName() + " " + Helper.context.getUser().getLastName();
+        this.createId = this.writeId = Helper.mode2_context.getUser().getId();
+        this.user = Helper.mode2_context.getUser().getLogin();
+        this.createUser = Helper.mode2_context.getUser().getFirstName() + " " + Helper.mode2_context.getUser().getLastName();
         this.palletNumber = palletNumber;
         this.harnessPart = harnessPart;
         this.harnessIndex = harnessIndex;
@@ -223,10 +223,10 @@ public class BaseContainer extends DAO implements java.io.Serializable {
             Double stdTime, Double price) {
         this.startTime = this.createTime = Helper.getTimeStamp(null);
         this.fifoTime = Helper.getTimeStamp(null);
-        this.createId = Helper.context.getUser().getId();
-        this.writeId = Helper.context.getUser().getId();
-        this.user = Helper.context.getUser().getFirstName() + " " + Helper.context.getUser().getLastName() + " / " + Helper.context.getUser().getLogin();
-        this.createUser = Helper.context.getUser().getFirstName() + " " + Helper.context.getUser().getLastName();
+        this.createId = Helper.mode2_context.getUser().getId();
+        this.writeId = Helper.mode2_context.getUser().getId();
+        this.user = Helper.mode2_context.getUser().getFirstName() + " " + Helper.mode2_context.getUser().getLastName() + " / " + Helper.mode2_context.getUser().getLogin();
+        this.createUser = Helper.mode2_context.getUser().getFirstName() + " " + Helper.mode2_context.getUser().getLastName();
         this.palletNumber = palletNumber;
         this.harnessPart = harnessPart;
         this.harnessIndex = harnessIndex;
@@ -588,7 +588,7 @@ public class BaseContainer extends DAO implements java.io.Serializable {
                 feedback = "Pallet successfully closed.";
                 super.update(obj);
             } else if (bc.getContainerState().equals(Helper.PALLET_QUARANTAINE)) {
-                feedback = "Set quarantaine with comment : " + Helper.context.getFeedback();
+                feedback = "Set quarantaine with comment : " + Helper.mode2_context.getFeedback();
                 super.update(obj);
             } else if (bc.getContainerState().equals(Helper.PALLET_STORED)) {
                 feedback = "Pallet successfully stored.";
@@ -597,7 +597,7 @@ public class BaseContainer extends DAO implements java.io.Serializable {
                 feedback = "Pallet successfully expedited.";
                 super.update(obj);
             } else if (bc.getContainerState().equals(Helper.PALLET_DROPPED)) {
-                feedback = "Pallet dropped with comment : " + Helper.context.getFeedback();
+                feedback = "Pallet dropped with comment : " + Helper.mode2_context.getFeedback();
                 super.update(obj);
             }
             //##############################################################    

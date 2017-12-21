@@ -14,7 +14,7 @@ import entity.LoadPlanLine;
 import entity.LoadPlanLinePackaging;
 import entity.ManufactureUsers;
 import entity.PackagingStockMovement;
-import gui.packaging.mode1.gui.PACKAGING_UI0010_PalletDetails;
+import gui.packaging.reports.PACKAGING_UI0010_PalletDetails;
 import helper.JDialogExcelFileChooser;
 import gui.warehouse_dispatch.state.S020_PalletNumberScan;
 import gui.warehouse_dispatch.state.WarehouseHelper;
@@ -1431,7 +1431,7 @@ public final class WAREHOUSE_DISPATCH_UI0002_DISPATCH_SCAN extends javax.swing.J
 
             String str = String.format(Helper.INFO0012_LOGOUT_SUCCESS,
                     WarehouseHelper.warehouse_out_context.getUser().getFirstName() + " " + WarehouseHelper.warehouse_out_context.getUser().getLastName()
-                    + " / " + Helper.context.getUser().getLogin(), Helper.HOSTNAME,
+                    + " / " + Helper.mode2_context.getUser().getLogin(), Helper.HOSTNAME,
                     Helper.getStrTimeStamp());
             his_login.setMessage(str);
 
@@ -1443,7 +1443,7 @@ public final class WAREHOUSE_DISPATCH_UI0002_DISPATCH_SCAN extends javax.swing.J
 
             this.clearContextSessionVals();
 
-            //Helper.context.setUser(null);
+            //Helper.mode2_context.setUser(null);
             connectedUserName_label.setText("");
         }
 
@@ -1466,7 +1466,7 @@ public final class WAREHOUSE_DISPATCH_UI0002_DISPATCH_SCAN extends javax.swing.J
 
     public void clearContextSessionVals() {
         //Pas besoin de réinitialiser le uid        
-        Helper.context.setUser(new ManufactureUsers());
+        Helper.mode2_context.setUser(new ManufactureUsers());
     }
 
     private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
@@ -1532,7 +1532,7 @@ public final class WAREHOUSE_DISPATCH_UI0002_DISPATCH_SCAN extends javax.swing.J
                         //Book packaging items                    
                         PackagingStockMovement pm = new PackagingStockMovement();
                         pm.bookMasterPack(
-                                Helper.context.getUser().getFirstName() + " " + Helper.context.getUser().getLastName(),
+                                Helper.mode2_context.getUser().getFirstName() + " " + Helper.mode2_context.getUser().getLastName(),
                                 bc.getPackType(),
                                 1,
                                 "OUT",
@@ -2071,7 +2071,7 @@ public final class WAREHOUSE_DISPATCH_UI0002_DISPATCH_SCAN extends javax.swing.J
 
         this.cleanDataLabels();
 
-        //Clear context temp vars
+        //Clear mode2_context temp vars
         WarehouseHelper.warehouse_out_context.clearAllVars();
 
         //Clear lines from Jtable

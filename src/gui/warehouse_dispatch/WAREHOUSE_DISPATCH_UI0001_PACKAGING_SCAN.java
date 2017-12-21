@@ -11,7 +11,7 @@ import helper.HQLHelper;
 import entity.BaseContainer;
 import entity.BaseHarness;
 import entity.HisBaseContainer;
-import gui.packaging.mode1.gui.PACKAGING_UI0014_PalletHistory;
+import gui.packaging.reports.PACKAGING_UI0014_PalletHistory;
 import java.awt.Color;
 import java.awt.event.KeyEvent;
 import java.text.SimpleDateFormat;

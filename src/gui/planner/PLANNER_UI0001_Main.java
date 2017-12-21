@@ -746,8 +746,8 @@ public class PLANNER_UI0001_Main extends javax.swing.JFrame {
             this.cs = cs.selectShiftByDesc(String.valueOf(shift_box.getSelectedItem()));
             se.setCreateTime(new Date());
             se.setWriteTime(new Date());
-            se.setCreateId(Helper.context.getUser().getId());
-            se.setWriteId(Helper.context.getUser().getId());
+            se.setCreateId(Helper.mode2_context.getUser().getId());
+            se.setWriteId(Helper.mode2_context.getUser().getId());
             se.setHarnessType(String.valueOf(harness_type_box.getSelectedItem()));
             se.setHarnessPart(String.valueOf(harness_part_box.getSelectedItem()));
             se.setHarnessIndex(String.valueOf(harness_index_box.getSelectedItem()));

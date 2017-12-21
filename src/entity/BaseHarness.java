@@ -109,19 +109,19 @@ public class BaseHarness extends DAO implements java.io.Serializable {
     public BaseHarness setDefautlVals() {
         /*
          Set default values of this object 
-         from the global context values
+         from the global mode2_context values
          */
         this.createTime = this.writeTime = Helper.getTimeStamp(null);
-        this.createId = this.writeId = Helper.context.getUser().getId();
-        this.user = Helper.context.getUser().getLogin();
-        this.createUser = Helper.context.getUser().getFirstName() + " " + Helper.context.getUser().getLastName();
+        this.createId = this.writeId = Helper.mode2_context.getUser().getId();
+        this.user = Helper.mode2_context.getUser().getLogin();
+        this.createUser = Helper.mode2_context.getUser().getFirstName() + " " + Helper.mode2_context.getUser().getLastName();
         return this;
     }
 
     public BaseHarness(String harnessPart, String counter, int containerId, BaseContainer container, String palletNumber, String harnessType, double stdTime) {
         this.createTime = this.writeTime = Helper.getTimeStamp(null);
-        this.createId = this.writeId = Helper.context.getUser().getId();
-        this.user = Helper.context.getUser().getLogin();
+        this.createId = this.writeId = Helper.mode2_context.getUser().getId();
+        this.user = Helper.mode2_context.getUser().getLogin();
         this.harnessPart = harnessPart;
         this.counter = counter;
         this.containerId = containerId;

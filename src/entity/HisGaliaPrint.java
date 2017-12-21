@@ -70,7 +70,7 @@ public class HisGaliaPrint extends DAO implements java.io.Serializable {
 
     public HisGaliaPrint(String harnessPart, String supplierName, String supplierPartNumber, String harnessIndex, int qty, String closingPalet, String state, String reprint) {
         this.createTime = this.writeTime = Helper.getTimeStamp(null);
-        this.createId = this.writeId = Helper.context.getUser().getId();
+        this.createId = this.writeId = Helper.mode2_context.getUser().getId();
         this.harnessPart = harnessPart;
         this.supplierName = supplierName;
         this.supplierPartNumber = supplierPartNumber;

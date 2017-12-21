@@ -9,7 +9,7 @@ import com.itextpdf.text.DocumentException;
 import entity.BaseContainer;
 import entity.HisGaliaPrint;
 import entity.HisPalletPrint;
-import gui.packaging.mode1.gui.PACKAGING_UI9000_ChoosePackType;
+import gui.packaging.reports.PACKAGING_UI9000_ChoosePackType;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -55,7 +55,7 @@ public class PrinterHelper {
             initDailyDestPrintDir();
             //Creation of PDF A5 open pallet number
             PrintOpenPallet_A5 openPallet = new PrintOpenPallet_A5(
-                    Helper.context.getUser().getLogin(),
+                    Helper.mode2_context.getUser().getLogin(),
                     hisPallet.getPackType(),
                     Helper.PALLET_PRINT_REPRINT,
                     hisPallet.getHarnessPart(),
@@ -130,14 +130,14 @@ public class PrinterHelper {
         Helper.sess.save(hisPallet);
         Helper.sess.getTransaction().commit();
 
-        //Set pallet number var in global context            
-        Helper.context.getBaseContainerTmp().setPalletNumber(String.valueOf(hisPallet.getId()));
+        //Set pallet number var in global mode2_context            
+        Helper.mode2_context.getBaseContainerTmp().setPalletNumber(String.valueOf(hisPallet.getId()));
 
         try {
             hisPallet.setPalletState(Helper.PALLET_PRINT_INPROCESS, hisPallet.getId());
             //Creation of PDF A5 open pallet number
             PrintOpenPallet_A5 openPallet = new PrintOpenPallet_A5(
-                    Helper.context.getUser().getLogin(),
+                    Helper.mode2_context.getUser().getLogin(),
                     packType,
                     "-",
                     harnessPart,
@@ -203,8 +203,8 @@ public class PrinterHelper {
             Helper.sess.save(hisGalia);
             Helper.sess.getTransaction().commit();
 
-            //Set pallet number var in global context        
-            Helper.context.getBaseContainerTmp().setPalletNumber(String.valueOf(hisGalia.getId()));
+            //Set pallet number var in global mode2_context        
+            Helper.mode2_context.getBaseContainerTmp().setPalletNumber(String.valueOf(hisGalia.getId()));
         }//reprint = true, Update the old closing sheet
         else {
             //Get the hisGalia to be reprinted
@@ -216,7 +216,7 @@ public class PrinterHelper {
 
             hisGalia = (HisGaliaPrint) result.get(0);
             hisGalia.setWriteTime(new Date());
-            hisGalia.setWriteId(Helper.context.getUser().getId());
+            hisGalia.setWriteId(Helper.mode2_context.getUser().getId());
             hisGalia.setReprint(Helper.PALLET_PRINT_REPRINT);
 
             Helper.startSession();
