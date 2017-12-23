@@ -139,7 +139,7 @@ public class Mode1_S041_NewPalletScan implements Mode1_State {
                 context.setState(new Mode1_S050_ClosingPallet());
             } else {
                 // Change go back to state HarnessPartScan            
-                context.setState(new Mode1_S021_HarnessPartScan());
+                context.setState(new Mode1_S020_PalletChoice());
             }
         } else {
             Helper.log.warning(String.format(Helper.ERR0008_INCORRECT_PALLET_NUMBER, barcode));

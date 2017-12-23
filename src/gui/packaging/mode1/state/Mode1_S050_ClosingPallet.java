@@ -77,7 +77,7 @@ public class Mode1_S050_ClosingPallet implements Mode1_State {
             Helper.Packaging_Gui_Mode1.setRequestedPallet_txt("");
 
             // Change go back to state HarnessPartScan            
-            context.setState(new Mode1_S021_HarnessPartScan());
+            context.setState(new Mode1_S020_PalletChoice());
         } else {
             //Clear scann textbox
             clearScanBox(scan_txtbox);

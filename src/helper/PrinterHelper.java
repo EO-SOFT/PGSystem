@@ -9,9 +9,7 @@ import com.itextpdf.text.DocumentException;
 import entity.BaseContainer;
 import entity.HisGaliaPrint;
 import entity.HisPalletPrint;
-import gui.packaging.reports.PACKAGING_UI9000_ChoosePackType;
 import java.io.IOException;
-import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 import java.util.logging.Level;
@@ -19,7 +17,6 @@ import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 import static javax.swing.JOptionPane.ERROR_MESSAGE;
 import org.hibernate.Query;
-import org.postgresql.jdbc2.optional.SimpleDataSource;
 import print.PrintClosingPallet_A5;
 import print.PrintDispatchNote_A4;
 import print.PrintOpenPallet_A5;
@@ -91,13 +88,13 @@ public class PrinterHelper {
             Helper.log.warning(ex.getMessage());
             hisPallet.setPalletState(Helper.PALLET_PRINT_ERROR, hisPallet.getId());
             Helper.log.info(String.format("Set Pallet [%d] state to [%s]. %s", hisPallet.getId(), Helper.PALLET_PRINT_ERROR, ex.getMessage()));
-            Logger.getLogger(PACKAGING_UI9000_ChoosePackType.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(PrinterHelper.class.getName()).log(Level.SEVERE, null, ex);
 
         } catch (DocumentException ex) {
             Helper.log.warning(ex.getMessage());
             hisPallet.setPalletState(Helper.PALLET_PRINT_ERROR, hisPallet.getId());
             Helper.log.info(String.format("Set Pallet [%d] state to [%s]. %s", hisPallet.getId(), Helper.PALLET_PRINT_ERROR, ex.getMessage()));
-            Logger.getLogger(PACKAGING_UI9000_ChoosePackType.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(PrinterHelper.class.getName()).log(Level.SEVERE, null, ex);
 
         }
         return -1;
@@ -172,12 +169,12 @@ public class PrinterHelper {
             Helper.log.warning(ex.getMessage());
             hisPallet.setPalletState(Helper.PALLET_PRINT_ERROR, hisPallet.getId());
             Helper.log.info(String.format("Set Pallet [%d] state to [%s]. %s", hisPallet.getId(), Helper.PALLET_PRINT_ERROR, ex.getMessage()));
-            Logger.getLogger(PACKAGING_UI9000_ChoosePackType.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(PrinterHelper.class.getName()).log(Level.SEVERE, null, ex);
         } catch (DocumentException ex) {
             Helper.log.warning(ex.getMessage());
             hisPallet.setPalletState(Helper.PALLET_PRINT_ERROR, hisPallet.getId());
             Helper.log.info(String.format("Set Pallet [%d] state to [%s]. %s", hisPallet.getId(), Helper.PALLET_PRINT_ERROR, ex.getMessage()));
-            Logger.getLogger(PACKAGING_UI9000_ChoosePackType.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(PrinterHelper.class.getName()).log(Level.SEVERE, null, ex);
         }
         return -1;
     }
@@ -259,7 +256,7 @@ public class PrinterHelper {
         } catch (Exception ex) {
             hisGalia.setGaliaState(Helper.PALLET_PRINT_ERROR, hisGalia.getId());
             Helper.log.info(String.format("Set Pallet [%d] state to [%s]. %s", hisGalia.getId(), Helper.PALLET_PRINT_ERROR, ex.getMessage()));
-            Logger.getLogger(PACKAGING_UI9000_ChoosePackType.class.getName()).log(Level.SEVERE, null, ex.getMessage());
+            Logger.getLogger(PrinterHelper.class.getName()).log(Level.SEVERE, null, ex.getMessage());
         }
     }
 

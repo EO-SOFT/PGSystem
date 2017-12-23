@@ -1,0 +1,333 @@
+déc. 23, 2017 8:34:41 PM helper.Helper InitDailyDestPrintDir
+INFOS: File 2017_12_23.log created !Print directory [.\print\2017_12_23] created !
+Print sub directory [.\print\2017_12_23.\open_sheet] created !
+Print sub directory [.\print\2017_12_23.\closing_sheet] created !
+Print sub directory [.\print\2017_12_23.\picking_label] created !
+Print sub directory [.\print\2017_12_23.\dispatch_label] created !
+
+déc. 23, 2017 8:36:24 PM helper.Helper InitDailyDestPrintDir
+INFOS: File 2017_12_23.log already exists.Print directory [.\print\2017_12_23] already exist!
+Print sub directory [.\print\2017_12_23.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\picking_label] already exist!
+Print sub directory [.\print\2017_12_23.\dispatch_label] already exist!
+
+déc. 23, 2017 8:37:35 PM helper.Helper InitDailyDestPrintDir
+INFOS: File 2017_12_23.log already exists.Print directory [.\print\2017_12_23] already exist!
+Print sub directory [.\print\2017_12_23.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\picking_label] already exist!
+Print sub directory [.\print\2017_12_23.\dispatch_label] already exist!
+
+déc. 23, 2017 8:37:38 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+déc. 23, 2017 8:37:38 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+déc. 23, 2017 8:38:24 PM helper.Helper InitDailyDestPrintDir
+INFOS: File 2017_12_23.log already exists.Print directory [.\print\2017_12_23] already exist!
+Print sub directory [.\print\2017_12_23.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\picking_label] already exist!
+Print sub directory [.\print\2017_12_23.\dispatch_label] already exist!
+
+déc. 23, 2017 8:40:17 PM helper.Helper InitDailyDestPrintDir
+INFOS: File 2017_12_23.log already exists.Print directory [.\print\2017_12_23] already exist!
+Print sub directory [.\print\2017_12_23.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\picking_label] already exist!
+Print sub directory [.\print\2017_12_23.\dispatch_label] already exist!
+
+déc. 23, 2017 8:41:33 PM helper.Helper InitDailyDestPrintDir
+INFOS: File 2017_12_23.log already exists.Print directory [.\print\2017_12_23] already exist!
+Print sub directory [.\print\2017_12_23.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\picking_label] already exist!
+Print sub directory [.\print\2017_12_23.\dispatch_label] already exist!
+
+déc. 23, 2017 8:41:36 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+déc. 23, 2017 8:41:36 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+déc. 23, 2017 8:42:53 PM helper.Helper InitDailyDestPrintDir
+INFOS: File 2017_12_23.log already exists.Print directory [.\print\2017_12_23] already exist!
+Print sub directory [.\print\2017_12_23.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\picking_label] already exist!
+Print sub directory [.\print\2017_12_23.\dispatch_label] already exist!
+
+déc. 23, 2017 8:42:55 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+déc. 23, 2017 8:42:55 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+déc. 23, 2017 8:43:03 PM gui.packaging.mode1.state.Mode1_S010_UserCodeScan doAction
+INFOS: Invalid matricule number or account locked !
+déc. 23, 2017 8:43:05 PM gui.packaging.mode1.gui.PACKAGING_UI0002_PasswordRequest_Mode1 connect_to_mode1
+INFOS: User EZZIOURI OUSSAMA / ezou1001 connected to host Oussama-PC at 2017-12-23 20:43:05 Project : DUCATI.
+déc. 23, 2017 8:43:05 PM gui.packaging.mode1.gui.PACKAGING_UI0002_PasswordRequest_Mode1 loadDotMatrixCodePatterns
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord AND cb.harness_type = :harnessType ORDER BY id ASC
+déc. 23, 2017 8:43:05 PM gui.packaging.mode1.gui.PACKAGING_UI0002_PasswordRequest_Mode1 loadPartNumberCodePatterns
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord AND cb.harness_type = :harnessType ORDER BY id ASC
+déc. 23, 2017 8:43:20 PM gui.packaging.mode1.state.Mode1_S020_PalletChoice doAction
+INFOS: Is it a new pallet ?
+déc. 23, 2017 8:43:20 PM gui.packaging.mode1.state.Mode1_S020_PalletChoice doAction
+INFOS:  [Yes]
+déc. 23, 2017 8:43:31 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [5101C861D] in ConfigUCS: DUCATI
+déc. 23, 2017 8:43:32 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [5101C861D] found for project [DUCATI].
+déc. 23, 2017 8:43:32 PM gui.packaging.mode1.state.Mode1_S021_HarnessPartScan doAction
+INFOS: Harness Part scanned [5101C861D] OK.
+déc. 23, 2017 8:43:46 PM helper.Helper InitDailyDestPrintDir
+INFOS: File 2017_12_23.log already exists.Print directory [.\print\2017_12_23] already exist!
+Print sub directory [.\print\2017_12_23.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\picking_label] already exist!
+Print sub directory [.\print\2017_12_23.\dispatch_label] already exist!
+Print directory [.\print\2017_12_23] already exist!
+Print sub directory [.\print\2017_12_23.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\picking_label] already exist!
+Print sub directory [.\print\2017_12_23.\dispatch_label] already exist!
+
+déc. 23, 2017 8:43:49 PM helper.Helper InitDailyDestPrintDir
+INFOS: File 2017_12_23.log already exists.Print directory [.\print\2017_12_23] already exist!
+Print sub directory [.\print\2017_12_23.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\picking_label] already exist!
+Print sub directory [.\print\2017_12_23.\dispatch_label] already exist!
+Print directory [.\print\2017_12_23] already exist!
+Print sub directory [.\print\2017_12_23.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\picking_label] already exist!
+Print sub directory [.\print\2017_12_23.\dispatch_label] already exist!
+Print directory [.\print\2017_12_23] already exist!
+Print sub directory [.\print\2017_12_23.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\picking_label] already exist!
+Print sub directory [.\print\2017_12_23.\dispatch_label] already exist!
+
+déc. 23, 2017 8:44:10 PM helper.Helper InitDailyDestPrintDir
+INFOS: File 2017_12_23.log already exists.Print directory [.\print\2017_12_23] already exist!
+Print sub directory [.\print\2017_12_23.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\picking_label] already exist!
+Print sub directory [.\print\2017_12_23.\dispatch_label] already exist!
+Print directory [.\print\2017_12_23] already exist!
+Print sub directory [.\print\2017_12_23.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\picking_label] already exist!
+Print sub directory [.\print\2017_12_23.\dispatch_label] already exist!
+Print directory [.\print\2017_12_23] already exist!
+Print sub directory [.\print\2017_12_23.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\picking_label] already exist!
+Print sub directory [.\print\2017_12_23.\dispatch_label] already exist!
+Print directory [.\print\2017_12_23] already exist!
+Print sub directory [.\print\2017_12_23.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\picking_label] already exist!
+Print sub directory [.\print\2017_12_23.\dispatch_label] already exist!
+
+déc. 23, 2017 8:44:21 PM helper.Helper InitDailyDestPrintDir
+INFOS: File 2017_12_23.log already exists.Print directory [.\print\2017_12_23] already exist!
+Print sub directory [.\print\2017_12_23.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\picking_label] already exist!
+Print sub directory [.\print\2017_12_23.\dispatch_label] already exist!
+Print directory [.\print\2017_12_23] already exist!
+Print sub directory [.\print\2017_12_23.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\picking_label] already exist!
+Print sub directory [.\print\2017_12_23.\dispatch_label] already exist!
+Print directory [.\print\2017_12_23] already exist!
+Print sub directory [.\print\2017_12_23.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\picking_label] already exist!
+Print sub directory [.\print\2017_12_23.\dispatch_label] already exist!
+Print directory [.\print\2017_12_23] already exist!
+Print sub directory [.\print\2017_12_23.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\picking_label] already exist!
+Print sub directory [.\print\2017_12_23.\dispatch_label] already exist!
+Print directory [.\print\2017_12_23] already exist!
+Print sub directory [.\print\2017_12_23.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\picking_label] already exist!
+Print sub directory [.\print\2017_12_23.\dispatch_label] already exist!
+
+déc. 23, 2017 8:45:40 PM helper.Helper InitDailyDestPrintDir
+INFOS: File 2017_12_23.log already exists.Print directory [.\print\2017_12_23] already exist!
+Print sub directory [.\print\2017_12_23.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\picking_label] already exist!
+Print sub directory [.\print\2017_12_23.\dispatch_label] already exist!
+
+déc. 23, 2017 8:45:45 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+déc. 23, 2017 8:45:45 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+déc. 23, 2017 8:45:51 PM gui.packaging.mode1.state.Mode1_S010_UserCodeScan doAction
+INFOS: Invalid matricule number or account locked !
+déc. 23, 2017 8:45:52 PM gui.packaging.mode1.gui.PACKAGING_UI0002_PasswordRequest_Mode1 connect_to_mode1
+INFOS: User EZZIOURI OUSSAMA / ezou1001 connected to host Oussama-PC at 2017-12-23 20:45:52 Project : DUCATI.
+déc. 23, 2017 8:45:52 PM gui.packaging.mode1.gui.PACKAGING_UI0002_PasswordRequest_Mode1 loadDotMatrixCodePatterns
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord AND cb.harness_type = :harnessType ORDER BY id ASC
+déc. 23, 2017 8:45:52 PM gui.packaging.mode1.gui.PACKAGING_UI0002_PasswordRequest_Mode1 loadPartNumberCodePatterns
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord AND cb.harness_type = :harnessType ORDER BY id ASC
+déc. 23, 2017 8:45:54 PM gui.packaging.mode1.state.Mode1_S020_PalletChoice doAction
+INFOS: Is it a new pallet ?
+déc. 23, 2017 8:45:54 PM gui.packaging.mode1.state.Mode1_S020_PalletChoice doAction
+INFOS:  [Yes]
+déc. 23, 2017 8:46:00 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [5101C861D] in ConfigUCS: DUCATI
+déc. 23, 2017 8:46:00 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [5101C861D] found for project [DUCATI].
+déc. 23, 2017 8:46:00 PM gui.packaging.mode1.state.Mode1_S021_HarnessPartScan doAction
+INFOS: Harness Part scanned [5101C861D] OK.
+déc. 23, 2017 8:46:02 PM helper.Helper InitDailyDestPrintDir
+INFOS: File 2017_12_23.log already exists.Print directory [.\print\2017_12_23] already exist!
+Print sub directory [.\print\2017_12_23.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\picking_label] already exist!
+Print sub directory [.\print\2017_12_23.\dispatch_label] already exist!
+Print directory [.\print\2017_12_23] already exist!
+Print sub directory [.\print\2017_12_23.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\picking_label] already exist!
+Print sub directory [.\print\2017_12_23.\dispatch_label] already exist!
+
+déc. 23, 2017 8:47:51 PM helper.Helper InitDailyDestPrintDir
+INFOS: File 2017_12_23.log already exists.Print directory [.\print\2017_12_23] already exist!
+Print sub directory [.\print\2017_12_23.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\picking_label] already exist!
+Print sub directory [.\print\2017_12_23.\dispatch_label] already exist!
+Print directory [.\print\2017_12_23] already exist!
+Print sub directory [.\print\2017_12_23.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\picking_label] already exist!
+Print sub directory [.\print\2017_12_23.\dispatch_label] already exist!
+Print directory [.\print\2017_12_23] already exist!
+Print sub directory [.\print\2017_12_23.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\picking_label] already exist!
+Print sub directory [.\print\2017_12_23.\dispatch_label] already exist!
+
+déc. 23, 2017 8:47:53 PM helper.Helper InitDailyDestPrintDir
+INFOS: File 2017_12_23.log already exists.Print directory [.\print\2017_12_23] already exist!
+Print sub directory [.\print\2017_12_23.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\picking_label] already exist!
+Print sub directory [.\print\2017_12_23.\dispatch_label] already exist!
+Print directory [.\print\2017_12_23] already exist!
+Print sub directory [.\print\2017_12_23.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\picking_label] already exist!
+Print sub directory [.\print\2017_12_23.\dispatch_label] already exist!
+Print directory [.\print\2017_12_23] already exist!
+Print sub directory [.\print\2017_12_23.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\picking_label] already exist!
+Print sub directory [.\print\2017_12_23.\dispatch_label] already exist!
+Print directory [.\print\2017_12_23] already exist!
+Print sub directory [.\print\2017_12_23.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\picking_label] already exist!
+Print sub directory [.\print\2017_12_23.\dispatch_label] already exist!
+
+déc. 23, 2017 8:47:54 PM helper.Helper InitDailyDestPrintDir
+INFOS: File 2017_12_23.log already exists.Print directory [.\print\2017_12_23] already exist!
+Print sub directory [.\print\2017_12_23.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\picking_label] already exist!
+Print sub directory [.\print\2017_12_23.\dispatch_label] already exist!
+Print directory [.\print\2017_12_23] already exist!
+Print sub directory [.\print\2017_12_23.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\picking_label] already exist!
+Print sub directory [.\print\2017_12_23.\dispatch_label] already exist!
+Print directory [.\print\2017_12_23] already exist!
+Print sub directory [.\print\2017_12_23.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\picking_label] already exist!
+Print sub directory [.\print\2017_12_23.\dispatch_label] already exist!
+Print directory [.\print\2017_12_23] already exist!
+Print sub directory [.\print\2017_12_23.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\picking_label] already exist!
+Print sub directory [.\print\2017_12_23.\dispatch_label] already exist!
+Print directory [.\print\2017_12_23] already exist!
+Print sub directory [.\print\2017_12_23.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\picking_label] already exist!
+Print sub directory [.\print\2017_12_23.\dispatch_label] already exist!
+
+déc. 23, 2017 8:47:54 PM helper.Helper InitDailyDestPrintDir
+INFOS: File 2017_12_23.log already exists.Print directory [.\print\2017_12_23] already exist!
+Print sub directory [.\print\2017_12_23.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\picking_label] already exist!
+Print sub directory [.\print\2017_12_23.\dispatch_label] already exist!
+Print directory [.\print\2017_12_23] already exist!
+Print sub directory [.\print\2017_12_23.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\picking_label] already exist!
+Print sub directory [.\print\2017_12_23.\dispatch_label] already exist!
+Print directory [.\print\2017_12_23] already exist!
+Print sub directory [.\print\2017_12_23.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\picking_label] already exist!
+Print sub directory [.\print\2017_12_23.\dispatch_label] already exist!
+Print directory [.\print\2017_12_23] already exist!
+Print sub directory [.\print\2017_12_23.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\picking_label] already exist!
+Print sub directory [.\print\2017_12_23.\dispatch_label] already exist!
+Print directory [.\print\2017_12_23] already exist!
+Print sub directory [.\print\2017_12_23.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\picking_label] already exist!
+Print sub directory [.\print\2017_12_23.\dispatch_label] already exist!
+Print directory [.\print\2017_12_23] already exist!
+Print sub directory [.\print\2017_12_23.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\picking_label] already exist!
+Print sub directory [.\print\2017_12_23.\dispatch_label] already exist!
+
+déc. 23, 2017 8:47:54 PM helper.Helper InitDailyDestPrintDir
+INFOS: File 2017_12_23.log already exists.Print directory [.\print\2017_12_23] already exist!
+Print sub directory [.\print\2017_12_23.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\picking_label] already exist!
+Print sub directory [.\print\2017_12_23.\dispatch_label] already exist!
+Print directory [.\print\2017_12_23] already exist!
+Print sub directory [.\print\2017_12_23.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\picking_label] already exist!
+Print sub directory [.\print\2017_12_23.\dispatch_label] already exist!
+Print directory [.\print\2017_12_23] already exist!
+Print sub directory [.\print\2017_12_23.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\picking_label] already exist!
+Print sub directory [.\print\2017_12_23.\dispatch_label] already exist!
+Print directory [.\print\2017_12_23] already exist!
+Print sub directory [.\print\2017_12_23.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\picking_label] already exist!
+Print sub directory [.\print\2017_12_23.\dispatch_label] already exist!
+Print directory [.\print\2017_12_23] already exist!
+Print sub directory [.\print\2017_12_23.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\picking_label] already exist!
+Print sub directory [.\print\2017_12_23.\dispatch_label] already exist!
+Print directory [.\print\2017_12_23] already exist!
+Print sub directory [.\print\2017_12_23.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\picking_label] already exist!
+Print sub directory [.\print\2017_12_23.\dispatch_label] already exist!
+Print directory [.\print\2017_12_23] already exist!
+Print sub directory [.\print\2017_12_23.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_23.\picking_label] already exist!
+Print sub directory [.\print\2017_12_23.\dispatch_label] already exist!
+

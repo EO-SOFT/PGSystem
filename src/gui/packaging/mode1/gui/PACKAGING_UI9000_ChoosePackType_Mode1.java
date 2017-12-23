@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package gui.packaging.reports;
+package gui.packaging.mode1.gui;
 
 import entity.BaseContainer;
 import helper.Helper;
@@ -11,8 +11,9 @@ import helper.HQLHelper;
 import entity.BaseContainerTmp;
 import entity.BaseHarnessAdditionalBarecodeTmp;
 import entity.ConfigUcs;
+import gui.packaging.mode1.state.Mode1_S020_PalletChoice;
+import gui.packaging.mode1.state.Mode1_S021_HarnessPartScan;
 import gui.packaging.mode1.state.Mode1_S041_NewPalletScan;
-import gui.packaging.mode1.state.Mode1_S050_ClosingPallet;
 import helper.PrinterHelper;
 import helper.UIHelper;
 import java.awt.Font;
@@ -25,9 +26,6 @@ import javax.swing.JOptionPane;
 import static javax.swing.JOptionPane.ERROR_MESSAGE;
 import javax.swing.table.DefaultTableModel;
 import org.hibernate.Query;
-import gui.packaging.mode2.state.Mode2_S020_HarnessPartScan;
-import gui.packaging.mode2.state.Mode2_S030_NewPalletScan;
-import gui.packaging.mode2.state.Mode2_S040_ClosingPallet;
 import java.awt.Color;
 import java.awt.Component;
 import javax.swing.JLabel;
@@ -38,7 +36,7 @@ import javax.swing.table.DefaultTableCellRenderer;
  *
  * @author Administrator
  */
-public final class PACKAGING_UI9000_ChoosePackType extends javax.swing.JDialog {
+public final class PACKAGING_UI9000_ChoosePackType_Mode1 extends javax.swing.JDialog {
 
     Vector result_table_data = new Vector();
     Vector<String> ucs_result_table_header = new Vector<String>();
@@ -64,7 +62,7 @@ public final class PACKAGING_UI9000_ChoosePackType extends javax.swing.JDialog {
     /**
      * Creates new form NewJDialog
      */
-    public PACKAGING_UI9000_ChoosePackType(java.awt.Frame parent, boolean modal, String harness_part) {
+    public PACKAGING_UI9000_ChoosePackType_Mode1(java.awt.Frame parent, boolean modal, String harness_part) {
         super(parent, modal);
         initComponents();
         initGui();
@@ -79,11 +77,11 @@ public final class PACKAGING_UI9000_ChoosePackType extends javax.swing.JDialog {
         List result = query.list();
         if (result.size() == 0) {
             JOptionPane.showMessageDialog(null, "Pas d'UCS configuré pour le PN " + harness_part);
-            //Clear session vals in mode2_context
+            //Clear session vals in mode1_context
             clearContextSessionVals();
             // Change go back to state HarnessPartScan                    
-            Mode2_S020_HarnessPartScan state = new Mode2_S020_HarnessPartScan();
-            Helper.mode2_context.setState(state);
+            Mode1_S020_PalletChoice state = new Mode1_S020_PalletChoice();
+            Helper.mode1_context.setState(state);
         }
         this.reload_result_table_data(result);
 
@@ -127,7 +125,6 @@ public final class PACKAGING_UI9000_ChoosePackType extends javax.swing.JDialog {
     public void disableEditingTables() {
         UIHelper.disableEditingJtable(ucs_jtable);
     }
-
     private void load_table_header() {
         this.reset_table_content();
 
@@ -167,7 +164,8 @@ public final class PACKAGING_UI9000_ChoosePackType extends javax.swing.JDialog {
         Helper.centerJDialog(this);
 
         //Desable table edition
-        //disableEditingTables();
+        disableEditingTables();;
+        
         //Load table header
         load_table_header();
 
@@ -285,34 +283,34 @@ public final class PACKAGING_UI9000_ChoosePackType extends javax.swing.JDialog {
 
     private void mappingValsToContext() {
         //58	22216200	26C06970A	P01	2RV	120	0.377	SMALL_SB	SMALLS_MDEP	SMALL	-1	null	false	null
-        Helper.mode2_context.getBaseContainerTmp().setUcsId(Integer.valueOf(ucs_jtable.getValueAt(ucs_jtable.getSelectedRow(), 0).toString().toString()));
-        Helper.mode2_context.getBaseContainerTmp().setHarnessPart(Helper.HARN_PART_PREFIX + (String) ucs_jtable.getValueAt(ucs_jtable.getSelectedRow(), 1));
-        Helper.mode2_context.getBaseContainerTmp().setSupplierPartNumber((String) ucs_jtable.getValueAt(ucs_jtable.getSelectedRow(), 2));
-        Helper.mode2_context.getBaseContainerTmp().setHarnessIndex((String) ucs_jtable.getValueAt(ucs_jtable.getSelectedRow(), 3));
-        Helper.mode2_context.getBaseContainerTmp().setPackType((String) ucs_jtable.getValueAt(ucs_jtable.getSelectedRow(), 4));
-        Helper.mode2_context.getBaseContainerTmp().setQtyExpected(Integer.valueOf(ucs_jtable.getValueAt(ucs_jtable.getSelectedRow(), 5).toString()));
-        Helper.mode2_context.getBaseContainerTmp().setStdTime(Double.valueOf(ucs_jtable.getValueAt(ucs_jtable.getSelectedRow(), 6).toString()));
-        Helper.mode2_context.getBaseContainerTmp().setAssyWorkstation((String) ucs_jtable.getValueAt(ucs_jtable.getSelectedRow(), 7));
-        Helper.mode2_context.getBaseContainerTmp().setSegment((String) ucs_jtable.getValueAt(ucs_jtable.getSelectedRow(), 8));
-        Helper.mode2_context.getBaseContainerTmp().setWorkplace((String) ucs_jtable.getValueAt(ucs_jtable.getSelectedRow(), 9));
-        Helper.mode2_context.getBaseContainerTmp().setUcsLifes(Integer.valueOf(ucs_jtable.getValueAt(ucs_jtable.getSelectedRow(), 10).toString()));
-        Helper.mode2_context.getBaseContainerTmp().setComment((String) ucs_jtable.getValueAt(ucs_jtable.getSelectedRow(), 11));
-        Helper.mode2_context.getBaseContainerTmp().setSpecial_order(Integer.valueOf(ucs_jtable.getValueAt(ucs_jtable.getSelectedRow(), 12).toString()));
-        Helper.mode2_context.getBaseContainerTmp().setOrder_no((String) ucs_jtable.getValueAt(ucs_jtable.getSelectedRow(), 13));
-        Helper.mode2_context.getBaseContainerTmp().setChoosen_pack_type((String) ucs_jtable.getValueAt(ucs_jtable.getSelectedRow(), 4));
+        Helper.mode1_context.getBaseContainerTmp().setUcsId(Integer.valueOf(ucs_jtable.getValueAt(ucs_jtable.getSelectedRow(), 0).toString().toString()));
+        Helper.mode1_context.getBaseContainerTmp().setHarnessPart(Helper.HARN_PART_PREFIX + (String) ucs_jtable.getValueAt(ucs_jtable.getSelectedRow(), 1));
+        Helper.mode1_context.getBaseContainerTmp().setSupplierPartNumber((String) ucs_jtable.getValueAt(ucs_jtable.getSelectedRow(), 2));
+        Helper.mode1_context.getBaseContainerTmp().setHarnessIndex((String) ucs_jtable.getValueAt(ucs_jtable.getSelectedRow(), 3));
+        Helper.mode1_context.getBaseContainerTmp().setPackType((String) ucs_jtable.getValueAt(ucs_jtable.getSelectedRow(), 4));
+        Helper.mode1_context.getBaseContainerTmp().setQtyExpected(Integer.valueOf(ucs_jtable.getValueAt(ucs_jtable.getSelectedRow(), 5).toString()));
+        Helper.mode1_context.getBaseContainerTmp().setStdTime(Double.valueOf(ucs_jtable.getValueAt(ucs_jtable.getSelectedRow(), 6).toString()));
+        Helper.mode1_context.getBaseContainerTmp().setAssyWorkstation((String) ucs_jtable.getValueAt(ucs_jtable.getSelectedRow(), 7));
+        Helper.mode1_context.getBaseContainerTmp().setSegment((String) ucs_jtable.getValueAt(ucs_jtable.getSelectedRow(), 8));
+        Helper.mode1_context.getBaseContainerTmp().setWorkplace((String) ucs_jtable.getValueAt(ucs_jtable.getSelectedRow(), 9));
+        Helper.mode1_context.getBaseContainerTmp().setUcsLifes(Integer.valueOf(ucs_jtable.getValueAt(ucs_jtable.getSelectedRow(), 10).toString()));
+        Helper.mode1_context.getBaseContainerTmp().setComment((String) ucs_jtable.getValueAt(ucs_jtable.getSelectedRow(), 11));
+        Helper.mode1_context.getBaseContainerTmp().setSpecial_order(Integer.valueOf(ucs_jtable.getValueAt(ucs_jtable.getSelectedRow(), 12).toString()));
+        Helper.mode1_context.getBaseContainerTmp().setOrder_no((String) ucs_jtable.getValueAt(ucs_jtable.getSelectedRow(), 13));
+        Helper.mode1_context.getBaseContainerTmp().setChoosen_pack_type((String) ucs_jtable.getValueAt(ucs_jtable.getSelectedRow(), 4));
 
-        System.out.println(Helper.mode2_context.getBaseContainerTmp().toString());
+        System.out.println(Helper.mode1_context.getBaseContainerTmp().toString());
     }
 
     public void loadConfigUcs() {
         Helper.startSession();
         //Getting ConfigUCS data who match the choice criteria
         Query query = Helper.sess.createQuery(HQLHelper.GET_UCS_BY_HP_AND_SUPPLIER_PART_AND_INDEX_PACKTYPE_AND_PACKSIZE);
-        query.setParameter("harnessPart", Helper.mode2_context.getBaseContainerTmp().getHarnessPart().substring(1)); //items[0] = harnessPart
-        query.setParameter("supplierPartNumber", Helper.mode2_context.getBaseContainerTmp().getSupplierPartNumber()); //items[1] = supplierPartNumber
-        query.setParameter("harnessIndex", Helper.mode2_context.getBaseContainerTmp().getHarnessIndex()); //items[2] = harnessIndex                        
-        query.setParameter("packType", Helper.mode2_context.getBaseContainerTmp().getPackType()); //items[3] = packType
-        query.setInteger("packSize", Helper.mode2_context.getBaseContainerTmp().getQtyExpected()); //items[4] = packSize
+        query.setParameter("harnessPart", Helper.mode1_context.getBaseContainerTmp().getHarnessPart().substring(1)); //items[0] = harnessPart
+        query.setParameter("supplierPartNumber", Helper.mode1_context.getBaseContainerTmp().getSupplierPartNumber()); //items[1] = supplierPartNumber
+        query.setParameter("harnessIndex", Helper.mode1_context.getBaseContainerTmp().getHarnessIndex()); //items[2] = harnessIndex                        
+        query.setParameter("packType", Helper.mode1_context.getBaseContainerTmp().getPackType()); //items[3] = packType
+        query.setInteger("packSize", Helper.mode1_context.getBaseContainerTmp().getQtyExpected()); //items[4] = packSize
 
         Helper.sess.getTransaction().commit();
         List result = query.list();
@@ -321,7 +319,7 @@ public final class PACKAGING_UI9000_ChoosePackType extends javax.swing.JDialog {
             configUcs = (ConfigUcs) result.get(0);
         } catch (IndexOutOfBoundsException e) {
             JOptionPane.showMessageDialog(null, String.format("Failed to found UCS matching criteria %s AND %s ",
-                    Helper.mode2_context.getBaseContainerTmp().getSupplierPartNumber(), Helper.mode2_context.getBaseContainerTmp().getHarnessIndex()), "Database Qery Error!", ERROR_MESSAGE);
+                    Helper.mode1_context.getBaseContainerTmp().getSupplierPartNumber(), Helper.mode1_context.getBaseContainerTmp().getHarnessIndex()), "Database Qery Error!", ERROR_MESSAGE);
         }
 
         int palletId = -1;
@@ -332,7 +330,7 @@ public final class PACKAGING_UI9000_ChoosePackType extends javax.swing.JDialog {
                     configUcs.getSupplierPartNumber(),
                     configUcs.getPackType(),
                     configUcs.getPackSize(),
-                    Helper.mode2_context.getUser().getLogin());
+                    Helper.mode1_context.getUser().getLogin());
         } catch (NullPointerException e) {
             System.out.println("PACKAGING_UI9000_ChooseContainerType Error : " + e.getMessage());
         }
@@ -340,28 +338,15 @@ public final class PACKAGING_UI9000_ChoosePackType extends javax.swing.JDialog {
         if (palletId != -1) {
 
             //############# PASSE TO S041 STATE ###############
-            Helper.log.info(String.format("Openning new container for first harness part [%s].", Helper.mode2_context.getBaseContainerTmp().getHarnessPart().substring(1)));
+            Helper.log.info(String.format("Openning new container for first harness part [%s].", Helper.mode1_context.getBaseContainerTmp().getHarnessPart().substring(1)));
 
-            if (Helper.PROP.getProperty("PACKAGING_SCAN_MODE").equals("1")) {
-                Helper.Packaging_Gui_Mode1.setRequestedPallet_txt(
-                        "Scanner la fiche Ouverture Palette N° "
-                        + String.valueOf(palletId));
+            Helper.Packaging_Gui_Mode1.setRequestedPallet_txt(
+                    "Scanner la fiche Ouverture Palette N° "
+                    + String.valueOf(palletId));
 
-                //Change state to S041
-                Mode1_S041_NewPalletScan state = new Mode1_S041_NewPalletScan();
-                Helper.mode1_context.setState(state);
-                this.dispose();
-            } else if (Helper.PROP.getProperty("PACKAGING_SCAN_MODE").equals("2")) {
-                Helper.Packaging_Gui_Mode2.setRequestedPallet_txt(
-                        "Scanner la fiche Ouverture Palette N° "
-                        + String.valueOf(palletId));
-
-                //Change state to S041
-                Mode2_S030_NewPalletScan state = new Mode2_S030_NewPalletScan();
-                Helper.mode2_context.setState(state);
-                this.dispose();
-            }
-
+            //Change state to S041
+            Mode1_S041_NewPalletScan state = new Mode1_S041_NewPalletScan();
+            Helper.mode1_context.setState(state);
             this.dispose();
         }
 
@@ -374,7 +359,7 @@ public final class PACKAGING_UI9000_ChoosePackType extends javax.swing.JDialog {
     private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
         clearContextSessionVals();
         // Change go back to state HarnessPartScan            
-        Helper.mode2_context.setState(new Mode2_S020_HarnessPartScan());
+        Helper.mode1_context.setState(new Mode1_S020_PalletChoice());
         Helper.Packaging_Gui_Mode1.setRequestedPallet_txt("");
     }//GEN-LAST:event_formWindowClosing
 
@@ -383,7 +368,7 @@ public final class PACKAGING_UI9000_ChoosePackType extends javax.swing.JDialog {
         if (evt.getKeyCode() == KeyEvent.VK_ENTER || evt.getKeyCode() == KeyEvent.VK_SPACE) {
             // User has pressed Carriage return button
             if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
-                //Set mode2_context session vals with the choosen valus after split them
+                //Set mode1_context session vals with the choosen valus after split them
                 System.out.println("Selected Row " + ucs_jtable.getValueAt(ucs_jtable.getSelectedRow(), 0).toString());
                 Integer ucs_id = Integer.valueOf(ucs_jtable.getValueAt(ucs_jtable.getSelectedRow(), 0).toString());
                 this.mappingValsToContext();
@@ -399,9 +384,9 @@ public final class PACKAGING_UI9000_ChoosePackType extends javax.swing.JDialog {
                 query = Helper.sess.createQuery(
                         "FROM BaseContainer bc WHERE "
                         + "bc.harnessPart = :harnessPart AND bc.containerState = :containerState AND bc.packType = :packType");
-                query.setParameter("harnessPart", Helper.mode2_context.getBaseContainerTmp().getHarnessPart().substring(1))
+                query.setParameter("harnessPart", Helper.mode1_context.getBaseContainerTmp().getHarnessPart().substring(1))
                         .setParameter("containerState", Helper.PALLET_OPEN)
-                        .setParameter("packType", Helper.mode2_context.getBaseContainerTmp().getPackType());
+                        .setParameter("packType", Helper.mode1_context.getBaseContainerTmp().getPackType());
                 Helper.sess.getTransaction().commit();
                 result = query.list();
 
@@ -415,7 +400,7 @@ public final class PACKAGING_UI9000_ChoosePackType extends javax.swing.JDialog {
                                 "FROM BaseContainer bc WHERE "
                                 + "bc.packType = :packType AND bc.containerState = :containerState"
                                 + " AND bc.packWorkstation = :packWorkstation");
-                        query.setParameter("packType", Helper.mode2_context.getBaseContainerTmp().getPackType())
+                        query.setParameter("packType", Helper.mode1_context.getBaseContainerTmp().getPackType())
                                 .setParameter("containerState", Helper.PALLET_OPEN)
                                 .setParameter("packWorkstation", Helper.HOSTNAME);
 
@@ -428,34 +413,34 @@ public final class PACKAGING_UI9000_ChoosePackType extends javax.swing.JDialog {
                             // Test sur une seule palette par type de packaging.
                             BaseContainer bc = (BaseContainer) result.get(0);
                             JOptionPane.showMessageDialog(null, String.format(Helper.ERR0025_PACKTYPE_ALREADY_OPEN_IN_THE_SAME_WORKSTATION,
-                                    Helper.mode2_context.getBaseContainerTmp().getPackType(),
+                                    Helper.mode1_context.getBaseContainerTmp().getPackType(),
                                     Helper.HOSTNAME,
                                     bc.getHarnessPart(),
                                     bc.getPalletNumber(),
-                                    Helper.mode2_context.getBaseContainerTmp().getPackType()),
+                                    Helper.mode1_context.getBaseContainerTmp().getPackType()),
                                     "Palette déjà ouverte du même type !", JOptionPane.ERROR_MESSAGE);
 
                             Helper.log.info(String.format(Helper.ERR0025_PACKTYPE_ALREADY_OPEN_IN_THE_SAME_WORKSTATION,
-                                    Helper.mode2_context.getBaseContainerTmp().getPackType(),
+                                    Helper.mode1_context.getBaseContainerTmp().getPackType(),
                                     Helper.HOSTNAME,
                                     bc.getHarnessPart(),
-                                    Helper.mode2_context.getBaseContainerTmp().getHarnessPart().substring(1),
+                                    Helper.mode1_context.getBaseContainerTmp().getHarnessPart().substring(1),
                                     bc.getPalletNumber(),
-                                    Helper.mode2_context.getBaseContainerTmp().getPackType()));
+                                    Helper.mode1_context.getBaseContainerTmp().getPackType()));
 
-                            Mode2_S020_HarnessPartScan state = new Mode2_S020_HarnessPartScan();
-                            Helper.mode2_context.setState(state);
+                            Mode1_S020_PalletChoice state = new Mode1_S020_PalletChoice();
+                            Helper.mode1_context.setState(state);
                             this.dispose();
                         }
                     } else { // Le test sur unique pack type est désactivé. passer directement au chargement UCS.
                         this.loadConfigUcs();
                     }
                 } else {
-                    JOptionPane.showMessageDialog(null, String.format(Helper.ERR0024_PALLET_ALREADY_OPEN, Helper.mode2_context.getBaseContainerTmp().getHarnessPart().substring(1)), "Palette déjà ouverte !", JOptionPane.ERROR_MESSAGE);
-                    Helper.log.info(String.format(Helper.ERR0024_PALLET_ALREADY_OPEN, Helper.mode2_context.getBaseContainerTmp().getHarnessPart().substring(1)));
+                    JOptionPane.showMessageDialog(null, String.format(Helper.ERR0024_PALLET_ALREADY_OPEN, Helper.mode1_context.getBaseContainerTmp().getHarnessPart().substring(1)), "Palette déjà ouverte !", JOptionPane.ERROR_MESSAGE);
+                    Helper.log.info(String.format(Helper.ERR0024_PALLET_ALREADY_OPEN, Helper.mode1_context.getBaseContainerTmp().getHarnessPart().substring(1)));
                     //this.clearScanBox(Helper.scan_txtbox);
-                    Mode2_S020_HarnessPartScan state = new Mode2_S020_HarnessPartScan();
-                    Helper.mode2_context.setState(state);
+                    Mode1_S020_PalletChoice state = new Mode1_S020_PalletChoice();
+                    Helper.mode1_context.setState(state);
                     this.dispose();
                 }
                 /*--------------------------------*/
@@ -465,8 +450,8 @@ public final class PACKAGING_UI9000_ChoosePackType extends javax.swing.JDialog {
 
     public void clearContextSessionVals() {
         //Pas besoin de réinitialiser le uid
-        Helper.mode2_context.setBaseContainerTmp(new BaseContainerTmp());
-        Helper.mode2_context.setBaseHarnessAdditionalBarecodeTmp(new BaseHarnessAdditionalBarecodeTmp());
+        Helper.mode1_context.setBaseContainerTmp(new BaseContainerTmp());
+        Helper.mode1_context.setBaseHarnessAdditionalBarecodeTmp(new BaseHarnessAdditionalBarecodeTmp());
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

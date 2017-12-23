@@ -74,7 +74,7 @@ public class PACKAGING_UI0002_PasswordRequest_Mode2 extends javax.swing.JDialog 
             }
         });
 
-        jLabel1.setText("Password");
+        jLabel1.setText("Mot de passe");
 
         error_lbl.setForeground(new java.awt.Color(255, 0, 0));
 

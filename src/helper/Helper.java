@@ -164,7 +164,12 @@ public class Helper {
     public static String ERR0025_PACKTYPE_ALREADY_OPEN_IN_THE_SAME_WORKSTATION = "Palette/Box déjà ouvert(e) du type %s dans ce poste %s, pour la référence %s.\n"
             + "Solution N° 1 : - Veuillez terminer le packaging de la palette %s avant d'ouvrir une nouvelle palette de type %s.\n"
             + "Solution N° 2 : - Emballer cette référence dans un autre poste packaging.";
-
+    
+    /**
+     *
+     */
+    public static String ERR0030_PALLET_NOT_OPEN = "Palette %s n'est pas ouverte.\nMerci de scanner une palette ouverte ou ouvrir une nouvelle palette !";
+    
     /**
      *
      */

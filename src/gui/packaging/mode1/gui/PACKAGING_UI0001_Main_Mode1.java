@@ -100,11 +100,13 @@ public final class PACKAGING_UI0001_Main_Mode1 extends javax.swing.JFrame {
     
 
     public void initGui() {
-        setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("icon.png")));
+        //setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("icon.png")));
         // Set jTable Row Style
         //Centrer le jframe dans le screen
         Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
-
+        
+        state = new Mode1_S010_UserCodeScan();
+        
         this.setIconLabel(state.getImg());
 
         this.connectedUserName_label.setHorizontalAlignment(JLabel.CENTER);
@@ -140,7 +142,7 @@ public final class PACKAGING_UI0001_Main_Mode1 extends javax.swing.JFrame {
 
         //this.day_date_picker.setDate(new Date());
         //Focus on scann textbox        
-        harnessTypeBox.requestFocus();
+        scan_txtbox.requestFocus();
 
         //Show the jframe
         this.setVisible(true);
@@ -148,6 +150,8 @@ public final class PACKAGING_UI0001_Main_Mode1 extends javax.swing.JFrame {
         //Maximaze the jframe
         this.setExtendedState(JFrame.MAXIMIZED_BOTH);
 
+        
+        
         //Load table header
         //load_table_header();
     }
@@ -315,9 +319,9 @@ public final class PACKAGING_UI0001_Main_Mode1 extends javax.swing.JFrame {
         filler2 = new javax.swing.Box.Filler(new java.awt.Dimension(10, 0), new java.awt.Dimension(10, 0), new java.awt.Dimension(10, 32767));
         refresh = new javax.swing.JButton();
         harnessTypeFilterBox = new javax.swing.JComboBox();
-        panel_bottom = new javax.swing.JPanel();
-        scan_txtbox = new javax.swing.JTextField();
         harnessTypeBox = new javax.swing.JComboBox();
+        scan_txtbox = new javax.swing.JTextField();
+        panel_bottom = new javax.swing.JPanel();
         menu_bar = new javax.swing.JMenuBar();
         menu01_report = new javax.swing.JMenu();
         menu011_prod_statistics = new javax.swing.JMenuItem();
@@ -402,6 +406,27 @@ public final class PACKAGING_UI0001_Main_Mode1 extends javax.swing.JFrame {
             }
         });
 
+        harnessTypeBox.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        harnessTypeBox.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                harnessTypeBoxItemStateChanged(evt);
+            }
+        });
+        harnessTypeBox.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                harnessTypeBoxActionPerformed(evt);
+            }
+        });
+
+        scan_txtbox.setBackground(new java.awt.Color(204, 204, 255));
+        scan_txtbox.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        scan_txtbox.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        scan_txtbox.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                scan_txtboxKeyPressed(evt);
+            }
+        });
+
         javax.swing.GroupLayout panel_topLayout = new javax.swing.GroupLayout(panel_top);
         panel_top.setLayout(panel_topLayout);
         panel_topLayout.setHorizontalGroup(
@@ -422,7 +447,11 @@ public final class PACKAGING_UI0001_Main_Mode1 extends javax.swing.JFrame {
                     .addGroup(panel_topLayout.createSequentialGroup()
                         .addComponent(harnessTypeFilterBox, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(refresh, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(refresh, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(harnessTypeBox, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(scan_txtbox, javax.swing.GroupLayout.PREFERRED_SIZE, 799, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         panel_topLayout.setVerticalGroup(
@@ -434,12 +463,16 @@ public final class PACKAGING_UI0001_Main_Mode1 extends javax.swing.JFrame {
                 .addGap(1, 1, 1)
                 .addComponent(requestedPallet_label, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(panel_topLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(refresh, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(harnessTypeFilterBox))
+                .addGroup(panel_topLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panel_topLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addComponent(refresh, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(harnessTypeFilterBox))
+                    .addGroup(panel_topLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(harnessTypeBox, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                        .addComponent(scan_txtbox, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 326, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(86, 86, 86)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 415, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(panel_topLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(filler1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(filler2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -449,45 +482,15 @@ public final class PACKAGING_UI0001_Main_Mode1 extends javax.swing.JFrame {
         panel_bottom.setBackground(new java.awt.Color(51, 51, 51));
         panel_bottom.setAutoscrolls(true);
 
-        scan_txtbox.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        scan_txtbox.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        scan_txtbox.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyPressed(java.awt.event.KeyEvent evt) {
-                scan_txtboxKeyPressed(evt);
-            }
-        });
-
-        harnessTypeBox.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
-        harnessTypeBox.addItemListener(new java.awt.event.ItemListener() {
-            public void itemStateChanged(java.awt.event.ItemEvent evt) {
-                harnessTypeBoxItemStateChanged(evt);
-            }
-        });
-        harnessTypeBox.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                harnessTypeBoxActionPerformed(evt);
-            }
-        });
-
         javax.swing.GroupLayout panel_bottomLayout = new javax.swing.GroupLayout(panel_bottom);
         panel_bottom.setLayout(panel_bottomLayout);
         panel_bottomLayout.setHorizontalGroup(
             panel_bottomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panel_bottomLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(harnessTypeBox, javax.swing.GroupLayout.PREFERRED_SIZE, 228, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(scan_txtbox, javax.swing.GroupLayout.PREFERRED_SIZE, 1000, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGap(0, 1362, Short.MAX_VALUE)
         );
         panel_bottomLayout.setVerticalGroup(
             panel_bottomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel_bottomLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(panel_bottomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(scan_txtbox, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                    .addComponent(harnessTypeBox))
-                .addContainerGap())
+            .addGap(0, 0, Short.MAX_VALUE)
         );
 
         menu01_report.setText("Report");
@@ -626,9 +629,9 @@ public final class PACKAGING_UI0001_Main_Mode1 extends javax.swing.JFrame {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(panel_top, javax.swing.GroupLayout.PREFERRED_SIZE, 842, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(panel_top, javax.swing.GroupLayout.PREFERRED_SIZE, 935, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(panel_bottom, javax.swing.GroupLayout.PREFERRED_SIZE, 87, Short.MAX_VALUE))
+                .addComponent(panel_bottom, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();

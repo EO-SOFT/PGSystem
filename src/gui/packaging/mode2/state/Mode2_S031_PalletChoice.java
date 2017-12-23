@@ -11,7 +11,8 @@ import entity.BaseContainer;
 import entity.BaseContainerTmp;
 import entity.BaseHarnessAdditionalBarecode;
 import entity.BaseHarness;
-import gui.packaging.reports.PACKAGING_UI9000_ChoosePackType;
+import gui.packaging.mode2.gui.PACKAGING_UI9000_ChoosePackType_Mode2;
+
 import helper.HQLHelper;
 import java.util.List;
 import javax.swing.ImageIcon;
@@ -50,9 +51,9 @@ public class Mode2_S031_PalletChoice implements Mode2_State {
                 this.clearScanBox(scan_txtbox);
                 //Afficher le popup du choix du type contenaire du harness_part
                 if (Helper.mode2_context.getBaseContainerTmp().getHarnessPart().startsWith(Helper.HARN_PART_PREFIX)) {
-                    new PACKAGING_UI9000_ChoosePackType(null, true, context.getBaseContainerTmp().getHarnessPart().substring(1));
+                    new PACKAGING_UI9000_ChoosePackType_Mode2(null, true, context.getBaseContainerTmp().getHarnessPart().substring(1));
                 } else {
-                    new PACKAGING_UI9000_ChoosePackType(null, true, context.getBaseContainerTmp().getHarnessPart());
+                    new PACKAGING_UI9000_ChoosePackType_Mode2(null, true, context.getBaseContainerTmp().getHarnessPart());
                 }
 
             } //####################################################

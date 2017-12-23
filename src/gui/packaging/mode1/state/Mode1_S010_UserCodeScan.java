@@ -22,20 +22,23 @@ import org.hibernate.Query;
  */
 public class Mode1_S010_UserCodeScan implements Mode1_State {
 
-    private ImageIcon imgIcon = new ImageIcon(Helper.PROP.getProperty("IMG_PATH") + "S01_UserCodeScan.jpg");
+    private final ImageIcon imgIcon = new ImageIcon(Helper.PROP.getProperty("IMG_PATH") + "S01_UserCodeScan.jpg");
 
     public Mode1_S010_UserCodeScan() {
 
     }
 
+    @Override
     public String toString() {
         return "State S01 : S01_UserCodeScan";
     }
 
+    @Override
     public ImageIcon getImg() {
         return this.imgIcon;
     }
 
+    @Override
     public void doAction(Mode1_Context context) {
 
         JTextField scan_txtbox = Helper.Packaging_Gui_Mode1.getScanTxt();

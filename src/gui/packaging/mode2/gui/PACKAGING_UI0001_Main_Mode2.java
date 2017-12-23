@@ -100,7 +100,7 @@ public final class PACKAGING_UI0001_Main_Mode2 extends javax.swing.JFrame implem
     
 
     public void initGui() {
-        setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("icon.png")));
+        //setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("icon.png")));
         // Set jTable Row Style
         //Centrer le jframe dans le screen
         Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
@@ -140,7 +140,7 @@ public final class PACKAGING_UI0001_Main_Mode2 extends javax.swing.JFrame implem
 
         //this.day_date_picker.setDate(new Date());
         //Focus on scann textbox        
-        harnessTypeBox.requestFocus();
+        scan_txtbox.requestFocus();
 
         //Show the jframe
         this.setVisible(true);
@@ -406,6 +406,7 @@ public final class PACKAGING_UI0001_Main_Mode2 extends javax.swing.JFrame implem
             }
         });
 
+        scan_txtbox.setBackground(new java.awt.Color(204, 204, 255));
         scan_txtbox.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         scan_txtbox.setHorizontalAlignment(javax.swing.JTextField.LEFT);
         scan_txtbox.addKeyListener(new java.awt.event.KeyAdapter() {

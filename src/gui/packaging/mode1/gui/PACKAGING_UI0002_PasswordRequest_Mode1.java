@@ -10,7 +10,6 @@ import entity.HisLogin;
 import entity.ManufactureUsers;
 import gui.packaging.mode1.state.Mode1_S010_UserCodeScan;
 import gui.packaging.mode1.state.Mode1_S020_PalletChoice;
-import gui.packaging.mode1.state.Mode1_S021_HarnessPartScan;
 import helper.HQLHelper;
 import helper.Helper;
 import java.awt.event.KeyEvent;
@@ -23,7 +22,6 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 import org.hibernate.Query;
-import gui.packaging.mode2.state.Mode2_S010_UserCodeScan;
 
 /**
  *
@@ -75,7 +73,7 @@ public class PACKAGING_UI0002_PasswordRequest_Mode1 extends javax.swing.JDialog 
             }
         });
 
-        jLabel1.setText("Password");
+        jLabel1.setText("Mot de passe");
 
         error_lbl.setForeground(new java.awt.Color(255, 0, 0));
 
@@ -293,8 +291,8 @@ public class PACKAGING_UI0002_PasswordRequest_Mode1 extends javax.swing.JDialog 
     }//GEN-LAST:event_admin_password_txtboxKeyPressed
 
     private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
-        if (Helper.mode2_context.getUser() == null) {
-            Helper.mode2_context.setState(new Mode2_S010_UserCodeScan());
+        if (Helper.mode1_context.getUser() == null) {
+            Helper.mode1_context.setState(new Mode1_S010_UserCodeScan());
         }
 
     }//GEN-LAST:event_formWindowClosing

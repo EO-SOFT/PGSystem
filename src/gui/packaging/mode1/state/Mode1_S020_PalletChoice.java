@@ -11,9 +11,8 @@ import entity.BaseContainer;
 import entity.BaseContainerTmp;
 import entity.BaseHarnessAdditionalBarecode;
 import entity.BaseHarness;
-import gui.packaging.reports.PACKAGING_UI9000_ChoosePackType;
+import gui.packaging.mode1.gui.PACKAGING_UI9000_ChoosePackType_Mode1;
 import helper.HQLHelper;
-import java.util.List;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
@@ -36,6 +35,69 @@ public class Mode1_S020_PalletChoice implements Mode1_State {
     public void doAction(Mode1_Context context) {
         JTextField scan_txtbox = Helper.Packaging_Gui_Mode1.getScanTxt();
         String barcode = scan_txtbox.getText().trim();
+        //Textbox is not empty
+        if (!barcode.isEmpty()) {
+
+            Helper.log.info("Is it a new pallet ?");
+            if (barcode.equals(Helper.OPEN_PALLET_KEYWORD)) {//NEWP barcode
+                Helper.log.info(" [Yes]");
+
+                //Vide le scan box
+                this.clearScanBox(scan_txtbox);
+
+                //Clear session vals in mode1_context
+                //clearContextSessionVals();
+                // Change go to HarnessPartScan                    
+                context.setState(new Mode1_S021_HarnessPartScan(true, null));
+
+            } else {
+                //Charger les données de la palette
+                BaseContainer bc = new BaseContainer().getBaseContainer(barcode);
+                //Palette existe
+                if (bc != null) {
+                    if (!bc.getPackWorkstation().equals(Helper.HOSTNAME)) {
+                        Helper.log.warning(String.format(Helper.ERR0025_WORKSTATION_PALLET, Helper.HOSTNAME, bc.getPackWorkstation()));
+                        JOptionPane.showMessageDialog(null, String.format(Helper.ERR0025_WORKSTATION_PALLET, Helper.HOSTNAME, bc.getPackWorkstation()), "Invalid Workstation", JOptionPane.ERROR_MESSAGE);
+                    } 
+                    //Palette n'est pas ouverte
+                    else if (!bc.getContainerState().equals(Helper.PALLET_OPEN)) {
+                        Helper.log.warning(String.format(Helper.ERR0030_PALLET_NOT_OPEN, barcode));
+                        JOptionPane.showMessageDialog(null, String.format(Helper.ERR0030_PALLET_NOT_OPEN, barcode), "Invalid Barcode", JOptionPane.ERROR_MESSAGE);
+                        //Vide le scan box
+                        this.clearScanBox(scan_txtbox);
+                        //Retourner l'état actuel
+                        context.setState(this);
+                    } 
+                    //Palette ouverte
+                    else { 
+                        
+                        //Palette existe et ouverte, Scanner le QR du fx
+                        context.setState(new Mode1_S030_MatrixIdScan());
+                    }
+                } else { // Code palette introuvable !
+                    Helper.log.warning(String.format(Helper.ERR0023_PALLET_NOT_FOUND, barcode));
+                    JOptionPane.showMessageDialog(null, String.format(Helper.ERR0023_PALLET_NOT_FOUND, barcode), "Invalid Barcode", JOptionPane.ERROR_MESSAGE);
+                    //Vide le scan box
+                    this.clearScanBox(scan_txtbox);
+                    //Retourner l'état actuel
+                    context.setState(this);
+                }
+            }
+        } //############################### INVALID PALLET CODE #############
+        else {
+            Helper.log.warning(String.format(Helper.ERR0006_INVALID_OPEN_PALLET_BARCODE, barcode));
+            JOptionPane.showMessageDialog(null, String.format(Helper.ERR0006_INVALID_OPEN_PALLET_BARCODE, barcode), "Invalid Barcode", JOptionPane.ERROR_MESSAGE);
+            //Vide le scan box
+            this.clearScanBox(scan_txtbox);
+            //Retourner l'état actuel
+            context.setState(this);
+        }
+    }
+
+    //@Override
+    public void doAction2(Mode1_Context context) {
+        JTextField scan_txtbox = Helper.Packaging_Gui_Mode1.getScanTxt();
+        String barcode = scan_txtbox.getText().trim();
 
         //Textbox is not empty
         if (!barcode.isEmpty()) {
@@ -50,9 +112,9 @@ public class Mode1_S020_PalletChoice implements Mode1_State {
                 this.clearScanBox(scan_txtbox);
                 //Afficher le popup du choix du type contenaire du harness_part
                 if (Helper.mode2_context.getBaseContainerTmp().getHarnessPart().startsWith(Helper.HARN_PART_PREFIX)) {
-                    new PACKAGING_UI9000_ChoosePackType(null, true, context.getBaseContainerTmp().getHarnessPart().substring(1));
+                    new PACKAGING_UI9000_ChoosePackType_Mode1(null, true, context.getBaseContainerTmp().getHarnessPart().substring(1));
                 } else {
-                    new PACKAGING_UI9000_ChoosePackType(null, true, context.getBaseContainerTmp().getHarnessPart());
+                    new PACKAGING_UI9000_ChoosePackType_Mode1(null, true, context.getBaseContainerTmp().getHarnessPart());
                 }
 
             } //####################################################
@@ -67,12 +129,8 @@ public class Mode1_S020_PalletChoice implements Mode1_State {
             else if (bc != null
                     && bc.getContainerState().equals(Helper.PALLET_OPEN)
                     && bc.getQtyRead() < bc.getQtyExpected()
-                    && 
-                    (
-                    bc.getHarnessPart().equals(Helper.mode2_context.getBaseContainerTmp().getHarnessPart().substring(1))
-                    ||
-                    bc.getHarnessPart().equals(Helper.mode2_context.getBaseContainerTmp().getHarnessPart())
-                    )
+                    && (bc.getHarnessPart().equals(Helper.mode2_context.getBaseContainerTmp().getHarnessPart().substring(1))
+                    || bc.getHarnessPart().equals(Helper.mode2_context.getBaseContainerTmp().getHarnessPart()))
                     && bc.getHarnessType().equals(Helper.mode2_context.getBaseContainerTmp().getHarnessType())) {
 
                 Helper.log.info(" [No]");
@@ -179,7 +237,7 @@ public class Mode1_S020_PalletChoice implements Mode1_State {
                     //Clear session vals in mode2_context
                     clearContextSessionVals();
                     // Change go back to state HarnessPartScan                    
-                    context.setState(new Mode1_S021_HarnessPartScan());
+                    context.setState(new Mode1_S021_HarnessPartScan(false, null));
                 }
             } //############################### INVALID PALLET CODE #############
             else {
