@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package gui.packaging.mode2.state;
+package gui.packaging;
 
 import entity.BaseContainerTmp;
 import entity.BaseHarnessAdditionalBarecodeTmp;
@@ -11,22 +11,17 @@ import entity.ManufactureUsers;
 
 /**
  *
- * @author ezou1001
+ * @author Oussama EZZIOURI
  */
-public class Mode2_Context {
-
+public class Context {
+    
     private BaseContainerTmp baseContainerTmp = new BaseContainerTmp();
     private BaseHarnessAdditionalBarecodeTmp baseHarnessAdditionalBarecodeTmp = new BaseHarnessAdditionalBarecodeTmp();
     private String feedback = "-";    
     private Integer labelCount = 0;
     //Connected User Object
     private ManufactureUsers user = new ManufactureUsers();
-    private Mode2_State state;
-
-    public Mode2_Context() {
-        state = null;
-    }
-
+    
     public Integer getLabelCount() {
         return labelCount;
     }
@@ -58,15 +53,7 @@ public class Mode2_Context {
     public void setBaseHarnessAdditionalBarecodeTmp(BaseHarnessAdditionalBarecodeTmp baseHarnessAdditionalBarecodeTmp) {
         this.baseHarnessAdditionalBarecodeTmp = baseHarnessAdditionalBarecodeTmp;
     }
-
-    public void setState(Mode2_State state) {
-        this.state = state;
-    }
-
-    public Mode2_State getState() {
-        return state;
-    }
-
+    
     public void clearContext() {
         this.user = null;
         this.baseContainerTmp = null;
@@ -85,6 +72,4 @@ public class Mode2_Context {
         return "Context{" + "baseContainerTmp=" + baseContainerTmp + '}';
     }
     
-    
-
 }

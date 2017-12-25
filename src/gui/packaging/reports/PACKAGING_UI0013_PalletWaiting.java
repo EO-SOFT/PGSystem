@@ -454,7 +454,7 @@ public class PACKAGING_UI0013_PalletWaiting extends javax.swing.JDialog {
 
             Helper.mode1_context.getBaseContainerTmp().setPalletNumber(bc.getPalletNumber());
             //Set requested closing pallet number in the main gui
-            Helper.Packaging_Gui_Mode1.setRequestedPallet_txt("N° " + Helper.CLOSING_PALLET_PREFIX + bc.getPalletNumber());
+            Helper.Packaging_Gui_Mode1.setAssistanceTextarea("N° " + Helper.CLOSING_PALLET_PREFIX + bc.getPalletNumber());
             //############# PASSE TO S050 STATE ###############        
             Helper.Packaging_Gui_Mode1.state = new Mode1_S050_ClosingPallet();
             this.dispose();
@@ -464,7 +464,7 @@ public class PACKAGING_UI0013_PalletWaiting extends javax.swing.JDialog {
 
             Helper.mode2_context.getBaseContainerTmp().setPalletNumber(bc.getPalletNumber());
             //Set requested closing pallet number in the main gui
-            Helper.Packaging_Gui_Mode2.setRequestedPallet_txt("N° " + Helper.CLOSING_PALLET_PREFIX + bc.getPalletNumber());
+            Helper.Packaging_Gui_Mode2.setAssistanceTextarea("N° " + Helper.CLOSING_PALLET_PREFIX + bc.getPalletNumber());
             //############# PASSE TO S050 STATE ###############        
             Helper.Packaging_Gui_Mode2.state = new Mode2_S040_ClosingPallet();
             this.dispose();

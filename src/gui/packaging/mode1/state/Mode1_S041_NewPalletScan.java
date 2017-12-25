@@ -5,6 +5,7 @@
  */
 package gui.packaging.mode1.state;
 
+import gui.packaging.Mode1_Context;
 import helper.Helper;
 import helper.PrinterHelper;
 import entity.BaseContainer;
@@ -32,7 +33,7 @@ public class Mode1_S041_NewPalletScan implements Mode1_State {
         //Reload Data Table to display new pallet
         Helper.Packaging_Gui_Mode1.reloadDataTable();
 
-        Helper.Packaging_Gui_Mode1.setRequestedPallet_txt(
+        Helper.Packaging_Gui_Mode1.setAssistanceTextarea(
                 "Scanner la fiche Ouverture Palette N° "
                 + Helper.mode2_context.getBaseContainerTmp().getPalletNumber());
     }
@@ -132,7 +133,7 @@ public class Mode1_S041_NewPalletScan implements Mode1_State {
                 bc.update(bc);                 
 
                 context.getBaseContainerTmp().setPalletNumber(bc.getPalletNumber());
-                Helper.Packaging_Gui_Mode1.setRequestedPallet_txt(
+                Helper.Packaging_Gui_Mode1.setAssistanceTextarea(
                         "N° "
                         + Helper.CLOSING_PALLET_PREFIX + Helper.mode2_context.getBaseContainerTmp().getPalletNumber());
 
@@ -171,7 +172,7 @@ public class Mode1_S041_NewPalletScan implements Mode1_State {
     }
 
     public void clearRequestedPallet_txt() {
-        Helper.Packaging_Gui_Mode1.setRequestedPallet_txt("");
+        Helper.Packaging_Gui_Mode1.setAssistanceTextarea("");
     }
 
 }

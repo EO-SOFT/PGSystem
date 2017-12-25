@@ -12,7 +12,6 @@ import entity.BaseContainerTmp;
 import entity.BaseHarnessAdditionalBarecodeTmp;
 import entity.ConfigUcs;
 import gui.packaging.mode1.state.Mode1_S020_PalletChoice;
-import gui.packaging.mode1.state.Mode1_S021_HarnessPartScan;
 import gui.packaging.mode1.state.Mode1_S041_NewPalletScan;
 import helper.PrinterHelper;
 import helper.UIHelper;
@@ -75,7 +74,7 @@ public final class PACKAGING_UI9000_ChoosePackType_Mode1 extends javax.swing.JDi
 
         Helper.sess.getTransaction().commit();
         List result = query.list();
-        if (result.size() == 0) {
+        if (result.isEmpty()) {
             JOptionPane.showMessageDialog(null, "Pas d'UCS configuré pour le PN " + harness_part);
             //Clear session vals in mode1_context
             clearContextSessionVals();
@@ -123,8 +122,9 @@ public final class PACKAGING_UI9000_ChoosePackType_Mode1 extends javax.swing.JDi
     }
 
     public void disableEditingTables() {
-        UIHelper.disableEditingJtable(ucs_jtable);
+        //UIHelper.disableEditingJtable(ucs_jtable);
     }
+
     private void load_table_header() {
         this.reset_table_content();
 
@@ -164,8 +164,8 @@ public final class PACKAGING_UI9000_ChoosePackType_Mode1 extends javax.swing.JDi
         Helper.centerJDialog(this);
 
         //Desable table edition
-        disableEditingTables();;
-        
+        disableEditingTables();
+
         //Load table header
         load_table_header();
 
@@ -319,30 +319,33 @@ public final class PACKAGING_UI9000_ChoosePackType_Mode1 extends javax.swing.JDi
             configUcs = (ConfigUcs) result.get(0);
         } catch (IndexOutOfBoundsException e) {
             JOptionPane.showMessageDialog(null, String.format("Failed to found UCS matching criteria %s AND %s ",
-                    Helper.mode1_context.getBaseContainerTmp().getSupplierPartNumber(), Helper.mode1_context.getBaseContainerTmp().getHarnessIndex()), "Database Qery Error!", ERROR_MESSAGE);
+                    Helper.mode1_context.getBaseContainerTmp().getSupplierPartNumber(), Helper.mode1_context.getBaseContainerTmp().getHarnessIndex()), "Database Query Error!", ERROR_MESSAGE);
         }
 
         int palletId = -1;
-        try {
-            palletId = PrinterHelper.saveAndPrintOpenSheet(
-                    configUcs.getHarnessPart(),
-                    configUcs.getHarnessIndex(),
-                    configUcs.getSupplierPartNumber(),
-                    configUcs.getPackType(),
-                    configUcs.getPackSize(),
-                    Helper.mode1_context.getUser().getLogin());
-        } catch (NullPointerException e) {
-            System.out.println("PACKAGING_UI9000_ChooseContainerType Error : " + e.getMessage());
-        }
+        palletId = PrinterHelper.saveAndPrintOpenSheet(
+                Helper.mode1_context,
+                configUcs.getHarnessPart(),
+                configUcs.getHarnessIndex(),
+                configUcs.getSupplierPartNumber(),
+                configUcs.getPackType(),
+                configUcs.getPackSize(),
+                Helper.mode1_context.getUser().getLogin());
+        System.out.println("palletId" + palletId);
+//        try {
+//        
+//        } catch (NullPointerException e) {
+//            System.out.println("PACKAGING_UI9000_ChooseContainerType Error : " + e.getMessage());
+//        }
 
         if (palletId != -1) {
 
             //############# PASSE TO S041 STATE ###############
             Helper.log.info(String.format("Openning new container for first harness part [%s].", Helper.mode1_context.getBaseContainerTmp().getHarnessPart().substring(1)));
 
-            Helper.Packaging_Gui_Mode1.setRequestedPallet_txt(
+            Helper.Packaging_Gui_Mode1.setAssistanceTextarea(
                     "Scanner la fiche Ouverture Palette N° "
-                    + String.valueOf(palletId));
+                    + palletId);
 
             //Change state to S041
             Mode1_S041_NewPalletScan state = new Mode1_S041_NewPalletScan();
@@ -360,11 +363,11 @@ public final class PACKAGING_UI9000_ChoosePackType_Mode1 extends javax.swing.JDi
         clearContextSessionVals();
         // Change go back to state HarnessPartScan            
         Helper.mode1_context.setState(new Mode1_S020_PalletChoice());
-        Helper.Packaging_Gui_Mode1.setRequestedPallet_txt("");
+        Helper.Packaging_Gui_Mode1.setAssistanceTextarea("");
     }//GEN-LAST:event_formWindowClosing
 
     private void ucs_jtableKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ucs_jtableKeyPressed
-
+        System.out.println("ucs_jtableKeyPressed" + evt.getKeyCode());
         if (evt.getKeyCode() == KeyEvent.VK_ENTER || evt.getKeyCode() == KeyEvent.VK_SPACE) {
             // User has pressed Carriage return button
             if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
@@ -379,7 +382,9 @@ public final class PACKAGING_UI9000_ChoosePackType_Mode1 extends javax.swing.JDi
                  */
                 //Checker si des palettes du même type se sont ouvertes sur
                 //la meme poste emballage.                        
+                System.out.println("startSession");
                 Helper.startSession();
+                System.out.println("start ok!");
                 //Check s'il n'y a pas une palette ouverte pour la même référence avec le même type packaging.
                 query = Helper.sess.createQuery(
                         "FROM BaseContainer bc WHERE "
@@ -393,7 +398,10 @@ public final class PACKAGING_UI9000_ChoosePackType_Mode1 extends javax.swing.JDi
                 if (result.isEmpty()) {
                     if (Integer.valueOf(Helper.PROP.getProperty("UNIQUE_PALLET_PER_PACK_TYPE")) == 1) {
                         result = null;
+                        System.out.println("startSession for UNIQUE_PALLET_PER_PACK_TYPE");
+
                         Helper.startSession();
+                        System.out.println("start ok !");
                         //Check s'il n'y a pas de palette ouverte pour le même 
                         //packaging et en cours dans le même workstation.
                         query = Helper.sess.createQuery(

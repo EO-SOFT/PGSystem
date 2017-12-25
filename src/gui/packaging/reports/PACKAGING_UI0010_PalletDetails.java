@@ -1456,14 +1456,14 @@ public final class PACKAGING_UI0010_PalletDetails extends javax.swing.JDialog {
         if(Helper.PROP.getProperty("PACKAGING_SCAN_MODE").equals("1")){
             Helper.mode1_context.getBaseContainerTmp().setPalletNumber(bc.getPalletNumber());
             //Set requested closing pallet number in the main gui
-            Helper.Packaging_Gui_Mode1.setRequestedPallet_txt("N° " + Helper.CLOSING_PALLET_PREFIX + bc.getPalletNumber());
+            Helper.Packaging_Gui_Mode1.setAssistanceTextarea("N° " + Helper.CLOSING_PALLET_PREFIX + bc.getPalletNumber());
             //############# PASSE TO S050 STATE ###############
             Helper.Packaging_Gui_Mode1.state = new Mode1_S050_ClosingPallet();
             this.dispose();   
         }else if(Helper.PROP.getProperty("PACKAGING_SCAN_MODE").equals("2")){
             Helper.mode2_context.getBaseContainerTmp().setPalletNumber(bc.getPalletNumber());
             //Set requested closing pallet number in the main gui
-            Helper.Packaging_Gui_Mode2.setRequestedPallet_txt("N° " + Helper.CLOSING_PALLET_PREFIX + bc.getPalletNumber());
+            Helper.Packaging_Gui_Mode2.setAssistanceTextarea("N° " + Helper.CLOSING_PALLET_PREFIX + bc.getPalletNumber());
             //############# PASSE TO S050 STATE ###############
             Helper.Packaging_Gui_Mode2.state = new Mode2_S040_ClosingPallet();
             this.dispose(); 

@@ -39,8 +39,8 @@ import javax.swing.JOptionPane;
 import static javax.swing.JOptionPane.ERROR_MESSAGE;
 import static javax.swing.JOptionPane.WARNING_MESSAGE;
 import org.hibernate.Session;
-import gui.packaging.mode2.state.Mode2_Context;
-import gui.packaging.mode1.state.Mode1_Context;
+import gui.packaging.Mode2_Context;
+import gui.packaging.Mode1_Context;
 
 /**
  *
@@ -67,18 +67,29 @@ public class Helper {
         }
         return instance;
     }
-
+    
+    public static Session openSession() {
+        
+        try {
+            System.out.println("return HibernateUtil.getInstance().getCurrentSession()");
+            return HibernateUtil.getInstance().getCurrentSession();
+        } catch (Exception e) {
+            System.out.println("return HibernateUtil.getInstance().openSession();");
+            return HibernateUtil.getInstance().openSession();
+        }               
+    }
+    
     //State Design pattern
     /**
      *
      */
-    public static Session sess = HibernateUtil.getInstance().openSession();
-
+    public static Session sess = openSession();
+    
     /**
      *
      */
     public static Mode2_Context mode2_context = new Mode2_Context();
-    
+
     /**
      *
      */
@@ -88,17 +99,16 @@ public class Helper {
      *
      */
     public static PACKAGING_UI0001_Main_Mode1 Packaging_Gui_Mode1 = null;
-    
+
     /**
      *
      */
     public static PACKAGING_UI0001_Main_Mode2 Packaging_Gui_Mode2 = null;
-    
+
     /**
-     * 
+     *
      */
     //public static Main Module_Choice_Gui = null;
-            
     private static MessageDigest digester;
 
     /**
@@ -164,12 +174,12 @@ public class Helper {
     public static String ERR0025_PACKTYPE_ALREADY_OPEN_IN_THE_SAME_WORKSTATION = "Palette/Box déjà ouvert(e) du type %s dans ce poste %s, pour la référence %s.\n"
             + "Solution N° 1 : - Veuillez terminer le packaging de la palette %s avant d'ouvrir une nouvelle palette de type %s.\n"
             + "Solution N° 2 : - Emballer cette référence dans un autre poste packaging.";
-    
+
     /**
      *
      */
     public static String ERR0030_PALLET_NOT_OPEN = "Palette %s n'est pas ouverte.\nMerci de scanner une palette ouverte ou ouvrir une nouvelle palette !";
-    
+
     /**
      *
      */
@@ -445,7 +455,6 @@ public class Helper {
      */
     public static String CLOSING_PALLET_PATTERN = "^[C]{1}[P]{1}\\d{9}";
 
-    
     //Pallet print state
     /**
      *
@@ -553,8 +562,7 @@ public class Helper {
         {PALLET_WAITING, ""},
         {PALLET_CLOSED, ""},
         {PALLET_STORED, "selected"},
-        {PALLET_SHIPPED, ""},                        
-        //{PALLET_QUARANTAINE, ""}
+        {PALLET_SHIPPED, ""}, //{PALLET_QUARANTAINE, ""}
     };
     //PALLET STATE COLLUMN INDEX IN UI0000_MAIN CONTAINER TABLE
     /**
@@ -617,8 +625,11 @@ public class Helper {
      *
      */
     public static void startSession() {
-        Helper.sess.flush();
-        Helper.sess.clear();
+        if (Helper.sess.isDirty()) {
+            Helper.sess.flush();
+            Helper.sess.clear();
+        }
+        //if(!Helper.sess.isOpen())
         try {
             Helper.sess.beginTransaction();
         } catch (Exception e) {
@@ -671,7 +682,7 @@ public class Helper {
     /**
      *
      * @param path
-     * @return 
+     * @return
      */
     @SuppressWarnings("CallToThreadDumpStack")
     public static String InitDailyLogFile(String path) {
@@ -695,9 +706,9 @@ public class Helper {
             File file = new File(log_path);
 
             if (file.createNewFile()) {
-                TMP_MSG +=  "File " + file.getName() + " created !";
+                TMP_MSG += "File " + file.getName() + " created !";
             } else {
-                TMP_MSG +=  "File " + file.getName() + " already exists.";
+                TMP_MSG += "File " + file.getName() + " already exists.";
             }
             //Intilize the logFileHandler, formating etc...
 
@@ -720,7 +731,7 @@ public class Helper {
      * @param galia_dir
      * @param picking_dir
      * @param dispatch_dir
-     * @return 
+     * @return
      */
     @SuppressWarnings("CallToThreadDumpStack")
     public static String InitDailyDestPrintDir(String print_dir_path, String palet_dir, String galia_dir, String picking_dir, String dispatch_dir) {
@@ -784,10 +795,10 @@ public class Helper {
         }
 
         log.info(TMP_MSG);
-        return TMP_MSG;        
+        return TMP_MSG;
     }
-    
-    public static void mapProperties(){
+
+    public static void mapProperties() {
         OPEN_PALLET_KEYWORD = Helper.PROP.getProperty("OPEN_PALLET_KEYWORD");
 
         HARN_PART_PREFIX = Helper.PROP.getProperty("HARN_PART_PREFIX");
@@ -800,7 +811,7 @@ public class Helper {
 
         CLOSING_PALLET_PREFIX = Helper.PROP.getProperty("CLOSING_PALLET_PREFIX");
     }
-    
+
     /**
      * Load Helper.PROP attribut values from config.properties
      */
@@ -812,11 +823,11 @@ public class Helper {
             input = new FileInputStream(".\\config.properties");
             // load a properties file
             PROP.load(input);
-            
+
             mapProperties();
             // get the property value and print it out
             System.out.println("Load properties file :\n " + PROP.toString());
-            
+
         } catch (IOException ex) {
             JOptionPane.showMessageDialog(null, ex.getMessage(), "Config properties error !", ERROR_MESSAGE);
             JOptionPane.showMessageDialog(null, "Properties file must be in the same folder as the .jar file.", "Config properties error !", WARNING_MESSAGE);
@@ -1080,7 +1091,7 @@ public class Helper {
             System.err.println(Helper.ERR0014_NO_PROJECT_FOUND);
         } else {
             System.out.println(result.toString());
-            for (int i = 0; i<result.size();i++) {                
+            for (int i = 0; i < result.size(); i++) {
                 jbox.addItem(new ComboItem(result.get(i)[0], result.get(i)[0]));
             }
         }

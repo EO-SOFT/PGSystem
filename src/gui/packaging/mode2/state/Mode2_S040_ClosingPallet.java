@@ -5,6 +5,7 @@
  */
 package gui.packaging.mode2.state;
 
+import gui.packaging.Mode2_Context;
 import helper.Helper;
 import entity.BaseContainer;
 import entity.BaseContainerTmp;
@@ -74,7 +75,7 @@ public class Mode2_S040_ClosingPallet implements Mode2_State {
             clearContextSessionVals();
 
             //Clear requested closing pallet number in the main gui
-            Helper.Packaging_Gui_Mode2.setRequestedPallet_txt("");
+            Helper.Packaging_Gui_Mode2.setAssistanceTextarea("");
 
             // Change go back to state HarnessPartScan            
             context.setState(new Mode2_S020_HarnessPartScan());

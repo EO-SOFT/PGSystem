@@ -328,6 +328,7 @@ public final class PACKAGING_UI9000_ChoosePackType_Mode2 extends javax.swing.JDi
         int palletId = -1;
         try {
             palletId = PrinterHelper.saveAndPrintOpenSheet(
+                    Helper.mode2_context,
                     configUcs.getHarnessPart(),
                     configUcs.getHarnessIndex(),
                     configUcs.getSupplierPartNumber(),
@@ -344,7 +345,7 @@ public final class PACKAGING_UI9000_ChoosePackType_Mode2 extends javax.swing.JDi
             Helper.log.info(String.format("Openning new container for first harness part [%s].", Helper.mode2_context.getBaseContainerTmp().getHarnessPart().substring(1)));
 
             if (Helper.PROP.getProperty("PACKAGING_SCAN_MODE").equals("1")) {
-                Helper.Packaging_Gui_Mode1.setRequestedPallet_txt(
+                Helper.Packaging_Gui_Mode1.setAssistanceTextarea(
                         "Scanner la fiche Ouverture Palette N° "
                         + String.valueOf(palletId));
 
@@ -353,7 +354,7 @@ public final class PACKAGING_UI9000_ChoosePackType_Mode2 extends javax.swing.JDi
                 Helper.mode1_context.setState(state);
                 this.dispose();
             } else if (Helper.PROP.getProperty("PACKAGING_SCAN_MODE").equals("2")) {
-                Helper.Packaging_Gui_Mode2.setRequestedPallet_txt(
+                Helper.Packaging_Gui_Mode2.setAssistanceTextarea(
                         "Scanner la fiche Ouverture Palette N° "
                         + String.valueOf(palletId));
 
@@ -376,7 +377,7 @@ public final class PACKAGING_UI9000_ChoosePackType_Mode2 extends javax.swing.JDi
         clearContextSessionVals();
         // Change go back to state HarnessPartScan            
         Helper.mode2_context.setState(new Mode2_S020_HarnessPartScan());
-        Helper.Packaging_Gui_Mode1.setRequestedPallet_txt("");
+        Helper.Packaging_Gui_Mode1.setAssistanceTextarea("");
     }//GEN-LAST:event_formWindowClosing
 
     private void ucs_jtableKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ucs_jtableKeyPressed

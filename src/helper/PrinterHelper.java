@@ -9,6 +9,7 @@ import com.itextpdf.text.DocumentException;
 import entity.BaseContainer;
 import entity.HisGaliaPrint;
 import entity.HisPalletPrint;
+import gui.packaging.Context;
 import java.io.IOException;
 import java.util.Date;
 import java.util.List;
@@ -101,20 +102,24 @@ public class PrinterHelper {
     }
 
     /**
+     * @param context
      * @param harnessPart
      * @param harnessIndex
+     * @param supplier_part_number
      * @param packType
      * @param packSize
      * @param user
      * @return
      */
     public static int saveAndPrintOpenSheet(
-            String harnessPart, String harnessIndex, String supplier_part_number, String packType, int packSize, String user) {
-
+            Context context, String harnessPart, String harnessIndex, String supplier_part_number, String packType, int packSize, String user) {
+        
+        System.out.println("saveAndPrintOpenSheet "+harnessPart+" "+harnessIndex+" "+supplier_part_number+" "+packType+" "+packSize+" "+user);
         initDailyDestPrintDir();
 
         //Save the new open pallet in DB with new state
         HisPalletPrint hisPallet = new HisPalletPrint(
+                context.getUser(),
                 harnessPart,
                 harnessIndex,
                 supplier_part_number,
@@ -128,13 +133,13 @@ public class PrinterHelper {
         Helper.sess.getTransaction().commit();
 
         //Set pallet number var in global mode2_context            
-        Helper.mode2_context.getBaseContainerTmp().setPalletNumber(String.valueOf(hisPallet.getId()));
+        //Helper.mode2_context.getBaseContainerTmp().setPalletNumber(String.valueOf(hisPallet.getId()));
 
         try {
             hisPallet.setPalletState(Helper.PALLET_PRINT_INPROCESS, hisPallet.getId());
             //Creation of PDF A5 open pallet number
             PrintOpenPallet_A5 openPallet = new PrintOpenPallet_A5(
-                    Helper.mode2_context.getUser().getLogin(),
+                    context.getUser().getLogin(),
                     packType,
                     "-",
                     harnessPart,

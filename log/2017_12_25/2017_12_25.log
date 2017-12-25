@@ -1,0 +1,550 @@
+déc. 25, 2017 9:12:11 PM helper.Helper InitDailyDestPrintDir
+INFOS: File 2017_12_25.log created !Print directory [.\print\2017_12_25] created !
+Print sub directory [.\print\2017_12_25.\open_sheet] created !
+Print sub directory [.\print\2017_12_25.\closing_sheet] created !
+Print sub directory [.\print\2017_12_25.\picking_label] created !
+Print sub directory [.\print\2017_12_25.\dispatch_label] created !
+
+déc. 25, 2017 9:12:14 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+déc. 25, 2017 9:12:14 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+déc. 25, 2017 9:15:52 PM helper.Helper InitDailyDestPrintDir
+INFOS: File 2017_12_25.log already exists.Print directory [.\print\2017_12_25] already exist!
+Print sub directory [.\print\2017_12_25.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\picking_label] already exist!
+Print sub directory [.\print\2017_12_25.\dispatch_label] already exist!
+
+déc. 25, 2017 9:15:54 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+déc. 25, 2017 9:15:54 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+déc. 25, 2017 9:22:03 PM helper.Helper InitDailyDestPrintDir
+INFOS: File 2017_12_25.log already exists.Print directory [.\print\2017_12_25] already exist!
+Print sub directory [.\print\2017_12_25.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\picking_label] already exist!
+Print sub directory [.\print\2017_12_25.\dispatch_label] already exist!
+
+déc. 25, 2017 9:22:04 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+déc. 25, 2017 9:22:04 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+déc. 25, 2017 9:22:12 PM gui.packaging.mode1.state.Mode1_S010_UserCodeScan doAction
+INFOS: Invalid matricule number or account locked !
+déc. 25, 2017 9:22:13 PM gui.packaging.mode1.state.Mode1_S010_UserCodeScan doAction
+INFOS: Invalid matricule number or account locked !
+déc. 25, 2017 9:22:14 PM gui.packaging.mode1.state.Mode1_S010_UserCodeScan doAction
+INFOS: Invalid matricule number or account locked !
+déc. 25, 2017 9:22:15 PM gui.packaging.mode1.state.Mode1_S010_UserCodeScan doAction
+INFOS: Invalid matricule number or account locked !
+déc. 25, 2017 9:22:47 PM helper.Helper InitDailyDestPrintDir
+INFOS: File 2017_12_25.log already exists.Print directory [.\print\2017_12_25] already exist!
+Print sub directory [.\print\2017_12_25.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\picking_label] already exist!
+Print sub directory [.\print\2017_12_25.\dispatch_label] already exist!
+
+déc. 25, 2017 9:22:48 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+déc. 25, 2017 9:22:48 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+déc. 25, 2017 9:22:53 PM gui.packaging.mode1.state.Mode1_S010_UserCodeScan doAction
+INFOS: Invalid matricule number or account locked !
+déc. 25, 2017 9:22:58 PM gui.packaging.mode1.gui.PACKAGING_UI0002_PasswordRequest_Mode1 connect_to_mode1
+INFOS: User EZZIOURI OUSSAMA / ezou1001 connected to host Oussama-PC at 2017-12-25 21:22:58 Project : DUCATI.
+déc. 25, 2017 9:22:58 PM gui.packaging.mode1.gui.PACKAGING_UI0002_PasswordRequest_Mode1 loadDotMatrixCodePatterns
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord AND cb.harness_type = :harnessType ORDER BY id ASC
+déc. 25, 2017 9:22:58 PM gui.packaging.mode1.gui.PACKAGING_UI0002_PasswordRequest_Mode1 loadPartNumberCodePatterns
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord AND cb.harness_type = :harnessType ORDER BY id ASC
+déc. 25, 2017 9:23:20 PM gui.packaging.mode1.state.Mode1_S020_PalletChoice doAction
+INFOS: Is it a new pallet ?
+déc. 25, 2017 9:23:20 PM gui.packaging.mode1.state.Mode1_S020_PalletChoice doAction
+INFOS:  [Yes]
+déc. 25, 2017 9:23:28 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [5101C861D] in ConfigUCS: DUCATI
+déc. 25, 2017 9:23:28 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [5101C861D] found for project [DUCATI].
+déc. 25, 2017 9:23:28 PM gui.packaging.mode1.state.Mode1_S021_HarnessPartScan doAction
+INFOS: Harness Part scanned [5101C861D] OK.
+déc. 25, 2017 9:24:31 PM helper.Helper InitDailyDestPrintDir
+INFOS: File 2017_12_25.log already exists.Print directory [.\print\2017_12_25] already exist!
+Print sub directory [.\print\2017_12_25.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\picking_label] already exist!
+Print sub directory [.\print\2017_12_25.\dispatch_label] already exist!
+Print directory [.\print\2017_12_25] already exist!
+Print sub directory [.\print\2017_12_25.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\picking_label] already exist!
+Print sub directory [.\print\2017_12_25.\dispatch_label] already exist!
+
+déc. 25, 2017 9:24:45 PM gui.packaging.mode1.state.Mode1_S020_PalletChoice doAction
+INFOS: Is it a new pallet ?
+déc. 25, 2017 9:24:45 PM gui.packaging.mode1.state.Mode1_S020_PalletChoice doAction
+INFOS:  [Yes]
+déc. 25, 2017 9:24:52 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [5101C861D] in ConfigUCS: DUCATI
+déc. 25, 2017 9:24:52 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [5101C861D] found for project [DUCATI].
+déc. 25, 2017 9:24:52 PM gui.packaging.mode1.state.Mode1_S021_HarnessPartScan doAction
+INFOS: Harness Part scanned [5101C861D] OK.
+déc. 25, 2017 9:25:31 PM helper.Helper InitDailyDestPrintDir
+INFOS: File 2017_12_25.log already exists.Print directory [.\print\2017_12_25] already exist!
+Print sub directory [.\print\2017_12_25.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\picking_label] already exist!
+Print sub directory [.\print\2017_12_25.\dispatch_label] already exist!
+Print directory [.\print\2017_12_25] already exist!
+Print sub directory [.\print\2017_12_25.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\picking_label] already exist!
+Print sub directory [.\print\2017_12_25.\dispatch_label] already exist!
+Print directory [.\print\2017_12_25] already exist!
+Print sub directory [.\print\2017_12_25.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\picking_label] already exist!
+Print sub directory [.\print\2017_12_25.\dispatch_label] already exist!
+
+déc. 25, 2017 9:33:57 PM helper.Helper InitDailyDestPrintDir
+INFOS: File 2017_12_25.log already exists.Print directory [.\print\2017_12_25] already exist!
+Print sub directory [.\print\2017_12_25.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\picking_label] already exist!
+Print sub directory [.\print\2017_12_25.\dispatch_label] already exist!
+
+déc. 25, 2017 9:33:59 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+déc. 25, 2017 9:33:59 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+déc. 25, 2017 9:34:02 PM gui.packaging.mode1.state.Mode1_S010_UserCodeScan doAction
+INFOS: Invalid matricule number or account locked !
+déc. 25, 2017 9:34:05 PM gui.packaging.mode1.gui.PACKAGING_UI0002_PasswordRequest_Mode1 connect_to_mode1
+INFOS: User EZZIOURI OUSSAMA / ezou1001 connected to host Oussama-PC at 2017-12-25 21:34:05 Project : DUCATI.
+déc. 25, 2017 9:34:05 PM gui.packaging.mode1.gui.PACKAGING_UI0002_PasswordRequest_Mode1 loadDotMatrixCodePatterns
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord AND cb.harness_type = :harnessType ORDER BY id ASC
+déc. 25, 2017 9:34:05 PM gui.packaging.mode1.gui.PACKAGING_UI0002_PasswordRequest_Mode1 loadPartNumberCodePatterns
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord AND cb.harness_type = :harnessType ORDER BY id ASC
+déc. 25, 2017 9:34:08 PM gui.packaging.mode1.state.Mode1_S020_PalletChoice doAction
+INFOS: Is it a new pallet ?
+déc. 25, 2017 9:34:08 PM gui.packaging.mode1.state.Mode1_S020_PalletChoice doAction
+INFOS:  [Yes]
+déc. 25, 2017 9:34:22 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [5101C861D] in ConfigUCS: DUCATI
+déc. 25, 2017 9:34:22 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [5101C861D] found for project [DUCATI].
+déc. 25, 2017 9:34:22 PM gui.packaging.mode1.state.Mode1_S021_HarnessPartScan doAction
+INFOS: Harness Part scanned [5101C861D] OK.
+déc. 25, 2017 9:34:39 PM helper.Helper InitDailyDestPrintDir
+INFOS: File 2017_12_25.log already exists.Print directory [.\print\2017_12_25] already exist!
+Print sub directory [.\print\2017_12_25.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\picking_label] already exist!
+Print sub directory [.\print\2017_12_25.\dispatch_label] already exist!
+Print directory [.\print\2017_12_25] already exist!
+Print sub directory [.\print\2017_12_25.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\picking_label] already exist!
+Print sub directory [.\print\2017_12_25.\dispatch_label] already exist!
+
+déc. 25, 2017 9:36:01 PM helper.Helper InitDailyDestPrintDir
+INFOS: File 2017_12_25.log already exists.Print directory [.\print\2017_12_25] already exist!
+Print sub directory [.\print\2017_12_25.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\picking_label] already exist!
+Print sub directory [.\print\2017_12_25.\dispatch_label] already exist!
+
+déc. 25, 2017 9:41:14 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+déc. 25, 2017 9:41:14 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+déc. 25, 2017 9:41:17 PM gui.packaging.mode1.state.Mode1_S010_UserCodeScan doAction
+INFOS: Invalid matricule number or account locked !
+déc. 25, 2017 9:41:18 PM gui.packaging.mode1.gui.PACKAGING_UI0002_PasswordRequest_Mode1 connect_to_mode1
+INFOS: User EZZIOURI OUSSAMA / ezou1001 connected to host Oussama-PC at 2017-12-25 21:41:18 Project : DUCATI.
+déc. 25, 2017 9:41:18 PM gui.packaging.mode1.gui.PACKAGING_UI0002_PasswordRequest_Mode1 loadDotMatrixCodePatterns
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord AND cb.harness_type = :harnessType ORDER BY id ASC
+déc. 25, 2017 9:41:18 PM gui.packaging.mode1.gui.PACKAGING_UI0002_PasswordRequest_Mode1 loadPartNumberCodePatterns
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord AND cb.harness_type = :harnessType ORDER BY id ASC
+déc. 25, 2017 9:41:22 PM gui.packaging.mode1.state.Mode1_S020_PalletChoice doAction
+INFOS: Is it a new pallet ?
+déc. 25, 2017 9:41:22 PM gui.packaging.mode1.state.Mode1_S020_PalletChoice doAction
+INFOS:  [Yes]
+déc. 25, 2017 9:41:29 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [5101C861D] in ConfigUCS: DUCATI
+déc. 25, 2017 9:41:29 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [5101C861D] found for project [DUCATI].
+déc. 25, 2017 9:41:29 PM gui.packaging.mode1.state.Mode1_S021_HarnessPartScan doAction
+INFOS: Harness Part scanned [5101C861D] OK.
+déc. 25, 2017 9:41:31 PM helper.Helper InitDailyDestPrintDir
+INFOS: File 2017_12_25.log already exists.Print directory [.\print\2017_12_25] already exist!
+Print sub directory [.\print\2017_12_25.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\picking_label] already exist!
+Print sub directory [.\print\2017_12_25.\dispatch_label] already exist!
+Print directory [.\print\2017_12_25] already exist!
+Print sub directory [.\print\2017_12_25.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\picking_label] already exist!
+Print sub directory [.\print\2017_12_25.\dispatch_label] already exist!
+
+déc. 25, 2017 9:57:38 PM helper.Helper InitDailyDestPrintDir
+INFOS: File 2017_12_25.log already exists.Print directory [.\print\2017_12_25] already exist!
+Print sub directory [.\print\2017_12_25.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\picking_label] already exist!
+Print sub directory [.\print\2017_12_25.\dispatch_label] already exist!
+
+déc. 25, 2017 9:57:39 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+déc. 25, 2017 9:59:20 PM helper.Helper InitDailyDestPrintDir
+INFOS: File 2017_12_25.log already exists.Print directory [.\print\2017_12_25] already exist!
+Print sub directory [.\print\2017_12_25.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\picking_label] already exist!
+Print sub directory [.\print\2017_12_25.\dispatch_label] already exist!
+
+déc. 25, 2017 9:59:21 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+déc. 25, 2017 9:59:21 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+déc. 25, 2017 9:59:25 PM gui.packaging.mode1.state.Mode1_S010_UserCodeScan doAction
+INFOS: Invalid matricule number or account locked !
+déc. 25, 2017 9:59:27 PM gui.packaging.mode1.gui.PACKAGING_UI0002_PasswordRequest_Mode1 connect_to_mode1
+INFOS: User EZZIOURI OUSSAMA / ezou1001 connected to host Oussama-PC at 2017-12-25 21:59:27 Project : DUCATI.
+déc. 25, 2017 9:59:27 PM gui.packaging.mode1.gui.PACKAGING_UI0002_PasswordRequest_Mode1 loadDotMatrixCodePatterns
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord AND cb.harness_type = :harnessType ORDER BY id ASC
+déc. 25, 2017 9:59:27 PM gui.packaging.mode1.gui.PACKAGING_UI0002_PasswordRequest_Mode1 loadPartNumberCodePatterns
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord AND cb.harness_type = :harnessType ORDER BY id ASC
+déc. 25, 2017 9:59:29 PM gui.packaging.mode1.state.Mode1_S020_PalletChoice doAction
+INFOS: Is it a new pallet ?
+déc. 25, 2017 9:59:29 PM gui.packaging.mode1.state.Mode1_S020_PalletChoice doAction
+INFOS:  [Yes]
+déc. 25, 2017 9:59:35 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [5101C861D] in ConfigUCS: DUCATI
+déc. 25, 2017 9:59:36 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [5101C861D] found for project [DUCATI].
+déc. 25, 2017 9:59:36 PM gui.packaging.mode1.state.Mode1_S021_HarnessPartScan doAction
+INFOS: Harness Part scanned [P5101C861D] OK.
+déc. 25, 2017 9:59:43 PM gui.packaging.mode1.state.Mode1_S020_PalletChoice doAction
+INFOS: Is it a new pallet ?
+déc. 25, 2017 9:59:43 PM gui.packaging.mode1.state.Mode1_S020_PalletChoice doAction
+INFOS:  [Yes]
+déc. 25, 2017 9:59:44 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [5101C861D] in ConfigUCS: DUCATI
+déc. 25, 2017 9:59:44 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [5101C861D] found for project [DUCATI].
+déc. 25, 2017 9:59:44 PM gui.packaging.mode1.state.Mode1_S021_HarnessPartScan doAction
+INFOS: Harness Part scanned [5101C861D] OK.
+déc. 25, 2017 9:59:58 PM helper.Helper InitDailyDestPrintDir
+INFOS: File 2017_12_25.log already exists.Print directory [.\print\2017_12_25] already exist!
+Print sub directory [.\print\2017_12_25.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\picking_label] already exist!
+Print sub directory [.\print\2017_12_25.\dispatch_label] already exist!
+Print directory [.\print\2017_12_25] already exist!
+Print sub directory [.\print\2017_12_25.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\picking_label] already exist!
+Print sub directory [.\print\2017_12_25.\dispatch_label] already exist!
+
+déc. 25, 2017 10:08:28 PM helper.Helper InitDailyDestPrintDir
+INFOS: File 2017_12_25.log already exists.Print directory [.\print\2017_12_25] already exist!
+Print sub directory [.\print\2017_12_25.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\picking_label] already exist!
+Print sub directory [.\print\2017_12_25.\dispatch_label] already exist!
+
+déc. 25, 2017 10:08:30 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+déc. 25, 2017 10:08:30 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+déc. 25, 2017 10:08:33 PM gui.packaging.mode1.state.Mode1_S010_UserCodeScan doAction
+INFOS: Invalid matricule number or account locked !
+déc. 25, 2017 10:08:37 PM gui.packaging.mode1.gui.PACKAGING_UI0002_PasswordRequest_Mode1 connect_to_mode1
+INFOS: User EZZIOURI OUSSAMA / ezou1001 connected to host Oussama-PC at 2017-12-25 22:08:37 Project : DUCATI.
+déc. 25, 2017 10:08:37 PM gui.packaging.mode1.gui.PACKAGING_UI0002_PasswordRequest_Mode1 loadDotMatrixCodePatterns
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord AND cb.harness_type = :harnessType ORDER BY id ASC
+déc. 25, 2017 10:08:37 PM gui.packaging.mode1.gui.PACKAGING_UI0002_PasswordRequest_Mode1 loadPartNumberCodePatterns
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord AND cb.harness_type = :harnessType ORDER BY id ASC
+déc. 25, 2017 10:08:39 PM gui.packaging.mode1.state.Mode1_S020_PalletChoice doAction
+INFOS: Is it a new pallet ?
+déc. 25, 2017 10:08:39 PM gui.packaging.mode1.state.Mode1_S020_PalletChoice doAction
+INFOS:  [Yes]
+déc. 25, 2017 10:08:45 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [5101C861D] in ConfigUCS: DUCATI
+déc. 25, 2017 10:08:45 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [5101C861D] found for project [DUCATI].
+déc. 25, 2017 10:08:45 PM gui.packaging.mode1.state.Mode1_S021_HarnessPartScan doAction
+INFOS: Harness Part scanned [5101C861D] OK.
+déc. 25, 2017 10:08:56 PM helper.Helper InitDailyDestPrintDir
+INFOS: File 2017_12_25.log already exists.Print directory [.\print\2017_12_25] already exist!
+Print sub directory [.\print\2017_12_25.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\picking_label] already exist!
+Print sub directory [.\print\2017_12_25.\dispatch_label] already exist!
+Print directory [.\print\2017_12_25] already exist!
+Print sub directory [.\print\2017_12_25.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\picking_label] already exist!
+Print sub directory [.\print\2017_12_25.\dispatch_label] already exist!
+
+déc. 25, 2017 10:16:21 PM helper.Helper InitDailyDestPrintDir
+INFOS: File 2017_12_25.log already exists.Print directory [.\print\2017_12_25] already exist!
+Print sub directory [.\print\2017_12_25.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\picking_label] already exist!
+Print sub directory [.\print\2017_12_25.\dispatch_label] already exist!
+
+déc. 25, 2017 10:16:23 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+déc. 25, 2017 10:16:23 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+déc. 25, 2017 10:16:27 PM gui.packaging.mode1.state.Mode1_S010_UserCodeScan doAction
+INFOS: Invalid matricule number or account locked !
+déc. 25, 2017 10:16:28 PM gui.packaging.mode1.gui.PACKAGING_UI0002_PasswordRequest_Mode1 connect_to_mode1
+INFOS: User EZZIOURI OUSSAMA / ezou1001 connected to host Oussama-PC at 2017-12-25 22:16:28 Project : DUCATI.
+déc. 25, 2017 10:16:28 PM gui.packaging.mode1.gui.PACKAGING_UI0002_PasswordRequest_Mode1 loadDotMatrixCodePatterns
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord AND cb.harness_type = :harnessType ORDER BY id ASC
+déc. 25, 2017 10:16:28 PM gui.packaging.mode1.gui.PACKAGING_UI0002_PasswordRequest_Mode1 loadPartNumberCodePatterns
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord AND cb.harness_type = :harnessType ORDER BY id ASC
+déc. 25, 2017 10:16:31 PM gui.packaging.mode1.state.Mode1_S020_PalletChoice doAction
+INFOS: Is it a new pallet ?
+déc. 25, 2017 10:16:31 PM gui.packaging.mode1.state.Mode1_S020_PalletChoice doAction
+INFOS:  [Yes]
+déc. 25, 2017 10:16:36 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [5101C861D] in ConfigUCS: DUCATI
+déc. 25, 2017 10:16:36 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [5101C861D] found for project [DUCATI].
+déc. 25, 2017 10:16:36 PM gui.packaging.mode1.state.Mode1_S021_HarnessPartScan doAction
+INFOS: Harness Part scanned [5101C861D] OK.
+déc. 25, 2017 10:16:38 PM helper.Helper InitDailyDestPrintDir
+INFOS: File 2017_12_25.log already exists.Print directory [.\print\2017_12_25] already exist!
+Print sub directory [.\print\2017_12_25.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\picking_label] already exist!
+Print sub directory [.\print\2017_12_25.\dispatch_label] already exist!
+Print directory [.\print\2017_12_25] already exist!
+Print sub directory [.\print\2017_12_25.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\picking_label] already exist!
+Print sub directory [.\print\2017_12_25.\dispatch_label] already exist!
+
+déc. 25, 2017 10:31:28 PM helper.Helper InitDailyDestPrintDir
+INFOS: File 2017_12_25.log already exists.Print directory [.\print\2017_12_25] already exist!
+Print sub directory [.\print\2017_12_25.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\picking_label] already exist!
+Print sub directory [.\print\2017_12_25.\dispatch_label] already exist!
+
+déc. 25, 2017 10:31:30 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+déc. 25, 2017 10:31:30 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+déc. 25, 2017 10:31:33 PM gui.packaging.mode1.state.Mode1_S010_UserCodeScan doAction
+INFOS: Invalid matricule number or account locked !
+déc. 25, 2017 10:31:34 PM gui.packaging.mode1.gui.PACKAGING_UI0002_PasswordRequest_Mode1 connect_to_mode1
+INFOS: User EZZIOURI OUSSAMA / ezou1001 connected to host Oussama-PC at 2017-12-25 22:31:34 Project : DUCATI.
+déc. 25, 2017 10:31:34 PM gui.packaging.mode1.gui.PACKAGING_UI0002_PasswordRequest_Mode1 loadDotMatrixCodePatterns
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord AND cb.harness_type = :harnessType ORDER BY id ASC
+déc. 25, 2017 10:31:34 PM gui.packaging.mode1.gui.PACKAGING_UI0002_PasswordRequest_Mode1 loadPartNumberCodePatterns
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord AND cb.harness_type = :harnessType ORDER BY id ASC
+déc. 25, 2017 10:31:36 PM gui.packaging.mode1.state.Mode1_S020_PalletChoice doAction
+INFOS: Is it a new pallet ?
+déc. 25, 2017 10:31:36 PM gui.packaging.mode1.state.Mode1_S020_PalletChoice doAction
+INFOS:  [Yes]
+déc. 25, 2017 10:31:40 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [5101C861D] in ConfigUCS: DUCATI
+déc. 25, 2017 10:31:40 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [5101C861D] found for project [DUCATI].
+déc. 25, 2017 10:31:40 PM gui.packaging.mode1.state.Mode1_S021_HarnessPartScan doAction
+INFOS: Harness Part scanned [5101C861D] OK.
+déc. 25, 2017 10:31:42 PM helper.Helper InitDailyDestPrintDir
+INFOS: File 2017_12_25.log already exists.Print directory [.\print\2017_12_25] already exist!
+Print sub directory [.\print\2017_12_25.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\picking_label] already exist!
+Print sub directory [.\print\2017_12_25.\dispatch_label] already exist!
+Print directory [.\print\2017_12_25] already exist!
+Print sub directory [.\print\2017_12_25.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\picking_label] already exist!
+Print sub directory [.\print\2017_12_25.\dispatch_label] already exist!
+
+déc. 25, 2017 10:36:25 PM helper.Helper InitDailyDestPrintDir
+INFOS: File 2017_12_25.log already exists.Print directory [.\print\2017_12_25] already exist!
+Print sub directory [.\print\2017_12_25.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\picking_label] already exist!
+Print sub directory [.\print\2017_12_25.\dispatch_label] already exist!
+Print directory [.\print\2017_12_25] already exist!
+Print sub directory [.\print\2017_12_25.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\picking_label] already exist!
+Print sub directory [.\print\2017_12_25.\dispatch_label] already exist!
+Print directory [.\print\2017_12_25] already exist!
+Print sub directory [.\print\2017_12_25.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\picking_label] already exist!
+Print sub directory [.\print\2017_12_25.\dispatch_label] already exist!
+
+déc. 25, 2017 10:37:06 PM helper.Helper InitDailyDestPrintDir
+INFOS: File 2017_12_25.log already exists.Print directory [.\print\2017_12_25] already exist!
+Print sub directory [.\print\2017_12_25.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\picking_label] already exist!
+Print sub directory [.\print\2017_12_25.\dispatch_label] already exist!
+Print directory [.\print\2017_12_25] already exist!
+Print sub directory [.\print\2017_12_25.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\picking_label] already exist!
+Print sub directory [.\print\2017_12_25.\dispatch_label] already exist!
+Print directory [.\print\2017_12_25] already exist!
+Print sub directory [.\print\2017_12_25.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\picking_label] already exist!
+Print sub directory [.\print\2017_12_25.\dispatch_label] already exist!
+Print directory [.\print\2017_12_25] already exist!
+Print sub directory [.\print\2017_12_25.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\picking_label] already exist!
+Print sub directory [.\print\2017_12_25.\dispatch_label] already exist!
+
+déc. 25, 2017 10:37:47 PM helper.Helper InitDailyDestPrintDir
+INFOS: File 2017_12_25.log already exists.Print directory [.\print\2017_12_25] already exist!
+Print sub directory [.\print\2017_12_25.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\picking_label] already exist!
+Print sub directory [.\print\2017_12_25.\dispatch_label] already exist!
+
+déc. 25, 2017 10:37:48 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+déc. 25, 2017 10:37:49 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+déc. 25, 2017 10:37:52 PM gui.packaging.mode1.state.Mode1_S010_UserCodeScan doAction
+INFOS: Invalid matricule number or account locked !
+déc. 25, 2017 10:37:55 PM gui.packaging.mode1.gui.PACKAGING_UI0002_PasswordRequest_Mode1 connect_to_mode1
+INFOS: User EZZIOURI OUSSAMA / ezou1001 connected to host Oussama-PC at 2017-12-25 22:37:55 Project : DUCATI.
+déc. 25, 2017 10:37:55 PM gui.packaging.mode1.gui.PACKAGING_UI0002_PasswordRequest_Mode1 loadDotMatrixCodePatterns
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord AND cb.harness_type = :harnessType ORDER BY id ASC
+déc. 25, 2017 10:37:55 PM gui.packaging.mode1.gui.PACKAGING_UI0002_PasswordRequest_Mode1 loadPartNumberCodePatterns
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord AND cb.harness_type = :harnessType ORDER BY id ASC
+déc. 25, 2017 10:37:57 PM gui.packaging.mode1.state.Mode1_S020_PalletChoice doAction
+INFOS: Is it a new pallet ?
+déc. 25, 2017 10:37:57 PM gui.packaging.mode1.state.Mode1_S020_PalletChoice doAction
+INFOS:  [Yes]
+déc. 25, 2017 10:38:00 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [5101C861D] in ConfigUCS: DUCATI
+déc. 25, 2017 10:38:00 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [5101C861D] found for project [DUCATI].
+déc. 25, 2017 10:38:00 PM gui.packaging.mode1.state.Mode1_S021_HarnessPartScan doAction
+INFOS: Harness Part scanned [5101C861D] OK.
+déc. 25, 2017 10:38:03 PM helper.Helper InitDailyDestPrintDir
+INFOS: File 2017_12_25.log already exists.Print directory [.\print\2017_12_25] already exist!
+Print sub directory [.\print\2017_12_25.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\picking_label] already exist!
+Print sub directory [.\print\2017_12_25.\dispatch_label] already exist!
+Print directory [.\print\2017_12_25] already exist!
+Print sub directory [.\print\2017_12_25.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\picking_label] already exist!
+Print sub directory [.\print\2017_12_25.\dispatch_label] already exist!
+
+déc. 25, 2017 10:39:10 PM helper.Helper InitDailyDestPrintDir
+INFOS: File 2017_12_25.log already exists.Print directory [.\print\2017_12_25] already exist!
+Print sub directory [.\print\2017_12_25.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\picking_label] already exist!
+Print sub directory [.\print\2017_12_25.\dispatch_label] already exist!
+
+déc. 25, 2017 10:39:12 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+déc. 25, 2017 10:39:12 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+déc. 25, 2017 10:39:15 PM gui.packaging.mode1.state.Mode1_S010_UserCodeScan doAction
+INFOS: Invalid matricule number or account locked !
+déc. 25, 2017 10:39:17 PM gui.packaging.mode1.gui.PACKAGING_UI0002_PasswordRequest_Mode1 connect_to_mode1
+INFOS: User EZZIOURI OUSSAMA / ezou1001 connected to host Oussama-PC at 2017-12-25 22:39:17 Project : DUCATI.
+déc. 25, 2017 10:39:17 PM gui.packaging.mode1.gui.PACKAGING_UI0002_PasswordRequest_Mode1 loadDotMatrixCodePatterns
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord AND cb.harness_type = :harnessType ORDER BY id ASC
+déc. 25, 2017 10:39:17 PM gui.packaging.mode1.gui.PACKAGING_UI0002_PasswordRequest_Mode1 loadPartNumberCodePatterns
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord AND cb.harness_type = :harnessType ORDER BY id ASC
+déc. 25, 2017 10:39:19 PM gui.packaging.mode1.state.Mode1_S020_PalletChoice doAction
+INFOS: Is it a new pallet ?
+déc. 25, 2017 10:39:19 PM gui.packaging.mode1.state.Mode1_S020_PalletChoice doAction
+INFOS:  [Yes]
+déc. 25, 2017 10:39:23 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [5101C861D] in ConfigUCS: DUCATI
+déc. 25, 2017 10:39:23 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [5101C861D] found for project [DUCATI].
+déc. 25, 2017 10:39:23 PM gui.packaging.mode1.state.Mode1_S021_HarnessPartScan doAction
+INFOS: Harness Part scanned [5101C861D] OK.
+déc. 25, 2017 10:39:25 PM helper.Helper InitDailyDestPrintDir
+INFOS: File 2017_12_25.log already exists.Print directory [.\print\2017_12_25] already exist!
+Print sub directory [.\print\2017_12_25.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\picking_label] already exist!
+Print sub directory [.\print\2017_12_25.\dispatch_label] already exist!
+Print directory [.\print\2017_12_25] already exist!
+Print sub directory [.\print\2017_12_25.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\picking_label] already exist!
+Print sub directory [.\print\2017_12_25.\dispatch_label] already exist!
+
+déc. 25, 2017 10:41:53 PM helper.Helper InitDailyDestPrintDir
+INFOS: File 2017_12_25.log already exists.Print directory [.\print\2017_12_25] already exist!
+Print sub directory [.\print\2017_12_25.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\picking_label] already exist!
+Print sub directory [.\print\2017_12_25.\dispatch_label] already exist!
+
+déc. 25, 2017 10:41:55 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+déc. 25, 2017 10:41:55 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+déc. 25, 2017 10:41:57 PM gui.packaging.mode1.state.Mode1_S010_UserCodeScan doAction
+INFOS: Invalid matricule number or account locked !
+déc. 25, 2017 10:41:58 PM gui.packaging.mode1.gui.PACKAGING_UI0002_PasswordRequest_Mode1 connect_to_mode1
+INFOS: User EZZIOURI OUSSAMA / ezou1001 connected to host Oussama-PC at 2017-12-25 22:41:58 Project : DUCATI.
+déc. 25, 2017 10:41:58 PM gui.packaging.mode1.gui.PACKAGING_UI0002_PasswordRequest_Mode1 loadDotMatrixCodePatterns
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord AND cb.harness_type = :harnessType ORDER BY id ASC
+déc. 25, 2017 10:41:58 PM gui.packaging.mode1.gui.PACKAGING_UI0002_PasswordRequest_Mode1 loadPartNumberCodePatterns
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord AND cb.harness_type = :harnessType ORDER BY id ASC
+déc. 25, 2017 10:42:00 PM gui.packaging.mode1.state.Mode1_S020_PalletChoice doAction
+INFOS: Is it a new pallet ?
+déc. 25, 2017 10:42:00 PM gui.packaging.mode1.state.Mode1_S020_PalletChoice doAction
+INFOS:  [Yes]
+déc. 25, 2017 10:42:03 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [5101C861D] in ConfigUCS: DUCATI
+déc. 25, 2017 10:42:03 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [5101C861D] found for project [DUCATI].
+déc. 25, 2017 10:42:03 PM gui.packaging.mode1.state.Mode1_S021_HarnessPartScan doAction
+INFOS: Harness Part scanned [5101C861D] OK.
+déc. 25, 2017 10:42:05 PM helper.Helper InitDailyDestPrintDir
+INFOS: File 2017_12_25.log already exists.Print directory [.\print\2017_12_25] already exist!
+Print sub directory [.\print\2017_12_25.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\picking_label] already exist!
+Print sub directory [.\print\2017_12_25.\dispatch_label] already exist!
+Print directory [.\print\2017_12_25] already exist!
+Print sub directory [.\print\2017_12_25.\open_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\closing_sheet] already exist!
+Print sub directory [.\print\2017_12_25.\picking_label] already exist!
+Print sub directory [.\print\2017_12_25.\dispatch_label] already exist!
+
+déc. 25, 2017 10:42:06 PM helper.PrinterHelper saveAndPrintOpenSheet
+INFOS: Set Pallet [200035301] state to [IN_PROCESS]
+déc. 25, 2017 10:42:06 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2017_12_25\open_sheet\PrintOpenPallet_A5_2017_12_25_22_42_05_5101C861D_200035301.pdf] to the default printer...
+déc. 25, 2017 10:42:06 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [.\print\2017_12_25\open_sheet\PrintOpenPallet_A5_2017_12_25_22_42_05_5101C861D_200035301.pdf] has been printed.
+déc. 25, 2017 10:42:06 PM helper.PrinterHelper saveAndPrintOpenSheet
+INFOS: Set Pallet [200035301] state to [PRINTED]
+déc. 25, 2017 10:42:06 PM gui.packaging.mode1.gui.PACKAGING_UI9000_ChoosePackType_Mode1 loadConfigUcs
+INFOS: Openning new container for first harness part [5101C861D].
+déc. 25, 2017 10:42:37 PM gui.packaging.mode1.state.Mode1_S041_NewPalletScan doAction
+AVERTISSEMENT: Incorrect pallet number [200035301]
+déc. 25, 2017 10:42:43 PM gui.packaging.mode1.state.Mode1_S041_NewPalletScan doAction
+AVERTISSEMENT: Incorrect pallet number [200035301]

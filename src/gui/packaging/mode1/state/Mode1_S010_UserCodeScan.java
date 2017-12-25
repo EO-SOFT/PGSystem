@@ -5,6 +5,7 @@
  */
 package gui.packaging.mode1.state;
 
+import gui.packaging.Mode1_Context;
 import helper.Helper;
 import helper.HQLHelper;
 import entity.ManufactureUsers;

@@ -5,6 +5,7 @@
  */
 package gui.packaging.mode1.state;
 
+import gui.packaging.Mode1_Context;
 import helper.Helper;
 import entity.BaseHarnessAdditionalBarecode;
 import entity.ConfigBarcode;
@@ -39,7 +40,7 @@ public class Mode1_S031_PlasticBagScan implements Mode1_State {
         //this.loadPlasticBagPattern();
 
         if (this.numberOfPatterns != 0 && this.patternIndex == 0) {
-            Helper.Packaging_Gui_Mode1.setRequestedPallet_txt(String.format("Scanner code à barre N° %d / %d. %s ", this.patternIndex + 1, this.numberOfPatterns, patternList[this.patternIndex][1]));
+            Helper.Packaging_Gui_Mode1.setAssistanceTextarea(String.format("Scanner code à barre N° %d / %d. %s ", this.patternIndex + 1, this.numberOfPatterns, patternList[this.patternIndex][1]));
         }
 
     }
@@ -70,10 +71,10 @@ public class Mode1_S031_PlasticBagScan implements Mode1_State {
                 Helper.mode2_context.getBaseHarnessAdditionalBarecodeTmp().setLabelCode(this.patternIndex, engineLabel);
                 Helper.log.info("First Valid Engine Label scanned [" + engineLabel + "] OK.");
                 this.patternIndex++;
-                Helper.Packaging_Gui_Mode1.setRequestedPallet_txt(String.format("Scanner le code à barre sachet N° %d / %d. %s ", this.patternIndex + 1, this.numberOfPatterns, Helper.PLASTICBAG_BARCODE_PATTERN_LIST[this.patternIndex][1]));
+                Helper.Packaging_Gui_Mode1.setAssistanceTextarea(String.format("Scanner le code à barre sachet N° %d / %d. %s ", this.patternIndex + 1, this.numberOfPatterns, Helper.PLASTICBAG_BARCODE_PATTERN_LIST[this.patternIndex][1]));
             } else { // Touts les patternes se sont scannés
                 Helper.mode2_context.getBaseHarnessAdditionalBarecodeTmp().setLabelCode(this.patternIndex, engineLabel);
-                Helper.Packaging_Gui_Mode1.setRequestedPallet_txt("");
+                Helper.Packaging_Gui_Mode1.setAssistanceTextarea("");
                 this.clearScanBox(scan_txtbox);
                 Mode1_S020_PalletChoice state = new Mode1_S020_PalletChoice();
                 context.setState(state);

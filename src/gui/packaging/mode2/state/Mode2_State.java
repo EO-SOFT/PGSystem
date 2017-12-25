@@ -6,6 +6,7 @@
 
 package gui.packaging.mode2.state;
 
+import gui.packaging.Mode2_Context;
 import javax.swing.ImageIcon;
 import javax.swing.JTextField;
 

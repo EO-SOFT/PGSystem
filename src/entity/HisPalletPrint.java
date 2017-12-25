@@ -49,10 +49,10 @@ public class HisPalletPrint extends DAO implements java.io.Serializable {
 
     @Column(name = "pack_size")
     private int packSize;
-    
+
     @Column(name = "pack_type")
     private String packType;
-    
+
     @Column(name = "print_state")
     private String printState;
 
@@ -60,8 +60,8 @@ public class HisPalletPrint extends DAO implements java.io.Serializable {
     private String reprint;
 
     @Column(name = "m_user")
-    private String user;
-    
+    private String userName;
+
     @Column(name = "supplier_part_number")
     private String supplier_part_number;
 
@@ -73,28 +73,28 @@ public class HisPalletPrint extends DAO implements java.io.Serializable {
         return "HisPalletPrint{" + "id=" + id + ", createTime=" + createTime + ", writeTime=" + writeTime + ", createId=" + createId + ", writeId=" + writeId + ", harnessPart=" + harnessPart + ", harnessIndex=" + harnessIndex + ", packSize=" + packSize + ", state=" + printState + '}';
     }
 
-    public HisPalletPrint(String harnessPart, String harnessIndex, String supplier_part_number, int packSize,
-            String packType, String user, String reprint, String printState) {
+    public HisPalletPrint(ManufactureUsers user, String harnessPart, String harnessIndex, String supplier_part_number, int packSize,
+            String packType, String userName, String reprint, String printState) {
         this.createTime = this.writeTime = Helper.getTimeStamp(null);
-        this.createId = this.writeId = Helper.mode2_context.getUser().getId();
+        this.createId = this.writeId = user.getId();
         this.harnessPart = harnessPart;
         this.harnessIndex = harnessIndex;
         this.supplier_part_number = supplier_part_number;
         this.packSize = packSize;
         this.packType = packType;
         this.printState = printState;
-        this.user = user;
+        this.userName = userName;
         this.reprint = reprint;
     }
 
     public HisPalletPrint(Date createTime, Date writeTime, int createId,
             int writeId, String user, String reprint, String harnessPart,
-            String harnessIndex, String supplier_part_number, int packSize,String packType, String printState) {
+            String harnessIndex, String supplier_part_number, int packSize, String packType, String printState) {
         this.createTime = createTime;
         this.writeTime = writeTime;
         this.createId = createId;
         this.writeId = writeId;
-        this.user = user;
+        this.userName = user;
         this.harnessPart = harnessPart;
         this.harnessIndex = harnessIndex;
         this.supplier_part_number = supplier_part_number;
@@ -174,7 +174,7 @@ public class HisPalletPrint extends DAO implements java.io.Serializable {
 
     public void setPackType(String packType) {
         this.packType = packType;
-    }        
+    }
 
     public String getPrintState() {
         return this.printState;
@@ -192,12 +192,12 @@ public class HisPalletPrint extends DAO implements java.io.Serializable {
         this.reprint = reprint;
     }
 
-    public String getUser() {
-        return user;
+    public String getUserName() {
+        return userName;
     }
 
-    public void setUser(String user) {
-        this.user = user;
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
     public String getSupplier_part_number() {
@@ -206,7 +206,7 @@ public class HisPalletPrint extends DAO implements java.io.Serializable {
 
     public void setSupplier_part_number(String supplier_part_number) {
         this.supplier_part_number = supplier_part_number;
-    }        
+    }
 
     public String getCreateTimeString(String format) {
         if (format == null) {
@@ -215,7 +215,7 @@ public class HisPalletPrint extends DAO implements java.io.Serializable {
         DateFormat df = new SimpleDateFormat(format);
         return (df.format(this.createTime));
     }
-    
+
     public String getWriteTimeString(String format) {
         if (format == null) {
             format = "yyyy-MM-dd HH:mm:ss";
@@ -232,7 +232,7 @@ public class HisPalletPrint extends DAO implements java.io.Serializable {
                 .executeUpdate();
         Helper.sess.getTransaction().commit();
     }
-    
+
     public void setPalletReprint(String state, int id, int writeId) {
         Helper.sess.beginTransaction();
         Helper.sess.createQuery(HQLHelper.SET_OPEN_SHEET_REPRINT)

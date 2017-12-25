@@ -548,7 +548,6 @@ public class Main extends javax.swing.JFrame implements ActionListener,
         java.awt.EventQueue.invokeLater(new Runnable() {
             @Override
             public void run() {
-
                 Main ui = new Main();
                 ui.setVisible(true);
                 //Helper.loadConfigProperties();

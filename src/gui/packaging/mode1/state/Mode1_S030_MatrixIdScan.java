@@ -5,6 +5,7 @@
  */
 package gui.packaging.mode1.state;
 
+import gui.packaging.Mode1_Context;
 import helper.Helper;
 import entity.BaseHarness;
 import entity.ConfigBarcode;

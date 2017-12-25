@@ -5,6 +5,7 @@
  */
 package gui.packaging.mode2.state;
 
+import gui.packaging.Mode2_Context;
 import helper.Helper;
 import entity.BaseHarness;
 import entity.ConfigUcs;

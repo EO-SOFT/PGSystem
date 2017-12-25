@@ -50,6 +50,8 @@ import javax.swing.table.DefaultTableModel;
 import org.hibernate.Query;
 import scanner.GUI;
 import gui.packaging.mode1.state.Mode1_S010_UserCodeScan;
+import java.awt.TextArea;
+import javax.swing.JTextArea;
 
 /**
  *
@@ -321,6 +323,8 @@ public final class PACKAGING_UI0001_Main_Mode1 extends javax.swing.JFrame {
         harnessTypeFilterBox = new javax.swing.JComboBox();
         harnessTypeBox = new javax.swing.JComboBox();
         scan_txtbox = new javax.swing.JTextField();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        assistanceTextarea = new javax.swing.JTextArea();
         panel_bottom = new javax.swing.JPanel();
         menu_bar = new javax.swing.JMenuBar();
         menu01_report = new javax.swing.JMenu();
@@ -362,9 +366,10 @@ public final class PACKAGING_UI0001_Main_Mode1 extends javax.swing.JFrame {
         panel_top.setPreferredSize(new java.awt.Dimension(1364, 780));
         panel_top.setRequestFocusEnabled(false);
 
-        img_lbl.setBackground(new java.awt.Color(255, 255, 255));
+        img_lbl.setBackground(new java.awt.Color(204, 204, 255));
         img_lbl.setForeground(new java.awt.Color(255, 255, 255));
         img_lbl.setText(" ");
+        img_lbl.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
         container_table.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -419,7 +424,7 @@ public final class PACKAGING_UI0001_Main_Mode1 extends javax.swing.JFrame {
         });
 
         scan_txtbox.setBackground(new java.awt.Color(204, 204, 255));
-        scan_txtbox.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        scan_txtbox.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         scan_txtbox.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         scan_txtbox.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
@@ -427,31 +432,41 @@ public final class PACKAGING_UI0001_Main_Mode1 extends javax.swing.JFrame {
             }
         });
 
+        assistanceTextarea.setColumns(20);
+        assistanceTextarea.setRows(5);
+        jScrollPane2.setViewportView(assistanceTextarea);
+
         javax.swing.GroupLayout panel_topLayout = new javax.swing.GroupLayout(panel_top);
         panel_top.setLayout(panel_topLayout);
         panel_topLayout.setHorizontalGroup(
             panel_topLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(connectedUserName_label, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(panel_topLayout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(filler1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(1304, 1304, 1304)
-                .addComponent(filler2, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(10, Short.MAX_VALUE))
             .addGroup(panel_topLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(panel_topLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(requestedPallet_label, javax.swing.GroupLayout.PREFERRED_SIZE, 1345, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(img_lbl, javax.swing.GroupLayout.PREFERRED_SIZE, 1244, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 1256, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(panel_topLayout.createSequentialGroup()
-                        .addComponent(harnessTypeFilterBox, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(refresh, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(img_lbl, javax.swing.GroupLayout.PREFERRED_SIZE, 800, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(harnessTypeBox, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(scan_txtbox, javax.swing.GroupLayout.PREFERRED_SIZE, 799, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 376, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(panel_topLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, panel_topLayout.createSequentialGroup()
+                            .addComponent(harnessTypeFilterBox, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(refresh, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                            .addComponent(harnessTypeBox, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                            .addComponent(scan_txtbox, javax.swing.GroupLayout.PREFERRED_SIZE, 799, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(panel_topLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addGroup(panel_topLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(connectedUserName_label, javax.swing.GroupLayout.PREFERRED_SIZE, 1196, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(panel_topLayout.createSequentialGroup()
+                        .addComponent(filler1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(1304, 1304, 1304)
+                        .addComponent(filler2, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         panel_topLayout.setVerticalGroup(
@@ -459,8 +474,10 @@ public final class PACKAGING_UI0001_Main_Mode1 extends javax.swing.JFrame {
             .addGroup(panel_topLayout.createSequentialGroup()
                 .addComponent(connectedUserName_label, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(img_lbl, javax.swing.GroupLayout.PREFERRED_SIZE, 381, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(1, 1, 1)
+                .addGroup(panel_topLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 376, Short.MAX_VALUE)
+                    .addComponent(img_lbl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(6, 6, 6)
                 .addComponent(requestedPallet_label, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(panel_topLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -726,7 +743,7 @@ public final class PACKAGING_UI0001_Main_Mode1 extends javax.swing.JFrame {
         //Reset Image
         Helper.Packaging_Gui_Mode1.img_lbl.setIcon(state.getImg());
         //Clear Scan Box
-        Helper.Packaging_Gui_Mode1.requestedPallet_label.setText("");
+        Helper.Packaging_Gui_Mode1.assistanceTextarea.setText("");
         //Enable Project Box
         Helper.Packaging_Gui_Mode1.HarnessTypeBoxSelectIndex(0);
         Helper.Packaging_Gui_Mode1.setHarnessTypeBoxState(true);
@@ -905,20 +922,21 @@ public final class PACKAGING_UI0001_Main_Mode1 extends javax.swing.JFrame {
         this.scan_txtbox = setScanTxt;
     }
 
-    public JLabel getRequestedPallet_label() {
-        return requestedPallet_label;
+    public JTextArea getAssistanceTextarea() {
+        return assistanceTextarea;
     }
 
-    public void setRequestedPallet_label(JLabel requestedPallet_label) {
-        this.requestedPallet_label = requestedPallet_label;
+    public void setAssistanceTextarea(JTextArea assistanceTextarea) {
+        this.assistanceTextarea = assistanceTextarea;
     }
 
-    public void setRequestedPallet_txt(String text) {
-        this.requestedPallet_label.setText(text);
+    public void setAssistanceTextarea(String text) {
+        this.assistanceTextarea.setText(text);
     }
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTextArea assistanceTextarea;
     private javax.swing.JLabel connectedUserName_label;
     private javax.swing.JTable container_table;
     private javax.swing.Box.Filler filler1;
@@ -932,6 +950,7 @@ public final class PACKAGING_UI0001_Main_Mode1 extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JMenuItem menu010_pallet_details;
     private javax.swing.JMenuItem menu011_prod_statistics;
     private javax.swing.JMenuItem menu012_deleted_harness;

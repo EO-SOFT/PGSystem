@@ -5,6 +5,7 @@
  */
 package gui.packaging.mode2.state;
 
+import gui.packaging.Mode2_Context;
 import helper.Helper;
 import helper.PrinterHelper;
 import entity.BaseContainer;
@@ -170,7 +171,7 @@ public class Mode2_S031_PalletChoice implements Mode2_State {
 
                     context.getBaseContainerTmp().setPalletNumber(bc.getPalletNumber());
                     //Set requested closing pallet number in the main gui
-                    Helper.Packaging_Gui_Mode2.setRequestedPallet_txt(
+                    Helper.Packaging_Gui_Mode2.setAssistanceTextarea(
                             "N° "
                             + Helper.CLOSING_PALLET_PREFIX + bc.getPalletNumber());
                     context.setState(new Mode2_S040_ClosingPallet());
