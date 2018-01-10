@@ -1,6 +1,7 @@
 package entity;
 // Generated 6 f�vr. 2016 21:43:55 by Hibernate Tools 3.6.0
 
+import __run__.Global;
 import helper.Helper;
 import helper.HQLHelper;
 import hibernate.DAO;
@@ -21,6 +22,7 @@ import javax.persistence.OneToMany;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
+import javax.persistence.Transient;
 import javax.swing.JOptionPane;
 import org.hibernate.Query;
 
@@ -42,11 +44,11 @@ public class BaseContainer extends DAO implements java.io.Serializable {
     @Temporal(javax.persistence.TemporalType.TIMESTAMP)
     @Column(name = "write_time")
     private Date fifoTime;
-    
+
     @Temporal(javax.persistence.TemporalType.TIMESTAMP)
     @Column(name = "stored_time")
     private Date storedTime;
-    
+
     @Temporal(javax.persistence.TemporalType.TIMESTAMP)
     @Column(name = "shipped_time")
     private Date shippedTime;
@@ -107,7 +109,6 @@ public class BaseContainer extends DAO implements java.io.Serializable {
     @Column(name = "std_time", nullable = false, columnDefinition = "float default 0.00")
     private Double stdTime;
 
-    
     //@Column(name = "price", nullable = false, columnDefinition = "float default 0.00")
     private Double price;
 
@@ -122,8 +123,8 @@ public class BaseContainer extends DAO implements java.io.Serializable {
     private String order_no;
 
     /**
-     * Packaging for special orders, used to prInteger a specific packaging label 1
-     * = Specific order 0 = Standard order
+     * Packaging for special orders, used to prInteger a specific packaging
+     * label 1 = Specific order 0 = Standard order
      */
     @Column(name = "special_order", nullable = true)
     private Integer special_order;
@@ -169,7 +170,7 @@ public class BaseContainer extends DAO implements java.io.Serializable {
      */
     @Column(name = "dispatch_label_no", nullable = true)
     private String dispatchLabelNo;
-    
+
     /**
      * The final destination
      */
@@ -178,6 +179,13 @@ public class BaseContainer extends DAO implements java.io.Serializable {
 
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "container", cascade = CascadeType.ALL)
     private Set<BaseHarness> harnessList = new HashSet<BaseHarness>(0);
+    
+    ////Tompon columns
+    @Transient
+    private transient String _harnessCounter;
+    
+    @Transient
+    private transient String _choosenPackType;
 
     public BaseContainer() {
     }
@@ -188,20 +196,21 @@ public class BaseContainer extends DAO implements java.io.Serializable {
          from the global mode2_context values
          */
         this.startTime = this.createTime = this.fifoTime = Helper.getTimeStamp(null);
-        this.createId = Helper.mode2_context.getUser().getId();
-        this.writeId = Helper.mode2_context.getUser().getId();
-        this.user = Helper.mode2_context.getUser().getLogin();
-        this.createUser = Helper.mode2_context.getUser().getFirstName() + " " + Helper.mode2_context.getUser().getLastName();
+        this.createId = Helper.context.getUser().getId();
+        this.writeId = Helper.context.getUser().getId();
+        this.user = Helper.context.getUser().getLogin();
+        this.createUser = Helper.context.getUser().getFirstName() + " " + Helper.context.getUser().getLastName();
         return this;
     }
 
-    public BaseContainer(String palletNumber, String harnessPart, String harnessIndex, String supplierPartNumber,
-            Integer qtyExpected, Integer qtyRead, String state, String state_code, String packType, String harnessType, Double stdTime,
-            Double price) {
-        this.startTime = this.createTime = this.fifoTime = Helper.getTimeStamp(null);
-        this.createId = this.writeId = Helper.mode2_context.getUser().getId();
-        this.user = Helper.mode2_context.getUser().getLogin();
-        this.createUser = Helper.mode2_context.getUser().getFirstName() + " " + Helper.mode2_context.getUser().getLastName();
+    public BaseContainer(String palletNumber, String harnessPart, String harnessIndex, 
+            String supplierPartNumber, Integer qtyExpected, Integer qtyRead, 
+            String state, String state_code, String packType, String harnessType, 
+            Double stdTime, Double price, Integer special_order, String segment,
+            String workplace, Integer ucsLifes, String comment, String orderNo,
+            String packWorkstation, Integer ucsId) {        
+
+        setDefautlVals();
         this.palletNumber = palletNumber;
         this.harnessPart = harnessPart;
         this.harnessIndex = harnessIndex;
@@ -214,19 +223,28 @@ public class BaseContainer extends DAO implements java.io.Serializable {
         this.harnessType = harnessType;
         this.stdTime = stdTime;
         this.price = price;
+        this.special_order = special_order;
+        this.segment = segment;
+        this.workplace = workplace;
+        this.ucsLifes = ucsLifes;
+        this.comment = comment;
+        this.order_no = orderNo;
+        this.packWorkstation = packWorkstation;
+        this.ucsId = ucsId;
+        
     }
 
-    public BaseContainer(Date createTime, Date writeTime, Integer createId, 
-            Integer writeId, String user, Date startTime, String palletNumber, 
-            String harnessPart, String harnessIndex, String supplierPartNumber, 
-            Integer qtyExpected, Integer qtyRead, String packType, String harnessType, 
+    public BaseContainer(Date createTime, Date writeTime, Integer createId,
+            Integer writeId, String user, Date startTime, String palletNumber,
+            String harnessPart, String harnessIndex, String supplierPartNumber,
+            Integer qtyExpected, Integer qtyRead, String packType, String harnessType,
             Double stdTime, Double price) {
         this.startTime = this.createTime = Helper.getTimeStamp(null);
         this.fifoTime = Helper.getTimeStamp(null);
-        this.createId = Helper.mode2_context.getUser().getId();
-        this.writeId = Helper.mode2_context.getUser().getId();
-        this.user = Helper.mode2_context.getUser().getFirstName() + " " + Helper.mode2_context.getUser().getLastName() + " / " + Helper.mode2_context.getUser().getLogin();
-        this.createUser = Helper.mode2_context.getUser().getFirstName() + " " + Helper.mode2_context.getUser().getLastName();
+        this.createId = Helper.context.getUser().getId();
+        this.writeId = Helper.context.getUser().getId();
+        this.user = Helper.context.getUser().getFirstName() + " " + Helper.context.getUser().getLastName() + " / " + Helper.context.getUser().getLogin();
+        this.createUser = Helper.context.getUser().getFirstName() + " " + Helper.context.getUser().getLastName();
         this.palletNumber = palletNumber;
         this.harnessPart = harnessPart;
         this.harnessIndex = harnessIndex;
@@ -239,11 +257,11 @@ public class BaseContainer extends DAO implements java.io.Serializable {
         this.price = price;
     }
 
-    public BaseContainer(Date createTime, Date writeTime, Integer createId, 
-            Integer writeId, String user, String createUser, Date startTime, 
-            Date closedTime, Float workTime, String palletNumber, 
-            String harnessPart, String harnessIndex, String supplierPartNumber, 
-            Integer qtyExpected, Integer qtyRead, String state, String state_code, 
+    public BaseContainer(Date createTime, Date writeTime, Integer createId,
+            Integer writeId, String user, String createUser, Date startTime,
+            Date closedTime, Float workTime, String palletNumber,
+            String harnessPart, String harnessIndex, String supplierPartNumber,
+            Integer qtyExpected, Integer qtyRead, String state, String state_code,
             String packType, String harnessType, Double stdTime, Double price) {
         this.createTime = createTime;
         this.fifoTime = writeTime;
@@ -281,7 +299,11 @@ public class BaseContainer extends DAO implements java.io.Serializable {
     }
 
     public Double getPrice() {
-        if (price == null) return 0.00; else return price;
+        if (price == null) {
+            return 0.00;
+        } else {
+            return price;
+        }
     }
 
     public void setPrice(Double price) {
@@ -295,8 +317,6 @@ public class BaseContainer extends DAO implements java.io.Serializable {
     public void setDestination(String destination) {
         this.destination = destination;
     }
-    
-    
 
     @SuppressWarnings("UnusedAssignment")
     public String getCreateTimeString(String format) {
@@ -366,7 +386,7 @@ public class BaseContainer extends DAO implements java.io.Serializable {
     public void setClosedTime(Date closedTime) {
         this.closedTime = closedTime;
     }
-    
+
     public Date getStoredTime() {
         return storedTime;
     }
@@ -374,7 +394,7 @@ public class BaseContainer extends DAO implements java.io.Serializable {
     public void setStoredTime(Date storedTime) {
         this.storedTime = storedTime;
     }
-    
+
     public Date getShippedTime() {
         return shippedTime;
     }
@@ -382,8 +402,6 @@ public class BaseContainer extends DAO implements java.io.Serializable {
     public void setShippedTime(Date shippedTime) {
         this.shippedTime = shippedTime;
     }
-    
-    
 
     public Float getWorkTime() {
         return this.workTime;
@@ -482,14 +500,15 @@ public class BaseContainer extends DAO implements java.io.Serializable {
     }
 
     public double getStdTime() {
-        if(stdTime == null) return 0.0; return stdTime;
+        if (stdTime == null) {
+            return 0.0;
+        }
+        return stdTime;
     }
 
     public void setStdTime(Double stdTime) {
         this.stdTime = stdTime;
     }
-
-    
 
     public void setPrice(double price) {
         this.price = price;
@@ -503,6 +522,22 @@ public class BaseContainer extends DAO implements java.io.Serializable {
         this.packWorkstation = packWorkstation;
     }
 
+    public String getHarnessCounter() {
+        return _harnessCounter;
+    }
+
+    public void setHarnessCounter(String _harnessCounter) {
+        this._harnessCounter = _harnessCounter;
+    }
+
+    public String getChoosenPackType() {
+        return _choosenPackType;
+    }
+
+    public void setChoosenPackType(String _choosenPackType) {
+        this._choosenPackType = _choosenPackType;
+    }
+        
     /*
      public String getAssyWorkstation() {
      return assyWorkstation;
@@ -579,24 +614,24 @@ public class BaseContainer extends DAO implements java.io.Serializable {
     public void update(Object obj) {
         String feedback = "-";
         BaseContainer bc = (BaseContainer) obj;
-        if (!bc.getContainerState().equals(Helper.PALLET_OPEN)) {
+        if (!bc.getContainerState().equals(Global.PALLET_OPEN)) {
             //##############################################################    
-            if (bc.getContainerState().equals(Helper.PALLET_WAITING)) {
+            if (bc.getContainerState().equals(Global.PALLET_WAITING)) {
                 feedback = "Pallet waiting to be closed.";
                 super.update(obj);
-            } else if (bc.getContainerState().equals(Helper.PALLET_CLOSED)) {
+            } else if (bc.getContainerState().equals(Global.PALLET_CLOSED)) {
                 feedback = "Pallet successfully closed.";
                 super.update(obj);
-            } else if (bc.getContainerState().equals(Helper.PALLET_QUARANTAINE)) {
+            } else if (bc.getContainerState().equals(Global.PALLET_QUARANTAINE)) {
                 feedback = "Set quarantaine with comment : " + Helper.mode2_context.getFeedback();
                 super.update(obj);
-            } else if (bc.getContainerState().equals(Helper.PALLET_STORED)) {
+            } else if (bc.getContainerState().equals(Global.PALLET_STORED)) {
                 feedback = "Pallet successfully stored.";
                 super.update(obj);
-            } else if (bc.getContainerState().equals(Helper.PALLET_SHIPPED)) {
+            } else if (bc.getContainerState().equals(Global.PALLET_SHIPPED)) {
                 feedback = "Pallet successfully expedited.";
                 super.update(obj);
-            } else if (bc.getContainerState().equals(Helper.PALLET_DROPPED)) {
+            } else if (bc.getContainerState().equals(Global.PALLET_DROPPED)) {
                 feedback = "Pallet dropped with comment : " + Helper.mode2_context.getFeedback();
                 super.update(obj);
             }
@@ -637,7 +672,7 @@ public class BaseContainer extends DAO implements java.io.Serializable {
     public List select() {
         Helper.startSession();
         Query query = Helper.sess.createQuery(HQLHelper.GET_CONTAINER_BY_STATE);
-        query.setParameter("state", Helper.PALLET_OPEN);
+        query.setParameter("state", Global.PALLET_OPEN);
         Helper.log.info(query.getQueryString());
         Helper.sess.getTransaction().commit();
         return query.list();
@@ -666,7 +701,7 @@ public class BaseContainer extends DAO implements java.io.Serializable {
 
     @Override
     public String toString() {
-        return "BaseContainer{" + "id=" + id + ", createTime=" + createTime + ", writeTime=" + fifoTime + ", createId=" + createId + ", writeId=" + writeId + ", user=" + user + ", createUser=" + createUser + ", startTime=" + startTime + ", closedTime=" + closedTime + ", workTime=" + workTime + ", palletNumber=" + palletNumber + ", harnessPart=" + harnessPart + ", harnessIndex=" + harnessIndex + ", supplierPartNumber=" + supplierPartNumber + ", qtyExpected=" + qtyExpected + ", qtyRead=" + qtyRead + ", containerState=" + containerState + ", containerStateCode=" + containerStateCode + ", packType=" + packType + ", harnessType=" + harnessType + ", stdTime=" + stdTime + ", workstation=" + packWorkstation + ", harnessList=" + harnessList + '}';
+        return "BaseContainer{" + "id=" + id + ", fifoTime=" + fifoTime + ", storedTime=" + storedTime + ", palletNumber=" + palletNumber + ", harnessPart=" + harnessPart + ", supplierPartNumber=" + supplierPartNumber + ", qtyExpected=" + qtyExpected + ", qtyRead=" + qtyRead + ", containerState=" + containerState + ", containerStateCode=" + containerStateCode + ", packType=" + packType + ", harnessType=" + harnessType + ", ucsLifes=" + ucsLifes + ", ucsId=" + ucsId + ", dispatchLabelNo=" + dispatchLabelNo + ", destination=" + destination + ", harnessList=" + harnessList + ", harnessCounter=" + _harnessCounter + ", choosen_pack_type=" + _choosenPackType + '}';
     }
 
     public Boolean checkContainerByState(String palletNumber, String state) {
@@ -685,7 +720,7 @@ public class BaseContainer extends DAO implements java.io.Serializable {
     public static Boolean isHarnessPartExist(String hp) {
         //Tester si le harness part exist dans la base UCS        
 
-        String[] part = hp.split(Helper.HARN_PART_PREFIX);
+        String[] part = hp.split(Global.HARN_PART_PREFIX);
 
         Helper.log.info(String.format("Searching Harness part [%s] in ConfigUCS.", part[1]));
         List resultList = new ConfigUcs().select(part[1]);
@@ -698,7 +733,5 @@ public class BaseContainer extends DAO implements java.io.Serializable {
             return false;
         }
     }
-
-    
 
 }

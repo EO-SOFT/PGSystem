@@ -1,6 +1,7 @@
 package entity;
 // Generated 6 f�vr. 2016 21:43:55 by Hibernate Tools 3.6.0
 
+import __run__.Global;
 import helper.Helper;
 import org.hibernate.Query;
 import helper.HQLHelper;
@@ -63,8 +64,8 @@ public class BaseHarnessAdditionalBarecode extends DAO implements java.io.Serial
          */
         this.createTime = Helper.getTimeStamp(null);
         this.writeTime = Helper.getTimeStamp(null);
-        this.createId = Helper.mode2_context.getUser().getId();
-        this.writeId = Helper.mode2_context.getUser().getId();
+        this.createId = Helper.context.getUser().getId();
+        this.writeId = Helper.context.getUser().getId();
 
         return this;
     }
@@ -192,7 +193,7 @@ public class BaseHarnessAdditionalBarecode extends DAO implements java.io.Serial
     public boolean checkLabelFormat(String plasticBagBarcode) {
         //Tester le format du plastic barcode
         boolean flag = false;
-        for (String[] pattern : Helper.PLASTICBAG_BARCODE_PATTERN_LIST) {
+        for (String[] pattern : Global.PLASTICBAG_BARCODE_PATTERN_LIST) {
             if (plasticBagBarcode.matches(pattern[0].trim())) {
                 flag = true;
                 break;

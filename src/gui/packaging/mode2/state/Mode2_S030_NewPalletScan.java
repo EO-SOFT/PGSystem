@@ -5,6 +5,7 @@
  */
 package gui.packaging.mode2.state;
 
+import __run__.Global;
 import gui.packaging.Mode2_Context;
 import helper.Helper;
 import helper.PrinterHelper;
@@ -24,7 +25,7 @@ import javax.swing.JTextField;
  */
 public class Mode2_S030_NewPalletScan implements Mode2_State {
 
-    private ImageIcon imgIcon = new ImageIcon(Helper.PROP.getProperty("IMG_PATH") + "S041_NewPaletScan.jpg");
+    private ImageIcon imgIcon = new ImageIcon(Global.APP_PROP.getProperty("IMG_PATH") + "S041_NewPaletScan.jpg");
 
     public Mode2_S030_NewPalletScan() {
 
@@ -61,9 +62,9 @@ public class Mode2_S030_NewPalletScan implements Mode2_State {
             bc.setQtyRead(1);
             bc.setHarnessType(context.getBaseContainerTmp().getHarnessType());
             bc.setStdTime(context.getBaseContainerTmp().getStdTime());
-            bc.setContainerState(Helper.PALLET_OPEN);
-            bc.setContainerStateCode(Helper.PALLET_OPEN_CODE);
-            bc.setPackWorkstation(Helper.HOSTNAME);
+            bc.setContainerState(Global.PALLET_OPEN);
+            bc.setContainerStateCode(Global.PALLET_OPEN_CODE);
+            bc.setPackWorkstation(Global.APP_HOSTNAME);
             //bc.setAssyWorkstation(mode2_context.getBaseContainerTmp().getAssyWorkstation());
             bc.setSegment(context.getBaseContainerTmp().getSegment());
             bc.setWorkplace(context.getBaseContainerTmp().getWorkplace());
@@ -84,7 +85,7 @@ public class Mode2_S030_NewPalletScan implements Mode2_State {
             bh.setPalletNumber(context.getBaseContainerTmp().getPalletNumber());
             bh.setHarnessType(context.getBaseContainerTmp().getHarnessType());
             bh.setStdTime(context.getBaseContainerTmp().getStdTime());
-            bh.setPackWorkstation(Helper.HOSTNAME);
+            bh.setPackWorkstation(Global.APP_HOSTNAME);
             bh.setAssyWorkstation(context.getBaseContainerTmp().getAssyWorkstation());
             bh.setSegment(context.getBaseContainerTmp().getSegment());
             bh.setWorkplace(context.getBaseContainerTmp().getWorkplace());
@@ -101,7 +102,7 @@ public class Mode2_S030_NewPalletScan implements Mode2_State {
             //##############################################################
 
             //############### SET & SAVE ENGINE LABEL DATA #################       
-            //if (Helper.mode2_context.getUser().getHarnessType().equals(Helper.ENGINE)) {
+            //if (Helper.context.getUser().getHarnessType().equals(Helper.ENGINE)) {
             if(Helper.mode2_context.getBaseHarnessAdditionalBarecodeTmp().getLabelCode().length != 0)
                 for (String labelCode : Helper.mode2_context.getBaseHarnessAdditionalBarecodeTmp().getLabelCode()) {
                     BaseHarnessAdditionalBarecode bel = new BaseHarnessAdditionalBarecode();
@@ -128,14 +129,14 @@ public class Mode2_S030_NewPalletScan implements Mode2_State {
 
                 PrinterHelper.saveAndPrintClosingSheet(bc, false);
                 Helper.startSession();
-                bc.setContainerState(Helper.PALLET_WAITING);
-                bc.setContainerStateCode(Helper.PALLET_WAITING_CODE);
+                bc.setContainerState(Global.PALLET_WAITING);
+                bc.setContainerStateCode(Global.PALLET_WAITING_CODE);
                 bc.update(bc);                 
 
                 context.getBaseContainerTmp().setPalletNumber(bc.getPalletNumber());
                 Helper.Packaging_Gui_Mode2.setAssistanceTextarea(
                         "N° "
-                        + Helper.CLOSING_PALLET_PREFIX + Helper.mode2_context.getBaseContainerTmp().getPalletNumber());
+                        + Global.CLOSING_PALLET_PREFIX + Helper.mode2_context.getBaseContainerTmp().getPalletNumber());
 
                 context.setState(new Mode2_S040_ClosingPallet());
             } else {
@@ -143,7 +144,7 @@ public class Mode2_S030_NewPalletScan implements Mode2_State {
                 context.setState(new Mode2_S020_HarnessPartScan());
             }
         } else {
-            Helper.log.warning(String.format(Helper.ERR0008_INCORRECT_PALLET_NUMBER, barcode));
+            Helper.log.warning(Mode2_S030_NewPalletScan.class.getSimpleName()+String.format(Helper.ERR0008_INCORRECT_PALLET_NUMBER, barcode));
             JOptionPane.showMessageDialog(null, String.format(Helper.ERR0008_INCORRECT_PALLET_NUMBER, barcode), "ERR0008 Invalid Barcode", JOptionPane.ERROR_MESSAGE);
             clearScanBox(scan_txtbox);
             context.setState(this);

@@ -5,6 +5,7 @@
  */
 package gui.packaging.reports;
 
+import __run__.Global;
 import entity.ConfigProject;
 import helper.ComboItem;
 import helper.Helper;
@@ -102,8 +103,8 @@ public class PACKAGING_UI0016_DroppedHarness extends javax.swing.JDialog {
 
     private void initTimeSpinners() {
 
-        String startTime = Helper.PROP.getProperty("START_TIME");
-        String endTime = Helper.PROP.getProperty("END_TIME");
+        String startTime = Global.APP_PROP.getProperty("START_TIME");
+        String endTime = Global.APP_PROP.getProperty("END_TIME");
         DateFormat timeFormat = new SimpleDateFormat("HH:mm");
 
         //################# Start Time Spinner ####################
@@ -165,8 +166,8 @@ public class PACKAGING_UI0016_DroppedHarness extends javax.swing.JDialog {
             dropped_result_table_data.add(oneRow);
         }
         dropped_result_table.setModel(new DefaultTableModel(dropped_result_table_data, dropped_result_table_header));
-        dropped_result_table.setFont(new Font(String.valueOf(Helper.PROP.getProperty("JTABLE_FONT")), Font.BOLD, Integer.valueOf(Helper.PROP.getProperty("JTABLE_FONTSIZE"))));
-        dropped_result_table.setRowHeight(Integer.valueOf(Helper.PROP.getProperty("JTABLE_ROW_HEIGHT")));
+        dropped_result_table.setFont(new Font(String.valueOf(Global.APP_PROP.getProperty("JTABLE_FONT")), Font.BOLD, Integer.valueOf(Global.APP_PROP.getProperty("JTABLE_FONTSIZE"))));
+        dropped_result_table.setRowHeight(Integer.valueOf(Global.APP_PROP.getProperty("JTABLE_ROW_HEIGHT")));
 
         this.total_lbl.setText(String.valueOf(total));
     }

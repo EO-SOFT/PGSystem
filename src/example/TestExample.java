@@ -109,7 +109,7 @@ public class TestExample {
 //        bc.setQtyExpected(150);
 //        bc.setQtyRead(50);
 //        bc.setPackType("kltv-780");
-//        bc.setContainerState(Helper.PALLET_OPEN);
+//        bc.setContainerState(Global.PALLET_OPEN);
 //        bc.setContainerStateCode("100");
 //        bc.setPalletNumber("100000001");
 //        bc.setSupplierPartNumber("A22547899");
@@ -218,7 +218,7 @@ public class TestExample {
 //        hgp.setSupplierName("LEONI WIRING SYSTEMS");
 //        hgp.setSupplierPartNumber("A2225648");
 //        hgp.setClosingPallet("100000002");
-//        hgp.setPrintState(Helper.PALLET_PRINT_PRINTED);
+//        hgp.setPrintState(Global.PALLET_PRINT_PRINTED);
 //        hgp.create(hgp);
 //        
 //        
@@ -228,7 +228,7 @@ public class TestExample {
 //        hpp.setCreateTime(new Date());
 //        hpp.setWriteId(1);
 //        hpp.setWriteTime(new Date());
-//        hpp.setPrintState(Helper.PALLET_PRINT_PRINTED);
+//        hpp.setPrintState(Global.PALLET_PRINT_PRINTED);
 //        hpp.setHarnessIndex("P10");
 //        hpp.setHarnessPart("22205127");
 //        hpp.setPackSize(150);

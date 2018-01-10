@@ -5,6 +5,7 @@
  */
 package gui.packaging.reports;
 
+import __run__.Global;
 import entity.ConfigProject;
 import helper.ComboItem;
 import helper.Helper;
@@ -82,7 +83,7 @@ public class PACKAGING_UI0018_OpenContainer extends javax.swing.JDialog {
                 new MouseAdapter() {
                     public void mouseClicked(MouseEvent e) {
                         if (e.getClickCount() == 2) {                                                        
-                            if (Helper.mode2_context.getUser().getAccessLevel() == Helper.PROFIL_ADMIN) {
+                            if (Helper.context.getUser().getAccessLevel() == Global.PROFIL_ADMIN) {
                                 new PACKAGING_UI0010_PalletDetails(null, rootPaneCheckingEnabled, String.valueOf(open_result_table.getValueAt(open_result_table.getSelectedRow(), PALLET_NUMBER_COLINDEX)), true, true, true).setVisible(true);
                             } else {
                                 new PACKAGING_UI0010_PalletDetails(null, rootPaneCheckingEnabled, String.valueOf(open_result_table.getValueAt(open_result_table.getSelectedRow(), PALLET_NUMBER_COLINDEX)), false, false, false).setVisible(true);
@@ -150,8 +151,8 @@ public class PACKAGING_UI0018_OpenContainer extends javax.swing.JDialog {
             open_result_table_data.add(oneRow);
         }
         open_result_table.setModel(new DefaultTableModel(open_result_table_data, open_result_table_header));
-        open_result_table.setFont(new Font(String.valueOf(Helper.PROP.getProperty("JTABLE_FONT")), Font.BOLD, Integer.valueOf(Helper.PROP.getProperty("JTABLE_FONTSIZE"))));
-        open_result_table.setRowHeight(Integer.valueOf(Helper.PROP.getProperty("JTABLE_ROW_HEIGHT")));        
+        open_result_table.setFont(new Font(String.valueOf(Global.APP_PROP.getProperty("JTABLE_FONT")), Font.BOLD, Integer.valueOf(Global.APP_PROP.getProperty("JTABLE_FONTSIZE"))));
+        open_result_table.setRowHeight(Integer.valueOf(Global.APP_PROP.getProperty("JTABLE_ROW_HEIGHT")));        
     }
 
     
@@ -201,7 +202,7 @@ public class PACKAGING_UI0018_OpenContainer extends javax.swing.JDialog {
                         + " WHERE bc.harness_type IN (:projects) "
                         + " AND bc.container_state = '%s' ORDER BY project ASC, working_days ASC ";
 
-                query_str = String.format(query_str, Helper.PALLET_OPEN);
+                query_str = String.format(query_str, Global.PALLET_OPEN);
                 SQLQuery query = Helper.sess.createSQLQuery(query_str);                
 
                 query.addScalar("project", StandardBasicTypes.STRING)

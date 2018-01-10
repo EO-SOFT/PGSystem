@@ -5,6 +5,7 @@
  */
 package gui.warehouse_fg_reception;
 
+import __run__.Global;
 import helper.Helper;
 import helper.HQLHelper;
 import entity.BaseContainer;
@@ -768,15 +769,15 @@ public class WAREHOUSE_FG_UI0001_SCAN extends javax.swing.JFrame {
         try {
             BaseContainer bc = new BaseContainer();
 
-            if (bc.checkContainerByState(store_txt.getText().substring(Helper.CLOSING_PALLET_PREFIX.length()), Helper.PALLET_CLOSED)) {
-                this.searchForPallet(store_txt.getText().substring(Helper.CLOSING_PALLET_PREFIX.length()));
-                System.out.println("Exist and closed. set to stored ! " + store_txt.getText().substring(Helper.CLOSING_PALLET_PREFIX.length()));
+            if (bc.checkContainerByState(store_txt.getText().substring(Global.CLOSING_PALLET_PREFIX.length()), Global.PALLET_CLOSED)) {
+                this.searchForPallet(store_txt.getText().substring(Global.CLOSING_PALLET_PREFIX.length()));
+                System.out.println("Exist and closed. set to stored ! " + store_txt.getText().substring(Global.CLOSING_PALLET_PREFIX.length()));
                 Date fifoTime = new Date();
                 Helper.sess.beginTransaction();
                 Query query = Helper.sess.createQuery(HQLHelper.SET_CONTAINER_STATE_TO_STORED);
-                query.setParameter("palletNumber", store_txt.getText().substring(Helper.CLOSING_PALLET_PREFIX.length()));
-                query.setParameter("containerState", Helper.PALLET_STORED);
-                query.setParameter("containerStateCode", Helper.PALLET_STORED_CODE);
+                query.setParameter("palletNumber", store_txt.getText().substring(Global.CLOSING_PALLET_PREFIX.length()));
+                query.setParameter("containerState", Global.PALLET_STORED);
+                query.setParameter("containerStateCode", Global.PALLET_STORED_CODE);
                 query.setParameter("fifoTime", fifoTime);
                 query.setParameter("storedTime", fifoTime);
                 query.executeUpdate();
@@ -788,22 +789,22 @@ public class WAREHOUSE_FG_UI0001_SCAN extends javax.swing.JFrame {
                 System.out.println("Fifo TIme "+fifoTime);
                 this.bc.setFifoTime(fifoTime);
                 hbc = hbc.parseContainerData(this.bc, "");
-                hbc.setContainerState(Helper.PALLET_STORED);
-                hbc.setContainerStateCode(Helper.PALLET_STORED_CODE);
+                hbc.setContainerState(Global.PALLET_STORED);
+                hbc.setContainerStateCode(Global.PALLET_STORED_CODE);
                 //hbc.setFifoTime(fifoTime);
                 
                 hbc.create(hbc);
-                this.searchForPallet(store_txt.getText().substring(Helper.CLOSING_PALLET_PREFIX.length()));
+                this.searchForPallet(store_txt.getText().substring(Global.CLOSING_PALLET_PREFIX.length()));
                 showMsg("Statut palette modifié !", 1);
 
-                if ("1".equals(Helper.PROP.getProperty("BOOK_PACKAGING").toString())) {
+                if ("1".equals(Global.APP_PROP.getProperty("BOOK_PACKAGING").toString())) {
                     //Book packaging items
                     PackagingStockMovement pm = new PackagingStockMovement();
                     pm.bookMasterPack(
                             this.bc.getCreateUser(),
-                            this.bc.getPackType(), 1, "IN", Helper.PROP.getProperty("WH_PACKAGING"),
-                            Helper.PROP.getProperty("WH_FINISH_GOODS"),
-                            "Finish goods storage in " + Helper.PROP.getProperty("WH_FINISH_GOODS") + " warehouse", this.bc.getPalletNumber());
+                            this.bc.getPackType(), 1, "IN", Global.APP_PROP.getProperty("WH_PACKAGING"),
+                            Global.APP_PROP.getProperty("WH_FINISH_GOODS"),
+                            "Finish goods storage in " + Global.APP_PROP.getProperty("WH_FINISH_GOODS") + " warehouse", this.bc.getPalletNumber());
                 }
 
                 return true;
@@ -833,13 +834,13 @@ public class WAREHOUSE_FG_UI0001_SCAN extends javax.swing.JFrame {
                             WarehouseHelper.warehouse_out_context.getUser().getFirstName()
                             + " " + WarehouseHelper.warehouse_out_context.getUser().getLastName()
                             + " / " + WarehouseHelper.warehouse_out_context.getUser().getLogin(),
-                            Helper.HOSTNAME, Helper.getStrTimeStamp()));
+                            Global.APP_HOSTNAME, Helper.getStrTimeStamp()));
             his_login.setCreateId(WarehouseHelper.warehouse_out_context.getUser().getId());
             his_login.setWriteId(WarehouseHelper.warehouse_out_context.getUser().getId());
 
             String str = String.format(Helper.INFO0012_LOGOUT_SUCCESS,
                     WarehouseHelper.warehouse_out_context.getUser().getFirstName() + " " + WarehouseHelper.warehouse_out_context.getUser().getLastName()
-                    + " / " + Helper.mode2_context.getUser().getLogin(), Helper.HOSTNAME,
+                    + " / " + Helper.context.getUser().getLogin(), Global.APP_HOSTNAME,
                     Helper.getStrTimeStamp());
             his_login.setMessage(str);
 
@@ -893,7 +894,7 @@ public class WAREHOUSE_FG_UI0001_SCAN extends javax.swing.JFrame {
                 && search_txtbox.getText().matches(Helper.PALLET_NUMBER_PATTERN)) {
             this.searchForPallet(search_txtbox.getText());
         } else if (search_txtbox.getText().toUpperCase().matches(Helper.CLOSING_PALLET_PATTERN)) {
-            this.searchForPallet(search_txtbox.getText().substring(Helper.CLOSING_PALLET_PREFIX.length()));
+            this.searchForPallet(search_txtbox.getText().substring(Global.CLOSING_PALLET_PREFIX.length()));
         } else {
             showMsg("Invalid pallet number !", -1);
 
@@ -927,7 +928,7 @@ public class WAREHOUSE_FG_UI0001_SCAN extends javax.swing.JFrame {
                 this.searchForPallet(search_txtbox.getText());
             } else if (!search_txtbox.getText().toUpperCase().equals("")
                     && search_txtbox.getText().toUpperCase().matches(Helper.CLOSING_PALLET_PATTERN)) {
-                this.searchForPallet(search_txtbox.getText().substring(Helper.CLOSING_PALLET_PREFIX.length()));
+                this.searchForPallet(search_txtbox.getText().substring(Global.CLOSING_PALLET_PREFIX.length()));
             } else {
                 showMsg("Invalid pallet number !", -1);
             }

@@ -5,6 +5,7 @@
  */
 package gui.warehouse_dispatch;
 
+import __run__.Global;
 import entity.BaseContainer;
 import gui.warehouse_dispatch.state.State;
 import entity.HisLogin;
@@ -690,8 +691,8 @@ public final class WAREHOUSE_DISPATCH_UI0002_DISPATCH_SCAN extends javax.swing.J
         //Initialize default style for table container
 
         //#######################
-        load_plan_lines_table.setFont(new Font(String.valueOf(Helper.PROP.getProperty("JTABLE_FONT")), Font.BOLD, 12));
-        load_plan_lines_table.setRowHeight(Integer.valueOf(Helper.PROP.getProperty("JTABLE_ROW_HEIGHT")));
+        load_plan_lines_table.setFont(new Font(String.valueOf(Global.APP_PROP.getProperty("JTABLE_FONT")), Font.BOLD, 12));
+        load_plan_lines_table.setRowHeight(Integer.valueOf(Global.APP_PROP.getProperty("JTABLE_ROW_HEIGHT")));
         load_plan_lines_table.setDefaultRenderer(Object.class, new DefaultTableCellRenderer() {
             @Override
             public Component getTableCellRendererComponent(JTable table,
@@ -1425,13 +1426,13 @@ public final class WAREHOUSE_DISPATCH_UI0002_DISPATCH_SCAN extends javax.swing.J
                             WarehouseHelper.warehouse_out_context.getUser().getFirstName()
                             + " " + WarehouseHelper.warehouse_out_context.getUser().getLastName()
                             + " / " + WarehouseHelper.warehouse_out_context.getUser().getLogin(),
-                            Helper.HOSTNAME, Helper.getStrTimeStamp()));
+                            Global.APP_HOSTNAME, Helper.getStrTimeStamp()));
             his_login.setCreateId(WarehouseHelper.warehouse_out_context.getUser().getId());
             his_login.setWriteId(WarehouseHelper.warehouse_out_context.getUser().getId());
 
             String str = String.format(Helper.INFO0012_LOGOUT_SUCCESS,
                     WarehouseHelper.warehouse_out_context.getUser().getFirstName() + " " + WarehouseHelper.warehouse_out_context.getUser().getLastName()
-                    + " / " + Helper.mode2_context.getUser().getLogin(), Helper.HOSTNAME,
+                    + " / " + Helper.context.getUser().getLogin(), Global.APP_HOSTNAME,
                     Helper.getStrTimeStamp());
             his_login.setMessage(str);
 
@@ -1443,7 +1444,6 @@ public final class WAREHOUSE_DISPATCH_UI0002_DISPATCH_SCAN extends javax.swing.J
 
             this.clearContextSessionVals();
 
-            //Helper.mode2_context.setUser(null);
             connectedUserName_label.setText("");
         }
 
@@ -1466,7 +1466,7 @@ public final class WAREHOUSE_DISPATCH_UI0002_DISPATCH_SCAN extends javax.swing.J
 
     public void clearContextSessionVals() {
         //Pas besoin de réinitialiser le uid        
-        Helper.mode2_context.setUser(new ManufactureUsers());
+        Helper.context.setUser(new ManufactureUsers());
     }
 
     private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
@@ -1515,28 +1515,28 @@ public final class WAREHOUSE_DISPATCH_UI0002_DISPATCH_SCAN extends javax.swing.J
                 for (Object obj : result) {
                     LoadPlanLine line = (LoadPlanLine) obj;
                     BaseContainer bc = new BaseContainer().getBaseContainer(line.getPalletNumber());
-                    bc.setContainerState(Helper.PALLET_SHIPPED);
-                    bc.setContainerStateCode(Helper.PALLET_SHIPPED_CODE);
+                    bc.setContainerState(Global.PALLET_SHIPPED);
+                    bc.setContainerStateCode(Global.PALLET_SHIPPED_CODE);
                     bc.setShippedTime(new Date());
                     bc.setFifoTime(new Date());
                     bc.setDestination(line.getDestinationWh());
                     bc.update(bc);
 
-                    if (Helper.PROP.getProperty("BOOK_PACKAGING") == null || "".equals(Helper.PROP.getProperty("BOOK_PACKAGING").toString())) {
+                    if (Global.APP_PROP.getProperty("BOOK_PACKAGING") == null || "".equals(Global.APP_PROP.getProperty("BOOK_PACKAGING").toString())) {
                         JOptionPane.showMessageDialog(null, "Propriété BOOK_PACKAGING non spécifiée dans le "
                                 + "fichier des propriétées !", "Erreur propriétés", JOptionPane.ERROR_MESSAGE);
-                    } else if (Helper.PROP.getProperty("WH_FINISH_GOODS") == null || "".equals(Helper.PROP.getProperty("WH_FINISH_GOODS").toString())) {
+                    } else if (Global.APP_PROP.getProperty("WH_FINISH_GOODS") == null || "".equals(Global.APP_PROP.getProperty("WH_FINISH_GOODS").toString())) {
                         JOptionPane.showMessageDialog(null, "Propriété WH_FINISH_GOODS non spécifiée  dans le "
                                 + "fichier des propriétées !", "Erreur propriétés", JOptionPane.ERROR_MESSAGE);
-                    } else if ("1".equals(Helper.PROP.getProperty("BOOK_PACKAGING").toString())) {
+                    } else if ("1".equals(Global.APP_PROP.getProperty("BOOK_PACKAGING").toString())) {
                         //Book packaging items                    
                         PackagingStockMovement pm = new PackagingStockMovement();
                         pm.bookMasterPack(
-                                Helper.mode2_context.getUser().getFirstName() + " " + Helper.mode2_context.getUser().getLastName(),
+                                Helper.context.getUser().getFirstName() + " " + Helper.context.getUser().getLastName(),
                                 bc.getPackType(),
                                 1,
                                 "OUT",
-                                Helper.PROP.getProperty("WH_FINISH_GOODS"),
+                                Global.APP_PROP.getProperty("WH_FINISH_GOODS"),
                                 line.getDestinationWh(), //Indice 9 pour destination
                                 "End of Dispatch",
                                 plan_num_label.getText()
@@ -1544,7 +1544,7 @@ public final class WAREHOUSE_DISPATCH_UI0002_DISPATCH_SCAN extends javax.swing.J
                     }
                 }
                 //Loop on packaging supplementaire et déduire les quantitées.
-                if ("1".equals(Helper.PROP.getProperty("BOOK_PACKAGING").toString())) {
+                if ("1".equals(Global.APP_PROP.getProperty("BOOK_PACKAGING").toString())) {
                     Helper.startSession();
                     query = Helper.sess.createQuery(HQLHelper.GET_LOAD_PLAN_PACKAGING_BY_PLAN_ID);
                     query.setParameter("loadPlanId", Integer.valueOf(plan_num_label.getText()));
@@ -1560,7 +1560,7 @@ public final class WAREHOUSE_DISPATCH_UI0002_DISPATCH_SCAN extends javax.swing.J
                                         WarehouseHelper.warehouse_out_context.getUser().getFirstName() + " "
                                         + WarehouseHelper.warehouse_out_context.getUser().getLastName(),
                                         new Date(),
-                                        Helper.PROP.getProperty("WH_PACKAGING"),
+                                        Global.APP_PROP.getProperty("WH_PACKAGING"),
                                         -Float.valueOf(line.getQty()),
                                         "Packaging Supplementaire. " + line.getComment());
                         transaction.create(transaction);
@@ -1862,7 +1862,7 @@ public final class WAREHOUSE_DISPATCH_UI0002_DISPATCH_SCAN extends javax.swing.J
             }
             row3.createCell(0).setCellValue("\\{DELETE 9}");
             row3.createCell(1).setCellValue("\\{TAB 2}");
-            row3.createCell(2).setCellValue(Helper.PROP.getProperty("WH_FINISH_GOODS"));     //Warehouse
+            row3.createCell(2).setCellValue(Global.APP_PROP.getProperty("WH_FINISH_GOODS"));     //Warehouse
             row3.createCell(3).setCellValue("\\{TAB 8}");
             row3.createCell(4).setCellValue((int) 1);
             row3.createCell(5).setCellValue("ENT");

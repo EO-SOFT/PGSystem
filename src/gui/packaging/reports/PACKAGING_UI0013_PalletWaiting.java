@@ -5,6 +5,7 @@
  */
 package gui.packaging.reports;
 
+import __run__.Global;
 import helper.Helper;
 import helper.HQLHelper;
 import entity.BaseContainer;
@@ -449,22 +450,22 @@ public class PACKAGING_UI0013_PalletWaiting extends javax.swing.JDialog {
 
     private void continue_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_continue_btnActionPerformed
 
-        if (Helper.PROP.getProperty("PACKAGING_SCAN_MODE").equals("1")) {
+        if (Global.APP_PROP.getProperty("PACKAGING_SCAN_MODE").equals("1")) {
             BaseContainer bc = new BaseContainer().getBaseContainer(palletNumber_txtbox.getText());
 
             Helper.mode1_context.getBaseContainerTmp().setPalletNumber(bc.getPalletNumber());
             //Set requested closing pallet number in the main gui
-            Helper.Packaging_Gui_Mode1.setAssistanceTextarea("N° " + Helper.CLOSING_PALLET_PREFIX + bc.getPalletNumber());
+            Helper.Packaging_Gui_Mode1.setAssistanceTextarea("N° " + Global.CLOSING_PALLET_PREFIX + bc.getPalletNumber());
             //############# PASSE TO S050 STATE ###############        
             Helper.Packaging_Gui_Mode1.state = new Mode1_S050_ClosingPallet();
             this.dispose();
 
-        } else if (Helper.PROP.getProperty("PACKAGING_SCAN_MODE").equals("2")) {
+        } else if (Global.APP_PROP.getProperty("PACKAGING_SCAN_MODE").equals("2")) {
             BaseContainer bc = new BaseContainer().getBaseContainer(palletNumber_txtbox.getText());
 
             Helper.mode2_context.getBaseContainerTmp().setPalletNumber(bc.getPalletNumber());
             //Set requested closing pallet number in the main gui
-            Helper.Packaging_Gui_Mode2.setAssistanceTextarea("N° " + Helper.CLOSING_PALLET_PREFIX + bc.getPalletNumber());
+            Helper.Packaging_Gui_Mode2.setAssistanceTextarea("N° " + Global.CLOSING_PALLET_PREFIX + bc.getPalletNumber());
             //############# PASSE TO S050 STATE ###############        
             Helper.Packaging_Gui_Mode2.state = new Mode2_S040_ClosingPallet();
             this.dispose();
@@ -544,8 +545,8 @@ public class PACKAGING_UI0013_PalletWaiting extends javax.swing.JDialog {
         //Initialize default style for table container
 
         //#######################
-        container_table.setFont(new Font(String.valueOf(Helper.PROP.getProperty("JTABLE_FONT")), Font.BOLD, 14));
-        container_table.setRowHeight(Integer.valueOf(Helper.PROP.getProperty("JTABLE_ROW_HEIGHT")));
+        container_table.setFont(new Font(String.valueOf(Global.APP_PROP.getProperty("JTABLE_FONT")), Font.BOLD, 14));
+        container_table.setRowHeight(Integer.valueOf(Global.APP_PROP.getProperty("JTABLE_ROW_HEIGHT")));
         container_table.setDefaultRenderer(Object.class, new DefaultTableCellRenderer() {
             @Override
             public Component getTableCellRendererComponent(JTable table,
@@ -555,19 +556,19 @@ public class PACKAGING_UI0013_PalletWaiting extends javax.swing.JDialog {
 
                 String status = (String) table.getModel().getValueAt(row, STATE_COLINDEX);
                 //############### OPEN
-                if (Helper.PALLET_OPEN.equals(status)) {
+                if (Global.PALLET_OPEN.equals(status)) {
                     setBackground(Color.YELLOW);
                     setForeground(Color.BLACK);
                 } //############### CLOSED
-                else if (Helper.PALLET_CLOSED.equals(status)) {
+                else if (Global.PALLET_CLOSED.equals(status)) {
                     setBackground(Color.LIGHT_GRAY);
                     setForeground(Color.BLACK);
                 } //############### QUARANTAINE
-                else if (Helper.PALLET_QUARANTAINE.equals(status)) {
+                else if (Global.PALLET_QUARANTAINE.equals(status)) {
                     setBackground(Color.RED);
                     setForeground(Color.BLACK);
                 } //############### OPEN
-                else if (Helper.PALLET_WAITING.equals(status)) {
+                else if (Global.PALLET_WAITING.equals(status)) {
                     setBackground(Color.CYAN);
                     setForeground(Color.BLACK);
                 }
@@ -599,7 +600,7 @@ public class PACKAGING_UI0013_PalletWaiting extends javax.swing.JDialog {
             projects.add(Helper.SMALL);
             projects.add(Helper.ENGINE);
         }*/
-        states.add(Helper.PALLET_WAITING);
+        states.add(Global.PALLET_WAITING);
 
         query.setParameterList("states", states);
         //query.setParameterList("projects", projects);

@@ -70,8 +70,8 @@ public class HisBaseHarness extends DAO implements java.io.Serializable {
          from the global mode2_context values
          */
         this.createTime = this.writeTime = Helper.getTimeStamp(null);
-        this.createId = this.writeId = Helper.mode2_context.getUser().getId();
-        this.user = Helper.mode2_context.getUser().getLogin();
+        this.createId = this.writeId = Helper.context.getUser().getId();
+        this.user = Helper.context.getUser().getLogin();
 
         return this;
     }

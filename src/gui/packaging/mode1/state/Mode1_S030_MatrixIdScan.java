@@ -5,11 +5,15 @@
  */
 package gui.packaging.mode1.state;
 
+import __run__.Global;
+import entity.BaseContainer;
 import gui.packaging.Mode1_Context;
 import helper.Helper;
 import entity.BaseHarness;
+import entity.BaseHarnessAdditionalBarecode;
 import entity.ConfigBarcode;
 import helper.HQLHelper;
+import helper.PrinterHelper;
 import java.util.Iterator;
 import java.util.List;
 import javax.swing.ImageIcon;
@@ -24,7 +28,7 @@ import org.hibernate.Query;
  */
 public class Mode1_S030_MatrixIdScan implements Mode1_State {
 
-    private ImageIcon imgIcon = new ImageIcon(Helper.PROP.getProperty("IMG_PATH") + "S03_QRCodeScan.jpg");
+    private ImageIcon imgIcon = new ImageIcon(Global.APP_PROP.getProperty("IMG_PATH") + "S03_QRCodeScan.jpg");
 
     //Combien de patterns de scane configurer pour ce part number.
     private int numberOfPatterns = 0;
@@ -36,11 +40,12 @@ public class Mode1_S030_MatrixIdScan implements Mode1_State {
         Helper.Packaging_Gui_Mode1.reloadDataTable();
     }
 
+    @Override
     public void doAction(Mode1_Context context) {
         JTextField scan_txtbox = Helper.Packaging_Gui_Mode1.getScanTxt();
         String counter = scan_txtbox.getText().trim();
         BaseHarness bh = new BaseHarness();
-        System.out.println("Harness part demander " + context.getBaseContainerTmp().getHarnessPart());
+        System.out.println("Harness part demander " + Helper.mode1_context.getTempBC().getHarnessPart());
         //Tester le format et l'existance et si le counter concerne ce harness part
         if (!bh.checkDataMatrixFormat(counter)) {//Problème de format
             JOptionPane.showMessageDialog(null, String.format(Helper.ERR0005_HP_COUNTER_FORMAT, counter), "Counter error !", ERROR_MESSAGE);
@@ -48,7 +53,7 @@ public class Mode1_S030_MatrixIdScan implements Mode1_State {
             //Vide le scan box
             this.clearScanBox(scan_txtbox);
             //Retourner l'état actuel
-            context.setState(this);
+            Helper.mode1_context.setState(this);
         } else if (bh.isCounterExist(counter)) {//Problème de doublant            
             bh = bh.getHarnessByCounter(counter);
             JOptionPane.showMessageDialog(null, String.format(Helper.INFO0004_HP_COUNTER_FOUND, counter, bh.getPalletNumber()), "Counter error !", ERROR_MESSAGE);
@@ -56,45 +61,155 @@ public class Mode1_S030_MatrixIdScan implements Mode1_State {
             //Vide le scan box
             this.clearScanBox(scan_txtbox);
             //Retourner l'état actuel
-            context.setState(this);
+            Helper.mode1_context.setState(this);
 
             // Problème de non conformité avec le harness part courrant          
             //Format 1 without prefix : 5101C861C;05.10.2017;10:05:01 
             //Format 2 with prefix P : P5101C861C;05.10.2017;10:05:01
             //Format 3 Harness Part with prefix P but removed to be compared with QR Code without P 5101C861C;05.10.2017;10:05:01
-        } else if (!counter.startsWith(context.getBaseContainerTmp().getHarnessPart()) 
-                && !counter.startsWith(Helper.HARN_COUNTER_PREFIX + context.getBaseContainerTmp().getHarnessPart())
-                && !counter.startsWith(context.getBaseContainerTmp().getHarnessPart().substring(1)) 
-                ) {
-            JOptionPane.showMessageDialog(null, String.format(Helper.ERR0009_COUNTER_NOT_MATCH_HP, counter, context.getBaseContainerTmp().getHarnessPart()), "Counter error !", ERROR_MESSAGE);
-            System.out.println(String.format(Helper.ERR0009_COUNTER_NOT_MATCH_HP, counter, context.getBaseContainerTmp().getHarnessPart()));
+        } else if (!counter.startsWith(Helper.mode1_context.getTempBC().getHarnessPart())
+                && !counter.startsWith(Global.HARN_COUNTER_PREFIX + Helper.mode1_context.getTempBC().getHarnessPart())
+                && !counter.startsWith(Helper.mode1_context.getTempBC().getHarnessPart().substring(1))) {
+            JOptionPane.showMessageDialog(null, String.format(Helper.ERR0009_COUNTER_NOT_MATCH_HP, counter, Helper.mode1_context.getTempBC().getHarnessPart()), "Counter error !", ERROR_MESSAGE);
+            System.out.println(String.format(Helper.ERR0009_COUNTER_NOT_MATCH_HP, counter, Helper.mode1_context.getTempBC().getHarnessPart()));
             //Vide le scan box
             this.clearScanBox(scan_txtbox);
             //Retourner l'état actuel
-            context.setState(this);
+            Helper.mode1_context.setState(this);
         } else {//BINGO !! Matrix Id correct
-            Helper.mode2_context.getBaseContainerTmp().setHernessCounter(counter);
+            Helper.mode1_context.getTempBC().setHarnessCounter(counter);
             Helper.log.info("Valid Harness Counter scanned [" + counter + "] OK.");
 
             //Vide le scan box
             this.clearScanBox(scan_txtbox);
             //####################### Go to Palette Scann ###########################
-            Helper.PLASTICBAG_BARCODE_PATTERN_LIST = loadPlasticBagPattern();
-            if (Helper.PLASTICBAG_BARCODE_PATTERN_LIST.length != 0) {
-                Mode1_S031_PlasticBagScan state = new Mode1_S031_PlasticBagScan(this.numberOfPatterns, Helper.PLASTICBAG_BARCODE_PATTERN_LIST);
-                context.setState(state);
+            Global.PLASTICBAG_BARCODE_PATTERN_LIST = loadPlasticBagPattern();
+            if (Global.PLASTICBAG_BARCODE_PATTERN_LIST.length != 0) {
+                Mode1_S031_PlasticBagScan state = new Mode1_S031_PlasticBagScan(this.numberOfPatterns, Global.PLASTICBAG_BARCODE_PATTERN_LIST);
+                Helper.mode1_context.setState(state);
             } else {
-                // Pas de scanne de code à barre intermidiaire, passer
-                // directement au choix de la palette.
-                Mode1_S020_PalletChoice state = new Mode1_S020_PalletChoice();
-                context.setState(state);
+                // Pas de scanne de code à barre intermidiaire, 
+                // Ajouter la pièce à la palette.
+                //.....
+                System.out.println("Helper.mode1_context.getTempBC().getPalletNumber() " + Helper.mode1_context.getTempBC().getPalletNumber());
+                addPieceToContainer(Helper.mode1_context.getTempBC().getPalletNumber());
+
             }
         }
 
     }
 
+    public void addPieceToContainer(String palletNumber) {
+
+        //Textbox is not empty
+        if (!palletNumber.isEmpty()) {
+            BaseContainer bc = new BaseContainer().getBaseContainer(palletNumber);
+
+            if (!bc.getPackWorkstation().equals(Global.APP_HOSTNAME)) {
+                Helper.log.warning(String.format(Helper.ERR0025_WORKSTATION_PALLET, Global.APP_HOSTNAME, bc.getPackWorkstation()));
+                JOptionPane.showMessageDialog(null, String.format(Helper.ERR0025_WORKSTATION_PALLET, Global.APP_HOSTNAME, bc.getPackWorkstation()), "Invalid Workstation", JOptionPane.ERROR_MESSAGE);
+            } //# 1- If container exist 
+            //# 2- Mode1_State is Open
+            //# 3- Max Quantity not reached
+            //# 4- Container Harness Part = Mode2_Context Harness Part  
+            //# 5- Container Harness Type = Mode2_Context Harness Type
+            else if (bc != null
+                    && bc.getContainerState().equals(Global.PALLET_OPEN)
+                    && bc.getQtyRead() < bc.getQtyExpected()
+                    && (bc.getHarnessPart().equals(Helper.mode1_context.getTempBC().getHarnessPart().substring(1))
+                    || bc.getHarnessPart().equals(Helper.mode1_context.getTempBC().getHarnessPart()))
+                    && bc.getHarnessType().equals(Helper.mode1_context.getTempBC().getHarnessType())) {
+
+                Helper.log.info("Hostname check OK");
+                Helper.log.info("Pallet values ");
+                Helper.log.info(String.format("State           :   [%s]", bc.getContainerState().equals(Global.PALLET_OPEN)));
+                Helper.log.info(String.format("Qty Expected    :   [%s]", bc.getQtyExpected()));
+                Helper.log.info(String.format("Qty Read        :   [%s]", bc.getQtyRead()));
+                Helper.log.info(String.format("Std Time        :   [%s]", bc.getStdTime()));
+                Helper.log.info(String.format("Harness Part [%s] = Context Harness Part [%s]",
+                        bc.getHarnessPart(),
+                        Helper.mode1_context.getTempBC().getHarnessPart()));
+                Helper.log.info(String.format("Harness Type [%s] = Context Harness Type [%s]",
+                        bc.getHarnessType(), Helper.mode1_context.getTempBC().getHarnessType()));
+
+                Helper.sess.beginTransaction();
+                Helper.sess.persist(bc);
+                bc.setWriteId(Helper.mode1_context.getUser().getId());
+                bc.setFifoTime(Helper.getTimeStamp(null));
+                bc.setHarnessType(Helper.mode1_context.getTempBC().getHarnessType());
+
+                //#################### SET HARNESS DATA  #######################                                
+                //- Set harness data from current mode1_context.                
+                BaseHarness bh = new BaseHarness().setDefautlVals();
+                bh.setHarnessPart(Helper.mode1_context.getTempBC().getHarnessPart());
+                bh.setCounter(Helper.mode1_context.getTempBC().getHarnessCounter());
+                bh.setPalletNumber(palletNumber);
+                bh.setHarnessType(Helper.mode1_context.getTempBC().getHarnessType());
+                bh.setStdTime(bc.getStdTime());
+                bh.setPackWorkstation(Global.APP_HOSTNAME);
+                bh.setSegment(bc.getSegment());
+                bh.setWorkplace(bc.getWorkplace());
+                bh.setContainer(bc);
+                //##############################################################
+
+                //############### SET & SAVE ALL ENGINE LABELS DATA #################     
+                //Si ce part number contient des code à barre pour sachet
+                if (Helper.mode1_context.getBaseHarnessAdditionalBarecodeTmp().getLabelCode().length != 0) {
+                    for (String labelCode : Helper.mode1_context.getBaseHarnessAdditionalBarecodeTmp().getLabelCode()) {
+                        BaseHarnessAdditionalBarecode bel = new BaseHarnessAdditionalBarecode();
+                        bel.setDefautlVals();
+                        bel.setLabelCode(labelCode);
+                        bel.setHarness(bh);
+                        bel.create(bel);
+                    }
+                }
+                //##############################################################
+
+                //############## ADD THE HARNESS TO THE CONTAINER ##############    
+                //Insert the harness into the container
+                bc.getHarnessList().add(bh);
+
+                int newQty = bc.getQtyRead() + 1;
+                //Incrémenter la taille du contenaire                
+//                Query query = Helper.sess.createQuery(HQLHelper.SET_CONTAINER_QTY_READ);
+//                query.setParameter("qtyRead", newQty);
+//                query.setParameter("id", bc.getId());
+//                query.executeUpdate();
+                bc.setQtyRead(bc.getQtyRead()+1);
+                bc.update(bc);
+
+                //##############################################################
+                //####### CHECK IF THE HARNESS EXISTS IN THE DROP TABLE ########
+                //Yes                
+                System.out.println(String.format("Harness %s to be removed from drop table ", Helper.mode1_context.getTempBC().getHarnessCounter()));
+                Query query = Helper.sess.createQuery("DELETE DropBaseHarness WHERE counter = :COUNTER");
+                query.setParameter("COUNTER", bh.getCounter());
+
+                int result = query.executeUpdate();
+                System.out.println("Deletion result %s " + result);
+                //##############################################################
+
+                //- Set harness data from drop table 
+                //- Remouve it from drop table (use a flag var to drop it in the end 
+                // of this condition)
+                //- Create a history mouvement line in base_harness history
+                //##############################################################
+                //############## Check if pallet should be closed ##############
+                //############## UCS Contains just 1 harness ###################
+                if (bc.getQtyExpected() == newQty || bc.getQtyExpected() == 1) {
+                    setToWaiting(bc, newQty);
+                } else { //QtyExpected not reached yet  ! Pallet will still open.
+                    //Clear session vals in mode1_context
+                    clearContextSessionVals();
+                    goBackToFirstScan();
+                }
+            }
+        }
+    }
+
     /**
      * Charger les
+     *
      * @return patterns de scanne configurer pour ce part number.
      *
      */
@@ -102,50 +217,53 @@ public class Mode1_S030_MatrixIdScan implements Mode1_State {
 
         //PLASTICBAG_BARCODE_PATTERN_LIST
         String PN = "";
-        
+
         Helper.startSession();
         Query query = Helper.sess.createQuery(HQLHelper.GET_PATTERN_BY_HARNESSPART);
-        if(Helper.mode2_context.getBaseContainerTmp().getHarnessPart().startsWith(Helper.HARN_PART_PREFIX))
-            PN = Helper.mode2_context.getBaseContainerTmp().getHarnessPart().substring(1);
-        else
-            PN = Helper.mode2_context.getBaseContainerTmp().getHarnessPart();
-        
-        System.out.println("Loading Additional barecodes pattern list for PN %s... "+PN);
+        if (Helper.mode1_context.getTempBC().getHarnessPart().startsWith(Global.HARN_PART_PREFIX)) {
+            PN = Helper.mode1_context.getTempBC().getHarnessPart().substring(1);
+        } else {
+            PN = Helper.mode1_context.getTempBC().getHarnessPart();
+        }
+
+        System.out.println("Loading Additional barecodes pattern list for PN %s... " + PN);
         query.setParameter("harnessPart", PN);
         Helper.sess.getTransaction().commit();
         List resultList = query.list();
         System.out.println(String.format("%d pattern found for part number %s ", query.list().size(), PN));
         if (!query.list().isEmpty()) {
-            Helper.PLASTICBAG_BARCODE_PATTERN_LIST = new String[query.list().size()][2];
+            Global.PLASTICBAG_BARCODE_PATTERN_LIST = new String[query.list().size()][2];
             //Allouer de l'espace pour la liste des code à barre getBaseHarnessAdditionalBarecodeTmp
-            Helper.mode2_context.getBaseHarnessAdditionalBarecodeTmp().setLabelCode(new String[query.list().size()]);
+            Helper.mode1_context.getBaseHarnessAdditionalBarecodeTmp().setLabelCode(new String[query.list().size()]);
             int i = 0;
             for (Iterator it = resultList.iterator(); it.hasNext();) {
                 this.numberOfPatterns++;
                 ConfigBarcode config = (ConfigBarcode) it.next();
-                Helper.PLASTICBAG_BARCODE_PATTERN_LIST[i][0] = config.getBarcodePattern();
-                Helper.PLASTICBAG_BARCODE_PATTERN_LIST[i][1] = config.getDescription();
+                Global.PLASTICBAG_BARCODE_PATTERN_LIST[i][0] = config.getBarcodePattern();
+                Global.PLASTICBAG_BARCODE_PATTERN_LIST[i][1] = config.getDescription();
                 i++;
             }
-            
-            System.out.println("PLASTICBAG_BARCODE_PATTERN_LIST "+this.numberOfPatterns+" pattern(s) successfuly loaded 100% ! ");
-        }
-        else{
-            Helper.PLASTICBAG_BARCODE_PATTERN_LIST = new String[0][0];
-            
+
+            System.out.println("PLASTICBAG_BARCODE_PATTERN_LIST " + this.numberOfPatterns + " pattern(s) successfuly loaded 100% ! ");
+        } else {
+            Global.PLASTICBAG_BARCODE_PATTERN_LIST = new String[0][0];
+
         }
         //No pattern found ! Retourner une liste vide.
-        return Helper.PLASTICBAG_BARCODE_PATTERN_LIST;
+        return Global.PLASTICBAG_BARCODE_PATTERN_LIST;
     }
 
+    @Override
     public String toString() {
         return "State S03 : S03_QRCodeScan";
     }
 
+    @Override
     public ImageIcon getImg() {
         return this.imgIcon;
     }
 
+    @Override
     public void clearScanBox(JTextField scan_txtbox) {
         //Vider le champs de text scan
         scan_txtbox.setText("");
@@ -153,8 +271,48 @@ public class Mode1_S030_MatrixIdScan implements Mode1_State {
         Helper.Packaging_Gui_Mode1.setScanTxt(scan_txtbox);
     }
 
+    @Override
     public void clearContextSessionVals() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        Helper.mode1_context.setLabelCount(0);
+        Global.PLASTICBAG_BARCODE_PATTERN_LIST = new String[0][];
+    }
+
+    /**
+     *
+     * @param bc
+     * @param newQty
+     */
+    private void setToWaiting(BaseContainer bc, int newQty) {
+        Helper.log.info(String.format("Quantité terminée %s", bc.toString()));
+
+        PrinterHelper.saveAndPrintClosingSheet(bc, false);
+        //Helper.startSession();
+        bc.setContainerState(Global.PALLET_WAITING);
+        bc.setContainerStateCode(Global.PALLET_WAITING_CODE);
+        bc.update(bc);
+
+        //Incrémenter la taille du contenaire                
+        Query query = Helper.sess.createQuery(HQLHelper.SET_CONTAINER_QTY_READ);
+        query.setParameter("qtyRead", newQty);
+        query.setParameter("id", bc.getId());
+        query.executeUpdate();
+
+        Helper.mode1_context.getTempBC().setPalletNumber(bc.getPalletNumber());
+        //Set requested closing pallet number in the main gui
+        Helper.Packaging_Gui_Mode1.setAssistanceTextarea(
+                "N° "
+                + Global.CLOSING_PALLET_PREFIX + bc.getPalletNumber());
+        Helper.mode1_context.setState(new Mode1_S050_ClosingPallet());
+    }
+    /**
+     * 
+     */
+    private void goBackToFirstScan() {
+        Helper.Packaging_Gui_Mode1.reloadDataTable();
+        //Retourner à l'état Mode1_S021_HarnessPartScan pour scanner
+        //une nouvelle pièce
+        Mode1_S021_HarnessPartScan state = new Mode1_S021_HarnessPartScan(false, Helper.mode1_context.getTempBC());
+        Helper.mode1_context.setState(state);
     }
 
 }

@@ -5,9 +5,11 @@
  */
 package helper;
 
+import __run__.Global;
 import entity.ConfigProject;
 import entity.ConfigShift;
 import entity.ConfigUcs;
+import gui.packaging.Context;
 import gui.packaging.mode1.gui.PACKAGING_UI0001_Main_Mode1;
 import gui.packaging.mode2.gui.PACKAGING_UI0001_Main_Mode2;
 import java.awt.Dimension;
@@ -48,10 +50,19 @@ import gui.packaging.Mode1_Context;
  */
 public class Helper {
 
+    /**
+     * @deprecated 
+     */
     public static String APPNAME = "PGSystem";
-
+    
+    /**
+     * @deprecated 
+     */
     public static String VERSION = "1.17.12.21";
 
+    /**
+     * @deprecated 
+     */
     public static String AUTHOR = "Created By EZZIOURI Oussama";
 
     private static Helper instance = null;
@@ -88,6 +99,11 @@ public class Helper {
     /**
      *
      */
+    public static Context context = new Context();
+    
+    /**
+     *
+     */
     public static Mode2_Context mode2_context = new Mode2_Context();
 
     /**
@@ -112,7 +128,7 @@ public class Helper {
     private static MessageDigest digester;
 
     /**
-     *
+     * @deprecated 
      */
     public static String HOSTNAME;
 
@@ -123,9 +139,9 @@ public class Helper {
 
     //-------------------------- Properties       -----------------------------
     /**
-     *
+     * 
      */
-    public final static Properties PROP = new Properties();
+    //public final static Properties PROP = new Properties();
 
     //-------------------------- LOG and Messages -----------------------------
     /**
@@ -289,6 +305,10 @@ public class Helper {
     /**
      *
      */
+    public static String ERR0008_NO_PALLET_SELECTED = "Aucune palette n'est sélectionnée\nMerci de sélectionner d'abord une palette.";
+    /**
+     *
+     */
     public static String ERR0008_INCORRECT_PALLET_NUMBER = "Incorrect pallet number [%s]";
 
     /**
@@ -390,60 +410,21 @@ public class Helper {
      *
      */
     public static String INFO0012_LOGOUT_SUCCESS = "User %s disconnected from host %s at %s.";
-    //-------------------------- Prefix And Suffix
-
-    /**
-     *
-     */
-    public static String HARN_PART_PREFIX = Helper.PROP.getProperty("HARN_PART_PREFIX");
-
-    /**
-     *
-     */
-    public static String SUPPLIER_PART_PREFIX = Helper.PROP.getProperty("SUPPLIER_PART_PREFIX");
-
-    /**
-     *
-     */
-    public static String HARN_COUNTER_PREFIX = Helper.PROP.getProperty("HARN_COUNTER_PREFIX");
-
-    /**
-     *
-     */
-    public static String QUANTITY_PREFIX = Helper.PROP.getProperty("QUANTITY_PREFIX");
-
-    /**
-     *
-     */
-    public static String CLOSING_PALLET_PREFIX = Helper.PROP.getProperty("CLOSING_PALLET_PREFIX");
-
+    
     public static String BOOK_WAREHOUSE_IN_PACK_FG = "BOOK PACKAGING RECIEVED FINISH GOODS";
 
     public static String BOOK_WAREHOUSE_OUT_PACK_FG = "BOOK PACKAGING SHIPPED FINISH GOODS";
 
-    /**
-     *
-     */
-    public static String UCS_SPLITER = "|";
+    
 
-    //-------------------------- MASK DE SAISIE COUNTER
-    //Example ; P2220512705.02.2016;11:44:00
-    //
-    public static String[] DATAMATRIX_PATTERN_LIST;
-
-    public static String[] PARTNUMBER_PATTERN_LIST;
-
-    public static String[][] PLASTICBAG_BARCODE_PATTERN_LIST;
+    
 
     /**
      *
      */
     //public static Integer ENGINE_LABEL_TIMES = 2;
     //-------------------------- NEW PALLET MASK
-    /**
-     *
-     */
-    public static String OPEN_PALLET_KEYWORD = Helper.PROP.getProperty("OPEN_PALLET_KEYWORD");
+    
 
     /**
      *
@@ -455,157 +436,14 @@ public class Helper {
      */
     public static String CLOSING_PALLET_PATTERN = "^[C]{1}[P]{1}\\d{9}";
 
-    //Pallet print state
-    /**
-     *
-     */
-    public static final String PALLET_PRINT_NEW = "NEW";
-
-    /**
-     *
-     */
-    public static final String PALLET_PRINT_INPROCESS = "IN_PROCESS";
-
-    /**
-     *
-     */
-    public static final String PALLET_PRINT_PRINTED = "PRINTED";
-
-    /**
-     *
-     */
-    public static final String PALLET_PRINT_ERROR = "ERROR";
-
-    //Pallet print state
-    /**
-     *
-     */
-    public static final String PALLET_PRINT_REPRINT = "REPRINT";
-
-    //Base Container state
-    /**
-     *
-     */
-    public static final String PALLET_OPEN = "OPEN";
-
-    /**
-     *
-     */
-    public static final String PALLET_OPEN_CODE = "1000";
-
-    /**
-     *
-     */
-    public static final String PALLET_WAITING = "WAITING";
-
-    /**
-     *
-     */
-    public static final String PALLET_WAITING_CODE = "1500";
-
-    /**
-     *
-     */
-    public static final String PALLET_QUARANTAINE = "QUARANTAINE";
-
-    /**
-     *
-     */
-    public static final String PALLET_QUARANTAINE_CODE = "1400";
-
-    /**
-     *
-     */
-    public static final String PALLET_CLOSED = "CLOSED";
-
-    /**
-     *
-     */
-    public static final String PALLET_CLOSED_CODE = "1900";
-
-    /**
-     *
-     */
-    public static final String PALLET_STORED = "STORED";
-
-    /**
-     *
-     */
-    public static final String PALLET_STORED_CODE = "2000";
-
-    /**
-     *
-     */
-    public static final String PALLET_SHIPPED = "SHIPPED";
-
-    /**
-     *
-     */
-    public static final String PALLET_SHIPPED_CODE = "3000";
-
-    /**
-     *
-     */
-    public static final String PALLET_DROPPED = "DROPPED";
-
-    /**
-     *
-     */
-    public static final String PALLET_DROPPED_CODE = "-1000";
-
-    /**
-     *
-     */
-    public static final String[][] PALLET_STATES = {
-        {"ALL", ""},
-        {PALLET_OPEN, ""},
-        {PALLET_WAITING, ""},
-        {PALLET_CLOSED, ""},
-        {PALLET_STORED, "selected"},
-        {PALLET_SHIPPED, ""}, //{PALLET_QUARANTAINE, ""}
-    };
-    //PALLET STATE COLLUMN INDEX IN UI0000_MAIN CONTAINER TABLE
-    /**
-     *
-     */
-    public static int PALLET_STATE_COL_INDEX = 8;
-
-    /**
-     *
-     *
-     */
-    public static String SCHEDULE_STATE_NEW = "NEW";
-
-    /**
-     *
-     *
-     */
-    public static String SCHEDULE_STATE_NEW_CODE = "1000";
-
-    //HARNESS PART COUNTER LENGTH
-    /**
-     *
-     */
-    public static Integer HARN_PART_LEN = 9;
-
-    /**
-     *
-     */
-    public static List<String> CONFIG_MENUS = Arrays.asList(
-            "---",
-            "Unités de conditionnement standard (UCS)",
-            "Masque code à barre",
-            "Utilisateurs",
-            //"Planner",
-            "Configuration packaging"
-    );
+    
 
     //USER LEVELS
     /**
      *
      */
-    public static final Integer PROFIL_OPERATOR = 1000;
-    public static final Integer PROFIL_ADMIN = 9000;
+    //public static final Integer PROFIL_OPERATOR = 1000;
+    //public static final Integer PROFIL_ADMIN = 9000;
 
     /**
      * true: Active le vérouillage pour une seule palette par part number
@@ -617,7 +455,7 @@ public class Helper {
      * (KLTV, HV, RV)
      *
      */
-    public static final boolean UNIQUE_PALLET_PER_PACK_TYPE = false;
+    //public static final boolean UNIQUE_PALLET_PER_PACK_TYPE = false;
 
     //SUPPLIER PART LENGTH
     //public static Integer SUPP_PART_LEN = 9;
@@ -796,53 +634,7 @@ public class Helper {
 
         log.info(TMP_MSG);
         return TMP_MSG;
-    }
-
-    public static void mapProperties() {
-        OPEN_PALLET_KEYWORD = Helper.PROP.getProperty("OPEN_PALLET_KEYWORD");
-
-        HARN_PART_PREFIX = Helper.PROP.getProperty("HARN_PART_PREFIX");
-
-        SUPPLIER_PART_PREFIX = Helper.PROP.getProperty("SUPPLIER_PART_PREFIX");
-
-        HARN_COUNTER_PREFIX = Helper.PROP.getProperty("HARN_COUNTER_PREFIX");
-
-        QUANTITY_PREFIX = Helper.PROP.getProperty("QUANTITY_PREFIX");
-
-        CLOSING_PALLET_PREFIX = Helper.PROP.getProperty("CLOSING_PALLET_PREFIX");
-    }
-
-    /**
-     * Load Helper.PROP attribut values from config.properties
-     */
-    public static void loadConfigProperties() {
-
-        /// read from file
-        InputStream input = null;
-        try {
-            input = new FileInputStream(".\\config.properties");
-            // load a properties file
-            PROP.load(input);
-
-            mapProperties();
-            // get the property value and print it out
-            System.out.println("Load properties file :\n " + PROP.toString());
-
-        } catch (IOException ex) {
-            JOptionPane.showMessageDialog(null, ex.getMessage(), "Config properties error !", ERROR_MESSAGE);
-            JOptionPane.showMessageDialog(null, "Properties file must be in the same folder as the .jar file.", "Config properties error !", WARNING_MESSAGE);
-            ex.printStackTrace();
-        } finally {
-            if (input != null) {
-                try {
-                    input.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
-        }
-
-    }
+    } 
 
     //----------------------- END LOG and Messages -----------------------------
     //----------------------------- Date And Time ------------------------------
@@ -1077,11 +869,11 @@ public class Helper {
     }
 
     public static void loadContainerStateInJbox(JComboBox jbox) {
-        jbox.addItem(new ComboItem(Helper.PALLET_STORED, Helper.PALLET_STORED));
-        jbox.addItem(new ComboItem(Helper.PALLET_OPEN, Helper.PALLET_OPEN));
-        jbox.addItem(new ComboItem(Helper.PALLET_WAITING, Helper.PALLET_WAITING));
-        jbox.addItem(new ComboItem(Helper.PALLET_SHIPPED, Helper.PALLET_SHIPPED));
-        jbox.addItem(new ComboItem(Helper.PALLET_CLOSED, Helper.PALLET_CLOSED));
+        jbox.addItem(new ComboItem(Global.PALLET_STORED, Global.PALLET_STORED));
+        jbox.addItem(new ComboItem(Global.PALLET_OPEN, Global.PALLET_OPEN));
+        jbox.addItem(new ComboItem(Global.PALLET_WAITING, Global.PALLET_WAITING));
+        jbox.addItem(new ComboItem(Global.PALLET_SHIPPED, Global.PALLET_SHIPPED));
+        jbox.addItem(new ComboItem(Global.PALLET_CLOSED, Global.PALLET_CLOSED));
     }
 
     public static void loadCustomersInJbox(JComboBox jbox) {

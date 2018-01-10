@@ -1,12 +1,10 @@
-package main;
+package __run__;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
-
 import gui.config.CONFIG_UI0000_AUTH;
 import gui.packaging.mode1.gui.PACKAGING_UI0001_Main_Mode1;
 import gui.packaging.mode2.gui.PACKAGING_UI0001_Main_Mode2;
@@ -36,7 +34,7 @@ import gui.packaging.mode2.state.Mode2_S010_UserCodeScan;
  *
  * @author Administrator
  */
-public class Main extends javax.swing.JFrame implements ActionListener,
+public class StartFrame extends javax.swing.JFrame implements ActionListener,
         PropertyChangeListener {
 
     //private static final int PORT = 12345;        // random large port number
@@ -52,9 +50,8 @@ public class Main extends javax.swing.JFrame implements ActionListener,
     class UpdateTask extends SwingWorker<Void, Void> {
 
         /*
-         * Main task. Executed in background thread.
+         * StartFrame task. Executed in background thread.
          */
-
         @Override
         public Void doInBackground() {
             Random random = new Random();
@@ -67,22 +64,12 @@ public class Main extends javax.swing.JFrame implements ActionListener,
                     Thread.sleep(100);
                 } catch (InterruptedException ignore) {
                 }
-                System.out.println("i "+i);
-                System.out.println("tot"+(i*100)/a);
-                progress += (int) (i*100)/a;
-                System.out.println("progress "+progress);
+                System.out.println("i " + i);
+                System.out.println("tot" + (i * 100) / a);
+                progress += (int) (i * 100) / a;
+                System.out.println("progress " + progress);
                 setProgress(progress);
             }
-//            while (progress < 100) {
-//                //Sleep for up to one second.
-//                try {
-//                    Thread.sleep(100);
-//                } catch (InterruptedException ignore) {
-//                }
-//                //Make random progress.
-//                progress += random.nextInt(10);
-//                setProgress(Math.min(progress, 100));
-//            }
             return null;
         }
 
@@ -102,10 +89,10 @@ public class Main extends javax.swing.JFrame implements ActionListener,
     // static initializer
     {
         /* Create and display the form */
-        Helper.loadConfigProperties();
+        PropertiesLoader.loadConfigProperties();
 
         try {
-            s = new ServerSocket(Integer.valueOf(Helper.PROP.getProperty("RUNNING_PORT")), 10, InetAddress.getLocalHost());
+            s = new ServerSocket(Integer.valueOf(Global.APP_PROP.getProperty("RUNNING_PORT")), 10, InetAddress.getLocalHost());
         } catch (UnknownHostException e) {
             JOptionPane.showMessageDialog(null, Helper.ERR0012_APPLICATION_ENCOUNTRED_PROBLEM, "UnknownHostException exception.", JOptionPane.ERROR_MESSAGE);
             System.out.println("Application encountered some problem !");
@@ -127,12 +114,14 @@ public class Main extends javax.swing.JFrame implements ActionListener,
     /**
      * Creates new form UI0000_ProjectChoice
      */
-    public Main() {
+    public StartFrame() {
         initComponents();
-        versionLabel.setText(Helper.APPNAME + " " + Helper.VERSION);
-        authorLabel.setText(Helper.AUTHOR);
-        this.setTitle(Helper.APPNAME + " " + Helper.VERSION);
+        versionLabel.setText(Global.APP_NAME + " " + Global.APP_VERSION);
+        authorLabel.setText(Global.APP_AUTHOR);
+        this.setTitle(Global.APP_NAME + " " + Global.APP_VERSION);
         Helper.centerJFrame(this);
+        this.setExtendedState(this.getExtendedState() | JFrame.MAXIMIZED_BOTH);
+
     }
 
     /**
@@ -167,7 +156,7 @@ public class Main extends javax.swing.JFrame implements ActionListener,
         jScrollPane1 = new javax.swing.JScrollPane();
         log_text_area = new javax.swing.JTextArea();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setBackground(new java.awt.Color(0, 0, 51));
         setForeground(new java.awt.Color(0, 0, 0));
         addWindowListener(new java.awt.event.WindowAdapter() {
@@ -452,12 +441,12 @@ public class Main extends javax.swing.JFrame implements ActionListener,
     private void PACKAGING_MODULEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PACKAGING_MODULEActionPerformed
         //Bind to localhost adapter with a zero connection queue
         Helper.mode2_context.setState(new Mode2_S010_UserCodeScan());
-        
-        if(Helper.PROP.getProperty("PACKAGING_SCAN_MODE").equals("1")){
+
+        if (Global.APP_PROP.getProperty("PACKAGING_SCAN_MODE").equals("1")) {
             Helper.Packaging_Gui_Mode1 = new PACKAGING_UI0001_Main_Mode1(null, this);
             Helper.Packaging_Gui_Mode1.reloadDataTable();
             Helper.Packaging_Gui_Mode1.disableAdminMenus();
-        }else if(Helper.PROP.getProperty("PACKAGING_SCAN_MODE").equals("2")){
+        } else if (Global.APP_PROP.getProperty("PACKAGING_SCAN_MODE").equals("2")) {
             Helper.Packaging_Gui_Mode2 = new PACKAGING_UI0001_Main_Mode2(null, this);
             Helper.Packaging_Gui_Mode2.reloadDataTable();
             Helper.Packaging_Gui_Mode2.disableAdminMenus();
@@ -533,14 +522,20 @@ public class Main extends javax.swing.JFrame implements ActionListener,
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Main.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(StartFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Main.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(StartFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Main.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(StartFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Main.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(StartFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
@@ -548,17 +543,17 @@ public class Main extends javax.swing.JFrame implements ActionListener,
         java.awt.EventQueue.invokeLater(new Runnable() {
             @Override
             public void run() {
-                Main ui = new Main();
+                StartFrame ui = new StartFrame();
                 ui.setVisible(true);
                 //Helper.loadConfigProperties();
-                String str = Helper.InitDailyLogFile(Helper.PROP.getProperty("LOG_PATH"));
+                String str = Helper.InitDailyLogFile(Global.APP_PROP.getProperty("LOG_PATH"));
                 ui.setLogTextArea(str);
                 str = Helper.InitDailyDestPrintDir(
-                        Helper.PROP.getProperty("PRINT_DIR"),
-                        Helper.PROP.getProperty("PRINT_PALLET_DIR"),
-                        Helper.PROP.getProperty("PRINT_CLOSING_PALLET_DIR"),
-                        Helper.PROP.getProperty("PRINT_PICKING_SHEET_DIR"),
-                        Helper.PROP.getProperty("PRINT_DISPATCH_SHEET_DIR"));
+                        Global.APP_PROP.getProperty("PRINT_DIR"),
+                        Global.APP_PROP.getProperty("PRINT_PALLET_DIR"),
+                        Global.APP_PROP.getProperty("PRINT_CLOSING_PALLET_DIR"),
+                        Global.APP_PROP.getProperty("PRINT_PICKING_SHEET_DIR"),
+                        Global.APP_PROP.getProperty("PRINT_DISPATCH_SHEET_DIR"));
                 ui.setLogTextArea(str);
             }
         });

@@ -5,6 +5,7 @@
  */
 package gui.warehouse_dispatch.state;
 
+import __run__.Global;
 import helper.Helper;
 import helper.HQLHelper;
 import java.io.File;
@@ -22,7 +23,7 @@ import org.hibernate.Query;
 public class S010_DispatchUserCodeScan implements State {
 
     private ImageIcon imgIcon = new ImageIcon(
-            Helper.PROP.getProperty("IMG_PATH")
+            Global.APP_PROP.getProperty("IMG_PATH")
             + File.separator
             + "WAREHOUSE_OUT"
             + File.separator

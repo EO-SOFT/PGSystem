@@ -1,0 +1,265 @@
+janv. 01, 2018 7:58:59 PM helper.Helper InitDailyDestPrintDir
+INFOS: File 2018_01_01.log created !Print directory [.\print\2018_01_01] created !
+Print sub directory [.\print\2018_01_01.\open_sheet] created !
+Print sub directory [.\print\2018_01_01.\closing_sheet] created !
+Print sub directory [.\print\2018_01_01.\picking_label] created !
+Print sub directory [.\print\2018_01_01.\dispatch_label] created !
+
+janv. 01, 2018 7:59:05 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+janv. 01, 2018 7:59:06 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+janv. 01, 2018 7:59:15 PM gui.packaging.mode1.state.Mode1_S010_UserCodeScan doAction
+INFOS: Invalid matricule number or account locked !
+janv. 01, 2018 7:59:18 PM gui.packaging.mode1.gui.PACKAGING_UI0002_PasswordRequest_Mode1 connect_to_mode1
+INFOS: User EZZIOURI OUSSAMA / ezou1001 connected to host Oussama-PC at 2018-01-01 19:59:18 Project : DUCATI.
+janv. 01, 2018 7:59:18 PM gui.packaging.mode1.gui.PACKAGING_UI0002_PasswordRequest_Mode1 loadDotMatrixCodePatterns
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord AND cb.harness_type = :harnessType ORDER BY id ASC
+janv. 01, 2018 7:59:18 PM gui.packaging.mode1.gui.PACKAGING_UI0002_PasswordRequest_Mode1 loadPartNumberCodePatterns
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord AND cb.harness_type = :harnessType ORDER BY id ASC
+janv. 01, 2018 7:59:22 PM gui.packaging.mode1.state.Mode1_S020_PalletChoice doAction
+INFOS: Is it a new pallet ?
+janv. 01, 2018 7:59:22 PM gui.packaging.mode1.state.Mode1_S020_PalletChoice doAction
+INFOS:  [Yes]
+janv. 01, 2018 7:59:32 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [5101C861D] in ConfigUCS: DUCATI
+janv. 01, 2018 7:59:32 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [5101C861D] found for project [DUCATI].
+janv. 01, 2018 7:59:32 PM gui.packaging.mode1.state.Mode1_S021_HarnessPartScan doAction
+INFOS: Harness Part scanned [5101C861D] OK.
+janv. 01, 2018 7:59:37 PM helper.Helper InitDailyDestPrintDir
+INFOS: File 2018_01_01.log created !Print directory [.\print\2018_01_01] created !
+Print sub directory [.\print\2018_01_01.\open_sheet] created !
+Print sub directory [.\print\2018_01_01.\closing_sheet] created !
+Print sub directory [.\print\2018_01_01.\picking_label] created !
+Print sub directory [.\print\2018_01_01.\dispatch_label] created !
+Print directory [.\print\2018_01_01] already exist!
+Print sub directory [.\print\2018_01_01.\open_sheet] already exist!
+Print sub directory [.\print\2018_01_01.\closing_sheet] already exist!
+Print sub directory [.\print\2018_01_01.\picking_label] already exist!
+Print sub directory [.\print\2018_01_01.\dispatch_label] already exist!
+
+janv. 01, 2018 7:59:38 PM helper.PrinterHelper saveAndPrintOpenSheet
+INFOS: Set Pallet [200035302] state to [IN_PROCESS]
+janv. 01, 2018 7:59:38 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2018_01_01\open_sheet\PrintOpenPallet_A5_2018_01_01_19_59_38_5101C861D_200035302.pdf] to the default printer...
+janv. 01, 2018 7:59:38 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [.\print\2018_01_01\open_sheet\PrintOpenPallet_A5_2018_01_01_19_59_38_5101C861D_200035302.pdf] has been printed.
+janv. 01, 2018 7:59:38 PM helper.PrinterHelper saveAndPrintOpenSheet
+INFOS: Set Pallet [200035302] state to [PRINTED]
+janv. 01, 2018 7:59:38 PM gui.packaging.mode1.gui.PACKAGING_UI9000_ChoosePackType_Mode1 loadConfigUcs
+INFOS: Openning new container for first harness part [5101C861D].
+janv. 01, 2018 8:00:05 PM gui.packaging.mode1.state.Mode1_S041_NewPalletScan doAction
+AVERTISSEMENT: Incorrect pallet number [200035302]
+janv. 01, 2018 8:03:37 PM helper.Helper InitDailyDestPrintDir
+INFOS: File 2018_01_01.log already exists.Print directory [.\print\2018_01_01] already exist!
+Print sub directory [.\print\2018_01_01.\open_sheet] already exist!
+Print sub directory [.\print\2018_01_01.\closing_sheet] already exist!
+Print sub directory [.\print\2018_01_01.\picking_label] already exist!
+Print sub directory [.\print\2018_01_01.\dispatch_label] already exist!
+
+janv. 01, 2018 8:04:41 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+janv. 01, 2018 8:04:41 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+janv. 01, 2018 8:04:44 PM gui.packaging.mode1.state.Mode1_S010_UserCodeScan doAction
+INFOS: Invalid matricule number or account locked !
+janv. 01, 2018 8:04:46 PM gui.packaging.mode1.gui.PACKAGING_UI0002_PasswordRequest_Mode1 connect_to_mode1
+INFOS: User EZZIOURI OUSSAMA / ezou1001 connected to host Oussama-PC at 2018-01-01 20:04:46 Project : DUCATI.
+janv. 01, 2018 8:04:46 PM gui.packaging.mode1.gui.PACKAGING_UI0002_PasswordRequest_Mode1 loadDotMatrixCodePatterns
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord AND cb.harness_type = :harnessType ORDER BY id ASC
+janv. 01, 2018 8:04:46 PM gui.packaging.mode1.gui.PACKAGING_UI0002_PasswordRequest_Mode1 loadPartNumberCodePatterns
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord AND cb.harness_type = :harnessType ORDER BY id ASC
+janv. 01, 2018 8:04:50 PM gui.packaging.mode1.state.Mode1_S020_PalletChoice doAction
+INFOS: Is it a new pallet ?
+janv. 01, 2018 8:04:50 PM gui.packaging.mode1.state.Mode1_S020_PalletChoice doAction
+INFOS:  [Yes]
+janv. 01, 2018 8:04:56 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [5101C861D] in ConfigUCS: DUCATI
+janv. 01, 2018 8:04:56 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [5101C861D] found for project [DUCATI].
+janv. 01, 2018 8:04:56 PM gui.packaging.mode1.state.Mode1_S021_HarnessPartScan doAction
+INFOS: Harness Part scanned [5101C861D] OK.
+janv. 01, 2018 8:04:58 PM helper.Helper InitDailyDestPrintDir
+INFOS: File 2018_01_01.log already exists.Print directory [.\print\2018_01_01] already exist!
+Print sub directory [.\print\2018_01_01.\open_sheet] already exist!
+Print sub directory [.\print\2018_01_01.\closing_sheet] already exist!
+Print sub directory [.\print\2018_01_01.\picking_label] already exist!
+Print sub directory [.\print\2018_01_01.\dispatch_label] already exist!
+Print directory [.\print\2018_01_01] already exist!
+Print sub directory [.\print\2018_01_01.\open_sheet] already exist!
+Print sub directory [.\print\2018_01_01.\closing_sheet] already exist!
+Print sub directory [.\print\2018_01_01.\picking_label] already exist!
+Print sub directory [.\print\2018_01_01.\dispatch_label] already exist!
+
+janv. 01, 2018 8:04:59 PM helper.PrinterHelper saveAndPrintOpenSheet
+INFOS: Set Pallet [200035303] state to [IN_PROCESS]
+janv. 01, 2018 8:04:59 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2018_01_01\open_sheet\PrintOpenPallet_A5_2018_01_01_20_04_58_5101C861D_200035303.pdf] to the default printer...
+janv. 01, 2018 8:04:59 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [.\print\2018_01_01\open_sheet\PrintOpenPallet_A5_2018_01_01_20_04_58_5101C861D_200035303.pdf] has been printed.
+janv. 01, 2018 8:04:59 PM helper.PrinterHelper saveAndPrintOpenSheet
+INFOS: Set Pallet [200035303] state to [PRINTED]
+janv. 01, 2018 8:04:59 PM gui.packaging.mode1.gui.PACKAGING_UI9000_ChoosePackType_Mode1 loadConfigUcs
+INFOS: Openning new container for first harness part [5101C861D].
+janv. 01, 2018 8:05:21 PM gui.packaging.mode1.state.Mode1_S041_NewPalletScan doAction
+AVERTISSEMENT: Incorrect pallet number [200035303]
+janv. 01, 2018 8:07:28 PM helper.Helper InitDailyDestPrintDir
+INFOS: File 2018_01_01.log already exists.Print directory [.\print\2018_01_01] already exist!
+Print sub directory [.\print\2018_01_01.\open_sheet] already exist!
+Print sub directory [.\print\2018_01_01.\closing_sheet] already exist!
+Print sub directory [.\print\2018_01_01.\picking_label] already exist!
+Print sub directory [.\print\2018_01_01.\dispatch_label] already exist!
+
+janv. 01, 2018 8:07:38 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+janv. 01, 2018 8:07:39 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+janv. 01, 2018 8:07:42 PM gui.packaging.mode1.state.Mode1_S010_UserCodeScan doAction
+INFOS: Invalid matricule number or account locked !
+janv. 01, 2018 8:07:43 PM gui.packaging.mode1.gui.PACKAGING_UI0002_PasswordRequest_Mode1 connect_to_mode1
+INFOS: User EZZIOURI OUSSAMA / ezou1001 connected to host Oussama-PC at 2018-01-01 20:07:43 Project : DUCATI.
+janv. 01, 2018 8:07:43 PM gui.packaging.mode1.gui.PACKAGING_UI0002_PasswordRequest_Mode1 loadDotMatrixCodePatterns
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord AND cb.harness_type = :harnessType ORDER BY id ASC
+janv. 01, 2018 8:07:43 PM gui.packaging.mode1.gui.PACKAGING_UI0002_PasswordRequest_Mode1 loadPartNumberCodePatterns
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord AND cb.harness_type = :harnessType ORDER BY id ASC
+janv. 01, 2018 8:07:46 PM gui.packaging.mode1.state.Mode1_S020_PalletChoice doAction
+INFOS: Is it a new pallet ?
+janv. 01, 2018 8:07:46 PM gui.packaging.mode1.state.Mode1_S020_PalletChoice doAction
+INFOS:  [Yes]
+janv. 01, 2018 8:07:52 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [5101C861D] in ConfigUCS: DUCATI
+janv. 01, 2018 8:07:52 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [5101C861D] found for project [DUCATI].
+janv. 01, 2018 8:07:52 PM gui.packaging.mode1.state.Mode1_S021_HarnessPartScan doAction
+INFOS: Harness Part scanned [5101C861D] OK.
+janv. 01, 2018 8:07:54 PM helper.Helper InitDailyDestPrintDir
+INFOS: File 2018_01_01.log already exists.Print directory [.\print\2018_01_01] already exist!
+Print sub directory [.\print\2018_01_01.\open_sheet] already exist!
+Print sub directory [.\print\2018_01_01.\closing_sheet] already exist!
+Print sub directory [.\print\2018_01_01.\picking_label] already exist!
+Print sub directory [.\print\2018_01_01.\dispatch_label] already exist!
+Print directory [.\print\2018_01_01] already exist!
+Print sub directory [.\print\2018_01_01.\open_sheet] already exist!
+Print sub directory [.\print\2018_01_01.\closing_sheet] already exist!
+Print sub directory [.\print\2018_01_01.\picking_label] already exist!
+Print sub directory [.\print\2018_01_01.\dispatch_label] already exist!
+
+janv. 01, 2018 8:07:54 PM helper.PrinterHelper saveAndPrintOpenSheet
+INFOS: Set Pallet [200035304] state to [IN_PROCESS]
+janv. 01, 2018 8:07:54 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2018_01_01\open_sheet\PrintOpenPallet_A5_2018_01_01_20_07_54_5101C861D_200035304.pdf] to the default printer...
+janv. 01, 2018 8:07:54 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [.\print\2018_01_01\open_sheet\PrintOpenPallet_A5_2018_01_01_20_07_54_5101C861D_200035304.pdf] has been printed.
+janv. 01, 2018 8:07:54 PM helper.PrinterHelper saveAndPrintOpenSheet
+INFOS: Set Pallet [200035304] state to [PRINTED]
+janv. 01, 2018 8:07:54 PM gui.packaging.mode1.gui.PACKAGING_UI9000_ChoosePackType_Mode1 loadConfigUcs
+INFOS: Openning new container for first harness part [5101C861D].
+janv. 01, 2018 8:08:32 PM gui.packaging.mode1.state.Mode1_S041_NewPalletScan doAction
+AVERTISSEMENT: Incorrect pallet number [200035304]
+janv. 01, 2018 8:09:49 PM helper.Helper InitDailyDestPrintDir
+INFOS: File 2018_01_01.log already exists.Print directory [.\print\2018_01_01] already exist!
+Print sub directory [.\print\2018_01_01.\open_sheet] already exist!
+Print sub directory [.\print\2018_01_01.\closing_sheet] already exist!
+Print sub directory [.\print\2018_01_01.\picking_label] already exist!
+Print sub directory [.\print\2018_01_01.\dispatch_label] already exist!
+
+janv. 01, 2018 8:09:54 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+janv. 01, 2018 8:09:54 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+janv. 01, 2018 8:09:57 PM gui.packaging.mode1.state.Mode1_S010_UserCodeScan doAction
+INFOS: Invalid matricule number or account locked !
+janv. 01, 2018 8:10:05 PM gui.packaging.mode1.gui.PACKAGING_UI0002_PasswordRequest_Mode1 connect_to_mode1
+INFOS: User EZZIOURI OUSSAMA / ezou1001 connected to host Oussama-PC at 2018-01-01 20:10:05 Project : DUCATI.
+janv. 01, 2018 8:10:05 PM gui.packaging.mode1.gui.PACKAGING_UI0002_PasswordRequest_Mode1 loadDotMatrixCodePatterns
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord AND cb.harness_type = :harnessType ORDER BY id ASC
+janv. 01, 2018 8:10:05 PM gui.packaging.mode1.gui.PACKAGING_UI0002_PasswordRequest_Mode1 loadPartNumberCodePatterns
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord AND cb.harness_type = :harnessType ORDER BY id ASC
+janv. 01, 2018 8:10:07 PM gui.packaging.mode1.state.Mode1_S020_PalletChoice doAction
+INFOS: Is it a new pallet ?
+janv. 01, 2018 8:10:07 PM gui.packaging.mode1.state.Mode1_S020_PalletChoice doAction
+INFOS:  [Yes]
+janv. 01, 2018 8:10:10 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [5101C861D] in ConfigUCS: DUCATI
+janv. 01, 2018 8:10:10 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [5101C861D] found for project [DUCATI].
+janv. 01, 2018 8:10:10 PM gui.packaging.mode1.state.Mode1_S021_HarnessPartScan doAction
+INFOS: Harness Part scanned [5101C861D] OK.
+janv. 01, 2018 8:10:12 PM helper.Helper InitDailyDestPrintDir
+INFOS: File 2018_01_01.log already exists.Print directory [.\print\2018_01_01] already exist!
+Print sub directory [.\print\2018_01_01.\open_sheet] already exist!
+Print sub directory [.\print\2018_01_01.\closing_sheet] already exist!
+Print sub directory [.\print\2018_01_01.\picking_label] already exist!
+Print sub directory [.\print\2018_01_01.\dispatch_label] already exist!
+Print directory [.\print\2018_01_01] already exist!
+Print sub directory [.\print\2018_01_01.\open_sheet] already exist!
+Print sub directory [.\print\2018_01_01.\closing_sheet] already exist!
+Print sub directory [.\print\2018_01_01.\picking_label] already exist!
+Print sub directory [.\print\2018_01_01.\dispatch_label] already exist!
+
+janv. 01, 2018 8:10:12 PM helper.PrinterHelper saveAndPrintOpenSheet
+INFOS: Set Pallet [200035305] state to [IN_PROCESS]
+janv. 01, 2018 8:10:12 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2018_01_01\open_sheet\PrintOpenPallet_A5_2018_01_01_20_10_12_5101C861D_200035305.pdf] to the default printer...
+janv. 01, 2018 8:10:12 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [.\print\2018_01_01\open_sheet\PrintOpenPallet_A5_2018_01_01_20_10_12_5101C861D_200035305.pdf] has been printed.
+janv. 01, 2018 8:10:12 PM helper.PrinterHelper saveAndPrintOpenSheet
+INFOS: Set Pallet [200035305] state to [PRINTED]
+janv. 01, 2018 8:10:12 PM gui.packaging.mode1.gui.PACKAGING_UI9000_ChoosePackType_Mode1 loadConfigUcs
+INFOS: Openning new container for first harness part [5101C861D].
+janv. 01, 2018 8:10:24 PM gui.packaging.mode1.state.Mode1_S041_NewPalletScan doAction
+AVERTISSEMENT: Line 146 Incorrect pallet number [200035305]
+janv. 01, 2018 8:15:34 PM helper.Helper InitDailyDestPrintDir
+INFOS: File 2018_01_01.log already exists.Print directory [.\print\2018_01_01] already exist!
+Print sub directory [.\print\2018_01_01.\open_sheet] already exist!
+Print sub directory [.\print\2018_01_01.\closing_sheet] already exist!
+Print sub directory [.\print\2018_01_01.\picking_label] already exist!
+Print sub directory [.\print\2018_01_01.\dispatch_label] already exist!
+
+janv. 01, 2018 8:15:36 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+janv. 01, 2018 8:15:36 PM entity.ConfigProject select
+INFOS: FROM ConfigProject bp ORDER BY harnessType ASC
+janv. 01, 2018 8:15:40 PM gui.packaging.mode1.state.Mode1_S010_UserCodeScan doAction
+INFOS: Invalid matricule number or account locked !
+janv. 01, 2018 8:15:44 PM gui.packaging.mode1.gui.PACKAGING_UI0002_PasswordRequest_Mode1 connect_to_mode1
+INFOS: User EZZIOURI OUSSAMA / ezou1001 connected to host Oussama-PC at 2018-01-01 20:15:44 Project : DUCATI.
+janv. 01, 2018 8:15:44 PM gui.packaging.mode1.gui.PACKAGING_UI0002_PasswordRequest_Mode1 loadDotMatrixCodePatterns
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord AND cb.harness_type = :harnessType ORDER BY id ASC
+janv. 01, 2018 8:15:44 PM gui.packaging.mode1.gui.PACKAGING_UI0002_PasswordRequest_Mode1 loadPartNumberCodePatterns
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord AND cb.harness_type = :harnessType ORDER BY id ASC
+janv. 01, 2018 8:15:46 PM gui.packaging.mode1.state.Mode1_S020_PalletChoice doAction
+INFOS: Is it a new pallet ?
+janv. 01, 2018 8:15:46 PM gui.packaging.mode1.state.Mode1_S020_PalletChoice doAction
+INFOS:  [Yes]
+janv. 01, 2018 8:15:51 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Searching Harness part [5101C861D] in ConfigUCS: DUCATI
+janv. 01, 2018 8:15:51 PM entity.ConfigUcs isHarnessPartExist
+INFOS: Harness part [5101C861D] found for project [DUCATI].
+janv. 01, 2018 8:15:51 PM gui.packaging.mode1.state.Mode1_S021_HarnessPartScan doAction
+INFOS: Harness Part scanned [5101C861D] OK.
+janv. 01, 2018 8:15:52 PM helper.Helper InitDailyDestPrintDir
+INFOS: File 2018_01_01.log already exists.Print directory [.\print\2018_01_01] already exist!
+Print sub directory [.\print\2018_01_01.\open_sheet] already exist!
+Print sub directory [.\print\2018_01_01.\closing_sheet] already exist!
+Print sub directory [.\print\2018_01_01.\picking_label] already exist!
+Print sub directory [.\print\2018_01_01.\dispatch_label] already exist!
+Print directory [.\print\2018_01_01] already exist!
+Print sub directory [.\print\2018_01_01.\open_sheet] already exist!
+Print sub directory [.\print\2018_01_01.\closing_sheet] already exist!
+Print sub directory [.\print\2018_01_01.\picking_label] already exist!
+Print sub directory [.\print\2018_01_01.\dispatch_label] already exist!
+
+janv. 01, 2018 8:15:52 PM helper.PrinterHelper saveAndPrintOpenSheet
+INFOS: Set Pallet [200035306] state to [IN_PROCESS]
+janv. 01, 2018 8:15:52 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: Sending [.\print\2018_01_01\open_sheet\PrintOpenPallet_A5_2018_01_01_20_15_52_5101C861D_200035306.pdf] to the default printer...
+janv. 01, 2018 8:15:52 PM print.PrintOpenPallet_A5 sentToDefaultDesktopPrinter
+INFOS: File [.\print\2018_01_01\open_sheet\PrintOpenPallet_A5_2018_01_01_20_15_52_5101C861D_200035306.pdf] has been printed.
+janv. 01, 2018 8:15:52 PM helper.PrinterHelper saveAndPrintOpenSheet
+INFOS: Set Pallet [200035306] state to [PRINTED]
+janv. 01, 2018 8:15:53 PM gui.packaging.mode1.gui.PACKAGING_UI9000_ChoosePackType_Mode1 loadConfigUcs
+INFOS: Openning new container for first harness part [5101C861D].
+janv. 01, 2018 8:16:02 PM gui.packaging.mode1.state.Mode1_S041_NewPalletScan doAction
+AVERTISSEMENT: Line 146 Incorrect pallet number [200035306]

@@ -5,6 +5,7 @@
  */
 package gui.config;
 
+import __run__.Global;
 import entity.HisLogin;
 import entity.ManufactureUsers;
 import gui.packaging.mode2.state.Mode2_S010_UserCodeScan;
@@ -28,7 +29,9 @@ import org.hibernate.Query;
  * @author Oussama EZZIOURI
  */
 public class CONFIG_UI0000_AUTH extends javax.swing.JDialog {
+
     Frame parent;
+
     /**
      * Creates new form NewJDialog
      */
@@ -48,8 +51,8 @@ public class CONFIG_UI0000_AUTH extends javax.swing.JDialog {
     }
 
     public final void initMenusList() {
-        for (int i = 0; i < Helper.CONFIG_MENUS.size(); i++) {
-            menus_list.addItem(new ComboItem(Helper.CONFIG_MENUS.get(i), Helper.CONFIG_MENUS.get(i)));
+        for (int i = 0; i < Global.CONFIG_MENUS.size(); i++) {
+            menus_list.addItem(new ComboItem(Global.CONFIG_MENUS.get(i), Global.CONFIG_MENUS.get(i)));
         }
     }
 
@@ -71,17 +74,17 @@ public class CONFIG_UI0000_AUTH extends javax.swing.JDialog {
             Helper.startSession();
             ManufactureUsers user = (ManufactureUsers) result.get(0);
             user.setLoginTime(new Date());
-            Helper.mode2_context.setUser(user);
-            Helper.mode2_context.getUser().update(Helper.mode2_context.getUser());
+            Helper.context.setUser(user);
+            Helper.context.getUser().update(Helper.context.getUser());
 
             try {
-                Helper.HOSTNAME = InetAddress.getLocalHost().getHostName();
+                Global.APP_HOSTNAME = InetAddress.getLocalHost().getHostName();
             } catch (UnknownHostException ex) {
                 Logger.getLogger(Mode2_S010_UserCodeScan.class.getName()).log(Level.SEVERE, null, ex);
             }
             String str = String.format(Helper.INFO0001_LOGIN_SUCCESS,
                     user.getFirstName() + " " + user.getLastName()
-                    + " / " + user.getLogin(), Helper.HOSTNAME,
+                    + " / " + user.getLogin(), Global.APP_HOSTNAME,
                     Helper.getStrTimeStamp() + " Module : Planner");
             Helper.log.log(Level.INFO, str);
 
@@ -90,7 +93,7 @@ public class CONFIG_UI0000_AUTH extends javax.swing.JDialog {
                     user.getId(), user.getId(),
                     String.format(Helper.INFO0001_LOGIN_SUCCESS,
                             user.getFirstName() + " " + user.getLastName() + " / " + user.getLogin(),
-                            Helper.HOSTNAME, Helper.getStrTimeStamp()));
+                            Global.APP_HOSTNAME, Helper.getStrTimeStamp()));
             his_login.setCreateId(user.getId());
             his_login.setWriteId(user.getId());
             his_login.setMessage(str);
@@ -99,19 +102,19 @@ public class CONFIG_UI0000_AUTH extends javax.swing.JDialog {
         }
         return false;
     }
-    
+
     public void select_menu() {
         System.out.println("Selected menu [" + menus_list.getSelectedItem() + "]");
         //"Unités de conditionnement standard (UCS)",
-        if (menus_list.getSelectedItem().toString().equals(Helper.CONFIG_MENUS.get(1))) {//
+        if (menus_list.getSelectedItem().toString().equals(Global.CONFIG_MENUS.get(1))) {//
             new CONFIG_UI0001_UCS_CONFIG(parent, true).setVisible(true);
             this.dispose();
         } //"Masque code à barre",
-        else if (menus_list.getSelectedItem().toString().equals(Helper.CONFIG_MENUS.get(2))) {
+        else if (menus_list.getSelectedItem().toString().equals(Global.CONFIG_MENUS.get(2))) {
             new CONFIG_UI0001_BARCODE_CONFIG().setVisible(true);
             this.dispose();
         } //"Utilisateurs"
-        else if (menus_list.getSelectedItem().toString().equals(Helper.CONFIG_MENUS.get(3))) {
+        else if (menus_list.getSelectedItem().toString().equals(Global.CONFIG_MENUS.get(3))) {
             new CONFIG_UI0003_USERS(parent, true).setVisible(true);
             this.dispose();
 
@@ -124,7 +127,7 @@ public class CONFIG_UI0000_AUTH extends javax.swing.JDialog {
         //            planner.repaint();
         //            this.dispose();
         //        }
-        else if (menus_list.getSelectedItem().toString().equals(Helper.CONFIG_MENUS.get(4))) { //packaging config
+        else if (menus_list.getSelectedItem().toString().equals(Global.CONFIG_MENUS.get(4))) { //packaging config
 //            this.parent.setState(JFrame.ICONIFIED);
             CONFIG_UI0002_PACKAGING_CONFIG packaging_config = new CONFIG_UI0002_PACKAGING_CONFIG(null, false);
             packaging_config.setVisible(true);

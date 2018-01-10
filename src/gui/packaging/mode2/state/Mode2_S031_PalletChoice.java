@@ -5,6 +5,7 @@
  */
 package gui.packaging.mode2.state;
 
+import __run__.Global;
 import gui.packaging.Mode2_Context;
 import helper.Helper;
 import helper.PrinterHelper;
@@ -13,9 +14,7 @@ import entity.BaseContainerTmp;
 import entity.BaseHarnessAdditionalBarecode;
 import entity.BaseHarness;
 import gui.packaging.mode2.gui.PACKAGING_UI9000_ChoosePackType_Mode2;
-
 import helper.HQLHelper;
-import java.util.List;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
@@ -27,7 +26,7 @@ import org.hibernate.Query;
  */
 public class Mode2_S031_PalletChoice implements Mode2_State {
 
-    private ImageIcon imgIcon = new ImageIcon(Helper.PROP.getProperty("IMG_PATH") + "S040_PaletChoice.jpg");
+    private ImageIcon imgIcon = new ImageIcon(Global.APP_PROP.getProperty("IMG_PATH") + "S040_PaletChoice.jpg");
 
     public Mode2_S031_PalletChoice() {
         Helper.Packaging_Gui_Mode2.setIconLabel(this.imgIcon);
@@ -45,41 +44,37 @@ public class Mode2_S031_PalletChoice implements Mode2_State {
 
             //######################### OPEN NEW PALLET ########################
             Helper.log.info("Is it a new pallet ?");
-            if (barcode.equals(Helper.OPEN_PALLET_KEYWORD)) {//NEWP barcode
+            if (barcode.equals(Global.OPEN_PALLET_KEYWORD)) {//NEWP barcode
                 Helper.log.info(" [Yes]");
 
                 //Vide le scan box
                 this.clearScanBox(scan_txtbox);
                 //Afficher le popup du choix du type contenaire du harness_part
-                if (Helper.mode2_context.getBaseContainerTmp().getHarnessPart().startsWith(Helper.HARN_PART_PREFIX)) {
+                if (Helper.mode2_context.getBaseContainerTmp().getHarnessPart().startsWith(Global.HARN_PART_PREFIX)) {
                     new PACKAGING_UI9000_ChoosePackType_Mode2(null, true, context.getBaseContainerTmp().getHarnessPart().substring(1));
                 } else {
                     new PACKAGING_UI9000_ChoosePackType_Mode2(null, true, context.getBaseContainerTmp().getHarnessPart());
                 }
 
             } //####################################################
-            else if (!bc.getPackWorkstation().equals(Helper.HOSTNAME)) {
-                Helper.log.warning(String.format(Helper.ERR0025_WORKSTATION_PALLET, Helper.HOSTNAME, bc.getPackWorkstation()));
-                JOptionPane.showMessageDialog(null, String.format(Helper.ERR0025_WORKSTATION_PALLET, Helper.HOSTNAME, bc.getPackWorkstation()), "Invalid Workstation", JOptionPane.ERROR_MESSAGE);
+            else if (!bc.getPackWorkstation().equals(Global.APP_HOSTNAME)) {
+                Helper.log.warning(String.format(Helper.ERR0025_WORKSTATION_PALLET, Global.APP_HOSTNAME, bc.getPackWorkstation()));
+                JOptionPane.showMessageDialog(null, String.format(Helper.ERR0025_WORKSTATION_PALLET, Global.APP_HOSTNAME, bc.getPackWorkstation()), "Invalid Workstation", JOptionPane.ERROR_MESSAGE);
             } //# 1- If container exist 
             //# 2- Mode2_State is Open
             //# 3- Max Quantity not reached
             //# 4- Container Harness Part = Mode2_Context Harness Part  
             //# 5- Container Harness Type = Mode2_Context Harness Type
             else if (bc != null
-                    && bc.getContainerState().equals(Helper.PALLET_OPEN)
+                    && bc.getContainerState().equals(Global.PALLET_OPEN)
                     && bc.getQtyRead() < bc.getQtyExpected()
-                    && 
-                    (
-                    bc.getHarnessPart().equals(Helper.mode2_context.getBaseContainerTmp().getHarnessPart().substring(1))
-                    ||
-                    bc.getHarnessPart().equals(Helper.mode2_context.getBaseContainerTmp().getHarnessPart())
-                    )
+                    && (bc.getHarnessPart().equals(Helper.mode2_context.getBaseContainerTmp().getHarnessPart().substring(1))
+                    || bc.getHarnessPart().equals(Helper.mode2_context.getBaseContainerTmp().getHarnessPart()))
                     && bc.getHarnessType().equals(Helper.mode2_context.getBaseContainerTmp().getHarnessType())) {
 
                 Helper.log.info(" [No]");
                 Helper.log.info("Pallet values ");
-                Helper.log.info(String.format("State           :   [%s]", bc.getContainerState().equals(Helper.PALLET_OPEN)));
+                Helper.log.info(String.format("State           :   [%s]", bc.getContainerState().equals(Global.PALLET_OPEN)));
                 Helper.log.info(String.format("Qty Expected    :   [%s]", bc.getQtyExpected()));
                 Helper.log.info(String.format("Qty Read        :   [%s]", bc.getQtyRead()));
                 Helper.log.info(String.format("Std Time        :   [%s]", bc.getStdTime()));
@@ -91,7 +86,7 @@ public class Mode2_S031_PalletChoice implements Mode2_State {
 
                 Helper.sess.beginTransaction();
                 Helper.sess.persist(bc);
-                bc.setWriteId(Helper.mode2_context.getUser().getId());
+                bc.setWriteId(Helper.context.getUser().getId());
                 bc.setFifoTime(Helper.getTimeStamp(null));
                 bc.setHarnessType(context.getBaseContainerTmp().getHarnessType());
 
@@ -103,7 +98,7 @@ public class Mode2_S031_PalletChoice implements Mode2_State {
                 bh.setPalletNumber(barcode);
                 bh.setHarnessType(context.getBaseContainerTmp().getHarnessType());
                 bh.setStdTime(bc.getStdTime());
-                bh.setPackWorkstation(Helper.HOSTNAME);
+                bh.setPackWorkstation(Global.APP_HOSTNAME);
                 bh.setSegment(bc.getSegment());
                 bh.setWorkplace(bc.getWorkplace());
                 bh.setContainer(bc);
@@ -159,8 +154,8 @@ public class Mode2_S031_PalletChoice implements Mode2_State {
 
                     PrinterHelper.saveAndPrintClosingSheet(bc, false);
                     //Helper.startSession();
-                    bc.setContainerState(Helper.PALLET_WAITING);
-                    bc.setContainerStateCode(Helper.PALLET_WAITING_CODE);
+                    bc.setContainerState(Global.PALLET_WAITING);
+                    bc.setContainerStateCode(Global.PALLET_WAITING_CODE);
                     bc.update(bc);
 
                     //Incrémenter la taille du contenaire                
@@ -173,7 +168,7 @@ public class Mode2_S031_PalletChoice implements Mode2_State {
                     //Set requested closing pallet number in the main gui
                     Helper.Packaging_Gui_Mode2.setAssistanceTextarea(
                             "N° "
-                            + Helper.CLOSING_PALLET_PREFIX + bc.getPalletNumber());
+                            + Global.CLOSING_PALLET_PREFIX + bc.getPalletNumber());
                     context.setState(new Mode2_S040_ClosingPallet());
 
                 } else { //QtyExpected not reached yet ! Pallet will still open.
@@ -222,7 +217,7 @@ public class Mode2_S031_PalletChoice implements Mode2_State {
     public void clearContextSessionVals() {
         Helper.mode2_context.setBaseContainerTmp(new BaseContainerTmp());
         Helper.mode2_context.setLabelCount(0);
-        Helper.PLASTICBAG_BARCODE_PATTERN_LIST = new String[0][];
+        Global.PLASTICBAG_BARCODE_PATTERN_LIST = new String[0][];
     }
 
 }

@@ -5,6 +5,7 @@
  */
 package gui.warehouse_dispatch.state;
 
+import __run__.Global;
 import entity.BaseContainer;
 import entity.LoadPlanLine;
 import helper.HQLHelper;
@@ -42,7 +43,7 @@ public class S0100_FORS_PN implements State {
             WarehouseHelper.Dispatch_Gui.setMessageLabel(msg, -1);
             JOptionPane.showOptionDialog(null, msg, "Erreur plan de chargement", JOptionPane.DEFAULT_OPTION,JOptionPane.ERROR_MESSAGE, null, new Object[]{}, null);
             clearScanBox(scan_txtbox);
-        } else if (scan_txtbox.getText().startsWith(Helper.HARN_PART_PREFIX)) {
+        } else if (scan_txtbox.getText().startsWith(Global.HARN_PART_PREFIX)) {
             palletNum = scan_txtbox.getText().trim().substring(2);
             Helper.startSession();
             Query query = Helper.sess.createQuery(HQLHelper.GET_CONTAINER_BY_NUMBER);
@@ -58,9 +59,9 @@ public class S0100_FORS_PN implements State {
                 clearScanBox(scan_txtbox);
             } else {
                 BaseContainer bc = (BaseContainer) result.get(0);
-                if (!bc.getContainerState().equals(Helper.PALLET_STORED)) {
+                if (!bc.getContainerState().equals(Global.PALLET_STORED)) {
                     SoundHelper.PlayNotificationSound(null, 1);
-                    String msg = "Etat de la palette " + bc.getContainerState() + ". La palette doit être à l'état " + Helper.PALLET_STORED + ".\nErreur au niveau pile "+WarehouseHelper.Dispatch_Gui.getSelectedPileNum()+".";
+                    String msg = "Etat de la palette " + bc.getContainerState() + ". La palette doit être à l'état " + Global.PALLET_STORED + ".\nErreur au niveau pile "+WarehouseHelper.Dispatch_Gui.getSelectedPileNum()+".";
                     WarehouseHelper.Dispatch_Gui.setMessageLabel(msg, -1);
                     JOptionPane.showOptionDialog(null, msg, "Erreur du code palette.", JOptionPane.DEFAULT_OPTION,JOptionPane.ERROR_MESSAGE, null, new Object[]{}, null);                    
                     clearScanBox(scan_txtbox);
@@ -80,7 +81,7 @@ public class S0100_FORS_PN implements State {
                     try {
                         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
                         String hp = "";
-                        if (bc.getHarnessPart().startsWith(Helper.HARN_PART_PREFIX)) {
+                        if (bc.getHarnessPart().startsWith(Global.HARN_PART_PREFIX)) {
                             hp = bc.getHarnessPart().substring(1);
                         } else {
                             hp = bc.getHarnessPart();

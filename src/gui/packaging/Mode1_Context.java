@@ -13,18 +13,32 @@ import gui.packaging.mode1.state.Mode1_State;
  */
 public class Mode1_Context extends Context {
 
+    private boolean newPalette;
+
     private Mode1_State state;
 
     public Mode1_Context() {
         state = null;
+        newPalette = false;
     }
 
     public void setState(Mode1_State state) {
+        if(state != null)  System.out.println("Set Mode1_State to " + state.getClass().getSimpleName());
+        else System.out.println("Set Mode1_State to null ");
+        this.state = null;
         this.state = state;
     }
 
     public Mode1_State getState() {
         return state;
+    }
+
+    public boolean isNewPalette() {
+        return newPalette;
+    }
+
+    public void setNewPalette(boolean newPalette) {
+        this.newPalette = newPalette;
     }
 
 }

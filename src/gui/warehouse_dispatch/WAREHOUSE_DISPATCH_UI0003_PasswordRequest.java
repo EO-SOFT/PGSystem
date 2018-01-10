@@ -5,6 +5,7 @@
  */
 package gui.warehouse_dispatch;
 
+import __run__.Global;
 import entity.HisLogin;
 import entity.ManufactureUsers;
 import gui.warehouse_dispatch.state.S020_PalletNumberScan;
@@ -205,13 +206,13 @@ public class WAREHOUSE_DISPATCH_UI0003_PasswordRequest extends javax.swing.JDial
         State state = new S020_PalletNumberScan();
         WarehouseHelper.warehouse_out_context.setState(state);
         try {
-            Helper.HOSTNAME = InetAddress.getLocalHost().getHostName();
+            Global.APP_HOSTNAME = InetAddress.getLocalHost().getHostName();
         } catch (UnknownHostException ex) {
             Logger.getLogger(WAREHOUSE_DISPATCH_UI0003_PasswordRequest.class.getName()).log(Level.SEVERE, null, ex);
         }
         String str = String.format(Helper.INFO0001_LOGIN_SUCCESS,
                 this.user.getFirstName() + " " + this.user.getLastName()
-                + " / " + this.user.getLogin(), Helper.HOSTNAME,
+                + " / " + this.user.getLogin(), Global.APP_HOSTNAME,
                 Helper.getStrTimeStamp() + " Dispatch interface : ");
         Helper.log.log(Level.INFO, str);
 
@@ -220,7 +221,7 @@ public class WAREHOUSE_DISPATCH_UI0003_PasswordRequest extends javax.swing.JDial
                 this.user.getId(), this.user.getId(),
                 String.format(Helper.INFO0001_LOGIN_SUCCESS,
                         this.user.getFirstName() + " " + this.user.getLastName() + " / " + this.user.getLogin(),
-                        Helper.HOSTNAME, Helper.getStrTimeStamp()));
+                        Global.APP_HOSTNAME, Helper.getStrTimeStamp()));
         his_login.setCreateId(this.user.getId());
         his_login.setWriteId(this.user.getId());
         his_login.setMessage(str);
@@ -233,7 +234,7 @@ public class WAREHOUSE_DISPATCH_UI0003_PasswordRequest extends javax.swing.JDial
         WarehouseHelper.Dispatch_Gui.setUserLabelText(
                 this.user.getFirstName() + " "
                 + this.user.getLastName() + " Connecté à la machine "
-                + "[" + Helper.HOSTNAME + "]"
+                + "[" + Global.APP_HOSTNAME + "]"
         );
         
         //Auth réussie, Passage à l'état S02 de lecture des fiches Galia               

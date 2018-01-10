@@ -138,17 +138,17 @@ public class DropBaseContainer extends DAO implements java.io.Serializable {
          from the global mode2_context values
          */
         this.startTime = this.createTime = this.dropTime = this.writeTime = Helper.getTimeStamp(null);
-        this.createId = this.writeId = Helper.mode2_context.getUser().getId();
-        this.user = Helper.mode2_context.getUser().getLogin();
-        this.dropUser = Helper.mode2_context.getUser().getFirstName() + " " + Helper.mode2_context.getUser().getLastName();
+        this.createId = this.writeId = Helper.context.getUser().getId();
+        this.user = Helper.context.getUser().getLogin();
+        this.dropUser = Helper.context.getUser().getFirstName() + " " + Helper.context.getUser().getLastName();
         return this;
     }
 
     public DropBaseContainer(String palletNumber, String harnessPart, String harnessIndex, String supplierPartNumber, int qtyExpected, int qtyRead, String state, String state_code, String packType, String harnessType, String dropFeedback, double stdTime) {
         this.startTime = this.createTime = this.writeTime = Helper.getTimeStamp(null);
-        this.createId = this.writeId = Helper.mode2_context.getUser().getId();
-        this.user = Helper.mode2_context.getUser().getLogin();
-        this.dropUser =Helper.mode2_context.getUser().getFirstName() + " " + Helper.mode2_context.getUser().getLastName();
+        this.createId = this.writeId = Helper.context.getUser().getId();
+        this.user = Helper.context.getUser().getLogin();
+        this.dropUser =Helper.context.getUser().getFirstName() + " " + Helper.context.getUser().getLastName();
         this.palletNumber = palletNumber;
         this.harnessPart = harnessPart;
         this.harnessIndex = harnessIndex;
@@ -165,9 +165,9 @@ public class DropBaseContainer extends DAO implements java.io.Serializable {
 
     public DropBaseContainer(Date createTime, Date writeTime, Date dropTime, int createId, int writeId, String user, Date startTime, String palletNumber, String harnessPart, String harnessIndex, String supplierPartNumber, int qtyExpected, int qtyRead, String packType, String harnessType, String dropFeedback, double stdTime) {
         this.dropTime = this.writeTime = this.startTime = this.createTime = Helper.getTimeStamp(null);        
-        this.createId =this.writeId= Helper.mode2_context.getUser().getId();
-        this.dropUser =Helper.mode2_context.getUser().getFirstName() + " " + Helper.mode2_context.getUser().getLastName();
-        this.user = Helper.mode2_context.getUser().getFirstName() + " " + Helper.mode2_context.getUser().getLastName() + " / " + Helper.mode2_context.getUser().getLogin();
+        this.createId =this.writeId= Helper.context.getUser().getId();
+        this.dropUser =Helper.context.getUser().getFirstName() + " " + Helper.context.getUser().getLastName();
+        this.user = Helper.context.getUser().getFirstName() + " " + Helper.context.getUser().getLastName() + " / " + Helper.context.getUser().getLogin();
         this.palletNumber = palletNumber;
         this.harnessPart = harnessPart;
         this.harnessIndex = harnessIndex;

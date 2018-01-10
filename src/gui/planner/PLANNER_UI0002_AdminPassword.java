@@ -5,6 +5,7 @@
  */
 package gui.planner;
 
+import __run__.Global;
 import gui.packaging.mode1.gui.PACKAGING_UI0001_Main_Mode1;
 import entity.HisLogin;
 import entity.ManufactureUsers;
@@ -22,7 +23,6 @@ import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import org.hibernate.Query;
 import gui.packaging.mode2.state.Mode2_S010_UserCodeScan;
-import gui.packaging.mode2.state.Mode2_S020_HarnessPartScan;
 
 /**
  *
@@ -158,17 +158,17 @@ public class PLANNER_UI0002_AdminPassword extends javax.swing.JDialog {
             Helper.startSession();
             ManufactureUsers user = (ManufactureUsers) result.get(0);
             user.setLoginTime(new Date());
-            Helper.mode2_context.setUser(user);
-            Helper.mode2_context.getUser().update(Helper.mode2_context.getUser());
+            Helper.context.setUser(user);
+            Helper.context.getUser().update(Helper.context.getUser());
 
             try {
-                Helper.HOSTNAME = InetAddress.getLocalHost().getHostName();
+                Global.APP_HOSTNAME = InetAddress.getLocalHost().getHostName();
             } catch (UnknownHostException ex) {
                 Logger.getLogger(Mode2_S010_UserCodeScan.class.getName()).log(Level.SEVERE, null, ex);
             }
             String str = String.format(Helper.INFO0001_LOGIN_SUCCESS,
                     user.getFirstName() + " " + user.getLastName()
-                    + " / " + user.getLogin(), Helper.HOSTNAME,
+                    + " / " + user.getLogin(), Global.APP_HOSTNAME,
                     Helper.getStrTimeStamp() + " Module : Planner");
             Helper.log.log(Level.INFO, str);
 
@@ -177,7 +177,7 @@ public class PLANNER_UI0002_AdminPassword extends javax.swing.JDialog {
                     user.getId(), user.getId(),
                     String.format(Helper.INFO0001_LOGIN_SUCCESS,
                             user.getFirstName() + " " + user.getLastName() + " / " + user.getLogin(),
-                            Helper.HOSTNAME, Helper.getStrTimeStamp()));
+                            Global.APP_HOSTNAME, Helper.getStrTimeStamp()));
             his_login.setCreateId(user.getId());
             his_login.setWriteId(user.getId());
             his_login.setMessage(str);
@@ -217,7 +217,7 @@ public class PLANNER_UI0002_AdminPassword extends javax.swing.JDialog {
     }//GEN-LAST:event_admin_password_txtboxKeyPressed
 
     private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
-        if (Helper.mode2_context.getUser() == null) {
+        if (Helper.context.getUser() == null) {
             Helper.mode2_context.setState(new Mode2_S010_UserCodeScan());
         }
 

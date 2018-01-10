@@ -5,6 +5,7 @@
  */
 package print;
 
+import __run__.Global;
 import helper.Helper;
 import com.itextpdf.text.BaseColor;
 import com.itextpdf.text.Document;
@@ -69,22 +70,22 @@ public class PrintPickingLabel implements BarcodeCreator {
         this.rotation = rotation;
 
         PrintPickingLabel.setDEST(String.format(".\\"
-                + Helper.PROP.getProperty("PRINT_DIRNAME")
+                + Global.APP_PROP.getProperty("PRINT_DIRNAME")
                 + File.separator
                 + Helper.getStrTimeStamp("yyyy_MM_dd")
                 + File.separator
-                + Helper.PROP.getProperty("PRINT_PICKING_SHEET_DIRNAME")
+                + Global.APP_PROP.getProperty("PRINT_PICKING_SHEET_DIRNAME")
                 + File.separator + "label_"
                 + Helper.getStrTimeStamp("yyyy_MM_dd_HH_mm_ss") + ".pdf"));
     }
 
     public PrintPickingLabel() {
         PrintPickingLabel.setDEST(String.format(".\\"
-                + Helper.PROP.getProperty("PRINT_DIRNAME")
+                + Global.APP_PROP.getProperty("PRINT_DIRNAME")
                 + File.separator
                 + Helper.getStrTimeStamp("yyyy_MM_dd")
                 + File.separator
-                + Helper.PROP.getProperty("PRINT_CLOSING_PALLET_DIRNAME")
+                + Global.APP_PROP.getProperty("PRINT_CLOSING_PALLET_DIRNAME")
                 + File.separator + "label_"
                 + Helper.getStrTimeStamp("yyyy_MM_dd_HH_mm_ss") + ".pdf"));
     }
@@ -164,8 +165,8 @@ public class PrintPickingLabel implements BarcodeCreator {
     public String createPdf(int special_order) throws IOException, DocumentException {
         //Left, right, top, bottom
         Rectangle labelSize = new Rectangle(
-                Float.valueOf(Helper.PROP.getProperty("PRINT_PICKING_SHEET_WIDTH")),
-                Float.valueOf(Helper.PROP.getProperty("PRINT_PICKING_SHEET_HEIGHT"))                 
+                Float.valueOf(Global.APP_PROP.getProperty("PRINT_PICKING_SHEET_WIDTH")),
+                Float.valueOf(Global.APP_PROP.getProperty("PRINT_PICKING_SHEET_HEIGHT"))                 
         );
         
         Document document = new Document(labelSize, 0, 0, 1, 1);

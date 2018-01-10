@@ -5,7 +5,10 @@
  */
 package gui.packaging;
 
+import entity.BaseContainer;
 import entity.BaseContainerTmp;
+import entity.BaseHarness;
+import entity.BaseHarnessAdditionalBarecode;
 import entity.BaseHarnessAdditionalBarecodeTmp;
 import entity.ManufactureUsers;
 
@@ -14,6 +17,11 @@ import entity.ManufactureUsers;
  * @author Oussama EZZIOURI
  */
 public class Context {
+    
+    private BaseContainer tempBC = new BaseContainer();
+    private BaseHarness tempBH = new BaseHarness();
+    private BaseHarnessAdditionalBarecode tempBarecode = new BaseHarnessAdditionalBarecode();
+    private String harnessCounter;
     
     private BaseContainerTmp baseContainerTmp = new BaseContainerTmp();
     private BaseHarnessAdditionalBarecodeTmp baseHarnessAdditionalBarecodeTmp = new BaseHarnessAdditionalBarecodeTmp();
@@ -67,6 +75,40 @@ public class Context {
         this.feedback = feedback;
     }
 
+    public BaseContainer getTempBC() {
+        return tempBC;
+    }
+
+    public void setTempBC(BaseContainer tempBC) {
+        this.tempBC = tempBC;
+    }
+
+    public BaseHarness getTempBH() {
+        return tempBH;
+    }
+
+    public void setTempBH(BaseHarness tempBH) {
+        this.tempBH = tempBH;
+    }
+
+    public BaseHarnessAdditionalBarecode getTempBarecode() {
+        return tempBarecode;
+    }
+
+    public void setTempBarecode(BaseHarnessAdditionalBarecode tempBarecode) {
+        this.tempBarecode = tempBarecode;
+    }
+
+    public String getHarnessCounter() {
+        return harnessCounter;
+    }
+
+    public void setHarnessCounter(String harnessCounter) {
+        this.harnessCounter = harnessCounter;
+    }
+    
+    
+    
     @Override
     public String toString() {
         return "Context{" + "baseContainerTmp=" + baseContainerTmp + '}';

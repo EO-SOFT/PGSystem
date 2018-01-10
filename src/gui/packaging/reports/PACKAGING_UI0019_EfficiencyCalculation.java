@@ -5,6 +5,7 @@
  */
 package gui.packaging.reports;
 
+import __run__.Global;
 import entity.ConfigSegment;
 import entity.ConfigWorkplace;
 import helper.ComboItem;
@@ -123,8 +124,8 @@ public class PACKAGING_UI0019_EfficiencyCalculation extends javax.swing.JDialog 
 
     private void initTimeSpinners() {
 
-        String startTime = Helper.PROP.getProperty("START_TIME");
-        String endTime = Helper.PROP.getProperty("END_TIME");
+        String startTime = Global.APP_PROP.getProperty("START_TIME");
+        String endTime = Global.APP_PROP.getProperty("END_TIME");
         DateFormat timeFormat = new SimpleDateFormat("HH:mm");
 
         //################# Start Time Spinner ####################
@@ -194,10 +195,10 @@ public class PACKAGING_UI0019_EfficiencyCalculation extends javax.swing.JDialog 
             Vector<Object> oneRow = new Vector<Object>();
             oneRow.add(String.valueOf(obj[0])); //segment
             oneRow.add(String.valueOf(obj[1])); //workplace            
-            if(String.valueOf(obj[2]).startsWith(Helper.HARN_PART_PREFIX))
+            if(String.valueOf(obj[2]).startsWith(Global.HARN_PART_PREFIX))
                 oneRow.add(String.valueOf(obj[2])); //harness_part
             else
-                oneRow.add(Helper.HARN_PART_PREFIX+String.valueOf(obj[2])); //harness_part
+                oneRow.add(Global.HARN_PART_PREFIX+String.valueOf(obj[2])); //harness_part
             oneRow.add(String.valueOf(obj[3])); //std_time            
             oneRow.add(String.valueOf(obj[4])); //produced_qty;
             oneRow.add(decimForm.format(Double.valueOf(String.valueOf(obj[5])))); //produced_hours
@@ -206,8 +207,8 @@ public class PACKAGING_UI0019_EfficiencyCalculation extends javax.swing.JDialog 
             declared_result_table_data.add(oneRow);
         }
         declared_result_table.setModel(new DefaultTableModel(declared_result_table_data, declared_result_table_header));
-        declared_result_table.setFont(new Font(String.valueOf(Helper.PROP.getProperty("JTABLE_FONT")), Font.BOLD, Integer.valueOf(Helper.PROP.getProperty("JTABLE_FONTSIZE"))));
-        declared_result_table.setRowHeight(Integer.valueOf(Helper.PROP.getProperty("JTABLE_ROW_HEIGHT")));
+        declared_result_table.setFont(new Font(String.valueOf(Global.APP_PROP.getProperty("JTABLE_FONT")), Font.BOLD, Integer.valueOf(Global.APP_PROP.getProperty("JTABLE_FONTSIZE"))));
+        declared_result_table.setRowHeight(Integer.valueOf(Global.APP_PROP.getProperty("JTABLE_ROW_HEIGHT")));
 
         //Set declared qty labels values
         this.produced_qty_txt.setText(String.valueOf(total_produced_qty));
@@ -916,7 +917,7 @@ public class PACKAGING_UI0019_EfficiencyCalculation extends javax.swing.JDialog 
                 row = sheet.createRow(sheetPointer);
                 row.createCell(0).setCellValue(String.valueOf(obj[0])); //SEGMENT
                 row.createCell(1).setCellValue(String.valueOf(obj[1])); //WORKPLACE
-                if(String.valueOf(obj[2]).startsWith(Helper.HARN_PART_PREFIX))
+                if(String.valueOf(obj[2]).startsWith(Global.HARN_PART_PREFIX))
                     row.createCell(2).setCellValue(String.valueOf(obj[2]).substring(1));//PART NUMBER
                 else 
                     row.createCell(2).setCellValue(String.valueOf(obj[2]));//PART NUMBER

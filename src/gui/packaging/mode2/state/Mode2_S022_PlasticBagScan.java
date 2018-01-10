@@ -5,18 +5,14 @@
  */
 package gui.packaging.mode2.state;
 
+import __run__.Global;
 import gui.packaging.Mode2_Context;
 import helper.Helper;
 import entity.BaseHarnessAdditionalBarecode;
-import entity.ConfigBarcode;
-import helper.HQLHelper;
-import java.util.Iterator;
-import java.util.List;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 import static javax.swing.JOptionPane.ERROR_MESSAGE;
 import javax.swing.JTextField;
-import org.hibernate.Query;
 
 /**
  *
@@ -24,7 +20,7 @@ import org.hibernate.Query;
  */
 public class Mode2_S022_PlasticBagScan implements Mode2_State {
 
-    private ImageIcon imgIcon = new ImageIcon(Helper.PROP.getProperty("IMG_PATH") + "S031_EngineLabelScan.jpg");
+    private ImageIcon imgIcon = new ImageIcon(Global.APP_PROP.getProperty("IMG_PATH") + "S031_EngineLabelScan.jpg");
 
     //
     private int numberOfPatterns = 0;
@@ -71,7 +67,7 @@ public class Mode2_S022_PlasticBagScan implements Mode2_State {
                 Helper.mode2_context.getBaseHarnessAdditionalBarecodeTmp().setLabelCode(this.patternIndex, engineLabel);
                 Helper.log.info("First Valid Engine Label scanned [" + engineLabel + "] OK.");
                 this.patternIndex++;
-                Helper.Packaging_Gui_Mode2.setAssistanceTextarea(String.format("Scanner le code à barre sachet N° %d / %d. %s ", this.patternIndex + 1, this.numberOfPatterns, Helper.PLASTICBAG_BARCODE_PATTERN_LIST[this.patternIndex][1]));
+                Helper.Packaging_Gui_Mode2.setAssistanceTextarea(String.format("Scanner le code à barre sachet N° %d / %d. %s ", this.patternIndex + 1, this.numberOfPatterns, Global.PLASTICBAG_BARCODE_PATTERN_LIST[this.patternIndex][1]));
             } else { // Touts les patternes se sont scannés
                 Helper.mode2_context.getBaseHarnessAdditionalBarecodeTmp().setLabelCode(this.patternIndex, engineLabel);
                 Helper.Packaging_Gui_Mode2.setAssistanceTextarea("");

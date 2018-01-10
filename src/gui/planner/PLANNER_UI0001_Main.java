@@ -5,6 +5,7 @@
  */
 package gui.planner;
 
+import __run__.Global;
 import entity.ConfigShift;
 import entity.ScheduleEntry;
 import helper.ComboItem;
@@ -746,8 +747,8 @@ public class PLANNER_UI0001_Main extends javax.swing.JFrame {
             this.cs = cs.selectShiftByDesc(String.valueOf(shift_box.getSelectedItem()));
             se.setCreateTime(new Date());
             se.setWriteTime(new Date());
-            se.setCreateId(Helper.mode2_context.getUser().getId());
-            se.setWriteId(Helper.mode2_context.getUser().getId());
+            se.setCreateId(Helper.context.getUser().getId());
+            se.setWriteId(Helper.context.getUser().getId());
             se.setHarnessType(String.valueOf(harness_type_box.getSelectedItem()));
             se.setHarnessPart(String.valueOf(harness_part_box.getSelectedItem()));
             se.setHarnessIndex(String.valueOf(harness_index_box.getSelectedItem()));
@@ -766,8 +767,8 @@ public class PLANNER_UI0001_Main extends javax.swing.JFrame {
             se.setTotalRemaining((float) 0);
             se.setShiftName(this.cs.getName());
             se.setShift(this.cs);
-            se.setEntryState(Helper.SCHEDULE_STATE_NEW);
-            se.setEntryStateCode(Helper.SCHEDULE_STATE_NEW_CODE);
+            se.setEntryState(Global.SCHEDULE_STATE_NEW);
+            se.setEntryStateCode(Global.SCHEDULE_STATE_NEW_CODE);
             se.setComment(comment_txt.getText());
             se.create(se);
             clearFields();

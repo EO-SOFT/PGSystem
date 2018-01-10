@@ -5,6 +5,7 @@
  */
 package gui.packaging.mode2.state;
 
+import __run__.Global;
 import gui.packaging.Mode2_Context;
 import helper.Helper;
 import entity.BaseHarness;
@@ -24,7 +25,7 @@ import org.hibernate.Query;
  */
 public class Mode2_S021_MatrixIdScan implements Mode2_State {
 
-    private ImageIcon imgIcon = new ImageIcon(Helper.PROP.getProperty("IMG_PATH") + "S03_QRCodeScan.jpg");
+    private ImageIcon imgIcon = new ImageIcon(Global.APP_PROP.getProperty("IMG_PATH") + "S03_QRCodeScan.jpg");
 
     //Combien de patterns de scane configurer pour ce part number.
     private int numberOfPatterns = 0;
@@ -63,7 +64,7 @@ public class Mode2_S021_MatrixIdScan implements Mode2_State {
             //Format 2 with prefix P : P5101C861C;05.10.2017;10:05:01
             //Format 3 Harness Part with prefix P but removed to be compared with QR Code without P 5101C861C;05.10.2017;10:05:01
         } else if (!counter.startsWith(context.getBaseContainerTmp().getHarnessPart()) 
-                && !counter.startsWith(Helper.HARN_COUNTER_PREFIX + context.getBaseContainerTmp().getHarnessPart())
+                && !counter.startsWith(Global.HARN_COUNTER_PREFIX + context.getBaseContainerTmp().getHarnessPart())
                 && !counter.startsWith(context.getBaseContainerTmp().getHarnessPart().substring(1)) 
                 ) {
             JOptionPane.showMessageDialog(null, String.format(Helper.ERR0009_COUNTER_NOT_MATCH_HP, counter, context.getBaseContainerTmp().getHarnessPart()), "Counter error !", ERROR_MESSAGE);
@@ -79,9 +80,9 @@ public class Mode2_S021_MatrixIdScan implements Mode2_State {
             //Vide le scan box
             this.clearScanBox(scan_txtbox);
             //####################### Go to Palette Scann ###########################
-            Helper.PLASTICBAG_BARCODE_PATTERN_LIST = loadPlasticBagPattern();
-            if (Helper.PLASTICBAG_BARCODE_PATTERN_LIST.length != 0) {
-                Mode2_S022_PlasticBagScan state = new Mode2_S022_PlasticBagScan(this.numberOfPatterns, Helper.PLASTICBAG_BARCODE_PATTERN_LIST);
+            Global.PLASTICBAG_BARCODE_PATTERN_LIST = loadPlasticBagPattern();
+            if (Global.PLASTICBAG_BARCODE_PATTERN_LIST.length != 0) {
+                Mode2_S022_PlasticBagScan state = new Mode2_S022_PlasticBagScan(this.numberOfPatterns, Global.PLASTICBAG_BARCODE_PATTERN_LIST);
                 context.setState(state);
             } else {
                 // Pas de scanne de code à barre intermidiaire, passer
@@ -105,7 +106,7 @@ public class Mode2_S021_MatrixIdScan implements Mode2_State {
         
         Helper.startSession();
         Query query = Helper.sess.createQuery(HQLHelper.GET_PATTERN_BY_HARNESSPART);
-        if(Helper.mode2_context.getBaseContainerTmp().getHarnessPart().startsWith(Helper.HARN_PART_PREFIX))
+        if(Helper.mode2_context.getBaseContainerTmp().getHarnessPart().startsWith(Global.HARN_PART_PREFIX))
             PN = Helper.mode2_context.getBaseContainerTmp().getHarnessPart().substring(1);
         else
             PN = Helper.mode2_context.getBaseContainerTmp().getHarnessPart();
@@ -116,26 +117,26 @@ public class Mode2_S021_MatrixIdScan implements Mode2_State {
         List resultList = query.list();
         System.out.println(String.format("%d pattern found for part number %s ", query.list().size(), PN));
         if (!query.list().isEmpty()) {
-            Helper.PLASTICBAG_BARCODE_PATTERN_LIST = new String[query.list().size()][2];
+            Global.PLASTICBAG_BARCODE_PATTERN_LIST = new String[query.list().size()][2];
             //Allouer de l'espace pour la liste des code à barre getBaseHarnessAdditionalBarecodeTmp
             Helper.mode2_context.getBaseHarnessAdditionalBarecodeTmp().setLabelCode(new String[query.list().size()]);
             int i = 0;
             for (Iterator it = resultList.iterator(); it.hasNext();) {
                 this.numberOfPatterns++;
                 ConfigBarcode config = (ConfigBarcode) it.next();
-                Helper.PLASTICBAG_BARCODE_PATTERN_LIST[i][0] = config.getBarcodePattern();
-                Helper.PLASTICBAG_BARCODE_PATTERN_LIST[i][1] = config.getDescription();
+                Global.PLASTICBAG_BARCODE_PATTERN_LIST[i][0] = config.getBarcodePattern();
+                Global.PLASTICBAG_BARCODE_PATTERN_LIST[i][1] = config.getDescription();
                 i++;
             }
             
             System.out.println("PLASTICBAG_BARCODE_PATTERN_LIST "+this.numberOfPatterns+" pattern(s) successfuly loaded 100% ! ");
         }
         else{
-            Helper.PLASTICBAG_BARCODE_PATTERN_LIST = new String[0][0];
+            Global.PLASTICBAG_BARCODE_PATTERN_LIST = new String[0][0];
             
         }
         //No pattern found ! Retourner une liste vide.
-        return Helper.PLASTICBAG_BARCODE_PATTERN_LIST;
+        return Global.PLASTICBAG_BARCODE_PATTERN_LIST;
     }
 
     public String toString() {

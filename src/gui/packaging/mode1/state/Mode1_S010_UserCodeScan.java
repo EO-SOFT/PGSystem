@@ -5,6 +5,7 @@
  */
 package gui.packaging.mode1.state;
 
+import __run__.Global;
 import gui.packaging.Mode1_Context;
 import helper.Helper;
 import helper.HQLHelper;
@@ -23,7 +24,7 @@ import org.hibernate.Query;
  */
 public class Mode1_S010_UserCodeScan implements Mode1_State {
 
-    private final ImageIcon imgIcon = new ImageIcon(Helper.PROP.getProperty("IMG_PATH") + "S01_UserCodeScan.jpg");
+    private final ImageIcon imgIcon = new ImageIcon(Global.APP_PROP.getProperty("IMG_PATH") + "S01_UserCodeScan.jpg");
 
     public Mode1_S010_UserCodeScan() {
 

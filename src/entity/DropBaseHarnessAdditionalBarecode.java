@@ -60,8 +60,8 @@ public class DropBaseHarnessAdditionalBarecode extends DAO implements java.io.Se
          */
         this.createTime = Helper.getTimeStamp(null);
         this.writeTime = Helper.getTimeStamp(null);
-        this.createId = Helper.mode2_context.getUser().getId();
-        this.writeId = Helper.mode2_context.getUser().getId();
+        this.createId = Helper.context.getUser().getId();
+        this.writeId = Helper.context.getUser().getId();
 
         return this;
     }

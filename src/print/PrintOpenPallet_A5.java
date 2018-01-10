@@ -5,6 +5,7 @@
  */
 package print;
 
+import __run__.Global;
 import helper.Helper;
 import com.itextpdf.text.BaseColor;
 import com.itextpdf.text.Document;
@@ -88,11 +89,11 @@ public final class PrintOpenPallet_A5 implements BarcodeCreator {
 
         //Create PDF File to print
         this.setDEST(String.format(".\\"
-                + Helper.PROP.getProperty("PRINT_DIRNAME")
+                + Global.APP_PROP.getProperty("PRINT_DIRNAME")
                 + File.separator
                 + Helper.getStrTimeStamp("yyyy_MM_dd")
                 + File.separator
-                + Helper.PROP.getProperty("PRINT_PALLET_DIRNAME")
+                + Global.APP_PROP.getProperty("PRINT_PALLET_DIRNAME")
                 + File.separator + "PrintOpenPallet_A5_"
                 + Helper.getStrTimeStamp("yyyy_MM_dd_HH_mm_ss")
                 + "_" + harness_part + "_"+ pallet_number
@@ -254,7 +255,7 @@ public final class PrintOpenPallet_A5 implements BarcodeCreator {
         
         // ######################## Line 2 ##########################
         // we add the four remaining cells with addCell()        
-        cell.setPhrase(new Phrase(Helper.HOSTNAME+" | "+this.getUser(), FontFactory.getFont(FontFactory.COURIER, 18f, Font.BOLD)));
+        cell.setPhrase(new Phrase(Global.APP_HOSTNAME+" | "+this.getUser(), FontFactory.getFont(FontFactory.COURIER, 18f, Font.BOLD)));
         table.addCell(cell);
         cell.setPhrase(new Phrase(this.getHarness_part()+"/"+this.getIndex(), FontFactory.getFont(FontFactory.COURIER, 25f, Font.BOLD)));
         table.addCell(cell);

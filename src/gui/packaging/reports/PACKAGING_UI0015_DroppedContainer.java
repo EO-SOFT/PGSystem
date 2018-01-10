@@ -5,6 +5,7 @@
  */
 package gui.packaging.reports;
 
+import __run__.Global;
 import entity.ConfigProject;
 import helper.ComboItem;
 import helper.Helper;
@@ -94,8 +95,8 @@ public class PACKAGING_UI0015_DroppedContainer extends javax.swing.JDialog {
                 new MouseAdapter() {
                     public void mouseClicked(MouseEvent e) {
                         if (e.getClickCount() == 2) {
-                            System.out.println("Helper.context.getUser().getAccessLevel()" + Helper.mode2_context.getUser().getAccessLevel());                         
-                            if (Helper.mode2_context.getUser().getAccessLevel() == Helper.PROFIL_ADMIN) {
+                            System.out.println("Helper.context.getUser().getAccessLevel()" + Helper.context.getUser().getAccessLevel());                         
+                            if (Helper.context.getUser().getAccessLevel() == Global.PROFIL_ADMIN) {
                                 new PACKAGING_UI0010_DroppedContainerDetails(null, rootPaneCheckingEnabled, String.valueOf(dropped_result_table.getValueAt(dropped_result_table.getSelectedRow(), PALLET_NUMBER_COLINDEX)), true, true).setVisible(true);
                             } else {
                                 new PACKAGING_UI0010_DroppedContainerDetails(null, rootPaneCheckingEnabled, String.valueOf(dropped_result_table.getValueAt(dropped_result_table.getSelectedRow(), PALLET_NUMBER_COLINDEX)), false, false).setVisible(true);
@@ -131,8 +132,8 @@ public class PACKAGING_UI0015_DroppedContainer extends javax.swing.JDialog {
 
     private void initTimeSpinners() {
 
-        String startTime = Helper.PROP.getProperty("START_TIME");
-        String endTime = Helper.PROP.getProperty("END_TIME");
+        String startTime = Global.APP_PROP.getProperty("START_TIME");
+        String endTime = Global.APP_PROP.getProperty("END_TIME");
         DateFormat timeFormat = new SimpleDateFormat("HH:mm");
 
         //################# Start Time Spinner ####################
@@ -200,8 +201,8 @@ public class PACKAGING_UI0015_DroppedContainer extends javax.swing.JDialog {
             dropped_result_table_data.add(oneRow);
         }
         dropped_result_table.setModel(new DefaultTableModel(dropped_result_table_data, dropped_result_table_header));
-        dropped_result_table.setFont(new Font(String.valueOf(Helper.PROP.getProperty("JTABLE_FONT")), Font.BOLD, Integer.valueOf(Helper.PROP.getProperty("JTABLE_FONTSIZE"))));
-        dropped_result_table.setRowHeight(Integer.valueOf(Helper.PROP.getProperty("JTABLE_ROW_HEIGHT")));
+        dropped_result_table.setFont(new Font(String.valueOf(Global.APP_PROP.getProperty("JTABLE_FONT")), Font.BOLD, Integer.valueOf(Global.APP_PROP.getProperty("JTABLE_FONTSIZE"))));
+        dropped_result_table.setRowHeight(Integer.valueOf(Global.APP_PROP.getProperty("JTABLE_ROW_HEIGHT")));
 
         this.total_lbl.setText(String.valueOf(total));
     }

@@ -5,6 +5,7 @@
  */
 package gui.warehouse_dispatch;
 
+import __run__.Global;
 import entity.LoadPlanDestination;
 import helper.ComboItem;
 import helper.HQLHelper;
@@ -140,8 +141,8 @@ public class WAREHOUSE_DISPATCH_UI0006_LIST extends javax.swing.JDialog {
             plan_result_table_data.add(oneRow);
         }
         loadPlan_result_table.setModel(new DefaultTableModel(plan_result_table_data, plan_result_table_header));
-        loadPlan_result_table.setFont(new Font(String.valueOf(Helper.PROP.getProperty("JTABLE_FONT")), Font.BOLD, 14));
-        loadPlan_result_table.setRowHeight(Integer.valueOf(Helper.PROP.getProperty("JTABLE_ROW_HEIGHT")));
+        loadPlan_result_table.setFont(new Font(String.valueOf(Global.APP_PROP.getProperty("JTABLE_FONT")), Font.BOLD, 14));
+        loadPlan_result_table.setRowHeight(Integer.valueOf(Global.APP_PROP.getProperty("JTABLE_ROW_HEIGHT")));
     }
 
     /**

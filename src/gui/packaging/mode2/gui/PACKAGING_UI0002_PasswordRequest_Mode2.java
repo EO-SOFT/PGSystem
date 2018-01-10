@@ -5,6 +5,7 @@
  */
 package gui.packaging.mode2.gui;
 
+import __run__.Global;
 import entity.ConfigBarcode;
 import entity.HisLogin;
 import entity.ManufactureUsers;
@@ -143,8 +144,8 @@ public class PACKAGING_UI0002_PasswordRequest_Mode2 extends javax.swing.JDialog 
         Query query = Helper.sess.createQuery(HQLHelper.CHECK_LOGIN_PASS);
         query.setParameter("login", this.user.getLogin());
         query.setParameter("password", String.valueOf(admin_password_txtbox.getPassword()));
-        //query.setParameter("active", Helper.mode2_context.getUser().getActive()); //active user only
-        //query.setParameter("harnessType", Helper.mode2_context.getUser().getHarnessType());
+        //query.setParameter("active", Helper.context.getUser().getActive()); //active user only
+        //query.setParameter("harnessType", Helper.context.getUser().getHarnessType());
         Helper.sess.getTransaction().commit();
         List result = query.list();
         System.out.println("Resultat du check " + result.size());
@@ -179,16 +180,16 @@ public class PACKAGING_UI0002_PasswordRequest_Mode2 extends javax.swing.JDialog 
         Helper.sess.beginTransaction();
         Helper.sess.getTransaction().commit();
         List resultList = query.list();
-        Helper.DATAMATRIX_PATTERN_LIST = new String[query.list().size()];
+        Global.DATAMATRIX_PATTERN_LIST = new String[query.list().size()];
 
         int i = 0;
         for (Iterator it = resultList.iterator(); it.hasNext();) {
             ConfigBarcode object = (ConfigBarcode) it.next();
-            Helper.DATAMATRIX_PATTERN_LIST[i] = object.getBarcodePattern();
-            System.out.println(Helper.DATAMATRIX_PATTERN_LIST[i].toString());
+            Global.DATAMATRIX_PATTERN_LIST[i] = object.getBarcodePattern();
+            System.out.println(Global.DATAMATRIX_PATTERN_LIST[i].toString());
             i++;
         }
-        System.out.println(Helper.DATAMATRIX_PATTERN_LIST.length + " QR Code pattern for customer '" + harnessType + "' successfuly loaded 100% ! ");
+        System.out.println(Global.DATAMATRIX_PATTERN_LIST.length + " QR Code pattern for customer '" + harnessType + "' successfuly loaded 100% ! ");
     }
 
     /**
@@ -205,18 +206,18 @@ public class PACKAGING_UI0002_PasswordRequest_Mode2 extends javax.swing.JDialog 
         Helper.sess.beginTransaction();
         Helper.sess.getTransaction().commit();
         List resultList = query.list();
-        Helper.PARTNUMBER_PATTERN_LIST = new String[query.list().size()];
+        Global.PARTNUMBER_PATTERN_LIST = new String[query.list().size()];
 
         System.out.println("Part number pattern list...");
         int i = 0;
         for (Iterator it = resultList.iterator(); it.hasNext();) {
             ConfigBarcode object = (ConfigBarcode) it.next();
-            Helper.PARTNUMBER_PATTERN_LIST[i] = object.getBarcodePattern();
-            System.out.println(Helper.PARTNUMBER_PATTERN_LIST[i].toString());
+            Global.PARTNUMBER_PATTERN_LIST[i] = object.getBarcodePattern();
+            System.out.println(Global.PARTNUMBER_PATTERN_LIST[i].toString());
             i++;
         }
 
-        System.out.println(Helper.PARTNUMBER_PATTERN_LIST.length + " part number pattern for type '" + harnessType + "' successfuly loaded 100% ! ");
+        System.out.println(Global.PARTNUMBER_PATTERN_LIST.length + " part number pattern for type '" + harnessType + "' successfuly loaded 100% ! ");
 
     }
 
@@ -227,17 +228,17 @@ public class PACKAGING_UI0002_PasswordRequest_Mode2 extends javax.swing.JDialog 
         Helper.startSession();
 
         this.user.setLoginTime(new Date());
-        Helper.mode2_context.setUser(this.user);
-        Helper.mode2_context.getUser().update(Helper.mode2_context.getUser());
+        Helper.context.setUser(this.user);
+        Helper.context.getUser().update(Helper.context.getUser());
         Helper.mode2_context.getBaseContainerTmp().setHarnessType(harnessType);
         try {
-            Helper.HOSTNAME = InetAddress.getLocalHost().getHostName();
+            Global.APP_HOSTNAME = InetAddress.getLocalHost().getHostName();
         } catch (UnknownHostException ex) {
             Logger.getLogger(Mode2_S010_UserCodeScan.class.getName()).log(Level.SEVERE, null, ex);
         }
         String str = String.format(Helper.INFO0001_LOGIN_SUCCESS,
                 this.user.getFirstName() + " " + this.user.getLastName()
-                + " / " + this.user.getLogin(), Helper.HOSTNAME,
+                + " / " + this.user.getLogin(), Global.APP_HOSTNAME,
                 Helper.getStrTimeStamp() + " Project : "
                 + harnessType);
         Helper.log.log(Level.INFO, str);
@@ -247,7 +248,7 @@ public class PACKAGING_UI0002_PasswordRequest_Mode2 extends javax.swing.JDialog 
                 this.user.getId(), this.user.getId(),
                 String.format(Helper.INFO0001_LOGIN_SUCCESS,
                         this.user.getFirstName() + " " + this.user.getLastName() + " / " + this.user.getLogin(),
-                        Helper.HOSTNAME, Helper.getStrTimeStamp()));
+                        Global.APP_HOSTNAME, Helper.getStrTimeStamp()));
         his_login.setCreateId(this.user.getId());
         his_login.setWriteId(this.user.getId());
         his_login.setMessage(str);
@@ -255,8 +256,8 @@ public class PACKAGING_UI0002_PasswordRequest_Mode2 extends javax.swing.JDialog 
 
         //Set connected user label text
         Helper.Packaging_Gui_Mode2.setUserLabelText(
-                Helper.mode2_context.getUser().getFirstName() + " "
-                + Helper.mode2_context.getUser().getLastName() + " "
+                Helper.context.getUser().getFirstName() + " "
+                + Helper.context.getUser().getLastName() + " "
                 + "[" + Helper.Packaging_Gui_Mode2.getHarnessTypeBox().getSelectedItem().toString() + "]"
         );
         //Disable filter
@@ -290,7 +291,7 @@ public class PACKAGING_UI0002_PasswordRequest_Mode2 extends javax.swing.JDialog 
     }//GEN-LAST:event_admin_password_txtboxKeyPressed
 
     private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
-        if (Helper.mode2_context.getUser() == null) {
+        if (Helper.context.getUser() == null) {
             Helper.mode2_context.setState(new Mode2_S010_UserCodeScan());
         }
 

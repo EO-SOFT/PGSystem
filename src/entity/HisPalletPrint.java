@@ -1,6 +1,7 @@
 package entity;
 // Generated 6 f�vr. 2016 21:43:55 by Hibernate Tools 3.6.0
 
+import __run__.Global;
 import helper.Helper;
 import helper.HQLHelper;
 import hibernate.DAO;
@@ -237,7 +238,7 @@ public class HisPalletPrint extends DAO implements java.io.Serializable {
         Helper.sess.beginTransaction();
         Helper.sess.createQuery(HQLHelper.SET_OPEN_SHEET_REPRINT)
                 .setParameter("state", state)
-                .setParameter("reprint", Helper.PALLET_PRINT_REPRINT)
+                .setParameter("reprint", Global.PALLET_PRINT_REPRINT)
                 .setParameter("writeTime", new Date())
                 .setParameter("writeId", writeId)
                 .setParameter("id", id)

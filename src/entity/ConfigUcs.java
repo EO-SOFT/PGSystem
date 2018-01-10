@@ -1,6 +1,7 @@
 package entity;
 // Generated 6 f�vr. 2016 21:43:55 by Hibernate Tools 3.6.0
 
+import __run__.Global;
 import helper.Helper;
 import java.util.List;
 import org.hibernate.Query;
@@ -17,7 +18,6 @@ import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
@@ -164,7 +164,7 @@ public class ConfigUcs extends DAO implements java.io.Serializable {
          from the global mode2_context values
          */
         this.createTime = this.writeTime = Helper.getTimeStamp(null);
-        this.createId = this.writeId = Helper.mode2_context.getUser().getId();
+        this.createId = this.writeId = Helper.context.getUser().getId();
         this.additionalBarcode = 0;
         return this;
     }
@@ -419,9 +419,9 @@ public class ConfigUcs extends DAO implements java.io.Serializable {
 
     public static Boolean isHarnessPartExist(String harnessPart, String harnessType) {
         //Tester le format du harness part
-        System.out.println("Helper.HARN_PART_PREFIX "+Helper.HARN_PART_PREFIX);
-        if(harnessPart.substring(0, 1).equals(Helper.HARN_PART_PREFIX)){
-            String[] part = harnessPart.split(Helper.HARN_PART_PREFIX);
+        System.out.println("Global.HARN_PART_PREFIX "+Global.HARN_PART_PREFIX);
+        if(harnessPart.substring(0, 1).equals(Global.HARN_PART_PREFIX)){
+            String[] part = harnessPart.split(Global.HARN_PART_PREFIX);
             harnessPart = part[1];
         }
         Helper.log.log(Level.INFO, "Searching Harness part [{0}] in ConfigUCS: {1}", new Object[]{harnessPart, harnessType});

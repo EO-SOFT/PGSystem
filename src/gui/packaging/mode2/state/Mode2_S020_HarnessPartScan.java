@@ -5,6 +5,7 @@
  */
 package gui.packaging.mode2.state;
 
+import __run__.Global;
 import gui.packaging.Mode2_Context;
 import helper.Helper;
 import entity.BaseHarness;
@@ -19,7 +20,7 @@ import javax.swing.JTextField;
  */
 public class Mode2_S020_HarnessPartScan implements Mode2_State {
 
-    private ImageIcon imgIcon = new ImageIcon(Helper.PROP.getProperty("IMG_PATH") + "S02_HarnessPartScan.jpg");
+    private ImageIcon imgIcon = new ImageIcon(Global.APP_PROP.getProperty("IMG_PATH") + "S02_HarnessPartScan.jpg");
 
     public Mode2_S020_HarnessPartScan() {
         

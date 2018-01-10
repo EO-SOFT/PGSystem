@@ -5,6 +5,7 @@
  */
 package gui.packaging.reports;
 
+import __run__.Global;
 import entity.ConfigSegment;
 import entity.ConfigWorkplace;
 import helper.ComboItem;
@@ -144,8 +145,8 @@ public class PACKAGING_UI0017_UCS_List extends javax.swing.JFrame {
             ucs_result_table_data.add(oneRow);
         }
         ucs_result_table.setModel(new DefaultTableModel(ucs_result_table_data, ucs_result_table_header));
-        ucs_result_table.setFont(new Font(String.valueOf(Helper.PROP.getProperty("JTABLE_FONT")), Font.BOLD, 12));
-        ucs_result_table.setRowHeight(Integer.valueOf(Helper.PROP.getProperty("JTABLE_ROW_HEIGHT")));
+        ucs_result_table.setFont(new Font(String.valueOf(Global.APP_PROP.getProperty("JTABLE_FONT")), Font.BOLD, 12));
+        ucs_result_table.setRowHeight(Integer.valueOf(Global.APP_PROP.getProperty("JTABLE_ROW_HEIGHT")));
         setContainerTableRowsStyle();
     }
 
@@ -154,8 +155,8 @@ public class PACKAGING_UI0017_UCS_List extends javax.swing.JFrame {
                 new MouseAdapter() {
             public void mouseClicked(MouseEvent e) {
                 if (e.getClickCount() == 1) {
-                    //System.out.println("Helper.mode2_context.getUser().getAccessLevel()" + Helper.mode2_context.getUser().getAccessLevel());
-//                    if (Helper.mode2_context.getUser().getAccessLevel() == Helper.PROFIL_ADMIN) {
+                    //System.out.println("Helper.context.getUser().getAccessLevel()" + Helper.context.getUser().getAccessLevel());
+//                    if (Helper.context.getUser().getAccessLevel() == Global.PROFIL_ADMIN) {
 //                        new PACKAGING_UI0010_PalletDetails(null, rootPaneCheckingEnabled, String.valueOf(searchResult_table.getValueAt(searchResult_table.getSelectedRow(), PALLET_NUMBER_COLINDEX)), true, true, true).setVisible(true);
 //                    } else {
 //                        new PACKAGING_UI0010_PalletDetails(null, rootPaneCheckingEnabled, String.valueOf(searchResult_table.getValueAt(searchResult_table.getSelectedRow(), PALLET_NUMBER_COLINDEX)), false, false, false).setVisible(true);

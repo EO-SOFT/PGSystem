@@ -5,6 +5,7 @@
  */
 package gui.packaging.reports;
 
+import __run__.Global;
 import helper.Helper;
 import helper.HQLHelper;
 import entity.BaseContainer;
@@ -12,14 +13,11 @@ import entity.BaseHarness;
 import entity.HisPalletPrint;
 import entity.LoadPlan;
 import entity.LoadPlanLine;
-import gui.packaging.mode1.gui.PACKAGING_UI0001_Main_Mode1;
 import gui.packaging.mode1.state.Mode1_S050_ClosingPallet;
-import gui.packaging.mode2.gui.PACKAGING_UI0001_Main_Mode2;
 import gui.warehouse_fg_reception.WAREHOUSE_FG_UI0002_PALLET_LIST;
 import helper.PrinterHelper;
 import java.awt.event.KeyEvent;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashSet;
 import java.util.List;
@@ -28,12 +26,13 @@ import java.util.Vector;
 import javax.swing.table.DefaultTableModel;
 import org.hibernate.Query;
 import gui.packaging.mode2.state.Mode2_S040_ClosingPallet;
+import javax.swing.JFrame;
 
 /**
  *
  * @author user
  */
-public final class PACKAGING_UI0010_PalletDetails extends javax.swing.JDialog {
+public final class PACKAGING_UI0010_PalletDetails extends javax.swing.JFrame {
 
     Vector<String> searchResult_table_header = new Vector<String>();
     Vector searchResult_table_data = new Vector();
@@ -42,6 +41,7 @@ public final class PACKAGING_UI0010_PalletDetails extends javax.swing.JDialog {
     private boolean emptyAccess = false;
     private boolean printOpenSheet = false;
     private boolean printCloseSheet = false;
+    private String PalletNumber = "";
 
     /**
      * Creates new form UI0010_PalletDetails
@@ -50,7 +50,7 @@ public final class PACKAGING_UI0010_PalletDetails extends javax.swing.JDialog {
      * @param modal
      */
     public PACKAGING_UI0010_PalletDetails(java.awt.Frame parent, boolean modal) {
-        super(parent, modal);
+        //super(parent, modal);        
         initComponents();
         initGui();
     }
@@ -63,11 +63,12 @@ public final class PACKAGING_UI0010_PalletDetails extends javax.swing.JDialog {
      * @param PalletNumber : Requested container number to be displayed
      */
     public PACKAGING_UI0010_PalletDetails(java.awt.Frame parent, boolean modal, String PalletNumber) {
-        super(parent, modal);
+        this.PalletNumber = PalletNumber;
         initComponents();
         initGui();
         this.searchForPallet(PalletNumber);
         this.search_txtbox.setText(PalletNumber);
+
     }
 
     /**
@@ -82,7 +83,7 @@ public final class PACKAGING_UI0010_PalletDetails extends javax.swing.JDialog {
      */
     public PACKAGING_UI0010_PalletDetails(java.awt.Frame parent, boolean modal, boolean drop, boolean printOpenSheet,
             boolean printCloseSheet, boolean emptyAccess) {
-        super(parent, modal);
+        //super(parent, modal);
         initComponents();
 
         if (drop == false) {
@@ -112,7 +113,7 @@ public final class PACKAGING_UI0010_PalletDetails extends javax.swing.JDialog {
     public PACKAGING_UI0010_PalletDetails(java.awt.Frame parent, boolean modal,
             String PalletNumber, boolean drop, boolean printOpenSheet,
             boolean printCloseSheet) {
-        super(parent, modal);
+        this.PalletNumber = PalletNumber;
         initComponents();
 
         this.setDropAccess(drop);
@@ -125,14 +126,14 @@ public final class PACKAGING_UI0010_PalletDetails extends javax.swing.JDialog {
 
         System.out.println("state_txtbox.getText() " + state_txtbox.getText());
         //Avtiver/Desactiver le bouton "Continuer fermeture..."
-        if (state_txtbox.getText().equals(Helper.PALLET_WAITING) && Helper.mode2_context.getUser() != null) {
+        if (state_txtbox.getText().equals(Global.PALLET_WAITING) && Helper.context.getUser() != null) {
             continue_btn.setEnabled(true);
         } else {
             continue_btn.setEnabled(false);
         }
 
         //Activer ou désactiver le bouton print closing palette si Open
-        if (state_txtbox.getText().equals(Helper.PALLET_OPEN) && Helper.mode2_context.getUser() != null) {
+        if (state_txtbox.getText().equals(Global.PALLET_OPEN) && Helper.context.getUser() != null) {
             printCloseSheetButton.setEnabled(false);
         } else {
             printCloseSheetButton.setEnabled(true);
@@ -142,19 +143,18 @@ public final class PACKAGING_UI0010_PalletDetails extends javax.swing.JDialog {
 
     private void initGui() {
         //Center the this dialog in the screen
-        Helper.centerJDialog(this);
-        
+        this.setExtendedState(JFrame.MAXIMIZED_BOTH);
+
         //Disable continue button
         continue_btn.setEnabled(false);
-        
+
         //Desable table edition
         disableEditingTable();
 
         //Load table header
         load_container_table_header();
 
-        //Disable resizing
-        this.setResizable(false);
+        this.setTitle(this.getTitle() + " " + this.PalletNumber);
 
     }
 
@@ -290,7 +290,7 @@ public final class PACKAGING_UI0010_PalletDetails extends javax.swing.JDialog {
         jSeparator3 = new javax.swing.JToolBar.Separator();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        setTitle("Pallet Details");
+        setTitle("Détails palette");
         setBackground(new java.awt.Color(51, 51, 51));
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         addKeyListener(new java.awt.event.KeyAdapter() {
@@ -597,13 +597,8 @@ public final class PACKAGING_UI0010_PalletDetails extends javax.swing.JDialog {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel11)
-                            .addComponent(packType_txtbox, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel29)
-                            .addComponent(special_order_txtbox, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(217, 217, 217))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                            .addComponent(packType_txtbox, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(palletId_txtbox, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel13))
@@ -614,15 +609,7 @@ public final class PACKAGING_UI0010_PalletDetails extends javax.swing.JDialog {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel9)
-                            .addComponent(index_txtbox, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel10)
-                            .addComponent(supplierPartNumber_txtbox, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel14)
-                            .addComponent(state_txtbox, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(index_txtbox, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jLabel6)
@@ -640,23 +627,35 @@ public final class PACKAGING_UI0010_PalletDetails extends javax.swing.JDialog {
                             .addComponent(jLabel12)
                             .addComponent(workingTime_txtbox, javax.swing.GroupLayout.DEFAULT_SIZE, 141, Short.MAX_VALUE)
                             .addComponent(create_user_txtbox)
-                            .addComponent(jLabel27))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                            .addComponent(jLabel27))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(login_lbl3)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 358, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel29)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 358, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(login_lbl3))
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addGap(368, 368, 368))
+                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addComponent(special_order_txtbox, javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(supplierPartNumber_txtbox, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 167, Short.MAX_VALUE))
+                            .addComponent(jLabel10))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel14)
+                            .addComponent(state_txtbox, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGap(559, 559, 559))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(23, 23, 23)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addComponent(jLabel14)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(state_txtbox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(state_txtbox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(supplierPartNumber_txtbox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(jPanel2Layout.createSequentialGroup()
                             .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -666,10 +665,7 @@ public final class PACKAGING_UI0010_PalletDetails extends javax.swing.JDialog {
                             .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
                                 .addComponent(index_txtbox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(harnessPart_txtbox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGroup(jPanel2Layout.createSequentialGroup()
-                            .addComponent(jLabel10)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(supplierPartNumber_txtbox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(jLabel10))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addComponent(jLabel13)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -728,7 +724,7 @@ public final class PACKAGING_UI0010_PalletDetails extends javax.swing.JDialog {
                         .addComponent(jLabel11)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(packType_txtbox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(47, 47, 47))
+                .addGap(56, 56, 56))
         );
 
         jTabbedPane1.addTab("Détails palette", jPanel2);
@@ -850,7 +846,7 @@ public final class PACKAGING_UI0010_PalletDetails extends javax.swing.JDialog {
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(27, 27, 27)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(loadPlanId_txtbox, javax.swing.GroupLayout.PREFERRED_SIZE, 178, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel18)
@@ -858,70 +854,78 @@ public final class PACKAGING_UI0010_PalletDetails extends javax.swing.JDialog {
                     .addComponent(jLabel23)
                     .addComponent(jLabel19)
                     .addComponent(pile_txtbox, javax.swing.GroupLayout.PREFERRED_SIZE, 178, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(planCreateUser_txtbox)
-                    .addComponent(jLabel24)
-                    .addComponent(jLabel20)
-                    .addComponent(jLabel28)
-                    .addComponent(position_txtbox)
-                    .addComponent(planCreateTime_txtbox, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel21)
-                    .addComponent(planDispatchTime_txtbox, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(jLabel26, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(lineCreateTime_txtbox)))
-                .addGap(19, 19, 19)
+                    .addComponent(planCreateUser_txtbox, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel24)
+                    .addComponent(planCreateTime_txtbox, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel20)
+                    .addComponent(jLabel28)
+                    .addComponent(position_txtbox, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel26, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(lineCreateTime_txtbox)
+                    .addComponent(planDestination_txtbox)
                     .addComponent(jLabel22)
-                    .addComponent(planDestination_txtbox, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lineCreateUser_txtbox, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel25))
-                .addGap(197, 197, 197))
+                    .addComponent(jLabel21)
+                    .addComponent(planDispatchTime_txtbox, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel25)
+                    .addComponent(lineCreateUser_txtbox, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(264, 264, 264))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(22, 22, 22)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel18, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel20, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel21, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel22, javax.swing.GroupLayout.Alignment.TRAILING))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                    .addComponent(loadPlanId_txtbox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(planCreateTime_txtbox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(planDispatchTime_txtbox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(planDestination_txtbox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                    .addComponent(jLabel24)
-                    .addComponent(jLabel23))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                    .addComponent(planCreateUser_txtbox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(planStatus_txtbox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGap(28, 28, 28)
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                            .addComponent(jLabel25, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel26)
-                            .addComponent(jLabel19))
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel18, javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jLabel20, javax.swing.GroupLayout.Alignment.TRAILING))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                                    .addComponent(loadPlanId_txtbox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(planCreateTime_txtbox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(18, 18, 18)
+                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                                    .addComponent(jLabel24)
+                                    .addComponent(jLabel23))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                                    .addComponent(planCreateUser_txtbox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(planStatus_txtbox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanel3Layout.createSequentialGroup()
+                                        .addGap(28, 28, 28)
+                                        .addComponent(jLabel19))
+                                    .addGroup(jPanel3Layout.createSequentialGroup()
+                                        .addGap(27, 27, 27)
+                                        .addComponent(jLabel28))))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                                .addComponent(jLabel21)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(planDispatchTime_txtbox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(jLabel22)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(planDestination_txtbox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(28, 28, 28)
+                                .addComponent(jLabel26)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                            .addComponent(lineCreateUser_txtbox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(pile_txtbox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(position_txtbox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(lineCreateTime_txtbox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(pile_txtbox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(lineCreateUser_txtbox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(27, 27, 27)
-                        .addComponent(jLabel28)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(position_txtbox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(65, Short.MAX_VALUE))
+                        .addGap(154, 154, 154)
+                        .addComponent(jLabel25, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(59, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Détails chargement", jPanel3);
@@ -940,9 +944,7 @@ public final class PACKAGING_UI0010_PalletDetails extends javax.swing.JDialog {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(msg_lbl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addContainerGap())
+                    .addComponent(msg_lbl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel17)
@@ -994,8 +996,8 @@ public final class PACKAGING_UI0010_PalletDetails extends javax.swing.JDialog {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel17)
                 .addGap(18, 18, 18)
-                .addComponent(table_scroll, javax.swing.GroupLayout.PREFERRED_SIZE, 257, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(table_scroll, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(22, Short.MAX_VALUE))
         );
 
         jToolBar1.setBackground(new java.awt.Color(0, 51, 51));
@@ -1094,7 +1096,8 @@ public final class PACKAGING_UI0010_PalletDetails extends javax.swing.JDialog {
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jToolBar1, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
 
         pack();
@@ -1153,15 +1156,15 @@ public final class PACKAGING_UI0010_PalletDetails extends javax.swing.JDialog {
 
     private void reload_load_plan_data(List result) {
         this.clearLoadPlanFields();
-        
-        System.out.println("reload_load_plan_data result"+ result.size());
-        
+
+        System.out.println("reload_load_plan_data result" + result.size());
+
         LoadPlanLine l = (LoadPlanLine) result.get(0);
         pile_txtbox.setText("" + l.getPileNum());
         position_txtbox.setText("" + l.getId());
         lineCreateUser_txtbox.setText(l.getUser());
-        lineCreateTime_txtbox.setText(""+l.getCreateTime());
-        
+        lineCreateTime_txtbox.setText("" + l.getCreateTime());
+
         //Get Laod Plan Data
         Helper.startSession();
         Query query = Helper.sess.createQuery(HQLHelper.GET_LOAD_PLAN_BY_ID);
@@ -1173,7 +1176,7 @@ public final class PACKAGING_UI0010_PalletDetails extends javax.swing.JDialog {
         planCreateTime_txtbox.setText("" + plan.getCreateTime());
         planCreateUser_txtbox.setText(plan.getUser());
         planDispatchTime_txtbox.setText("" + plan.getDeliveryTime());
-        planDestination_txtbox.setText(""+ l.getDestinationWh());
+        planDestination_txtbox.setText("" + l.getDestinationWh());
         planStatus_txtbox.setText(plan.getPlanState());
     }
 
@@ -1190,13 +1193,14 @@ public final class PACKAGING_UI0010_PalletDetails extends javax.swing.JDialog {
 
     private void searchForPallet(String palletNumber) {
         msg_lbl.setText("");
-        
+
         this.clearContainerFieldsValues();
         this.reset_container_table_content();
         if (!palletNumber.trim().equals("")) {
-            if(palletNumber.startsWith(Helper.CLOSING_PALLET_PREFIX))
+            if (palletNumber.startsWith(Global.CLOSING_PALLET_PREFIX)) {
                 palletNumber = palletNumber.substring(2);
-            System.out.println("palletNumber" +palletNumber);
+            }
+            System.out.println("palletNumber" + palletNumber);
             //################# Container Data ####################
             //Start transaction                
             Helper.startSession();
@@ -1210,7 +1214,7 @@ public final class PACKAGING_UI0010_PalletDetails extends javax.swing.JDialog {
                 //Show / Hide tools buttons
             } else {
                 msg_lbl.setText("");
-                System.out.println("Resultat found "+result.size());
+                System.out.println("Resultat found " + result.size());
                 this.setBaseContainer((BaseContainer) result.get(0));
                 this.setContainerFieldsValues(this.bc);
                 //################# Harness Data ####################
@@ -1230,7 +1234,9 @@ public final class PACKAGING_UI0010_PalletDetails extends javax.swing.JDialog {
                 Helper.sess.getTransaction().commit();
                 result = query.list();
                 //Reload LoadPlan line details
-                if(!result.isEmpty()) this.reload_load_plan_data(result);
+                if (!result.isEmpty()) {
+                    this.reload_load_plan_data(result);
+                }
 
             }
 
@@ -1252,10 +1258,11 @@ public final class PACKAGING_UI0010_PalletDetails extends javax.swing.JDialog {
         qtyExptected_txtbox.setText(String.valueOf(bc.getQtyExpected()));
         qtyRead_txtbox.setText(String.valueOf(bc.getQtyRead()));
         packType_txtbox.setText(bc.getPackType());
-        if(bc.getSpecial_order() == 1)
+        if (bc.getSpecial_order() != null && bc.getSpecial_order() == 1) {
             special_order_txtbox.setText("SPECIAL");
-        else
+        } else {
             special_order_txtbox.setText("");
+        }
         state_txtbox.setText(bc.getContainerState());
         startTime_txtbox.setText(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(bc.getStartTime()));
         if (bc.getClosedTime() != null) {
@@ -1317,7 +1324,7 @@ public final class PACKAGING_UI0010_PalletDetails extends javax.swing.JDialog {
             if (result.size() > 0) {
                 HisPalletPrint pallet = (HisPalletPrint) result.get(0);
                 pallet.setWriteTime(new Date());
-                pallet.setWriteId(Helper.mode2_context.getUser().getId());
+                pallet.setWriteId(Helper.context.getUser().getId());
 
                 PrinterHelper.saveAndReprintOpenSheet(pallet);
             } else {
@@ -1339,7 +1346,7 @@ public final class PACKAGING_UI0010_PalletDetails extends javax.swing.JDialog {
             if (result.size() > 0) {
                 BaseContainer bc = (BaseContainer) result.get(0);
                 bc.setFifoTime(new Date());
-                bc.setWriteId(Helper.mode2_context.getUser().getId());
+                bc.setWriteId(Helper.context.getUser().getId());
                 PrinterHelper.saveAndPrintClosingSheet(bc, true);
             } else {
                 msg_lbl.setText("Num. Palette introuvable dans les palettes fermées !");
@@ -1452,24 +1459,24 @@ public final class PACKAGING_UI0010_PalletDetails extends javax.swing.JDialog {
 
     private void continue_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_continue_btnActionPerformed
         BaseContainer bc = new BaseContainer().getBaseContainer(palletNumber_txtbox.getText());
-        
-        if(Helper.PROP.getProperty("PACKAGING_SCAN_MODE").equals("1")){
+
+        if (Global.APP_PROP.getProperty("PACKAGING_SCAN_MODE").equals("1")) {
             Helper.mode1_context.getBaseContainerTmp().setPalletNumber(bc.getPalletNumber());
             //Set requested closing pallet number in the main gui
-            Helper.Packaging_Gui_Mode1.setAssistanceTextarea("N° " + Helper.CLOSING_PALLET_PREFIX + bc.getPalletNumber());
+            Helper.Packaging_Gui_Mode1.setAssistanceTextarea("N° " + Global.CLOSING_PALLET_PREFIX + bc.getPalletNumber());
             //############# PASSE TO S050 STATE ###############
             Helper.Packaging_Gui_Mode1.state = new Mode1_S050_ClosingPallet();
-            this.dispose();   
-        }else if(Helper.PROP.getProperty("PACKAGING_SCAN_MODE").equals("2")){
+            this.dispose();
+        } else if (Global.APP_PROP.getProperty("PACKAGING_SCAN_MODE").equals("2")) {
             Helper.mode2_context.getBaseContainerTmp().setPalletNumber(bc.getPalletNumber());
             //Set requested closing pallet number in the main gui
-            Helper.Packaging_Gui_Mode2.setAssistanceTextarea("N° " + Helper.CLOSING_PALLET_PREFIX + bc.getPalletNumber());
+            Helper.Packaging_Gui_Mode2.setAssistanceTextarea("N° " + Global.CLOSING_PALLET_PREFIX + bc.getPalletNumber());
             //############# PASSE TO S050 STATE ###############
             Helper.Packaging_Gui_Mode2.state = new Mode2_S040_ClosingPallet();
-            this.dispose(); 
+            this.dispose();
         }
-        
-       
+
+
     }//GEN-LAST:event_continue_btnActionPerformed
 
     private void history_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_history_btnActionPerformed
@@ -1483,6 +1490,7 @@ public final class PACKAGING_UI0010_PalletDetails extends javax.swing.JDialog {
     private void search_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_search_btnActionPerformed
 
         this.searchForPallet(search_txtbox.getText());
+        this.setTitle(search_txtbox.getText());
     }//GEN-LAST:event_search_btnActionPerformed
 
     private void search_txtboxKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_search_txtboxKeyTyped
@@ -1509,10 +1517,11 @@ public final class PACKAGING_UI0010_PalletDetails extends javax.swing.JDialog {
 
     private void search_txtboxKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_search_txtboxKeyPressed
         if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
-            if(search_txtbox.getText().startsWith(Helper.CLOSING_PALLET_PREFIX))
-                this.searchForPallet(search_txtbox.getText().substring(Helper.CLOSING_PALLET_PREFIX.length()));                
-            else
+            if (search_txtbox.getText().startsWith(Global.CLOSING_PALLET_PREFIX)) {
+                this.searchForPallet(search_txtbox.getText().substring(Global.CLOSING_PALLET_PREFIX.length()));
+            } else {
                 this.searchForPallet(search_txtbox.getText());
+            }
         } else if (evt.getKeyCode() == KeyEvent.VK_ESCAPE) {
             this.dispose();
         } else if (evt.getKeyCode() == KeyEvent.VK_CLEAR) {

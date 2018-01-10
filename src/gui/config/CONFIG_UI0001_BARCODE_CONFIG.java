@@ -641,8 +641,8 @@ public class CONFIG_UI0001_BARCODE_CONFIG extends javax.swing.JFrame {
             cb.setHarnessPart(cpn_txt.getText().trim());
             cb.setKeyWord(keyword_txt.getText().trim());
             cb.setDescription(description_txt.getText());
-            cb.setCreateId(Helper.mode2_context.getUser().getId());
-            cb.setWriteId(Helper.mode2_context.getUser().getId());
+            cb.setCreateId(Helper.context.getUser().getId());
+            cb.setWriteId(Helper.context.getUser().getId());
             cb.setCreateTime(new Date());
             cb.setWriteTime(new Date());
             cb.create(cb);
@@ -651,7 +651,7 @@ public class CONFIG_UI0001_BARCODE_CONFIG extends javax.swing.JFrame {
             refresh();
         } else {//It's an update for an existing element
             aux.setWriteTime(new Date());
-            aux.setWriteId(Helper.mode2_context.getUser().getId());
+            aux.setWriteId(Helper.context.getUser().getId());
             aux.setBarcodePattern(pattern_txt.getText());
             aux.setHarnessType(harnessTypeBox.getSelectedItem().toString());
             aux.setHarnessPart(cpn_txt.getText().trim());

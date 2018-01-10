@@ -5,6 +5,7 @@
  */
 package gui.packaging.mode1.gui;
 
+import __run__.Global;
 import gui.packaging.reports.PACKAGING_UI0011_ProdStatistics;
 import gui.packaging.reports.PACKAGING_UI0012_HarnessDetails;
 import gui.packaging.reports.PACKAGING_UI0015_DroppedContainer;
@@ -22,7 +23,6 @@ import helper.HQLHelper;
 import entity.BaseContainer;
 import entity.BaseContainerTmp;
 import entity.BaseHarnessAdditionalBarecodeTmp;
-import entity.ConfigBarcode;
 import entity.HisLogin;
 import gui.packaging.mode1.state.Mode1_State;
 import gui.warehouse_fg_reception.WAREHOUSE_FG_UI0002_PALLET_LIST;
@@ -50,7 +50,9 @@ import javax.swing.table.DefaultTableModel;
 import org.hibernate.Query;
 import scanner.GUI;
 import gui.packaging.mode1.state.Mode1_S010_UserCodeScan;
-import java.awt.TextArea;
+import gui.packaging.mode1.state.Mode1_S021_HarnessPartScan;
+import gui.packaging.mode1.state.Mode1_S050_ClosingPallet;
+import javax.swing.JButton;
 import javax.swing.JTextArea;
 
 /**
@@ -90,25 +92,21 @@ public final class PACKAGING_UI0001_Main_Mode1 extends javax.swing.JFrame {
     public PACKAGING_UI0001_Main_Mode1(Object[] context, JFrame parent) {
         initComponents();
         //Initialiser les valeurs globales de test (Pattern Liste,...)
-        
-        
+
         Helper.startSession();
 
         //loadBarcodeConfig();
-
         initGui();
     }
-
-    
 
     public void initGui() {
         //setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("icon.png")));
         // Set jTable Row Style
         //Centrer le jframe dans le screen
         Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
-        
+
         state = new Mode1_S010_UserCodeScan();
-        
+
         this.setIconLabel(state.getImg());
 
         this.connectedUserName_label.setHorizontalAlignment(JLabel.CENTER);
@@ -152,10 +150,8 @@ public final class PACKAGING_UI0001_Main_Mode1 extends javax.swing.JFrame {
         //Maximaze the jframe
         this.setExtendedState(JFrame.MAXIMIZED_BOTH);
 
-        
-        
         //Load table header
-        //load_table_header();
+        btn_new_pallet.setEnabled(false);
     }
 
     //########################################################################
@@ -178,22 +174,24 @@ public final class PACKAGING_UI0001_Main_Mode1 extends javax.swing.JFrame {
     }
 
     public void reload_container_table_data(List resultList) {
+        System.out.println("this.reset_table_content();" + resultList.size());
         this.reset_table_content();
 
         this.load_table_header();
 
         for (Object o : resultList) {
-            BaseContainer base_container = (BaseContainer) o;
+            BaseContainer bc = (BaseContainer) o;
             Vector<Object> oneRow = new Vector<Object>();
-            oneRow.add(base_container.getPalletNumber());
-            oneRow.add(base_container.getHarnessPart());
-            oneRow.add(base_container.getHarnessIndex());
-            oneRow.add(base_container.getPackType());
-            oneRow.add(base_container.getQtyExpected());
-            oneRow.add(base_container.getQtyRead());
-            oneRow.add(base_container.getCreateTimeString("dd/MM/yy HH:mm"));
-            oneRow.add(base_container.getHarnessType());
-            oneRow.add(base_container.getContainerState());
+            oneRow.add(bc.getPalletNumber());
+            oneRow.add(bc.getHarnessPart());
+            oneRow.add(bc.getHarnessIndex());
+            oneRow.add(bc.getPackType());
+            oneRow.add(bc.getQtyExpected());
+            oneRow.add(bc.getQtyRead());
+            oneRow.add(bc.getCreateTimeString("dd/MM/yy HH:mm"));
+            oneRow.add(bc.getHarnessType());
+            oneRow.add(bc.getContainerState());
+            System.out.println("bc.toString " + bc.toString());
             container_table_data.add(oneRow);
         }
         container_table.setModel(new DefaultTableModel(container_table_data, container_table_header));
@@ -206,8 +204,8 @@ public final class PACKAGING_UI0001_Main_Mode1 extends javax.swing.JFrame {
         //Initialize default style for table container
 
         //#######################
-        container_table.setFont(new Font(String.valueOf(Helper.PROP.getProperty("JTABLE_FONT")), Font.BOLD, Integer.valueOf(Helper.PROP.getProperty("JTABLE_FONTSIZE"))));
-        container_table.setRowHeight(Integer.valueOf(Helper.PROP.getProperty("JTABLE_ROW_HEIGHT")));
+        container_table.setFont(new Font(String.valueOf(Global.APP_PROP.getProperty("JTABLE_FONT")), Font.BOLD, Integer.valueOf(Global.APP_PROP.getProperty("JTABLE_FONTSIZE"))));
+        container_table.setRowHeight(Integer.valueOf(Global.APP_PROP.getProperty("JTABLE_ROW_HEIGHT")));
         container_table.setDefaultRenderer(Object.class, new DefaultTableCellRenderer() {
             @Override
             public Component getTableCellRendererComponent(JTable table,
@@ -215,29 +213,29 @@ public final class PACKAGING_UI0001_Main_Mode1 extends javax.swing.JFrame {
 
                 super.getTableCellRendererComponent(table, value, isSelected, hasFocus, row, col);
 
-                String status = (String) table.getModel().getValueAt(row, Helper.PALLET_STATE_COL_INDEX);
+                String status = (String) table.getModel().getValueAt(row, Global.PALLET_STATE_COL_INDEX);
                 //############### OPEN
-                if (Helper.PALLET_OPEN.equals(status)) {
+                if (Global.PALLET_OPEN.equals(status)) {
                     setBackground(Color.YELLOW);
                     setForeground(Color.BLACK);
                 } //############### CLOSED
-                else if (Helper.PALLET_CLOSED.equals(status)) {
+                else if (Global.PALLET_CLOSED.equals(status)) {
                     setBackground(Color.LIGHT_GRAY);
                     setForeground(Color.BLACK);
                 } //############### QUARANTAINE
-                else if (Helper.PALLET_QUARANTAINE.equals(status)) {
+                else if (Global.PALLET_QUARANTAINE.equals(status)) {
                     setBackground(Color.RED);
                     setForeground(Color.BLACK);
                 } //############### WAITING
-                else if (Helper.PALLET_WAITING.equals(status)) {
+                else if (Global.PALLET_WAITING.equals(status)) {
                     setBackground(Color.CYAN);
                     setForeground(Color.BLACK);
                 } //############### STORED
-                else if (Helper.PALLET_STORED.equals(status)) {
+                else if (Global.PALLET_STORED.equals(status)) {
                     setBackground(Color.ORANGE);
                     setForeground(Color.BLACK);
                 }//############### DROPPED
-                else if (Helper.PALLET_SHIPPED.equals(status)) {
+                else if (Global.PALLET_SHIPPED.equals(status)) {
                     setBackground(Color.BLUE);
                     setForeground(Color.BLACK);
                 }
@@ -263,18 +261,44 @@ public final class PACKAGING_UI0001_Main_Mode1 extends javax.swing.JFrame {
 
         this.container_table.addMouseListener(
                 new MouseAdapter() {
-                    public void mouseClicked(MouseEvent e) {
-                        if (e.getClickCount() == 2) {
-                            if (Helper.mode2_context.getUser() == null) {
-                                new PACKAGING_UI0010_PalletDetails(null, rootPaneCheckingEnabled, String.valueOf(container_table.getValueAt(container_table.getSelectedRow(), PALLET_NUMBER_COLINDEX)), false, false, false).setVisible(true);
-                            } else if (Helper.mode2_context.getUser().getAccessLevel() == Helper.PROFIL_ADMIN) {
-                                new PACKAGING_UI0010_PalletDetails(null, rootPaneCheckingEnabled, String.valueOf(container_table.getValueAt(container_table.getSelectedRow(), PALLET_NUMBER_COLINDEX)), true, true, true).setVisible(true);
-                            } else {
-                                new PACKAGING_UI0010_PalletDetails(null, rootPaneCheckingEnabled, String.valueOf(container_table.getValueAt(container_table.getSelectedRow(), PALLET_NUMBER_COLINDEX)), false, false, false).setVisible(true);
-                            }
-                        }
+            public void mouseClicked(MouseEvent e) {
+                //1 Click = charger les données d'une palette
+                if (e.getClickCount() == 1 && Helper.context.getUser() != null) {
+                    String palletNumber = String.valueOf(container_table.getValueAt(container_table.getSelectedRow(), PALLET_NUMBER_COLINDEX));
+                    Helper.mode1_context.setTempBC(new BaseContainer().getBaseContainer(palletNumber));
+
+                    //Palette à l'état Waiting
+                    if (Helper.mode1_context.getTempBC().getContainerState().equals(Global.PALLET_WAITING)) {
+                        //Activer le bouton de fermeture palette
+                        //Changer l'état pour fermer une palette waiting                        
+                        //Helper.mode1_context.setState(null);
+                        //Helper.mode1_context.setState(new Mode1_S050_ClosingPallet());
+                        Helper.Packaging_Gui_Mode1.state = new Mode1_S050_ClosingPallet();
+
+                        Helper.Packaging_Gui_Mode1.setAssistanceTextarea(String.format("Scanner la fiche de fermeture \nN° %s.",
+                                Global.CLOSING_PALLET_PREFIX + Helper.mode1_context.getTempBC().getPalletNumber()));
+
+                    } else {//Palette encore ouverte
+                        Helper.Packaging_Gui_Mode1.setAssistanceTextarea(String.format("Scanner les pièces %s\npour la palette N° %s ",
+                                Helper.mode1_context.getTempBC().getHarnessPart(), Helper.mode1_context.getTempBC().getPalletNumber()));
+
+                        //Changer l'état pour scanner des pièces, newPalette = false            
+                        Helper.mode1_context.setState(new Mode1_S021_HarnessPartScan(false, Helper.mode1_context.getTempBC()));
+                    }
+
+                    scan_txtbox.requestFocus();
+                } //2 Click = charger le détail d'une palette dans une nouvelle interface
+                else if (e.getClickCount() == 2) {
+                    if (Helper.context.getUser() == null) {
+                        new PACKAGING_UI0010_PalletDetails(null, rootPaneCheckingEnabled, String.valueOf(container_table.getValueAt(container_table.getSelectedRow(), PALLET_NUMBER_COLINDEX)), false, false, false).setVisible(true);
+                    } else if (Helper.context.getUser().getAccessLevel() == Global.PROFIL_ADMIN) {
+                        new PACKAGING_UI0010_PalletDetails(null, rootPaneCheckingEnabled, String.valueOf(container_table.getValueAt(container_table.getSelectedRow(), PALLET_NUMBER_COLINDEX)), true, true, true).setVisible(true);
+                    } else {
+                        new PACKAGING_UI0010_PalletDetails(null, rootPaneCheckingEnabled, String.valueOf(container_table.getValueAt(container_table.getSelectedRow(), PALLET_NUMBER_COLINDEX)), false, false, false).setVisible(true);
                     }
                 }
+            }
+        }
         );
     }
 
@@ -325,6 +349,7 @@ public final class PACKAGING_UI0001_Main_Mode1 extends javax.swing.JFrame {
         scan_txtbox = new javax.swing.JTextField();
         jScrollPane2 = new javax.swing.JScrollPane();
         assistanceTextarea = new javax.swing.JTextArea();
+        btn_new_pallet = new javax.swing.JButton();
         panel_bottom = new javax.swing.JPanel();
         menu_bar = new javax.swing.JMenuBar();
         menu01_report = new javax.swing.JMenu();
@@ -387,10 +412,11 @@ public final class PACKAGING_UI0001_Main_Mode1 extends javax.swing.JFrame {
         requestedPallet_label.setBackground(new java.awt.Color(255, 0, 0));
         requestedPallet_label.setFont(new java.awt.Font("Courier New", 1, 36)); // NOI18N
         requestedPallet_label.setForeground(new java.awt.Color(255, 255, 255));
-        requestedPallet_label.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        requestedPallet_label.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
 
         connectedUserName_label.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
         connectedUserName_label.setForeground(new java.awt.Color(255, 255, 255));
+        connectedUserName_label.setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED));
 
         refresh.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gui/refresh.png"))); // NOI18N
         refresh.setText("Actualiser");
@@ -432,14 +458,30 @@ public final class PACKAGING_UI0001_Main_Mode1 extends javax.swing.JFrame {
             }
         });
 
-        assistanceTextarea.setColumns(20);
+        assistanceTextarea.setEditable(false);
+        assistanceTextarea.setColumns(15);
+        assistanceTextarea.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
+        assistanceTextarea.setLineWrap(true);
         assistanceTextarea.setRows(5);
         jScrollPane2.setViewportView(assistanceTextarea);
+
+        btn_new_pallet.setText("Nouvelle palette");
+        btn_new_pallet.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_new_palletActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout panel_topLayout = new javax.swing.GroupLayout(panel_top);
         panel_top.setLayout(panel_topLayout);
         panel_topLayout.setHorizontalGroup(
             panel_topLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel_topLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(filler1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(1304, 1304, 1304)
+                .addComponent(filler2, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(panel_topLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(panel_topLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -457,22 +499,19 @@ public final class PACKAGING_UI0001_Main_Mode1 extends javax.swing.JFrame {
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                             .addComponent(harnessTypeBox, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                            .addComponent(scan_txtbox, javax.swing.GroupLayout.PREFERRED_SIZE, 799, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(panel_topLayout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addGroup(panel_topLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(connectedUserName_label, javax.swing.GroupLayout.PREFERRED_SIZE, 1196, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(scan_txtbox, javax.swing.GroupLayout.PREFERRED_SIZE, 799, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(panel_topLayout.createSequentialGroup()
-                        .addComponent(filler1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(1304, 1304, 1304)
-                        .addComponent(filler2, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(connectedUserName_label, javax.swing.GroupLayout.PREFERRED_SIZE, 800, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(btn_new_pallet, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         panel_topLayout.setVerticalGroup(
             panel_topLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panel_topLayout.createSequentialGroup()
-                .addComponent(connectedUserName_label, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(panel_topLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(connectedUserName_label, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn_new_pallet))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(panel_topLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 376, Short.MAX_VALUE)
@@ -510,7 +549,7 @@ public final class PACKAGING_UI0001_Main_Mode1 extends javax.swing.JFrame {
             .addGap(0, 0, Short.MAX_VALUE)
         );
 
-        menu01_report.setText("Report");
+        menu01_report.setText("Rapports");
 
         menu011_prod_statistics.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_S, java.awt.event.InputEvent.CTRL_MASK));
         menu011_prod_statistics.setText("Statistiques production");
@@ -678,8 +717,8 @@ public final class PACKAGING_UI0001_Main_Mode1 extends javax.swing.JFrame {
     public JComboBox getHarnessTypeBox() {
         return harnessTypeBox;
     }
-    
-    public void setHarnessTypeFilterBoxState(boolean state){
+
+    public void setHarnessTypeFilterBoxState(boolean state) {
         this.harnessTypeFilterBox.setEnabled(state);
     }
 
@@ -693,9 +732,9 @@ public final class PACKAGING_UI0001_Main_Mode1 extends javax.swing.JFrame {
 
     public void clearContextSessionVals() {
         //Pas besoin de réinitialiser le uid
-        Helper.mode2_context.setBaseContainerTmp(new BaseContainerTmp());
-        Helper.mode2_context.setBaseHarnessAdditionalBarecodeTmp(new BaseHarnessAdditionalBarecodeTmp());
-        Helper.mode2_context.setUser(null);
+        Helper.mode1_context.setBaseContainerTmp(new BaseContainerTmp());
+        Helper.mode1_context.setBaseHarnessAdditionalBarecodeTmp(new BaseHarnessAdditionalBarecodeTmp());
+        Helper.context.setUser(null);
     }
 
     //########################################################################
@@ -713,22 +752,22 @@ public final class PACKAGING_UI0001_Main_Mode1 extends javax.swing.JFrame {
     public void logout() {
 
         //Save authentication line in HisLogin table
-        if (Helper.mode2_context.getUser().getId() != null) {
+        if (Helper.context.getUser().getId() != null) {
             HisLogin his_login = new HisLogin(
-                    Helper.mode2_context.getUser().getId(), Helper.mode2_context.getUser().getId(),
+                    Helper.context.getUser().getId(), Helper.context.getUser().getId(),
                     String.format(Helper.INFO0012_LOGOUT_SUCCESS,
-                            Helper.mode2_context.getUser().getFirstName()
-                            + " " + Helper.mode2_context.getUser().getLastName()
-                            + " / " + Helper.mode2_context.getUser().getLogin(),
-                            Helper.HOSTNAME, Helper.getStrTimeStamp()));
-            his_login.setCreateId(Helper.mode2_context.getUser().getId());
-            his_login.setWriteId(Helper.mode2_context.getUser().getId());
+                            Helper.context.getUser().getFirstName()
+                            + " " + Helper.context.getUser().getLastName()
+                            + " / " + Helper.context.getUser().getLogin(),
+                            Global.APP_HOSTNAME, Helper.getStrTimeStamp()));
+            his_login.setCreateId(Helper.context.getUser().getId());
+            his_login.setWriteId(Helper.context.getUser().getId());
 
             str = String.format(Helper.INFO0012_LOGOUT_SUCCESS,
-                    Helper.mode2_context.getUser().getFirstName() + " " + Helper.mode2_context.getUser().getLastName()
-                    + " / " + Helper.mode2_context.getUser().getLogin(), Helper.HOSTNAME,
+                    Helper.context.getUser().getFirstName() + " " + Helper.context.getUser().getLastName()
+                    + " / " + Helper.context.getUser().getLogin(), Global.APP_HOSTNAME,
                     Helper.getStrTimeStamp() + " Project : "
-                    + Helper.mode2_context.getUser().getHarnessType());
+                    + Helper.context.getUser().getHarnessType());
             his_login.setMessage(str);
 
             str = "";
@@ -739,7 +778,6 @@ public final class PACKAGING_UI0001_Main_Mode1 extends javax.swing.JFrame {
 
         this.clearContextSessionVals();
 
-        //Helper.mode2_context.setUser(null);
         //Reset Image
         Helper.Packaging_Gui_Mode1.img_lbl.setIcon(state.getImg());
         //Clear Scan Box
@@ -756,7 +794,7 @@ public final class PACKAGING_UI0001_Main_Mode1 extends javax.swing.JFrame {
     }
 
     private void menu010_pallet_detailsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menu010_pallet_detailsActionPerformed
-        if (Helper.mode2_context.getUser().getAccessLevel() == Helper.PROFIL_ADMIN) {
+        if (Helper.context.getUser().getAccessLevel() == Global.PROFIL_ADMIN) {
             new PACKAGING_UI0010_PalletDetails(this, rootPaneCheckingEnabled, true, true, true, true).setVisible(true);
         } else {
             new PACKAGING_UI0010_PalletDetails(this, rootPaneCheckingEnabled, false, false, false, false).setVisible(true);
@@ -774,7 +812,7 @@ public final class PACKAGING_UI0001_Main_Mode1 extends javax.swing.JFrame {
     }//GEN-LAST:event_menu011_prod_statisticsActionPerformed
 
     public void reloadDataTable() {
-
+        System.out.println("reloadDataTable()");
         Helper.startSession();
 
         List<Object> states = new ArrayList<Object>();
@@ -784,8 +822,8 @@ public final class PACKAGING_UI0001_Main_Mode1 extends javax.swing.JFrame {
         query.setFirstResult(0);
         query.setMaxResults(100);
 
-        states.add(Helper.PALLET_OPEN);
-        states.add(Helper.PALLET_WAITING);
+        states.add(Global.PALLET_OPEN);
+        states.add(Global.PALLET_WAITING);
 
         projects.add(String.valueOf(harnessTypeFilterBox.getSelectedItem()));
 
@@ -802,7 +840,7 @@ public final class PACKAGING_UI0001_Main_Mode1 extends javax.swing.JFrame {
     }
     private void menu012_harness_detailsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menu012_harness_detailsActionPerformed
         PACKAGING_UI0012_HarnessDetails harnessDetails;
-        if (Helper.mode2_context.getUser()!= null && Helper.mode2_context.getUser().getAccessLevel() == Helper.PROFIL_ADMIN) {
+        if (Helper.context.getUser() != null && Helper.context.getUser().getAccessLevel() == Global.PROFIL_ADMIN) {
             harnessDetails = new PACKAGING_UI0012_HarnessDetails(this, rootPaneCheckingEnabled, true);
         } else {
             harnessDetails = new PACKAGING_UI0012_HarnessDetails(this, rootPaneCheckingEnabled, false);
@@ -812,7 +850,7 @@ public final class PACKAGING_UI0001_Main_Mode1 extends javax.swing.JFrame {
     }//GEN-LAST:event_menu012_harness_detailsActionPerformed
 
     private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
-        if (Helper.mode2_context.getUser() != null) {
+        if (Helper.context.getUser() != null) {
             this.logout();
         }
 
@@ -910,6 +948,17 @@ public final class PACKAGING_UI0001_Main_Mode1 extends javax.swing.JFrame {
         report.setVisible(true);
     }//GEN-LAST:event_jMenuItem2ActionPerformed
 
+    private void btn_new_palletActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_new_palletActionPerformed
+        //Scanner le PN a créer avec option newPallet = true
+
+        assistanceTextarea.setText("Scanner une référence pour créer une nouvelle \npalette");
+        requestedPallet_label.setText("Scanner une référence pour créer une nouvelle \npalette");
+
+        state = new Mode1_S021_HarnessPartScan(true, null);
+        Helper.mode1_context.setState(state);
+        scan_txtbox.requestFocus();
+    }//GEN-LAST:event_btn_new_palletActionPerformed
+
     public void setIconLabel(ImageIcon icon) {
         this.img_lbl.setIcon(icon);
     }
@@ -920,6 +969,14 @@ public final class PACKAGING_UI0001_Main_Mode1 extends javax.swing.JFrame {
 
     public void setScanTxt(JTextField setScanTxt) {
         this.scan_txtbox = setScanTxt;
+    }
+
+    public JButton getBtn_new_pallet() {
+        return btn_new_pallet;
+    }
+
+    public void setBtn_new_pallet(JButton btn_new_pallet) {
+        this.btn_new_pallet = btn_new_pallet;
     }
 
     public JTextArea getAssistanceTextarea() {
@@ -934,9 +991,22 @@ public final class PACKAGING_UI0001_Main_Mode1 extends javax.swing.JFrame {
         this.assistanceTextarea.setText(text);
     }
 
+    public JLabel getRequestedPallet_label() {
+        return requestedPallet_label;
+    }
+
+    public void setRequestedPallet_label(JLabel requestedPallet_label) {
+        this.requestedPallet_label = requestedPallet_label;
+    }
+
+    public void setRequestedPallet_txt(String text) {
+        this.requestedPallet_label.setText(text);
+    }
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextArea assistanceTextarea;
+    private javax.swing.JButton btn_new_pallet;
     private javax.swing.JLabel connectedUserName_label;
     private javax.swing.JTable container_table;
     private javax.swing.Box.Filler filler1;

@@ -5,6 +5,7 @@
  */
 package print;
 
+import __run__.Global;
 import helper.Helper;
 import com.itextpdf.text.BaseColor;
 import com.itextpdf.text.Document;
@@ -71,11 +72,11 @@ public class PrintClosingPallet_A5 implements BarcodeCreator {
         map_title.put("warehouse_code", "WAREHOUSE");
 
         this.setDEST(String.format(".\\"
-                + Helper.PROP.getProperty("PRINT_DIRNAME")
+                + Global.APP_PROP.getProperty("PRINT_DIRNAME")
                 + File.separator
                 + Helper.getStrTimeStamp("yyyy_MM_dd")
                 + File.separator
-                + Helper.PROP.getProperty("PRINT_CLOSING_PALLET_DIRNAME")
+                + Global.APP_PROP.getProperty("PRINT_CLOSING_PALLET_DIRNAME")
                 + File.separator + "PrintClosingPallet_A5_"
                 + harness_part + "_"
                 + Helper.getStrTimeStamp("yyyy_MM_dd_HH_mm_ss") + ".pdf"));
@@ -83,11 +84,11 @@ public class PrintClosingPallet_A5 implements BarcodeCreator {
 
     public PrintClosingPallet_A5() {
         this.setDEST(String.format(".\\"
-                + Helper.PROP.getProperty("PRINT_DIRNAME")
+                + Global.APP_PROP.getProperty("PRINT_DIRNAME")
                 + File.separator
                 + Helper.getStrTimeStamp("yyyy_MM_dd")
                 + File.separator
-                + Helper.PROP.getProperty("PRINT_CLOSING_PALLET_DIRNAME")
+                + Global.APP_PROP.getProperty("PRINT_CLOSING_PALLET_DIRNAME")
                 + File.separator + "PrintClosingPallet_A5_"
                 + harness_part + "_"
                 + Helper.getStrTimeStamp("yyyy_MM_dd_HH_mm_ss") + ".pdf"));
@@ -372,10 +373,10 @@ public class PrintClosingPallet_A5 implements BarcodeCreator {
         Image image;
         if (special_order==1) //True
         {
-            image = Image.getInstance(Helper.PROP.getProperty("IMG_PATH") + Helper.PROP.getProperty("CLOSING_SPECIAL_PALLET_TEMPLATE"));
+            image = Image.getInstance(Global.APP_PROP.getProperty("IMG_PATH") + Global.APP_PROP.getProperty("CLOSING_SPECIAL_PALLET_TEMPLATE"));
         } else //False
         {
-            image = Image.getInstance(Helper.PROP.getProperty("IMG_PATH") + Helper.PROP.getProperty("CLOSING_PALLET_TEMPLATE"));
+            image = Image.getInstance(Global.APP_PROP.getProperty("IMG_PATH") + Global.APP_PROP.getProperty("CLOSING_PALLET_TEMPLATE"));
         }
 
         image.scaleToFit(600f, 500f);

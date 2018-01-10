@@ -5,6 +5,7 @@
  */
 package gui.packaging.mode2.gui;
 
+import __run__.Global;
 import gui.packaging.reports.PACKAGING_UI0011_ProdStatistics;
 import gui.packaging.reports.PACKAGING_UI0012_HarnessDetails;
 import gui.packaging.reports.PACKAGING_UI0015_DroppedContainer;
@@ -50,6 +51,7 @@ import scanner.GUI;
 import gui.packaging.mode2.state.Mode2_S010_UserCodeScan;
 import gui.packaging.mode2.state.Mode2_State;
 import java.awt.event.KeyListener;
+import javax.swing.JTextArea;
 
 /**
  *
@@ -204,8 +206,8 @@ public final class PACKAGING_UI0001_Main_Mode2 extends javax.swing.JFrame implem
         //Initialize default style for table container
 
         //#######################
-        container_table.setFont(new Font(String.valueOf(Helper.PROP.getProperty("JTABLE_FONT")), Font.BOLD, Integer.valueOf(Helper.PROP.getProperty("JTABLE_FONTSIZE"))));
-        container_table.setRowHeight(Integer.valueOf(Helper.PROP.getProperty("JTABLE_ROW_HEIGHT")));
+        container_table.setFont(new Font(String.valueOf(Global.APP_PROP.getProperty("JTABLE_FONT")), Font.BOLD, Integer.valueOf(Global.APP_PROP.getProperty("JTABLE_FONTSIZE"))));
+        container_table.setRowHeight(Integer.valueOf(Global.APP_PROP.getProperty("JTABLE_ROW_HEIGHT")));
         container_table.setDefaultRenderer(Object.class, new DefaultTableCellRenderer() {
             @Override
             public Component getTableCellRendererComponent(JTable table,
@@ -213,29 +215,29 @@ public final class PACKAGING_UI0001_Main_Mode2 extends javax.swing.JFrame implem
 
                 super.getTableCellRendererComponent(table, value, isSelected, hasFocus, row, col);
 
-                String status = (String) table.getModel().getValueAt(row, Helper.PALLET_STATE_COL_INDEX);
+                String status = (String) table.getModel().getValueAt(row, Global.PALLET_STATE_COL_INDEX);
                 //############### OPEN
-                if (Helper.PALLET_OPEN.equals(status)) {
+                if (Global.PALLET_OPEN.equals(status)) {
                     setBackground(Color.YELLOW);
                     setForeground(Color.BLACK);
                 } //############### CLOSED
-                else if (Helper.PALLET_CLOSED.equals(status)) {
+                else if (Global.PALLET_CLOSED.equals(status)) {
                     setBackground(Color.LIGHT_GRAY);
                     setForeground(Color.BLACK);
                 } //############### QUARANTAINE
-                else if (Helper.PALLET_QUARANTAINE.equals(status)) {
+                else if (Global.PALLET_QUARANTAINE.equals(status)) {
                     setBackground(Color.RED);
                     setForeground(Color.BLACK);
                 } //############### WAITING
-                else if (Helper.PALLET_WAITING.equals(status)) {
+                else if (Global.PALLET_WAITING.equals(status)) {
                     setBackground(Color.CYAN);
                     setForeground(Color.BLACK);
                 } //############### STORED
-                else if (Helper.PALLET_STORED.equals(status)) {
+                else if (Global.PALLET_STORED.equals(status)) {
                     setBackground(Color.ORANGE);
                     setForeground(Color.BLACK);
                 }//############### DROPPED
-                else if (Helper.PALLET_SHIPPED.equals(status)) {
+                else if (Global.PALLET_SHIPPED.equals(status)) {
                     setBackground(Color.BLUE);
                     setForeground(Color.BLACK);
                 }
@@ -263,9 +265,9 @@ public final class PACKAGING_UI0001_Main_Mode2 extends javax.swing.JFrame implem
                 new MouseAdapter() {
                     public void mouseClicked(MouseEvent e) {
                         if (e.getClickCount() == 2) {
-                            if (Helper.mode2_context.getUser() == null) {
+                            if (Helper.context.getUser() == null) {
                                 new PACKAGING_UI0010_PalletDetails(null, rootPaneCheckingEnabled, String.valueOf(container_table.getValueAt(container_table.getSelectedRow(), PALLET_NUMBER_COLINDEX)), false, false, false).setVisible(true);
-                            } else if (Helper.mode2_context.getUser().getAccessLevel() == Helper.PROFIL_ADMIN) {
+                            } else if (Helper.context.getUser().getAccessLevel() == Global.PROFIL_ADMIN) {
                                 new PACKAGING_UI0010_PalletDetails(null, rootPaneCheckingEnabled, String.valueOf(container_table.getValueAt(container_table.getSelectedRow(), PALLET_NUMBER_COLINDEX)), true, true, true).setVisible(true);
                             } else {
                                 new PACKAGING_UI0010_PalletDetails(null, rootPaneCheckingEnabled, String.valueOf(container_table.getValueAt(container_table.getSelectedRow(), PALLET_NUMBER_COLINDEX)), false, false, false).setVisible(true);
@@ -310,7 +312,6 @@ public final class PACKAGING_UI0001_Main_Mode2 extends javax.swing.JFrame implem
         jMenu1 = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
         panel_top = new javax.swing.JPanel();
-        img_lbl = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         container_table = new javax.swing.JTable();
         requestedPallet_label = new javax.swing.JLabel();
@@ -321,6 +322,10 @@ public final class PACKAGING_UI0001_Main_Mode2 extends javax.swing.JFrame implem
         harnessTypeFilterBox = new javax.swing.JComboBox();
         scan_txtbox = new javax.swing.JTextField();
         harnessTypeBox = new javax.swing.JComboBox();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        assistanceTextarea = new javax.swing.JTextArea();
+        img_lbl = new javax.swing.JLabel();
+        requestedPallet_label1 = new javax.swing.JLabel();
         panel_bottom = new javax.swing.JPanel();
         menu_bar = new javax.swing.JMenuBar();
         menu01_report = new javax.swing.JMenu();
@@ -361,10 +366,6 @@ public final class PACKAGING_UI0001_Main_Mode2 extends javax.swing.JFrame implem
         panel_top.setMinimumSize(new java.awt.Dimension(800, 400));
         panel_top.setPreferredSize(new java.awt.Dimension(1364, 780));
         panel_top.setRequestFocusEnabled(false);
-
-        img_lbl.setBackground(new java.awt.Color(255, 255, 255));
-        img_lbl.setForeground(new java.awt.Color(255, 255, 255));
-        img_lbl.setText(" ");
 
         container_table.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -427,6 +428,20 @@ public final class PACKAGING_UI0001_Main_Mode2 extends javax.swing.JFrame implem
             }
         });
 
+        assistanceTextarea.setColumns(20);
+        assistanceTextarea.setRows(5);
+        jScrollPane2.setViewportView(assistanceTextarea);
+
+        img_lbl.setBackground(new java.awt.Color(204, 204, 255));
+        img_lbl.setForeground(new java.awt.Color(255, 255, 255));
+        img_lbl.setText(" ");
+        img_lbl.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+
+        requestedPallet_label1.setBackground(new java.awt.Color(255, 0, 0));
+        requestedPallet_label1.setFont(new java.awt.Font("Courier New", 1, 36)); // NOI18N
+        requestedPallet_label1.setForeground(new java.awt.Color(255, 255, 255));
+        requestedPallet_label1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+
         javax.swing.GroupLayout panel_topLayout = new javax.swing.GroupLayout(panel_top);
         panel_top.setLayout(panel_topLayout);
         panel_topLayout.setHorizontalGroup(
@@ -437,12 +452,19 @@ public final class PACKAGING_UI0001_Main_Mode2 extends javax.swing.JFrame implem
                 .addComponent(filler1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1304, 1304, 1304)
                 .addComponent(filler2, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(10, Short.MAX_VALUE))
+                .addContainerGap(1322, Short.MAX_VALUE))
             .addGroup(panel_topLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(panel_topLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(requestedPallet_label, javax.swing.GroupLayout.PREFERRED_SIZE, 1345, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(img_lbl, javax.swing.GroupLayout.PREFERRED_SIZE, 1244, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(panel_topLayout.createSequentialGroup()
+                        .addGroup(panel_topLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(panel_topLayout.createSequentialGroup()
+                                .addComponent(img_lbl, javax.swing.GroupLayout.PREFERRED_SIZE, 800, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 376, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(requestedPallet_label1, javax.swing.GroupLayout.PREFERRED_SIZE, 1345, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(requestedPallet_label, javax.swing.GroupLayout.PREFERRED_SIZE, 1345, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 1256, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(panel_topLayout.createSequentialGroup()
                         .addComponent(harnessTypeFilterBox, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -458,11 +480,18 @@ public final class PACKAGING_UI0001_Main_Mode2 extends javax.swing.JFrame implem
             panel_topLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panel_topLayout.createSequentialGroup()
                 .addComponent(connectedUserName_label, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(img_lbl, javax.swing.GroupLayout.PREFERRED_SIZE, 381, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(1, 1, 1)
-                .addComponent(requestedPallet_label, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(18, 18, 18)
+                .addGroup(panel_topLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(panel_topLayout.createSequentialGroup()
+                        .addComponent(requestedPallet_label, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(16, 16, 16))
+                    .addGroup(panel_topLayout.createSequentialGroup()
+                        .addGroup(panel_topLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jScrollPane2)
+                            .addComponent(img_lbl, javax.swing.GroupLayout.PREFERRED_SIZE, 376, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(requestedPallet_label1, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
                 .addGroup(panel_topLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(refresh, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(harnessTypeFilterBox, javax.swing.GroupLayout.Alignment.LEADING)
@@ -676,7 +705,7 @@ public final class PACKAGING_UI0001_Main_Mode2 extends javax.swing.JFrame implem
         //Pas besoin de réinitialiser le uid
         Helper.mode2_context.setBaseContainerTmp(new BaseContainerTmp());
         Helper.mode2_context.setBaseHarnessAdditionalBarecodeTmp(new BaseHarnessAdditionalBarecodeTmp());
-        Helper.mode2_context.setUser(null);
+        Helper.context.setUser(null);
     }
 
     //########################################################################
@@ -694,22 +723,22 @@ public final class PACKAGING_UI0001_Main_Mode2 extends javax.swing.JFrame implem
     public void logout() {
 
         //Save authentication line in HisLogin table
-        if (Helper.mode2_context.getUser().getId() != null) {
+        if (Helper.context.getUser().getId() != null) {
             HisLogin his_login = new HisLogin(
-                    Helper.mode2_context.getUser().getId(), Helper.mode2_context.getUser().getId(),
+                    Helper.context.getUser().getId(), Helper.context.getUser().getId(),
                     String.format(Helper.INFO0012_LOGOUT_SUCCESS,
-                            Helper.mode2_context.getUser().getFirstName()
-                            + " " + Helper.mode2_context.getUser().getLastName()
-                            + " / " + Helper.mode2_context.getUser().getLogin(),
-                            Helper.HOSTNAME, Helper.getStrTimeStamp()));
-            his_login.setCreateId(Helper.mode2_context.getUser().getId());
-            his_login.setWriteId(Helper.mode2_context.getUser().getId());
+                            Helper.context.getUser().getFirstName()
+                            + " " + Helper.context.getUser().getLastName()
+                            + " / " + Helper.context.getUser().getLogin(),
+                            Global.APP_HOSTNAME, Helper.getStrTimeStamp()));
+            his_login.setCreateId(Helper.context.getUser().getId());
+            his_login.setWriteId(Helper.context.getUser().getId());
 
             str = String.format(Helper.INFO0012_LOGOUT_SUCCESS,
-                    Helper.mode2_context.getUser().getFirstName() + " " + Helper.mode2_context.getUser().getLastName()
-                    + " / " + Helper.mode2_context.getUser().getLogin(), Helper.HOSTNAME,
+                    Helper.context.getUser().getFirstName() + " " + Helper.context.getUser().getLastName()
+                    + " / " + Helper.context.getUser().getLogin(), Global.APP_HOSTNAME,
                     Helper.getStrTimeStamp() + " Project : "
-                    + Helper.mode2_context.getUser().getHarnessType());
+                    + Helper.context.getUser().getHarnessType());
             his_login.setMessage(str);
 
             str = "";
@@ -720,7 +749,6 @@ public final class PACKAGING_UI0001_Main_Mode2 extends javax.swing.JFrame implem
 
         this.clearContextSessionVals();
 
-        //Helper.mode2_context.setUser(null);
         //Reset Image
         Helper.Packaging_Gui_Mode2.img_lbl.setIcon(state.getImg());
         //Clear Scan Box
@@ -735,9 +763,21 @@ public final class PACKAGING_UI0001_Main_Mode2 extends javax.swing.JFrame implem
         connectedUserName_label.setText("");
 
     }
+    
+    public JTextArea getAssistanceTextarea() {
+        return assistanceTextarea;
+    }
+
+    public void setAssistanceTextarea(JTextArea assistanceTextarea) {
+        this.assistanceTextarea = assistanceTextarea;
+    }
+
+    public void setAssistanceTextarea(String text) {
+        this.assistanceTextarea.setText(text);
+    }
 
     private void menu010_pallet_detailsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menu010_pallet_detailsActionPerformed
-        if (Helper.mode2_context.getUser().getAccessLevel() == Helper.PROFIL_ADMIN) {
+        if (Helper.context.getUser().getAccessLevel() == Global.PROFIL_ADMIN) {
             new PACKAGING_UI0010_PalletDetails(this, rootPaneCheckingEnabled, true, true, true, true).setVisible(true);
         } else {
             new PACKAGING_UI0010_PalletDetails(this, rootPaneCheckingEnabled, false, false, false, false).setVisible(true);
@@ -765,8 +805,8 @@ public final class PACKAGING_UI0001_Main_Mode2 extends javax.swing.JFrame implem
         query.setFirstResult(0);
         query.setMaxResults(100);
 
-        states.add(Helper.PALLET_OPEN);
-        states.add(Helper.PALLET_WAITING);
+        states.add(Global.PALLET_OPEN);
+        states.add(Global.PALLET_WAITING);
 
         projects.add(String.valueOf(harnessTypeFilterBox.getSelectedItem()));
 
@@ -783,7 +823,7 @@ public final class PACKAGING_UI0001_Main_Mode2 extends javax.swing.JFrame implem
     }
     private void menu012_harness_detailsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menu012_harness_detailsActionPerformed
         PACKAGING_UI0012_HarnessDetails harnessDetails;
-        if (Helper.mode2_context.getUser()!= null && Helper.mode2_context.getUser().getAccessLevel() == Helper.PROFIL_ADMIN) {
+        if (Helper.context.getUser()!= null && Helper.context.getUser().getAccessLevel() == Global.PROFIL_ADMIN) {
             harnessDetails = new PACKAGING_UI0012_HarnessDetails(this, rootPaneCheckingEnabled, true);
         } else {
             harnessDetails = new PACKAGING_UI0012_HarnessDetails(this, rootPaneCheckingEnabled, false);
@@ -793,7 +833,7 @@ public final class PACKAGING_UI0001_Main_Mode2 extends javax.swing.JFrame implem
     }//GEN-LAST:event_menu012_harness_detailsActionPerformed
 
     private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
-        if (Helper.mode2_context.getUser() != null) {
+        if (Helper.context.getUser() != null) {
             this.logout();
         }
 
@@ -917,6 +957,7 @@ public final class PACKAGING_UI0001_Main_Mode2 extends javax.swing.JFrame implem
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTextArea assistanceTextarea;
     private javax.swing.JLabel connectedUserName_label;
     private javax.swing.JTable container_table;
     private javax.swing.Box.Filler filler1;
@@ -930,6 +971,7 @@ public final class PACKAGING_UI0001_Main_Mode2 extends javax.swing.JFrame implem
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JMenuItem menu010_pallet_details;
     private javax.swing.JMenuItem menu011_prod_statistics;
     private javax.swing.JMenuItem menu012_deleted_harness;
@@ -948,6 +990,7 @@ public final class PACKAGING_UI0001_Main_Mode2 extends javax.swing.JFrame implem
     private javax.swing.JPanel panel_top;
     private javax.swing.JButton refresh;
     private javax.swing.JLabel requestedPallet_label;
+    private javax.swing.JLabel requestedPallet_label1;
     private javax.swing.JTextField scan_txtbox;
     // End of variables declaration//GEN-END:variables
 

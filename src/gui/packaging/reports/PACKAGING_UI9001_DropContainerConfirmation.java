@@ -5,6 +5,7 @@
  */
 package gui.packaging.reports;
 
+import __run__.Global;
 import entity.BaseContainer;
 import entity.BaseHarness;
 import entity.DropBaseContainer;
@@ -35,7 +36,7 @@ public final class PACKAGING_UI9001_DropContainerConfirmation extends javax.swin
      * @param modal
      * @param bc
      */
-    public PACKAGING_UI9001_DropContainerConfirmation(java.awt.Dialog parent, boolean modal, BaseContainer bc) {
+    public PACKAGING_UI9001_DropContainerConfirmation(javax.swing.JFrame parent, boolean modal, BaseContainer bc) {
         super(parent, modal);
         initComponents();
         initGui(parent);
@@ -43,7 +44,7 @@ public final class PACKAGING_UI9001_DropContainerConfirmation extends javax.swin
         palletNumber_lbl.setText(bc.getPalletNumber());
     }
 
-    private void initGui(java.awt.Dialog parent) {
+    private void initGui(javax.swing.JFrame parent) {
         this.parent = (PACKAGING_UI0010_PalletDetails) parent;
 
         //Center the this dialog in the screen
@@ -80,6 +81,9 @@ public final class PACKAGING_UI9001_DropContainerConfirmation extends javax.swin
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Drop Comment");
+        setModal(true);
+        setResizable(false);
+        setType(java.awt.Window.Type.POPUP);
 
         jLabel1.setText("Commentaire d'annulation");
 
@@ -161,7 +165,7 @@ public final class PACKAGING_UI9001_DropContainerConfirmation extends javax.swin
                 dp.setClosedTime(this.bc.getClosedTime());
                 dp.setContainerState(this.bc.getContainerState());
                 dp.setContainerStateCode(this.bc.getContainerStateCode());
-                dp.setCreateId(Helper.mode2_context.getUser().getId());
+                dp.setCreateId(Helper.context.getUser().getId());
                 dp.setCreateTime(this.bc.getCreateTime());
                 dp.setDropTime(new Date());
                 dp.setDropFeedback(this.dropFeedback_txtbox.getText());
@@ -175,7 +179,7 @@ public final class PACKAGING_UI9001_DropContainerConfirmation extends javax.swin
                 dp.setStartTime(this.bc.getStartTime());
                 dp.setSupplierPartNumber(this.bc.getSupplierPartNumber());
                 dp.setWorkTime(this.bc.getWorkTime());
-                dp.setWriteId(Helper.mode2_context.getUser().getId());
+                dp.setWriteId(Helper.context.getUser().getId());
                 dp.setWriteTime(this.bc.getFifoTime());
                 dp.setUser(this.bc.getUser());
 
@@ -189,15 +193,15 @@ public final class PACKAGING_UI9001_DropContainerConfirmation extends javax.swin
                     DropBaseHarness dh = new DropBaseHarness();
                     dh.setContainer(dp);
                     dh.setCounter(bh.getCounter());
-                    dh.setCreateId(Helper.mode2_context.getUser().getId());
+                    dh.setCreateId(Helper.context.getUser().getId());
                     dh.setCreateTime(bh.getCreateTime());
                     dh.setDropTime(new Date());
                     dh.setDropFeedback(dropFeedback_txtbox.getText());
                     dh.setHarnessPart(bh.getHarnessPart());
                     dh.setHarnessType(bh.getHarnessType());
                     dh.setPalletNumber(bh.getPalletNumber());
-                    dh.setUser(Helper.mode2_context.getUser().getLogin());
-                    dh.setWriteId(Helper.mode2_context.getUser().getId());
+                    dh.setUser(Helper.context.getUser().getLogin());
+                    dh.setWriteId(Helper.context.getUser().getId());
                     dh.setWriteTime(bh.getWriteTime());
                     dh.create(dh);
 
@@ -228,7 +232,7 @@ public final class PACKAGING_UI9001_DropContainerConfirmation extends javax.swin
                 //Drop his_galia_print history line
                 Helper.sess.beginTransaction();
                 query = Helper.sess.createQuery(HQLHelper.DEL_CLOSING_SHEET);
-                query.setString("closingPallet", Helper.CLOSING_PALLET_PREFIX + this.bc.getPalletNumber());
+                query.setString("closingPallet", Global.CLOSING_PALLET_PREFIX + this.bc.getPalletNumber());
                 Helper.sess.getTransaction().commit();
 
                 //Delete the container from the BaseContainer
@@ -238,14 +242,14 @@ public final class PACKAGING_UI9001_DropContainerConfirmation extends javax.swin
                 Helper.sess.getTransaction().commit();
 
                 //Book back the packaging items only for stored pallets
-                if (bc.getContainerState().equals(Helper.PALLET_STORED)) {
-                    if ("1".equals(Helper.PROP.getProperty("BOOK_PACKAGING").toString())) {
+                if (bc.getContainerState().equals(Global.PALLET_STORED)) {
+                    if ("1".equals(Global.APP_PROP.getProperty("BOOK_PACKAGING").toString())) {
                         PackagingStockMovement pm = new PackagingStockMovement();
                         pm.bookMasterPack(
-                                Helper.mode2_context.getUser().getFirstName() + " " + Helper.mode2_context.getUser().getLastName(),
+                                Helper.context.getUser().getFirstName() + " " + Helper.context.getUser().getLastName(),
                                 this.bc.getPackType(), 1, "IN",
-                                Helper.PROP.getProperty("WH_FINISH_GOODS"),
-                                Helper.PROP.getProperty("WH_PACKAGING").toString(),
+                                Global.APP_PROP.getProperty("WH_FINISH_GOODS"),
+                                Global.APP_PROP.getProperty("WH_PACKAGING").toString(),
                                 "Pallet dropped : " + this.dropFeedback_txtbox.getText(),
                                 bc.getPalletNumber());
                     }
@@ -262,7 +266,12 @@ public final class PACKAGING_UI9001_DropContainerConfirmation extends javax.swin
 
                 //Clear form fields
                 this.parent.clearContainerFieldsValues();
-
+                
+                //Reset the title
+                this.parent.setTitle("Détails palette");
+                
+                Helper.Packaging_Gui_Mode1.setAssistanceTextarea("Scanner une référence pour ouvrir \nune palette\nOu selectionner une palette du tableau çi-dessous");
+                Helper.Packaging_Gui_Mode1.setRequestedPallet_txt("");
                 //Refresh the main table
                 Helper.Packaging_Gui_Mode1.reloadDataTable();
 

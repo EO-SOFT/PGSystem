@@ -5,6 +5,7 @@
  */
 package gui.packaging.mode2.state;
 
+import __run__.Global;
 import gui.packaging.Mode2_Context;
 import helper.Helper;
 import entity.BaseContainer;
@@ -21,7 +22,7 @@ import javax.swing.JTextField;
  */
 public class Mode2_S040_ClosingPallet implements Mode2_State {
 
-    private ImageIcon imgIcon = new ImageIcon(Helper.PROP.getProperty("IMG_PATH") + "S050_ClosingPallet.jpg");
+    private ImageIcon imgIcon = new ImageIcon(Global.APP_PROP.getProperty("IMG_PATH") + "S050_ClosingPallet.jpg");
 
     public Mode2_S040_ClosingPallet() {
 
@@ -36,13 +37,13 @@ public class Mode2_S040_ClosingPallet implements Mode2_State {
         JTextField scan_txtbox = Helper.Packaging_Gui_Mode2.getScanTxt();
         String barcode = scan_txtbox.getText().trim();
 
-        if (!barcode.isEmpty() && barcode.equals(Helper.CLOSING_PALLET_PREFIX + context.getBaseContainerTmp().getPalletNumber())) {
+        if (!barcode.isEmpty() && barcode.equals(Global.CLOSING_PALLET_PREFIX + context.getBaseContainerTmp().getPalletNumber())) {
             //Update pallet state to CLOSED            
             BaseContainer bc = new BaseContainer().getBaseContainer(context.getBaseContainerTmp().getPalletNumber());
 
             try {
-                bc.setContainerState(Helper.PALLET_CLOSED);
-                bc.setContainerStateCode(Helper.PALLET_CLOSED_CODE);
+                bc.setContainerState(Global.PALLET_CLOSED);
+                bc.setContainerStateCode(Global.PALLET_CLOSED_CODE);
                 bc.setClosedTime(Helper.getTimeStamp(null));
                 bc.setWorkTime(
                         Float.valueOf(

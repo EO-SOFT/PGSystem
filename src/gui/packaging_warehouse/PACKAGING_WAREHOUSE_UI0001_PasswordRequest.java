@@ -5,9 +5,10 @@
  */
 package gui.packaging_warehouse;
 
+import __run__.Global;
 import entity.HisLogin;
 import entity.ManufactureUsers;
-import main.Main;
+import __run__.StartFrame;
 import gui.warehouse_dispatch.state.WarehouseHelper;
 import helper.HQLHelper;
 import helper.Helper;
@@ -32,7 +33,7 @@ public class PACKAGING_WAREHOUSE_UI0001_PasswordRequest extends javax.swing.JDia
     
 
     //Object to preserve the main frame as parent
-    private Main main_gui;
+    private StartFrame main_gui;
 
     /**
      * Creates new form UI0010_PalletDetails
@@ -46,7 +47,7 @@ public class PACKAGING_WAREHOUSE_UI0001_PasswordRequest extends javax.swing.JDia
         Helper.centerJDialog(this);
         this.setResizable(false);
         this.user = null;
-        this.main_gui = (Main) parent;
+        this.main_gui = (StartFrame) parent;
     }
 
     /**
@@ -201,13 +202,13 @@ public class PACKAGING_WAREHOUSE_UI0001_PasswordRequest extends javax.swing.JDia
         WarehouseHelper.warehouse_out_context.getUser().update(WarehouseHelper.warehouse_out_context.getUser());
         //Go back to step S020
         try {
-            Helper.HOSTNAME = InetAddress.getLocalHost().getHostName();
+            Global.APP_HOSTNAME = InetAddress.getLocalHost().getHostName();
         } catch (UnknownHostException ex) {
             Logger.getLogger(PACKAGING_WAREHOUSE_UI0001_PasswordRequest.class.getName()).log(Level.SEVERE, null, ex);
         }
         String str = String.format(Helper.INFO0001_LOGIN_SUCCESS,
                 this.user.getFirstName() + " " + this.user.getLastName()
-                + " / " + this.user.getLogin(), Helper.HOSTNAME,
+                + " / " + this.user.getLogin(), Global.APP_HOSTNAME,
                 Helper.getStrTimeStamp() + " Packaging warehouse interface : ");
         Helper.log.log(Level.INFO, str);
 
@@ -216,7 +217,7 @@ public class PACKAGING_WAREHOUSE_UI0001_PasswordRequest extends javax.swing.JDia
                 this.user.getId(), this.user.getId(),
                 String.format(Helper.INFO0001_LOGIN_SUCCESS,
                         this.user.getFirstName() + " " + this.user.getLastName() + " / " + this.user.getLogin(),
-                        Helper.HOSTNAME, Helper.getStrTimeStamp()));
+                        Global.APP_HOSTNAME, Helper.getStrTimeStamp()));
         his_login.setCreateId(this.user.getId());
         his_login.setWriteId(this.user.getId());
         his_login.setMessage(str);

@@ -1,6 +1,7 @@
 package entity;
 // Generated 6 f�vr. 2016 21:43:55 by Hibernate Tools 3.6.0
 
+import __run__.Global;
 import helper.Helper;
 import helper.HQLHelper;
 import hibernate.DAO;
@@ -70,13 +71,13 @@ public class HisGaliaPrint extends DAO implements java.io.Serializable {
 
     public HisGaliaPrint(String harnessPart, String supplierName, String supplierPartNumber, String harnessIndex, int qty, String closingPalet, String state, String reprint) {
         this.createTime = this.writeTime = Helper.getTimeStamp(null);
-        this.createId = this.writeId = Helper.mode2_context.getUser().getId();
+        this.createId = this.writeId = Helper.context.getUser().getId();
         this.harnessPart = harnessPart;
         this.supplierName = supplierName;
         this.supplierPartNumber = supplierPartNumber;
         this.harnessIndex = harnessIndex;
         this.qty = qty;
-        this.closingPallet = Helper.CLOSING_PALLET_PREFIX + closingPalet;
+        this.closingPallet = Global.CLOSING_PALLET_PREFIX + closingPalet;
         this.printState = state;
         this.reprint = reprint;
     }
@@ -89,7 +90,7 @@ public class HisGaliaPrint extends DAO implements java.io.Serializable {
         this.supplierPartNumber = supplierPartNumber;
         this.harnessIndex = harnessIndex;
         this.qty = qty;
-        this.closingPallet = Helper.CLOSING_PALLET_PREFIX + closingPalet;
+        this.closingPallet = Global.CLOSING_PALLET_PREFIX + closingPalet;
         this.printState = state;
         this.reprint = reprint;
     }

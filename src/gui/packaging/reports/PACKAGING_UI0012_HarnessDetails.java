@@ -5,6 +5,7 @@ package gui.packaging.reports;
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+import __run__.Global;
 import helper.Helper;
 import helper.HQLHelper;
 import entity.BaseContainer;
@@ -717,7 +718,7 @@ public class PACKAGING_UI0012_HarnessDetails extends javax.swing.JDialog {
             error_lbl1.setText(ERR_REQUIRED_COMMENT);
         } else if (palletNumber_txtbox.getText().length() == 0) {
             error_lbl.setText(ERR_HARNESS_NOT_FOUND);
-        } else if (!bc.getContainerState().equals(Helper.PALLET_OPEN)){
+        } else if (!bc.getContainerState().equals(Global.PALLET_OPEN)){
             error_lbl.setText(ERR_PALLET_STATE_ERROR);
         }else {
             int confirmed = JOptionPane.showConfirmDialog(null,
