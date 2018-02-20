@@ -1,51 +1,65 @@
 package example;
 
-import entity.BaseContainer;
-import entity.BaseHarnessAdditionalBarecode;
-import entity.BaseHarness;
-import entity.BaseModule;
-import java.util.Iterator;
-import java.util.List;
-
-import org.hibernate.HibernateException;
-import org.hibernate.Session;
-import org.hibernate.Transaction;
+import java.util.MissingFormatArgumentException;
+import javax.swing.JOptionPane;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import helper.HibernateUtil;
-import entity.BaseUser;
-import entity.ConfigProject;
-import entity.ConfigShift;
-import entity.HisGaliaPrint;
-import entity.HisLogin;
-import entity.HisPalletPrint;
-import entity.ManufactureUsers;
-import entity.PackagingMaster;
-import entity.ScheduleEntry;
-import helper.Helper;
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.HashSet;
-import java.util.Set;
 
 public class TestExample {
 
     final static Logger logger = LoggerFactory.getLogger(TestExample.class);
 
     /**
+     *
+     * @param msg
      * @param args
+     * @return
      */
-    public static void main(String[] args) {
-        
-        PackagingMaster pm = new PackagingMaster();
-        List result = pm.selectAllMasterPack();
-        for (Object object : result) {
-            pm = (PackagingMaster) object;
-            System.out.println("pm"+pm);
+    public static String toto(String msg, Object... args) {
+        if (args == null) {
+            System.out.println("Is null");
         }
-        
+        try {
+            return String.format(msg, args);
+        } catch (MissingFormatArgumentException e) {
+            System.out.println("exeption " + e.getMessage());
+            return msg;
+        }
+
+    }
+
+    /**
+     * @param arg
+     */
+    public static void main(String[] arg) {
+
+//        PackagingMaster pm = new PackagingMaster();
+//        List result = pm.selectAllMasterPack();
+//        for (Object object : result) {
+//            pm = (PackagingMaster) object;
+//            System.out.println("pm"+pm);
+//        }
+//        String str = "Harness part [%s] not configured for the project [%s].";
+
+//        String[] APP_ERR0001 = {"APP_ERR0001", "APP_ERR0001 : Failed to connect to the database !"};
+//        
+//        List<Object> args = new ArrayList<Object>() {
+//            {
+//                add("6200");
+//                add("DUCATI");
+//            }
+//        };
+        //String formatted = String.format(str, args.toArray());
+//        String formatted = toto(str);
+//        System.out.println("formatted" + formatted);
+
+        String[] buttons = {"Yes", "Yes to all", "No", "Cancel"};
+
+        int rc = JOptionPane.showOptionDialog(null, "Question ?", "Confirmation",
+                JOptionPane.WARNING_MESSAGE, 0, null, buttons, buttons[2]);
+
+        System.out.println(rc);
+
         //Calendar calendar = Calendar.getInstance();
         //calendar.set(2009, 12, 31);
         //Integer weeksOfYear = calendar.getActualMaximum(Calendar.getMaximum(calendar));
@@ -270,8 +284,6 @@ public class TestExample {
 //        se.setEntryState("NEW");
 //        se.setEntryStateCode("1000");        
 //        se.create(se);
-        
-        
     }
 
 }

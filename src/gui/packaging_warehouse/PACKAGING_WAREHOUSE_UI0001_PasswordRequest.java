@@ -5,10 +5,10 @@
  */
 package gui.packaging_warehouse;
 
-import __run__.Global;
-import entity.HisLogin;
+import __main__.GlobalMethods;
+import __main__.GlobalVars;
+import __main__.StartFrame;
 import entity.ManufactureUsers;
-import __run__.StartFrame;
 import gui.warehouse_dispatch.state.WarehouseHelper;
 import helper.HQLHelper;
 import helper.Helper;
@@ -22,6 +22,8 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 import org.hibernate.Query;
+import ui.UILog;
+import ui.info.InfoMsg;
 
 /**
  *
@@ -30,7 +32,6 @@ import org.hibernate.Query;
 public class PACKAGING_WAREHOUSE_UI0001_PasswordRequest extends javax.swing.JDialog {
 
     private ManufactureUsers user;
-    
 
     //Object to preserve the main frame as parent
     private StartFrame main_gui;
@@ -166,6 +167,7 @@ public class PACKAGING_WAREHOUSE_UI0001_PasswordRequest extends javax.swing.JDia
     }
 
     private boolean checkLoginAndPass() {
+        Helper.startSession();
         Helper.sess.beginTransaction();
         System.out.println("Login to check " + admin_login_txtbox.getText());
         System.out.println("Password " + String.valueOf(admin_password_txtbox.getPassword()));
@@ -180,7 +182,7 @@ public class PACKAGING_WAREHOUSE_UI0001_PasswordRequest extends javax.swing.JDia
         if (result.isEmpty()) {
             return false;
         }
-             
+
         this.user = (ManufactureUsers) result.get(0);
         return true;
     }
@@ -202,27 +204,34 @@ public class PACKAGING_WAREHOUSE_UI0001_PasswordRequest extends javax.swing.JDia
         WarehouseHelper.warehouse_out_context.getUser().update(WarehouseHelper.warehouse_out_context.getUser());
         //Go back to step S020
         try {
-            Global.APP_HOSTNAME = InetAddress.getLocalHost().getHostName();
+            GlobalVars.APP_HOSTNAME = InetAddress.getLocalHost().getHostName();
         } catch (UnknownHostException ex) {
             Logger.getLogger(PACKAGING_WAREHOUSE_UI0001_PasswordRequest.class.getName()).log(Level.SEVERE, null, ex);
         }
-        String str = String.format(Helper.INFO0001_LOGIN_SUCCESS,
+//        String str = String.format(Helper.INFO0001_LOGIN_SUCCESS,
+//                this.user.getFirstName() + " " + this.user.getLastName()
+//                + " / " + this.user.getLogin(), GlobalVars.APP_HOSTNAME,
+//                GlobalMethods.getStrTimeStamp() + " Packaging warehouse interface : ");
+//        Helper.log.log(Level.INFO, str);
+        
+        String str = String.format(InfoMsg.APP_INFO0003[1],
                 this.user.getFirstName() + " " + this.user.getLastName()
-                + " / " + this.user.getLogin(), Global.APP_HOSTNAME,
-                Helper.getStrTimeStamp() + " Packaging warehouse interface : ");
-        Helper.log.log(Level.INFO, str);
+                + " / " + this.user.getLogin(), GlobalVars.APP_HOSTNAME,
+                GlobalMethods.getStrTimeStamp() + " Packaging warehouse interface : ");
+        
+        UILog.info(str); 
 
         //Save authentication line in HisLogin table
-        HisLogin his_login = new HisLogin(
-                this.user.getId(), this.user.getId(),
-                String.format(Helper.INFO0001_LOGIN_SUCCESS,
-                        this.user.getFirstName() + " " + this.user.getLastName() + " / " + this.user.getLogin(),
-                        Global.APP_HOSTNAME, Helper.getStrTimeStamp()));
-        his_login.setCreateId(this.user.getId());
-        his_login.setWriteId(this.user.getId());
-        his_login.setMessage(str);
-        his_login.create(his_login);
-        
+//        HisLogin his_login = new HisLogin(
+//                this.user.getId(), this.user.getId(),
+//                String.format(Helper.INFO0001_LOGIN_SUCCESS,
+//                        this.user.getFirstName() + " " + this.user.getLastName() + " / " + this.user.getLogin(),
+//                        GlobalVars.APP_HOSTNAME, GlobalMethods.getStrTimeStamp()));
+//        his_login.setCreateId(this.user.getId());
+//        his_login.setWriteId(this.user.getId());
+//        his_login.setMessage(str);
+//        his_login.create(his_login);
+
         PackagingHelper.user = this.user;
         //Create and display the packaing main form
         PackagingHelper.Packaging_Main_Gui = new PACKAGING_WAREHOUSE_UI0001_MAIN_FORM(null, this.main_gui);
@@ -247,9 +256,9 @@ public class PACKAGING_WAREHOUSE_UI0001_PasswordRequest extends javax.swing.JDia
 
     private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
         //if (WarehouseHelper.warehouse_out_context.getUser() == null) {
-           // WarehouseHelper.warehouse_out_context.setState(new S010_DispatchUserCodeScan());
+        // WarehouseHelper.warehouse_out_context.setState(new S010_DispatchUserCodeScan());
         //}
-        
+
 
     }//GEN-LAST:event_formWindowClosing
 

@@ -5,11 +5,12 @@
  */
 package gui.warehouse_fg_reception;
 
-import __run__.Global;
+import __main__.GlobalVars;
 import helper.Helper;
 import entity.BaseContainer;
 import entity.ConfigSegment;
 import entity.ConfigWorkplace;
+import gui.packaging.PackagingVars;
 import gui.packaging.reports.PACKAGING_UI0010_PalletDetails;
 import gui.packaging.reports.PACKAGING_UI0011_ProdStatistics;
 import helper.ComboItem;
@@ -21,6 +22,7 @@ import java.awt.event.KeyEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.text.DateFormat;
+import java.text.DecimalFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -66,6 +68,7 @@ public final class WAREHOUSE_FG_UI0002_PALLET_LIST extends javax.swing.JFrame {
             "Pack Size",
             "Qty Read",
             "Std Time",
+            "Total Std Time",
             "Index",
             "User",
             "State",
@@ -137,12 +140,11 @@ public final class WAREHOUSE_FG_UI0002_PALLET_LIST extends javax.swing.JFrame {
     }
 
     private void initContainerTableDoubleClick() {
-        this.searchResult_table.addMouseListener(
-                new MouseAdapter() {
+        this.searchResult_table.addMouseListener(new MouseAdapter() {
             public void mouseClicked(MouseEvent e) {
                 if (e.getClickCount() == 2) {
-                    //System.out.println("Helper.context.getUser().getAccessLevel()" + Helper.context.getUser().getAccessLevel());
-                    if (Helper.context.getUser().getAccessLevel() == Global.PROFIL_ADMIN) {
+                    //System.out.println("PackagingVars.context.getUser().getAccessLevel()" + PackagingVars.context.getUser().getAccessLevel());
+                    if (PackagingVars.context.getUser().getAccessLevel() == GlobalVars.PROFIL_ADMIN) {
                         new PACKAGING_UI0010_PalletDetails(null, rootPaneCheckingEnabled, String.valueOf(searchResult_table.getValueAt(searchResult_table.getSelectedRow(), PALLET_NUMBER_COLINDEX)), true, true, true).setVisible(true);
                     } else {
                         new PACKAGING_UI0010_PalletDetails(null, rootPaneCheckingEnabled, String.valueOf(searchResult_table.getValueAt(searchResult_table.getSelectedRow(), PALLET_NUMBER_COLINDEX)), false, false, false).setVisible(true);
@@ -167,14 +169,14 @@ public final class WAREHOUSE_FG_UI0002_PALLET_LIST extends javax.swing.JFrame {
     }
 
     private void initStateFilters() {
-        JRadioButton[] radioButtonList = new JRadioButton[Global.PALLET_STATES.length];
+        JRadioButton[] radioButtonList = new JRadioButton[GlobalVars.PALLET_STATES.length];
         jpanel_state.setLayout(new GridLayout(0, 3, 6, 6));
         ButtonGroup group = new ButtonGroup();
-        for (int i = 0; i < Global.PALLET_STATES.length; i++) {
-            if (Global.PALLET_STATES[i][1].toString().equals("selected")) {
-                radioButtonList[i] = new JRadioButton(Global.PALLET_STATES[i][0], true);
+        for (int i = 0; i < GlobalVars.PALLET_STATES.length; i++) {
+            if (GlobalVars.PALLET_STATES[i][1].toString().equals("selected")) {
+                radioButtonList[i] = new JRadioButton(GlobalVars.PALLET_STATES[i][0], true);
             } else {
-                radioButtonList[i] = new JRadioButton(Global.PALLET_STATES[i][0], false);
+                radioButtonList[i] = new JRadioButton(GlobalVars.PALLET_STATES[i][0], false);
             }
             radioButtonList[i].addActionListener(new java.awt.event.ActionListener() {
                 @Override
@@ -597,11 +599,12 @@ public final class WAREHOUSE_FG_UI0002_PALLET_LIST extends javax.swing.JFrame {
             oneRow.add(String.valueOf(obj[7])); // "Pack Type",
             oneRow.add(String.valueOf(obj[8])); // "Pack Size",
             oneRow.add(String.valueOf(obj[9])); // "Qty Read",
-            oneRow.add(String.valueOf(obj[10])); // "Std Time",
-            oneRow.add(String.valueOf(obj[11])); // "Index",
-            oneRow.add(String.valueOf(obj[12])); // "User",
-            oneRow.add(String.valueOf(obj[13])); // "State",
-            oneRow.add(String.valueOf(obj[14])); // "State code"
+            oneRow.add(String.valueOf(obj[10])); // "Std Time",            
+            oneRow.add(String.valueOf(obj[11])); // "Total Std Time",
+            oneRow.add(String.valueOf(obj[12])); // "Index",
+            oneRow.add(String.valueOf(obj[13])); // "User",
+            oneRow.add(String.valueOf(obj[14])); // "State",
+            oneRow.add(String.valueOf(obj[15])); // "State code"
 
             total = total + Integer.valueOf(String.valueOf(obj[9]));
 
@@ -614,8 +617,8 @@ public final class WAREHOUSE_FG_UI0002_PALLET_LIST extends javax.swing.JFrame {
 
     private void initTimeSpinners() {
 
-        String startTime = Global.APP_PROP.getProperty("START_TIME");
-        String endTime = Global.APP_PROP.getProperty("END_TIME");
+        String startTime = GlobalVars.APP_PROP.getProperty("START_TIME");
+        String endTime = GlobalVars.APP_PROP.getProperty("END_TIME");
         DateFormat timeFormat = new SimpleDateFormat("HH:mm");
 
         //################# Start Time Spinner ####################
@@ -726,26 +729,26 @@ public final class WAREHOUSE_FG_UI0002_PALLET_LIST extends javax.swing.JFrame {
 
             for (int i = 0; i < selected.size(); i++) {
 
-                if (selected.get(i).equals(Global.PALLET_OPEN)) {
-                    state = Global.PALLET_OPEN;
+                if (selected.get(i).equals(GlobalVars.PALLET_OPEN)) {
+                    state = GlobalVars.PALLET_OPEN;
                 }
-                if (selected.get(i).equals(Global.PALLET_WAITING)) {
-                    state = Global.PALLET_WAITING;
+                if (selected.get(i).equals(GlobalVars.PALLET_WAITING)) {
+                    state = GlobalVars.PALLET_WAITING;
                 }
-                if (selected.get(i).equals(Global.PALLET_CLOSED)) {
-                    state = Global.PALLET_CLOSED;
+                if (selected.get(i).equals(GlobalVars.PALLET_CLOSED)) {
+                    state = GlobalVars.PALLET_CLOSED;
                 }
-                if (selected.get(i).equals(Global.PALLET_STORED)) {
-                    state = Global.PALLET_STORED;
+                if (selected.get(i).equals(GlobalVars.PALLET_STORED)) {
+                    state = GlobalVars.PALLET_STORED;
                 }
-                if (selected.get(i).equals(Global.PALLET_SHIPPED)) {
-                    state = Global.PALLET_SHIPPED;
+                if (selected.get(i).equals(GlobalVars.PALLET_SHIPPED)) {
+                    state = GlobalVars.PALLET_SHIPPED;
                 }
-                if (selected.get(i).equals(Global.PALLET_QUARANTAINE)) {
-                    state = Global.PALLET_QUARANTAINE;
+                if (selected.get(i).equals(GlobalVars.PALLET_QUARANTAINE)) {
+                    state = GlobalVars.PALLET_QUARANTAINE;
                 }
-                if (selected.get(i).equals(Global.PALLET_DROPPED)) {
-                    state = Global.PALLET_DROPPED;
+                if (selected.get(i).equals(GlobalVars.PALLET_DROPPED)) {
+                    state = GlobalVars.PALLET_DROPPED;
                 }
 
             }
@@ -765,6 +768,7 @@ public final class WAREHOUSE_FG_UI0002_PALLET_LIST extends javax.swing.JFrame {
                         + " bc.qty_expected AS pack_size, "
                         + " bc.qty_read AS qty_read, "
                         + " bc.std_time AS std_time, "
+                        + " bc.std_time*bc.qty_read AS total_std_time, "
                         + " bc.harness_index AS index, "
                         + " bc.m_user || ' / ' || bc.create_user AS user, "
                         + " bc.container_state AS state, "
@@ -788,22 +792,22 @@ public final class WAREHOUSE_FG_UI0002_PALLET_LIST extends javax.swing.JFrame {
                     Logger.getLogger(PACKAGING_UI0011_ProdStatistics.class.getName()).log(Level.SEVERE, null, ex);
                 }
 
-                if (UIHelper.listContains(selected, Global.PALLET_OPEN)) {
+                if (UIHelper.listContains(selected, GlobalVars.PALLET_OPEN)) {
                     if (startDatePicker.getDate() != null && endDatePicker.getDate() != null) {
-                        q += " AND container_state ='" + Global.PALLET_OPEN + "' AND bc.create_time BETWEEN '%s' AND '%s' ORDER BY bc.create_time DESC";
+                        q += " AND container_state ='" + GlobalVars.PALLET_OPEN + "' AND bc.create_time BETWEEN '%s' AND '%s' ORDER BY bc.create_time DESC";
                         q = String.format(q, startDateStr, endDateStr);
                     } else if (startDatePicker.getDate() != null && endDatePicker.getDate() == null) {
-                        q += " AND container_state ='" + Global.PALLET_OPEN + "' AND bc.create_time > '%s' ORDER BY bc.create_time DESC ";
+                        q += " AND container_state ='" + GlobalVars.PALLET_OPEN + "' AND bc.create_time > '%s' ORDER BY bc.create_time DESC ";
                         q = String.format(q, startDateStr);
                     }
                     if (startDatePicker.getDate() == null && endDatePicker.getDate() != null) {
-                        q += " AND container_state ='" + Global.PALLET_OPEN + "' AND bc.create_time < '%s' ORDER BY bc.create_time DESC";
+                        q += " AND container_state ='" + GlobalVars.PALLET_OPEN + "' AND bc.create_time < '%s' ORDER BY bc.create_time DESC";
                         q = String.format(q, endDateStr);
                     }
                 }
-                else if (UIHelper.listContains(selected, Global.PALLET_WAITING)) {
+                else if (UIHelper.listContains(selected, GlobalVars.PALLET_WAITING)) {
                     if (startDatePicker.getDate() != null && endDatePicker.getDate() != null) {
-                        q += " AND container_state ='" + Global.PALLET_WAITING + "' AND bc.write_time BETWEEN '%s' AND '%s' ORDER BY bc.write_time DESC";
+                        q += " AND container_state ='" + GlobalVars.PALLET_WAITING + "' AND bc.write_time BETWEEN '%s' AND '%s' ORDER BY bc.write_time DESC";
                         q = String.format(q, startDateStr, endDateStr);
                     } else if (startDatePicker.getDate() != null && endDatePicker.getDate() == null) {
                         q += " AND bc.write_time > '%s' ORDER BY bc.write_time DESC ";
@@ -814,19 +818,19 @@ public final class WAREHOUSE_FG_UI0002_PALLET_LIST extends javax.swing.JFrame {
                         q = String.format(q, endDateStr);
                     }
                 }
-                else if (UIHelper.listContains(selected, Global.PALLET_CLOSED)) {
+                else if (UIHelper.listContains(selected, GlobalVars.PALLET_CLOSED)) {
                     if (startDatePicker.getDate() != null && endDatePicker.getDate() != null) {
-                        q += " AND container_state ='" + Global.PALLET_CLOSED + "' AND bc.closed_time BETWEEN '%s' AND '%s' ORDER BY bc.closed_time DESC";
+                        q += " AND container_state ='" + GlobalVars.PALLET_CLOSED + "' AND bc.closed_time BETWEEN '%s' AND '%s' ORDER BY bc.closed_time DESC";
                         q = String.format(q, startDateStr, endDateStr);
                     } else if (startDatePicker.getDate() != null && endDatePicker.getDate() == null) {
-                        q += " AND container_state ='" + Global.PALLET_CLOSED + "' AND bc.closed_time > '%s' ORDER BY bc.closed_time DESC ";
+                        q += " AND container_state ='" + GlobalVars.PALLET_CLOSED + "' AND bc.closed_time > '%s' ORDER BY bc.closed_time DESC ";
                         q = String.format(q, startDateStr);
                     }
                     if (startDatePicker.getDate() == null && endDatePicker.getDate() != null) {
-                        q += " AND container_state ='" + Global.PALLET_CLOSED + "' AND bc.closed_time < '%s' ORDER BY bc.closed_time DESC";
+                        q += " AND container_state ='" + GlobalVars.PALLET_CLOSED + "' AND bc.closed_time < '%s' ORDER BY bc.closed_time DESC";
                         q = String.format(q, endDateStr);
                     }
-                } else if (UIHelper.listContains(selected, Global.PALLET_STORED)) {
+                } else if (UIHelper.listContains(selected, GlobalVars.PALLET_STORED)) {
                     if (startDatePicker.getDate() != null && endDatePicker.getDate() != null) {
                         q += " AND bc.stored_time BETWEEN '%s' AND '%s' ORDER BY bc.write_time DESC";
                         q = String.format(q, startDateStr, endDateStr);
@@ -838,7 +842,7 @@ public final class WAREHOUSE_FG_UI0002_PALLET_LIST extends javax.swing.JFrame {
                         q += " AND bc.stored_time < '%s' ORDER BY bc.write_time DESC";
                         q = String.format(q, endDateStr);
                     }
-                } else if (UIHelper.listContains(selected, Global.PALLET_SHIPPED)) {
+                } else if (UIHelper.listContains(selected, GlobalVars.PALLET_SHIPPED)) {
                     if (startDatePicker.getDate() != null && endDatePicker.getDate() != null) {
                         q += " AND bc.shipped_time BETWEEN '%s' AND '%s' ORDER BY bc.write_time DESC";
                         q = String.format(q, startDateStr, endDateStr);
@@ -851,9 +855,9 @@ public final class WAREHOUSE_FG_UI0002_PALLET_LIST extends javax.swing.JFrame {
                         q = String.format(q, endDateStr);
                     }
 
-                } else if (UIHelper.listContains(selected, Global.PALLET_QUARANTAINE)) {
+                } else if (UIHelper.listContains(selected, GlobalVars.PALLET_QUARANTAINE)) {
                     if (startDatePicker.getDate() != null && endDatePicker.getDate() != null) {
-                        q += " AND container_state ='" + Global.PALLET_QUARANTAINE + "' AND bc.write_time BETWEEN '%s' AND '%s' ORDER BY bc.write_time DESC";
+                        q += " AND container_state ='" + GlobalVars.PALLET_QUARANTAINE + "' AND bc.write_time BETWEEN '%s' AND '%s' ORDER BY bc.write_time DESC";
                         q = String.format(q, startDateStr, endDateStr);
                     } else if (startDatePicker.getDate() != null && endDatePicker.getDate() == null) {
                         q += " AND bc.write_time > '%s' ORDER BY bc.write_time DESC ";
@@ -892,6 +896,7 @@ public final class WAREHOUSE_FG_UI0002_PALLET_LIST extends javax.swing.JFrame {
                         .addScalar("pack_size", StandardBasicTypes.STRING)
                         .addScalar("qty_read", StandardBasicTypes.STRING)
                         .addScalar("std_time", StandardBasicTypes.DOUBLE)
+                        .addScalar("total_std_time", StandardBasicTypes.DOUBLE)
                         .addScalar("index", StandardBasicTypes.STRING)
                         .addScalar("user", StandardBasicTypes.STRING)
                         .addScalar("state", StandardBasicTypes.STRING)
@@ -966,10 +971,11 @@ public final class WAREHOUSE_FG_UI0002_PALLET_LIST extends javax.swing.JFrame {
         row.createCell(8).setCellValue("PACK SIZE");
         row.createCell(9).setCellValue("QTY READ");
         row.createCell(10).setCellValue("STD TIME");
-        row.createCell(11).setCellValue("INDEX");
-        row.createCell(12).setCellValue("USER");
-        row.createCell(13).setCellValue("STATE");
-        row.createCell(14).setCellValue("STATE CODE");
+        row.createCell(11).setCellValue("TOTAL STD TIME");
+        row.createCell(12).setCellValue("INDEX");
+        row.createCell(13).setCellValue("USER");
+        row.createCell(14).setCellValue("STATE");
+        row.createCell(15).setCellValue("STATE CODE");
 
         short sheetPointer = 1;
 
@@ -977,19 +983,20 @@ public final class WAREHOUSE_FG_UI0002_PALLET_LIST extends javax.swing.JFrame {
             row = sheet.createRow(sheetPointer);
             row.createCell(0).setCellValue(String.valueOf(obj[0])); //SEGMENT
             row.createCell(1).setCellValue(String.valueOf(obj[1])); //WORKPLACE
-            row.createCell(2).setCellValue(String.valueOf(obj[2])); //PAL NUM
+            row.createCell(2).setCellValue(Integer.valueOf(obj[2].toString())); //PAL NUM
             row.createCell(3).setCellValue(String.valueOf(obj[3]));//PART NUMBER
             row.createCell(4).setCellValue(String.valueOf(obj[4]));//CREATE TIME
             row.createCell(5).setCellValue(String.valueOf(obj[5]));//UPDATE TIME
             row.createCell(6).setCellValue(String.valueOf(obj[6]));//LEONI PART NUM
             row.createCell(7).setCellValue(String.valueOf(obj[7]));//PACK TYPE
-            row.createCell(8).setCellValue(String.valueOf(obj[8]));//PACK SIZE
+            row.createCell(8).setCellValue(Integer.valueOf(obj[8].toString()));//PACK SIZE
             row.createCell(9).setCellValue(Integer.valueOf(obj[9].toString()));//QTY READ
             row.createCell(10).setCellValue(Double.valueOf(obj[10].toString()));//STD TIME
-            row.createCell(11).setCellValue(String.valueOf(obj[11].toString()));//INDEX
-            row.createCell(12).setCellValue(String.valueOf(obj[12]));//USER
-            row.createCell(13).setCellValue(String.valueOf(obj[13]));//STATE
-            row.createCell(14).setCellValue(String.valueOf(obj[14]));//STATE            
+            row.createCell(11).setCellValue(Double.valueOf(obj[11].toString()));//TOTAL STD TIME
+            row.createCell(12).setCellValue(String.valueOf(obj[12].toString()));//INDEX
+            row.createCell(14).setCellValue(String.valueOf(obj[13]));//USER
+            row.createCell(15).setCellValue(String.valueOf(obj[14]));//STATE
+            row.createCell(16).setCellValue(Integer.valueOf(obj[15].toString()));//STATE CODE           
 
             total_produced = total_produced + Integer.valueOf(String.valueOf(obj[9]));
 
@@ -1047,7 +1054,7 @@ public final class WAREHOUSE_FG_UI0002_PALLET_LIST extends javax.swing.JFrame {
                         + " bc.supplier_part_number AS supplier_part_number, "
                         + " SUM(bc.qty_expected) AS qty_expected "
                         + " FROM base_container bc "
-                        + " WHERE bc.container_state = '" + Global.PALLET_STORED + "' ";
+                        + " WHERE bc.container_state = '" + GlobalVars.PALLET_STORED + "' ";
 
                 //Add harness part filter                
                 if (!harness_part_txt.getText().isEmpty()) {
@@ -1104,9 +1111,9 @@ public final class WAREHOUSE_FG_UI0002_PALLET_LIST extends javax.swing.JFrame {
 
                 for (Object[] obj : lafmResult) {
                     row = sheet.createRow(sheetPointer);
-                    row.createCell(0).setCellValue(Global.HARN_PART_PREFIX + String.valueOf(obj[0])); //LPN
-                    row.createCell(1).setCellValue(Global.QUANTITY_PREFIX + String.valueOf(obj[1].toString()));//PACK SIZE
-                    row.createCell(2).setCellValue(String.valueOf("LO" + Global.APP_PROP.getProperty("WH_FINISH_GOODS")));//WAREHOUSE
+                    row.createCell(0).setCellValue(GlobalVars.HARN_PART_PREFIX + String.valueOf(obj[0])); //LPN
+                    row.createCell(1).setCellValue(GlobalVars.QUANTITY_PREFIX + String.valueOf(obj[1].toString()));//PACK SIZE
+                    row.createCell(2).setCellValue(String.valueOf("LO" + GlobalVars.APP_PROP.getProperty("WH_FINISH_GOODS")));//WAREHOUSE
                     sheetPointer++;
                 }
 

@@ -1,7 +1,9 @@
 package entity;
 // Generated 6 f�vr. 2016 21:43:55 by Hibernate Tools 3.6.0
 
-import __run__.Global;
+import __main__.GlobalMethods;
+import __main__.GlobalVars;
+import gui.packaging.PackagingVars;
 import helper.Helper;
 import java.util.List;
 import javax.swing.JOptionPane;
@@ -109,18 +111,18 @@ public class DropBaseHarness extends DAO implements java.io.Serializable {
          Set default values of this object 
          from the global mode2_context values
          */
-        this.createTime = this.dropTime = this.writeTime = Helper.getTimeStamp(null);
-        this.createId = this.writeId = Helper.context.getUser().getId();
-        this.user = Helper.context.getUser().getLogin();
-        this.createUser = Helper.context.getUser().getFirstName() + " " + Helper.context.getUser().getLastName();
+        this.createTime = this.dropTime = this.writeTime = GlobalMethods.getTimeStamp(null);
+        this.createId = this.writeId = PackagingVars.context.getUser().getId();
+        this.user = PackagingVars.context.getUser().getLogin();
+        this.createUser = PackagingVars.context.getUser().getFirstName() + " " + PackagingVars.context.getUser().getLastName();
         return this;
     }
 
     public DropBaseHarness(String harnessPart, String counter, int containerId, DropBaseContainer container, String palletNumber, String harnessType, String dropFeedback, double stdTime) {
-        this.createTime = this.dropTime = this.writeTime = Helper.getTimeStamp(null);
-        this.createId = this.writeId = Helper.context.getUser().getId();
-        this.createUser = Helper.context.getUser().getFirstName() + " " + Helper.context.getUser().getLastName();
-        this.user = Helper.context.getUser().getLogin();
+        this.createTime = this.dropTime = this.writeTime = GlobalMethods.getTimeStamp(null);
+        this.createId = this.writeId = PackagingVars.context.getUser().getId();
+        this.createUser = PackagingVars.context.getUser().getFirstName() + " " + PackagingVars.context.getUser().getLastName();
+        this.user = PackagingVars.context.getUser().getLogin();
         this.harnessPart = harnessPart;
         this.counter = counter;
         this.containerId = containerId;
@@ -314,7 +316,7 @@ public class DropBaseHarness extends DAO implements java.io.Serializable {
         System.out.println("checkCounterFormat");
         //Tester le format du compteur Fx      
         boolean flag = false;        
-        for (String pattern : Global.DATAMATRIX_PATTERN_LIST) {
+        for (String pattern : GlobalVars.DATAMATRIX_PATTERN_LIST) {
             if (counter.matches(pattern.trim())) {
                 flag = true;
                 break;
@@ -333,7 +335,7 @@ public class DropBaseHarness extends DAO implements java.io.Serializable {
 
     public static Boolean checkHarnessPartFormat(String hp) {
         //Tester le format du harness part        
-        if (!hp.equals("") && hp.startsWith(Global.HARN_PART_PREFIX) && (hp.length() == Global.HARN_PART_LEN)) {
+        if (!hp.equals("") && hp.startsWith(GlobalVars.HARN_PART_PREFIX) && (hp.length() == GlobalVars.HARN_PART_LEN)) {
             return true;
         } else {
             //JOptionPane.showMessageDialog(null, String.format(Helper.ERR0003_HP_FORMAT), "Error", JOptionPane.ERROR_MESSAGE);
@@ -374,11 +376,10 @@ public class DropBaseHarness extends DAO implements java.io.Serializable {
     public static Boolean isHarnessPartExist(String hp) {
         //Tester si le harness part exist dans la base UCS        
 
-        String[] part = hp.split(Global.HARN_PART_PREFIX);
+        String[] part = hp.split(GlobalVars.HARN_PART_PREFIX);
         Helper.log.info("Searching Harness part [" + part[1] + "] in ConfigUCS: " + part[1]);
         List resultList = new ConfigUcs().select(part[1]);
         if (!resultList.isEmpty()) {
-            Helper.log.info(String.format(Helper.INFO0003_HP_FOUND, part[1]));
             return true;
         } else {
             JOptionPane.showMessageDialog(null, String.format(Helper.ERR0004_HP_NOT_FOUND, part[1]), "Error", JOptionPane.ERROR_MESSAGE);

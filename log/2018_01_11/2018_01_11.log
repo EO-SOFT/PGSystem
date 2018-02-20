@@ -1,0 +1,10 @@
+janv. 11, 2018 8:44:40 PM ui.UILog log
+INFOS: File 2018_01_11.log is created!
+
+janv. 11, 2018 8:44:40 PM ui.UILog log
+INFOS: Print directory [.\print\2018_01_11] already exist!
+Print sub directory [.\print\2018_01_11.\open_sheet] already exist!
+Print sub directory [.\print\2018_01_11.\closing_sheet] already exist!
+Print sub directory [.\print\2018_01_11.\picking_label] already exist!
+Print sub directory [.\print\2018_01_11.\dispatch_label] already exist!
+

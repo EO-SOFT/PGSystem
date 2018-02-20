@@ -5,7 +5,8 @@
  */
 package gui.packaging.reports;
 
-import __run__.Global;
+import __main__.GlobalVars;
+import com.itextpdf.text.DocumentException;
 import helper.Helper;
 import helper.HQLHelper;
 import entity.BaseContainer;
@@ -13,6 +14,7 @@ import entity.BaseHarness;
 import entity.HisPalletPrint;
 import entity.LoadPlan;
 import entity.LoadPlanLine;
+import gui.packaging.PackagingVars;
 import gui.packaging.mode1.state.Mode1_S050_ClosingPallet;
 import gui.warehouse_fg_reception.WAREHOUSE_FG_UI0002_PALLET_LIST;
 import helper.PrinterHelper;
@@ -26,7 +28,9 @@ import java.util.Vector;
 import javax.swing.table.DefaultTableModel;
 import org.hibernate.Query;
 import gui.packaging.mode2.state.Mode2_S040_ClosingPallet;
+import java.io.IOException;
 import javax.swing.JFrame;
+import ui.UILog;
 
 /**
  *
@@ -126,14 +130,14 @@ public final class PACKAGING_UI0010_PalletDetails extends javax.swing.JFrame {
 
         System.out.println("state_txtbox.getText() " + state_txtbox.getText());
         //Avtiver/Desactiver le bouton "Continuer fermeture..."
-        if (state_txtbox.getText().equals(Global.PALLET_WAITING) && Helper.context.getUser() != null) {
+        if (state_txtbox.getText().equals(GlobalVars.PALLET_WAITING) && PackagingVars.context.getUser() != null) {
             continue_btn.setEnabled(true);
         } else {
             continue_btn.setEnabled(false);
         }
 
         //Activer ou désactiver le bouton print closing palette si Open
-        if (state_txtbox.getText().equals(Global.PALLET_OPEN) && Helper.context.getUser() != null) {
+        if (state_txtbox.getText().equals(GlobalVars.PALLET_OPEN) && PackagingVars.context.getUser() != null) {
             printCloseSheetButton.setEnabled(false);
         } else {
             printCloseSheetButton.setEnabled(true);
@@ -257,6 +261,7 @@ public final class PACKAGING_UI0010_PalletDetails extends javax.swing.JFrame {
         login_lbl3 = new javax.swing.JLabel();
         jLabel29 = new javax.swing.JLabel();
         special_order_txtbox = new javax.swing.JTextField();
+        filler1 = new javax.swing.Box.Filler(new java.awt.Dimension(0, 10), new java.awt.Dimension(0, 10), new java.awt.Dimension(32767, 10));
         jPanel3 = new javax.swing.JPanel();
         loadPlanId_txtbox = new javax.swing.JTextField();
         jLabel18 = new javax.swing.JLabel();
@@ -279,6 +284,10 @@ public final class PACKAGING_UI0010_PalletDetails extends javax.swing.JFrame {
         position_txtbox = new javax.swing.JTextField();
         jLabel28 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
+        jLabel30 = new javax.swing.JLabel();
+        stdTime_txtbox = new javax.swing.JTextField();
+        total_stdTime_txtbox = new javax.swing.JTextField();
+        jLabel31 = new javax.swing.JLabel();
         jToolBar1 = new javax.swing.JToolBar();
         pack_list_btn = new javax.swing.JButton();
         jSeparator5 = new javax.swing.JToolBar.Separator();
@@ -644,11 +653,12 @@ public final class PACKAGING_UI0010_PalletDetails extends javax.swing.JFrame {
                             .addComponent(jLabel14)
                             .addComponent(state_txtbox, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(559, 559, 559))
+            .addComponent(filler1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(23, 23, 23)
+                .addContainerGap(23, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addComponent(jLabel14)
@@ -682,10 +692,7 @@ public final class PACKAGING_UI0010_PalletDetails extends javax.swing.JFrame {
                                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
                                     .addComponent(qtyRead_txtbox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(qtyExptected_txtbox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                                .addComponent(jLabel29)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(special_order_txtbox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(special_order_txtbox, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel2Layout.createSequentialGroup()
                                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -721,10 +728,13 @@ public final class PACKAGING_UI0010_PalletDetails extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(jLabel11)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel11)
+                            .addComponent(jLabel29))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(packType_txtbox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(56, 56, 56))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(filler1, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         jTabbedPane1.addTab("Détails palette", jPanel2);
@@ -934,6 +944,28 @@ public final class PACKAGING_UI0010_PalletDetails extends javax.swing.JFrame {
         jLabel17.setForeground(new java.awt.Color(255, 255, 255));
         jLabel17.setText("Liste des faisceaux");
 
+        jLabel30.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel30.setText("Standard Time");
+
+        stdTime_txtbox.setEditable(false);
+        stdTime_txtbox.setBackground(new java.awt.Color(255, 255, 255));
+        stdTime_txtbox.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                stdTime_txtboxActionPerformed(evt);
+            }
+        });
+
+        total_stdTime_txtbox.setEditable(false);
+        total_stdTime_txtbox.setBackground(new java.awt.Color(255, 255, 255));
+        total_stdTime_txtbox.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                total_stdTime_txtboxActionPerformed(evt);
+            }
+        });
+
+        jLabel31.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel31.setText("Total Standard Time");
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -947,7 +979,16 @@ public final class PACKAGING_UI0010_PalletDetails extends javax.swing.JFrame {
                     .addComponent(msg_lbl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel17)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(jLabel17)
+                                .addGap(18, 18, 18)
+                                .addComponent(jLabel30)
+                                .addGap(18, 18, 18)
+                                .addComponent(stdTime_txtbox, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(jLabel31)
+                                .addGap(18, 18, 18)
+                                .addComponent(total_stdTime_txtbox, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(jLabel15)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -994,7 +1035,14 @@ public final class PACKAGING_UI0010_PalletDetails extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jSeparator4, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel17)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel31)
+                        .addComponent(total_stdTime_txtbox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel17)
+                        .addComponent(jLabel30)
+                        .addComponent(stdTime_txtbox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(18, 18, 18)
                 .addComponent(table_scroll, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(22, Short.MAX_VALUE))
@@ -1197,7 +1245,7 @@ public final class PACKAGING_UI0010_PalletDetails extends javax.swing.JFrame {
         this.clearContainerFieldsValues();
         this.reset_container_table_content();
         if (!palletNumber.trim().equals("")) {
-            if (palletNumber.startsWith(Global.CLOSING_PALLET_PREFIX)) {
+            if (palletNumber.startsWith(GlobalVars.CLOSING_PALLET_PREFIX)) {
                 palletNumber = palletNumber.substring(2);
             }
             System.out.println("palletNumber" + palletNumber);
@@ -1258,6 +1306,8 @@ public final class PACKAGING_UI0010_PalletDetails extends javax.swing.JFrame {
         qtyExptected_txtbox.setText(String.valueOf(bc.getQtyExpected()));
         qtyRead_txtbox.setText(String.valueOf(bc.getQtyRead()));
         packType_txtbox.setText(bc.getPackType());
+        stdTime_txtbox.setText(bc.getStdTime()+"");
+        total_stdTime_txtbox.setText(""+(bc.getStdTime()*bc.getQtyRead()));
         if (bc.getSpecial_order() != null && bc.getSpecial_order() == 1) {
             special_order_txtbox.setText("SPECIAL");
         } else {
@@ -1288,6 +1338,8 @@ public final class PACKAGING_UI0010_PalletDetails extends javax.swing.JFrame {
         startTime_txtbox.setText("");
         completeTime_txtbox.setText("");
         workingTime_txtbox.setText("");
+        stdTime_txtbox.setText("");
+        total_stdTime_txtbox.setText("");
     }
 
     public void setOkText(String newTxt) {
@@ -1306,7 +1358,7 @@ public final class PACKAGING_UI0010_PalletDetails extends javax.swing.JFrame {
 
     private void dropButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dropButtonActionPerformed
         if (!palletId_txtbox.getText().equals("")) {
-            PACKAGING_UI9001_DropContainerConfirmation dropConfirm = new PACKAGING_UI9001_DropContainerConfirmation(this, rootPaneCheckingEnabled, this.bc);
+            PACKAGING_UI9001_DropContainerConfirmation dropConfirm = new PACKAGING_UI9001_DropContainerConfirmation(this, rootPaneCheckingEnabled, this.bc, Integer.valueOf(GlobalVars.APP_PROP.getProperty("PACKAGING_SCAN_MODE")));
             dropConfirm.setVisible(true);
         } else {
             msg_lbl.setText("Please specify existing pallet number !");
@@ -1324,7 +1376,7 @@ public final class PACKAGING_UI0010_PalletDetails extends javax.swing.JFrame {
             if (result.size() > 0) {
                 HisPalletPrint pallet = (HisPalletPrint) result.get(0);
                 pallet.setWriteTime(new Date());
-                pallet.setWriteId(Helper.context.getUser().getId());
+                pallet.setWriteId(PackagingVars.context.getUser().getId());
 
                 PrinterHelper.saveAndReprintOpenSheet(pallet);
             } else {
@@ -1346,8 +1398,14 @@ public final class PACKAGING_UI0010_PalletDetails extends javax.swing.JFrame {
             if (result.size() > 0) {
                 BaseContainer bc = (BaseContainer) result.get(0);
                 bc.setFifoTime(new Date());
-                bc.setWriteId(Helper.context.getUser().getId());
-                PrinterHelper.saveAndPrintClosingSheet(bc, true);
+                bc.setWriteId(PackagingVars.context.getUser().getId());
+                try {
+                    PrinterHelper.saveAndPrintClosingSheet(PackagingVars.mode2_context, bc, true);
+                } catch (IOException ex) {
+                    UILog.severe(ex.toString());
+                } catch (DocumentException ex) {
+                    UILog.severe(ex.toString());
+                }
             } else {
                 msg_lbl.setText("Num. Palette introuvable dans les palettes fermées !");
             }
@@ -1460,19 +1518,19 @@ public final class PACKAGING_UI0010_PalletDetails extends javax.swing.JFrame {
     private void continue_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_continue_btnActionPerformed
         BaseContainer bc = new BaseContainer().getBaseContainer(palletNumber_txtbox.getText());
 
-        if (Global.APP_PROP.getProperty("PACKAGING_SCAN_MODE").equals("1")) {
-            Helper.mode1_context.getBaseContainerTmp().setPalletNumber(bc.getPalletNumber());
+        if (GlobalVars.APP_PROP.getProperty("PACKAGING_SCAN_MODE").equals("1")) {
+            PackagingVars.mode2_context.getBaseContainerTmp().setPalletNumber(bc.getPalletNumber());
             //Set requested closing pallet number in the main gui
-            Helper.Packaging_Gui_Mode1.setAssistanceTextarea("N° " + Global.CLOSING_PALLET_PREFIX + bc.getPalletNumber());
+            PackagingVars.Packaging_Gui_Mode1.setFeedbackTextarea("N° " + GlobalVars.CLOSING_PALLET_PREFIX + bc.getPalletNumber());
             //############# PASSE TO S050 STATE ###############
-            Helper.Packaging_Gui_Mode1.state = new Mode1_S050_ClosingPallet();
+            PackagingVars.Packaging_Gui_Mode1.state = new Mode1_S050_ClosingPallet();
             this.dispose();
-        } else if (Global.APP_PROP.getProperty("PACKAGING_SCAN_MODE").equals("2")) {
-            Helper.mode2_context.getBaseContainerTmp().setPalletNumber(bc.getPalletNumber());
+        } else if (GlobalVars.APP_PROP.getProperty("PACKAGING_SCAN_MODE").equals("2")) {
+            PackagingVars.mode2_context.getBaseContainerTmp().setPalletNumber(bc.getPalletNumber());
             //Set requested closing pallet number in the main gui
-            Helper.Packaging_Gui_Mode2.setAssistanceTextarea("N° " + Global.CLOSING_PALLET_PREFIX + bc.getPalletNumber());
+            PackagingVars.Packaging_Gui_Mode2.setFeedbackTextarea("N° " + GlobalVars.CLOSING_PALLET_PREFIX + bc.getPalletNumber());
             //############# PASSE TO S050 STATE ###############
-            Helper.Packaging_Gui_Mode2.state = new Mode2_S040_ClosingPallet();
+            PackagingVars.Packaging_Gui_Mode2.state = new Mode2_S040_ClosingPallet();
             this.dispose();
         }
 
@@ -1517,8 +1575,8 @@ public final class PACKAGING_UI0010_PalletDetails extends javax.swing.JFrame {
 
     private void search_txtboxKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_search_txtboxKeyPressed
         if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
-            if (search_txtbox.getText().startsWith(Global.CLOSING_PALLET_PREFIX)) {
-                this.searchForPallet(search_txtbox.getText().substring(Global.CLOSING_PALLET_PREFIX.length()));
+            if (search_txtbox.getText().startsWith(GlobalVars.CLOSING_PALLET_PREFIX)) {
+                this.searchForPallet(search_txtbox.getText().substring(GlobalVars.CLOSING_PALLET_PREFIX.length()));
             } else {
                 this.searchForPallet(search_txtbox.getText());
             }
@@ -1551,6 +1609,14 @@ public final class PACKAGING_UI0010_PalletDetails extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_special_order_txtboxActionPerformed
 
+    private void stdTime_txtboxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_stdTime_txtboxActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_stdTime_txtboxActionPerformed
+
+    private void total_stdTime_txtboxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_total_stdTime_txtboxActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_total_stdTime_txtboxActionPerformed
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton clear_btn;
     private javax.swing.JTextArea comment_txt;
@@ -1558,6 +1624,7 @@ public final class PACKAGING_UI0010_PalletDetails extends javax.swing.JFrame {
     private javax.swing.JButton continue_btn;
     private javax.swing.JTextField create_user_txtbox;
     private javax.swing.JButton dropButton;
+    private javax.swing.Box.Filler filler1;
     private javax.swing.JTextField harnessPart_txtbox;
     private javax.swing.JButton history_btn;
     private javax.swing.JTextField index_txtbox;
@@ -1584,6 +1651,8 @@ public final class PACKAGING_UI0010_PalletDetails extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel31;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
@@ -1626,8 +1695,10 @@ public final class PACKAGING_UI0010_PalletDetails extends javax.swing.JFrame {
     private javax.swing.JTextField special_order_txtbox;
     private javax.swing.JTextField startTime_txtbox;
     private javax.swing.JTextField state_txtbox;
+    private javax.swing.JTextField stdTime_txtbox;
     private javax.swing.JTextField supplierPartNumber_txtbox;
     private javax.swing.JScrollPane table_scroll;
+    private javax.swing.JTextField total_stdTime_txtbox;
     private javax.swing.JTextField user_txtbox;
     private javax.swing.JTextField workingTime_txtbox;
     private javax.swing.JTextField workstation_txtbox;

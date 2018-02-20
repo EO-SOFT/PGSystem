@@ -71,7 +71,7 @@ public class ConfigProject extends DAO implements Serializable{
     public List select() {
         Helper.startSession();
         Query query = Helper.sess.createQuery(HQLHelper.GET_ALL_PROJECT);
-        Helper.log.info(query.getQueryString());
+        //Helper.log.info(query.getQueryString());
         Helper.sess.getTransaction().commit();
         return query.list();
     }

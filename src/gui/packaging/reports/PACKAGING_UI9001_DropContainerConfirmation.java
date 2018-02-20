@@ -5,19 +5,20 @@
  */
 package gui.packaging.reports;
 
-import __run__.Global;
+import __main__.GlobalVars;
 import entity.BaseContainer;
 import entity.BaseHarness;
 import entity.DropBaseContainer;
 import entity.DropBaseHarness;
 import entity.PackagingStockMovement;
+import gui.packaging.PackagingVars;
 import helper.HQLHelper;
 import helper.Helper;
 import java.util.Date;
 import java.util.Set;
-import java.util.logging.Level;
 import javax.swing.JOptionPane;
 import org.hibernate.Query;
+import ui.UILog;
 
 /**
  *
@@ -26,6 +27,7 @@ import org.hibernate.Query;
 public final class PACKAGING_UI9001_DropContainerConfirmation extends javax.swing.JDialog {
 
     private BaseContainer bc;
+    private int scanMode;    
     private final String MSG_DROP_SUCCESS = "Pallet [%s] successfully dropped !";
     private PACKAGING_UI0010_PalletDetails parent;
 
@@ -35,13 +37,16 @@ public final class PACKAGING_UI9001_DropContainerConfirmation extends javax.swin
      * @param parent
      * @param modal
      * @param bc
+     * @param scanMode
+     * 
      */
-    public PACKAGING_UI9001_DropContainerConfirmation(javax.swing.JFrame parent, boolean modal, BaseContainer bc) {
+    public PACKAGING_UI9001_DropContainerConfirmation(javax.swing.JFrame parent, boolean modal, BaseContainer bc, int scanMode ) {
         super(parent, modal);
         initComponents();
         initGui(parent);
         this.setBaseContainer(bc);
         palletNumber_lbl.setText(bc.getPalletNumber());
+        this.scanMode = scanMode;
     }
 
     private void initGui(javax.swing.JFrame parent) {
@@ -165,7 +170,7 @@ public final class PACKAGING_UI9001_DropContainerConfirmation extends javax.swin
                 dp.setClosedTime(this.bc.getClosedTime());
                 dp.setContainerState(this.bc.getContainerState());
                 dp.setContainerStateCode(this.bc.getContainerStateCode());
-                dp.setCreateId(Helper.context.getUser().getId());
+                dp.setCreateId(PackagingVars.context.getUser().getId());
                 dp.setCreateTime(this.bc.getCreateTime());
                 dp.setDropTime(new Date());
                 dp.setDropFeedback(this.dropFeedback_txtbox.getText());
@@ -179,13 +184,13 @@ public final class PACKAGING_UI9001_DropContainerConfirmation extends javax.swin
                 dp.setStartTime(this.bc.getStartTime());
                 dp.setSupplierPartNumber(this.bc.getSupplierPartNumber());
                 dp.setWorkTime(this.bc.getWorkTime());
-                dp.setWriteId(Helper.context.getUser().getId());
+                dp.setWriteId(PackagingVars.context.getUser().getId());
                 dp.setWriteTime(this.bc.getFifoTime());
                 dp.setUser(this.bc.getUser());
 
                 //Copy the container into the DropBaseContainer table
                 dp.create(dp);
-                Helper.log.log(Level.INFO, "Droping harness list...{0}", this.bc.getHarnessList().size());
+                UILog.info("Droping harness list...{0}", this.bc.getHarnessList().size());
                 //Selectionner l
                 Set<BaseHarness> set = this.bc.getHarnessList();
                 for (BaseHarness bh : set) {
@@ -193,15 +198,15 @@ public final class PACKAGING_UI9001_DropContainerConfirmation extends javax.swin
                     DropBaseHarness dh = new DropBaseHarness();
                     dh.setContainer(dp);
                     dh.setCounter(bh.getCounter());
-                    dh.setCreateId(Helper.context.getUser().getId());
+                    dh.setCreateId(PackagingVars.context.getUser().getId());
                     dh.setCreateTime(bh.getCreateTime());
                     dh.setDropTime(new Date());
                     dh.setDropFeedback(dropFeedback_txtbox.getText());
                     dh.setHarnessPart(bh.getHarnessPart());
                     dh.setHarnessType(bh.getHarnessType());
                     dh.setPalletNumber(bh.getPalletNumber());
-                    dh.setUser(Helper.context.getUser().getLogin());
-                    dh.setWriteId(Helper.context.getUser().getId());
+                    dh.setUser(PackagingVars.context.getUser().getLogin());
+                    dh.setWriteId(PackagingVars.context.getUser().getId());
                     dh.setWriteTime(bh.getWriteTime());
                     dh.create(dh);
 
@@ -223,37 +228,27 @@ public final class PACKAGING_UI9001_DropContainerConfirmation extends javax.swin
                     Helper.sess.getTransaction().commit();
                 }
 
-                //Drop his_pallet_print history line
-                Helper.sess.beginTransaction();
-                Query query = Helper.sess.createQuery(HQLHelper.DEL_OPEN_SHEET);
-                query.setInteger("id", Integer.valueOf(this.bc.getPalletNumber()));
-                Helper.sess.getTransaction().commit();
-
-                //Drop his_galia_print history line
-                Helper.sess.beginTransaction();
-                query = Helper.sess.createQuery(HQLHelper.DEL_CLOSING_SHEET);
-                query.setString("closingPallet", Global.CLOSING_PALLET_PREFIX + this.bc.getPalletNumber());
-                Helper.sess.getTransaction().commit();
-
                 //Delete the container from the BaseContainer
-                Helper.sess.beginTransaction();
-                Helper.sess.flush();
-                Helper.sess.delete(this.bc);
-                Helper.sess.getTransaction().commit();
+                
+//                Helper.sess.beginTransaction();
+//                Helper.sess.flush();
+//                Helper.sess.delete(this.bc);
+//                Helper.sess.getTransaction().commit();
 
                 //Book back the packaging items only for stored pallets
-                if (bc.getContainerState().equals(Global.PALLET_STORED)) {
-                    if ("1".equals(Global.APP_PROP.getProperty("BOOK_PACKAGING").toString())) {
+                if (bc.getContainerState().equals(GlobalVars.PALLET_STORED)) {
+                    if ("1".equals(GlobalVars.APP_PROP.getProperty("BOOK_PACKAGING").toString())) {
                         PackagingStockMovement pm = new PackagingStockMovement();
-                        pm.bookMasterPack(
-                                Helper.context.getUser().getFirstName() + " " + Helper.context.getUser().getLastName(),
+                        pm.bookMasterPack(PackagingVars.context.getUser().getFirstName() + " " + PackagingVars.context.getUser().getLastName(),
                                 this.bc.getPackType(), 1, "IN",
-                                Global.APP_PROP.getProperty("WH_FINISH_GOODS"),
-                                Global.APP_PROP.getProperty("WH_PACKAGING").toString(),
+                                GlobalVars.APP_PROP.getProperty("WH_FINISH_GOODS"),
+                                GlobalVars.APP_PROP.getProperty("WH_PACKAGING").toString(),
                                 "Pallet dropped : " + this.dropFeedback_txtbox.getText(),
                                 bc.getPalletNumber());
                     }
                 }
+                
+                bc.delete(this.bc);
 
                 //Clear parent search box
                 this.parent.clearSearchBox();
@@ -270,10 +265,17 @@ public final class PACKAGING_UI9001_DropContainerConfirmation extends javax.swin
                 //Reset the title
                 this.parent.setTitle("Détails palette");
                 
-                Helper.Packaging_Gui_Mode1.setAssistanceTextarea("Scanner une référence pour ouvrir \nune palette\nOu selectionner une palette du tableau çi-dessous");
-                Helper.Packaging_Gui_Mode1.setRequestedPallet_txt("");
-                //Refresh the main table
-                Helper.Packaging_Gui_Mode1.reloadDataTable();
+                if(this.scanMode == 1){                
+                    PackagingVars.Packaging_Gui_Mode1.setFeedbackTextarea("Scanner une référence pour ouvrir \nune palette\nOu selectionner une palette du tableau çi-dessous");
+                    PackagingVars.Packaging_Gui_Mode1.setRequestedPallet_txt("");
+                    //Refresh the main table
+                    PackagingVars.Packaging_Gui_Mode1.reloadDataTable();
+                }else{
+                    PackagingVars.Packaging_Gui_Mode2.setFeedbackTextarea("Scanner le code à barre d'une référence.");
+                    PackagingVars.Packaging_Gui_Mode2.setRequestedPallet_txt("");
+                    //Refresh the main table
+                    PackagingVars.Packaging_Gui_Mode2.reloadDataTable();
+                }
 
                 this.dispose();
 

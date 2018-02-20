@@ -5,8 +5,8 @@
  */
 package gui.warehouse_dispatch;
 
-import __run__.Global;
-import entity.HisLogin;
+import __main__.GlobalMethods;
+import __main__.GlobalVars;
 import entity.ManufactureUsers;
 import gui.warehouse_dispatch.state.S020_PalletNumberScan;
 import gui.warehouse_dispatch.state.State;
@@ -24,6 +24,8 @@ import java.util.logging.Logger;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import org.hibernate.Query;
+import ui.UILog;
+import ui.info.InfoMsg;
 
 /**
  *
@@ -206,35 +208,47 @@ public class WAREHOUSE_DISPATCH_UI0003_PasswordRequest extends javax.swing.JDial
         State state = new S020_PalletNumberScan();
         WarehouseHelper.warehouse_out_context.setState(state);
         try {
-            Global.APP_HOSTNAME = InetAddress.getLocalHost().getHostName();
+            GlobalVars.APP_HOSTNAME = InetAddress.getLocalHost().getHostName();
         } catch (UnknownHostException ex) {
             Logger.getLogger(WAREHOUSE_DISPATCH_UI0003_PasswordRequest.class.getName()).log(Level.SEVERE, null, ex);
         }
-        String str = String.format(Helper.INFO0001_LOGIN_SUCCESS,
+        /**
+         * @deprecated
+         */
+//        String str = String.format(Helper.INFO0001_LOGIN_SUCCESS,
+//                this.user.getFirstName() + " " + this.user.getLastName()
+//                + " / " + this.user.getLogin(), GlobalVars.APP_HOSTNAME,
+//                GlobalMethods.getStrTimeStamp() + " Dispatch interface : ");
+//        Helper.log.log(Level.INFO, str);
+        
+        String str = String.format(InfoMsg.APP_INFO0003[1],
                 this.user.getFirstName() + " " + this.user.getLastName()
-                + " / " + this.user.getLogin(), Global.APP_HOSTNAME,
-                Helper.getStrTimeStamp() + " Dispatch interface : ");
-        Helper.log.log(Level.INFO, str);
-
+                + " / " + this.user.getLogin(), GlobalVars.APP_HOSTNAME,
+                GlobalMethods.getStrTimeStamp() + " Dispatch interface : ");
+        
+        UILog.info(str); 
+        
+        /**
+         *  @deprecated
+         */
         //Save authentication line in HisLogin table
-        HisLogin his_login = new HisLogin(
-                this.user.getId(), this.user.getId(),
-                String.format(Helper.INFO0001_LOGIN_SUCCESS,
-                        this.user.getFirstName() + " " + this.user.getLastName() + " / " + this.user.getLogin(),
-                        Global.APP_HOSTNAME, Helper.getStrTimeStamp()));
-        his_login.setCreateId(this.user.getId());
-        his_login.setWriteId(this.user.getId());
-        his_login.setMessage(str);
-        his_login.create(his_login);
+//        HisLogin his_login = new HisLogin(
+//                this.user.getId(), this.user.getId(),
+//                String.format(Helper.INFO0001_LOGIN_SUCCESS,
+//                        this.user.getFirstName() + " " + this.user.getLastName() + " / " + this.user.getLogin(),
+//                        GlobalVars.APP_HOSTNAME, GlobalMethods.getStrTimeStamp()));
+//        his_login.setCreateId(this.user.getId());
+//        his_login.setWriteId(this.user.getId());
+//        his_login.setMessage(str);
+//        his_login.create(his_login);
 
         //Create and display the dispatch interface
         WarehouseHelper.Dispatch_Gui = new WAREHOUSE_DISPATCH_UI0002_DISPATCH_SCAN(null, this.main_gui);
 
         //Set connected user label text
-        WarehouseHelper.Dispatch_Gui.setUserLabelText(
-                this.user.getFirstName() + " "
+        WarehouseHelper.Dispatch_Gui.setUserLabelText(this.user.getFirstName() + " "
                 + this.user.getLastName() + " Connecté à la machine "
-                + "[" + Global.APP_HOSTNAME + "]"
+                + "[" + GlobalVars.APP_HOSTNAME + "]"
         );
         
         //Auth réussie, Passage à l'état S02 de lecture des fiches Galia               

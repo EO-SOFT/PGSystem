@@ -5,8 +5,9 @@
  */
 package gui.packaging.reports;
 
-import __run__.Global;
+import __main__.GlobalVars;
 import entity.ConfigProject;
+import gui.packaging.PackagingVars;
 import helper.ComboItem;
 import helper.Helper;
 import java.awt.Font;
@@ -79,11 +80,10 @@ public class PACKAGING_UI0018_OpenContainer extends javax.swing.JDialog {
     }
     
     private void initContainerTableDoubleClick() {
-        this.open_result_table.addMouseListener(
-                new MouseAdapter() {
+        this.open_result_table.addMouseListener(new MouseAdapter() {
                     public void mouseClicked(MouseEvent e) {
                         if (e.getClickCount() == 2) {                                                        
-                            if (Helper.context.getUser().getAccessLevel() == Global.PROFIL_ADMIN) {
+                            if (PackagingVars.context.getUser().getAccessLevel() == GlobalVars.PROFIL_ADMIN) {
                                 new PACKAGING_UI0010_PalletDetails(null, rootPaneCheckingEnabled, String.valueOf(open_result_table.getValueAt(open_result_table.getSelectedRow(), PALLET_NUMBER_COLINDEX)), true, true, true).setVisible(true);
                             } else {
                                 new PACKAGING_UI0010_PalletDetails(null, rootPaneCheckingEnabled, String.valueOf(open_result_table.getValueAt(open_result_table.getSelectedRow(), PALLET_NUMBER_COLINDEX)), false, false, false).setVisible(true);
@@ -151,8 +151,8 @@ public class PACKAGING_UI0018_OpenContainer extends javax.swing.JDialog {
             open_result_table_data.add(oneRow);
         }
         open_result_table.setModel(new DefaultTableModel(open_result_table_data, open_result_table_header));
-        open_result_table.setFont(new Font(String.valueOf(Global.APP_PROP.getProperty("JTABLE_FONT")), Font.BOLD, Integer.valueOf(Global.APP_PROP.getProperty("JTABLE_FONTSIZE"))));
-        open_result_table.setRowHeight(Integer.valueOf(Global.APP_PROP.getProperty("JTABLE_ROW_HEIGHT")));        
+        open_result_table.setFont(new Font(String.valueOf(GlobalVars.APP_PROP.getProperty("JTABLE_FONT")), Font.BOLD, Integer.valueOf(GlobalVars.APP_PROP.getProperty("JTABLE_FONTSIZE"))));
+        open_result_table.setRowHeight(Integer.valueOf(GlobalVars.APP_PROP.getProperty("JTABLE_ROW_HEIGHT")));        
     }
 
     
@@ -202,7 +202,7 @@ public class PACKAGING_UI0018_OpenContainer extends javax.swing.JDialog {
                         + " WHERE bc.harness_type IN (:projects) "
                         + " AND bc.container_state = '%s' ORDER BY project ASC, working_days ASC ";
 
-                query_str = String.format(query_str, Global.PALLET_OPEN);
+                query_str = String.format(query_str, GlobalVars.PALLET_OPEN);
                 SQLQuery query = Helper.sess.createSQLQuery(query_str);                
 
                 query.addScalar("project", StandardBasicTypes.STRING)

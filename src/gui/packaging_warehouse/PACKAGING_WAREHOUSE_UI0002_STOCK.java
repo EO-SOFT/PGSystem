@@ -5,7 +5,7 @@
  */
 package gui.packaging_warehouse;
 
-import __run__.Global;
+import __main__.GlobalVars;
 import helper.Helper;
 import helper.JDialogExcelFileChooser;
 import java.awt.Font;
@@ -99,8 +99,8 @@ public class PACKAGING_WAREHOUSE_UI0002_STOCK extends javax.swing.JDialog {
             packaging_stock_result_table_data.add(oneRow);
         }
         packaging_stock_table.setModel(new DefaultTableModel(packaging_stock_result_table_data, packaging_stock_result_table_header));
-        packaging_stock_table.setFont(new Font(String.valueOf(Global.APP_PROP.getProperty("JTABLE_FONT")), Font.BOLD, Integer.valueOf(Global.APP_PROP.getProperty("JTABLE_FONTSIZE"))));
-        packaging_stock_table.setRowHeight(Integer.valueOf(Global.APP_PROP.getProperty("JTABLE_ROW_HEIGHT")));
+        packaging_stock_table.setFont(new Font(String.valueOf(GlobalVars.APP_PROP.getProperty("JTABLE_FONT")), Font.BOLD, Integer.valueOf(GlobalVars.APP_PROP.getProperty("JTABLE_FONTSIZE"))));
+        packaging_stock_table.setRowHeight(Integer.valueOf(GlobalVars.APP_PROP.getProperty("JTABLE_ROW_HEIGHT")));
     }
 
     public void refresh() {
@@ -120,7 +120,7 @@ public class PACKAGING_WAREHOUSE_UI0002_STOCK extends javax.swing.JDialog {
                     + "packaging_stock_movement p, "
                     + "packaging_items i "
                     + "WHERE p.pack_item = i.pack_item "
-                    + "AND p.warehouse = '"+Global.APP_PROP.getProperty("WH_PACKAGING")+"' "
+                    + "AND p.warehouse = '"+GlobalVars.APP_PROP.getProperty("WH_PACKAGING")+"' "
                     + "GROUP BY p.pack_item, i.alert_qty "
                     + "ORDER BY pack_item ASC;";
 

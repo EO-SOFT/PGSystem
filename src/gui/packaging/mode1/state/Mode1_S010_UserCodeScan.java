@@ -5,11 +5,12 @@
  */
 package gui.packaging.mode1.state;
 
-import __run__.Global;
+import __main__.GlobalVars;
 import gui.packaging.Mode1_Context;
 import helper.Helper;
 import helper.HQLHelper;
 import entity.ManufactureUsers;
+import gui.packaging.PackagingVars;
 import gui.packaging.mode1.gui.PACKAGING_UI0002_PasswordRequest_Mode1;
 import java.util.List;
 import java.util.logging.Level;
@@ -24,7 +25,7 @@ import org.hibernate.Query;
  */
 public class Mode1_S010_UserCodeScan implements Mode1_State {
 
-    private final ImageIcon imgIcon = new ImageIcon(Global.APP_PROP.getProperty("IMG_PATH") + "S01_UserCodeScan.jpg");
+    private final ImageIcon imgIcon = new ImageIcon(GlobalVars.APP_PROP.getProperty("IMG_PATH") + "S01_UserCodeScan.jpg");
 
     public Mode1_S010_UserCodeScan() {
 
@@ -43,8 +44,8 @@ public class Mode1_S010_UserCodeScan implements Mode1_State {
     @Override
     public void doAction(Mode1_Context context) {
 
-        JTextField scan_txtbox = Helper.Packaging_Gui_Mode1.getScanTxt();
-        //String harnessType = String.valueOf(Helper.Packaging_Gui_Mode1.getHarnessTypeBox().getSelectedItem());        
+        JTextField scan_txtbox = PackagingVars.Packaging_Gui_Mode1.getScanTxt();
+        //String harnessType = String.valueOf(PackagingVars.Packaging_Gui_Mode1.getHarnessTypeBox().getSelectedItem());        
 
         if (!scan_txtbox.getText().trim().equals("")) {
             //Start transaction
@@ -64,7 +65,7 @@ public class Mode1_S010_UserCodeScan implements Mode1_State {
                     Helper.log.log(Level.INFO, Helper.ERR0001_LOGIN_FAILED);
                     context.setState(this);
                     clearScanBox(scan_txtbox);
-                    Helper.Packaging_Gui_Mode1.HarnessTypeBoxSelectIndex(0);
+                    PackagingVars.Packaging_Gui_Mode1.HarnessTypeBoxSelectIndex(0);
                     break;
                 case 1:
                     new PACKAGING_UI0002_PasswordRequest_Mode1(null, true, (ManufactureUsers) result.get(0)).setVisible(true);
@@ -73,7 +74,7 @@ public class Mode1_S010_UserCodeScan implements Mode1_State {
                     clearScanBox(scan_txtbox);
 
                     //Disable Project Box
-                    Helper.Packaging_Gui_Mode1.setHarnessTypeBoxState(false);
+                    PackagingVars.Packaging_Gui_Mode1.setHarnessTypeBoxState(false);
                     break;
 
                 default:
@@ -92,7 +93,7 @@ public class Mode1_S010_UserCodeScan implements Mode1_State {
         //Vider le champs de text scan
         scan_txtbox.setText("");
         scan_txtbox.requestFocusInWindow();
-        Helper.Packaging_Gui_Mode1.setScanTxt(scan_txtbox);
+        PackagingVars.Packaging_Gui_Mode1.setScanTxt(scan_txtbox);
     }
 
     public void clearContextSessionVals() {

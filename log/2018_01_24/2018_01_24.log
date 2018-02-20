@@ -1,0 +1,26 @@
+janv. 24, 2018 7:13:40 PM ui.UILog log
+INFOS: File 2018_01_24.log is created!
+
+janv. 24, 2018 7:13:41 PM ui.UILog log
+INFOS: Print directory [.\print\2018_01_24] created !
+Print sub directory [.\print\2018_01_24.\open_sheet] created !
+Print sub directory [.\print\2018_01_24.\closing_sheet] created !
+Print sub directory [.\print\2018_01_24.\picking_label] created !
+Print sub directory [.\print\2018_01_24.\dispatch_label] created !
+
+janv. 24, 2018 9:29:28 PM ui.UILog log
+INFOS: File 2018_01_24.log already exists.
+
+janv. 24, 2018 9:29:28 PM ui.UILog log
+INFOS: Print directory [.\print\2018_01_24] already exist!
+Print sub directory [.\print\2018_01_24.\open_sheet] already exist!
+Print sub directory [.\print\2018_01_24.\closing_sheet] already exist!
+Print sub directory [.\print\2018_01_24.\picking_label] already exist!
+Print sub directory [.\print\2018_01_24.\dispatch_label] already exist!
+
+janv. 24, 2018 9:29:40 PM ui.UILog log
+INFOS: APP_INFO0003 : User EZZIOURI OUSSAMA / * connected to host Oussama-PC at 2018-01-24 21:29:40 Dispatch interface : .
+janv. 24, 2018 9:29:45 PM ui.UILog log
+GRAVE: APP_ERR0027 DISPATCH : Aucune date de livraison n'est selectionée.
+janv. 24, 2018 9:29:52 PM ui.UILog log
+GRAVE: APP_ERR0026 DISPATCH : Aucune destination finale n'est selectionée.

@@ -1,0 +1,419 @@
+janv. 23, 2018 7:08:04 PM ui.UILog log
+INFOS: File 2018_01_23.log is created!
+
+janv. 23, 2018 7:08:04 PM ui.UILog log
+INFOS: Print directory [.\print\2018_01_23] created !
+Print sub directory [.\print\2018_01_23.\open_sheet] created !
+Print sub directory [.\print\2018_01_23.\closing_sheet] created !
+Print sub directory [.\print\2018_01_23.\picking_label] created !
+Print sub directory [.\print\2018_01_23.\dispatch_label] created !
+
+janv. 23, 2018 7:08:08 PM ui.UILog log
+INFOS: APP_INFO0003 : User EZZIOURI OUSSAMA / * connected to host Oussama-PC at 2018-01-23 19:08:08 Project : DUCATI.
+janv. 23, 2018 7:08:08 PM ui.UILog log
+INFOS: APP_CONFIG0002   :   Chargement de la liste des formats QR dans la variable DATAMATRIX_PATTERN_LIST ...
+janv. 23, 2018 7:08:08 PM ui.UILog log
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord AND cb.harness_type = :harnessType ORDER BY id ASC
+janv. 23, 2018 7:08:08 PM ui.UILog log
+INFOS: ^[P]{1}\w{9}[;]{1}\d{2}[.]{1}\d{2}[.]{1}\d{4}[;]{1}\d{2}[:]{1}\d{2}[:]{1}\d{2}
+^\w{9}[;]{1}\d{2}[.]{1}\d{2}[.]{1}\d{4}[;]{1}\d{2}[:]{1}\d{2}[:]{1}\d{2}
+^\b{9}[;]{1}\d{2}[.]{1}\d{2}[.]{1}\d{4}[;]{1}\d{2}[:]{1}\d{2}[:]{1}\d{2}
+^\w{27}
+
+janv. 23, 2018 7:08:08 PM ui.UILog log
+INFOS: APP_CONFIG0003   :   4 formats possible du QR pour le projet DUCATI ont été chargés avec succès !
+janv. 23, 2018 7:08:08 PM ui.UILog log
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord AND cb.harness_type = :harnessType ORDER BY id ASC
+janv. 23, 2018 7:08:08 PM ui.UILog log
+INFOS: ^[P]\w{9}
+^\w{9}
+^\b{9}
+
+janv. 23, 2018 7:08:08 PM ui.UILog log
+INFOS: APP_CONFIG0004   :   3 formats de référence possibles pour le projet DUCATI ont été chargés avec succès.
+janv. 23, 2018 7:08:12 PM ui.UILog log
+INFOS: Searching Harness part [5101C861D] in ConfigUCS: [DUCATI]
+janv. 23, 2018 7:08:13 PM ui.UILog log
+INFOS: APP_INFO0004 : Référence produit 5101C861D trouvée pour le projet [DUCATI].
+janv. 23, 2018 7:08:13 PM ui.UILog log
+INFOS: APP_INFO0005 : Référence produit correcte 5101C861D 
+janv. 23, 2018 7:08:16 PM ui.UILog log
+INFOS: Searching Harness counter [5101C861D201712210000000100] in BaseHarness.
+janv. 23, 2018 7:08:16 PM ui.UILog log
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+janv. 23, 2018 7:08:18 PM ui.UILog log
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+janv. 23, 2018 7:08:18 PM ui.UILog log
+GRAVE: APP_ERR0010 : Ce code QR [5101C861D201712210000000100] est déjà scanné dans la palette N° [200035348] !
+janv. 23, 2018 7:08:21 PM ui.UILog log
+GRAVE: APP_ERR0010 : Ce code QR [5101C861D201712210000000100] est déjà scanné dans la palette N° [200035348] !
+janv. 23, 2018 7:08:25 PM ui.UILog log
+INFOS: Searching Harness counter [5101C861D201712210000000105] in BaseHarness.
+janv. 23, 2018 7:08:25 PM ui.UILog log
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+janv. 23, 2018 7:08:39 PM ui.UILog log
+INFOS: APP_INFO0003 : User EZZIOURI OUSSAMA / * connected to host Oussama-PC at 2018-01-23 19:08:39 Module : Configuration : .
+janv. 23, 2018 7:09:07 PM ui.UILog log
+INFOS: APP_INFO0003 : User EZZIOURI OUSSAMA / * connected to host Oussama-PC at 2018-01-23 19:09:07 Project : DUCATI.
+janv. 23, 2018 7:09:07 PM ui.UILog log
+INFOS: APP_CONFIG0002   :   Chargement de la liste des formats QR dans la variable DATAMATRIX_PATTERN_LIST ...
+janv. 23, 2018 7:09:07 PM ui.UILog log
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord AND cb.harness_type = :harnessType ORDER BY id ASC
+janv. 23, 2018 7:09:07 PM ui.UILog log
+INFOS: ^[P]{1}\w{9}[;]{1}\d{2}[.]{1}\d{2}[.]{1}\d{4}[;]{1}\d{2}[:]{1}\d{2}[:]{1}\d{2}
+^\w{9}[;]{1}\d{2}[.]{1}\d{2}[.]{1}\d{4}[;]{1}\d{2}[:]{1}\d{2}[:]{1}\d{2}
+^\b{9}[;]{1}\d{2}[.]{1}\d{2}[.]{1}\d{4}[;]{1}\d{2}[:]{1}\d{2}[:]{1}\d{2}
+^\w{27}
+
+janv. 23, 2018 7:09:07 PM ui.UILog log
+INFOS: APP_CONFIG0003   :   4 formats possible du QR pour le projet DUCATI ont été chargés avec succès !
+janv. 23, 2018 7:09:07 PM ui.UILog log
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord AND cb.harness_type = :harnessType ORDER BY id ASC
+janv. 23, 2018 7:09:07 PM ui.UILog log
+INFOS: ^[P]\w{9}
+^\w{9}
+^\b{9}
+
+janv. 23, 2018 7:09:07 PM ui.UILog log
+INFOS: APP_CONFIG0004   :   3 formats de référence possibles pour le projet DUCATI ont été chargés avec succès.
+janv. 23, 2018 7:09:11 PM ui.UILog log
+INFOS: Searching Harness part [5101C371E] in ConfigUCS: [DUCATI]
+janv. 23, 2018 7:09:11 PM ui.UILog log
+INFOS: APP_INFO0004 : Référence produit 5101C371E trouvée pour le projet [DUCATI].
+janv. 23, 2018 7:09:11 PM ui.UILog log
+INFOS: APP_INFO0005 : Référence produit correcte 5101C371E 
+janv. 23, 2018 7:09:15 PM ui.UILog log
+INFOS: Searching Harness counter [5101C371E201712210000000010] in BaseHarness.
+janv. 23, 2018 7:09:15 PM ui.UILog log
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+janv. 23, 2018 7:13:38 PM ui.UILog log
+INFOS: File 2018_01_23.log already exists.
+
+janv. 23, 2018 7:13:38 PM ui.UILog log
+INFOS: Print directory [.\print\2018_01_23] already exist!
+Print sub directory [.\print\2018_01_23.\open_sheet] already exist!
+Print sub directory [.\print\2018_01_23.\closing_sheet] already exist!
+Print sub directory [.\print\2018_01_23.\picking_label] already exist!
+Print sub directory [.\print\2018_01_23.\dispatch_label] already exist!
+
+janv. 23, 2018 7:14:42 PM ui.UILog log
+INFOS: File 2018_01_23.log already exists.
+
+janv. 23, 2018 7:14:42 PM ui.UILog log
+INFOS: Print directory [.\print\2018_01_23] already exist!
+Print sub directory [.\print\2018_01_23.\open_sheet] already exist!
+Print sub directory [.\print\2018_01_23.\closing_sheet] already exist!
+Print sub directory [.\print\2018_01_23.\picking_label] already exist!
+Print sub directory [.\print\2018_01_23.\dispatch_label] already exist!
+
+janv. 23, 2018 8:02:49 PM ui.UILog log
+INFOS: APP_INFO0003 : User EZZIOURI OUSSAMA / * connected to host Oussama-PC at 2018-01-23 20:02:49 Project : DUCATI.
+janv. 23, 2018 8:02:49 PM ui.UILog log
+INFOS: APP_CONFIG0002   :   Chargement de la liste des formats QR dans la variable DATAMATRIX_PATTERN_LIST ...
+janv. 23, 2018 8:02:49 PM ui.UILog log
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord AND cb.harness_type = :harnessType ORDER BY id ASC
+janv. 23, 2018 8:02:49 PM ui.UILog log
+INFOS: ^[P]{1}\w{9}[;]{1}\d{2}[.]{1}\d{2}[.]{1}\d{4}[;]{1}\d{2}[:]{1}\d{2}[:]{1}\d{2}
+^\w{9}[;]{1}\d{2}[.]{1}\d{2}[.]{1}\d{4}[;]{1}\d{2}[:]{1}\d{2}[:]{1}\d{2}
+^\b{9}[;]{1}\d{2}[.]{1}\d{2}[.]{1}\d{4}[;]{1}\d{2}[:]{1}\d{2}[:]{1}\d{2}
+^\w{27}
+
+janv. 23, 2018 8:02:49 PM ui.UILog log
+INFOS: APP_CONFIG0003   :   4 formats possible du QR pour le projet DUCATI ont été chargés avec succès !
+janv. 23, 2018 8:02:49 PM ui.UILog log
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord AND cb.harness_type = :harnessType ORDER BY id ASC
+janv. 23, 2018 8:02:49 PM ui.UILog log
+INFOS: ^[P]\w{9}
+^\w{9}
+^\b{9}
+
+janv. 23, 2018 8:02:49 PM ui.UILog log
+INFOS: APP_CONFIG0004   :   3 formats de référence possibles pour le projet DUCATI ont été chargés avec succès.
+janv. 23, 2018 8:02:53 PM ui.UILog log
+GRAVE: APP_ERR0006 : Invalid part number scanned [UILog.severe(ErrorMsg.APP_ERR0022[0], PackagingVars.mode2_context.getBaseContainerTmp().getSupplierPartNumber(), PackagingVars.mode2_context.getBaseContainerTmp().getHarnessIndex());] !.
+janv. 23, 2018 8:02:53 PM ui.UILog log
+GRAVE: APP_ERR0006 : La référence scannée est invalide [UILog.severe(ErrorMsg.APP_ERR0022[0], PackagingVars.mode2_context.getBaseContainerTmp().getSupplierPartNumber(), PackagingVars.mode2_context.getBaseContainerTmp().getHarnessIndex());] .
+janv. 23, 2018 8:02:53 PM ui.UILog log
+GRAVE: APP_ERR0006 : La référence scannée est invalide [UILog.severe(ErrorMsg.APP_ERR0022[0], PackagingVars.mode2_context.getBaseContainerTmp().getSupplierPartNumber(), PackagingVars.mode2_context.getBaseContainerTmp().getHarnessIndex());] .
+janv. 23, 2018 8:02:56 PM ui.UILog log
+INFOS: Searching Harness part [5101C371E] in ConfigUCS: [DUCATI]
+janv. 23, 2018 8:02:56 PM ui.UILog log
+INFOS: APP_INFO0004 : Référence produit 5101C371E trouvée pour le projet [DUCATI].
+janv. 23, 2018 8:02:56 PM ui.UILog log
+INFOS: APP_INFO0005 : Référence produit correcte 5101C371E 
+janv. 23, 2018 8:03:05 PM ui.UILog log
+INFOS: Searching Harness counter [5101C371E201712210000000005] in BaseHarness.
+janv. 23, 2018 8:03:05 PM ui.UILog log
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+janv. 23, 2018 8:03:05 PM ui.UILog log
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+janv. 23, 2018 8:03:05 PM ui.UILog log
+GRAVE: APP_ERR0010 : Ce code QR [5101C371E201712210000000005] est déjà scanné dans la palette N° [200035353] !
+janv. 23, 2018 8:03:06 PM ui.UILog log
+GRAVE: APP_ERR0010 : Ce code QR [5101C371E201712210000000005] est déjà scanné dans la palette N° [200035353] !
+janv. 23, 2018 8:03:08 PM ui.UILog log
+INFOS: Searching Harness counter [5101C371E201712210000000010] in BaseHarness.
+janv. 23, 2018 8:03:08 PM ui.UILog log
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+janv. 23, 2018 8:03:11 PM ui.UILog log
+GRAVE: 
+janv. 23, 2018 8:07:39 PM ui.UILog log
+INFOS: File 2018_01_23.log already exists.
+
+janv. 23, 2018 8:07:39 PM ui.UILog log
+INFOS: Print directory [.\print\2018_01_23] already exist!
+Print sub directory [.\print\2018_01_23.\open_sheet] already exist!
+Print sub directory [.\print\2018_01_23.\closing_sheet] already exist!
+Print sub directory [.\print\2018_01_23.\picking_label] already exist!
+Print sub directory [.\print\2018_01_23.\dispatch_label] already exist!
+
+janv. 23, 2018 8:07:42 PM ui.UILog log
+INFOS: APP_INFO0003 : User EZZIOURI OUSSAMA / * connected to host Oussama-PC at 2018-01-23 20:07:42 Project : DUCATI.
+janv. 23, 2018 8:07:42 PM ui.UILog log
+INFOS: APP_CONFIG0002   :   Chargement de la liste des formats QR dans la variable DATAMATRIX_PATTERN_LIST ...
+janv. 23, 2018 8:07:42 PM ui.UILog log
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord AND cb.harness_type = :harnessType ORDER BY id ASC
+janv. 23, 2018 8:07:42 PM ui.UILog log
+INFOS: ^[P]{1}\w{9}[;]{1}\d{2}[.]{1}\d{2}[.]{1}\d{4}[;]{1}\d{2}[:]{1}\d{2}[:]{1}\d{2}
+^\w{9}[;]{1}\d{2}[.]{1}\d{2}[.]{1}\d{4}[;]{1}\d{2}[:]{1}\d{2}[:]{1}\d{2}
+^\b{9}[;]{1}\d{2}[.]{1}\d{2}[.]{1}\d{4}[;]{1}\d{2}[:]{1}\d{2}[:]{1}\d{2}
+^\w{27}
+
+janv. 23, 2018 8:07:42 PM ui.UILog log
+INFOS: APP_CONFIG0003   :   4 formats possible du QR pour le projet DUCATI ont été chargés avec succès !
+janv. 23, 2018 8:07:42 PM ui.UILog log
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord AND cb.harness_type = :harnessType ORDER BY id ASC
+janv. 23, 2018 8:07:42 PM ui.UILog log
+INFOS: ^[P]\w{9}
+^\w{9}
+^\b{9}
+
+janv. 23, 2018 8:07:42 PM ui.UILog log
+INFOS: APP_CONFIG0004   :   3 formats de référence possibles pour le projet DUCATI ont été chargés avec succès.
+janv. 23, 2018 8:08:23 PM ui.UILog log
+INFOS: Searching Harness part [5101C371E] in ConfigUCS: [DUCATI]
+janv. 23, 2018 8:08:23 PM ui.UILog log
+INFOS: APP_INFO0004 : Référence produit 5101C371E trouvée pour le projet [DUCATI].
+janv. 23, 2018 8:08:23 PM ui.UILog log
+INFOS: APP_INFO0005 : Référence produit correcte 5101C371E 
+janv. 23, 2018 8:08:26 PM ui.UILog log
+INFOS: Searching Harness counter [5101C371E201712210000000010] in BaseHarness.
+janv. 23, 2018 8:08:26 PM ui.UILog log
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+janv. 23, 2018 8:08:33 PM ui.UILog log
+INFOS: Print directory [.\print\2018_01_23] already exist!
+Print sub directory [.\print\2018_01_23.\open_sheet] already exist!
+Print sub directory [.\print\2018_01_23.\closing_sheet] already exist!
+Print sub directory [.\print\2018_01_23.\picking_label] already exist!
+Print sub directory [.\print\2018_01_23.\dispatch_label] already exist!
+
+janv. 23, 2018 8:08:34 PM ui.UILog log
+INFOS: Sending [.\print\2018_01_23\open_sheet\PrintOpenPallet_A5_2018_01_23_20_08_34_5101C371E_200035355.pdf] to the default printer...
+janv. 23, 2018 8:08:34 PM ui.UILog log
+INFOS: File [.\print\2018_01_23\open_sheet\PrintOpenPallet_A5_2018_01_23_20_08_34_5101C371E_200035355.pdf] has been printed.
+janv. 23, 2018 8:08:34 PM ui.UILog log
+INFOS: Openning new container for first harness part [5101C371E].
+janv. 23, 2018 8:08:54 PM ui.UILog log
+INFOS: BaseContainer created BaseContainer{id=34892, fifoTime=Tue Jan 23 20:08:53 WET 2018, storedTime=null, palletNumber=200035355, harnessPart=5101C371E, supplierPartNumber=26F139104, qtyExpected=1, qtyRead=1, containerState=OPEN, containerStateCode=1000, packType=C11, harnessType=DUCATI, ucsLifes=-1, ucsId=408, dispatchLabelNo=null, destination=null, harnessList=[], harnessCounter=null, choosen_pack_type=null} 
+janv. 23, 2018 8:08:55 PM ui.UILog log
+INFOS: Print directory [.\print\2018_01_23] already exist!
+Print sub directory [.\print\2018_01_23.\open_sheet] already exist!
+Print sub directory [.\print\2018_01_23.\closing_sheet] already exist!
+Print sub directory [.\print\2018_01_23.\picking_label] already exist!
+Print sub directory [.\print\2018_01_23.\dispatch_label] already exist!
+
+janv. 23, 2018 8:08:56 PM ui.UILog log
+INFOS: Sending [.\print\2018_01_23\closing_sheet\PrintClosingPallet_A5_5101C371E_2018_01_23_20_08_56.pdf] to the default printer...
+janv. 23, 2018 8:08:57 PM ui.UILog log
+INFOS: File [%s] has been printed.
+janv. 23, 2018 8:09:25 PM ui.UILog log
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+janv. 23, 2018 8:09:26 PM ui.UILog log
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+janv. 23, 2018 8:23:09 PM ui.UILog log
+INFOS: File 2018_01_23.log already exists.
+
+janv. 23, 2018 8:23:09 PM ui.UILog log
+INFOS: Print directory [.\print\2018_01_23] already exist!
+Print sub directory [.\print\2018_01_23.\open_sheet] already exist!
+Print sub directory [.\print\2018_01_23.\closing_sheet] already exist!
+Print sub directory [.\print\2018_01_23.\picking_label] already exist!
+Print sub directory [.\print\2018_01_23.\dispatch_label] already exist!
+
+janv. 23, 2018 8:23:26 PM ui.UILog log
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+janv. 23, 2018 8:23:30 PM ui.UILog log
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+janv. 23, 2018 8:23:36 PM ui.UILog log
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+janv. 23, 2018 8:23:38 PM ui.UILog log
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+janv. 23, 2018 8:23:39 PM ui.UILog log
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+janv. 23, 2018 8:23:40 PM ui.UILog log
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+janv. 23, 2018 8:23:43 PM ui.UILog log
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+janv. 23, 2018 8:26:20 PM ui.UILog log
+INFOS: File 2018_01_23.log already exists.
+
+janv. 23, 2018 8:26:20 PM ui.UILog log
+INFOS: Print directory [.\print\2018_01_23] already exist!
+Print sub directory [.\print\2018_01_23.\open_sheet] already exist!
+Print sub directory [.\print\2018_01_23.\closing_sheet] already exist!
+Print sub directory [.\print\2018_01_23.\picking_label] already exist!
+Print sub directory [.\print\2018_01_23.\dispatch_label] already exist!
+
+janv. 23, 2018 8:26:25 PM ui.UILog log
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+janv. 23, 2018 8:26:28 PM ui.UILog log
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+janv. 23, 2018 8:26:30 PM ui.UILog log
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+janv. 23, 2018 8:26:36 PM ui.UILog log
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+janv. 23, 2018 8:39:23 PM ui.UILog log
+INFOS: File 2018_01_23.log already exists.
+
+janv. 23, 2018 8:39:23 PM ui.UILog log
+INFOS: Print directory [.\print\2018_01_23] already exist!
+Print sub directory [.\print\2018_01_23.\open_sheet] already exist!
+Print sub directory [.\print\2018_01_23.\closing_sheet] already exist!
+Print sub directory [.\print\2018_01_23.\picking_label] already exist!
+Print sub directory [.\print\2018_01_23.\dispatch_label] already exist!
+
+janv. 23, 2018 8:39:27 PM ui.UILog log
+INFOS: APP_INFO0003 : User EZZIOURI OUSSAMA / * connected to host Oussama-PC at 2018-01-23 20:39:27 Project : DUCATI.
+janv. 23, 2018 8:39:27 PM ui.UILog log
+INFOS: APP_CONFIG0002   :   Chargement de la liste des formats QR dans la variable DATAMATRIX_PATTERN_LIST ...
+janv. 23, 2018 8:39:28 PM ui.UILog log
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord AND cb.harness_type = :harnessType ORDER BY id ASC
+janv. 23, 2018 8:39:28 PM ui.UILog log
+INFOS: ^[P]{1}\w{9}[;]{1}\d{2}[.]{1}\d{2}[.]{1}\d{4}[;]{1}\d{2}[:]{1}\d{2}[:]{1}\d{2}
+^\w{9}[;]{1}\d{2}[.]{1}\d{2}[.]{1}\d{4}[;]{1}\d{2}[:]{1}\d{2}[:]{1}\d{2}
+^\b{9}[;]{1}\d{2}[.]{1}\d{2}[.]{1}\d{4}[;]{1}\d{2}[:]{1}\d{2}[:]{1}\d{2}
+^\w{27}
+
+janv. 23, 2018 8:39:28 PM ui.UILog log
+INFOS: APP_CONFIG0003   :   4 formats possible du QR pour le projet DUCATI ont été chargés avec succès !
+janv. 23, 2018 8:39:28 PM ui.UILog log
+INFOS: FROM ConfigBarcode cb WHERE cb.keyWord = :keyWord AND cb.harness_type = :harnessType ORDER BY id ASC
+janv. 23, 2018 8:39:28 PM ui.UILog log
+INFOS: ^[P]\w{9}
+^\w{9}
+^\b{9}
+
+janv. 23, 2018 8:39:28 PM ui.UILog log
+INFOS: APP_CONFIG0004   :   3 formats de référence possibles pour le projet DUCATI ont été chargés avec succès.
+janv. 23, 2018 8:39:33 PM ui.UILog log
+INFOS: Searching Harness part [5101C861D] in ConfigUCS: [DUCATI]
+janv. 23, 2018 8:39:33 PM ui.UILog log
+INFOS: APP_INFO0004 : Référence produit 5101C861D trouvée pour le projet [DUCATI].
+janv. 23, 2018 8:39:33 PM ui.UILog log
+INFOS: APP_INFO0005 : Référence produit correcte 5101C861D 
+janv. 23, 2018 8:39:43 PM ui.UILog log
+INFOS: Searching Harness counter [5101C861D201712210000000120] in BaseHarness.
+janv. 23, 2018 8:39:43 PM ui.UILog log
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+janv. 23, 2018 8:39:57 PM ui.UILog log
+INFOS: Print directory [.\print\2018_01_23] already exist!
+Print sub directory [.\print\2018_01_23.\open_sheet] already exist!
+Print sub directory [.\print\2018_01_23.\closing_sheet] already exist!
+Print sub directory [.\print\2018_01_23.\picking_label] already exist!
+Print sub directory [.\print\2018_01_23.\dispatch_label] already exist!
+
+janv. 23, 2018 8:39:58 PM ui.UILog log
+INFOS: Sending [.\print\2018_01_23\open_sheet\PrintOpenPallet_A5_2018_01_23_20_39_57_5101C861D_200035356.pdf] to the default printer...
+janv. 23, 2018 8:39:58 PM ui.UILog log
+INFOS: File [.\print\2018_01_23\open_sheet\PrintOpenPallet_A5_2018_01_23_20_39_57_5101C861D_200035356.pdf] has been printed.
+janv. 23, 2018 8:39:58 PM ui.UILog log
+INFOS: Openning new container for first harness part [5101C861D].
+janv. 23, 2018 8:40:09 PM ui.UILog log
+INFOS: BaseContainer created BaseContainer{id=34893, fifoTime=Tue Jan 23 20:40:09 WET 2018, storedTime=null, palletNumber=200035356, harnessPart=5101C861D, supplierPartNumber=26F139204, qtyExpected=3, qtyRead=1, containerState=OPEN, containerStateCode=1000, packType=C11, harnessType=DUCATI, ucsLifes=-1, ucsId=409, dispatchLabelNo=null, destination=null, harnessList=[], harnessCounter=null, choosen_pack_type=null} 
+janv. 23, 2018 8:40:28 PM ui.UILog log
+INFOS: Searching Harness part [5101C861D] in ConfigUCS: [DUCATI]
+janv. 23, 2018 8:40:28 PM ui.UILog log
+INFOS: APP_INFO0004 : Référence produit 5101C861D trouvée pour le projet [DUCATI].
+janv. 23, 2018 8:40:28 PM ui.UILog log
+INFOS: APP_INFO0005 : Référence produit correcte 5101C861D 
+janv. 23, 2018 8:40:33 PM ui.UILog log
+INFOS: Searching Harness counter [5101C861D201712210000000121] in BaseHarness.
+janv. 23, 2018 8:40:33 PM ui.UILog log
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+janv. 23, 2018 8:40:53 PM ui.UILog log
+INFOS: Deletion  counters result 0 
+janv. 23, 2018 8:41:20 PM ui.UILog log
+INFOS: Searching Harness part [5101C861D] in ConfigUCS: [DUCATI]
+janv. 23, 2018 8:41:20 PM ui.UILog log
+INFOS: APP_INFO0004 : Référence produit 5101C861D trouvée pour le projet [DUCATI].
+janv. 23, 2018 8:41:20 PM ui.UILog log
+INFOS: APP_INFO0005 : Référence produit correcte 5101C861D 
+janv. 23, 2018 8:41:24 PM ui.UILog log
+INFOS: Invalid Counter scanned format [5101C861D]!
+janv. 23, 2018 8:41:24 PM ui.UILog log
+GRAVE: APP_ERR0009 : Format invalide du code QR [5101C861D]!
+janv. 23, 2018 8:41:25 PM ui.UILog log
+GRAVE: APP_ERR0009 : Format invalide du code QR [5101C861D]!
+janv. 23, 2018 8:41:27 PM ui.UILog log
+INFOS: Searching Harness counter [5101C861D201712210000000120] in BaseHarness.
+janv. 23, 2018 8:41:27 PM ui.UILog log
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+janv. 23, 2018 8:41:27 PM ui.UILog log
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+janv. 23, 2018 8:41:28 PM ui.UILog log
+GRAVE: APP_ERR0010 : Ce code QR [5101C861D201712210000000120] est déjà scanné dans la palette N° [200035356] !
+janv. 23, 2018 8:41:28 PM ui.UILog log
+GRAVE: APP_ERR0010 : Ce code QR [5101C861D201712210000000120] est déjà scanné dans la palette N° [200035356] !
+janv. 23, 2018 8:41:30 PM ui.UILog log
+INFOS: Searching Harness counter [5101C861D201712210000000121] in BaseHarness.
+janv. 23, 2018 8:41:30 PM ui.UILog log
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+janv. 23, 2018 8:41:30 PM ui.UILog log
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+janv. 23, 2018 8:41:30 PM ui.UILog log
+GRAVE: APP_ERR0010 : Ce code QR [5101C861D201712210000000121] est déjà scanné dans la palette N° [200035356] !
+janv. 23, 2018 8:41:31 PM ui.UILog log
+GRAVE: APP_ERR0010 : Ce code QR [5101C861D201712210000000121] est déjà scanné dans la palette N° [200035356] !
+janv. 23, 2018 8:41:33 PM ui.UILog log
+INFOS: Searching Harness counter [5101C861D201712210000000122] in BaseHarness.
+janv. 23, 2018 8:41:33 PM ui.UILog log
+INFOS: FROM BaseHarness bh WHERE bh.counter = :counter
+janv. 23, 2018 8:42:15 PM ui.UILog log
+GRAVE: APP_ERR0013 : Code à barre 12334455667 déjà scanné !
+janv. 23, 2018 8:42:19 PM ui.UILog log
+GRAVE: APP_ERR0013 : Code à barre 12334455667 déjà scanné !
+janv. 23, 2018 8:42:21 PM ui.UILog log
+GRAVE: APP_ERR0013 : Code à barre 12334455668 déjà scanné !
+janv. 23, 2018 8:42:22 PM ui.UILog log
+GRAVE: APP_ERR0013 : Code à barre 12334455668 déjà scanné !
+janv. 23, 2018 8:42:30 PM ui.UILog log
+INFOS: Deletion  counters result 0 
+janv. 23, 2018 8:42:30 PM ui.UILog log
+INFOS: Quantité terminée BaseContainer{id=34893, fifoTime=Tue Jan 23 20:42:30 WET 2018, storedTime=null, palletNumber=200035356, harnessPart=5101C861D, supplierPartNumber=26F139204, qtyExpected=3, qtyRead=3, containerState=OPEN, containerStateCode=1000, packType=C11, harnessType=DUCATI, ucsLifes=-1, ucsId=409, dispatchLabelNo=null, destination=null, harnessList=[entity.BaseHarness@8c5f5c, entity.BaseHarness@1acdf56, entity.BaseHarness@7c6bd1], harnessCounter=null, choosen_pack_type=null}
+janv. 23, 2018 8:42:30 PM ui.UILog log
+INFOS: Print directory [.\print\2018_01_23] already exist!
+Print sub directory [.\print\2018_01_23.\open_sheet] already exist!
+Print sub directory [.\print\2018_01_23.\closing_sheet] already exist!
+Print sub directory [.\print\2018_01_23.\picking_label] already exist!
+Print sub directory [.\print\2018_01_23.\dispatch_label] already exist!
+
+janv. 23, 2018 8:42:30 PM ui.UILog log
+INFOS: Sending [.\print\2018_01_23\closing_sheet\PrintClosingPallet_A5_5101C861D_2018_01_23_20_42_30.pdf] to the default printer...
+janv. 23, 2018 8:42:30 PM ui.UILog log
+INFOS: File [%s] has been printed.
+janv. 23, 2018 8:42:52 PM ui.UILog log
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+janv. 23, 2018 8:44:43 PM ui.UILog log
+INFOS: File 2018_01_23.log already exists.
+
+janv. 23, 2018 8:44:43 PM ui.UILog log
+INFOS: Print directory [.\print\2018_01_23] already exist!
+Print sub directory [.\print\2018_01_23.\open_sheet] already exist!
+Print sub directory [.\print\2018_01_23.\closing_sheet] already exist!
+Print sub directory [.\print\2018_01_23.\picking_label] already exist!
+Print sub directory [.\print\2018_01_23.\dispatch_label] already exist!
+
+janv. 23, 2018 8:44:50 PM ui.UILog log
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC
+janv. 23, 2018 8:44:52 PM ui.UILog log
+INFOS: FROM ConfigWorkplace bp ORDER BY workplace ASC

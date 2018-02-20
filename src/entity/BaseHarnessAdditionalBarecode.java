@@ -1,7 +1,9 @@
 package entity;
 // Generated 6 f�vr. 2016 21:43:55 by Hibernate Tools 3.6.0
 
-import __run__.Global;
+import __main__.GlobalMethods;
+import __main__.GlobalVars;
+import gui.packaging.PackagingVars;
 import helper.Helper;
 import org.hibernate.Query;
 import helper.HQLHelper;
@@ -62,10 +64,10 @@ public class BaseHarnessAdditionalBarecode extends DAO implements java.io.Serial
          Set default values of this object 
          from the global mode2_context values
          */
-        this.createTime = Helper.getTimeStamp(null);
-        this.writeTime = Helper.getTimeStamp(null);
-        this.createId = Helper.context.getUser().getId();
-        this.writeId = Helper.context.getUser().getId();
+        this.createTime = GlobalMethods.getTimeStamp(null);
+        this.writeTime = GlobalMethods.getTimeStamp(null);
+        this.createId = PackagingVars.context.getUser().getId();
+        this.writeId = PackagingVars.context.getUser().getId();
 
         return this;
     }
@@ -145,25 +147,24 @@ public class BaseHarnessAdditionalBarecode extends DAO implements java.io.Serial
         //Tester si le harness counter exist dans la base BaseHarness    
         // true if exist, false if not
         
-        Helper.log.info(String.format("Searching Additional Labels barecode [%s] in BaseHarnessAdditionalBarecode.", labelCode));
+        //Helper.log.info(String.format("Searching Additional Labels barecode [%s] in BaseHarnessAdditionalBarecode.", labelCode));
 
         Helper.startSession();
         Query query = Helper.sess.createQuery(HQLHelper.GET_ADDITIONAL_BARCODES_BY_CODE);
         query.setParameter("labelCode", labelCode);
-        Helper.log.info(query.getQueryString());
+        
+        //Helper.log.info(query.getQueryString());
         Helper.sess.getTransaction().commit();
 
         if (query.list().isEmpty()) {
-            for (String item : Helper.mode2_context.getBaseHarnessAdditionalBarecodeTmp().getLabelCode()) {
+            for (String item : PackagingVars.mode2_context.getBaseHarnessAdditionalBarecodeTmp().getLabelCode()) {
                 if (labelCode.equals(item)) {
                     return true;                    
                 }
             }
             //Great!!! Is a new Label Code
-            Helper.log.info(String.format(Helper.INFO0010_NEW_ENGINE_LABEL, labelCode));
             return false;
         } else {
-            Helper.log.warning(String.format(Helper.INFO0011_DUPLICAT_ENGINE_LABEL, labelCode));
             return true;
 
         }
@@ -193,7 +194,7 @@ public class BaseHarnessAdditionalBarecode extends DAO implements java.io.Serial
     public boolean checkLabelFormat(String plasticBagBarcode) {
         //Tester le format du plastic barcode
         boolean flag = false;
-        for (String[] pattern : Global.PLASTICBAG_BARCODE_PATTERN_LIST) {
+        for (String[] pattern : GlobalVars.PLASTICBAG_BARCODE_PATTERN_LIST) {
             if (plasticBagBarcode.matches(pattern[0].trim())) {
                 flag = true;
                 break;
@@ -202,8 +203,7 @@ public class BaseHarnessAdditionalBarecode extends DAO implements java.io.Serial
 
         if (!plasticBagBarcode.equals("") && flag == true) {
             return true;
-        } else {
-            Helper.log.info(String.format(Helper.ERR0005_HP_COUNTER_FORMAT, plasticBagBarcode));
+        } else {                        
             return false;
         }
     }

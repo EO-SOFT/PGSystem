@@ -1,7 +1,8 @@
 package entity;
 // Generated 6 f�vr. 2016 21:43:55 by Hibernate Tools 3.6.0
 
-import helper.Helper;
+import __main__.GlobalMethods;
+import gui.packaging.PackagingVars;
 import hibernate.DAO;
 import java.util.Date;
 import javax.persistence.CascadeType;
@@ -68,8 +69,8 @@ public class ConfigBarcode extends DAO implements java.io.Serializable {
          Set default values of this object 
          from the global mode2_context values
          */
-        this.createTime = this.writeTime = Helper.getTimeStamp(null);
-        this.createId = this.writeId = Helper.context.getUser().getId();
+        this.createTime = this.writeTime = GlobalMethods.getTimeStamp(null);
+        this.createId = this.writeId = PackagingVars.context.getUser().getId();
         return this;
     }
 

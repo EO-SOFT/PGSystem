@@ -5,7 +5,8 @@
  */
 package gui.packaging.mode2.state;
 
-import __run__.Global;
+import __main__.GlobalVars;
+import com.itextpdf.text.DocumentException;
 import gui.packaging.Mode2_Context;
 import helper.Helper;
 import helper.PrinterHelper;
@@ -16,8 +17,11 @@ import entity.BaseHarnessAdditionalBarecodeTmp;
 import entity.BaseHarness;
 import entity.HisBaseHarness;
 import javax.swing.ImageIcon;
-import javax.swing.JOptionPane;
 import javax.swing.JTextField;
+import gui.packaging.PackagingVars;
+import java.io.IOException;
+import ui.UILog;
+import ui.error.ErrorMsg;
 
 /**
  *
@@ -25,30 +29,38 @@ import javax.swing.JTextField;
  */
 public class Mode2_S030_NewPalletScan implements Mode2_State {
 
-    private ImageIcon imgIcon = new ImageIcon(Global.APP_PROP.getProperty("IMG_PATH") + "S041_NewPaletScan.jpg");
+    private ImageIcon imgIcon = new ImageIcon(GlobalVars.APP_PROP.getProperty("IMG_PATH") + "S041_NewPaletScan.jpg");
 
-    public Mode2_S030_NewPalletScan() {
+    private String palletNumber = "";
 
-        Helper.Packaging_Gui_Mode2.setIconLabel(this.imgIcon);
+    /**
+     *
+     * @param palletNumber : The id of the new pallet created in 
+     * PACKAGING_UI9000_ChoosePackType_Mode2
+     */
+    public Mode2_S030_NewPalletScan(String palletNumber) {
 
+        PackagingVars.Packaging_Gui_Mode2.setIconLabel(this.imgIcon);
+        this.palletNumber = palletNumber;
         //Reload Data Table to display new pallet
-        Helper.Packaging_Gui_Mode2.reloadDataTable();
+        PackagingVars.Packaging_Gui_Mode2.reloadDataTable();
 
-        Helper.Packaging_Gui_Mode2.setAssistanceTextarea(
-                "Scanner la fiche Ouverture Palette N° "
-                + Helper.mode2_context.getBaseContainerTmp().getPalletNumber());
+        PackagingVars.Packaging_Gui_Mode2.setFeedbackTextarea("Scanner la fiche d'ouverture palette \nN° "
+                + palletNumber);
     }
 
+    /**
+     *
+     * @param context
+     */
+    @Override
     public void doAction(Mode2_Context context) {
-        JTextField scan_txtbox = Helper.Packaging_Gui_Mode2.getScanTxt();
+        JTextField scan_txtbox = PackagingVars.Packaging_Gui_Mode2.getScanTxt();
         String barcode = scan_txtbox.getText().trim();
 
-        System.out.println("Scanned Pallet Number " + barcode);
-
-        if (barcode.equals(Helper.mode2_context.getBaseContainerTmp().getPalletNumber())) {
-            Helper.log.info(String.format(Helper.INFO0008_CORRECT_PALLET_NUMBER, barcode));
+        if (barcode.equals(this.palletNumber)) {
             //Vide le scan box
-            this.clearScanBox(scan_txtbox);
+            clearScanBox(scan_txtbox);
 
             //##############################################################
             //Inserer les données de la nouvelle palette dans les 2 tables BaseContainer et BaseHarness            
@@ -62,9 +74,9 @@ public class Mode2_S030_NewPalletScan implements Mode2_State {
             bc.setQtyRead(1);
             bc.setHarnessType(context.getBaseContainerTmp().getHarnessType());
             bc.setStdTime(context.getBaseContainerTmp().getStdTime());
-            bc.setContainerState(Global.PALLET_OPEN);
-            bc.setContainerStateCode(Global.PALLET_OPEN_CODE);
-            bc.setPackWorkstation(Global.APP_HOSTNAME);
+            bc.setContainerState(GlobalVars.PALLET_OPEN);
+            bc.setContainerStateCode(GlobalVars.PALLET_OPEN_CODE);
+            bc.setPackWorkstation(GlobalVars.APP_HOSTNAME);
             //bc.setAssyWorkstation(mode2_context.getBaseContainerTmp().getAssyWorkstation());
             bc.setSegment(context.getBaseContainerTmp().getSegment());
             bc.setWorkplace(context.getBaseContainerTmp().getWorkplace());
@@ -74,7 +86,7 @@ public class Mode2_S030_NewPalletScan implements Mode2_State {
             bc.setOrder_no(context.getBaseContainerTmp().getOrder_no());
             bc.setSpecial_order(context.getBaseContainerTmp().getSpecial_order());
             bc.create(bc);
-            Helper.log.info(String.format("BaseContainer created %s ", bc.toString()));
+            UILog.info(String.format("BaseContainer created %s ", bc.toString()));
             //##############################################################            
 
             //##############################################################
@@ -85,7 +97,7 @@ public class Mode2_S030_NewPalletScan implements Mode2_State {
             bh.setPalletNumber(context.getBaseContainerTmp().getPalletNumber());
             bh.setHarnessType(context.getBaseContainerTmp().getHarnessType());
             bh.setStdTime(context.getBaseContainerTmp().getStdTime());
-            bh.setPackWorkstation(Global.APP_HOSTNAME);
+            bh.setPackWorkstation(GlobalVars.APP_HOSTNAME);
             bh.setAssyWorkstation(context.getBaseContainerTmp().getAssyWorkstation());
             bh.setSegment(context.getBaseContainerTmp().getSegment());
             bh.setWorkplace(context.getBaseContainerTmp().getWorkplace());
@@ -102,15 +114,16 @@ public class Mode2_S030_NewPalletScan implements Mode2_State {
             //##############################################################
 
             //############### SET & SAVE ENGINE LABEL DATA #################       
-            //if (Helper.context.getUser().getHarnessType().equals(Helper.ENGINE)) {
-            if(Helper.mode2_context.getBaseHarnessAdditionalBarecodeTmp().getLabelCode().length != 0)
-                for (String labelCode : Helper.mode2_context.getBaseHarnessAdditionalBarecodeTmp().getLabelCode()) {
+            //if (PackagingVars.context.getUser().getHarnessType().equals(Helper.ENGINE)) {
+            if (PackagingVars.mode2_context.getBaseHarnessAdditionalBarecodeTmp().getLabelCode().length != 0) {
+                for (String labelCode : PackagingVars.mode2_context.getBaseHarnessAdditionalBarecodeTmp().getLabelCode()) {
                     BaseHarnessAdditionalBarecode bel = new BaseHarnessAdditionalBarecode();
                     bel.setDefautlVals();
                     bel.setLabelCode(labelCode);
                     bel.setHarness(bh);
                     bel.create(bel);
-                }       
+                }
+            }
             //}
             //##############################################################       
             //}
@@ -127,16 +140,21 @@ public class Mode2_S030_NewPalletScan implements Mode2_State {
             //############## UCS Contains just 1 harness ###################
             if (bc.getQtyExpected() == 1) {
 
-                PrinterHelper.saveAndPrintClosingSheet(bc, false);
+                try {
+                    PrinterHelper.saveAndPrintClosingSheet(PackagingVars.mode2_context, bc, false);
+                } catch (IOException ex) {
+                    UILog.severe(ex.toString());
+                } catch (DocumentException ex) {
+                    UILog.severe(ex.toString());
+                }
                 Helper.startSession();
-                bc.setContainerState(Global.PALLET_WAITING);
-                bc.setContainerStateCode(Global.PALLET_WAITING_CODE);
-                bc.update(bc);                 
+                bc.setContainerState(GlobalVars.PALLET_WAITING);
+                bc.setContainerStateCode(GlobalVars.PALLET_WAITING_CODE);
+                bc.update(bc);
 
                 context.getBaseContainerTmp().setPalletNumber(bc.getPalletNumber());
-                Helper.Packaging_Gui_Mode2.setAssistanceTextarea(
-                        "N° "
-                        + Global.CLOSING_PALLET_PREFIX + Helper.mode2_context.getBaseContainerTmp().getPalletNumber());
+                PackagingVars.Packaging_Gui_Mode2.setFeedbackTextarea("N° "
+                        + GlobalVars.CLOSING_PALLET_PREFIX + this.palletNumber);
 
                 context.setState(new Mode2_S040_ClosingPallet());
             } else {
@@ -144,36 +162,50 @@ public class Mode2_S030_NewPalletScan implements Mode2_State {
                 context.setState(new Mode2_S020_HarnessPartScan());
             }
         } else {
-            Helper.log.warning(Mode2_S030_NewPalletScan.class.getSimpleName()+String.format(Helper.ERR0008_INCORRECT_PALLET_NUMBER, barcode));
-            JOptionPane.showMessageDialog(null, String.format(Helper.ERR0008_INCORRECT_PALLET_NUMBER, barcode), "ERR0008 Invalid Barcode", JOptionPane.ERROR_MESSAGE);
+            UILog.severe(ErrorMsg.APP_ERR0018[0], barcode);
+            UILog.severeDialog(null, ErrorMsg.APP_ERR0018, barcode);
             clearScanBox(scan_txtbox);
             context.setState(this);
         }
     }
 
+    /**
+     *
+     */
     public void clearContextSessionVals() {
         //Pas besoin de réinitialiser le uid
-        Helper.mode2_context.setBaseContainerTmp(new BaseContainerTmp());
-        Helper.mode2_context.setBaseHarnessAdditionalBarecodeTmp(new BaseHarnessAdditionalBarecodeTmp());
+        PackagingVars.mode2_context.setBaseContainerTmp(new BaseContainerTmp());
+        PackagingVars.mode2_context.setBaseHarnessAdditionalBarecodeTmp(new BaseHarnessAdditionalBarecodeTmp());
     }
 
     public String toString() {
         return "State S041 : S041_NewPaletScan";
     }
 
+    /**
+     *
+     * @return
+     */
     public ImageIcon getImg() {
         return this.imgIcon;
     }
 
+    /**
+     *
+     * @param scan_txtbox
+     */
     public void clearScanBox(JTextField scan_txtbox) {
         //Vider le champs de text scan
         scan_txtbox.setText("");
         scan_txtbox.requestFocusInWindow();
-        Helper.Packaging_Gui_Mode2.setScanTxt(scan_txtbox);
+        PackagingVars.Packaging_Gui_Mode2.setScanTxt(scan_txtbox);
     }
 
+    /**
+     *
+     */
     public void clearRequestedPallet_txt() {
-        Helper.Packaging_Gui_Mode2.setAssistanceTextarea("");
+        PackagingVars.Packaging_Gui_Mode2.setFeedbackTextarea("");
     }
 
 }

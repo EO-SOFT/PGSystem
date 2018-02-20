@@ -9,6 +9,7 @@ import entity.ConfigSegment;
 import entity.ConfigUcs;
 import entity.ConfigWorkplace;
 import entity.PackagingMaster;
+import gui.packaging.PackagingVars;
 import helper.ComboItem;
 import helper.HQLHelper;
 import helper.Helper;
@@ -1037,8 +1038,8 @@ public class CONFIG_UI0001_UCS_CONFIG extends javax.swing.JFrame {
         } else {
             if (id_lbl.getText().isEmpty()) { // ID Label is empty, then is a new Object
                 ConfigUcs mu = new ConfigUcs();
-                mu.setCreateId(Helper.context.getUser().getId());
-                mu.setWriteId(Helper.context.getUser().getId());
+                mu.setCreateId(PackagingVars.context.getUser().getId());
+                mu.setWriteId(PackagingVars.context.getUser().getId());
                 mu.setCreateTime(new Date());
                 mu.setWriteTime(new Date());
                 mu.setHarnessPart(cpn_txtbox.getText().trim());
@@ -1076,7 +1077,7 @@ public class CONFIG_UI0001_UCS_CONFIG extends javax.swing.JFrame {
                 msg_lbl.setText("Nouveau élément enregistré !");
                 refresh();
             } else { // ID Label is filed, then is an update
-                aux.setWriteId(Helper.context.getUser().getId());
+                aux.setWriteId(PackagingVars.context.getUser().getId());
                 aux.setWriteTime(new Date());
                 aux.setHarnessPart(cpn_txtbox.getText().trim());
                 aux.setSupplierPartNumber(lpn_txtbox.getText().trim());

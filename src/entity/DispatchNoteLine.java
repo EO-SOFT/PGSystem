@@ -5,7 +5,7 @@
  */
 package entity;
 
-import gui.warehouse_dispatch.state.WarehouseHelper;
+import __main__.GlobalMethods;
 import hibernate.DAO;
 import java.util.Date;
 import javax.persistence.CascadeType;
@@ -69,7 +69,7 @@ public class DispatchNoteLine extends DAO implements java.io.Serializable {
     }
 
     public DispatchNoteLine(int createId, String user, String adviceNote, String forsAdviceNote, String forsHp, String forsQty, String forsLabelId, String prodHp, String prodQty) {
-        this.createTime = WarehouseHelper.getTimeStamp(null);
+        this.createTime = GlobalMethods.getTimeStamp(null);
         this.createId = createId;
         this.user = user;
         this.adviceNoteNum = adviceNote;

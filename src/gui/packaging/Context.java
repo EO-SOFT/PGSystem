@@ -18,8 +18,8 @@ import entity.ManufactureUsers;
  */
 public class Context {
     
-    private BaseContainer tempBC = new BaseContainer();
-    private BaseHarness tempBH = new BaseHarness();
+    private BaseContainer tempBC = new BaseContainer();    
+    private BaseHarness tempBH = new BaseHarness();    
     private BaseHarnessAdditionalBarecode tempBarecode = new BaseHarnessAdditionalBarecode();
     private String harnessCounter;
     

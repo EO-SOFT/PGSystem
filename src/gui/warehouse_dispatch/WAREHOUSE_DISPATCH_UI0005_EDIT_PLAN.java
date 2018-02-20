@@ -11,15 +11,15 @@ import entity.LoadPlanDestinationRel;
 import helper.HQLHelper;
 import helper.Helper;
 import java.awt.HeadlessException;
-import java.util.Date;
 import java.util.List;
 import javax.swing.JDialog;
-import javax.swing.JOptionPane;
-import static javax.swing.JOptionPane.ERROR_MESSAGE;
+//import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableColumnModel;
 import org.hibernate.HibernateException;
 import org.hibernate.Query;
+import ui.UILog;
+import ui.error.ErrorMsg;
 
 /**
  *
@@ -67,7 +67,7 @@ public class WAREHOUSE_DISPATCH_UI0005_EDIT_PLAN extends javax.swing.JDialog {
 
     public boolean ifDestIsSelected(String dest, String[] destsList) {
         for (String item : destsList) {
-            System.out.println("item"+item);
+            System.out.println("item" + item);
             if (item != null && item.equals(dest)) {
                 return true;
             }
@@ -93,8 +93,10 @@ public class WAREHOUSE_DISPATCH_UI0005_EDIT_PLAN extends javax.swing.JDialog {
         Helper.sess.getTransaction().commit();
         List result = query.list();
         if (result.isEmpty()) {
-            JOptionPane.showMessageDialog(null, Helper.ERR0029_NO_DESTINATIONS_FOR_DISPATCH, "Destinations Configuration error !", ERROR_MESSAGE);
-            System.err.println(Helper.ERR0029_NO_DESTINATIONS_FOR_DISPATCH);
+
+            UILog.severe(ErrorMsg.APP_ERR0025[0]);
+            UILog.severeDialog(null, ErrorMsg.APP_ERR0025);
+
             return null;
         } else {
             this.planDests = new String[result.size()];
@@ -128,8 +130,8 @@ public class WAREHOUSE_DISPATCH_UI0005_EDIT_PLAN extends javax.swing.JDialog {
             List result = query.list();
 
             if (result.isEmpty()) {
-                JOptionPane.showMessageDialog(null, Helper.ERR0029_NO_DESTINATIONS_FOR_DISPATCH, "Destinations Configuration error !", ERROR_MESSAGE);
-                System.err.println(Helper.ERR0029_NO_DESTINATIONS_FOR_DISPATCH);
+                UILog.severe(ErrorMsg.APP_ERR0025[0]);
+                UILog.severeDialog(null, ErrorMsg.APP_ERR0025);
                 this.dispose();
             } else {
 
@@ -359,13 +361,14 @@ public class WAREHOUSE_DISPATCH_UI0005_EDIT_PLAN extends javax.swing.JDialog {
             }
         }
         if (!flag) {
-            JOptionPane.showMessageDialog(null, Helper.ERR0031_NO_FINAL_DESTINATION_SELECTED, "Valeurs requises non selectionnées !", ERROR_MESSAGE);
-            System.err.println(Helper.ERR0031_NO_FINAL_DESTINATION_SELECTED);
+            UILog.severe(ErrorMsg.APP_ERR0026[0]);
+            UILog.severeDialog(null, ErrorMsg.APP_ERR0026);
+
         } else {
             try {
                 //Remove old destinations from the plan
                 for (LoadPlanDestinationRel obj : this.loadPlanDestRel) {
-                    System.out.println("selected "+selectedDestinations.length);
+                    System.out.println("selected " + selectedDestinations.length);
                     if (ifDestIsSelected(obj.getDestination(), planDests) && !ifDestIsSelected(obj.getDestination(), selectedDestinations)) {
                         System.out.println(obj.getDestination() + "not selected");
                         //before remove the destination
@@ -381,8 +384,8 @@ public class WAREHOUSE_DISPATCH_UI0005_EDIT_PLAN extends javax.swing.JDialog {
                         if (result.isEmpty()) {
                             obj.delete(obj);
                         } else {
-                            JOptionPane.showMessageDialog(null, String.format(Helper.ERR0033_DESTINATIONS_NOT_EMPTY, obj.getDestination()), "Destination non vide !", ERROR_MESSAGE);
-                            System.err.println(String.format(Helper.ERR0033_DESTINATIONS_NOT_EMPTY, obj.getDestination()));
+                            UILog.infoDialog(null, ErrorMsg.APP_ERR0024, obj.getDestination());
+                            UILog.info(ErrorMsg.APP_ERR0024[0], obj.getDestination());
                             destinationsValidation = false;
                             break;
                         }
@@ -402,8 +405,8 @@ public class WAREHOUSE_DISPATCH_UI0005_EDIT_PLAN extends javax.swing.JDialog {
                 }
 
                 if (newDeliveryDatePicker.getDate() == null) {
-                    JOptionPane.showMessageDialog(null, Helper.ERR0030_NO_DELIVERY_DATE_SELECTED, "Valeurs requises non selectionnées !", ERROR_MESSAGE);
-                    System.err.println(Helper.ERR0030_NO_DELIVERY_DATE_SELECTED);
+                    UILog.severe(ErrorMsg.APP_ERR0027[0]);
+                    UILog.severeDialog(null, ErrorMsg.APP_ERR0027);
                 } else {
                     this.lp.setDeliveryTime(newDeliveryDatePicker.getDate());
                 }
@@ -412,8 +415,8 @@ public class WAREHOUSE_DISPATCH_UI0005_EDIT_PLAN extends javax.swing.JDialog {
                 this.parent.loadPlanDataInGui();
                 this.dispose();
             } catch (HibernateException | HeadlessException e) {
-                JOptionPane.showMessageDialog(null, Helper.ERR0032_INCORRECT_DATE_FORMAT, "Valeurs requises non selectionnées !", ERROR_MESSAGE);
-                System.err.println(Helper.ERR0032_INCORRECT_DATE_FORMAT);
+                UILog.severe(ErrorMsg.APP_ERR0028[0]);
+                UILog.severeDialog(null, ErrorMsg.APP_ERR0028);
             }
         }
     }//GEN-LAST:event_ok_btnActionPerformed

@@ -5,7 +5,8 @@
  */
 package print;
 
-import __run__.Global;
+import __main__.GlobalMethods;
+import __main__.GlobalVars;
 import helper.Helper;
 import com.itextpdf.text.BaseColor;
 import com.itextpdf.text.Chunk;
@@ -56,14 +57,14 @@ public final class PrintDispatchNote_A4 implements BarcodeCreator {
 
         //Create PDF File to print
         this.setDEST(String.format(".\\"
-                + Global.APP_PROP.getProperty("PRINT_DIRNAME")
+                + GlobalVars.APP_PROP.getProperty("PRINT_DIRNAME")
                 + File.separator
-                + Helper.getStrTimeStamp("yyyy_MM_dd")
+                + GlobalMethods.getStrTimeStamp("yyyy_MM_dd")
                 + File.separator
-                + Global.APP_PROP.getProperty("PRINT_DISPATCH_SHEET_DIRNAME")
+                + GlobalVars.APP_PROP.getProperty("PRINT_DISPATCH_SHEET_DIRNAME")
                 + File.separator
                 + "PrintDispatchNote_A4_"
-                + Helper.getStrTimeStamp("yyyy_MM_dd_HH_mm_ss")
+                + GlobalMethods.getStrTimeStamp("yyyy_MM_dd_HH_mm_ss")
                 + "_" + adviceNoteNum
                 + ".pdf"));
     }

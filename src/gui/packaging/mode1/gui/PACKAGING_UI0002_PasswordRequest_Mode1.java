@@ -5,10 +5,11 @@
  */
 package gui.packaging.mode1.gui;
 
-import __run__.Global;
+import __main__.GlobalMethods;
+import __main__.GlobalVars;
 import entity.ConfigBarcode;
-import entity.HisLogin;
 import entity.ManufactureUsers;
+import gui.packaging.PackagingVars;
 import gui.packaging.mode1.state.Mode1_S010_UserCodeScan;
 import gui.packaging.mode1.state.Mode1_S020_PalletChoice;
 import helper.HQLHelper;
@@ -23,6 +24,8 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 import org.hibernate.Query;
+import ui.UILog;
+import ui.info.InfoMsg;
 
 /**
  *
@@ -143,8 +146,8 @@ public class PACKAGING_UI0002_PasswordRequest_Mode1 extends javax.swing.JDialog 
         Query query = Helper.sess.createQuery(HQLHelper.CHECK_LOGIN_PASS);
         query.setParameter("login", this.user.getLogin());
         query.setParameter("password", String.valueOf(admin_password_txtbox.getPassword()));
-        //query.setParameter("active", Helper.context.getUser().getActive()); //active user only
-        //query.setParameter("harnessType", Helper.context.getUser().getHarnessType());
+        //query.setParameter("active", PackagingVars.context.getUser().getActive()); //active user only
+        //query.setParameter("harnessType", PackagingVars.context.getUser().getHarnessType());
         Helper.sess.getTransaction().commit();
         List result = query.list();
         System.out.println("Resultat du check " + result.size());
@@ -179,16 +182,16 @@ public class PACKAGING_UI0002_PasswordRequest_Mode1 extends javax.swing.JDialog 
         Helper.sess.beginTransaction();
         Helper.sess.getTransaction().commit();
         List resultList = query.list();
-        Global.DATAMATRIX_PATTERN_LIST = new String[query.list().size()];
+        GlobalVars.DATAMATRIX_PATTERN_LIST = new String[query.list().size()];
 
         int i = 0;
         for (Iterator it = resultList.iterator(); it.hasNext();) {
             ConfigBarcode object = (ConfigBarcode) it.next();
-            Global.DATAMATRIX_PATTERN_LIST[i] = object.getBarcodePattern();
-            System.out.println(Global.DATAMATRIX_PATTERN_LIST[i].toString());
+            GlobalVars.DATAMATRIX_PATTERN_LIST[i] = object.getBarcodePattern();
+            System.out.println(GlobalVars.DATAMATRIX_PATTERN_LIST[i].toString());
             i++;
         }
-        System.out.println(Global.DATAMATRIX_PATTERN_LIST.length + " QR Code pattern for customer '" + harnessType + "' successfuly loaded 100% ! ");
+        System.out.println(GlobalVars.DATAMATRIX_PATTERN_LIST.length + " QR Code pattern for customer '" + harnessType + "' successfuly loaded 100% ! ");
     }
 
     /**
@@ -205,73 +208,83 @@ public class PACKAGING_UI0002_PasswordRequest_Mode1 extends javax.swing.JDialog 
         Helper.sess.beginTransaction();
         Helper.sess.getTransaction().commit();
         List resultList = query.list();
-        Global.PARTNUMBER_PATTERN_LIST = new String[query.list().size()];
+        GlobalVars.PARTNUMBER_PATTERN_LIST = new String[query.list().size()];
 
         System.out.println("Part number pattern list...");
         int i = 0;
         for (Iterator it = resultList.iterator(); it.hasNext();) {
             ConfigBarcode object = (ConfigBarcode) it.next();
-            Global.PARTNUMBER_PATTERN_LIST[i] = object.getBarcodePattern();
-            System.out.println(Global.PARTNUMBER_PATTERN_LIST[i].toString());
+            GlobalVars.PARTNUMBER_PATTERN_LIST[i] = object.getBarcodePattern();
+            System.out.println(GlobalVars.PARTNUMBER_PATTERN_LIST[i].toString());
             i++;
         }
 
-        System.out.println(Global.PARTNUMBER_PATTERN_LIST.length + " part number pattern for type '" + harnessType + "' successfuly loaded 100% ! ");
+        System.out.println(GlobalVars.PARTNUMBER_PATTERN_LIST.length + " part number pattern for type '" + harnessType + "' successfuly loaded 100% ! ");
 
     }
 
     private void connect_to_mode1() {
 
-        Helper.Packaging_Gui_Mode1.enableAdminMenus();
-        String harnessType = String.valueOf(Helper.Packaging_Gui_Mode1.getHarnessTypeBox().getSelectedItem());
+        PackagingVars.Packaging_Gui_Mode1.enableAdminMenus();
+        String harnessType = String.valueOf(PackagingVars.Packaging_Gui_Mode1.getHarnessTypeBox().getSelectedItem());
         Helper.startSession();
 
         this.user.setLoginTime(new Date());
-        Helper.context.setUser(this.user);
-        Helper.context.getUser().update(Helper.context.getUser());
-        Helper.mode1_context.getBaseContainerTmp().setHarnessType(harnessType);
+        PackagingVars.context.setUser(this.user);
+        PackagingVars.context.getUser().update(PackagingVars.context.getUser());
+        PackagingVars.mode1_context.getBaseContainerTmp().setHarnessType(harnessType);
         try {
-            Global.APP_HOSTNAME = InetAddress.getLocalHost().getHostName();
+            GlobalVars.APP_HOSTNAME = InetAddress.getLocalHost().getHostName();
         } catch (UnknownHostException ex) {
             Logger.getLogger(Mode1_S010_UserCodeScan.class.getName()).log(Level.SEVERE, null, ex);
         }
-        String str = String.format(Helper.INFO0001_LOGIN_SUCCESS,
+        /**
+         * @deprecated
+         */
+//        String str = String.format(Helper.INFO0001_LOGIN_SUCCESS,
+//                this.user.getFirstName() + " " + this.user.getLastName()
+//                + " / " + this.user.getLogin(), GlobalVars.APP_HOSTNAME,
+//                GlobalMethods.getStrTimeStamp() + " Project : "
+//                + harnessType);
+//        Helper.log.log(Level.INFO, str);
+        
+        String str = String.format(InfoMsg.APP_INFO0003[1],
                 this.user.getFirstName() + " " + this.user.getLastName()
-                + " / " + this.user.getLogin(), Global.APP_HOSTNAME,
-                Helper.getStrTimeStamp() + " Project : "
+                + " / " + this.user.getLogin(), GlobalVars.APP_HOSTNAME,
+                GlobalMethods.getStrTimeStamp() + " Project : "
                 + harnessType);
-        Helper.log.log(Level.INFO, str);
+        
+        UILog.info(str); 
 
         //Save authentication line in HisLogin table
-        HisLogin his_login = new HisLogin(
-                this.user.getId(), this.user.getId(),
-                String.format(Helper.INFO0001_LOGIN_SUCCESS,
-                        this.user.getFirstName() + " " + this.user.getLastName() + " / " + this.user.getLogin(),
-                        Global.APP_HOSTNAME, Helper.getStrTimeStamp()));
-        his_login.setCreateId(this.user.getId());
-        his_login.setWriteId(this.user.getId());
-        his_login.setMessage(str);
-        his_login.create(his_login);
+//        HisLogin his_login = new HisLogin(
+//                this.user.getId(), this.user.getId(),
+//                String.format(Helper.INFO0001_LOGIN_SUCCESS,
+//                        this.user.getFirstName() + " " + this.user.getLastName() + " / " + this.user.getLogin(),
+//                        GlobalVars.APP_HOSTNAME, GlobalMethods.getStrTimeStamp()));
+//        his_login.setCreateId(this.user.getId());
+//        his_login.setWriteId(this.user.getId());
+//        his_login.setMessage(str);
+//        his_login.create(his_login);
 
         //Set connected user label text
-        Helper.Packaging_Gui_Mode1.setUserLabelText(
-                Helper.context.getUser().getFirstName() + " "
-                + Helper.context.getUser().getLastName() + " "
-                + "[" + Helper.Packaging_Gui_Mode1.getHarnessTypeBox().getSelectedItem().toString() + "]"
+        PackagingVars.Packaging_Gui_Mode1.setUserLabelText(PackagingVars.context.getUser().getFirstName() + " "
+                + PackagingVars.context.getUser().getLastName() + " "
+                + "[" + PackagingVars.Packaging_Gui_Mode1.getHarnessTypeBox().getSelectedItem().toString() + "]"
         );
         //Disable filter
-        Helper.Packaging_Gui_Mode1.setHarnessTypeFilterBoxState(false);
+        PackagingVars.Packaging_Gui_Mode1.setHarnessTypeFilterBoxState(false);
         //Activer le bouton nouvelle palette
-        Helper.Packaging_Gui_Mode1.getBtn_new_pallet().setEnabled(true);
+        PackagingVars.Packaging_Gui_Mode1.getBtn_new_pallet().setEnabled(true);
         //Load DOTMATRIX
-        loadDotMatrixCodePatterns(Helper.Packaging_Gui_Mode1.getHarnessTypeBox().getSelectedItem().toString());
+        loadDotMatrixCodePatterns(PackagingVars.Packaging_Gui_Mode1.getHarnessTypeBox().getSelectedItem().toString());
 
         //Load PART NUMBER patterns
-        loadPartNumberCodePatterns(Helper.Packaging_Gui_Mode1.getHarnessTypeBox().getSelectedItem().toString());
+        loadPartNumberCodePatterns(PackagingVars.Packaging_Gui_Mode1.getHarnessTypeBox().getSelectedItem().toString());
 
         //Auth réussie, Passage à l'état S02 de lecture Harness part                
-        Helper.mode1_context.setState(new Mode1_S020_PalletChoice());
-        //Helper.mode1_context.setState(new Mode1_S021_HarnessPartScan(false, null));
+        PackagingVars.mode1_context.setState(new Mode1_S020_PalletChoice());
+        //GVars.mode1_context.setState(new Mode1_S021_HarnessPartScan(false, null));
         
         
         this.dispose();
@@ -288,15 +301,15 @@ public class PACKAGING_UI0002_PasswordRequest_Mode1 extends javax.swing.JDialog 
                 admin_password_txtbox.setText("");
             }
         } else if (evt.getKeyCode() == KeyEvent.VK_ESCAPE) {
-            Helper.Packaging_Gui_Mode1.logout();
-            Helper.Packaging_Gui_Mode1.setHarnessTypeBoxState(true);
+            PackagingVars.Packaging_Gui_Mode1.logout();
+            PackagingVars.Packaging_Gui_Mode1.setHarnessTypeBoxState(true);
             this.dispose();
         }
     }//GEN-LAST:event_admin_password_txtboxKeyPressed
 
     private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
-        if (Helper.context.getUser() == null) {
-            Helper.mode1_context.setState(new Mode1_S010_UserCodeScan());
+        if (PackagingVars.context.getUser() == null) {
+            PackagingVars.mode1_context.setState(new Mode1_S010_UserCodeScan());
         }
 
     }//GEN-LAST:event_formWindowClosing

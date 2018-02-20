@@ -5,8 +5,8 @@
  */
 package print;
 
-import __run__.Global;
-import helper.Helper;
+import __main__.GlobalMethods;
+import __main__.GlobalVars;
 import com.itextpdf.text.BaseColor;
 import com.itextpdf.text.Document;
 import com.itextpdf.text.DocumentException;
@@ -37,6 +37,7 @@ import javax.print.PrintServiceLookup;
 import javax.print.SimpleDoc;
 import javax.print.attribute.HashPrintRequestAttributeSet;
 import javax.print.attribute.PrintRequestAttributeSet;
+import ui.UILog;
 
 public class PrintClosingPallet_A5 implements BarcodeCreator {
 
@@ -72,26 +73,26 @@ public class PrintClosingPallet_A5 implements BarcodeCreator {
         map_title.put("warehouse_code", "WAREHOUSE");
 
         this.setDEST(String.format(".\\"
-                + Global.APP_PROP.getProperty("PRINT_DIRNAME")
+                + GlobalVars.APP_PROP.getProperty("PRINT_DIRNAME")
                 + File.separator
-                + Helper.getStrTimeStamp("yyyy_MM_dd")
+                + GlobalMethods.getStrTimeStamp("yyyy_MM_dd")
                 + File.separator
-                + Global.APP_PROP.getProperty("PRINT_CLOSING_PALLET_DIRNAME")
+                + GlobalVars.APP_PROP.getProperty("PRINT_CLOSING_PALLET_DIRNAME")
                 + File.separator + "PrintClosingPallet_A5_"
                 + harness_part + "_"
-                + Helper.getStrTimeStamp("yyyy_MM_dd_HH_mm_ss") + ".pdf"));
+                + GlobalMethods.getStrTimeStamp("yyyy_MM_dd_HH_mm_ss") + ".pdf"));
     }
 
     public PrintClosingPallet_A5() {
         this.setDEST(String.format(".\\"
-                + Global.APP_PROP.getProperty("PRINT_DIRNAME")
+                + GlobalVars.APP_PROP.getProperty("PRINT_DIRNAME")
                 + File.separator
-                + Helper.getStrTimeStamp("yyyy_MM_dd")
+                + GlobalMethods.getStrTimeStamp("yyyy_MM_dd")
                 + File.separator
-                + Global.APP_PROP.getProperty("PRINT_CLOSING_PALLET_DIRNAME")
+                + GlobalVars.APP_PROP.getProperty("PRINT_CLOSING_PALLET_DIRNAME")
                 + File.separator + "PrintClosingPallet_A5_"
                 + harness_part + "_"
-                + Helper.getStrTimeStamp("yyyy_MM_dd_HH_mm_ss") + ".pdf"));
+                + GlobalMethods.getStrTimeStamp("yyyy_MM_dd_HH_mm_ss") + ".pdf"));
     }
 
     public String getSupplier_name() {
@@ -192,7 +193,7 @@ public class PrintClosingPallet_A5 implements BarcodeCreator {
         PrintRequestAttributeSet aset = new HashPrintRequestAttributeSet();
 
         PrintService targetPrinter = PrintServiceLookup.lookupDefaultPrintService();
-        Helper.log.info(String.format("Target printer found: %s ", targetPrinter.toString()));
+        UILog.info(String.format("Target printer found: %s ", targetPrinter.toString()));
 
         if (targetPrinter != null) {
             DocPrintJob job = targetPrinter.createPrintJob();
@@ -205,7 +206,7 @@ public class PrintClosingPallet_A5 implements BarcodeCreator {
                 return false;
             }
         } else {
-            Helper.log.warning("No printer services found");
+            UILog.severe("No printer services found");
             return false;
         }
     }
@@ -373,10 +374,10 @@ public class PrintClosingPallet_A5 implements BarcodeCreator {
         Image image;
         if (special_order==1) //True
         {
-            image = Image.getInstance(Global.APP_PROP.getProperty("IMG_PATH") + Global.APP_PROP.getProperty("CLOSING_SPECIAL_PALLET_TEMPLATE"));
+            image = Image.getInstance(GlobalVars.APP_PROP.getProperty("IMG_PATH") + GlobalVars.APP_PROP.getProperty("CLOSING_SPECIAL_PALLET_TEMPLATE"));
         } else //False
         {
-            image = Image.getInstance(Global.APP_PROP.getProperty("IMG_PATH") + Global.APP_PROP.getProperty("CLOSING_PALLET_TEMPLATE"));
+            image = Image.getInstance(GlobalVars.APP_PROP.getProperty("IMG_PATH") + GlobalVars.APP_PROP.getProperty("CLOSING_PALLET_TEMPLATE"));
         }
 
         image.scaleToFit(600f, 500f);
@@ -405,13 +406,13 @@ public class PrintClosingPallet_A5 implements BarcodeCreator {
 
     public boolean sentToDefaultDesktopPrinter(String filePath) {
         try {
-            Helper.log.info(String.format("Sending [%s] to the default printer...", filePath));
+            UILog.info(String.format("Sending [%s] to the default printer...", filePath));
             Desktop desktop = null;
             if (Desktop.isDesktopSupported()) {
                 desktop = Desktop.getDesktop();
             }
             desktop.print(new File(filePath));
-            Helper.log.info("File [%s] has been printed.");
+            UILog.info("File [%s] has been printed.");
             return true;
         } catch (IOException ioe) {
             ioe.printStackTrace();

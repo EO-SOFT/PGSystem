@@ -5,7 +5,8 @@
  */
 package print;
 
-import __run__.Global;
+import __main__.GlobalMethods;
+import __main__.GlobalVars;
 import helper.Helper;
 import com.itextpdf.text.BaseColor;
 import com.itextpdf.text.Document;
@@ -70,24 +71,24 @@ public class PrintPickingLabel implements BarcodeCreator {
         this.rotation = rotation;
 
         PrintPickingLabel.setDEST(String.format(".\\"
-                + Global.APP_PROP.getProperty("PRINT_DIRNAME")
+                + GlobalVars.APP_PROP.getProperty("PRINT_DIRNAME")
                 + File.separator
-                + Helper.getStrTimeStamp("yyyy_MM_dd")
+                + GlobalMethods.getStrTimeStamp("yyyy_MM_dd")
                 + File.separator
-                + Global.APP_PROP.getProperty("PRINT_PICKING_SHEET_DIRNAME")
+                + GlobalVars.APP_PROP.getProperty("PRINT_PICKING_SHEET_DIRNAME")
                 + File.separator + "label_"
-                + Helper.getStrTimeStamp("yyyy_MM_dd_HH_mm_ss") + ".pdf"));
+                + GlobalMethods.getStrTimeStamp("yyyy_MM_dd_HH_mm_ss") + ".pdf"));
     }
 
     public PrintPickingLabel() {
         PrintPickingLabel.setDEST(String.format(".\\"
-                + Global.APP_PROP.getProperty("PRINT_DIRNAME")
+                + GlobalVars.APP_PROP.getProperty("PRINT_DIRNAME")
                 + File.separator
-                + Helper.getStrTimeStamp("yyyy_MM_dd")
+                + GlobalMethods.getStrTimeStamp("yyyy_MM_dd")
                 + File.separator
-                + Global.APP_PROP.getProperty("PRINT_CLOSING_PALLET_DIRNAME")
+                + GlobalVars.APP_PROP.getProperty("PRINT_CLOSING_PALLET_DIRNAME")
                 + File.separator + "label_"
-                + Helper.getStrTimeStamp("yyyy_MM_dd_HH_mm_ss") + ".pdf"));
+                + GlobalMethods.getStrTimeStamp("yyyy_MM_dd_HH_mm_ss") + ".pdf"));
     }
 
     public PdfNumber getRotation() {
@@ -165,8 +166,8 @@ public class PrintPickingLabel implements BarcodeCreator {
     public String createPdf(int special_order) throws IOException, DocumentException {
         //Left, right, top, bottom
         Rectangle labelSize = new Rectangle(
-                Float.valueOf(Global.APP_PROP.getProperty("PRINT_PICKING_SHEET_WIDTH")),
-                Float.valueOf(Global.APP_PROP.getProperty("PRINT_PICKING_SHEET_HEIGHT"))                 
+                Float.valueOf(GlobalVars.APP_PROP.getProperty("PRINT_PICKING_SHEET_WIDTH")),
+                Float.valueOf(GlobalVars.APP_PROP.getProperty("PRINT_PICKING_SHEET_HEIGHT"))                 
         );
         
         Document document = new Document(labelSize, 0, 0, 1, 1);

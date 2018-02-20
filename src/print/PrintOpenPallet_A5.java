@@ -5,8 +5,8 @@
  */
 package print;
 
-import __run__.Global;
-import helper.Helper;
+import __main__.GlobalMethods;
+import __main__.GlobalVars;
 import com.itextpdf.text.BaseColor;
 import com.itextpdf.text.Document;
 import com.itextpdf.text.DocumentException;
@@ -28,6 +28,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
+import ui.UILog;
 
 public final class PrintOpenPallet_A5 implements BarcodeCreator {
         
@@ -89,13 +90,13 @@ public final class PrintOpenPallet_A5 implements BarcodeCreator {
 
         //Create PDF File to print
         this.setDEST(String.format(".\\"
-                + Global.APP_PROP.getProperty("PRINT_DIRNAME")
+                + GlobalVars.APP_PROP.getProperty("PRINT_DIRNAME")
                 + File.separator
-                + Helper.getStrTimeStamp("yyyy_MM_dd")
+                + GlobalMethods.getStrTimeStamp("yyyy_MM_dd")
                 + File.separator
-                + Global.APP_PROP.getProperty("PRINT_PALLET_DIRNAME")
+                + GlobalVars.APP_PROP.getProperty("PRINT_PALLET_DIRNAME")
                 + File.separator + "PrintOpenPallet_A5_"
-                + Helper.getStrTimeStamp("yyyy_MM_dd_HH_mm_ss")
+                + GlobalMethods.getStrTimeStamp("yyyy_MM_dd_HH_mm_ss")
                 + "_" + harness_part + "_"+ pallet_number
                 + ".pdf"));
     }
@@ -191,21 +192,21 @@ public final class PrintOpenPallet_A5 implements BarcodeCreator {
     @Override
     public boolean sentToDefaultDesktopPrinter(String filePath) {
         try {
-            Helper.log.info(String.format("Sending [%s] to the default printer...", filePath));
+            UILog.info(String.format("Sending [%s] to the default printer...", filePath));
             Desktop desktop = null;
             if (Desktop.isDesktopSupported()) {
                 desktop = Desktop.getDesktop();
             }else{
-                Helper.log.warning("Desktop object not supported !");
+                UILog.severe("Desktop object not supported !");
             }
-            System.out.println("Default printer "+desktop.toString());
+            //System.out.println("Default printer "+desktop.toString());
                     
             desktop.print(new File(filePath));
 
-            Helper.log.info(String.format("File [%s] has been printed.", filePath));
+            UILog.info(String.format("File [%s] has been printed.", filePath));
             return true;
         } catch (IOException ioe) {
-            Helper.log.warning("Problem in sentToDefaultDesktopPrinter");
+            UILog.severe("Problem in sentToDefaultDesktopPrinter");
             ioe.printStackTrace();
             return false;
         }
@@ -255,7 +256,7 @@ public final class PrintOpenPallet_A5 implements BarcodeCreator {
         
         // ######################## Line 2 ##########################
         // we add the four remaining cells with addCell()        
-        cell.setPhrase(new Phrase(Global.APP_HOSTNAME+" | "+this.getUser(), FontFactory.getFont(FontFactory.COURIER, 18f, Font.BOLD)));
+        cell.setPhrase(new Phrase(GlobalVars.APP_HOSTNAME+" | "+this.getUser(), FontFactory.getFont(FontFactory.COURIER, 18f, Font.BOLD)));
         table.addCell(cell);
         cell.setPhrase(new Phrase(this.getHarness_part()+"/"+this.getIndex(), FontFactory.getFont(FontFactory.COURIER, 25f, Font.BOLD)));
         table.addCell(cell);
@@ -344,5 +345,12 @@ public final class PrintOpenPallet_A5 implements BarcodeCreator {
         return barcode_img;
     }   
 
+    @Override
+    public String toString() {
+        return "PrintOpenPallet_A5{" + "LINE_SPACER=" + LINE_SPACER + ",\n harness_part=" + harness_part + ",\n index=" + index + ",\n pack_size=" + pack_size + ",\n pallet_number=" + pallet_number + ",\n print_date=" + print_date + ",\n print_time=" + print_time + ",\n pack_type=" + pack_type + ",\n user=" + user + ",\n reprint=" + reprint + ",\n supplierPart=" + supplierPart + '}';
+    }
+
+    
+    
     
 }

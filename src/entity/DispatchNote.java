@@ -1,6 +1,7 @@
 package entity;
 // Generated 6 f�vr. 2016 21:43:55 by Hibernate Tools 3.6.0
 
+import __main__.GlobalMethods;
 import gui.warehouse_dispatch.state.WarehouseHelper;
 import hibernate.DAO;
 import java.text.DateFormat;
@@ -61,7 +62,7 @@ public class DispatchNote extends DAO implements java.io.Serializable {
     }
 
     public DispatchNote(Date createTime, int createId, String adviceNote, String user) {
-        this.createTime = WarehouseHelper.getTimeStamp(null);
+        this.createTime = GlobalMethods.getTimeStamp(null);
         this.createId = WarehouseHelper.warehouse_out_context.getUser().getId();
         this.adviceNoteNum = adviceNote;        
         this.user = user;

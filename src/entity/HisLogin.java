@@ -1,7 +1,7 @@
 package entity;
 // Generated 30 janv. 2016 21:44:13 by Hibernate Tools 3.6.0
 
-import helper.Helper;
+import __main__.GlobalMethods;
 import hibernate.DAO;
 import java.util.Date;
 import javax.persistence.Column;
@@ -47,8 +47,8 @@ public class HisLogin extends DAO implements java.io.Serializable {
     }
 
     public HisLogin(int createId, int writeId, String message) {
-        this.createTime = Helper.getTimeStamp(null);
-        this.writeTime = Helper.getTimeStamp(null);
+        this.createTime = GlobalMethods.getTimeStamp(null);
+        this.writeTime = GlobalMethods.getTimeStamp(null);
         this.createId = createId;
         this.writeId = writeId;
         this.message = message;

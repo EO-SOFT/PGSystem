@@ -5,10 +5,11 @@
  */
 package gui.packaging.mode2.gui;
 
-import __run__.Global;
+import __main__.GlobalMethods;
+import __main__.GlobalVars;
 import entity.ConfigBarcode;
-import entity.HisLogin;
 import entity.ManufactureUsers;
+import gui.packaging.PackagingVars;
 import helper.HQLHelper;
 import helper.Helper;
 import java.awt.event.KeyEvent;
@@ -19,11 +20,13 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.swing.JOptionPane;
 import org.hibernate.Query;
 import gui.packaging.mode2.state.Mode2_S010_UserCodeScan;
 import gui.packaging.mode2.state.Mode2_S020_HarnessPartScan;
-import gui.packaging.mode2.state.Mode2_S031_PalletChoice;
+import ui.UILog;
+import ui.config.ConfigMsg;
+import ui.error.ErrorMsg;
+import ui.info.InfoMsg;
 
 /**
  *
@@ -144,8 +147,8 @@ public class PACKAGING_UI0002_PasswordRequest_Mode2 extends javax.swing.JDialog 
         Query query = Helper.sess.createQuery(HQLHelper.CHECK_LOGIN_PASS);
         query.setParameter("login", this.user.getLogin());
         query.setParameter("password", String.valueOf(admin_password_txtbox.getPassword()));
-        //query.setParameter("active", Helper.context.getUser().getActive()); //active user only
-        //query.setParameter("harnessType", Helper.context.getUser().getHarnessType());
+        //query.setParameter("active", PackagingVars.context.getUser().getActive()); //active user only
+        //query.setParameter("harnessType", PackagingVars.context.getUser().getHarnessType());
         Helper.sess.getTransaction().commit();
         List result = query.list();
         System.out.println("Resultat du check " + result.size());
@@ -160,7 +163,9 @@ public class PACKAGING_UI0002_PasswordRequest_Mode2 extends javax.swing.JDialog 
         if (checkLoginAndPass()) {
             connect_to_mode2();
         } else {
-            JOptionPane.showMessageDialog(null, Helper.ERR0001_LOGIN_FAILED, "Login Error", JOptionPane.ERROR_MESSAGE);
+            UILog.severeDialog(null, ErrorMsg.APP_ERR0004);
+            UILog.severe(ErrorMsg.APP_ERR0004[0]);
+            //JOptionPane.showMessageDialog(null, Helper.ERR0001_LOGIN_FAILED, "Login Error", JOptionPane.ERROR_MESSAGE);
             admin_password_txtbox.setText("");
         }
     }//GEN-LAST:event_ok_btnActionPerformed
@@ -170,26 +175,32 @@ public class PACKAGING_UI0002_PasswordRequest_Mode2 extends javax.swing.JDialog 
      * @param harnessType : Harness Type to filter on (Volvo, Ducati)
      */
     public void loadDotMatrixCodePatterns(String harnessType) {
-        System.out.println("Loading DATAMATRIX_PATTERN_LIST pattern list ... ");
+        //System.out.println("Loading DATAMATRIX_PATTERN_LIST pattern list ... ");
+        UILog.info(ConfigMsg.APP_CONFIG0002[0]);
+        Helper.sess.beginTransaction();
         Query query = Helper.sess.createQuery(HQLHelper.GET_PATTERN_BY_KEYWORD_AND_HARNESSTYPE);
         query.setParameter("keyWord", "DOTMATRIX");
         query.setParameter("harnessType", harnessType);
         //PLASTIC_BAG_BARCODE
 
-        Helper.log.info(query.getQueryString());
+        UILog.info(query.getQueryString());
         Helper.sess.beginTransaction();
         Helper.sess.getTransaction().commit();
         List resultList = query.list();
-        Global.DATAMATRIX_PATTERN_LIST = new String[query.list().size()];
+        GlobalVars.DATAMATRIX_PATTERN_LIST = new String[query.list().size()];
 
         int i = 0;
+        String patterns = "";
         for (Iterator it = resultList.iterator(); it.hasNext();) {
             ConfigBarcode object = (ConfigBarcode) it.next();
-            Global.DATAMATRIX_PATTERN_LIST[i] = object.getBarcodePattern();
-            System.out.println(Global.DATAMATRIX_PATTERN_LIST[i].toString());
+            GlobalVars.DATAMATRIX_PATTERN_LIST[i] = object.getBarcodePattern();
+            patterns += GlobalVars.DATAMATRIX_PATTERN_LIST[i] + "\n";
+
             i++;
         }
-        System.out.println(Global.DATAMATRIX_PATTERN_LIST.length + " QR Code pattern for customer '" + harnessType + "' successfuly loaded 100% ! ");
+        UILog.info(patterns);
+
+        UILog.info(ConfigMsg.APP_CONFIG0003[0], GlobalVars.DATAMATRIX_PATTERN_LIST.length + "", harnessType);
     }
 
     /**
@@ -202,75 +213,76 @@ public class PACKAGING_UI0002_PasswordRequest_Mode2 extends javax.swing.JDialog 
         query.setParameter("keyWord", "PARTNUMBER");
         query.setParameter("harnessType", harnessType);
         //PLASTIC_BAG_BARCODE
-        Helper.log.info(query.getQueryString());
+        UILog.info(query.getQueryString());
         Helper.sess.beginTransaction();
         Helper.sess.getTransaction().commit();
         List resultList = query.list();
-        Global.PARTNUMBER_PATTERN_LIST = new String[query.list().size()];
+        GlobalVars.PARTNUMBER_PATTERN_LIST = new String[query.list().size()];
 
-        System.out.println("Part number pattern list...");
         int i = 0;
+        String patterns = "";
         for (Iterator it = resultList.iterator(); it.hasNext();) {
             ConfigBarcode object = (ConfigBarcode) it.next();
-            Global.PARTNUMBER_PATTERN_LIST[i] = object.getBarcodePattern();
-            System.out.println(Global.PARTNUMBER_PATTERN_LIST[i].toString());
+            GlobalVars.PARTNUMBER_PATTERN_LIST[i] = object.getBarcodePattern();
+            patterns += GlobalVars.PARTNUMBER_PATTERN_LIST[i] + "\n";
+
             i++;
         }
 
-        System.out.println(Global.PARTNUMBER_PATTERN_LIST.length + " part number pattern for type '" + harnessType + "' successfuly loaded 100% ! ");
+        UILog.info(patterns);
 
+        UILog.info(ConfigMsg.APP_CONFIG0004[0], "" + GlobalVars.PARTNUMBER_PATTERN_LIST.length, harnessType);
     }
 
     private void connect_to_mode2() {
 
-        Helper.Packaging_Gui_Mode2.enableAdminMenus();
-        String harnessType = String.valueOf(Helper.Packaging_Gui_Mode2.getHarnessTypeBox().getSelectedItem());
+        PackagingVars.Packaging_Gui_Mode2.enableAdminMenus();
+        String harnessType = String.valueOf(PackagingVars.Packaging_Gui_Mode2.getHarnessTypeBox().getSelectedItem());
         Helper.startSession();
 
         this.user.setLoginTime(new Date());
-        Helper.context.setUser(this.user);
-        Helper.context.getUser().update(Helper.context.getUser());
-        Helper.mode2_context.getBaseContainerTmp().setHarnessType(harnessType);
+        PackagingVars.context.setUser(this.user);
+        PackagingVars.context.getUser().update(PackagingVars.context.getUser());
+        PackagingVars.mode2_context.getBaseContainerTmp().setHarnessType(harnessType);
         try {
-            Global.APP_HOSTNAME = InetAddress.getLocalHost().getHostName();
+            GlobalVars.APP_HOSTNAME = InetAddress.getLocalHost().getHostName();
         } catch (UnknownHostException ex) {
             Logger.getLogger(Mode2_S010_UserCodeScan.class.getName()).log(Level.SEVERE, null, ex);
         }
-        String str = String.format(Helper.INFO0001_LOGIN_SUCCESS,
+        String str = String.format(InfoMsg.APP_INFO0003[1],
                 this.user.getFirstName() + " " + this.user.getLastName()
-                + " / " + this.user.getLogin(), Global.APP_HOSTNAME,
-                Helper.getStrTimeStamp() + " Project : "
+                + " / " + this.user.getLogin(), GlobalVars.APP_HOSTNAME,
+                GlobalMethods.getStrTimeStamp() + " Project : "
                 + harnessType);
-        Helper.log.log(Level.INFO, str);
+
+        UILog.info(str);
 
         //Save authentication line in HisLogin table
-        HisLogin his_login = new HisLogin(
-                this.user.getId(), this.user.getId(),
-                String.format(Helper.INFO0001_LOGIN_SUCCESS,
-                        this.user.getFirstName() + " " + this.user.getLastName() + " / " + this.user.getLogin(),
-                        Global.APP_HOSTNAME, Helper.getStrTimeStamp()));
-        his_login.setCreateId(this.user.getId());
-        his_login.setWriteId(this.user.getId());
-        his_login.setMessage(str);
-        his_login.create(his_login);
-
+//        HisLogin his_login = new HisLogin(
+//                this.user.getId(), this.user.getId(),
+//                String.format(Helper.INFO0001_LOGIN_SUCCESS,
+//                        this.user.getFirstName() + " " + this.user.getLastName() + " / " + this.user.getLogin(),
+//                        GlobalVars.APP_HOSTNAME, GlobalMethods.getStrTimeStamp()));
+//        his_login.setCreateId(this.user.getId());
+//        his_login.setWriteId(this.user.getId());
+//        his_login.setMessage(str);
+//        his_login.create(his_login);
         //Set connected user label text
-        Helper.Packaging_Gui_Mode2.setUserLabelText(
-                Helper.context.getUser().getFirstName() + " "
-                + Helper.context.getUser().getLastName() + " "
-                + "[" + Helper.Packaging_Gui_Mode2.getHarnessTypeBox().getSelectedItem().toString() + "]"
+        PackagingVars.Packaging_Gui_Mode2.setUserLabelText(PackagingVars.context.getUser().getFirstName() + " "
+                + PackagingVars.context.getUser().getLastName() + " "
+                + "[" + PackagingVars.Packaging_Gui_Mode2.getHarnessTypeBox().getSelectedItem().toString() + "]"
         );
         //Disable filter
-        Helper.Packaging_Gui_Mode2.setHarnessTypeFilterBoxState(false);
+        PackagingVars.Packaging_Gui_Mode2.setHarnessTypeFilterBoxState(false);
 
         //Load DOTMATRIX
-        loadDotMatrixCodePatterns(Helper.Packaging_Gui_Mode2.getHarnessTypeBox().getSelectedItem().toString());
+        loadDotMatrixCodePatterns(PackagingVars.Packaging_Gui_Mode2.getHarnessTypeBox().getSelectedItem().toString());
 
         //Load PART NUMBER patterns
-        loadPartNumberCodePatterns(Helper.Packaging_Gui_Mode2.getHarnessTypeBox().getSelectedItem().toString());
+        loadPartNumberCodePatterns(PackagingVars.Packaging_Gui_Mode2.getHarnessTypeBox().getSelectedItem().toString());
 
         //Auth réussie, Passage à l'état S02 de lecture Harness part                
-        Helper.mode2_context.setState(new Mode2_S020_HarnessPartScan());
+        PackagingVars.mode2_context.setState(new Mode2_S020_HarnessPartScan());
 
         this.dispose();
     }
@@ -280,19 +292,21 @@ public class PACKAGING_UI0002_PasswordRequest_Mode2 extends javax.swing.JDialog 
             if (checkLoginAndPass()) {
                 connect_to_mode2();
             } else {
-                JOptionPane.showMessageDialog(null, Helper.ERR0001_LOGIN_FAILED, "Login Error", JOptionPane.ERROR_MESSAGE);
+                //JOptionPane.showMessageDialog(null, Helper.ERR0001_LOGIN_FAILED, "Login Error", JOptionPane.ERROR_MESSAGE);
+                UILog.severeDialog(null, ErrorMsg.APP_ERR0004);
+                UILog.severe(ErrorMsg.APP_ERR0004[0]);
                 admin_password_txtbox.setText("");
             }
         } else if (evt.getKeyCode() == KeyEvent.VK_ESCAPE) {
-            Helper.Packaging_Gui_Mode2.logout();
-            Helper.Packaging_Gui_Mode2.setHarnessTypeBoxState(true);
+            PackagingVars.Packaging_Gui_Mode2.logout();
+            PackagingVars.Packaging_Gui_Mode2.setHarnessTypeBoxState(true);
             this.dispose();
         }
     }//GEN-LAST:event_admin_password_txtboxKeyPressed
 
     private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
-        if (Helper.context.getUser() == null) {
-            Helper.mode2_context.setState(new Mode2_S010_UserCodeScan());
+        if (PackagingVars.context.getUser() == null) {
+            PackagingVars.mode2_context.setState(new Mode2_S010_UserCodeScan());
         }
 
     }//GEN-LAST:event_formWindowClosing

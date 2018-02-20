@@ -5,9 +5,10 @@
  */
 package gui.config;
 
-import __run__.Global;
-import entity.HisLogin;
+import __main__.GlobalMethods;
+import __main__.GlobalVars;
 import entity.ManufactureUsers;
+import gui.packaging.PackagingVars;
 import gui.packaging.mode2.state.Mode2_S010_UserCodeScan;
 import helper.ComboItem;
 import helper.HQLHelper;
@@ -23,6 +24,8 @@ import java.util.logging.Logger;
 import javax.swing.JComboBox;
 import javax.swing.JOptionPane;
 import org.hibernate.Query;
+import ui.UILog;
+import ui.info.InfoMsg;
 
 /**
  *
@@ -51,8 +54,8 @@ public class CONFIG_UI0000_AUTH extends javax.swing.JDialog {
     }
 
     public final void initMenusList() {
-        for (int i = 0; i < Global.CONFIG_MENUS.size(); i++) {
-            menus_list.addItem(new ComboItem(Global.CONFIG_MENUS.get(i), Global.CONFIG_MENUS.get(i)));
+        for (int i = 0; i < GlobalVars.CONFIG_MENUS.size(); i++) {
+            menus_list.addItem(new ComboItem(GlobalVars.CONFIG_MENUS.get(i), GlobalVars.CONFIG_MENUS.get(i)));
         }
     }
 
@@ -74,30 +77,37 @@ public class CONFIG_UI0000_AUTH extends javax.swing.JDialog {
             Helper.startSession();
             ManufactureUsers user = (ManufactureUsers) result.get(0);
             user.setLoginTime(new Date());
-            Helper.context.setUser(user);
-            Helper.context.getUser().update(Helper.context.getUser());
+            PackagingVars.context.setUser(user);
+            PackagingVars.context.getUser().update(PackagingVars.context.getUser());
 
             try {
-                Global.APP_HOSTNAME = InetAddress.getLocalHost().getHostName();
+                GlobalVars.APP_HOSTNAME = InetAddress.getLocalHost().getHostName();
             } catch (UnknownHostException ex) {
                 Logger.getLogger(Mode2_S010_UserCodeScan.class.getName()).log(Level.SEVERE, null, ex);
             }
-            String str = String.format(Helper.INFO0001_LOGIN_SUCCESS,
-                    user.getFirstName() + " " + user.getLastName()
-                    + " / " + user.getLogin(), Global.APP_HOSTNAME,
-                    Helper.getStrTimeStamp() + " Module : Planner");
-            Helper.log.log(Level.INFO, str);
-
+//            String str = String.format(Helper.INFO0001_LOGIN_SUCCESS,
+//                    user.getFirstName() + " " + user.getLastName()
+//                    + " / " + user.getLogin(), GlobalVars.APP_HOSTNAME,
+//                    GlobalMethods.getStrTimeStamp() + " Module : Planner");
+//            Helper.log.log(Level.INFO, str);
+            
+            String str = String.format(InfoMsg.APP_INFO0003[1],
+                user.getFirstName() + " " + user.getLastName()
+                + " / " + user.getLogin(), GlobalVars.APP_HOSTNAME,
+                GlobalMethods.getStrTimeStamp() + " Module : Configuration : ");
+        
+            UILog.info(str); 
+            
             //Save authentication line in HisLogin table
-            HisLogin his_login = new HisLogin(
-                    user.getId(), user.getId(),
-                    String.format(Helper.INFO0001_LOGIN_SUCCESS,
-                            user.getFirstName() + " " + user.getLastName() + " / " + user.getLogin(),
-                            Global.APP_HOSTNAME, Helper.getStrTimeStamp()));
-            his_login.setCreateId(user.getId());
-            his_login.setWriteId(user.getId());
-            his_login.setMessage(str);
-            his_login.create(his_login);
+//            HisLogin his_login = new HisLogin(
+//                    user.getId(), user.getId(),
+//                    String.format(Helper.INFO0001_LOGIN_SUCCESS,
+//                            user.getFirstName() + " " + user.getLastName() + " / " + user.getLogin(),
+//                            GlobalVars.APP_HOSTNAME, GlobalMethods.getStrTimeStamp()));
+//            his_login.setCreateId(user.getId());
+//            his_login.setWriteId(user.getId());
+//            his_login.setMessage(str);
+//            his_login.create(his_login);
             return true;
         }
         return false;
@@ -106,15 +116,15 @@ public class CONFIG_UI0000_AUTH extends javax.swing.JDialog {
     public void select_menu() {
         System.out.println("Selected menu [" + menus_list.getSelectedItem() + "]");
         //"Unités de conditionnement standard (UCS)",
-        if (menus_list.getSelectedItem().toString().equals(Global.CONFIG_MENUS.get(1))) {//
+        if (menus_list.getSelectedItem().toString().equals(GlobalVars.CONFIG_MENUS.get(1))) {//
             new CONFIG_UI0001_UCS_CONFIG(parent, true).setVisible(true);
             this.dispose();
         } //"Masque code à barre",
-        else if (menus_list.getSelectedItem().toString().equals(Global.CONFIG_MENUS.get(2))) {
+        else if (menus_list.getSelectedItem().toString().equals(GlobalVars.CONFIG_MENUS.get(2))) {
             new CONFIG_UI0001_BARCODE_CONFIG().setVisible(true);
             this.dispose();
         } //"Utilisateurs"
-        else if (menus_list.getSelectedItem().toString().equals(Global.CONFIG_MENUS.get(3))) {
+        else if (menus_list.getSelectedItem().toString().equals(GlobalVars.CONFIG_MENUS.get(3))) {
             new CONFIG_UI0003_USERS(parent, true).setVisible(true);
             this.dispose();
 
@@ -127,7 +137,7 @@ public class CONFIG_UI0000_AUTH extends javax.swing.JDialog {
         //            planner.repaint();
         //            this.dispose();
         //        }
-        else if (menus_list.getSelectedItem().toString().equals(Global.CONFIG_MENUS.get(4))) { //packaging config
+        else if (menus_list.getSelectedItem().toString().equals(GlobalVars.CONFIG_MENUS.get(4))) { //packaging config
 //            this.parent.setState(JFrame.ICONIFIED);
             CONFIG_UI0002_PACKAGING_CONFIG packaging_config = new CONFIG_UI0002_PACKAGING_CONFIG(null, false);
             packaging_config.setVisible(true);

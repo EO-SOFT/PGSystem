@@ -5,65 +5,30 @@
  */
 package helper;
 
-import __run__.Global;
+import __main__.GlobalVars;
 import entity.ConfigProject;
 import entity.ConfigShift;
 import entity.ConfigUcs;
-import gui.packaging.Context;
-import gui.packaging.mode1.gui.PACKAGING_UI0001_Main_Mode1;
-import gui.packaging.mode2.gui.PACKAGING_UI0001_Main_Mode2;
 import java.awt.Dimension;
 import java.awt.Toolkit;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
 import java.net.InetAddress;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
-import java.text.DateFormat;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Arrays;
-import java.util.Calendar;
-import java.util.Date;
 import java.util.List;
-import java.util.Properties;
-import java.util.concurrent.TimeUnit;
 import java.util.logging.FileHandler;
-import java.util.logging.Level;
 import java.util.logging.Logger;
-import java.util.logging.SimpleFormatter;
 import javax.swing.JComboBox;
 import javax.swing.JDialog;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import static javax.swing.JOptionPane.ERROR_MESSAGE;
-import static javax.swing.JOptionPane.WARNING_MESSAGE;
 import org.hibernate.Session;
-import gui.packaging.Mode2_Context;
-import gui.packaging.Mode1_Context;
 
 /**
  *
  * @author user
  */
 public class Helper {
-
-    /**
-     * @deprecated 
-     */
-    public static String APPNAME = "PGSystem";
-    
-    /**
-     * @deprecated 
-     */
-    public static String VERSION = "1.17.12.21";
-
-    /**
-     * @deprecated 
-     */
-    public static String AUTHOR = "Created By EZZIOURI Oussama";
 
     private static Helper instance = null;
 
@@ -78,48 +43,23 @@ public class Helper {
         }
         return instance;
     }
-    
+
     public static Session openSession() {
-        
+
         try {
             System.out.println("return HibernateUtil.getInstance().getCurrentSession()");
             return HibernateUtil.getInstance().getCurrentSession();
         } catch (Exception e) {
             System.out.println("return HibernateUtil.getInstance().openSession();");
             return HibernateUtil.getInstance().openSession();
-        }               
+        }
     }
-    
+
     //State Design pattern
     /**
      *
      */
     public static Session sess = openSession();
-    
-    /**
-     *
-     */
-    public static Context context = new Context();
-    
-    /**
-     *
-     */
-    public static Mode2_Context mode2_context = new Mode2_Context();
-
-    /**
-     *
-     */
-    public static Mode1_Context mode1_context = new Mode1_Context();
-
-    /**
-     *
-     */
-    public static PACKAGING_UI0001_Main_Mode1 Packaging_Gui_Mode1 = null;
-
-    /**
-     *
-     */
-    public static PACKAGING_UI0001_Main_Mode2 Packaging_Gui_Mode2 = null;
 
     /**
      *
@@ -128,7 +68,7 @@ public class Helper {
     private static MessageDigest digester;
 
     /**
-     * @deprecated 
+     * @deprecated
      */
     public static String HOSTNAME;
 
@@ -139,10 +79,9 @@ public class Helper {
 
     //-------------------------- Properties       -----------------------------
     /**
-     * 
+     *
      */
     //public final static Properties PROP = new Properties();
-
     //-------------------------- LOG and Messages -----------------------------
     /**
      *
@@ -157,53 +96,53 @@ public class Helper {
     /**
      *
      */
-    public static String ERR0035_PART_NUMBER_FORMAT = "Invalid part number format [%s]!";
+    //public static String ERR0035_PART_NUMBER_FORMAT = "Invalid part number format [%s]!";
 
     /**
      *
      */
-    public static String ERR0034_NOT_EMPTY_LOAD_PLAN = "Plan de chargement contient des élements.\n Merci d'annuler les élements "
-            + "avant de supprimer le plan.";
+    //public static String ERR0034_NOT_EMPTY_LOAD_PLAN = "Plan de chargement contient des élements.\n Merci d'annuler les élements "
+    //        + "avant de supprimer le plan.";
 
     /**
      *
      */
-    public static String ERR0033_DESTINATIONS_NOT_EMPTY = "Une ou plusieurs élements associés à cette destination %s.\nSupprimer ses élements en premier.";
+    //public static String ERR0033_DESTINATIONS_NOT_EMPTY = "Une ou plusieurs élements associés à cette destination %s.\nSupprimer ses élements en premier.";
 
     /**
      *
      */
-    public static String ERR0032_INCORRECT_DATE_FORMAT = "Format de date incorrecte.";
+    //public static String ERR0032_INCORRECT_DATE_FORMAT = "Format de date incorrecte.";
 
     /**
      *
      */
-    public static String ERR0031_NO_FINAL_DESTINATION_SELECTED = "Veuillez selectionner au moins une destination finale.";
+    //public static String ERR0031_NO_FINAL_DESTINATION_SELECTED = "Veuillez selectionner au moins une destination finale.";
     /**
      *
      */
-    public static String ERR0030_NO_DELIVERY_DATE_SELECTED = "Aucune date dispatch n'est selectionnée.";
+    //public static String ERR0030_NO_DELIVERY_DATE_SELECTED = "Aucune date dispatch n'est selectionnée.";
 
     /**
      *
      */
-    public static String ERR0025_PACKTYPE_ALREADY_OPEN_IN_THE_SAME_WORKSTATION = "Palette/Box déjà ouvert(e) du type %s dans ce poste %s, pour la référence %s.\n"
-            + "Solution N° 1 : - Veuillez terminer le packaging de la palette %s avant d'ouvrir une nouvelle palette de type %s.\n"
-            + "Solution N° 2 : - Emballer cette référence dans un autre poste packaging.";
+    //public static String ERR0025_PACKTYPE_ALREADY_OPEN_IN_THE_SAME_WORKSTATION = "Palette/Box déjà ouvert(e) du type %s dans ce poste %s, pour la référence %s.\n"
+      //      + "Solution N° 1 : - Veuillez terminer le packaging de la palette %s avant d'ouvrir une nouvelle palette de type %s.\n"
+      //      + "Solution N° 2 : - Emballer cette référence dans un autre poste packaging.";
 
     /**
      *
      */
-    public static String ERR0030_PALLET_NOT_OPEN = "Palette %s n'est pas ouverte.\nMerci de scanner une palette ouverte ou ouvrir une nouvelle palette !";
+    //public static String ERR0030_PALLET_NOT_OPEN = "Palette %s n'est pas ouverte.\nMerci de scanner une palette ouverte ou ouvrir une nouvelle palette !";
 
     /**
      *
      */
-    public static String ERR0029_NO_DESTINATIONS_FOR_DISPATCH = "Aucune destination trouvé pour le dispatch. Merci de créer des destinations dans la table 'load_plan_destination'.";
+    //public static String ERR0029_NO_DESTINATIONS_FOR_DISPATCH = "Aucune destination trouvé pour le dispatch. Merci de créer des destinations dans la table 'load_plan_destination'.";
     /**
      *
      */
-    public static String ERR0028_EMPTY_LOAD_PLAN = "Aucune pile enregistrée pour cette destination %s.";
+    //public static String ERR0028_EMPTY_LOAD_PLAN = "Aucune pile enregistrée pour cette destination %s.";
     /**
      *
      */
@@ -215,7 +154,7 @@ public class Helper {
     /**
      *
      */
-    public static String ERR0025_WORKSTATION_PALLET = "Vous êtes dans le poste %s. Vous devez scanner le faisceau dans le poste %s !";
+    //public static String ERR0025_WORKSTATION_PALLET = "Vous êtes dans le poste %s. Vous devez scanner le faisceau dans le poste %s !";
 
     /**
      *
@@ -339,7 +278,7 @@ public class Helper {
     /**
      *
      */
-    public static String ERR0002_LOGIN_PASS_FAILED = "Login or password failed !";
+    //public static String ERR0002_LOGIN_PASS_FAILED = "Login or password failed !";
 
     /**
      *
@@ -351,81 +290,21 @@ public class Helper {
      */
     public static String ERR0000_DB_CONNECT_FAILED = "com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure";
 
-    /**
-     *
-     */
-    public static String INFO0001_LOGIN_SUCCESS = "User %s connected to host %s at %s.";
-
-    /**
-     *
-     */
-    public static String INFO0002_CREATE_SUCCESS = "Element #%d inserted in table %s .";
-
-    /**
-     *
-     */
-    public static String INFO0003_HP_FOUND = "Harness part [%s] found for project [%s].";
-
-    /**
-     *
-     */
-    public static String INFO0004_HP_COUNTER_FOUND = "Harness counter [%s] already scanned in pallet number [%s] !";
-
-    /**
-     *
-     */
-    public static String INFO0005_NEW_HP_COUNTER = "New Harness counter [%s].";
-
-    /**
-     *
-     */
-    public static String INFO0006_NEW_CONTAINER = "New container [%s].";
-
-    /**
-     *
-     */
-    public static String INFO0007_HP_CONTAINER_FOUND = "Container [%s] already scanned !";
-
-    /**
-     *
-     */
-    public static String INFO0008_CORRECT_PALLET_NUMBER = "Scanned Pallet number [%s] OK.";
-
-    /**
-     *
-     */
-    public static String INFO0009_OPEN_CONTAINER_FOUND = "Open Pallet found. Number [%s] OK.";
-
-    /**
-     *
-     */
-    public static String INFO0010_NEW_ENGINE_LABEL = "New label engine [%s]";
-
-    /**
-     *
-     */
-    public static String INFO0011_DUPLICAT_ENGINE_LABEL = "Duplicated engine label [%s]";
-
+    
     /**
      *
      */
     public static String INFO0012_LOGOUT_SUCCESS = "User %s disconnected from host %s at %s.";
-    
+
     public static String BOOK_WAREHOUSE_IN_PACK_FG = "BOOK PACKAGING RECIEVED FINISH GOODS";
 
     public static String BOOK_WAREHOUSE_OUT_PACK_FG = "BOOK PACKAGING SHIPPED FINISH GOODS";
-
-    
-
-    
 
     /**
      *
      */
     //public static Integer ENGINE_LABEL_TIMES = 2;
     //-------------------------- NEW PALLET MASK
-    
-
     /**
      *
      */
@@ -436,15 +315,12 @@ public class Helper {
      */
     public static String CLOSING_PALLET_PATTERN = "^[C]{1}[P]{1}\\d{9}";
 
-    
-
     //USER LEVELS
     /**
      *
      */
     //public static final Integer PROFIL_OPERATOR = 1000;
     //public static final Integer PROFIL_ADMIN = 9000;
-
     /**
      * true: Active le vérouillage pour une seule palette par part number
      *
@@ -456,7 +332,6 @@ public class Helper {
      *
      */
     //public static final boolean UNIQUE_PALLET_PER_PACK_TYPE = false;
-
     //SUPPLIER PART LENGTH
     //public static Integer SUPP_PART_LEN = 9;
     /**
@@ -469,6 +344,7 @@ public class Helper {
         }
         //if(!Helper.sess.isOpen())
         try {
+            //Helper.openSession();
             Helper.sess.beginTransaction();
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, Helper.ERR0000_DB_CONNECT_FAILED, "Database error !", ERROR_MESSAGE);
@@ -515,218 +391,6 @@ public class Helper {
         return hexString.toString();
     }
     //-------------------------- END MD5 BLOC ---------------------------------
-
-    //-------------------------- Image Path ------------------------------
-    /**
-     *
-     * @param path
-     * @return
-     */
-    @SuppressWarnings("CallToThreadDumpStack")
-    public static String InitDailyLogFile(String path) {
-        // if the main log directory does not exist, create it        
-        File log_dir = new File(path);
-        if (!log_dir.exists()) {
-            log_dir.mkdir();
-        }
-
-        Date now = new Date();
-        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy_MM_dd");
-        String today = dateFormat.format(now);
-        File today_log_dir = new File(path + today);
-
-        // if the today log directory does not exist, create it
-        if (!today_log_dir.exists()) {
-            today_log_dir.mkdir();
-        }
-        try {
-            String log_path = today_log_dir + File.separator + today + ".log";
-            File file = new File(log_path);
-
-            if (file.createNewFile()) {
-                TMP_MSG += "File " + file.getName() + " created !";
-            } else {
-                TMP_MSG += "File " + file.getName() + " already exists.";
-            }
-            //Intilize the logFileHandler, formating etc...
-
-            logFileHandler = new FileHandler(log_path, true);
-            logFileHandler.setFormatter(new SimpleFormatter());
-            //Add the file handler to log object.            
-            log = Logger.getLogger(log_path);
-            log.addHandler(logFileHandler);
-            return TMP_MSG;
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return TMP_MSG;
-    }
-
-    /**
-     *
-     * @param print_dir_path
-     * @param palet_dir
-     * @param galia_dir
-     * @param picking_dir
-     * @param dispatch_dir
-     * @return
-     */
-    @SuppressWarnings("CallToThreadDumpStack")
-    public static String InitDailyDestPrintDir(String print_dir_path, String palet_dir, String galia_dir, String picking_dir, String dispatch_dir) {
-        // if the printing output printing
-        File print_dir = new File(print_dir_path);
-        if (!print_dir.exists()) {
-            print_dir.mkdir();
-        }
-
-        // if the today printing directory does not exist, create it
-        Date now = new Date();
-        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy_MM_dd");
-        String today = dateFormat.format(now);
-
-        File today_print_dir = new File(print_dir_path + today);
-        if (!today_print_dir.exists()) {
-            today_print_dir.mkdir();
-            TMP_MSG += "Print directory [" + today_print_dir.getPath() + "] created !\n";
-        } else {
-            TMP_MSG += "Print directory [" + today_print_dir.getPath() + "] already exist!\n";
-        }
-
-        //Create palet sub directory        
-        String palet_dir_path = today_print_dir.getPath() + palet_dir + File.separator;
-        File file1 = new File(palet_dir_path);
-        if (!file1.exists()) {
-            file1.mkdir();
-            TMP_MSG += "Print sub directory [" + file1.getPath() + "] created !\n";
-        } else {
-            TMP_MSG += "Print sub directory [" + file1.getPath() + "] already exist!\n";
-        }
-
-        //Create galia sub directory
-        String galia_dir_path = today_print_dir.getPath() + galia_dir + File.separator;
-        File file2 = new File(galia_dir_path);
-        if (!file2.exists()) {
-            file2.mkdir();
-            TMP_MSG += "Print sub directory [" + file2.getPath() + "] created !\n";
-        } else {
-            TMP_MSG += "Print sub directory [" + file2.getPath() + "] already exist!\n";
-        }
-
-        //Create galia sub directory
-        String picking_dir_path = today_print_dir.getPath() + picking_dir + File.separator;
-        File file3 = new File(picking_dir_path);
-        if (!file3.exists()) {
-            file3.mkdir();
-            TMP_MSG += "Print sub directory [" + file3.getPath() + "] created !\n";
-        } else {
-            TMP_MSG += "Print sub directory [" + file3.getPath() + "] already exist!\n";
-        }
-
-        //Create galia sub directory
-        String dispatch_dir_path = today_print_dir.getPath() + dispatch_dir + File.separator;
-        File file4 = new File(dispatch_dir_path);
-        if (!file4.exists()) {
-            file4.mkdir();
-            TMP_MSG += "Print sub directory [" + file4.getPath() + "] created !\n";
-        } else {
-            TMP_MSG += "Print sub directory [" + file4.getPath() + "] already exist!\n";
-        }
-
-        log.info(TMP_MSG);
-        return TMP_MSG;
-    } 
-
-    //----------------------- END LOG and Messages -----------------------------
-    //----------------------------- Date And Time ------------------------------
-    /**
-     *
-     * @return
-     */
-    public static String getStrTimeStamp() {
-        // Create an instance of SimpleDateFormat used for formatting 
-        // the string representation of date (month/day/year)
-        DateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-
-        // Get the date today using Calendar object.
-        Date today = Calendar.getInstance().getTime();
-        // Using DateFormat format method we can create a string 
-        // representation of a date with the defined format.
-        String reportDate = df.format(today);
-
-        return reportDate;
-    }
-
-    /**
-     *
-     * @param format : Patter of datetime example : yyyy-MM-dd HH:mm:ss
-     * @return
-     */
-    public static String getStrTimeStamp(String format) {
-        // Create an instance of SimpleDateFormat used for formatting 
-        // the string representation of date (month/day/year)
-        if (format == null) {
-            format = "yyyy-MM-dd HH:mm:ss";
-        }
-        DateFormat df = new SimpleDateFormat(format);
-
-        // Get the date today using Calendar object.
-        Date today = Calendar.getInstance().getTime();
-        // Using DateFormat format method we can create a string 
-        // representation of a date with the defined format.
-        String reportDate = df.format(today);
-
-        return reportDate;
-    }
-
-    /**
-     *
-     * @param format
-     * @return
-     */
-    public static Date getTimeStamp(String format) {
-        // Create an instance of SimpleDateFormat used for formatting 
-        // the string representation of date (month/day/year)
-        if (format == null) {
-            format = "yyyy-MM-dd HH:mm:ss";
-        }
-        DateFormat df = new SimpleDateFormat(format);
-
-        // Get the date today using Calendar object.
-        Date today = Calendar.getInstance().getTime();
-        String reportDate = df.format(today);
-        Date date = null;
-        try {
-            date = new SimpleDateFormat(format).parse(reportDate);
-        } catch (ParseException ex) {
-            Logger.getLogger(Helper.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        return date;
-    }
-
-    /**
-     *
-     * @param end
-     * @param start
-     * @return
-     */
-    public static long DiffInHours(Date end, Date start) {
-        int duration = (int) (end.getTime() - start.getTime());
-        long diffInHr = TimeUnit.MILLISECONDS.toHours(duration);
-        return diffInHr;
-    }
-
-    /**
-     *
-     * @param end
-     * @param start
-     * @return
-     */
-    public static long DiffInMinutes(Date end, Date start) {
-        int duration = (int) (end.getTime() - start.getTime());
-        long diffInMin = TimeUnit.MILLISECONDS.toMinutes(duration);
-        return diffInMin;
-    }
-    //-------------------------- End Date And Time -----------------------------
 
     //------------------------ Center JDialog in screen ------------------------
     /**
@@ -869,11 +533,11 @@ public class Helper {
     }
 
     public static void loadContainerStateInJbox(JComboBox jbox) {
-        jbox.addItem(new ComboItem(Global.PALLET_STORED, Global.PALLET_STORED));
-        jbox.addItem(new ComboItem(Global.PALLET_OPEN, Global.PALLET_OPEN));
-        jbox.addItem(new ComboItem(Global.PALLET_WAITING, Global.PALLET_WAITING));
-        jbox.addItem(new ComboItem(Global.PALLET_SHIPPED, Global.PALLET_SHIPPED));
-        jbox.addItem(new ComboItem(Global.PALLET_CLOSED, Global.PALLET_CLOSED));
+        jbox.addItem(new ComboItem(GlobalVars.PALLET_STORED, GlobalVars.PALLET_STORED));
+        jbox.addItem(new ComboItem(GlobalVars.PALLET_OPEN, GlobalVars.PALLET_OPEN));
+        jbox.addItem(new ComboItem(GlobalVars.PALLET_WAITING, GlobalVars.PALLET_WAITING));
+        jbox.addItem(new ComboItem(GlobalVars.PALLET_SHIPPED, GlobalVars.PALLET_SHIPPED));
+        jbox.addItem(new ComboItem(GlobalVars.PALLET_CLOSED, GlobalVars.PALLET_CLOSED));
     }
 
     public static void loadCustomersInJbox(JComboBox jbox) {

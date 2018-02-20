@@ -1,6 +1,8 @@
 package entity;
 // Generated 6 f�vr. 2016 21:43:55 by Hibernate Tools 3.6.0
 
+import __main__.GlobalMethods;
+import gui.packaging.PackagingVars;
 import helper.Helper;
 import helper.HQLHelper;
 import hibernate.DAO;
@@ -137,18 +139,18 @@ public class DropBaseContainer extends DAO implements java.io.Serializable {
          Set default values of this object 
          from the global mode2_context values
          */
-        this.startTime = this.createTime = this.dropTime = this.writeTime = Helper.getTimeStamp(null);
-        this.createId = this.writeId = Helper.context.getUser().getId();
-        this.user = Helper.context.getUser().getLogin();
-        this.dropUser = Helper.context.getUser().getFirstName() + " " + Helper.context.getUser().getLastName();
+        this.startTime = this.createTime = this.dropTime = this.writeTime = GlobalMethods.getTimeStamp(null);
+        this.createId = this.writeId = PackagingVars.context.getUser().getId();
+        this.user = PackagingVars.context.getUser().getLogin();
+        this.dropUser = PackagingVars.context.getUser().getFirstName() + " " + PackagingVars.context.getUser().getLastName();
         return this;
     }
 
     public DropBaseContainer(String palletNumber, String harnessPart, String harnessIndex, String supplierPartNumber, int qtyExpected, int qtyRead, String state, String state_code, String packType, String harnessType, String dropFeedback, double stdTime) {
-        this.startTime = this.createTime = this.writeTime = Helper.getTimeStamp(null);
-        this.createId = this.writeId = Helper.context.getUser().getId();
-        this.user = Helper.context.getUser().getLogin();
-        this.dropUser =Helper.context.getUser().getFirstName() + " " + Helper.context.getUser().getLastName();
+        this.startTime = this.createTime = this.writeTime = GlobalMethods.getTimeStamp(null);
+        this.createId = this.writeId = PackagingVars.context.getUser().getId();
+        this.user = PackagingVars.context.getUser().getLogin();
+        this.dropUser =PackagingVars.context.getUser().getFirstName() + " " + PackagingVars.context.getUser().getLastName();
         this.palletNumber = palletNumber;
         this.harnessPart = harnessPart;
         this.harnessIndex = harnessIndex;
@@ -164,10 +166,10 @@ public class DropBaseContainer extends DAO implements java.io.Serializable {
     }
 
     public DropBaseContainer(Date createTime, Date writeTime, Date dropTime, int createId, int writeId, String user, Date startTime, String palletNumber, String harnessPart, String harnessIndex, String supplierPartNumber, int qtyExpected, int qtyRead, String packType, String harnessType, String dropFeedback, double stdTime) {
-        this.dropTime = this.writeTime = this.startTime = this.createTime = Helper.getTimeStamp(null);        
-        this.createId =this.writeId= Helper.context.getUser().getId();
-        this.dropUser =Helper.context.getUser().getFirstName() + " " + Helper.context.getUser().getLastName();
-        this.user = Helper.context.getUser().getFirstName() + " " + Helper.context.getUser().getLastName() + " / " + Helper.context.getUser().getLogin();
+        this.dropTime = this.writeTime = this.startTime = this.createTime = GlobalMethods.getTimeStamp(null);        
+        this.createId =this.writeId= PackagingVars.context.getUser().getId();
+        this.dropUser =PackagingVars.context.getUser().getFirstName() + " " + PackagingVars.context.getUser().getLastName();
+        this.user = PackagingVars.context.getUser().getFirstName() + " " + PackagingVars.context.getUser().getLastName() + " / " + PackagingVars.context.getUser().getLogin();
         this.palletNumber = palletNumber;
         this.harnessPart = harnessPart;
         this.harnessIndex = harnessIndex;

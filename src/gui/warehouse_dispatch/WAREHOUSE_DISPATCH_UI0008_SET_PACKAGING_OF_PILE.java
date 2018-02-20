@@ -8,20 +8,17 @@ package gui.warehouse_dispatch;
 import entity.LoadPlan;
 import entity.LoadPlanLinePackaging;
 import entity.PackagingItems;
-import entity.PackagingStockMovement;
 import gui.warehouse_dispatch.state.WarehouseHelper;
 import helper.ComboItem;
 import helper.HQLHelper;
 import helper.Helper;
 import helper.UIHelper;
-import java.awt.Component;
 import static java.awt.Event.DELETE;
 import java.awt.event.ActionEvent;
 import java.awt.event.KeyEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.util.Arrays;
-import java.util.Date;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Vector;
@@ -37,6 +34,8 @@ import javax.swing.table.DefaultTableModel;
 import org.hibernate.Query;
 import org.hibernate.SQLQuery;
 import org.hibernate.type.StandardBasicTypes;
+import ui.UILog;
+import ui.error.ErrorMsg;
 
 /**
  *
@@ -132,7 +131,8 @@ public class WAREHOUSE_DISPATCH_UI0008_SET_PACKAGING_OF_PILE extends javax.swing
             refresh();
             return true;
         } else {
-            JOptionPane.showMessageDialog(null, String.format(Helper.ERR0028_EMPTY_LOAD_PLAN, this.destinationWh), "User error !", ERROR_MESSAGE);
+            UILog.info(ErrorMsg.APP_ERR0029[0], this.destinationWh);
+            UILog.infoDialog(null, ErrorMsg.APP_ERR0025, this.destinationWh);
             this.dispose();
             return false;
         }

@@ -6,6 +6,7 @@
 package gui.config;
 
 import entity.ManufactureUsers;
+import gui.packaging.PackagingVars;
 import helper.HQLHelper;
 import helper.Helper;
 import java.awt.event.MouseAdapter;
@@ -585,8 +586,8 @@ public class CONFIG_UI0003_USERS extends javax.swing.JDialog {
                     mu.setAccessLevel(Integer.valueOf(level_combobox.getSelectedItem().toString()));
                     mu.setLogin(login_txtbox.getText());
                     mu.setPassword(pwd_txtbox.getText());
-                    mu.setCreateId(Helper.context.getUser().getId());
-                    mu.setWriteId(Helper.context.getUser().getId());
+                    mu.setCreateId(PackagingVars.context.getUser().getId());
+                    mu.setWriteId(PackagingVars.context.getUser().getId());
                     mu.setCreateTime(new Date());
                     mu.setWriteTime(new Date());
                     mu.create(mu);
@@ -603,7 +604,7 @@ public class CONFIG_UI0003_USERS extends javax.swing.JDialog {
                 aux.setAccessLevel(Integer.valueOf(level_combobox.getSelectedItem().toString()));
                 aux.setLogin(login_txtbox.getText());
                 aux.setPassword(pwd_txtbox.getText());
-                aux.setWriteId(Helper.context.getUser().getId());
+                aux.setWriteId(PackagingVars.context.getUser().getId());
                 aux.setWriteTime(new Date());
                 aux.update(aux);
                 clearFields();

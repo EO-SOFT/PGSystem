@@ -1,7 +1,7 @@
 package entity;
 // Generated 6 f�vr. 2016 21:43:55 by Hibernate Tools 3.6.0
 
-import __run__.Global;
+import __main__.GlobalVars;
 import helper.HQLHelper;
 import helper.Helper;
 import hibernate.DAO;
@@ -219,7 +219,7 @@ public class PackagingStockMovement extends DAO implements Serializable {
                         + " FROM packaging_stock_movement psv, packaging_items pi"
                         + " WHERE psv.pack_item = '" + configItem.getPackItem() + "'"
                         + " AND psv.pack_item = pi.pack_item "
-                        + " AND psv.warehouse = '" + Global.APP_PROP.getProperty("WH_PACKAGING") + "' "
+                        + " AND psv.warehouse = '" + GlobalVars.APP_PROP.getProperty("WH_PACKAGING") + "' "
                         + " GROUP BY psv.pack_item, pi.alert_qty";
 
                 SQLQuery sqlQuery = Helper.sess.createSQLQuery(check_stock_item);
@@ -229,9 +229,9 @@ public class PackagingStockMovement extends DAO implements Serializable {
                     System.out.println("Seuil d'alerte " + Float.parseFloat(stockMvm[2].toString()));
                     //If Available quantity is <) Alerte level
                     if (Float.parseFloat(stockMvm[1].toString()) <= Float.parseFloat(stockMvm[2].toString())
-                            && "1".equals(Global.APP_PROP.getProperty("PACKAGING_ALERT_NOTIFICATOR").toString())) {
+                            && "1".equals(GlobalVars.APP_PROP.getProperty("PACKAGING_ALERT_NOTIFICATOR").toString())) {
 
-                        //String[] mailAddressTo = Global.APP_PROP.getProperty("PACKAGING_ALERT_EMAILS").toString().split("#");
+                        //String[] mailAddressTo = GlobalVars.APP_PROP.getProperty("PACKAGING_ALERT_EMAILS").toString().split("#");
                         //InternetAddress[] mailAddress_TO = new InternetAddress[mailAddressTo.length];
                         System.out.println("Seuil d'alerte atteint pour l'élement " + stockMvm[0].toString() + " ! ");
                         System.out.println("Stock " + stockMvm[0].toString() + " = " + stockMvm[1].toString());

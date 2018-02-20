@@ -5,7 +5,7 @@
  */
 package gui.packaging.reports;
 
-import __run__.Global;
+import __main__.GlobalVars;
 import entity.ConfigSegment;
 import entity.ConfigWorkplace;
 import helper.ComboItem;
@@ -126,8 +126,8 @@ public class PACKAGING_UI0011_ProdStatistics extends javax.swing.JDialog {
 
     private void initTimeSpinners() {
         
-        String startTime = Global.APP_PROP.getProperty("START_TIME");
-        String endTime = Global.APP_PROP.getProperty("END_TIME");
+        String startTime = GlobalVars.APP_PROP.getProperty("START_TIME");
+        String endTime = GlobalVars.APP_PROP.getProperty("END_TIME");
         DateFormat timeFormat = new SimpleDateFormat("HH:mm");
 
         //################# Start Time Spinner ####################
@@ -232,8 +232,8 @@ public class PACKAGING_UI0011_ProdStatistics extends javax.swing.JDialog {
             declared_result_table_data.add(oneRow);
         }
         declared_result_table.setModel(new DefaultTableModel(declared_result_table_data, declared_result_table_header));
-        declared_result_table.setFont(new Font(String.valueOf(Global.APP_PROP.getProperty("JTABLE_FONT")), Font.BOLD, Integer.valueOf(Global.APP_PROP.getProperty("JTABLE_FONTSIZE"))));
-        declared_result_table.setRowHeight(Integer.valueOf(Global.APP_PROP.getProperty("JTABLE_ROW_HEIGHT")));
+        declared_result_table.setFont(new Font(String.valueOf(GlobalVars.APP_PROP.getProperty("JTABLE_FONT")), Font.BOLD, Integer.valueOf(GlobalVars.APP_PROP.getProperty("JTABLE_FONTSIZE"))));
+        declared_result_table.setRowHeight(Integer.valueOf(GlobalVars.APP_PROP.getProperty("JTABLE_ROW_HEIGHT")));
 
         //Set declared qty labels values
         this.total_declared_lbl.setText(String.valueOf(total_produced));
@@ -266,8 +266,8 @@ public class PACKAGING_UI0011_ProdStatistics extends javax.swing.JDialog {
             dropped_result_table_data.add(oneRow);
         }
         dropped_result_table.setModel(new DefaultTableModel(dropped_result_table_data, dropped_result_table_header));
-        dropped_result_table.setFont(new Font(String.valueOf(Global.APP_PROP.getProperty("JTABLE_FONT")), Font.BOLD, Integer.valueOf(Global.APP_PROP.getProperty("JTABLE_FONTSIZE"))));
-        dropped_result_table.setRowHeight(Integer.valueOf(Global.APP_PROP.getProperty("JTABLE_ROW_HEIGHT")));
+        dropped_result_table.setFont(new Font(String.valueOf(GlobalVars.APP_PROP.getProperty("JTABLE_FONT")), Font.BOLD, Integer.valueOf(GlobalVars.APP_PROP.getProperty("JTABLE_FONTSIZE"))));
+        dropped_result_table.setRowHeight(Integer.valueOf(GlobalVars.APP_PROP.getProperty("JTABLE_ROW_HEIGHT")));
 
         this.total_dropped_lbl.setText(String.valueOf(total));
         this.total_dropped_hours_lbl.setText(String.format("%.2f", total_dropped_hours));

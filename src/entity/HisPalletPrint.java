@@ -1,7 +1,8 @@
 package entity;
 // Generated 6 f�vr. 2016 21:43:55 by Hibernate Tools 3.6.0
 
-import __run__.Global;
+import __main__.GlobalMethods;
+import __main__.GlobalVars;
 import helper.Helper;
 import helper.HQLHelper;
 import hibernate.DAO;
@@ -76,7 +77,7 @@ public class HisPalletPrint extends DAO implements java.io.Serializable {
 
     public HisPalletPrint(ManufactureUsers user, String harnessPart, String harnessIndex, String supplier_part_number, int packSize,
             String packType, String userName, String reprint, String printState) {
-        this.createTime = this.writeTime = Helper.getTimeStamp(null);
+        this.createTime = this.writeTime = GlobalMethods.getTimeStamp(null);
         this.createId = this.writeId = user.getId();
         this.harnessPart = harnessPart;
         this.harnessIndex = harnessIndex;
@@ -238,7 +239,7 @@ public class HisPalletPrint extends DAO implements java.io.Serializable {
         Helper.sess.beginTransaction();
         Helper.sess.createQuery(HQLHelper.SET_OPEN_SHEET_REPRINT)
                 .setParameter("state", state)
-                .setParameter("reprint", Global.PALLET_PRINT_REPRINT)
+                .setParameter("reprint", GlobalVars.PALLET_PRINT_REPRINT)
                 .setParameter("writeTime", new Date())
                 .setParameter("writeId", writeId)
                 .setParameter("id", id)

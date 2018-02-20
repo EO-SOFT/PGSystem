@@ -5,10 +5,11 @@
  */
 package gui.planner;
 
-import __run__.Global;
+import __main__.GlobalMethods;
+import __main__.GlobalVars;
 import gui.packaging.mode1.gui.PACKAGING_UI0001_Main_Mode1;
-import entity.HisLogin;
 import entity.ManufactureUsers;
+import gui.packaging.PackagingVars;
 import helper.HQLHelper;
 import helper.Helper;
 import java.awt.Frame;
@@ -23,6 +24,8 @@ import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import org.hibernate.Query;
 import gui.packaging.mode2.state.Mode2_S010_UserCodeScan;
+import ui.UILog;
+import ui.info.InfoMsg;
 
 /**
  *
@@ -158,30 +161,43 @@ public class PLANNER_UI0002_AdminPassword extends javax.swing.JDialog {
             Helper.startSession();
             ManufactureUsers user = (ManufactureUsers) result.get(0);
             user.setLoginTime(new Date());
-            Helper.context.setUser(user);
-            Helper.context.getUser().update(Helper.context.getUser());
+            PackagingVars.context.setUser(user);
+            PackagingVars.context.getUser().update(PackagingVars.context.getUser());
 
             try {
-                Global.APP_HOSTNAME = InetAddress.getLocalHost().getHostName();
+                GlobalVars.APP_HOSTNAME = InetAddress.getLocalHost().getHostName();
             } catch (UnknownHostException ex) {
                 Logger.getLogger(Mode2_S010_UserCodeScan.class.getName()).log(Level.SEVERE, null, ex);
             }
-            String str = String.format(Helper.INFO0001_LOGIN_SUCCESS,
-                    user.getFirstName() + " " + user.getLastName()
-                    + " / " + user.getLogin(), Global.APP_HOSTNAME,
-                    Helper.getStrTimeStamp() + " Module : Planner");
-            Helper.log.log(Level.INFO, str);
+            /**
+             * @deprecated
+             */
+//            String str = String.format(Helper.INFO0001_LOGIN_SUCCESS,
+//                    user.getFirstName() + " " + user.getLastName()
+//                    + " / " + user.getLogin(), GlobalVars.APP_HOSTNAME,
+//                    GlobalMethods.getStrTimeStamp() + " Module : Planner");
+//            Helper.log.log(Level.INFO, str);
 
+            String str = String.format(InfoMsg.APP_INFO0003[1],
+                    user.getFirstName() + " " + user.getLastName()
+                    + " / " + user.getLogin(), GlobalVars.APP_HOSTNAME,
+                    GlobalMethods.getStrTimeStamp() + " Module : Planner");
+
+            UILog.info(str);
+
+            /**
+             * @deprecated
+             */
             //Save authentication line in HisLogin table
-            HisLogin his_login = new HisLogin(
-                    user.getId(), user.getId(),
-                    String.format(Helper.INFO0001_LOGIN_SUCCESS,
-                            user.getFirstName() + " " + user.getLastName() + " / " + user.getLogin(),
-                            Global.APP_HOSTNAME, Helper.getStrTimeStamp()));
-            his_login.setCreateId(user.getId());
-            his_login.setWriteId(user.getId());
-            his_login.setMessage(str);
-            his_login.create(his_login);
+//            HisLogin his_login = new HisLogin(
+//                    user.getId(), user.getId(),
+//                    String.format(Helper.INFO0001_LOGIN_SUCCESS,
+//                            user.getFirstName() + " " + user.getLastName() + " / " + user.getLogin(),
+//                            GlobalVars.APP_HOSTNAME, GlobalMethods.getStrTimeStamp()));
+//            his_login.setCreateId(user.getId());
+//            his_login.setWriteId(user.getId());
+//            his_login.setMessage(str);
+//            his_login.create(his_login);
             return true;
         }
         return false;
@@ -211,14 +227,14 @@ public class PLANNER_UI0002_AdminPassword extends javax.swing.JDialog {
                 JOptionPane.showMessageDialog(null, Helper.ERR0001_LOGIN_FAILED, "Login Error", JOptionPane.ERROR_MESSAGE);
                 admin_password_txtbox.setText("");
             }
-        } else if (evt.getKeyCode() == KeyEvent.VK_ESCAPE) {            
+        } else if (evt.getKeyCode() == KeyEvent.VK_ESCAPE) {
             this.dispose();
         }
     }//GEN-LAST:event_admin_password_txtboxKeyPressed
 
     private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
-        if (Helper.context.getUser() == null) {
-            Helper.mode2_context.setState(new Mode2_S010_UserCodeScan());
+        if (PackagingVars.context.getUser() == null) {
+            PackagingVars.mode2_context.setState(new Mode2_S010_UserCodeScan());
         }
 
     }//GEN-LAST:event_formWindowClosing
@@ -226,7 +242,7 @@ public class PLANNER_UI0002_AdminPassword extends javax.swing.JDialog {
     private void admin_login_txtboxKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_admin_login_txtboxKeyPressed
         if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
             admin_password_txtbox.requestFocus();
-        } else if (evt.getKeyCode() == KeyEvent.VK_ESCAPE) {            
+        } else if (evt.getKeyCode() == KeyEvent.VK_ESCAPE) {
             this.dispose();
         }
     }//GEN-LAST:event_admin_login_txtboxKeyPressed

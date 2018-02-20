@@ -6,7 +6,6 @@
 package hibernate;
 
 import helper.Helper;
-import java.io.Serializable;
 import org.hibernate.HibernateException;
 
 /**
@@ -18,11 +17,11 @@ public class DAO {
     public int create(Object obj) {
         
         try {
-            Helper.sess.flush();
-            Helper.sess.clear();
             Helper.sess.beginTransaction();
             int id = (int) Helper.sess.save(obj);
             Helper.sess.getTransaction().commit();
+            //Helper.sess.flush();
+            //Helper.sess.clear();
             return id;
         } catch (HibernateException e) {
             if (Helper.sess.getTransaction() != null && Helper.sess.getTransaction().isActive()) {
@@ -43,13 +42,13 @@ public class DAO {
 
     public void update(Object obj) {        
         try {
-            Helper.sess.flush();
-            Helper.sess.clear();
+            
             Helper.sess.beginTransaction();
             Helper.sess.update(obj);
             
             Helper.sess.getTransaction().commit();
-            
+            Helper.sess.flush();
+            Helper.sess.clear();
         } catch (HibernateException e) {
             if (Helper.sess.getTransaction() != null && Helper.sess.getTransaction().isActive()) {
                 try {
@@ -68,11 +67,11 @@ public class DAO {
 
     public void delete(Object obj) {        
         try {
-            Helper.sess.flush();
-            Helper.sess.clear();
             Helper.sess.beginTransaction();
             Helper.sess.delete(obj);
-            Helper.sess.getTransaction().commit();            
+            Helper.sess.getTransaction().commit();  
+            Helper.sess.flush();
+            Helper.sess.clear();
         } catch (HibernateException e) {
             if (Helper.sess.getTransaction() != null && Helper.sess.getTransaction().isActive()) {
                 try {

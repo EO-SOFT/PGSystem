@@ -5,7 +5,9 @@
  */
 package gui.packaging.mode2.state;
 
-import __run__.Global;
+import __main__.GlobalMethods;
+import __main__.GlobalVars;
+import com.itextpdf.text.DocumentException;
 import gui.packaging.Mode2_Context;
 import helper.Helper;
 import helper.PrinterHelper;
@@ -14,11 +16,13 @@ import entity.BaseContainerTmp;
 import entity.BaseHarnessAdditionalBarecode;
 import entity.BaseHarness;
 import gui.packaging.mode2.gui.PACKAGING_UI9000_ChoosePackType_Mode2;
-import helper.HQLHelper;
 import javax.swing.ImageIcon;
-import javax.swing.JOptionPane;
 import javax.swing.JTextField;
+import gui.packaging.PackagingVars;
+import java.io.IOException;
 import org.hibernate.Query;
+import ui.UILog;
+import ui.error.ErrorMsg;
 
 /**
  *
@@ -26,94 +30,61 @@ import org.hibernate.Query;
  */
 public class Mode2_S031_PalletChoice implements Mode2_State {
 
-    private ImageIcon imgIcon = new ImageIcon(Global.APP_PROP.getProperty("IMG_PATH") + "S040_PaletChoice.jpg");
+    private ImageIcon imgIcon = new ImageIcon(GlobalVars.APP_PROP.getProperty("IMG_PATH") + "S040_PaletChoice.jpg");
 
     public Mode2_S031_PalletChoice() {
-        Helper.Packaging_Gui_Mode2.setIconLabel(this.imgIcon);
+        PackagingVars.Packaging_Gui_Mode2.setIconLabel(this.imgIcon);
         //Reload container table content
-        Helper.Packaging_Gui_Mode2.reloadDataTable();
+        PackagingVars.Packaging_Gui_Mode2.reloadDataTable();
     }
 
     public void doAction(Mode2_Context context) {
-        JTextField scan_txtbox = Helper.Packaging_Gui_Mode2.getScanTxt();
+        JTextField scan_txtbox = PackagingVars.Packaging_Gui_Mode2.getScanTxt();
         String barcode = scan_txtbox.getText().trim();
+        System.out.println("GlobalVars.APP_HOSTNAME " + GlobalVars.APP_HOSTNAME);
 
         //Textbox is not empty
         if (!barcode.isEmpty()) {
             BaseContainer bc = new BaseContainer().getBaseContainer(barcode);
-
             //######################### OPEN NEW PALLET ########################
-            Helper.log.info("Is it a new pallet ?");
-            if (barcode.equals(Global.OPEN_PALLET_KEYWORD)) {//NEWP barcode
-                Helper.log.info(" [Yes]");
-
-                //Vide le scan box
-                this.clearScanBox(scan_txtbox);
-                //Afficher le popup du choix du type contenaire du harness_part
-                if (Helper.mode2_context.getBaseContainerTmp().getHarnessPart().startsWith(Global.HARN_PART_PREFIX)) {
-                    new PACKAGING_UI9000_ChoosePackType_Mode2(null, true, context.getBaseContainerTmp().getHarnessPart().substring(1));
-                } else {
-                    new PACKAGING_UI9000_ChoosePackType_Mode2(null, true, context.getBaseContainerTmp().getHarnessPart());
-                }
-
+            //Is it a new pallet ?
+            if (barcode.equals(GlobalVars.OPEN_PALLET_KEYWORD)) {//NEWP barcode
+                choosePack(scan_txtbox, context);
             } //####################################################
-            else if (!bc.getPackWorkstation().equals(Global.APP_HOSTNAME)) {
-                Helper.log.warning(String.format(Helper.ERR0025_WORKSTATION_PALLET, Global.APP_HOSTNAME, bc.getPackWorkstation()));
-                JOptionPane.showMessageDialog(null, String.format(Helper.ERR0025_WORKSTATION_PALLET, Global.APP_HOSTNAME, bc.getPackWorkstation()), "Invalid Workstation", JOptionPane.ERROR_MESSAGE);
+            else if (bc != null && !bc.getPackWorkstation().equals(GlobalVars.APP_HOSTNAME)) {
+
+                UILog.severe(ErrorMsg.APP_ERR0014[0], bc.getPackWorkstation(), GlobalVars.APP_HOSTNAME, bc.getPackWorkstation());
+                UILog.severeDialog(null, ErrorMsg.APP_ERR0014, bc.getPackWorkstation(), GlobalVars.APP_HOSTNAME, bc.getPackWorkstation());
+                PackagingVars.Packaging_Gui_Mode2.getFeedbackTextarea().setText(UILog.severe(ErrorMsg.APP_ERR0014[0], bc.getPackWorkstation(), GlobalVars.APP_HOSTNAME, bc.getPackWorkstation()));
+
             } //# 1- If container exist 
             //# 2- Mode2_State is Open
             //# 3- Max Quantity not reached
             //# 4- Container Harness Part = Mode2_Context Harness Part  
             //# 5- Container Harness Type = Mode2_Context Harness Type
             else if (bc != null
-                    && bc.getContainerState().equals(Global.PALLET_OPEN)
+                    && bc.getContainerState().equals(GlobalVars.PALLET_OPEN)
                     && bc.getQtyRead() < bc.getQtyExpected()
-                    && (bc.getHarnessPart().equals(Helper.mode2_context.getBaseContainerTmp().getHarnessPart().substring(1))
-                    || bc.getHarnessPart().equals(Helper.mode2_context.getBaseContainerTmp().getHarnessPart()))
-                    && bc.getHarnessType().equals(Helper.mode2_context.getBaseContainerTmp().getHarnessType())) {
-
-                Helper.log.info(" [No]");
-                Helper.log.info("Pallet values ");
-                Helper.log.info(String.format("State           :   [%s]", bc.getContainerState().equals(Global.PALLET_OPEN)));
-                Helper.log.info(String.format("Qty Expected    :   [%s]", bc.getQtyExpected()));
-                Helper.log.info(String.format("Qty Read        :   [%s]", bc.getQtyRead()));
-                Helper.log.info(String.format("Std Time        :   [%s]", bc.getStdTime()));
-                Helper.log.info(String.format("Harness Part [%s] = Context Harness Part [%s]",
-                        bc.getHarnessPart(),
-                        Helper.mode2_context.getBaseContainerTmp().getHarnessPart().substring(1)));
-                Helper.log.info(String.format("Harness Type [%s] = Context Harness Type [%s]",
-                        bc.getHarnessType(), Helper.mode2_context.getBaseContainerTmp().getHarnessType()));
+                    && (bc.getHarnessPart().equals(PackagingVars.mode2_context.getBaseContainerTmp().getHarnessPart().substring(1))
+                    || bc.getHarnessPart().equals(PackagingVars.mode2_context.getBaseContainerTmp().getHarnessPart()))
+                    && bc.getHarnessType().equals(PackagingVars.mode2_context.getBaseContainerTmp().getHarnessType())) {
 
                 Helper.sess.beginTransaction();
                 Helper.sess.persist(bc);
-                bc.setWriteId(Helper.context.getUser().getId());
-                bc.setFifoTime(Helper.getTimeStamp(null));
+                bc.setWriteId(PackagingVars.context.getUser().getId());
+                bc.setFifoTime(GlobalMethods.getTimeStamp(null));
                 bc.setHarnessType(context.getBaseContainerTmp().getHarnessType());
 
                 //#################### SET HARNESS DATA  #######################                                
                 //- Set harness data from current mode2_context.                
                 BaseHarness bh = new BaseHarness().setDefautlVals();
-                bh.setHarnessPart(context.getBaseContainerTmp().getHarnessPart());
-                bh.setCounter(context.getBaseContainerTmp().getHernessCounter());
-                bh.setPalletNumber(barcode);
-                bh.setHarnessType(context.getBaseContainerTmp().getHarnessType());
-                bh.setStdTime(bc.getStdTime());
-                bh.setPackWorkstation(Global.APP_HOSTNAME);
-                bh.setSegment(bc.getSegment());
-                bh.setWorkplace(bc.getWorkplace());
-                bh.setContainer(bc);
+                bh = saveBaseHarness(bc, bh, barcode, context);
                 //##############################################################
 
                 //############### SET & SAVE ALL ENGINE LABELS DATA #################     
                 //Si ce part number contient des code à barre pour sachet
-                if (Helper.mode2_context.getBaseHarnessAdditionalBarecodeTmp().getLabelCode().length != 0) {
-                    for (String labelCode : Helper.mode2_context.getBaseHarnessAdditionalBarecodeTmp().getLabelCode()) {
-                        BaseHarnessAdditionalBarecode bel = new BaseHarnessAdditionalBarecode();
-                        bel.setDefautlVals();
-                        bel.setLabelCode(labelCode);
-                        bel.setHarness(bh);
-                        bel.create(bel);
-                    }
+                if (PackagingVars.mode2_context.getBaseHarnessAdditionalBarecodeTmp().getLabelCode().length != 0) {
+                    savePlaticBagCodes(bh, PackagingVars.mode2_context.getBaseHarnessAdditionalBarecodeTmp().getLabelCode());
                 }
                 //##############################################################
 
@@ -123,23 +94,13 @@ public class Mode2_S031_PalletChoice implements Mode2_State {
 
                 int newQty = bc.getQtyRead() + 1;
                 //Incrémenter la taille du contenaire                
-                Query query = Helper.sess.createQuery(HQLHelper.SET_CONTAINER_QTY_READ);
-                query.setParameter("qtyRead", newQty);
-                query.setParameter("id", bc.getId());
-                query.executeUpdate();
-
-                //bc.update(bc); 
+                bc.setQtyRead(bc.getQtyRead() + 1);
+                bc.update(bc);
                 clearScanBox(scan_txtbox);
-                //##############################################################
 
-                //####### CHECK IF THE HARNESS EXISTS IN THE DROP TABLE ########
-                //Yes                
-                System.out.println(String.format("Harness %s to be removed from drop table ", context.getBaseContainerTmp().getHernessCounter()));
-                query = Helper.sess.createQuery("DELETE DropBaseHarness WHERE counter = :COUNTER");
-                query.setParameter("COUNTER", bh.getCounter());
+                UILog.info("Deletion  counters result %d ", deletePieceFromDropTable(bh));
 
-                int result = query.executeUpdate();
-                System.out.println("Deletion result %s " + result);
+                bh.create(bh);
                 //##############################################################
 
                 //- Set harness data from drop table 
@@ -150,25 +111,22 @@ public class Mode2_S031_PalletChoice implements Mode2_State {
                 //############## Check if pallet should be closed ##############
                 //############## UCS Contains just 1 harness ###################
                 if (bc.getQtyExpected() == newQty || bc.getQtyExpected() == 1) {
-                    Helper.log.info(String.format("Quantité terminée %s", bc.toString()));
-
-                    PrinterHelper.saveAndPrintClosingSheet(bc, false);
+                    UILog.info("Quantité terminée %s", bc.toString());
+                    try {
+                        PrinterHelper.saveAndPrintClosingSheet(PackagingVars.mode2_context, bc, false);
+                    } catch (IOException ex) {
+                        UILog.severe(ex.toString());
+                    } catch (DocumentException ex) {
+                        UILog.severe(ex.toString());
+                    }
                     //Helper.startSession();
-                    bc.setContainerState(Global.PALLET_WAITING);
-                    bc.setContainerStateCode(Global.PALLET_WAITING_CODE);
+                    bc.setContainerState(GlobalVars.PALLET_WAITING);
+                    bc.setContainerStateCode(GlobalVars.PALLET_WAITING_CODE);
                     bc.update(bc);
-
-                    //Incrémenter la taille du contenaire                
-                    query = Helper.sess.createQuery(HQLHelper.SET_CONTAINER_QTY_READ);
-                    query.setParameter("qtyRead", newQty);
-                    query.setParameter("id", bc.getId());
-                    query.executeUpdate();
-
-                    context.getBaseContainerTmp().setPalletNumber(bc.getPalletNumber());
+                    PackagingVars.mode2_context.getBaseContainerTmp().setPalletNumber(bc.getPalletNumber());
                     //Set requested closing pallet number in the main gui
-                    Helper.Packaging_Gui_Mode2.setAssistanceTextarea(
-                            "N° "
-                            + Global.CLOSING_PALLET_PREFIX + bc.getPalletNumber());
+                    PackagingVars.Packaging_Gui_Mode2.setFeedbackTextarea("Scanner le code de fermeture palette N°\n "
+                            + GlobalVars.CLOSING_PALLET_PREFIX + bc.getPalletNumber());
                     context.setState(new Mode2_S040_ClosingPallet());
 
                 } else { //QtyExpected not reached yet ! Pallet will still open.
@@ -180,19 +138,21 @@ public class Mode2_S031_PalletChoice implements Mode2_State {
                 }
             } //############################### INVALID PALLET CODE #############
             else {
-                Helper.log.warning(String.format(Helper.ERR0006_INVALID_OPEN_PALLET_BARCODE, barcode));
-                JOptionPane.showMessageDialog(null, String.format(Helper.ERR0006_INVALID_OPEN_PALLET_BARCODE, barcode), "Invalid Barcode", JOptionPane.ERROR_MESSAGE);
+                UILog.severe(ErrorMsg.APP_ERR0015[0], barcode, GlobalVars.OPEN_PALLET_KEYWORD);
+                UILog.severeDialog(null, ErrorMsg.APP_ERR0015, barcode, GlobalVars.OPEN_PALLET_KEYWORD);
+                PackagingVars.Packaging_Gui_Mode2.getFeedbackTextarea().setText(UILog.severe(ErrorMsg.APP_ERR0015[0], barcode, GlobalVars.OPEN_PALLET_KEYWORD));
                 //Vide le scan box
-                this.clearScanBox(scan_txtbox);
+                clearScanBox(scan_txtbox);
                 //Retourner l'état actuel
                 context.setState(this);
             }
         } //############################### INVALID PALLET CODE #############
         else {
-            Helper.log.warning(String.format(Helper.ERR0006_INVALID_OPEN_PALLET_BARCODE, barcode));
-            JOptionPane.showMessageDialog(null, String.format(Helper.ERR0006_INVALID_OPEN_PALLET_BARCODE, barcode), "Invalid Barcode", JOptionPane.ERROR_MESSAGE);
+            UILog.severe(ErrorMsg.APP_ERR0015[0], barcode, GlobalVars.OPEN_PALLET_KEYWORD);
+            UILog.severeDialog(null, ErrorMsg.APP_ERR0015, barcode, GlobalVars.OPEN_PALLET_KEYWORD);
+            PackagingVars.Packaging_Gui_Mode2.getFeedbackTextarea().setText(UILog.severe(ErrorMsg.APP_ERR0015[0], barcode, GlobalVars.OPEN_PALLET_KEYWORD));
             //Vide le scan box
-            this.clearScanBox(scan_txtbox);
+            clearScanBox(scan_txtbox);
             //Retourner l'état actuel
             context.setState(this);
         }
@@ -211,13 +171,80 @@ public class Mode2_S031_PalletChoice implements Mode2_State {
         //Vider le champs de text scan
         scan_txtbox.setText("");
         scan_txtbox.requestFocusInWindow();
-        Helper.Packaging_Gui_Mode2.setScanTxt(scan_txtbox);
+        PackagingVars.Packaging_Gui_Mode2.setScanTxt(scan_txtbox);
     }
 
     public void clearContextSessionVals() {
-        Helper.mode2_context.setBaseContainerTmp(new BaseContainerTmp());
-        Helper.mode2_context.setLabelCount(0);
-        Global.PLASTICBAG_BARCODE_PATTERN_LIST = new String[0][];
+        PackagingVars.mode2_context.setBaseContainerTmp(new BaseContainerTmp());
+        PackagingVars.mode2_context.setLabelCount(0);
+        GlobalVars.PLASTICBAG_BARCODE_PATTERN_LIST = new String[0][];
+    }
+
+    /**
+     * Load choosing pack pop up
+     *
+     * @param scan_txtbox
+     * @param context
+     */
+    private void choosePack(JTextField scan_txtbox, Mode2_Context context) {
+        //Vide le scan box
+        clearScanBox(scan_txtbox);
+        String hp;
+        hp
+                = (PackagingVars.mode2_context.getBaseContainerTmp().getHarnessPart()
+                        .startsWith(GlobalVars.HARN_PART_PREFIX))
+                ? context.getBaseContainerTmp().getHarnessPart().substring(1)
+                : context.getBaseContainerTmp().getHarnessPart();
+
+        Object o = new PACKAGING_UI9000_ChoosePackType_Mode2(null, true, hp);
+
+    }
+
+    /**
+     * Delete the given piece from drop table
+     *
+     * @param bh
+     * @return
+     */
+    private int deletePieceFromDropTable(BaseHarness bh) {
+        //####### CHECK IF THE HARNESS EXISTS IN THE DROP TABLE ########
+        //Yes                
+        Query query = Helper.sess.createQuery("DELETE DropBaseHarness WHERE counter = :COUNTER");
+        query.setParameter("COUNTER", bh.getCounter());
+
+        return query.executeUpdate();
+
+    }
+
+    private void savePlaticBagCodes(BaseHarness bh, String[] labels) {
+        for (String labelCode : PackagingVars.mode2_context.getBaseHarnessAdditionalBarecodeTmp().getLabelCode()) {
+            BaseHarnessAdditionalBarecode bel = new BaseHarnessAdditionalBarecode();
+            bel.setDefautlVals();
+            bel.setLabelCode(labelCode);
+            bel.setHarness(bh);
+            bel.create(bel);
+        }
+    }
+    /**
+     * Save a piece in container and return BaseHarness object
+     * @param bc
+     * @param bh
+     * @param barcode
+     * @param context
+     * @return 
+     */
+    
+    private BaseHarness saveBaseHarness(BaseContainer bc, BaseHarness bh, String barcode, Mode2_Context context) {
+        bh.setHarnessPart(context.getBaseContainerTmp().getHarnessPart());
+        bh.setCounter(context.getBaseContainerTmp().getHernessCounter());
+        bh.setPalletNumber(barcode);
+        bh.setHarnessType(context.getBaseContainerTmp().getHarnessType());
+        bh.setStdTime(bc.getStdTime());
+        bh.setPackWorkstation(GlobalVars.APP_HOSTNAME);
+        bh.setSegment(bc.getSegment());
+        bh.setWorkplace(bc.getWorkplace());
+        bh.setContainer(bc);
+        return bh;
     }
 
 }

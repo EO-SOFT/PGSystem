@@ -1,8 +1,9 @@
 package entity;
 // Generated 6 f�vr. 2016 21:43:55 by Hibernate Tools 3.6.0
 
-import __run__.Global;
-import helper.Helper;
+import __main__.GlobalMethods;
+import __main__.GlobalVars;
+import gui.packaging.PackagingVars;
 import hibernate.DAO;
 import java.util.Date;
 import javax.persistence.Column;
@@ -288,7 +289,7 @@ public class HisBaseContainer extends DAO implements java.io.Serializable {
             hbc.setWriteId(bc.getWriteId());            
             hbc.setFifoTime(bc.getFifoTime());
             hbc.setWorkTime(                    
-                    Float.valueOf(Helper.DiffInMinutes(new Date(), bc.getFifoTime()))
+                    Float.valueOf(GlobalMethods.DiffInMinutes(new Date(), bc.getFifoTime()))
             );
             if (feedback != null) {
                 hbc.setFeedback(feedback);
@@ -314,8 +315,8 @@ public class HisBaseContainer extends DAO implements java.io.Serializable {
 
         HisBaseContainer hbc = new HisBaseContainer();
         try {
-            hbc.setContainerState(Global.PALLET_DROPPED);
-            hbc.setContainerStateCode(Global.PALLET_DROPPED_CODE);
+            hbc.setContainerState(GlobalVars.PALLET_DROPPED);
+            hbc.setContainerStateCode(GlobalVars.PALLET_DROPPED_CODE);
             hbc.setCreateId(bc.getCreateId());
             hbc.setCreateTime(new Date());
             hbc.setHarnessIndex(bc.getHarnessIndex());
@@ -326,12 +327,12 @@ public class HisBaseContainer extends DAO implements java.io.Serializable {
             hbc.setQtyExpected(bc.getQtyExpected());
             hbc.setQtyRead(bc.getQtyRead());
             hbc.setSupplierPartNumber(bc.getSupplierPartNumber());
-            hbc.setUser(Helper.context.getUser().getLogin());
-            hbc.setCreateUser(Helper.context.getUser().getFirstName() + " " + Helper.context.getUser().getLastName());
+            hbc.setUser(PackagingVars.context.getUser().getLogin());
+            hbc.setCreateUser(PackagingVars.context.getUser().getFirstName() + " " + PackagingVars.context.getUser().getLastName());
             hbc.setWriteId(bc.getWriteId());
             hbc.setFifoTime(new Date());            
             hbc.setWorkTime(                    
-                    Float.valueOf(Helper.DiffInMinutes(new Date(), bc.getWriteTime()))
+                    Float.valueOf(GlobalMethods.DiffInMinutes(new Date(), bc.getWriteTime()))
             );
             if (feedback != null) {
                 hbc.setFeedback(feedback);

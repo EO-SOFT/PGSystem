@@ -57,7 +57,6 @@ public class ConfigSegment extends DAO implements Serializable{
     public List select() {
         Helper.startSession();
         Query query = Helper.sess.createQuery(HQLHelper.GET_ALL_SEGMENTS);
-        Helper.log.info(query.getQueryString());
         Helper.sess.getTransaction().commit();
         return query.list();
     }

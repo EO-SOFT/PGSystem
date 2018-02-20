@@ -5,8 +5,9 @@
  */
 package gui.packaging.reports;
 
-import __run__.Global;
+import __main__.GlobalVars;
 import entity.ConfigProject;
+import gui.packaging.PackagingVars;
 import helper.ComboItem;
 import helper.Helper;
 import java.awt.Font;
@@ -91,12 +92,11 @@ public class PACKAGING_UI0015_DroppedContainer extends javax.swing.JDialog {
     }
     
     private void initContainerTableDoubleClick() {
-        this.dropped_result_table.addMouseListener(
-                new MouseAdapter() {
+        this.dropped_result_table.addMouseListener(new MouseAdapter() {
                     public void mouseClicked(MouseEvent e) {
                         if (e.getClickCount() == 2) {
-                            System.out.println("Helper.context.getUser().getAccessLevel()" + Helper.context.getUser().getAccessLevel());                         
-                            if (Helper.context.getUser().getAccessLevel() == Global.PROFIL_ADMIN) {
+                            System.out.println("GVars.context.getUser().getAccessLevel()" + PackagingVars.context.getUser().getAccessLevel());                         
+                            if (PackagingVars.context.getUser().getAccessLevel() == GlobalVars.PROFIL_ADMIN) {
                                 new PACKAGING_UI0010_DroppedContainerDetails(null, rootPaneCheckingEnabled, String.valueOf(dropped_result_table.getValueAt(dropped_result_table.getSelectedRow(), PALLET_NUMBER_COLINDEX)), true, true).setVisible(true);
                             } else {
                                 new PACKAGING_UI0010_DroppedContainerDetails(null, rootPaneCheckingEnabled, String.valueOf(dropped_result_table.getValueAt(dropped_result_table.getSelectedRow(), PALLET_NUMBER_COLINDEX)), false, false).setVisible(true);
@@ -132,8 +132,8 @@ public class PACKAGING_UI0015_DroppedContainer extends javax.swing.JDialog {
 
     private void initTimeSpinners() {
 
-        String startTime = Global.APP_PROP.getProperty("START_TIME");
-        String endTime = Global.APP_PROP.getProperty("END_TIME");
+        String startTime = GlobalVars.APP_PROP.getProperty("START_TIME");
+        String endTime = GlobalVars.APP_PROP.getProperty("END_TIME");
         DateFormat timeFormat = new SimpleDateFormat("HH:mm");
 
         //################# Start Time Spinner ####################
@@ -201,8 +201,8 @@ public class PACKAGING_UI0015_DroppedContainer extends javax.swing.JDialog {
             dropped_result_table_data.add(oneRow);
         }
         dropped_result_table.setModel(new DefaultTableModel(dropped_result_table_data, dropped_result_table_header));
-        dropped_result_table.setFont(new Font(String.valueOf(Global.APP_PROP.getProperty("JTABLE_FONT")), Font.BOLD, Integer.valueOf(Global.APP_PROP.getProperty("JTABLE_FONTSIZE"))));
-        dropped_result_table.setRowHeight(Integer.valueOf(Global.APP_PROP.getProperty("JTABLE_ROW_HEIGHT")));
+        dropped_result_table.setFont(new Font(String.valueOf(GlobalVars.APP_PROP.getProperty("JTABLE_FONT")), Font.BOLD, Integer.valueOf(GlobalVars.APP_PROP.getProperty("JTABLE_FONTSIZE"))));
+        dropped_result_table.setRowHeight(Integer.valueOf(GlobalVars.APP_PROP.getProperty("JTABLE_ROW_HEIGHT")));
 
         this.total_lbl.setText(String.valueOf(total));
     }

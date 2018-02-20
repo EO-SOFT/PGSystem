@@ -12,7 +12,6 @@ import gui.warehouse_dispatch.state.S020_PalletNumberScan;
 import gui.warehouse_dispatch.state.WarehouseHelper;
 import helper.HQLHelper;
 import helper.Helper;
-import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 import javax.swing.JOptionPane;
@@ -20,6 +19,8 @@ import static javax.swing.JOptionPane.ERROR_MESSAGE;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableColumnModel;
 import org.hibernate.Query;
+import ui.UILog;
+import ui.error.ErrorMsg;
 
 /**
  *
@@ -161,14 +162,14 @@ public final class WAREHOUSE_DISPATCH_UI0004_NEW_PLAN extends javax.swing.JDialo
             }
         }
         if (deliveryDatePicker.getDate() == null) {
-            JOptionPane.showMessageDialog(null, Helper.ERR0030_NO_DELIVERY_DATE_SELECTED, "Valeurs requises non selectionnées !", ERROR_MESSAGE);
-            System.err.println(Helper.ERR0030_NO_DELIVERY_DATE_SELECTED);
+            UILog.severe(ErrorMsg.APP_ERR0027[0]);
+            UILog.severeDialog(null, ErrorMsg.APP_ERR0027);
         } else if (!flag) {
-            JOptionPane.showMessageDialog(null, Helper.ERR0031_NO_FINAL_DESTINATION_SELECTED, "Valeurs requises non selectionnées !", ERROR_MESSAGE);
-            System.err.println(Helper.ERR0031_NO_FINAL_DESTINATION_SELECTED);
+            UILog.severe(ErrorMsg.APP_ERR0026[0]);
+            UILog.severeDialog(null, ErrorMsg.APP_ERR0026);
         } else {
             try {
-                
+
                 Date date = new Date();
                 LoadPlan lp = new LoadPlan();
                 lp.setCreateId(WarehouseHelper.warehouse_out_context.getUser().getId());
@@ -176,10 +177,10 @@ public final class WAREHOUSE_DISPATCH_UI0004_NEW_PLAN extends javax.swing.JDialo
                 lp.setDeliveryTime(deliveryDatePicker.getDate());
                 lp.setUser(WarehouseHelper.warehouse_out_context.getUser().getFirstName() + " " + WarehouseHelper.warehouse_out_context.getUser().getLastName());
                 lp.setPlanState(WarehouseHelper.LOAD_PLAN_STATE_OPEN);
-                
+
                 //Save the new plan
                 int planId = lp.create(lp);
-                
+
                 //Save the destinations of the plan
                 for (String finalDest : selectedDestinations) {
                     if (finalDest != null && !"".equals(finalDest)) {
@@ -187,7 +188,7 @@ public final class WAREHOUSE_DISPATCH_UI0004_NEW_PLAN extends javax.swing.JDialo
                         planRel.create(planRel);
                     }
                 }
-                
+
                 WarehouseHelper.temp_load_plan = lp;
                 //Load data into labels
                 WarehouseHelper.Dispatch_Gui.loadPlanDataToLabels(lp, selectedDestinations[0]);
@@ -198,8 +199,8 @@ public final class WAREHOUSE_DISPATCH_UI0004_NEW_PLAN extends javax.swing.JDialo
                 this.dispose();
 
             } catch (Exception e) {
-                JOptionPane.showMessageDialog(null, Helper.ERR0032_INCORRECT_DATE_FORMAT, "Valeurs requises non selectionnées !", ERROR_MESSAGE);
-                System.err.println(Helper.ERR0032_INCORRECT_DATE_FORMAT);
+                UILog.severe(ErrorMsg.APP_ERR0028[0]);
+                UILog.severeDialog(null, ErrorMsg.APP_ERR0028);
             }
 
         }
@@ -218,8 +219,6 @@ public final class WAREHOUSE_DISPATCH_UI0004_NEW_PLAN extends javax.swing.JDialo
         }
     }
 
-    
-
     /**
      * Charge les destinations dans le jBox
      */
@@ -231,8 +230,9 @@ public final class WAREHOUSE_DISPATCH_UI0004_NEW_PLAN extends javax.swing.JDialo
         List result = query.list();
 
         if (result.isEmpty()) {
-            JOptionPane.showMessageDialog(null, Helper.ERR0029_NO_DESTINATIONS_FOR_DISPATCH, "Destinations Configuration error !", ERROR_MESSAGE);
-            System.err.println(Helper.ERR0029_NO_DESTINATIONS_FOR_DISPATCH);
+            UILog.info(ErrorMsg.APP_ERR0025[0]);
+            UILog.infoDialog(null, ErrorMsg.APP_ERR0025);
+            
             this.dispose();
         } else {
 
@@ -264,7 +264,7 @@ public final class WAREHOUSE_DISPATCH_UI0004_NEW_PLAN extends javax.swing.JDialo
             columnModel.getColumn(1).setMaxWidth((int) (90 * 10000));
 
             destinations_table.setColumnModel(columnModel);
-            
+
             this.setVisible(true);
         }
     }

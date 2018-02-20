@@ -5,16 +5,18 @@
  */
 package gui.packaging.mode2.state;
 
-import __run__.Global;
+import __main__.GlobalMethods;
+import __main__.GlobalVars;
 import gui.packaging.Mode2_Context;
-import helper.Helper;
 import entity.BaseContainer;
 import entity.BaseContainerTmp;
 import entity.BaseHarnessAdditionalBarecodeTmp;
 import entity.ConfigUcs;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
-import javax.swing.JTextField;
+import javax.swing.JTextField; import gui.packaging.PackagingVars;
+import ui.UILog;
+import ui.error.ErrorMsg;
 
 /**
  *
@@ -22,32 +24,32 @@ import javax.swing.JTextField;
  */
 public class Mode2_S040_ClosingPallet implements Mode2_State {
 
-    private ImageIcon imgIcon = new ImageIcon(Global.APP_PROP.getProperty("IMG_PATH") + "S050_ClosingPallet.jpg");
+    private ImageIcon imgIcon = new ImageIcon(GlobalVars.APP_PROP.getProperty("IMG_PATH") + "S050_ClosingPallet.jpg");
 
     public Mode2_S040_ClosingPallet() {
 
         //Charger l'image de l'état
-        Helper.Packaging_Gui_Mode2.setIconLabel(this.imgIcon);
+        PackagingVars.Packaging_Gui_Mode2.setIconLabel(this.imgIcon);
 
         //Reload Data Table to display new pallet
-        Helper.Packaging_Gui_Mode2.reloadDataTable();
+        PackagingVars.Packaging_Gui_Mode2.reloadDataTable();
     }
 
     public void doAction(Mode2_Context context) {
-        JTextField scan_txtbox = Helper.Packaging_Gui_Mode2.getScanTxt();
+        JTextField scan_txtbox = PackagingVars.Packaging_Gui_Mode2.getScanTxt();
         String barcode = scan_txtbox.getText().trim();
 
-        if (!barcode.isEmpty() && barcode.equals(Global.CLOSING_PALLET_PREFIX + context.getBaseContainerTmp().getPalletNumber())) {
+        if (!barcode.isEmpty() && barcode.equals(GlobalVars.CLOSING_PALLET_PREFIX + context.getBaseContainerTmp().getPalletNumber())) {
             //Update pallet state to CLOSED            
             BaseContainer bc = new BaseContainer().getBaseContainer(context.getBaseContainerTmp().getPalletNumber());
 
             try {
-                bc.setContainerState(Global.PALLET_CLOSED);
-                bc.setContainerStateCode(Global.PALLET_CLOSED_CODE);
-                bc.setClosedTime(Helper.getTimeStamp(null));
+                bc.setContainerState(GlobalVars.PALLET_CLOSED);
+                bc.setContainerStateCode(GlobalVars.PALLET_CLOSED_CODE);
+                bc.setClosedTime(GlobalMethods.getTimeStamp(null));
                 bc.setWorkTime(
                         Float.valueOf(
-                                Helper.DiffInMinutes(Helper.getTimeStamp(null),
+                                GlobalMethods.DiffInMinutes(GlobalMethods.getTimeStamp(null),
                                         bc.getCreateTime())
                         )
                 );
@@ -76,16 +78,17 @@ public class Mode2_S040_ClosingPallet implements Mode2_State {
             clearContextSessionVals();
 
             //Clear requested closing pallet number in the main gui
-            Helper.Packaging_Gui_Mode2.setAssistanceTextarea("");
+            PackagingVars.Packaging_Gui_Mode2.setFeedbackTextarea("");
 
             // Change go back to state HarnessPartScan            
             context.setState(new Mode2_S020_HarnessPartScan());
         } else {
             //Clear scann textbox
             clearScanBox(scan_txtbox);
-
-            Helper.log.warning(String.format(Helper.ERR0011_INVALID_CLOSE_PALLET_BARCODE, barcode));
-            JOptionPane.showMessageDialog(null, String.format(Helper.ERR0011_INVALID_CLOSE_PALLET_BARCODE, barcode), "Invalid Close Barcode", JOptionPane.ERROR_MESSAGE);
+            
+            UILog.severe(ErrorMsg.APP_ERR0020[0], barcode);
+            UILog.severeDialog(null, ErrorMsg.APP_ERR0020, barcode);
+            
             context.setState(this);
         }
     }
@@ -103,14 +106,14 @@ public class Mode2_S040_ClosingPallet implements Mode2_State {
         //Vider le champs de text scan
         scan_txtbox.setText("");
         scan_txtbox.requestFocusInWindow();
-        Helper.Packaging_Gui_Mode2.setScanTxt(scan_txtbox);
+        PackagingVars.Packaging_Gui_Mode2.setScanTxt(scan_txtbox);
     }
 
     public void clearContextSessionVals() {
         //Pas besoin de réinitialiser le uid
-        Helper.mode2_context.setBaseContainerTmp(new BaseContainerTmp());
-        Helper.mode2_context.setBaseHarnessAdditionalBarecodeTmp(new BaseHarnessAdditionalBarecodeTmp());
-        Helper.mode2_context.setLabelCount(0);
+        PackagingVars.mode2_context.setBaseContainerTmp(new BaseContainerTmp());
+        PackagingVars.mode2_context.setBaseHarnessAdditionalBarecodeTmp(new BaseHarnessAdditionalBarecodeTmp());
+        PackagingVars.mode2_context.setLabelCount(0);
     }
 
 }

@@ -5,18 +5,19 @@
  */
 package gui.packaging.mode2.state;
 
-import __run__.Global;
+import __main__.GlobalVars;
 import gui.packaging.Mode2_Context;
 import helper.Helper;
 import helper.HQLHelper;
 import entity.ManufactureUsers;
+import gui.packaging.PackagingVars;
 import gui.packaging.mode2.gui.PACKAGING_UI0002_PasswordRequest_Mode2;
 import java.util.List;
-import java.util.logging.Level;
 import javax.swing.ImageIcon;
-import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 import org.hibernate.Query;
+import ui.UILog;
+import ui.error.ErrorMsg;
 
 /**
  *
@@ -24,7 +25,7 @@ import org.hibernate.Query;
  */
 public class Mode2_S010_UserCodeScan implements Mode2_State {
 
-    private ImageIcon imgIcon = new ImageIcon(Global.APP_PROP.getProperty("IMG_PATH") + "S01_UserCodeScan.jpg");
+    private ImageIcon imgIcon = new ImageIcon(GlobalVars.APP_PROP.getProperty("IMG_PATH") + "S01_UserCodeScan.jpg");
 
     public Mode2_S010_UserCodeScan() {
 
@@ -43,8 +44,8 @@ public class Mode2_S010_UserCodeScan implements Mode2_State {
     @Override
     public void doAction(Mode2_Context context) {
 
-        JTextField scan_txtbox = Helper.Packaging_Gui_Mode2.getScanTxt();
-        //String harnessType = String.valueOf(Helper.Packaging_Gui_Mode2.getHarnessTypeBox().getSelectedItem());        
+        JTextField scan_txtbox = PackagingVars.Packaging_Gui_Mode2.getScanTxt();
+        //String harnessType = String.valueOf(PackagingVars.Packaging_Gui_Mode2.getHarnessTypeBox().getSelectedItem());        
 
         if (!scan_txtbox.getText().trim().equals("")) {
             //Start transaction
@@ -57,32 +58,40 @@ public class Mode2_S010_UserCodeScan implements Mode2_State {
             Helper.sess.getTransaction().commit();
             List result = query.list();
 
-            Helper.log.log(Level.INFO, Helper.ERR0001_LOGIN_FAILED);
+            //Helper.log.log(Level.INFO, Helper.ERR0001_LOGIN_FAILED);
+            //.log(Level.INFO, Helper.ERR0001_LOGIN_FAILED);
             switch (result.size()) {
-                case 0:
-                    JOptionPane.showMessageDialog(null, Helper.ERR0001_LOGIN_FAILED, "Login Error", JOptionPane.ERROR_MESSAGE);
-                    Helper.log.log(Level.INFO, Helper.ERR0001_LOGIN_FAILED);
+                case 0: //No user founds
+                    //APP_ERR0004 : Invalid matricule number or account locked !
+                    UILog.severeDialog(null, ErrorMsg.APP_ERR0004);
+                    UILog.severe(ErrorMsg.APP_ERR0004[0]);
+                    //Helper.log.log(Level.INFO, Helper.ERR0001_LOGIN_FAILED);
                     context.setState(this);
                     clearScanBox(scan_txtbox);
-                    Helper.Packaging_Gui_Mode2.HarnessTypeBoxSelectIndex(0);
+                    PackagingVars.Packaging_Gui_Mode2.HarnessTypeBoxSelectIndex(0);
                     break;
-                case 1:
+                case 1: //Good
                     new PACKAGING_UI0002_PasswordRequest_Mode2(null, true, (ManufactureUsers) result.get(0)).setVisible(true);
 
                     //Clear login from barcode
                     clearScanBox(scan_txtbox);
 
                     //Disable Project Box
-                    Helper.Packaging_Gui_Mode2.setHarnessTypeBoxState(false);
+                    PackagingVars.Packaging_Gui_Mode2.setHarnessTypeBoxState(false);
                     break;
 
                 default:
-                    JOptionPane.showMessageDialog(null, result.size()+" Utilisateurs trouvés avec le même login !", "Login Error", JOptionPane.ERROR_MESSAGE);
+                    UILog.severeDialog(null, ErrorMsg.APP_ERR0008, scan_txtbox.getText());
+                    UILog.severe(ErrorMsg.APP_ERR0008[0], scan_txtbox.getText());
+                    context.setState(this);
+                    clearScanBox(scan_txtbox);
+                    PackagingVars.Packaging_Gui_Mode2.HarnessTypeBoxSelectIndex(0);
                     break;
             }
         } else {
-            JOptionPane.showMessageDialog(null, Helper.ERR0001_LOGIN_FAILED, "Login Error", JOptionPane.ERROR_MESSAGE);
-            Helper.log.log(Level.INFO, Helper.ERR0001_LOGIN_FAILED);
+            
+            UILog.severe(ErrorMsg.APP_ERR0004[0]);
+            UILog.severeDialog(null, ErrorMsg.APP_ERR0004);
             context.setState(this);
             clearScanBox(scan_txtbox);
         }
@@ -92,7 +101,7 @@ public class Mode2_S010_UserCodeScan implements Mode2_State {
         //Vider le champs de text scan
         scan_txtbox.setText("");
         scan_txtbox.requestFocusInWindow();
-        Helper.Packaging_Gui_Mode2.setScanTxt(scan_txtbox);
+        PackagingVars.Packaging_Gui_Mode2.setScanTxt(scan_txtbox);
     }
 
     public void clearContextSessionVals() {

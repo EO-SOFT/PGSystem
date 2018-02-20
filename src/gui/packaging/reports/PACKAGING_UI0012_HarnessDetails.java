@@ -5,12 +5,13 @@ package gui.packaging.reports;
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-import __run__.Global;
+import __main__.GlobalVars;
 import helper.Helper;
 import helper.HQLHelper;
 import entity.BaseContainer;
 import entity.BaseHarness;
 import entity.DropBaseHarness;
+import gui.packaging.PackagingVars;
 import java.awt.event.KeyEvent;
 import java.text.SimpleDateFormat;
 import java.util.List;
@@ -718,7 +719,7 @@ public class PACKAGING_UI0012_HarnessDetails extends javax.swing.JDialog {
             error_lbl1.setText(ERR_REQUIRED_COMMENT);
         } else if (palletNumber_txtbox.getText().length() == 0) {
             error_lbl.setText(ERR_HARNESS_NOT_FOUND);
-        } else if (!bc.getContainerState().equals(Global.PALLET_OPEN)){
+        } else if (!bc.getContainerState().equals(GlobalVars.PALLET_OPEN)){
             error_lbl.setText(ERR_PALLET_STATE_ERROR);
         }else {
             int confirmed = JOptionPane.showConfirmDialog(null,
@@ -774,7 +775,7 @@ public class PACKAGING_UI0012_HarnessDetails extends javax.swing.JDialog {
                 success_lbl.setVisible(true);
                 success_lbl.setText(OK_HARNESS_DROPPED);
                 //Refresh the main table
-                Helper.Packaging_Gui_Mode1.reloadDataTable();
+                PackagingVars.Packaging_Gui_Mode1.reloadDataTable();
             }
         }
     }//GEN-LAST:event_drop_btnActionPerformed
